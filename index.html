@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TSUM TSUM 列表</title>
+  <title>TsumTsum 列表</title>
   <style>
-    .tsum-list { display: flex; flex-wrap: wrap; }
-    .tsum-item { width: 120px; margin: 10px; text-align: center; }
-    .tsum-img { width: 100px; height: 100px; object-fit: contain; border: 1px solid #eee; background: #fafafa; }
-    .tsum-name { margin-top: 8px; font-size: 16px; font-weight: bold; }
+    .tsum-card {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+      width: 120px;
+    }
+    .tsum-card img {
+      width: 80px;
+      height: 80px;
+    }
   </style>
 </head>
 <body>
-  <div class="tsum-list" id="tsumList"></div>
-  <script src="images.js"></script>
+  <div id="container"></div>
+
+  <!-- 引入你的 js 檔 -->
   <script src="tsum.js"></script>
+  <script src="image.js"></script>
+
+  <!-- 主邏輯 -->
   <script>
-    // 假設 images.js 匯出 window.images 物件
-    // tsum.js 匯出 window.tsumData 陣列
-    const list = document.getElementById('tsumList');
-    window.tsumData.forEach(tsum => {
-      const div = document.createElement('div');
-      div.className = 'tsum-item';
-      const img = document.createElement('img');
-      img.className = 'tsum-img';
-      img.src = window.images[tsum.image] || '';
-      img.alt = tsum.name;
-      const name = document.createElement('div');
-      name.className = 'tsum-name';
-      name.textContent = tsum.name;
-      div.appendChild(img);
-      div.appendChild(name);
-      list.appendChild(div);
+    // 將 images 陣列轉成 { filename: base64 } 的物件方便查詢
+    const imageMap = {};
+    images.forEach(item => {
+      const key = Object.keys(item)[0];
+      imageMap[key] = item[key];
+    });
+
+    const container = document.getElementById('container');
+    tsumData.forEach(tsum => {
+      const base64 = imageMap[tsum.image] || '';
+      const card = document.createElement('div');
+      card.className = 'tsum-card';
+      card.innerHTML = `
+        <img src="${base64}" alt="${tsum.name}" />
+        <div>${tsum.name}</div>
+        <div style="font-size: 0.8em; color: #888">${tsum.name_en}</div>
+      `;
+      container.appendChild(card);
     });
   </script>
 </body>
