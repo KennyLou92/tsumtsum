@@ -19,7 +19,7 @@
   </style>
 </head>
 <body>
-  <div id="container"></div>
+  <div id="container"></div> <!-- ✅ id="container" -->
 
   <!-- 引入你的 js 檔 -->
   <script src="tsum.js"></script>
@@ -27,22 +27,30 @@
 
   <!-- 主邏輯 -->
   <script>
-    // 將 images 陣列轉成 { filename: base64 } 的物件方便查詢
+    // ✅ 將 images 陣列轉成 { filename: base64 } 的物件
     const imageMap = {};
     images.forEach(item => {
       const key = Object.keys(item)[0];
       imageMap[key] = item[key];
     });
 
-const tsumContainer = document.getElementById("tsumContainer");
+    const tsumContainer = document.getElementById("container"); // ✅ 正確 ID
 
-tsumData.forEach(tsum => {
-  const base64 = images[tsum.image]; // ← 正常取得 base64
-  const img = document.createElement("img");
-  img.src = "data:image/png;base64," + base64;
-  tsumContainer.appendChild(img);
-});
+    tsumData.forEach(tsum => {
+      const base64 = imageMap[tsum.image]; // ✅ 用 imageMap 取圖
+      const card = document.createElement("div");
+      card.className = "tsum-card";
 
+      const img = document.createElement("img");
+      img.src = "data:image/png;base64," + base64;
+
+      const name = document.createElement("div");
+      name.textContent = tsum.name;
+
+      card.appendChild(img);
+      card.appendChild(name);
+      tsumContainer.appendChild(card);
+    });
   </script>
 </body>
 </html>
