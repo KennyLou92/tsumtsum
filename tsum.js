@@ -64,7 +64,7 @@
   { id: 63, name_en: "name_minnie_valentine", name: "情人米妮", image: "block_minnie_valentine_l.png" },
   { id: 64, name_en: "name_donald_valentine", name: "情人唐老鴨", image: "block_donald_valentine_l.png" },
   { id: 65, name_en: "name_daisy_valentine", name: "情人黛絲", image: "block_daisy_valentine_l.png" },
-  { id: 66, name_en: "name_mickey_sorcerer", name: "魔法師米奇", image: "block_mickey_sorcerer_l.png" },
+  { id: 66, name_en: "name_mickey_sorcerer", name: "魔法師米奇", image: "block_mickeys_l.png" },
   { id: 67, name_en: "name_belle", name: "貝兒", image: "block_belle_l.png" },
   { id: 68, name_en: "name_beast", name: "野獸", image: "block_beast_l.png" },
   { id: 69, name_en: "name_pooh_rabbit", name: "兔子維尼", image: "block_pooh_rabbit_l.png" },
