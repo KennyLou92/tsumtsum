@@ -4,48 +4,48 @@
   <meta charset="UTF-8">
   <title>TsumTsum 列表</title>
   <style>
-    .tsum-card {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: center;
-      width: 120px;
+    .tsum-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
     }
-    .tsum-card img {
+    .tsum-item img {
       width: 80px;
       height: 80px;
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
-  <div id="container"></div> <!-- ✅ id="container" -->
+  <div id="tsumContainer"></div>
 
-  <!-- 引入你的 js 檔 -->
+  <!-- 載入你的資料 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <!-- 主邏輯 -->
-<script>
-  const tsumContainer = document.getElementById("container");
+  <script>
+    const tsumContainer = document.getElementById("tsumContainer");
 
-  tsumData.forEach(tsum => {
-    const base64 = images[tsum.image]; // ✅ 直接從物件讀取 base64 完全沒問題
-    if (!base64) return; // 若沒圖，跳過
+    tsumData
+      .sort((a, b) => a.id - b.id)
+      .forEach(tsum => {
+        const base64 = images[tsum.image];
+        if (!base64) return;
 
-    const card = document.createElement("div");
-    card.className = "tsum-card";
+        const wrapper = document.createElement("div");
+        wrapper.className = "tsum-item";
 
-    const img = document.createElement("img");
-    img.src = base64; // ✅ 已經包含 data:image/png;base64
+        const img = document.createElement("img");
+        img.src = base64;
 
-    const name = document.createElement("div");
-    name.textContent = tsum.name;
+        const name = document.createElement("div");
+        name.textContent = tsum.name;
 
-    card.appendChild(img);
-    card.appendChild(name);
-    tsumContainer.appendChild(card);
-  });
-</script>
+        wrapper.appendChild(img);
+        wrapper.appendChild(name);
+        tsumContainer.appendChild(wrapper);
+      });
+  </script>
 </body>
 </html>
