@@ -574,7 +574,7 @@
   { id: 573, name_en: "name_poohrain", name: "雨衣維尼", image: "block_poohrain_l.png" },
   { id: 574, name_en: "name_robinrain", name: "雨衣羅賓", image: "block_robinrain_l.png" },
   { id: 575, name_en: "name_vil2", name: "豆豆迷彩維爾", image: "block_vil2_l.png" },
-  { id: 576, name_en: "name_kalimcm_charm", name: "盛會時裝卡利姆（飾品）", image: "block_kalimcm_charm_l.png" },
+  { id: 576, name_en: "name_kalimcm_charm", name: "盛會時裝卡利姆（飾品）", image: "block_kalimcm_l.png" },
   { id: 577, name_en: "name_grim2", name: "式典服格林", image: "block_grim2_l.png" },
   { id: 578, name_en: "name_jamil", name: "賈密爾・拜普", image: "block_jamil_l.png" },
   { id: 579, name_en: "name_rook", name: "路克・杭特", image: "block_rook_l.png" },
@@ -595,7 +595,7 @@
   { id: 594, name_en: "name_quigon", name: "魁剛金", image: "block_quigon_l.png" },
   { id: 595, name_en: "name_malleus2", name: "恐怖禮服梅琉斯", image: "block_malleus2_l.png" },
   { id: 596, name_en: "name_azul2", name: "豆豆迷彩烏斯爾", image: "block_azul2_l.png" },
-  { id: 597, name_en: "name_idiacm_charm", name: "送星服伊帝亞（飾品）", image: "block_idiacm_charm_l.png" },
+  { id: 597, name_en: "name_idiacm_charm", name: "送星服伊帝亞（飾品）", image: "block_idiacm_l.png" },
   { id: 598, name_en: "name_leona2", name: "盛會時裝雷歐納", image: "block_leona2_l.png" },
   { id: 599, name_en: "name_riddlecm_charm", name: "新郎裝扮里鐸（飾品）", image: "block_riddlecm_l.png" }
 ];
