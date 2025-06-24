@@ -24,7 +24,7 @@
   { id: 23, name_en: "name_jack", name: "傑克", image: "block_jack_l.png" },
   { id: 24, name_en: "name_zero", name: "零零", image: "block_zero_l.png" },
   { id: 25, name_en: "name_dumbo", name: "小飛象", image: "block_dumbo_l.png" },
-  { id: 26, name_en: "name_tink", name: "小叮噹", image: "block_tink_l.png" },
+  { id: 26, name_en: "name_tink", name: "小叮噹", image: "block_tinkerbell_l.png" },
   { id: 27, name_en: "name_alice", name: "愛麗絲", image: "block_alice_l.png" },
   { id: 28, name_en: "name_whiterabbit", name: "大白兔", image: "block_whiterabbit_l.png" },
   { id: 29, name_en: "name_cheshirecat", name: "妙妙貓", image: "block_cheshirecat_l.png" },
