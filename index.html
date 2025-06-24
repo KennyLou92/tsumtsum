@@ -34,18 +34,15 @@
       imageMap[key] = item[key];
     });
 
-    const container = document.getElementById('container');
-    tsumData.forEach(tsum => {
-      const base64 = imageMap[tsum.image] || '';
-      const card = document.createElement('div');
-      card.className = 'tsum-card';
-      card.innerHTML = `
-        <img src="${base64}" alt="${tsum.name}" />
-        <div>${tsum.name}</div>
-        <div style="font-size: 0.8em; color: #888">${tsum.name_en}</div>
-      `;
-      container.appendChild(card);
-    });
+const tsumContainer = document.getElementById("tsumContainer");
+
+tsumData.forEach(tsum => {
+  const base64 = images[tsum.image]; // ← 正常取得 base64
+  const img = document.createElement("img");
+  img.src = "data:image/png;base64," + base64;
+  tsumContainer.appendChild(img);
+});
+
   </script>
 </body>
 </html>
