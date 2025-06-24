@@ -597,6 +597,6 @@
   { id: 596, name_en: "name_azul2", name: "豆豆迷彩烏斯爾", image: "block_azul2_l.png" },
   { id: 597, name_en: "name_idiacm_charm", name: "送星服伊帝亞（飾品）", image: "block_idiacm_charm_l.png" },
   { id: 598, name_en: "name_leona2", name: "盛會時裝雷歐納", image: "block_leona2_l.png" },
-  { id: 599, name_en: "name_riddlecm_charm", name: "新郎裝扮里鐸（飾品）", image: "block_riddlecm_charm_l.png" }
+  { id: 599, name_en: "name_riddlecm_charm", name: "新郎裝扮里鐸（飾品）", image: "block_riddlecm_l.png" }
 ];
 window.tsumData = tsumData;
