@@ -37,7 +37,7 @@
   { id: 36, name_en: "name_oswald", name: "幸運兔奧斯華", image: "block_oswald_l.png" },
   { id: 37, name_en: "name_elsa", name: "艾莎", image: "block_elsa_l.png" },
   { id: 38, name_en: "name_anna", name: "安娜", image: "block_anna_l.png" },
-  { id: 39, name_en: "name_pooh_honey", name: "大黃蜂維尼", image: "block_pooh_honey_l.png" },
+  { id: 39, name_en: "name_pooh_honey", name: "大黃蜂維尼", image: "block_pooh_l.png" },
   { id: 40, name_en: "name_robin", name: "羅賓", image: "block_robin_l.png" },
   { id: 41, name_en: "name_roo", name: "小荳", image: "block_roo_l.png" },
   { id: 42, name_en: "name_ariel", name: "艾莉兒", image: "block_ariel_l.png" },
