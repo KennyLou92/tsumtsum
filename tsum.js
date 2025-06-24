@@ -12,7 +12,7 @@
   { id: 11, name_en: "name_tigger", name: "跳跳虎", image: "block_tigger_l.png" },
   { id: 12, name_en: "name_eeyore", name: "屹耳", image: "block_eeyore_l.png" },
   { id: 13, name_en: "name_stitch", name: "史迪奇", image: "block_stitch_l.png" },
-  { id: 14, name_en: "name_scrump", name: "醜丫頭", image: "block_scrump_l.png" },
+  { id: 14, name_en: "name_scrump", name: "醜丫頭", image: "block_scramp_l.png" },
   { id: 15, name_en: "name_marie", name: "瑪麗貓", image: "block_marie_l.png" },
   { id: 16, name_en: "name_lady", name: "麗滴", image: "block_lady_l.png" },
   { id: 17, name_en: "name_perry", name: "泰瑞", image: "block_perry_l.png" },
