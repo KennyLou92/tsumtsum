@@ -40,12 +40,12 @@
   <script>
     const container = document.getElementById("container");
 
-    // 若 images 是陣列，轉換成物件
-    const imageMap = typeof images.forEach === "function"
+    // 如果 images 是 array，就轉為 object
+    const imageMap = Array.isArray(images)
       ? Object.fromEntries(images.map(item => [Object.keys(item)[0], Object.values(item)[0]]))
       : images;
 
-    // 根據 id 排序
+    // 根據 ID 排序
     tsumData.sort((a, b) => a.id - b.id);
 
     tsumData.forEach(tsum => {
@@ -54,9 +54,10 @@
 
       let imageElement;
 
-      if (imageMap[tsum.image]) {
+      const base64 = imageMap[tsum.image];
+      if (base64) {
         const img = document.createElement("img");
-        img.src = "data:image/png;base64," + imageMap[tsum.image];
+        img.src = base64.startsWith("data:image") ? base64 : "data:image/png;base64," + base64;
         imageElement = img;
       } else {
         const placeholder = document.createElement("div");
