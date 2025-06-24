@@ -26,31 +26,26 @@
   <script src="images.js"></script>
 
   <!-- 主邏輯 -->
-  <script>
-    // ✅ 將 images 陣列轉成 { filename: base64 } 的物件
-    const imageMap = {};
-    images.forEach(item => {
-      const key = Object.keys(item)[0];
-      imageMap[key] = item[key];
-    });
+<script>
+  const tsumContainer = document.getElementById("container");
 
-    const tsumContainer = document.getElementById("container"); // ✅ 正確 ID
+  tsumData.forEach(tsum => {
+    const base64 = images[tsum.image]; // ✅ 直接從物件讀取 base64 完全沒問題
+    if (!base64) return; // 若沒圖，跳過
 
-    tsumData.forEach(tsum => {
-      const base64 = imageMap[tsum.image]; // ✅ 用 imageMap 取圖
-      const card = document.createElement("div");
-      card.className = "tsum-card";
+    const card = document.createElement("div");
+    card.className = "tsum-card";
 
-      const img = document.createElement("img");
-      img.src = "data:image/png;base64," + base64;
+    const img = document.createElement("img");
+    img.src = base64; // ✅ 已經包含 data:image/png;base64
 
-      const name = document.createElement("div");
-      name.textContent = tsum.name;
+    const name = document.createElement("div");
+    name.textContent = tsum.name;
 
-      card.appendChild(img);
-      card.appendChild(name);
-      tsumContainer.appendChild(card);
-    });
-  </script>
+    card.appendChild(img);
+    card.appendChild(name);
+    tsumContainer.appendChild(card);
+  });
+</script>
 </body>
 </html>
