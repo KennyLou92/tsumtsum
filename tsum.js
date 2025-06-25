@@ -591,7 +591,7 @@
   { id: 590, name_en: "name_boba", name: "波巴費特", image: "block_boba_l.png" },
   { id: 591, name_en: "name_jabba", name: "赫特族賈霸", image: "block_jabba_l.png" },
   { id: 592, name_en: "name_anakinpod", name: "飛梭賽車安納金", image: "block_anakinpod_l.png" },
-  { id: 593, name_en: "name_starwars_set", name: "星際大戰光明面（組合）", image: "block_starwarsset_l.png" },
+  { id: 593, name_en: "name_starwars_set", name: "星際大戰光明面（組合）", image: ["block_starwarsset_l.png","block_starwarsset_1_l.png","block_starwarsset_2_l.png","block_starwarsset_3_l.png","block_starwarsset_4_l.png","block_starwarsset_5_l.png"] },
   { id: 594, name_en: "name_quigon", name: "魁剛金", image: "block_quigon_l.png" },
   { id: 595, name_en: "name_malleus2", name: "恐怖禮服梅琉斯", image: ["block_malleus2_l.png","block_malleus2sp_l.png"] },
   { id: 596, name_en: "name_azul2", name: "豆豆迷彩烏斯爾", image: "block_azul2_l.png" },
