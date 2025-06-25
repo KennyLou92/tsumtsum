@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TsumTsum 列表</title>
+  <meta charset="UTF-8" />
+  <title>TsumTsum List</title>
   <style>
     table {
       border-collapse: collapse;
-      margin: 20px;
     }
-
     td {
       border: 1px solid #ccc;
       padding: 10px;
       width: 120px;
-      height: 60px;
       text-align: center;
     }
-
-    img {
-      width: 50px;
-      height: 50px;
-      border: none;
+    .image-cell img {
+      width: 80px;
+      height: 80px;
+      display: block;
+      margin: auto;
     }
-	.name-cell {
-	height: 30px;
-	padding: 4px; /* 預設是10px，可改小 */
-	}
+    .name-cell {
+      height: 30px;
+      padding: 4px;
+    }
   </style>
 </head>
 <body>
   <table id="tsumTable"></table>
 
+  <!-- 外部 JS -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <script>
-    tsumData.sort((a, b) => a.id - b.id); // 依照 ID 排序
+    // 確保 imageMap 是可查詢的物件（根據你的 images.js 結構）
+    const imageMap = images;
 
+    // 依 id 排序 tsumData
+    const sortedData = tsumData.slice().sort((a, b) => a.id - b.id);
     const table = document.getElementById("tsumTable");
 
-    tsumData.forEach(tsum => {
-      // 第 1 列：圖片或圖片檔名
-      const imgRow = document.createElement("tr");
-      const imgCell = document.createElement("td");
-      const dummyCell1 = document.createElement("td"); // 空格子
-	  nameCell.textContent = tsum.name;
-	  nameCell.classList.add("name-cell"); // 加上這行
+    sortedData.forEach(tsum => {
+      // 第一列：圖片或圖檔名稱
+      const row1 = document.createElement("tr");
+      const cell1 = document.createElement("td");
+      cell1.classList.add("image-cell");
 
-      if (images[tsum.image]) {
+      if (imageMap[tsum.image]) {
         const img = document.createElement("img");
-        img.src = images[tsum.image];
-        imgCell.appendChild(img);
+        img.src = imageMap[tsum.image];
+        cell1.appendChild(img);
       } else {
-        imgCell.textContent = tsum.image;
+        cell1.textContent = tsum.image;
       }
 
-      imgRow.appendChild(imgCell);
-      imgRow.appendChild(dummyCell1);
-      table.appendChild(imgRow);
+      row1.appendChild(cell1);
+      table.appendChild(row1);
 
-      // 第 2 列：名稱
-      const nameRow = document.createElement("tr");
-      const nameCell = document.createElement("td");
-      const dummyCell2 = document.createElement("td"); // 空格子
-      nameCell.textContent = tsum.name;
-
-      nameRow.appendChild(nameCell);
-      nameRow.appendChild(dummyCell2);
-      table.appendChild(nameRow);
+      // 第二列：名稱
+      const row2 = document.createElement("tr");
+      const cell2 = document.createElement("td");
+      cell2.classList.add("name-cell");
+      cell2.textContent = tsum.name;
+      row2.appendChild(cell2);
+      table.appendChild(row2);
     });
   </script>
 </body>
