@@ -21,15 +21,15 @@
     .name-row td {
       font-weight: bold;
       text-align: left;
-      padding-left: 20px;
+      padding: 8px 0;
     }
-  td.skill-desc {
-    width: 50px;
-    max-width: 50px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+    td.skill-desc {
+      width: 50px;
+      max-width: 50px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   </style>
 </head>
 <body>
@@ -57,9 +57,9 @@
     const tbody = document.getElementById("tsumBody");
 
     tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
-		const imageNames = Array.isArray(tsum.image)
-		  ? tsum.image
-		  : tsum.image.split(",").map(s => s.trim());
+      const imageNames = tsum.image.split(",").map(s => s.trim());
+      let imageIndex = 0;
+      const hasImage = !!imageMap[imageNames[0]];
 
       // --- 第一列：圖片 + 技能描述 ---
       const row1 = document.createElement("tr");
@@ -73,7 +73,8 @@
         if (imageNames.length > 1) {
           img.addEventListener("mouseover", () => {
             imageIndex = (imageIndex + 1) % imageNames.length;
-            img.src = imageMap[imageNames[imageIndex]] || "";
+            const nextImg = imageMap[imageNames[imageIndex]];
+            if (nextImg) img.src = nextImg;
           });
         }
       } else {
@@ -83,6 +84,7 @@
 
       for (let i = 0; i < 7; i++) {
         const td = document.createElement("td");
+        td.className = "skill-desc";
         td.textContent = tsum.skill_desc?.[i] || "";
         row1.appendChild(td);
       }
