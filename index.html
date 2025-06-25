@@ -20,12 +20,12 @@
     }
     .name-row td {
       font-weight: bold;
-      text-align: center;
+      text-align: left;
       padding-left: 20px;
     }
   td.skill-desc {
-    width: 70px;
-    max-width: 70px;
+    width: 50px;
+    max-width: 50px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -57,9 +57,9 @@
     const tbody = document.getElementById("tsumBody");
 
     tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
-      const imageNames = tsum.image.split(",").map(s => s.trim());
-      let imageIndex = 0;
-      const hasImage = imageMap[imageNames[0]];
+		const imageNames = Array.isArray(tsum.image)
+		  ? tsum.image
+		  : tsum.image.split(",").map(s => s.trim());
 
       // --- 第一列：圖片 + 技能描述 ---
       const row1 = document.createElement("tr");
