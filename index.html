@@ -9,9 +9,11 @@
       margin: 20px;
     }
 
-    th, td {
+    td {
       border: 1px solid #ccc;
-      padding: 8px;
+      padding: 10px;
+      width: 120px;
+      height: 60px;
       text-align: center;
     }
 
@@ -23,30 +25,22 @@
   </style>
 </head>
 <body>
-  <table id="tsumTable">
-    <thead>
-      <tr>
-        <th></th> <!-- 不顯示 image 標題 -->
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <table id="tsumTable"></table>
 
-  <!-- 引入你的 JS 檔 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <script>
-    tsumData.sort((a, b) => a.id - b.id); // 按 ID 排序
+    tsumData.sort((a, b) => a.id - b.id); // 依照 ID 排序
 
-    const tbody = document.querySelector("#tsumTable tbody");
+    const table = document.getElementById("tsumTable");
 
     tsumData.forEach(tsum => {
-      const row = document.createElement("tr");
-
-      // 第一欄：圖片或圖片檔名
+      // 第 1 列：圖片或圖片檔名
+      const imgRow = document.createElement("tr");
       const imgCell = document.createElement("td");
+      const dummyCell1 = document.createElement("td"); // 空格子
+
       if (images[tsum.image]) {
         const img = document.createElement("img");
         img.src = images[tsum.image];
@@ -54,14 +48,20 @@
       } else {
         imgCell.textContent = tsum.image;
       }
-      row.appendChild(imgCell);
 
-      // 第二欄：名稱
+      imgRow.appendChild(imgCell);
+      imgRow.appendChild(dummyCell1);
+      table.appendChild(imgRow);
+
+      // 第 2 列：名稱
+      const nameRow = document.createElement("tr");
       const nameCell = document.createElement("td");
+      const dummyCell2 = document.createElement("td"); // 空格子
       nameCell.textContent = tsum.name;
-      row.appendChild(nameCell);
 
-      tbody.appendChild(row);
+      nameRow.appendChild(nameCell);
+      nameRow.appendChild(dummyCell2);
+      table.appendChild(nameRow);
     });
   </script>
 </body>
