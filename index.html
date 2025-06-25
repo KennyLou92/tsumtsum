@@ -21,11 +21,11 @@
     .name-row td {
       font-weight: bold;
       text-align: left;
-      padding: 8px 0;
+      padding-left: 20px;
     }
     td.skill-desc {
-      width: 50px;
-      max-width: 50px;
+      width: 60px;
+      max-width: 60px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -49,6 +49,7 @@
     <tbody id="tsumBody"></tbody>
   </table>
 
+  <!-- 載入資料 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
@@ -57,7 +58,9 @@
     const tbody = document.getElementById("tsumBody");
 
     tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
-      const imageNames = tsum.image.split(",").map(s => s.trim());
+      const imageNames = Array.isArray(tsum.image)
+        ? tsum.image
+        : tsum.image.split(",").map(s => s.trim());
       let imageIndex = 0;
       const hasImage = !!imageMap[imageNames[0]];
 
@@ -78,7 +81,7 @@
           });
         }
       } else {
-        imgTd.textContent = imageNames[0]; // 顯示圖檔名稱
+        imgTd.textContent = imageNames[0]; // 沒有圖片就顯示檔名
       }
       row1.appendChild(imgTd);
 
@@ -89,7 +92,7 @@
         row1.appendChild(td);
       }
 
-      // --- 第二列：名稱 (跨欄) ---
+      // --- 第二列：名稱 ---
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
       const nameTd = document.createElement("td");
