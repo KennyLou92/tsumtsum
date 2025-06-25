@@ -14,10 +14,10 @@
       text-align: center;
       vertical-align: middle;
     }
-	td.img-cell {
-	width: 50px;  /* 或你想要的寬度 */
-	padding: 0;
-	}
+    td.img-cell {
+      width: 50px;
+      padding: 0;
+    }
     img {
       width: 60px;
       height: 60px;
@@ -72,59 +72,49 @@
       const row1 = document.createElement("tr");
 
       const imgTd = document.createElement("td");
+      imgTd.classList.add("img-cell");
+
       if (hasImage) {
         const img = document.createElement("img");
         img.src = imageMap[imageNames[0]];
         imgTd.appendChild(img);
 
         if (imageNames.length > 1) {
+          let intervalId = null;
+
           img.addEventListener("mouseover", () => {
-            imageIndex = (imageIndex + 1) % imageNames.length;
-            const nextImg = imageMap[imageNames[imageIndex]];
-            if (nextImg) img.src = nextImg;
+            intervalId = setInterval(() => {
+              imageIndex = (imageIndex + 1) % imageNames.length;
+              const nextImage = imageMap[imageNames[imageIndex]];
+              if (nextImage) {
+                img.src = nextImage;
+              }
+            }, 500);
+          });
+
+          img.addEventListener("mouseout", () => {
+            clearInterval(intervalId);
+            imageIndex = 0;
+            img.src = imageMap[imageNames[0]];
           });
         }
       } else {
-        imgTd.textContent = imageNames[0]; // 沒有圖片就顯示檔名
+        imgTd.textContent = imageNames[0]; // 沒圖顯示檔名
       }
+
       row1.appendChild(imgTd);
 
       for (let i = 0; i < 7; i++) {
-		const imgTd = document.createElement("td");
-		imgTd.classList.add("img-cell");
-
-		if (imageNames.length > 0 && imageMap[imageNames[0]]) {
-		  const img = document.createElement("img");
-		  let imageIndex = 0;
-		  let intervalId = null;
-
-		  img.src = imageMap[imageNames[0]];
-		  imgTd.appendChild(img);
-
-		  if (imageNames.length > 1) {
-			img.addEventListener("mouseover", () => {
-			  intervalId = setInterval(() => {
-				imageIndex = (imageIndex + 1) % imageNames.length;
-				const nextImage = imageMap[imageNames[imageIndex]];
-				if (nextImage) {
-				  img.src = nextImage;
-				}
-			  }, 500); // 換圖速度（毫秒）
-			});
-
-			img.addEventListener("mouseout", () => {
-			  clearInterval(intervalId);
-			  imageIndex = 0;
-			  img.src = imageMap[imageNames[0]]; // 還原第一張
-			});
-		  }
-		} else {
-		  imgTd.textContent = imageNames[0];
-		}
+        const td = document.createElement("td");
+        td.classList.add("skill-desc");
+        td.textContent = tsum.skill_desc?.[i] || "";
+        row1.appendChild(td);
+      }
 
       // --- 第二列：名稱 ---
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
+
       const nameTd = document.createElement("td");
       nameTd.colSpan = 8;
       nameTd.textContent = tsum.name;
