@@ -18,6 +18,7 @@
       height: 80px;
       display: block;
       margin: auto;
+      border: none;
     }
     .name-cell {
       height: 30px;
@@ -41,33 +42,35 @@
       const cell1 = document.createElement("td");
       cell1.classList.add("image-cell");
 
+      // 支援字串或陣列格式
       const imageList = Array.isArray(tsum.image) ? tsum.image : [tsum.image];
       const hasValidImage = imageList.some(imgName => imageMap[imgName]);
 
       if (hasValidImage) {
         const img = document.createElement("img");
-        img.src = imageMap[imageList[0]] || "";
+        img.src = imageMap[imageList[0]];
         cell1.appendChild(img);
         row1.appendChild(cell1);
 
-        // 設定滑鼠移入/移出事件
+        // 輪播功能
         let intervalId = null;
+        let index = 0;
+
         cell1.addEventListener("mouseenter", () => {
-          let index = 0;
           intervalId = setInterval(() => {
             index = (index + 1) % imageList.length;
-            if (imageMap[imageList[index]]) {
-              img.src = imageMap[imageList[index]];
-            }
-          }, 500); // 每 0.5 秒輪播
-        });
-        cell1.addEventListener("mouseleave", () => {
-          clearInterval(intervalId);
-          img.src = imageMap[imageList[0]]; // 還原第一張圖
+            const nextImg = imageMap[imageList[index]];
+            if (nextImg) img.src = nextImg;
+          }, 500);
         });
 
+        cell1.addEventListener("mouseleave", () => {
+          clearInterval(intervalId);
+          index = 0;
+          img.src = imageMap[imageList[0]];
+        });
       } else {
-        // 如果沒有圖片，就顯示字串
+        // 無圖則顯示檔名
         cell1.textContent = imageList.join(", ");
         row1.appendChild(cell1);
       }
