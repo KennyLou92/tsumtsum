@@ -90,12 +90,37 @@
       row1.appendChild(imgTd);
 
       for (let i = 0; i < 7; i++) {
-        const td = document.createElement("td");
+		const imgTd = document.createElement("td");
 		imgTd.classList.add("img-cell");
-        td.className = "skill-desc";
-        td.textContent = tsum.skill_desc?.[i] || "";
-        row1.appendChild(td);
-      }
+
+		if (imageNames.length > 0 && imageMap[imageNames[0]]) {
+		  const img = document.createElement("img");
+		  let imageIndex = 0;
+		  let intervalId = null;
+
+		  img.src = imageMap[imageNames[0]];
+		  imgTd.appendChild(img);
+
+		  if (imageNames.length > 1) {
+			img.addEventListener("mouseover", () => {
+			  intervalId = setInterval(() => {
+				imageIndex = (imageIndex + 1) % imageNames.length;
+				const nextImage = imageMap[imageNames[imageIndex]];
+				if (nextImage) {
+				  img.src = nextImage;
+				}
+			  }, 500); // 換圖速度（毫秒）
+			});
+
+			img.addEventListener("mouseout", () => {
+			  clearInterval(intervalId);
+			  imageIndex = 0;
+			  img.src = imageMap[imageNames[0]]; // 還原第一張
+			});
+		  }
+		} else {
+		  imgTd.textContent = imageNames[0];
+		}
 
       // --- 第二列：名稱 ---
       const row2 = document.createElement("tr");
