@@ -4,88 +4,73 @@
   <meta charset="UTF-8">
   <title>TsumTsum 列表</title>
   <style>
-    .tsum-header {
+    #container {
       display: flex;
-      align-items: center;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .tsum-header div:first-child {
-      width: 80px;
-      margin-right: 10px;
-    }
-    .tsum-header div:last-child {
-      text-align: left;
+      flex-direction: column;
+      border: 2px solid #ccc; /* 整個列表加邊框 */
+      padding: 10px;
+      width: fit-content;
     }
 
-    .tsum-entry {
+    .entry {
       display: flex;
       align-items: center;
-      margin: 10px 0;
+      margin-bottom: 8px;
     }
-    .tsum-entry img {
-      width: 80px;
-      height: 80px;
+
+    .entry img {
+      width: 50px;
+      height: 50px;
       margin-right: 10px;
-      object-fit: contain;
-      border: none;
+      border: none; /* 確保圖片本身沒框線 */
     }
-    .tsum-entry .placeholder {
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px;
-      background-color: #f0f0f0;
-      font-size: 10px;
-      text-align: center;
-      padding: 2px;
+
+    .entry span {
+      font-size: 14px;
+    }
+
+    .header {
+      font-weight: bold;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <div id="container">
-    <!-- header -->
-    <div class="tsum-header">
-      <div></div> <!-- 空白欄位不顯示 "Image" -->
-      <div>Name</div>
-    </div>
+    <div class="header">Name</div>
   </div>
 
-  <!-- 引入 JS -->
+  <!-- 引入你的 JS 檔 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <!-- 主邏輯 -->
   <script>
+    tsumData.sort((a, b) => a.id - b.id); // 依照 id 排序
+
     const container = document.getElementById("container");
 
-    tsumData
-      .sort((a, b) => a.id - b.id)
-      .forEach(tsum => {
-        const entry = document.createElement("div");
-        entry.className = "tsum-entry";
+    tsumData.forEach(tsum => {
+      const entry = document.createElement("div");
+      entry.className = "entry";
 
-        // 圖片或佔位文字
-        if (images[tsum.image]) {
-          const img = document.createElement("img");
-          img.src = images[tsum.image];
-          entry.appendChild(img);
-        } else {
-          const placeholder = document.createElement("div");
-          placeholder.className = "placeholder";
-          placeholder.innerText = tsum.image;
-          entry.appendChild(placeholder);
-        }
+      if (images[tsum.image]) {
+        const img = document.createElement("img");
+        img.src = images[tsum.image]; // 圖片 base64 直接使用
+        entry.appendChild(img);
+      } else {
+        const placeholder = document.createElement("span");
+        placeholder.textContent = tsum.image;
+        placeholder.style.marginRight = "10px";
+        entry.appendChild(placeholder);
+      }
 
-        // 名稱
-        const name = document.createElement("div");
-        name.innerText = tsum.name;
-        entry.appendChild(name);
+      const nameSpan = document.createElement("span");
+      nameSpan.textContent = tsum.name;
+      entry.appendChild(nameSpan);
 
-        container.appendChild(entry);
-      });
+      container.appendChild(entry);
+    });
   </script>
 </body>
 </html>
