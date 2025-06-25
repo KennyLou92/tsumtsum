@@ -272,7 +272,7 @@
   { id: 271, name_en: "name_jack_2", name: "淘氣傑克", image: "block_jack2_l.png" },
   { id: 272, name_en: "name_lock", name: "鎖頭", image: "block_lock_l.png" },
   { id: 273, name_en: "name_vampireteddy", name: "吸血鬼泰迪熊", image: "block_vampireteddy_l.png" },
-  { id: 274, name_en: "name_mickey_classic", name: "經典米奇", image: "block_mickeycls_l.png" },
+  { id: 274, name_en: "name_mickey_classic", name: "經典米奇", image: "block_mickeyclsc_l.png" },
   { id: 275, name_en: "name_mickey_jack", name: "魔豆米奇", image: "block_mickeyj_l.png" },
   { id: 276, name_en: "name_mickey_anniversary", name: "週年慶米奇", image: "block_mickey90th_l.png" },
   { id: 277, name_en: "name_minnie_anniversary", name: "週年慶米妮", image: "block_minnie90th_l.png" },
