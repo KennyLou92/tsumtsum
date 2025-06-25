@@ -24,8 +24,7 @@
     }
     .name-row td {
       font-weight: bold;
-      text-align: left;
-      padding-left: 20px;
+      text-align: center;
     }
     td.skill-desc {
       width: 60px;
@@ -99,7 +98,7 @@
           });
         }
       } else {
-        imgTd.textContent = imageNames[0]; // 沒圖顯示檔名
+        imgTd.textContent = imageNames[0];
       }
 
       row1.appendChild(imgTd);
@@ -111,14 +110,19 @@
         row1.appendChild(td);
       }
 
-      // --- 第二列：名稱 ---
+      // --- 第二列：名稱對應欄位 ---
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
 
-      const nameTd = document.createElement("td");
-      nameTd.colSpan = 8;
-      nameTd.textContent = tsum.name;
-      row2.appendChild(nameTd);
+      for (let i = 0; i < 8; i++) {
+        const td = document.createElement("td");
+        if (i === 0) {
+          td.textContent = tsum.name;
+        } else {
+          td.textContent = "";
+        }
+        row2.appendChild(td);
+      }
 
       tbody.appendChild(row1);
       tbody.appendChild(row2);
