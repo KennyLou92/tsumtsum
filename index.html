@@ -70,7 +70,7 @@
         // 圖片或佔位文字
         if (images[tsum.image]) {
           const img = document.createElement("img");
-          img.src = "data:image/png;base64," + images[tsum.image];
+          img.src = images[tsum.image];
           entry.appendChild(img);
         } else {
           const placeholder = document.createElement("div");
