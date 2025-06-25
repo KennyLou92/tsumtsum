@@ -593,7 +593,7 @@
   { id: 592, name_en: "name_anakinpod", name: "飛梭賽車安納金", image: "block_anakinpod_l.png" },
   { id: 593, name_en: "name_starwars_set", name: "星際大戰光明面（組合）", image: "block_starwarsset_l.png" },
   { id: 594, name_en: "name_quigon", name: "魁剛金", image: "block_quigon_l.png" },
-  { id: 595, name_en: "name_malleus2", name: "恐怖禮服梅琉斯", image: "block_malleus2_l.png" },
+  { id: 595, name_en: "name_malleus2", name: "恐怖禮服梅琉斯", image: ["block_malleus2_l.png","block_malleus2sp_l.png"] },
   { id: 596, name_en: "name_azul2", name: "豆豆迷彩烏斯爾", image: "block_azul2_l.png" },
   { id: 597, name_en: "name_idiacm_charm", name: "送星服伊帝亞（飾品）", image: "block_idiacm_l.png" },
   { id: 598, name_en: "name_leona2", name: "盛會時裝雷歐納", image: "block_leona2_l.png" },
