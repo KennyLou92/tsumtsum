@@ -22,6 +22,10 @@
       height: 50px;
       border: none;
     }
+	.name-cell {
+	height: 30px;
+	padding: 4px; /* 預設是10px，可改小 */
+	}
   </style>
 </head>
 <body>
@@ -40,6 +44,8 @@
       const imgRow = document.createElement("tr");
       const imgCell = document.createElement("td");
       const dummyCell1 = document.createElement("td"); // 空格子
+	  nameCell.textContent = tsum.name;
+	  nameCell.classList.add("name-cell"); // 加上這行
 
       if (images[tsum.image]) {
         const img = document.createElement("img");
