@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TsumTsum List</title>
+  <title>🎵TsumTsum List</title>
   <style>
     table {
       border-collapse: collapse;
@@ -28,36 +28,52 @@
 <body>
   <table id="tsumTable"></table>
 
-  <!-- 外部 JS -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <script>
-    // 確保 imageMap 是可查詢的物件（根據你的 images.js 結構）
     const imageMap = images;
-
-    // 依 id 排序 tsumData
     const sortedData = tsumData.slice().sort((a, b) => a.id - b.id);
     const table = document.getElementById("tsumTable");
 
     sortedData.forEach(tsum => {
-      // 第一列：圖片或圖檔名稱
       const row1 = document.createElement("tr");
       const cell1 = document.createElement("td");
       cell1.classList.add("image-cell");
 
-      if (imageMap[tsum.image]) {
+      const imageList = Array.isArray(tsum.image) ? tsum.image : [tsum.image];
+      const hasValidImage = imageList.some(imgName => imageMap[imgName]);
+
+      if (hasValidImage) {
         const img = document.createElement("img");
-        img.src = imageMap[tsum.image];
+        img.src = imageMap[imageList[0]] || "";
         cell1.appendChild(img);
+        row1.appendChild(cell1);
+
+        // 設定滑鼠移入/移出事件
+        let intervalId = null;
+        cell1.addEventListener("mouseenter", () => {
+          let index = 0;
+          intervalId = setInterval(() => {
+            index = (index + 1) % imageList.length;
+            if (imageMap[imageList[index]]) {
+              img.src = imageMap[imageList[index]];
+            }
+          }, 500); // 每 0.5 秒輪播
+        });
+        cell1.addEventListener("mouseleave", () => {
+          clearInterval(intervalId);
+          img.src = imageMap[imageList[0]]; // 還原第一張圖
+        });
+
       } else {
-        cell1.textContent = tsum.image;
+        // 如果沒有圖片，就顯示字串
+        cell1.textContent = imageList.join(", ");
+        row1.appendChild(cell1);
       }
 
-      row1.appendChild(cell1);
       table.appendChild(row1);
 
-      // 第二列：名稱
       const row2 = document.createElement("tr");
       const cell2 = document.createElement("td");
       cell2.classList.add("name-cell");
