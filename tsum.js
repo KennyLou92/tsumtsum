@@ -545,7 +545,7 @@
   { id: 544, name_en: "name_mushu", name: "木須龍", image: "block_mushu_l.png" },
   { id: 545, name_en: "name_poohfes", name: "慶典維尼", image: "block_poohfes_l.png" },
   { id: 546, name_en: "name_stitchfes", name: "慶典史迪奇", image: "block_stitchfes_l.png" },
-  { id: 547, name_en: "name_mickey_set", name: "繽紛米奇與好朋友（組合）", image: "block_mickeyset_l.png","block_mickeyset_1_l.png","block_mickeyset_2_l.png","block_mickeyset_3_l.png","block_mickeyset_4_l.png","block_mickeyset_5_l.png" },
+  { id: 547, name_en: "name_mickey_set", name: "繽紛米奇與好朋友（組合）", image: ["block_mickeyset_l.png","block_mickeyset_1_l.png","block_mickeyset_2_l.png","block_mickeyset_3_l.png","block_mickeyset_4_l.png","block_mickeyset_5_l.png"] },
   { id: 548, name_en: "name_alicecm_charm", name: "香水愛麗絲（飾品）", image: "block_alicecm_l.png" },
   { id: 549, name_en: "name_mariecm_charm", name: "香水瑪麗貓（飾品）", image: "block_mariecm_l.png" },
   { id: 550, name_en: "name_dumbocm_charm", name: "香水小飛象（飾品）", image: "block_dumbocm_l.png" },
