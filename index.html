@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>🎵TsumTsum List</title>
+  <meta charset="UTF-8">
+  <title>TsumTsum 技能列表</title>
   <style>
     table {
       border-collapse: collapse;
+      width: 100%;
     }
-    td {
+    th, td {
       border: 1px solid #ccc;
-      padding: 10px;
-      width: 120px;
+      padding: 6px 10px;
       text-align: center;
+      vertical-align: middle;
     }
-    .image-cell img {
+    img {
       width: 80px;
       height: 80px;
-      display: block;
-      margin: auto;
-      border: none;
     }
-    .name-cell {
-      height: 30px;
-      padding: 4px;
+    .name-row td {
+      font-weight: bold;
+      text-align: left;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
-  <table id="tsumTable"></table>
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>SLv1</th>
+        <th>SLv2</th>
+        <th>SLv3</th>
+        <th>SLv4</th>
+        <th>SLv5</th>
+        <th>SLv6</th>
+        <th>SLv7</th>
+      </tr>
+    </thead>
+    <tbody id="tsumBody"></tbody>
+  </table>
 
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <script>
     const imageMap = images;
-    const sortedData = tsumData.slice().sort((a, b) => a.id - b.id);
-    const table = document.getElementById("tsumTable");
+    const tbody = document.getElementById("tsumBody");
 
-    sortedData.forEach(tsum => {
+    tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
+      const imageNames = tsum.image.split(",").map(s => s.trim());
+      let imageIndex = 0;
+      const hasImage = imageMap[imageNames[0]];
+
+      // --- 第一列：圖片 + 技能描述 ---
       const row1 = document.createElement("tr");
-      const cell1 = document.createElement("td");
-      cell1.classList.add("image-cell");
 
-      // 支援字串或陣列格式
-      const imageList = Array.isArray(tsum.image) ? tsum.image : [tsum.image];
-      const hasValidImage = imageList.some(imgName => imageMap[imgName]);
-
-      if (hasValidImage) {
+      const imgTd = document.createElement("td");
+      if (hasImage) {
         const img = document.createElement("img");
-        img.src = imageMap[imageList[0]];
-        cell1.appendChild(img);
-        row1.appendChild(cell1);
+        img.src = imageMap[imageNames[0]];
+        imgTd.appendChild(img);
 
-        // 輪播功能
-        let intervalId = null;
-        let index = 0;
-
-        cell1.addEventListener("mouseenter", () => {
-          intervalId = setInterval(() => {
-            index = (index + 1) % imageList.length;
-            const nextImg = imageMap[imageList[index]];
-            if (nextImg) img.src = nextImg;
-          }, 500);
-        });
-
-        cell1.addEventListener("mouseleave", () => {
-          clearInterval(intervalId);
-          index = 0;
-          img.src = imageMap[imageList[0]];
-        });
+        if (imageNames.length > 1) {
+          img.addEventListener("mouseover", () => {
+            imageIndex = (imageIndex + 1) % imageNames.length;
+            img.src = imageMap[imageNames[imageIndex]] || "";
+          });
+        }
       } else {
-        // 無圖則顯示檔名
-        cell1.textContent = imageList.join(", ");
-        row1.appendChild(cell1);
+        imgTd.textContent = imageNames[0]; // 顯示圖檔名稱
+      }
+      row1.appendChild(imgTd);
+
+      for (let i = 0; i < 7; i++) {
+        const td = document.createElement("td");
+        td.textContent = tsum.skill_desc?.[i] || "";
+        row1.appendChild(td);
       }
 
-      table.appendChild(row1);
-
+      // --- 第二列：名稱 (跨欄) ---
       const row2 = document.createElement("tr");
-      const cell2 = document.createElement("td");
-      cell2.classList.add("name-cell");
-      cell2.textContent = tsum.name;
-      row2.appendChild(cell2);
-      table.appendChild(row2);
+      row2.classList.add("name-row");
+      const nameTd = document.createElement("td");
+      nameTd.colSpan = 8;
+      nameTd.textContent = tsum.name;
+      row2.appendChild(nameTd);
+
+      tbody.appendChild(row1);
+      tbody.appendChild(row2);
     });
   </script>
 </body>
