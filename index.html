@@ -91,7 +91,9 @@
       tbody.innerHTML = "";
 
       tsumData
-        .filter(tsum => tsum.name.includes(filter))
+        .filter(tsum =>
+		tsum.name.includes(filter) || tsum.name_en?.toLowerCase().includes(filter.toLowerCase())
+		)
         .sort((a, b) => a.id - b.id)
         .forEach(tsum => {
           const imageNames = Array.isArray(tsum.image)
