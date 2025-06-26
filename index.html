@@ -70,7 +70,9 @@
 
   <!-- 搜尋框 -->
   <div id="search-container">
-    <input type="search" id="search" placeholder="🔍 輸入Tsum名稱...">
+    <input type="search" id="search" placeholder="🔍 輸入Tsum名稱..."
+	onfocus="this.placeholder=''" 
+	onblur="if(!this.value) this.placeholder='🔍 Search Tsum name...';">
   </div>
 
   <!-- 表格 -->
