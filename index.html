@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>🎵TsumTsum 列表</title>
   <style>
     table {
@@ -32,11 +32,6 @@
       word-wrap: break-word;
       white-space: normal;
     }
-    .skill-icon {
-      width: 30px;
-      height: 30px;
-      vertical-align: middle;
-    }
   </style>
 </head>
 <body>
@@ -65,13 +60,10 @@
     const imageMap = images;
     const iconMap = {};
 
-    // 將 littletsumData 轉為 { ^xxx^: base64 } 格式
-    (window.littletsumData || []).forEach(map => {
-      const key = Object.keys(map)[0];
-      const filename = map[key];
-      if (imageMap[filename]) {
-        iconMap[key] = imageMap[filename];
-      }
+    // 將 littletsumData 轉成 { '^xxx^': 'block_...png' }
+    window.littletsumData?.forEach(item => {
+      const key = Object.keys(item)[0];
+      iconMap[key] = item[key];
     });
 
     const tbody = document.getElementById("tsumBody");
@@ -80,11 +72,10 @@
       const imageNames = Array.isArray(tsum.image)
         ? tsum.image
         : tsum.image.split(",").map(s => s.trim());
-
       let imageIndex = 0;
       const hasImage = !!imageMap[imageNames[0]];
 
-      // --- 第一列：圖片 + 技能描述 ---
+      // 第一列：圖片 + 技能敘述
       const row1 = document.createElement("tr");
       const imgTd = document.createElement("td");
       imgTd.classList.add("img-cell");
@@ -96,12 +87,13 @@
 
         if (imageNames.length > 1) {
           let intervalId = null;
-
           img.addEventListener("mouseover", () => {
             intervalId = setInterval(() => {
               imageIndex = (imageIndex + 1) % imageNames.length;
               const nextImage = imageMap[imageNames[imageIndex]];
-              if (nextImage) img.src = nextImage;
+              if (nextImage) {
+                img.src = nextImage;
+              }
             }, 500);
           });
 
@@ -117,27 +109,30 @@
 
       row1.appendChild(imgTd);
 
-      // 技能描述欄
       for (let i = 0; i < 7; i++) {
         const td = document.createElement("td");
         td.classList.add("skill-desc");
 
         let desc = tsum.skill_desc?.[i] || "";
 
-        // 替換 ^xxx^ 為圖
-        Object.entries(iconMap).forEach(([key, base64]) => {
-          const imgTag = `<img src="${base64}" class="skill-icon">`;
-          desc = desc.replaceAll(key, imgTag);
-        });
+        // 替換圖標 ^xxx^ → <img>
+        for (const key in iconMap) {
+          const filename = iconMap[key];
+          const base64 = imageMap[filename];
+          if (base64) {
+            const imgTag = `<img src="${base64}" style="height:30px;vertical-align:middle;">`;
+            desc = desc.replaceAll(key, imgTag);
+          }
+        }
 
-        // 將空格換成換行
+        // 空格換行
         desc = desc.replaceAll(" ", "<br>");
 
         td.innerHTML = desc;
         row1.appendChild(td);
       }
 
-      // --- 第二列：名稱 ---
+      // 第二列：名稱跨欄
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
 
