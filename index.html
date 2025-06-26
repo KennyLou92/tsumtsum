@@ -18,9 +18,14 @@
       width: 50px;
       padding: 0;
     }
-    img {
+    img.tsum-img {
       width: 60px;
       height: 60px;
+    }
+    img.skill-icon {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
     }
     .name-row td {
       font-weight: bold;
@@ -58,31 +63,33 @@
 
   <script>
     const imageMap = images;
-    const littletsumMap = {};
+    const iconMap = {};
 
-    // 將 littletsumData 轉為方便查找的物件
-    if (Array.isArray(window.littletsumData)) {
-      window.littletsumData.forEach(entry => {
-        const key = Object.keys(entry)[0];
-        const file = entry[key];
-        if (imageMap[file]) {
-          littletsumMap[key] = imageMap[file];
-        }
-      });
-    }
+    // 整合 littletsumData 為 { ^508w^ : "block_xxx.png" }
+    window.littletsumData?.forEach(item => {
+      const key = Object.keys(item)[0];
+      iconMap[key] = item[key];
+    });
 
     const tbody = document.getElementById("tsumBody");
 
-    function renderSkillDesc(desc) {
+    // 處理技能描述中的圖示與換行
+    function processSkillDesc(desc) {
       if (!desc) return "";
-      return desc.replace(/\^.*?\^/g, match => {
-        const imgSrc = littletsumMap[match];
-        if (imgSrc) {
-          return `<img src="${imgSrc}" style="height: 30px; vertical-align: middle;">`;
-        } else {
-          return match;
+      // 取代圖示
+      Object.entries(iconMap).forEach(([key, filename]) => {
+        if (desc.includes(key)) {
+          const base64 = imageMap[filename];
+          if (base64) {
+            const imgTag = `<img src="${base64}" class="skill-icon">`;
+            desc = desc.replaceAll(key, imgTag);
+          } else {
+            desc = desc.replaceAll(key, filename);
+          }
         }
       });
+      // 換行（空格變換行）
+      return desc.replace(/ /g, "<br>");
     }
 
     tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
@@ -92,7 +99,7 @@
       let imageIndex = 0;
       const hasImage = !!imageMap[imageNames[0]];
 
-      // 第一列：圖片 + 技能敘述
+      // --- 第一列：圖片 + 技能描述 ---
       const row1 = document.createElement("tr");
 
       const imgTd = document.createElement("td");
@@ -100,6 +107,7 @@
 
       if (hasImage) {
         const img = document.createElement("img");
+        img.classList.add("tsum-img");
         img.src = imageMap[imageNames[0]];
         imgTd.appendChild(img);
 
@@ -125,17 +133,16 @@
       } else {
         imgTd.textContent = imageNames[0];
       }
-
       row1.appendChild(imgTd);
 
       for (let i = 0; i < 7; i++) {
         const td = document.createElement("td");
         td.classList.add("skill-desc");
-        td.innerHTML = renderSkillDesc(tsum.skill_desc?.[i] || "");
+        td.innerHTML = processSkillDesc(tsum.skill_desc?.[i] || "");
         row1.appendChild(td);
       }
 
-      // 第二列：名稱（對應欄）
+      // --- 第二列：名稱 ---
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
 
