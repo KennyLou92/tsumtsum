@@ -4,45 +4,76 @@
   <meta charset="UTF-8">
   <title>🎵TsumTsum 列表</title>
   <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #search-container {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 10px;
+      z-index: 999;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+
     table {
       border-collapse: collapse;
       width: 100%;
     }
+
     th, td {
       border: 1px solid #ccc;
       padding: 6px 10px;
       text-align: center;
       vertical-align: middle;
     }
+
     td.img-cell {
       width: 50px;
       padding: 0;
     }
+
     img {
       width: 70px;
       height: 70px;
     }
+
     .name-row td {
       font-weight: bold;
       text-align: center;
     }
+
     td.skill-desc {
       width: 70px;
       max-width: 70px;
       word-wrap: break-word;
       white-space: normal;
     }
-    #search {
-      width: 300px;
-      margin: 10px;
-      padding: 6px;
-      font-size: 16px;
+
+    td.skill-desc img {
+      height: 30px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <input type="search" id="search" placeholder="🔍 Search Tsum name...">
-  
+
+  <!-- 搜尋框 -->
+  <div id="search-container">
+    <input type="search" id="search" placeholder="🔍 輸入Tsum名稱...">
+  </div>
+
+  <!-- 表格 -->
   <table>
     <thead>
       <tr>
@@ -68,7 +99,6 @@
     const imageMap = images;
     const iconMap = {};
     const tbody = document.getElementById("tsumBody");
-    const searchInput = document.getElementById("search");
 
     if (Array.isArray(window.littletsumData)) {
       window.littletsumData.forEach(entry => {
@@ -78,99 +108,114 @@
       });
     }
 
-    function renderTable(filterText = "") {
+    function render(data) {
       tbody.innerHTML = "";
-      tsumData
-        .filter(tsum => tsum.name.includes(filterText))
-        .sort((a, b) => a.id - b.id)
-        .forEach(tsum => {
-          const imageNames = Array.isArray(tsum.image)
-            ? tsum.image
-            : tsum.image.split(",").map(s => s.trim());
-          let imageIndex = 0;
-          const hasImage = !!imageMap[imageNames[0]];
 
-          const row1 = document.createElement("tr");
-          const imgTd = document.createElement("td");
-          imgTd.classList.add("img-cell");
+      data.sort((a, b) => a.id - b.id).forEach(tsum => {
+        const imageNames = Array.isArray(tsum.image)
+          ? tsum.image
+          : tsum.image.split(",").map(s => s.trim());
 
-          if (hasImage) {
-            const img = document.createElement("img");
-            img.src = imageMap[imageNames[0]];
-            imgTd.appendChild(img);
+        let imageIndex = 0;
+        const hasImage = !!imageMap[imageNames[0]];
 
-            if (imageNames.length > 1) {
-              let intervalId = null;
-              img.addEventListener("mouseover", () => {
-                intervalId = setInterval(() => {
-                  imageIndex = (imageIndex + 1) % imageNames.length;
-                  const nextImage = imageMap[imageNames[imageIndex]];
-                  if (nextImage) {
-                    img.src = nextImage;
-                  }
-                }, 500);
-              });
-              img.addEventListener("mouseout", () => {
-                clearInterval(intervalId);
-                imageIndex = 0;
-                img.src = imageMap[imageNames[0]];
-              });
+        // --- 第一列 ---
+        const row1 = document.createElement("tr");
+        const imgTd = document.createElement("td");
+        imgTd.classList.add("img-cell");
+
+        if (hasImage) {
+          const img = document.createElement("img");
+          img.src = imageMap[imageNames[0]];
+          imgTd.appendChild(img);
+
+          if (imageNames.length > 1) {
+            let intervalId = null;
+
+            img.addEventListener("mouseover", () => {
+              intervalId = setInterval(() => {
+                imageIndex = (imageIndex + 1) % imageNames.length;
+                const nextImage = imageMap[imageNames[imageIndex]];
+                if (nextImage) {
+                  img.src = nextImage;
+                }
+              }, 500);
+            });
+
+            img.addEventListener("mouseout", () => {
+              clearInterval(intervalId);
+              imageIndex = 0;
+              img.src = imageMap[imageNames[0]];
+            });
+          }
+        } else {
+          imgTd.textContent = imageNames[0];
+        }
+        row1.appendChild(imgTd);
+
+        // 技能敘述
+        for (let i = 0; i < 7; i++) {
+          const td = document.createElement("td");
+          td.classList.add("skill-desc");
+
+          let desc = tsum.skill_desc?.[i] || "";
+
+          // 替換 ^xxx^ 為 <img>
+          for (const key in iconMap) {
+            const filename = iconMap[key];
+            const base64 = imageMap[filename];
+            if (base64) {
+              const imgTag = `<img src="${base64}">`;
+              desc = desc.replaceAll(key, imgTag);
             }
+          }
+
+          // 空格換行（不動圖片）
+          desc = desc
+            .split(/(<img.*?>)/)
+            .map(part => part.startsWith("<img") ? part : part.replaceAll(" ", "<br>"))
+            .join("");
+
+          td.innerHTML = desc;
+          row1.appendChild(td);
+        }
+
+        // --- 第二列：名稱 ---
+        const row2 = document.createElement("tr");
+        row2.classList.add("name-row");
+
+        for (let i = 0; i < 8; i++) {
+          const td = document.createElement("td");
+          if (i === 0) {
+            td.textContent = tsum.name;
           } else {
-            imgTd.textContent = imageNames[0];
+            td.textContent = "";
           }
+          row2.appendChild(td);
+        }
 
-          row1.appendChild(imgTd);
-
-          for (let i = 0; i < 7; i++) {
-            const td = document.createElement("td");
-            td.classList.add("skill-desc");
-
-            let desc = tsum.skill_desc?.[i] || "";
-
-            // 替換 ^xxx^ 為 <img>
-            for (const key in iconMap) {
-              const filename = iconMap[key];
-              const base64 = imageMap[filename];
-              if (base64) {
-                const imgTag = `<img src="${base64}" style="height:45px;vertical-align:middle;">`;
-                desc = desc.replaceAll(key, imgTag);
-              }
-            }
-
-            // 空格換 <br>，但不換 img 部分
-            desc = desc
-              .split(/(<img.*?>)/)
-              .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
-              .join('');
-
-            td.innerHTML = desc;
-            row1.appendChild(td);
-          }
-
-          const row2 = document.createElement("tr");
-          row2.classList.add("name-row");
-          for (let i = 0; i < 8; i++) {
-            const td = document.createElement("td");
-            if (i === 0) {
-              td.textContent = tsum.name;
-            } else {
-              td.textContent = "";
-            }
-            row2.appendChild(td);
-          }
-
-          tbody.appendChild(row1);
-          tbody.appendChild(row2);
-        });
+        tbody.appendChild(row1);
+        tbody.appendChild(row2);
+      });
     }
 
-    // 初始化顯示全部
-    renderTable();
+    // 初次渲染
+    render(tsumData);
 
-    // 搜尋即時篩選
+    // 搜尋功能
+    const searchInput = document.getElementById("search");
     searchInput.addEventListener("input", () => {
-      renderTable(searchInput.value.trim());
+      const keyword = searchInput.value.trim().toLowerCase();
+      if (!keyword) {
+        render(tsumData);
+        return;
+      }
+
+      const filtered = tsumData.filter(t =>
+        t.name?.toLowerCase().includes(keyword) ||
+        t.name_en?.toLowerCase().includes(keyword)
+      );
+      render(filtered);
     });
   </script>
 </body>
