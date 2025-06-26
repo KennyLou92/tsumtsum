@@ -32,9 +32,17 @@
       word-wrap: break-word;
       white-space: normal;
     }
+    #search {
+      width: 300px;
+      margin: 10px;
+      padding: 6px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
+  <input type="search" id="search" placeholder="🔍 Search Tsum name...">
+  
   <table>
     <thead>
       <tr>
@@ -59,8 +67,9 @@
   <script>
     const imageMap = images;
     const iconMap = {};
+    const tbody = document.getElementById("tsumBody");
+    const searchInput = document.getElementById("search");
 
-    // 轉換 littletsumData 為 { "^508w^": "block_woodypr_1_l.png", ... }
     if (Array.isArray(window.littletsumData)) {
       window.littletsumData.forEach(entry => {
         const key = Object.keys(entry)[0];
@@ -69,91 +78,99 @@
       });
     }
 
-    const tbody = document.getElementById("tsumBody");
+    function renderTable(filterText = "") {
+      tbody.innerHTML = "";
+      tsumData
+        .filter(tsum => tsum.name.includes(filterText))
+        .sort((a, b) => a.id - b.id)
+        .forEach(tsum => {
+          const imageNames = Array.isArray(tsum.image)
+            ? tsum.image
+            : tsum.image.split(",").map(s => s.trim());
+          let imageIndex = 0;
+          const hasImage = !!imageMap[imageNames[0]];
 
-    tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
-      const imageNames = Array.isArray(tsum.image)
-        ? tsum.image
-        : tsum.image.split(",").map(s => s.trim());
-      let imageIndex = 0;
-      const hasImage = !!imageMap[imageNames[0]];
+          const row1 = document.createElement("tr");
+          const imgTd = document.createElement("td");
+          imgTd.classList.add("img-cell");
 
-      // --- 第一列：圖片 + 技能描述 ---
-      const row1 = document.createElement("tr");
-
-      const imgTd = document.createElement("td");
-      imgTd.classList.add("img-cell");
-
-      if (hasImage) {
-        const img = document.createElement("img");
-        img.src = imageMap[imageNames[0]];
-        imgTd.appendChild(img);
-
-        if (imageNames.length > 1) {
-          let intervalId = null;
-          img.addEventListener("mouseover", () => {
-            intervalId = setInterval(() => {
-              imageIndex = (imageIndex + 1) % imageNames.length;
-              const nextImage = imageMap[imageNames[imageIndex]];
-              if (nextImage) {
-                img.src = nextImage;
-              }
-            }, 500);
-          });
-          img.addEventListener("mouseout", () => {
-            clearInterval(intervalId);
-            imageIndex = 0;
+          if (hasImage) {
+            const img = document.createElement("img");
             img.src = imageMap[imageNames[0]];
-          });
-        }
-      } else {
-        imgTd.textContent = imageNames[0];
-      }
+            imgTd.appendChild(img);
 
-      row1.appendChild(imgTd);
-
-      for (let i = 0; i < 7; i++) {
-        const td = document.createElement("td");
-        td.classList.add("skill-desc");
-
-        let desc = tsum.skill_desc?.[i] || "";
-
-        // 替換 ^xxx^ 為 <img src="...">
-        for (const key in iconMap) {
-          const filename = iconMap[key];
-          const base64 = imageMap[filename];
-          if (base64) {
-            const imgTag = `<img src="${base64}" style="height:45px;vertical-align:middle;">`;
-            desc = desc.replaceAll(key, imgTag);
+            if (imageNames.length > 1) {
+              let intervalId = null;
+              img.addEventListener("mouseover", () => {
+                intervalId = setInterval(() => {
+                  imageIndex = (imageIndex + 1) % imageNames.length;
+                  const nextImage = imageMap[imageNames[imageIndex]];
+                  if (nextImage) {
+                    img.src = nextImage;
+                  }
+                }, 500);
+              });
+              img.addEventListener("mouseout", () => {
+                clearInterval(intervalId);
+                imageIndex = 0;
+                img.src = imageMap[imageNames[0]];
+              });
+            }
+          } else {
+            imgTd.textContent = imageNames[0];
           }
-        }
 
-        // 將文字空格換行（不影響圖片）
-        desc = desc
-          .split(/(<img.*?>)/) // 保留圖片不換
-          .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
-          .join('');
+          row1.appendChild(imgTd);
 
-        td.innerHTML = desc;
-        row1.appendChild(td);
-      }
+          for (let i = 0; i < 7; i++) {
+            const td = document.createElement("td");
+            td.classList.add("skill-desc");
 
-      // --- 第二列：名稱 ---
-      const row2 = document.createElement("tr");
-      row2.classList.add("name-row");
+            let desc = tsum.skill_desc?.[i] || "";
 
-      for (let i = 0; i < 8; i++) {
-        const td = document.createElement("td");
-        if (i === 0) {
-          td.textContent = tsum.name;
-        } else {
-          td.textContent = "";
-        }
-        row2.appendChild(td);
-      }
+            // 替換 ^xxx^ 為 <img>
+            for (const key in iconMap) {
+              const filename = iconMap[key];
+              const base64 = imageMap[filename];
+              if (base64) {
+                const imgTag = `<img src="${base64}" style="height:45px;vertical-align:middle;">`;
+                desc = desc.replaceAll(key, imgTag);
+              }
+            }
 
-      tbody.appendChild(row1);
-      tbody.appendChild(row2);
+            // 空格換 <br>，但不換 img 部分
+            desc = desc
+              .split(/(<img.*?>)/)
+              .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
+              .join('');
+
+            td.innerHTML = desc;
+            row1.appendChild(td);
+          }
+
+          const row2 = document.createElement("tr");
+          row2.classList.add("name-row");
+          for (let i = 0; i < 8; i++) {
+            const td = document.createElement("td");
+            if (i === 0) {
+              td.textContent = tsum.name;
+            } else {
+              td.textContent = "";
+            }
+            row2.appendChild(td);
+          }
+
+          tbody.appendChild(row1);
+          tbody.appendChild(row2);
+        });
+    }
+
+    // 初始化顯示全部
+    renderTable();
+
+    // 搜尋即時篩選
+    searchInput.addEventListener("input", () => {
+      renderTable(searchInput.value.trim());
     });
   </script>
 </body>
