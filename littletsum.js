@@ -16,8 +16,8 @@ const littletsumData = [
 {"^648w^" : "block_rapunzelpr_2_l.png"},
 {"^524w^" : "block_arielpr_1_l.png"},
 {"^525w^" : "block_arielpr_2_l.png"},
-{ "782w" : "block_starwarsset_2_l.png"},
-{ "783w" : "block_starwarsset_3_l.png"},
-{ "784w" : "block_starwarsset_4_l.png"},
+{"^782w^" : "block_starwarsset_2_l.png"},
+{"^783w^" : "block_starwarsset_3_l.png"},
+{"^784w^" : "block_starwarsset_4_l.png"},
 ];
 window.littletsumData = littletsumData;
