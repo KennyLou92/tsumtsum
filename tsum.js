@@ -599,7 +599,7 @@
   { id: 598, name_en: "name_leona2", name: "盛會時裝雷歐納", image: "block_leona2_l.png" , skill_desc: ["範圍：XS 所需Tsum數：23", "範圍：S 所需Tsum數：22", "範圍：M 所需Tsum數：21", "範圍：L 所需Tsum數：20", "範圍：XL 所需Tsum數：19", "範圍：XXL 所需Tsum數：18"] },
   { id: 599, name_en: "name_riddlecm_charm", name: "新郎裝扮里鐸（飾品）", image: "block_riddlecm_l.png" , skill_desc: ["效果範圍：XS", "效果範圍：S", "效果範圍：M", "效果範圍：L", "效果範圍：XL", "效果範圍：XXL"] },
   { id: 600, name_en: "NAME_MICKEY11TH", name: "街頭造型米奇", image: "block_mickey11th_l.png" , skill_desc: ["範圍：XS 所需Tsum數：22", "範圍：XS 所需Tsum數：21", "範圍：XS 所需Tsum數：20", "範圍：XS 所需Tsum數：19", "範圍：XS 所需Tsum數：18", "範圍：XS 所需Tsum數：17"] },
-  { id: 600, name_en: "NAME_MAXPRIZE", name: "運動風麥斯", image: "block_max_l.png" , skill_desc: ["消除次數：1", "消除次數：2", "消除次數：3", "消除次數：4", "消除次數：5", "消除次數：6"] },
+  { id: 600, name_en: "NAME_MAXPRIZE", name: "運動風麥斯", image: "block_maxprize_l.png" , skill_desc: ["消除次數：1", "消除次數：2", "消除次數：3", "消除次數：4", "消除次數：5", "消除次數：6"] },
   { id: 601, name_en: "NAME_KAA", name: "卡奧", image: "block_kaa_l.png" , skill_desc: ["效果範圍：XS", "效果範圍：S", "效果範圍：M", "效果範圍：L", "效果範圍：XL", "效果範圍：XXL"] },
   { id: 602, name_en: "NAME_MINNIE11TH", name: "街頭造型米妮", image: "block_minnie11th_l.png" , skill_desc: ["效果範圍：XS", "效果範圍：S", "效果範圍：M", "效果範圍：L", "效果範圍：XL", "效果範圍：XXL"] },
   { id: 603, name_en: "NAME_ANGEL11TH", name: "街頭造型安琪", image: "block_angel11th_l.png" , skill_desc: ["範圍：XS 所需Tsum數：22", "範圍：S 所需Tsum數：21", "效果範圍：M 所需Tsum數：20", "效果範圍：L 所需Tsum數：19", "效果範圍：XL 所需Tsum數：18", "效果範圍：XXL 所需Tsum數：17"] },
