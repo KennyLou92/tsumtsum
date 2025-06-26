@@ -60,11 +60,14 @@
     const imageMap = images;
     const iconMap = {};
 
-    // 將 littletsumData 轉成 { '^xxx^': 'block_...png' }
-    window.littletsumData?.forEach(item => {
-      const key = Object.keys(item)[0];
-      iconMap[key] = item[key];
-    });
+    // 轉換 littletsumData 為 { "^508w^": "block_woodypr_1_l.png", ... }
+    if (Array.isArray(window.littletsumData)) {
+      window.littletsumData.forEach(entry => {
+        const key = Object.keys(entry)[0];
+        const val = entry[key];
+        iconMap[key] = val;
+      });
+    }
 
     const tbody = document.getElementById("tsumBody");
 
@@ -75,8 +78,9 @@
       let imageIndex = 0;
       const hasImage = !!imageMap[imageNames[0]];
 
-      // 第一列：圖片 + 技能敘述
+      // --- 第一列：圖片 + 技能描述 ---
       const row1 = document.createElement("tr");
+
       const imgTd = document.createElement("td");
       imgTd.classList.add("img-cell");
 
@@ -96,7 +100,6 @@
               }
             }, 500);
           });
-
           img.addEventListener("mouseout", () => {
             clearInterval(intervalId);
             imageIndex = 0;
@@ -115,7 +118,7 @@
 
         let desc = tsum.skill_desc?.[i] || "";
 
-        // 替換圖標 ^xxx^ → <img>
+        // 替換 ^xxx^ 為 <img src="...">
         for (const key in iconMap) {
           const filename = iconMap[key];
           const base64 = imageMap[filename];
@@ -125,20 +128,27 @@
           }
         }
 
-        // 空格換行
-        desc = desc.replaceAll(" ", "<br>");
+        // 將文字空格換行（不影響圖片）
+        desc = desc
+          .split(/(<img.*?>)/) // 保留圖片不換
+          .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
+          .join('');
 
         td.innerHTML = desc;
         row1.appendChild(td);
       }
 
-      // 第二列：名稱跨欄
+      // --- 第二列：名稱 ---
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
 
       for (let i = 0; i < 8; i++) {
         const td = document.createElement("td");
-        if (i === 0) td.textContent = tsum.name;
+        if (i === 0) {
+          td.textContent = tsum.name;
+        } else {
+          td.textContent = "";
+        }
         row2.appendChild(td);
       }
 
