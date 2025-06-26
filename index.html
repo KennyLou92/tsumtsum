@@ -26,12 +26,12 @@
       font-weight: bold;
       text-align: center;
     }
-	td.skill-desc {
-	  width: 60px;
-	  max-width: 60px;
-	  word-wrap: break-word;
-	  white-space: normal;
-	}
+    td.skill-desc {
+      width: 60px;
+      max-width: 60px;
+      word-wrap: break-word;
+      white-space: normal;
+    }
   </style>
 </head>
 <body>
@@ -54,10 +54,36 @@
   <!-- 載入資料 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
+  <script src="littletsum.js"></script>
 
   <script>
     const imageMap = images;
+    const littletsumMap = {};
+
+    // 將 littletsumData 轉為方便查找的物件
+    if (Array.isArray(window.littletsumData)) {
+      window.littletsumData.forEach(entry => {
+        const key = Object.keys(entry)[0];
+        const file = entry[key];
+        if (imageMap[file]) {
+          littletsumMap[key] = imageMap[file];
+        }
+      });
+    }
+
     const tbody = document.getElementById("tsumBody");
+
+    function renderSkillDesc(desc) {
+      if (!desc) return "";
+      return desc.replace(/\^.*?\^/g, match => {
+        const imgSrc = littletsumMap[match];
+        if (imgSrc) {
+          return `<img src="${imgSrc}" style="height: 30px; vertical-align: middle;">`;
+        } else {
+          return match;
+        }
+      });
+    }
 
     tsumData.sort((a, b) => a.id - b.id).forEach(tsum => {
       const imageNames = Array.isArray(tsum.image)
@@ -66,7 +92,7 @@
       let imageIndex = 0;
       const hasImage = !!imageMap[imageNames[0]];
 
-      // --- 第一列：圖片 + 技能描述 ---
+      // 第一列：圖片 + 技能敘述
       const row1 = document.createElement("tr");
 
       const imgTd = document.createElement("td");
@@ -105,11 +131,11 @@
       for (let i = 0; i < 7; i++) {
         const td = document.createElement("td");
         td.classList.add("skill-desc");
-        td.textContent = tsum.skill_desc?.[i] || "";
+        td.innerHTML = renderSkillDesc(tsum.skill_desc?.[i] || "");
         row1.appendChild(td);
       }
 
-      // --- 第二列：名稱對應欄位 ---
+      // 第二列：名稱（對應欄）
       const row2 = document.createElement("tr");
       row2.classList.add("name-row");
 
