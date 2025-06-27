@@ -24,28 +24,29 @@
     }
     td.img-cell {
       width: 60px;
-      padding: 0;
+      padding: 4px;
     }
-    img {
-      width: 70px;
-      height: 70px;
+    .img-cell img {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: 0 auto 4px;
     }
-    .skill-icon {
-      height: 30px;
-      vertical-align: middle;
-    }
-    .name-row td {
+    .name-label {
       font-weight: bold;
-      text-align: center;
-      border-top: none; /* 移除圖與名稱中間的邊框 */
+      display: block;
+      margin-top: 4px;
     }
-    td.skill-desc {
+    .skill-desc {
       width: 70px;
       max-width: 70px;
       word-wrap: break-word;
       white-space: normal;
     }
-
+    .skill-icon {
+      height: 30px;
+      vertical-align: middle;
+    }
     #search {
       position: sticky;
       top: 0;
@@ -56,7 +57,6 @@
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
-
     #darkToggle {
       position: fixed;
       bottom: 20px;
@@ -96,7 +96,6 @@
 
   <button id="darkToggle">🌙</button>
 
-  <!-- JS 資料 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
   <script src="littletsum.js"></script>
@@ -107,31 +106,34 @@
     const tbody = document.getElementById("tsumBody");
     const searchInput = document.getElementById("search");
 
-    // 轉換 littletsumData 為 { '^xxx^': 'block_img.png' }
     (window.littletsumData || []).forEach(item => {
       const key = Object.keys(item)[0];
       iconMap[key] = item[key];
     });
 
-    function render(filteredData) {
+    function render(data) {
       tbody.innerHTML = "";
-      filteredData.forEach(tsum => {
+      data.forEach(tsum => {
         const imageNames = Array.isArray(tsum.image)
           ? tsum.image
           : tsum.image.split(",").map(s => s.trim());
         let imageIndex = 0;
-        const hasImage = !!imageMap[imageNames[0]];
 
-        const row1 = document.createElement("tr");
+        const row = document.createElement("tr");
 
-        // Image cell (rowspan 2)
+        // 左圖 + 名稱欄位
         const imgTd = document.createElement("td");
-        imgTd.classList.add("img-cell");
-        imgTd.rowSpan = 2;
-        if (hasImage) {
+        imgTd.className = "img-cell";
+
+        if (imageMap[imageNames[0]]) {
           const img = document.createElement("img");
           img.src = imageMap[imageNames[0]];
           imgTd.appendChild(img);
+
+          const nameSpan = document.createElement("span");
+          nameSpan.className = "name-label";
+          nameSpan.textContent = tsum.name;
+          imgTd.appendChild(nameSpan);
 
           if (imageNames.length > 1) {
             let intervalId = null;
@@ -149,17 +151,17 @@
             });
           }
         } else {
-          imgTd.textContent = imageNames[0];
+          imgTd.textContent = imageNames[0] + "\n" + tsum.name;
         }
-        row1.appendChild(imgTd);
+        row.appendChild(imgTd);
 
-        // Skill desc
+        // 技能描述 1~7
         for (let i = 0; i < 7; i++) {
           const td = document.createElement("td");
           td.classList.add("skill-desc");
+
           let desc = tsum.skill_desc?.[i] || "";
 
-          // 替換圖示代碼為 <img>
           for (const key in iconMap) {
             const filename = iconMap[key];
             const base64 = imageMap[filename];
@@ -169,44 +171,31 @@
             }
           }
 
-          // 將空格替換成換行，但保留圖片標籤
-          desc = desc.split(/(<img.*?>)/).map(part =>
-            part.startsWith('<img') ? part : part.replaceAll(' ', '<br>')
-          ).join('');
+          desc = desc
+            .split(/(<img.*?>)/)
+            .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
+            .join('');
 
           td.innerHTML = desc;
-          row1.appendChild(td);
+          row.appendChild(td);
         }
 
-        // Name row
-        const row2 = document.createElement("tr");
-        row2.classList.add("name-row");
-        for (let i = 0; i < 7; i++) {
-          const td = document.createElement("td");
-          td.textContent = i === 6 ? tsum.name : "";
-          row2.appendChild(td);
-        }
-
-        tbody.appendChild(row1);
-        tbody.appendChild(row2);
+        tbody.appendChild(row);
       });
     }
 
-    // 初始 render
-    const sortedData = tsumData.sort((a, b) => a.id - b.id);
-    render(sortedData);
+    const sorted = tsumData.sort((a, b) => a.id - b.id);
+    render(sorted);
 
-    // 搜尋功能
     searchInput.addEventListener("input", () => {
-      const query = searchInput.value.trim().toLowerCase();
-      const filtered = sortedData.filter(tsum =>
-        tsum.name?.toLowerCase().includes(query) ||
-        tsum.name_en?.toLowerCase().includes(query)
+      const q = searchInput.value.trim().toLowerCase();
+      const filtered = sorted.filter(tsum =>
+        tsum.name?.toLowerCase().includes(q) ||
+        tsum.name_en?.toLowerCase().includes(q)
       );
       render(filtered);
     });
 
-    // 點擊 input 清空 placeholder
     searchInput.addEventListener("focus", () => {
       searchInput.placeholder = "";
     });
@@ -214,9 +203,7 @@
       if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
     });
 
-    // Dark mode toggle
-    const toggleBtn = document.getElementById("darkToggle");
-    toggleBtn.addEventListener("click", () => {
+    document.getElementById("darkToggle").addEventListener("click", () => {
       document.body.classList.toggle("dark");
     });
   </script>
