@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>🎵TsumTsum 列表</title>
   <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --border-color: #ccc;
+      --header-bg: #f9f9f9;
+    }
+
+    .dark {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --border-color: #444;
+      --header-bg: #1f1f1f;
+    }
+
     body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
       margin: 0;
       font-family: sans-serif;
     }
-    #searchContainer {
-      position: sticky;
-      top: 0;
-      background: white;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-      z-index: 10;
-    }
-    #searchInput {
-      padding: 6px 10px;
-      font-size: 16px;
-      width: 200px;
-    }
+
     table {
       border-collapse: collapse;
       width: 100%;
     }
+
     th, td {
-      border: 1px solid #ccc;
+      border: 1px solid var(--border-color);
       padding: 6px 10px;
       text-align: center;
       vertical-align: middle;
     }
+
+    thead {
+      background: var(--header-bg);
+    }
+
     td.img-cell {
       width: 50px;
       padding: 0;
     }
+
     img {
       width: 70px;
       height: 70px;
     }
+
     .name-row td {
       font-weight: bold;
       text-align: center;
     }
+
     td.skill-desc {
       width: 70px;
       max-width: 70px;
       word-wrap: break-word;
       white-space: normal;
     }
+
+    #searchContainer {
+      position: sticky;
+      top: 0;
+      background: var(--bg-color);
+      padding: 10px;
+      border-bottom: 1px solid var(--border-color);
+      z-index: 10;
+    }
+
+    #searchInput {
+      padding: 6px 10px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    #themeToggle {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 12px;
+      font-size: 14px;
+      background: var(--header-bg);
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 20;
+    }
   </style>
 </head>
 <body>
-
-  <!-- Sticky Search Bar -->
+  <!-- SearchBar -->
   <div id="searchContainer">
-    <input id="searchInput" type="text" placeholder="🔍 輸入Tsum名稱..." onfocus="this.placeholder=''" onblur="this.placeholder='🔍 輸入Tsum名稱...'" />
+    <input id="searchInput" type="text" placeholder="🔍 輸入Tsum名稱..." onfocus="this.placeholder=''" onblur="this.placeholder='🔍 輸入Tsum名稱...'">
   </div>
 
-  <!-- Table -->
   <table>
     <thead>
       <tr>
@@ -74,6 +114,9 @@
     </thead>
     <tbody id="tsumBody"></tbody>
   </table>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="themeToggle">🌙 Dark Mode</button>
 
   <!-- Scripts -->
   <script src="tsum.js"></script>
@@ -91,16 +134,17 @@
     }
 
     const tbody = document.getElementById("tsumBody");
-    const searchInput = document.getElementById("searchInput");
 
-    function render(filter = "") {
+    function render(filterText = "") {
       tbody.innerHTML = "";
+      const keyword = filterText.trim().toLowerCase();
 
       tsumData
-        .filter(tsum => 
-          tsum.name.includes(filter) ||
-          tsum.name_en?.toLowerCase().includes(filter.toLowerCase())
-        )
+        .filter(tsum => {
+          const name = tsum.name || "";
+          const nameEn = tsum.name_en || "";
+          return name.toLowerCase().includes(keyword) || nameEn.toLowerCase().includes(keyword);
+        })
         .sort((a, b) => a.id - b.id)
         .forEach(tsum => {
           const imageNames = Array.isArray(tsum.image)
@@ -109,7 +153,6 @@
           let imageIndex = 0;
           const hasImage = !!imageMap[imageNames[0]];
 
-          // Row 1: Image + Skill Desc
           const row1 = document.createElement("tr");
           const imgTd = document.createElement("td");
           imgTd.classList.add("img-cell");
@@ -125,9 +168,7 @@
                 intervalId = setInterval(() => {
                   imageIndex = (imageIndex + 1) % imageNames.length;
                   const nextImage = imageMap[imageNames[imageIndex]];
-                  if (nextImage) {
-                    img.src = nextImage;
-                  }
+                  if (nextImage) img.src = nextImage;
                 }, 500);
               });
               img.addEventListener("mouseout", () => {
@@ -139,7 +180,6 @@
           } else {
             imgTd.textContent = imageNames[0];
           }
-
           row1.appendChild(imgTd);
 
           for (let i = 0; i < 7; i++) {
@@ -157,17 +197,15 @@
               }
             }
 
-            // Keep <img> intact and wrap other text
             desc = desc
               .split(/(<img.*?>)/)
-              .map(part => part.startsWith("<img") ? part : part.replaceAll(" ", "<br>"))
-              .join("");
+              .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
+              .join('');
 
             td.innerHTML = desc;
             row1.appendChild(td);
           }
 
-          // Row 2: Name
           const row2 = document.createElement("tr");
           row2.classList.add("name-row");
           for (let i = 0; i < 8; i++) {
@@ -176,6 +214,7 @@
               td.textContent = tsum.name;
             } else {
               td.textContent = "";
+              td.style.borderTop = "none";
             }
             row2.appendChild(td);
           }
@@ -185,11 +224,26 @@
         });
     }
 
-    searchInput.addEventListener("input", () => {
-      render(searchInput.value.trim());
+    render();
+
+    // 搜索功能
+    document.getElementById("searchInput").addEventListener("input", e => {
+      render(e.target.value);
     });
 
-    render(); // Initial render
+    // 主題切換功能
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      const isDark = document.body.classList.contains("dark");
+      themeToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+
+    // 根據系統偏好自動啟用 dark mode
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add("dark");
+      themeToggle.textContent = "☀️ Light Mode";
+    }
   </script>
 </body>
 </html>
