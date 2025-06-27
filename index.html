@@ -47,16 +47,18 @@
       height: 30px;
       vertical-align: middle;
     }
-    #search {
-      position: sticky;
-      top: 0;
-      padding: 10px;
-      width: 100%;
-      font-size: 16px;
-      z-index: 100;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
+	#search {
+	  position: sticky;
+	  top: 0;
+	  padding: 10px;
+	  width: 300px;         /* ✅ 改為固定寬度 */
+	  margin: 10px auto;    /* ✅ 置中 */
+	  display: block;       /* ✅ 讓 margin auto 生效 */
+	  font-size: 16px;
+	  z-index: 100;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
     #darkToggle {
       position: fixed;
       bottom: 20px;
