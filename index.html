@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>🎵TsumTsum 列表</title>
   <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #000000;
-      --border-color: #ccc;
-      --header-bg: #f9f9f9;
-    }
-
-    .dark {
-      --bg-color: #121212;
-      --text-color: #f0f0f0;
-      --border-color: #444;
-      --header-bg: #1f1f1f;
-    }
-
     body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
+      transition: background 0.3s, color 0.3s;
     }
-
+    body.dark {
+      background-color: #222;
+      color: #eee;
+    }
     table {
       border-collapse: collapse;
       width: 100%;
     }
-
     th, td {
-      border: 1px solid var(--border-color);
+      border: 1px solid #ccc;
       padding: 6px 10px;
       text-align: center;
       vertical-align: middle;
     }
-
-    thead {
-      background: var(--header-bg);
-    }
-
     td.img-cell {
-      width: 50px;
+      width: 60px;
       padding: 0;
     }
-
     img {
       width: 70px;
       height: 70px;
     }
-
+    .skill-icon {
+      height: 30px;
+      vertical-align: middle;
+    }
     .name-row td {
       font-weight: bold;
       text-align: center;
+      border-top: none; /* 移除圖與名稱中間的邊框 */
     }
-
     td.skill-desc {
       width: 70px;
       max-width: 70px;
@@ -63,41 +46,37 @@
       white-space: normal;
     }
 
-    #searchContainer {
+    #search {
       position: sticky;
       top: 0;
-      background: var(--bg-color);
       padding: 10px;
-      border-bottom: 1px solid var(--border-color);
-      z-index: 10;
-    }
-
-    #searchInput {
-      padding: 6px 10px;
+      width: 100%;
       font-size: 16px;
-      width: 200px;
+      z-index: 100;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
     }
 
-    #themeToggle {
+    #darkToggle {
       position: fixed;
-      bottom: 15px;
-      right: 15px;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
       padding: 8px 12px;
-      font-size: 14px;
-      background: var(--header-bg);
-      color: var(--text-color);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
+      border: none;
+      border-radius: 20px;
       cursor: pointer;
-      z-index: 20;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    body.dark #darkToggle {
+      background: #eee;
+      color: #111;
     }
   </style>
 </head>
 <body>
-  <!-- SearchBar -->
-  <div id="searchContainer">
-    <input id="searchInput" type="text" placeholder="🔍 輸入Tsum名稱..." onfocus="this.placeholder=''" onblur="this.placeholder='🔍 輸入Tsum名稱...'">
-  </div>
+  <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
 
   <table>
     <thead>
@@ -115,10 +94,9 @@
     <tbody id="tsumBody"></tbody>
   </table>
 
-  <!-- Dark Mode Toggle Button -->
-  <button id="themeToggle">🌙 Dark Mode</button>
+  <button id="darkToggle">🌙</button>
 
-  <!-- Scripts -->
+  <!-- JS 資料 -->
   <script src="tsum.js"></script>
   <script src="images.js"></script>
   <script src="littletsum.js"></script>
@@ -126,124 +104,121 @@
   <script>
     const imageMap = images;
     const iconMap = {};
-    if (Array.isArray(window.littletsumData)) {
-      window.littletsumData.forEach(entry => {
-        const key = Object.keys(entry)[0];
-        iconMap[key] = entry[key];
+    const tbody = document.getElementById("tsumBody");
+    const searchInput = document.getElementById("search");
+
+    // 轉換 littletsumData 為 { '^xxx^': 'block_img.png' }
+    (window.littletsumData || []).forEach(item => {
+      const key = Object.keys(item)[0];
+      iconMap[key] = item[key];
+    });
+
+    function render(filteredData) {
+      tbody.innerHTML = "";
+      filteredData.forEach(tsum => {
+        const imageNames = Array.isArray(tsum.image)
+          ? tsum.image
+          : tsum.image.split(",").map(s => s.trim());
+        let imageIndex = 0;
+        const hasImage = !!imageMap[imageNames[0]];
+
+        const row1 = document.createElement("tr");
+
+        // Image cell (rowspan 2)
+        const imgTd = document.createElement("td");
+        imgTd.classList.add("img-cell");
+        imgTd.rowSpan = 2;
+        if (hasImage) {
+          const img = document.createElement("img");
+          img.src = imageMap[imageNames[0]];
+          imgTd.appendChild(img);
+
+          if (imageNames.length > 1) {
+            let intervalId = null;
+            img.addEventListener("mouseover", () => {
+              intervalId = setInterval(() => {
+                imageIndex = (imageIndex + 1) % imageNames.length;
+                const next = imageMap[imageNames[imageIndex]];
+                if (next) img.src = next;
+              }, 500);
+            });
+            img.addEventListener("mouseout", () => {
+              clearInterval(intervalId);
+              img.src = imageMap[imageNames[0]];
+              imageIndex = 0;
+            });
+          }
+        } else {
+          imgTd.textContent = imageNames[0];
+        }
+        row1.appendChild(imgTd);
+
+        // Skill desc
+        for (let i = 0; i < 7; i++) {
+          const td = document.createElement("td");
+          td.classList.add("skill-desc");
+          let desc = tsum.skill_desc?.[i] || "";
+
+          // 替換圖示代碼為 <img>
+          for (const key in iconMap) {
+            const filename = iconMap[key];
+            const base64 = imageMap[filename];
+            if (base64) {
+              const imgTag = `<img src="${base64}" class="skill-icon">`;
+              desc = desc.replaceAll(key, imgTag);
+            }
+          }
+
+          // 將空格替換成換行，但保留圖片標籤
+          desc = desc.split(/(<img.*?>)/).map(part =>
+            part.startsWith('<img') ? part : part.replaceAll(' ', '<br>')
+          ).join('');
+
+          td.innerHTML = desc;
+          row1.appendChild(td);
+        }
+
+        // Name row
+        const row2 = document.createElement("tr");
+        row2.classList.add("name-row");
+        for (let i = 0; i < 7; i++) {
+          const td = document.createElement("td");
+          td.textContent = i === 6 ? tsum.name : "";
+          row2.appendChild(td);
+        }
+
+        tbody.appendChild(row1);
+        tbody.appendChild(row2);
       });
     }
 
-    const tbody = document.getElementById("tsumBody");
+    // 初始 render
+    const sortedData = tsumData.sort((a, b) => a.id - b.id);
+    render(sortedData);
 
-    function render(filterText = "") {
-      tbody.innerHTML = "";
-      const keyword = filterText.trim().toLowerCase();
-
-      tsumData
-        .filter(tsum => {
-          const name = tsum.name || "";
-          const nameEn = tsum.name_en || "";
-          return name.toLowerCase().includes(keyword) || nameEn.toLowerCase().includes(keyword);
-        })
-        .sort((a, b) => a.id - b.id)
-        .forEach(tsum => {
-          const imageNames = Array.isArray(tsum.image)
-            ? tsum.image
-            : tsum.image.split(",").map(s => s.trim());
-          let imageIndex = 0;
-          const hasImage = !!imageMap[imageNames[0]];
-
-          const row1 = document.createElement("tr");
-          const imgTd = document.createElement("td");
-          imgTd.classList.add("img-cell");
-
-          if (hasImage) {
-            const img = document.createElement("img");
-            img.src = imageMap[imageNames[0]];
-            imgTd.appendChild(img);
-
-            if (imageNames.length > 1) {
-              let intervalId = null;
-              img.addEventListener("mouseover", () => {
-                intervalId = setInterval(() => {
-                  imageIndex = (imageIndex + 1) % imageNames.length;
-                  const nextImage = imageMap[imageNames[imageIndex]];
-                  if (nextImage) img.src = nextImage;
-                }, 500);
-              });
-              img.addEventListener("mouseout", () => {
-                clearInterval(intervalId);
-                imageIndex = 0;
-                img.src = imageMap[imageNames[0]];
-              });
-            }
-          } else {
-            imgTd.textContent = imageNames[0];
-          }
-          row1.appendChild(imgTd);
-
-          for (let i = 0; i < 7; i++) {
-            const td = document.createElement("td");
-            td.classList.add("skill-desc");
-
-            let desc = tsum.skill_desc?.[i] || "";
-
-            for (const key in iconMap) {
-              const filename = iconMap[key];
-              const base64 = imageMap[filename];
-              if (base64) {
-                const imgTag = `<img src="${base64}" style="height:30px;width:30px;vertical-align:middle;">`;
-                desc = desc.replaceAll(key, imgTag);
-              }
-            }
-
-            desc = desc
-              .split(/(<img.*?>)/)
-              .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
-              .join('');
-
-            td.innerHTML = desc;
-            row1.appendChild(td);
-          }
-
-          const row2 = document.createElement("tr");
-          row2.classList.add("name-row");
-          for (let i = 0; i < 8; i++) {
-            const td = document.createElement("td");
-            if (i === 0) {
-              td.textContent = tsum.name;
-            } else {
-              td.textContent = "";
-              td.style.borderTop = "none";
-            }
-            row2.appendChild(td);
-          }
-
-          tbody.appendChild(row1);
-          tbody.appendChild(row2);
-        });
-    }
-
-    render();
-
-    // 搜索功能
-    document.getElementById("searchInput").addEventListener("input", e => {
-      render(e.target.value);
+    // 搜尋功能
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.trim().toLowerCase();
+      const filtered = sortedData.filter(tsum =>
+        tsum.name?.toLowerCase().includes(query) ||
+        tsum.name_en?.toLowerCase().includes(query)
+      );
+      render(filtered);
     });
 
-    // 主題切換功能
-    const themeToggle = document.getElementById("themeToggle");
-    themeToggle.addEventListener("click", () => {
+    // 點擊 input 清空 placeholder
+    searchInput.addEventListener("focus", () => {
+      searchInput.placeholder = "";
+    });
+    searchInput.addEventListener("blur", () => {
+      if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
+    });
+
+    // Dark mode toggle
+    const toggleBtn = document.getElementById("darkToggle");
+    toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark");
-      const isDark = document.body.classList.contains("dark");
-      themeToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
     });
-
-    // 根據系統偏好自動啟用 dark mode
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add("dark");
-      themeToggle.textContent = "☀️ Light Mode";
-    }
   </script>
 </body>
 </html>
