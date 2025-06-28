@@ -19,5 +19,16 @@ const littletsumData = [
 {"^782w^" : "block_starwarsset_2_l.png"},
 {"^783w^" : "block_starwarsset_3_l.png"},
 {"^784w^" : "block_starwarsset_4_l.png"},
+{"^750w^" : "block_mickeyset_1_l.png"},
+{"^751w^" : "block_mickeyset_2_l.png"},
+{"^752w^" : "block_mickeyset_3_l.png"},
+{"^753w^" : "block_mickeyset_4_l.png"},
+{"^761w^" : "block_elsa2pr_1_l.png"},
+{"^762w^" : "block_elsa2pr_2_l.png"},
+{"^744w^" : "block_jackpr_1_l.png"},
+{"^745w^" : "block_jackpr_2_l.png"},
+{"^744w^" : "block_jackpr_1_l.png"},
+{"^691w^" : "block_vaderpr_1_l.png"},
+{"^692w^" : "block_vaderpr_2_l.png"},
 ];
 window.littletsumData = littletsumData;
