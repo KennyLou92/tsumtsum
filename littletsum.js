@@ -19,7 +19,7 @@ const littletsumData = [
 {"^782w^" : "block_starwarsset_2_l.png"},
 {"^783w^" : "block_starwarsset_3_l.png"},
 {"^784w^" : "block_starwarsset_4_l.png"},
-{"^750w^" : "block_mickeyset_1_l.png"},
+{"^750w^" : "block_mickeyset_l.png"},
 {"^751w^" : "block_mickeyset_2_l.png"},
 {"^752w^" : "block_mickeyset_3_l.png"},
 {"^753w^" : "block_mickeyset_4_l.png"},
