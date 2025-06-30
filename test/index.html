@@ -68,25 +68,9 @@
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
-    #darkToggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #333;
-      color: #fff;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    }
-    body.dark #darkToggle {
-      background: #eee;
-      color: #111;
-    }
   </style>
 </head>
-<body>
+<body class="dark">
   <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
 
   <table>
@@ -104,8 +88,6 @@
     </thead>
     <tbody id="tsumBody"></tbody>
   </table>
-
-  <button id="darkToggle">🌙</button>
 
   <script src="tsum.js"></script>
   <script src="images.js"></script>
@@ -227,10 +209,6 @@
     });
     searchInput.addEventListener("blur", () => {
       if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
-    });
-
-    document.getElementById("darkToggle").addEventListener("click", () => {
-      document.body.classList.toggle("dark");
     });
   </script>
 </body>
