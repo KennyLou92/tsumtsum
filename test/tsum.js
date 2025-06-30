@@ -12,7 +12,7 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_mickey.png"
+    "skill_label": "win_tsumskill_mickeyx.png"
   },
   {
     "id": 2,
