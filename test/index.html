@@ -162,7 +162,7 @@
         const labelKey = tsum.skill_label;
         if (labelKey && imageMap[labelKey]) {
           const labelImg = document.createElement("img");
-          labelImg.src = imageMap[labelKey];
+          labelImg.src = skillLabelMap[labelKey];
           labelImg.className = "skill-icon";
           labelTd.appendChild(labelImg);
         } else {
