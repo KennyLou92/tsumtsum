@@ -160,7 +160,7 @@
         // skill_label 圖示欄位
         const labelTd = document.createElement("td");
         const labelKey = tsum.skill_label;
-        if (labelKey && imageMap[labelKey]) {
+        if (labelKey && skillLabelMap[labelKey]) {
           const labelImg = document.createElement("img");
           labelImg.src = skillLabelMap[labelKey];
           labelImg.className = "skill-icon";
@@ -179,7 +179,7 @@
 
           for (const key in iconMap) {
             const filename = iconMap[key];
-            const base64 = imageMap[filename];
+            const base64 = skillLabelMap[filename];
             if (base64) {
               const imgTag = `<img src="${base64}" class="skill-icon">`;
               desc = desc.replaceAll(key, imgTag);
