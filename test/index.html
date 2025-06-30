@@ -47,6 +47,16 @@
       height: 30px;
       vertical-align: middle;
     }
+    .label-icon {
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin: 0 auto;
+    }
+    td.label-cell, th.label-cell {
+      width: 70px;
+      max-width: 70px;
+    }
     #search {
       position: sticky;
       top: 0;
@@ -82,8 +92,8 @@
   <table>
     <thead>
       <tr>
-        <th></th>
-        <th>Label</th>
+        <th>Tsum</th>
+        <th class="label-cell">Tsum技能</th>
         <th>SLv1</th>
         <th>SLv2</th>
         <th>SLv3</th>
@@ -159,11 +169,12 @@
 
         // skill_label 圖示欄位
         const labelTd = document.createElement("td");
+        labelTd.className = "label-cell";
         const labelKey = tsum.skill_label;
         if (labelKey && skillLabelMap[labelKey]) {
           const labelImg = document.createElement("img");
           labelImg.src = skillLabelMap[labelKey];
-          labelImg.className = "skill-icon";
+          labelImg.className = "label-icon";
           labelTd.appendChild(labelImg);
         } else {
           labelTd.textContent = labelKey || "";
@@ -179,7 +190,7 @@
 
           for (const key in iconMap) {
             const filename = iconMap[key];
-            const base64 = skillLabelMap[filename];
+            const base64 = imageMap[filename];
             if (base64) {
               const imgTag = `<img src="${base64}" class="skill-icon">`;
               desc = desc.replaceAll(key, imgTag);
