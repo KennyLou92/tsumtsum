@@ -47,58 +47,51 @@
       height: 30px;
       vertical-align: middle;
     }
-	#search {
-	  position: sticky;
-	  top: 0;
-	  padding: 10px;
-	  width: 300px;         /* 固定寬度 */
-	  margin: 10px 0 10px 20px; /* 左側略有間距，偏左 */
-	  font-size: 16px;
-	  z-index: 100;
-	  border: 1px solid #ccc;
-	  box-sizing: border-box;
-	}
-    #darkToggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #333;
-      color: #fff;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    .label-icon {
+      width: 200px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
     }
-    body.dark #darkToggle {
-      background: #eee;
-      color: #111;
+    td.label-cell, th.label-cell {
+      width: 70px;
+      max-width: 70px;
+    }
+    #search {
+      position: sticky;
+      top: 0;
+      padding: 10px;
+      width: 300px;
+      margin: 10px 0 10px 20px;
+      font-size: 16px;
+      z-index: 100;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
     }
   </style>
 </head>
-<body>
+<body class="dark">
   <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
 
   <table>
     <thead>
       <tr>
-        <th></th>
+        <th>Tsum</th>
+        <th class="label-cell">Tsum技能</th>
         <th>SLv1</th>
         <th>SLv2</th>
         <th>SLv3</th>
         <th>SLv4</th>
         <th>SLv5</th>
         <th>SLv6</th>
-        <th></th>
       </tr>
     </thead>
     <tbody id="tsumBody"></tbody>
   </table>
 
-  <button id="darkToggle">🌙</button>
-
   <script src="tsum.js"></script>
   <script src="images.js"></script>
+  <script src="skilllabel.js"></script>
   <script src="littletsum.js"></script>
 
   <script>
@@ -156,8 +149,22 @@
         }
         row.appendChild(imgTd);
 
-        // 技能描述 1~7
-        for (let i = 0; i < 7; i++) {
+        // skill_label 圖示欄位
+        const labelTd = document.createElement("td");
+        labelTd.className = "label-cell";
+        const labelKey = tsum.skill_label;
+        if (labelKey && skillLabelMap[labelKey]) {
+          const labelImg = document.createElement("img");
+          labelImg.src = skillLabelMap[labelKey];
+          labelImg.className = "label-icon";
+          labelTd.appendChild(labelImg);
+        } else {
+          labelTd.textContent = labelKey || "";
+        }
+        row.appendChild(labelTd);
+
+        // 技能描述 SLv1 ~ SLv6
+        for (let i = 0; i < 6; i++) {
           const td = document.createElement("td");
           td.classList.add("skill-desc");
 
@@ -202,10 +209,6 @@
     });
     searchInput.addEventListener("blur", () => {
       if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
-    });
-
-    document.getElementById("darkToggle").addEventListener("click", () => {
-      document.body.classList.toggle("dark");
     });
   </script>
 </body>
