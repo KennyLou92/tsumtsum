@@ -1617,7 +1617,7 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_chiph2015sp.png"
+    "skill_label": "win_tsumskill_chiph2015.png"
   },
   {
     "id": 109,
