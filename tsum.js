@@ -9017,7 +9017,7 @@ const tsumData = [
     "skill_label": "win_tsumskill_mickey11th.png"
   },
   {
-    "id": 600,
+    "id": 601,
     "name_en": "NAME_MAXPRIZE",
     "name": "運動風麥斯",
     "image": "block_maxprize_l.png",
@@ -9032,7 +9032,7 @@ const tsumData = [
     "skill_label": "win_tsumskill_maxprize.png"
   },
   {
-    "id": 601,
+    "id": 602,
     "name_en": "NAME_KAA",
     "name": "卡奧",
     "image": "block_kaa_l.png",
@@ -9047,7 +9047,7 @@ const tsumData = [
     "skill_label": "win_tsumskill_kaa.png"
   },
   {
-    "id": 602,
+    "id": 603,
     "name_en": "NAME_MINNIE11TH",
     "name": "街頭造型米妮",
     "image": "block_minnie11th_l.png",
@@ -9062,7 +9062,7 @@ const tsumData = [
     "skill_label": "win_tsumskill_minnie11th.png"
   },
   {
-    "id": 603,
+    "id": 604,
     "name_en": "NAME_ANGEL11TH",
     "name": "街頭造型安琪",
     "image": "block_angel11th_l.png",
@@ -9077,7 +9077,7 @@ const tsumData = [
     "skill_label": "win_tsumskill_angel11th.png"
   },
   {
-    "id": 603,
+    "id": 605,
     "name_en": "NAME_STITCH11TH",
     "name": "街頭造型史迪奇",
     "image": "block_stitch11th_l.png",
