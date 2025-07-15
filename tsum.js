@@ -112,9 +112,6 @@ const tsumData = [
       "效果時間：4秒",
       "效果時間：4.2秒",
       "效果時間：4.5秒",
-      "效果時間：5秒",
-      "效果時間：5.5秒",
-      "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_pooh.png",
 	"skill_cost" : [1,2,4]
