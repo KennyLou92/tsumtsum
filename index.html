@@ -6,9 +6,6 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      transition: background 0.3s, color 0.3s;
-    }
-    body.dark {
       background-color: #222;
       color: #eee;
     }
@@ -57,21 +54,39 @@
       width: 80px;
       max-width: 80px;
     }
-    #search {
+    #search-wrapper {
       position: sticky;
       top: 0;
-      padding: 10px;
-      width: 300px;
-      margin: 10px 0 10px 20px;
-      font-size: 16px;
+      background: #222;
+      padding: 10px 20px;
       z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #search {
+      width: 300px;
+      padding: 8px;
+      font-size: 16px;
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
+    #resetSearch {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    #resetSearch:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
-<body class="dark">
-  <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
+<body>
+  <div id="search-wrapper">
+    <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
+    <img id="resetSearch" src="https://i.postimg.cc/6pVSz87S/win-batsu-s.png" alt="清除搜尋" />
+  </div>
 
   <table>
     <thead>
@@ -204,9 +219,16 @@
       render(filtered);
     });
 
+    document.getElementById("resetSearch").addEventListener("click", () => {
+      searchInput.value = "";
+      render(sorted);
+      searchInput.placeholder = "🔍 輸入Tsum名稱...";
+    });
+
     searchInput.addEventListener("focus", () => {
       searchInput.placeholder = "";
     });
+
     searchInput.addEventListener("blur", () => {
       if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
     });
