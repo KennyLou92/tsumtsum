@@ -2335,7 +2335,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_elsac.png"
+    "skill_label": "win_tsumskill_elsac.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 155,
@@ -2350,7 +2351,8 @@ const tsumData = [
       "所需Tsum數：13",
       "所需Tsum數：11"
     ],
-    "skill_label": "win_tsumskill_annac.png"
+    "skill_label": "win_tsumskill_annac.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 156,
