@@ -809,11 +809,10 @@ const tsumData = [
       "效果時間：4.5秒",
       "效果時間：5秒",
       "效果時間：5.5秒",
-      "效果時間：6秒",
-      "效果時間：6.5秒",
       ""
     ],
-    "skill_label": "win_tsumskill_donaldx.png"
+    "skill_label": "win_tsumskill_donaldx.png",
+	"skill_cost" : [1,2,3]
   },
   {
     "id": 56,
@@ -825,10 +824,9 @@ const tsumData = [
       "效果範圍：S",
       "效果範圍：M",
       "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_daisyx.png"
+    "skill_label": "win_tsumskill_daisyx.png",
+	"skill_cost" : [1,1,2,3]
   },
   {
     "id": 57,
@@ -839,11 +837,10 @@ const tsumData = [
       "消除數：14",
       "消除數：16",
       "消除數：17",
-      "消除數：18",
-      "消除數：19",
       ""
     ],
-    "skill_label": "win_tsumskill_goofyx.png"
+    "skill_label": "win_tsumskill_goofyx.png",
+	"skill_cost" : [1,2,3]
   },
   {
     "id": 58,
@@ -854,11 +851,9 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_plutox.png"
+    "skill_label": "win_tsumskill_plutox.png",
+	"skill_cost" : [1,2,3]
   },
   {
     "id": 59,
@@ -873,7 +868,8 @@ const tsumData = [
       "變化Tsum數：4～5",
       "變化Tsum數：5"
     ],
-    "skill_label": "win_tsumskill_baymax.png"
+    "skill_label": "win_tsumskill_baymax.png",
+	"skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 60,
