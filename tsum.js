@@ -434,7 +434,8 @@ const tsumData = [
       "效果範圍：M",
       "效果範圍：L",
       "效果範圍：XL",
-      "效果範圍：XXL"
+      "效果範圍：XXL",
+	  "skill_cost" : [1,2,3,4,6,20]
     ],
     "skill_label": "win_tsumskill_youngoyster.png"
   },
@@ -449,7 +450,8 @@ const tsumData = [
       "效果範圍：M",
       "效果範圍：L",
       "效果範圍：XL",
-      "效果範圍：XXL"
+      "效果範圍：XXL",
+	  "skill_cost" : [1,2,3,4,6,18]
     ],
     "skill_label": "win_tsumskill_olaf.png"
   },
@@ -464,7 +466,8 @@ const tsumData = [
       "消除數：3～6",
       "消除數：4～7",
       "消除數：5～8",
-      "消除數：6～9"
+      "消除數：6～9",
+	  "skill_cost" : [1,2,3,4,6,16]
     ],
     "skill_label": "win_tsumskill_bambi.png"
   },
@@ -479,7 +482,8 @@ const tsumData = [
       "效果範圍：M",
       "效果範圍：L",
       "效果範圍：XL",
-      "效果範圍：XXL"
+      "效果範圍：XXL",
+	  "skill_cost" : [1,2,3,4,6,18]
     ],
     "skill_label": "win_tsumskill_thumper.png"
   },
@@ -494,7 +498,8 @@ const tsumData = [
       "出現數量：4～5",
       "出現數量：5",
       "出現數量：5～6",
-      "出現數量：6"
+      "出現數量：6",
+	  "skill_cost" : [1,2,3,4,6,18]
     ],
     "skill_label": "win_tsumskill_missbunny.png"
   },
@@ -509,7 +514,8 @@ const tsumData = [
       "效果時間：4.3秒",
       "效果時間：4.9秒",
       "效果時間：5.4秒",
-      "效果時間：6秒"
+      "效果時間：6秒",
+	  "skill_cost" : [1,2,3,4,6,20]
     ],
     "skill_label": "win_tsumskill_maleficent.png"
   },
