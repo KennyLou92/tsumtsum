@@ -325,7 +325,7 @@ const tsumData = [
       "效果時間：4.8秒",
       "效果時間：5秒"
     ],
-    "skill_label": "win_tsumskill_jack.png"
+    "skill_label": "win_tsumskill_jack.png",
 	"skill_cost" : [1,2,3,4,6,16]
   },
   {
@@ -357,7 +357,7 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_dumbo.png"
+    "skill_label": "win_tsumskill_dumbo.png",
 	"skill_cost" : [1,2,3,4,6,18]
   },
   {
@@ -387,9 +387,9 @@ const tsumData = [
       "分數：相當於13個Tsum",
       "分數：相當於14個Tsum",
       "分數：相當於15個Tsum",
-	  "skill_cost" : [1,2,3,4,6,18]
     ],
-    "skill_label": "win_tsumskill_alice.png"
+    "skill_label": "win_tsumskill_alice.png",
+	"skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 28,
@@ -420,7 +420,7 @@ const tsumData = [
       "消除數：16～19",
       "消除數：17～20"
     ],
-    "skill_label": "win_tsumskill_cheshirecat.png"
+    "skill_label": "win_tsumskill_cheshirecat.png",
 	"skill_cost" : [1,2,3,4,6,14]
   },
   {
@@ -436,7 +436,7 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_youngoyster.png"
+    "skill_label": "win_tsumskill_youngoyster.png",
 	"skill_cost" : [1,2,3,4,6,20]
   },
   {
