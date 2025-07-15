@@ -230,19 +230,16 @@
           let costLine = '';
 
           descLines.forEach(line => {
-            if (line.includes("🔸需要")) {
-              costLine = line.trim();
-            } else {
-              mainDesc += line
-                .split(/(<img.*?>)/)
-                .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
-                .join('') + '<br>';
-            }
-          });
+		  mainDesc += line
+			.split(/(<img.*?>)/)
+			.map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
+			.join('') + '<br>';
+		});
 
-          if (cost !== null && costLine === '') {
-            costLine = `🔸需要 ${cost} Tsum`;
-          }
+		// 直接根據 cost 是否存在來決定是否加上
+		if (cost !== undefined && cost !== null) {
+		  costLine = `🔸需要 ${cost} Tsum`;
+		}
 
           td.innerHTML = mainDesc + (costLine ? costLine : '');
           row.appendChild(td);
