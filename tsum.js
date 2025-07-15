@@ -373,7 +373,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_tinkerbell.png"
+    "skill_label": "win_tsumskill_tinkerbell.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 27,
@@ -573,11 +574,9 @@ const tsumData = [
       "效果時間：4秒",
       "效果時間：4.5秒",
       "效果時間：5秒",
-      "效果時間：5.5秒",
-      "效果時間：6秒",
-      "效果時間：6.5秒"
     ],
-    "skill_label": "win_tsumskill_hpooh.png"
+    "skill_label": "win_tsumskill_hpooh.png",
+	"skill_cost" : [1,2,4]
   },
   {
     "id": 40,
@@ -588,11 +587,9 @@ const tsumData = [
       "出現數量：1～2",
       "出現數量：2",
       "出現數量：2～3",
-      "出現數量：3",
-      "出現數量：3～4",
-      "出現數量：4"
     ],
-    "skill_label": "win_tsumskill_robin.png"
+    "skill_label": "win_tsumskill_robin.png",
+	"skill_cost" : [1,2,4]
   },
   {
     "id": 41,
@@ -607,7 +604,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_roo.png"
+    "skill_label": "win_tsumskill_roo.png",
+	"skill_cost" : [1,2,4]
   },
   {
     "id": 42,
@@ -622,7 +620,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_ariel.png"
+    "skill_label": "win_tsumskill_ariel.png",
+	"skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 43,
@@ -637,7 +636,8 @@ const tsumData = [
       "消除排數：5",
       "消除排數：6"
     ],
-    "skill_label": "win_tsumskill_flounder.png"
+    "skill_label": "win_tsumskill_flounder.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 44,
@@ -652,7 +652,8 @@ const tsumData = [
       "消除數：14～17",
       "消除數：15～18"
     ],
-    "skill_label": "win_tsumskill_sebastian.png"
+    "skill_label": "win_tsumskill_sebastian.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 45,
@@ -662,12 +663,9 @@ const tsumData = [
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.5秒",
-      "效果時間：4秒",
-      "效果時間：4.5秒",
-      "效果時間：5秒",
-      "效果時間：5.5秒"
     ],
-    "skill_label": "win_tsumskill_jackx.png"
+    "skill_label": "win_tsumskill_jackx.png",
+	"skill_cost" : [1,1]
   },
   {
     "id": 46,
