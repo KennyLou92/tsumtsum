@@ -8,9 +8,6 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyx.png",
 	"skill_cost" : [1,2,4]
@@ -24,9 +21,6 @@ const tsumData = [
       "變化Tsum數：7～10",
       "變化Tsum數：10",
       "變化Tsum數：10～13",
-      "變化Tsum數：13",
-      "變化Tsum數：13～15",
-      "變化Tsum數：15"
     ],
     "skill_label": "win_tsumskill_minnie.png",
 	"skill_cost" : [1,2,4]
@@ -40,9 +34,6 @@ const tsumData = [
       "效果時間：4秒",
       "效果時間：4.5秒",
       "效果時間：5秒",
-      "效果時間：5.3秒",
-      "效果時間：5.6秒",
-      "效果時間：5.8秒"
     ],
     "skill_label": "win_tsumskill_donald.png",
 	"skill_cost" : [1,2,4]
@@ -56,9 +47,6 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_daisy.png",
 	"skill_cost" : [1,2,4]
@@ -72,9 +60,6 @@ const tsumData = [
       "消除數：10",
       "消除數：10～12",
       "消除數：12",
-      "消除數：12～14",
-      "消除數：14",
-      "消除數：14～16"
     ],
     "skill_label": "win_tsumskill_goofy.png",
 	"skill_cost" : [1,2,4]
@@ -88,9 +73,6 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_pluto.png",
 	"skill_cost" : [1,2,4]
@@ -104,9 +86,6 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chip.png",
 	"skill_cost" : [1,2,4]
@@ -120,9 +99,6 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dale.png",
 	"skill_cost" : [1,2,4]
@@ -152,9 +128,6 @@ const tsumData = [
       "效果時間：3秒",
       "效果時間：3.5秒",
       "效果時間：4秒",
-      "效果時間：4.3秒",
-      "效果時間：4.6秒",
-      "效果時間：4.8秒"
     ],
     "skill_label": "win_tsumskill_piglet.png",
 	"skill_cost" : [1,2,4]
@@ -168,9 +141,6 @@ const tsumData = [
       "消除數：9～10",
       "消除數：10",
       "消除數：10～12",
-      "消除數：12",
-      "消除數：12～14",
-      "消除數：14"
     ],
     "skill_label": "win_tsumskill_tigger.png",
 	"skill_cost" : [1,2,4]
@@ -184,9 +154,6 @@ const tsumData = [
       "變化Tsum數：8",
       "變化Tsum數：8～10",
       "變化Tsum數：10",
-      "變化Tsum數：10～12",
-      "變化Tsum數：12",
-      "變化Tsum數：12～14"
     ],
     "skill_label": "win_tsumskill_eeyore.png",
 	"skill_cost" : [1,2,4]
