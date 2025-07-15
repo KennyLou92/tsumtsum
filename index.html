@@ -193,17 +193,19 @@
         }
         row.appendChild(imgTd);
 
-        const labelTd = document.createElement("td");
-        labelTd.className = "label-cell";
-        const labelKey = tsum.skill_label;
-        if (labelKey && skillLabelMap[labelKey]) {
-          const labelImg = document.createElement("img");
-          labelImg.src = skillLabelMap[labelKey];
-          labelImg.className = "label-icon";
-          labelTd.appendChild(labelImg);
-        } else {
-          labelTd.textContent = labelKey || "";
-        }
+		// skill_label 圖示欄位
+		const labelTd = document.createElement("td");
+		labelTd.className = "label-cell";
+		const labelKey = tsum.skill_label;
+
+		if (labelKey && skillLabelMap[labelKey]) {
+		  const labelImg = document.createElement("img");
+		  labelImg.src = skillLabelMap[labelKey];
+		  labelImg.className = "label-icon";
+		  labelTd.appendChild(labelImg);
+		} else {
+		  labelTd.textContent = "暫無";
+		}
         row.appendChild(labelTd);
 
         for (let i = 0; i < 6; i++) {
