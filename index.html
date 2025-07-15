@@ -54,38 +54,63 @@
       width: 80px;
       max-width: 80px;
     }
-    #search-wrapper {
+
+    #search-container {
       position: sticky;
       top: 0;
-      background: #222;
-      padding: 10px 20px;
+      padding: 10px;
+      margin: 10px 0 10px 20px;
       z-index: 100;
       display: flex;
       align-items: center;
-      gap: 10px;
     }
+
     #search {
+      padding: 10px;
       width: 300px;
-      padding: 8px;
       font-size: 16px;
       border: 1px solid #ccc;
       box-sizing: border-box;
     }
-    #resetSearch {
-      width: 28px;
-      height: 28px;
+
+    #clearSearchBtn {
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
       cursor: pointer;
-      transition: transform 0.2s;
+      opacity: 0.6;
+      transition: opacity 0.2s;
     }
-    #resetSearch:hover {
-      transform: scale(1.2);
+
+    #clearSearchBtn:hover {
+      opacity: 1;
+    }
+
+    .scroll-button {
+      position: fixed;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      opacity: 0.1;
+      transition: opacity 0.3s;
+      z-index: 1000;
+    }
+    .scroll-button:hover {
+      opacity: 1;
+    }
+    #scrollTopBtn {
+      bottom: 80px;
+    }
+    #scrollBottomBtn {
+      bottom: 20px;
     }
   </style>
 </head>
-<body>
-  <div id="search-wrapper">
+<body class="dark">
+  <div id="search-container">
     <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
-    <img id="resetSearch" src="https://i.postimg.cc/6pVSz87S/win-batsu-s.png" alt="清除搜尋" />
+    <img id="clearSearchBtn" src="https://i.postimg.cc/6pVSz87S/win-batsu-s.png" alt="Clear" />
   </div>
 
   <table>
@@ -104,6 +129,10 @@
     <tbody id="tsumBody"></tbody>
   </table>
 
+  <!-- Scroll Buttons -->
+  <img id="scrollTopBtn" class="scroll-button" src="https://i.postimg.cc/RZRdN8b6/win-arrow-up.png" alt="Top" />
+  <img id="scrollBottomBtn" class="scroll-button" src="https://i.postimg.cc/MGpDRDhs/win-arrow-down.png" alt="Bottom" />
+
   <script src="tsum.js"></script>
   <script src="images.js"></script>
   <script src="skilllabel.js"></script>
@@ -114,6 +143,7 @@
     const iconMap = {};
     const tbody = document.getElementById("tsumBody");
     const searchInput = document.getElementById("search");
+    const clearBtn = document.getElementById("clearSearchBtn");
 
     (window.littletsumData || []).forEach(item => {
       const key = Object.keys(item)[0];
@@ -130,7 +160,6 @@
 
         const row = document.createElement("tr");
 
-        // 左圖 + 名稱欄位
         const imgTd = document.createElement("td");
         imgTd.className = "img-cell";
 
@@ -164,7 +193,6 @@
         }
         row.appendChild(imgTd);
 
-        // skill_label 圖示欄位
         const labelTd = document.createElement("td");
         labelTd.className = "label-cell";
         const labelKey = tsum.skill_label;
@@ -178,7 +206,6 @@
         }
         row.appendChild(labelTd);
 
-        // 技能描述 SLv1 ~ SLv6
         for (let i = 0; i < 6; i++) {
           const td = document.createElement("td");
           td.classList.add("skill-desc");
@@ -219,18 +246,25 @@
       render(filtered);
     });
 
-    document.getElementById("resetSearch").addEventListener("click", () => {
+    clearBtn.addEventListener("click", () => {
       searchInput.value = "";
       render(sorted);
-      searchInput.placeholder = "🔍 輸入Tsum名稱...";
+      searchInput.focus();
     });
 
     searchInput.addEventListener("focus", () => {
       searchInput.placeholder = "";
     });
-
     searchInput.addEventListener("blur", () => {
       if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
+    });
+
+    document.getElementById("scrollTopBtn").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    document.getElementById("scrollBottomBtn").addEventListener("click", () => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     });
   </script>
 </body>
