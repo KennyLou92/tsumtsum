@@ -516,7 +516,7 @@ const tsumData = [
       "效果時間：5.4秒",
       "效果時間：6秒"
     ],
-    "skill_label": "win_tsumskill_maleficent.png"
+    "skill_label": "win_tsumskill_maleficent.png",
 	"skill_cost" : [1,2,3,4,6,20]
   },
   {
