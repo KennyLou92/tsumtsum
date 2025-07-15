@@ -884,7 +884,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_jessie.png"
+    "skill_label": "win_tsumskill_jessie.png",
+	"skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 61,
@@ -905,16 +906,9 @@ const tsumData = [
   {
     "id": 62,
     "name_en": "name_mickey_valentine",
-    "name": "情人米奇",
+    "name": "情人米奇(未上線)",
     "image": "block_mickeyv_l.png",
-    "skill_desc": [
-      "效果範圍：XS",
-      "效果範圍：S",
-      "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
-    ],
+    "skill_desc": [],
     "skill_label": "win_tsumskill_mickeyv.png"
   },
   {
@@ -927,24 +921,16 @@ const tsumData = [
       "變化Tsum數：14",
       "變化Tsum數：15",
       "變化Tsum數：16",
-      "變化Tsum數：17",
-      ""
     ],
-    "skill_label": "win_tsumskill_minniev.png"
+    "skill_label": "win_tsumskill_minniev.png",
+		"skill_cost" : [1,1,2,3]
   },
   {
     "id": 64,
     "name_en": "name_donald_valentine",
-    "name": "情人唐老鴨",
+    "name": "情人唐老鴨(未上線)",
     "image": "block_donaldv_l.png",
-    "skill_desc": [
-      "效果時間：4.5秒",
-      "效果時間：5秒",
-      "效果時間：5.5秒",
-      "效果時間：6秒",
-      "效果時間：6.5秒",
-      ""
-    ],
+    "skill_desc": [],
     "skill_label": "win_tsumskill_donaldv.png"
   },
   {
@@ -956,11 +942,9 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_daisyv.png"
+    "skill_label": "win_tsumskill_daisyv.png",
+	"skill_cost" : [1,2,3]
   },
   {
     "id": 66,
@@ -975,7 +959,8 @@ const tsumData = [
       "範圍：L 次數：5",
       "範圍：XL 次數：5"
     ],
-    "skill_label": "win_tsumskill_mickeys.png"
+    "skill_label": "win_tsumskill_mickeys.png",
+	"skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 67,
@@ -990,7 +975,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_belle.png"
+    "skill_label": "win_tsumskill_belle.png",
+	"skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 68,
@@ -1005,7 +991,8 @@ const tsumData = [
       "所需Tsum數：16",
       "所需Tsum數：14"
     ],
-    "skill_label": "win_tsumskill_beast.png"
+    "skill_label": "win_tsumskill_beast.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 69,
@@ -1016,11 +1003,9 @@ const tsumData = [
       "可累積Tsum數：12",
       "可累積Tsum數：15",
       "可累積Tsum數：17",
-      "可累積Tsum數：19",
-      "可累積Tsum數：20",
-      "可累積Tsum數：21"
     ],
-    "skill_label": "win_tsumskill_poohr.png"
+    "skill_label": "win_tsumskill_poohr.png",
+	"skill_cost" : [1,1,1]
   },
   {
     "id": 70,
@@ -1031,11 +1016,9 @@ const tsumData = [
       "跳躍次數：1",
       "跳躍次數：2",
       "跳躍次數：3",
-      "跳躍次數：4",
-      "跳躍次數：5",
-      "跳躍次數：6"
     ],
-    "skill_label": "win_tsumskill_tiggerr.png"
+    "skill_label": "win_tsumskill_tiggerr.png",
+	"skill_cost" : [1,2,3]
   },
   {
     "id": 71,
@@ -1046,11 +1029,9 @@ const tsumData = [
       "胡蘿蔔數：9",
       "胡蘿蔔數：12",
       "胡蘿蔔數：15",
-      "胡蘿蔔數：18",
-      "胡蘿蔔數：21",
-      "胡蘿蔔數：24"
     ],
-    "skill_label": "win_tsumskill_rabbit.png"
+    "skill_label": "win_tsumskill_rabbit.png",
+	"skill_cost" : [1,1,1]
   },
   {
     "id": 72,
@@ -1065,7 +1046,8 @@ const tsumData = [
       "小雪人數：20",
       "小雪人數：24"
     ],
-    "skill_label": "win_tsumskill_elsaf.png"
+    "skill_label": "win_tsumskill_elsaf.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 73,
@@ -1080,7 +1062,8 @@ const tsumData = [
       "變化Tsum數：8～11",
       "變化Tsum數：9～12"
     ],
-    "skill_label": "win_tsumskill_annaf.png"
+    "skill_label": "win_tsumskill_annaf.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 74,
@@ -1095,7 +1078,8 @@ const tsumData = [
       "效果時間：6.7秒",
       "效果時間：7秒"
     ],
-    "skill_label": "win_tsumskill_angel.png"
+    "skill_label": "win_tsumskill_angel.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 75,
@@ -1110,7 +1094,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_stitchf.png"
+    "skill_label": "win_tsumskill_stitchf.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 76,
@@ -1121,11 +1106,9 @@ const tsumData = [
       "所需Tsum數：22",
       "所需Tsum數：20",
       "所需Tsum數：18",
-      "所需Tsum數：17",
-      "所需Tsum數：16",
-      "所需Tsum數：15"
     ],
-    "skill_label": "win_tsumskill_lilo.png"
+    "skill_label": "win_tsumskill_lilo.png",
+	"skill_cost" : [1,1,1]
   },
   {
     "id": 77,
@@ -1140,7 +1123,8 @@ const tsumData = [
       "行駛範圍：XL",
       "行駛範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_mcqueen.png"
+    "skill_label": "win_tsumskill_mcqueen.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 78,
@@ -1155,7 +1139,8 @@ const tsumData = [
       "消除數：23～26",
       "消除數：25～28"
     ],
-    "skill_label": "win_tsumskill_mater.png"
+    "skill_label": "win_tsumskill_mater.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 79,
@@ -1170,7 +1155,8 @@ const tsumData = [
       "消除數：5",
       "消除數：5～6"
     ],
-    "skill_label": "win_tsumskill_rex.png"
+    "skill_label": "win_tsumskill_rex.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 80,
@@ -1185,7 +1171,8 @@ const tsumData = [
       "效果時間：6.4秒",
       "效果時間：6.8秒"
     ],
-    "skill_label": "win_tsumskill_randall.png"
+    "skill_label": "win_tsumskill_randall.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 81,
@@ -1200,7 +1187,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_aladdin.png"
+    "skill_label": "win_tsumskill_aladdin.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 82,
@@ -1215,7 +1203,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_jasmine.png"
+    "skill_label": "win_tsumskill_jasmine.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 83,
@@ -1230,7 +1219,8 @@ const tsumData = [
       "所需Tsum數：17～18",
       "所需Tsum數：16～17"
     ],
-    "skill_label": "win_tsumskill_pinocchio.png"
+    "skill_label": "win_tsumskill_pinocchio.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 84,
@@ -1245,7 +1235,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_jiminy.png"
+    "skill_label": "win_tsumskill_jiminy.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 85,
@@ -1260,7 +1251,8 @@ const tsumData = [
       "消除數：25～28",
       "消除數：28～34"
     ],
-    "skill_label": "win_tsumskill_nick.png"
+    "skill_label": "win_tsumskill_nick.png",
+	"skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 86,
@@ -1275,7 +1267,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_judy.png"
+    "skill_label": "win_tsumskill_judy.png",
+	"skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 87,
@@ -1290,7 +1283,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_finnick.png"
+    "skill_label": "win_tsumskill_finnick.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 88,
@@ -1305,7 +1299,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_max.png"
+    "skill_label": "win_tsumskill_max.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 89,
@@ -1320,7 +1315,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_clarice.png"
+    "skill_label": "win_tsumskill_clarice.png",
+	"skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 90,
@@ -1335,7 +1331,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_luke.png"
+    "skill_label": "win_tsumskill_luke.png",
+	"skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 91,
@@ -1350,7 +1347,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_leia.png"
+    "skill_label": "win_tsumskill_leia.png",
+	"skill_cost" : [1,1,1,1]
   },
   {
     "id": 92,
@@ -1365,7 +1363,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_r2d2.png"
+    "skill_label": "win_tsumskill_r2d2.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 93,
