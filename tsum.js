@@ -184,7 +184,8 @@ const tsumData = [
       "技能種類數：7",
       "技能種類數：8"
     ],
-    "skill_label": "win_tsumskill_scramp.png"
+    "skill_label": "win_tsumskill_scramp.png",
+	"skill_cost" : [1,2,3,4,6,12]
   },
   {
     "id": 15,
@@ -199,7 +200,8 @@ const tsumData = [
       "出現數量：5",
       "出現數量：5～6"
     ],
-    "skill_label": "win_tsumskill_marie.png"
+    "skill_label": "win_tsumskill_marie.png",
+	"skill_cost" : [1,2,3,4,6,14]
   },
   {
     "id": 16,
@@ -214,7 +216,8 @@ const tsumData = [
       "效果時間：8.6秒",
       "效果時間：8.8秒"
     ],
-    "skill_label": "win_tsumskill_lady.png"
+    "skill_label": "win_tsumskill_lady.png",
+	"skill_cost" : [1,2,3,4,6,12]
   },
   {
     "id": 17,
