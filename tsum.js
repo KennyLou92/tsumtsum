@@ -1550,7 +1550,8 @@ const tsumData = [
       "所需Tsum數：12",
       "所需Tsum數：10"
     ],
-    "skill_label": "win_tsumskill_abu.png"
+    "skill_label": "win_tsumskill_abu.png",
+	"skill_cost" : [1,2,2,3,4,5]
   },
   {
     "id": 105,
@@ -1565,7 +1566,8 @@ const tsumData = [
       "技能種類數：8",
       "技能種類數：9"
     ],
-    "skill_label": "win_tsumskill_genie.png"
+    "skill_label": "win_tsumskill_genie.png",
+	"skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 106,
@@ -1580,7 +1582,8 @@ const tsumData = [
       "出現數量：5",
       "出現數量：5～6"
     ],
-    "skill_label": "win_tsumskill_mickeyh2015.png"
+    "skill_label": "win_tsumskill_mickeyh2015.png",
+	"skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 107,
@@ -1595,7 +1598,8 @@ const tsumData = [
       "變化Tsum數：16",
       "變化Tsum數：17"
     ],
-    "skill_label": "win_tsumskill_minnieh2015.png"
+    "skill_label": "win_tsumskill_minnieh2015.png",
+	"skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 108,
@@ -1610,7 +1614,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_chiph2015.png"
+    "skill_label": "win_tsumskill_chiph2015.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 109,
@@ -1625,7 +1630,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_daleh2015.png"
+    "skill_label": "win_tsumskill_daleh2015.png",
+	"skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 110,
@@ -1636,11 +1642,9 @@ const tsumData = [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
-      "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_plutoh2015.png"
+    "skill_label": "win_tsumskill_plutoh2015.png",
+	"skill_cost" : [1,2,2]
   },
   {
     "id": 111,
@@ -9000,12 +9004,12 @@ const tsumData = [
     "name": "街頭造型米奇",
     "image": "block_mickey11th_l.png",
     "skill_desc": [
-      "範圍：XS 所需Tsum數：22",
-      "範圍：XS 所需Tsum數：21",
-      "範圍：XS 所需Tsum數：20",
-      "範圍：XS 所需Tsum數：19",
-      "範圍：XS 所需Tsum數：18",
-      "範圍：XS 所需Tsum數：17"
+      "效果範圍：XS",
+      "效果範圍：S",
+      "效果範圍：M",
+      "效果範圍：L",
+      "效果範圍：XL",
+      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickey11th.png"
   },
