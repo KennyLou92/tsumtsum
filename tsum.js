@@ -1344,8 +1344,6 @@ const tsumData = [
       "效果範圍：S",
       "效果範圍：M",
       "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_leia.png",
 	"skill_cost" : [1,1,1,1]
@@ -1379,7 +1377,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_c3po.png"
+    "skill_label": "win_tsumskill_c3po.png",
+	"skill_cost" : [1,1,1,1,2,3]	
   },
   {
     "id": 94,
@@ -1394,7 +1393,8 @@ const tsumData = [
       "所需Tsum數：21",
       "所需Tsum數：20"
     ],
-    "skill_label": "win_tsumskill_yoda.png"
+    "skill_label": "win_tsumskill_yoda.png",
+	"skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 95,
@@ -1409,7 +1409,8 @@ const tsumData = [
       "範圍：L 所需Tsum數：20",
       "範圍：L 所需Tsum數：19"
     ],
-    "skill_label": "win_tsumskill_vader.png"
+    "skill_label": "win_tsumskill_vader.png",
+	"skill_cost" : [1,1,2,4,7,21]	
   },
   {
     "id": 96,
