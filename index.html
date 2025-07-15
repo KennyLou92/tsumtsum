@@ -213,6 +213,12 @@
           td.classList.add("skill-desc");
 
           let desc = tsum.skill_desc?.[i] || "";
+		  let desc = tsum.skill_desc?.[i] || "";
+		  let cost = tsum.skill_cost?.[i] ?? null;
+
+		  if (cost !== null) {
+		  desc += `<br><small style="color:orange;">🔸需要 ${cost} Tsum</small>`;
+		  }
 
           for (const key in iconMap) {
             const filename = iconMap[key];
