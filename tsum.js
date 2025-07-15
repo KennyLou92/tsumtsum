@@ -680,7 +680,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_sallynbc.png"
+    "skill_label": "win_tsumskill_sallynbc.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 47,
@@ -691,11 +692,9 @@ const tsumData = [
       "所需Tsum數：15",
       "所需Tsum數：14",
       "所需Tsum數：13",
-      "所需Tsum數：12",
-      "所需Tsum數：11",
-      "所需Tsum數：10"
     ],
-    "skill_label": "win_tsumskill_mickeyh.png"
+    "skill_label": "win_tsumskill_mickeyh.png",
+	"skill_cost" : [1,2,4]
   },
   {
     "id": 48,
@@ -706,11 +705,9 @@ const tsumData = [
       "出現數量：5",
       "出現數量：7",
       "出現數量：9",
-      "出現數量：10",
-      "出現數量：12",
-      "出現數量：15"
     ],
-    "skill_label": "win_tsumskill_minnieh.png"
+    "skill_label": "win_tsumskill_minnieh.png",
+	"skill_cost" : [1,2,4]
   },
   {
     "id": 49,
@@ -725,7 +722,8 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_sven.png"
+    "skill_label": "win_tsumskill_sven.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 50,
@@ -740,7 +738,8 @@ const tsumData = [
       "消除數：28",
       "消除數：31"
     ],
-    "skill_label": "win_tsumskill_rapunzel.png"
+    "skill_label": "win_tsumskill_rapunzel.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 51,
@@ -755,7 +754,8 @@ const tsumData = [
       "所需Tsum數：5",
       "所需Tsum數：4"
     ],
-    "skill_label": "win_tsumskill_pascal.png"
+    "skill_label": "win_tsumskill_pascal.png",
+	"skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 52,
@@ -770,7 +770,8 @@ const tsumData = [
       "所需Tsum數：16",
       "所需Tsum數：14"
     ],
-    "skill_label": "win_tsumskill_pete.png"
+    "skill_label": "win_tsumskill_pete.png",
+	"skill_cost" : [1,2,4,6,12,25]
   },
   {
     "id": 53,
@@ -782,10 +783,9 @@ const tsumData = [
       "效果範圍：S",
       "效果範圍：M",
       "效果範圍：L",
-      "效果範圍：XL",
-      "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_mickeyx.png"
+    "skill_label": "win_tsumskill_mickeyx.png",
+	"skill_cost" : [1,1,2,3]
   },
   {
     "id": 54,
@@ -796,11 +796,9 @@ const tsumData = [
       "變化Tsum數：12",
       "變化Tsum數：14",
       "變化Tsum數：15",
-      "變化Tsum數：16",
-      "變化Tsum數：17",
-      ""
     ],
-    "skill_label": "win_tsumskill_minniex.png"
+    "skill_label": "win_tsumskill_minniex.png",
+	"skill_cost" : [1,2,3]
   },
   {
     "id": 55,
