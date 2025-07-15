@@ -291,10 +291,10 @@ const tsumData = [
       "效果範圍：M",
       "效果範圍：L",
       "效果範圍：XL",
-      "效果範圍：XXL",
-	  "skill_cost" : [1,2,3,4,6,18]
+      "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_mike.png"
+    "skill_label": "win_tsumskill_mike.png",
+	"skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 22,
