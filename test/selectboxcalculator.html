@@ -23,14 +23,25 @@
       box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     }
 
-    .tsum-container img.tsum-img {
+    .tsum-img {
       width: 80px;
       height: 80px;
       border-radius: 10px;
     }
 
-    .tsum-container select {
+    .name {
+      font-size: 14px;
       margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .dropdown-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+    }
+
+    select {
       font-size: 14px;
       padding: 4px;
     }
@@ -54,15 +65,31 @@
       font-size: 15px;
     }
 
-    h2 {
+    #totalWrapper {
       text-align: center;
+      margin-top: 30px;
+      font-size: 50px;
+      color: #cc9900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    #totalWrapper img {
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
 <body>
   <h1 style="text-align:center;">Tsum 金幣計算器</h1>
   <div id="tsumArea"></div>
-  <h2>總金幣消耗：<span id="totalGold" class="gold">0</span></h2>
+
+  <div id="totalWrapper">
+    <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin" />
+    <span id="totalGold">0</span>
+  </div>
 
   <!-- 載入資料 -->
   <script src="tsum.js"></script>
@@ -89,6 +116,11 @@
       img.src = images[tsum.image] || "";
       container.appendChild(img);
 
+      const nameLine = document.createElement("div");
+      nameLine.className = "name";
+      nameLine.textContent = tsum.name;
+      container.appendChild(nameLine);
+
       const levelSelect = document.createElement("select");
       for (let i = 0; i <= 6; i++) {
         const option = document.createElement("option");
@@ -96,7 +128,11 @@
         option.textContent = `SLv${i}`;
         levelSelect.appendChild(option);
       }
-      container.appendChild(levelSelect);
+
+      const dropdownWrap = document.createElement("div");
+      dropdownWrap.className = "dropdown-wrap";
+      dropdownWrap.appendChild(levelSelect);
+      container.appendChild(dropdownWrap);
 
       const coinLine = document.createElement("div");
       coinLine.className = "coin-line";
