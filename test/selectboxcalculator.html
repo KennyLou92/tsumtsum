@@ -37,13 +37,12 @@
   <script src="selectbox.js"></script>
   <script src="images.js"></script>
   <script>
-    const tsumMap = {};  // id → tsum 物件
+    const tsumMap = {};
     tsumData.forEach(tsum => {
       tsumMap[tsum.id] = tsum;
     });
 
     const GOLD_PER_COST = 30000;
-
     const tsumArea = document.getElementById("tsumArea");
 
     function createTsumBox(tsumId) {
@@ -65,7 +64,7 @@
       info.appendChild(name);
 
       const levelSelect = document.createElement("select");
-      for (let i = 1; i <= 6; i++) {
+      for (let i = 0; i <= 6; i++) {
         const option = document.createElement("option");
         option.value = i;
         option.textContent = `SLv${i}`;
@@ -80,21 +79,22 @@
       container.appendChild(info);
 
       function updateGold() {
-        const level = parseInt(levelSelect.value);
-		const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-		const gold = requiredCost * GOLD_PER_COST;
+        const level = parseInt(levelSelect.value); // SLv0 ~ SLv6
+        const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+        const gold = requiredCost * GOLD_PER_COST;
         goldLine.querySelector("span").textContent = gold.toLocaleString();
         updateTotal();
       }
 
       levelSelect.addEventListener("change", updateGold);
-      updateGold();
+      updateGold(); // 初始化
 
-		container._getGold = () => {
-		  const level = parseInt(levelSelect.value);
-		  const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-		  return requiredCost * GOLD_PER_COST;
-		};
+      container._getGold = () => {
+        const level = parseInt(levelSelect.value);
+        const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+        return requiredCost * GOLD_PER_COST;
+      };
+
       return container;
     }
 
@@ -109,7 +109,7 @@
       document.getElementById("totalGold").textContent = total.toLocaleString();
     }
 
-    // 初始化生成所有 box
+    // 初始化：根據 selectbox 建立所有 Tsum 選項
     selectbox.forEach(box => {
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
