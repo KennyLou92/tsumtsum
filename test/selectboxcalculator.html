@@ -83,7 +83,7 @@
   </style>
 </head>
 <body>
-  <h1 style="text-align:center;">Tsum 金幣計算器</h1>
+  <div id="labelImageWrapper" style="text-align:center; margin-top: 10px;"></div>
   <div id="tsumArea"></div>
 
   <div id="totalWrapper">
@@ -176,6 +176,17 @@
       });
       document.getElementById("totalGold").textContent = total.toLocaleString();
     }
+
+	// 插入 box_label base64 圖片當標題
+	const labelWrapper = document.getElementById("labelImageWrapper");
+	const firstBox = selectbox[0];
+	if (firstBox.box_label) {
+	  const img = document.createElement("img");
+	  img.src = firstBox.box_label;
+	  img.style.maxHeight = "80px";
+	  img.style.objectFit = "contain";
+	  labelWrapper.appendChild(img);
+	}
 
     // 初始化
     selectbox.forEach(box => {
