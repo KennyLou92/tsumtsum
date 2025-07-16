@@ -7353,7 +7353,7 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_dalecm.png"
+    "skill_label": "win_tsumskill_dalecm.png",
 	"skill_cost" : [1,1,2,4,8,20]
   },
   {
