@@ -81,10 +81,8 @@
 
       function updateGold() {
         const level = parseInt(levelSelect.value);
-        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
-        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        const need = totalCost - ownedCost;
-        const gold = need * GOLD_PER_COST;
+		const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+		const gold = requiredCost * GOLD_PER_COST;
         goldLine.querySelector("span").textContent = gold.toLocaleString();
         updateTotal();
       }
@@ -92,13 +90,11 @@
       levelSelect.addEventListener("change", updateGold);
       updateGold();
 
-      container._getGold = () => {
-        const level = parseInt(levelSelect.value);
-        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
-        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        return (totalCost - ownedCost) * GOLD_PER_COST;
-      };
-
+		container._getGold = () => {
+		  const level = parseInt(levelSelect.value);
+		  const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+		  return requiredCost * GOLD_PER_COST;
+		};
       return container;
     }
 
