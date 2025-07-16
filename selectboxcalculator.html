@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Box 金幣計算器</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    #tsumArea {
+      display: grid;
+	  grid-template-columns: repeat(5, 1fr); /* 一行顯示 5 個格子 */
+	  gap: 8px;  /* 每個格子之間的間距 */
+	  margin: 10px;
+    }
+
+    .tsum-container {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 4px;
+      text-align: center;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .tsum-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+    }
+
+    .name {
+      font-size: 14px;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .dropdown-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+    }
+
+    select {
+      font-size: 14px;
+      padding: 4px;
+    }
+
+    .coin-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      gap: 6px;
+    }
+
+    .coin-line img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .gold {
+      font-weight: bold;
+      color: #cc9900;
+      font-size: 15px;
+    }
+
+    #totalWrapper {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 50px;
+      color: #cc9900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    #totalWrapper img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="labelImageWrapper" style="text-align:center; margin-top: 10px;"></div>
+  <div id="tsumArea"></div>
+
+  <div id="totalWrapper">
+    <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin" />
+    <span id="totalGold">0</span>
+  </div>
+
+  <!-- 載入資料 -->
+  <script src="tsum.js"></script>
+  <script src="selectbox.js"></script>
+  <script src="images.js"></script>
+  <script>
+    const tsumMap = {};
+    tsumData.forEach(tsum => {
+      tsumMap[tsum.id] = tsum;
+    });
+
+    const GOLD_PER_COST = 30000;
+    const tsumArea = document.getElementById("tsumArea");
+
+    function createTsumBox(tsumId) {
+      const tsum = tsumMap[tsumId];
+      if (!tsum || !tsum.skill_cost) return null;
+
+      const container = document.createElement("div");
+      container.className = "tsum-container";
+
+      const img = document.createElement("img");
+      img.className = "tsum-img";
+      img.src = images[tsum.image] || "";
+      container.appendChild(img);
+
+      const nameLine = document.createElement("div");
+      nameLine.className = "name";
+      nameLine.textContent = tsum.name;
+      container.appendChild(nameLine);
+
+      const levelSelect = document.createElement("select");
+      for (let i = 0; i <= 6; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = `SLv${i}`;
+        levelSelect.appendChild(option);
+      }
+
+      const dropdownWrap = document.createElement("div");
+      dropdownWrap.className = "dropdown-wrap";
+      dropdownWrap.appendChild(levelSelect);
+      container.appendChild(dropdownWrap);
+
+      const coinLine = document.createElement("div");
+      coinLine.className = "coin-line";
+      coinLine.innerHTML = `
+        <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin" />
+        <span class="gold">0</span>
+      `;
+      container.appendChild(coinLine);
+
+      function updateGold() {
+        const level = parseInt(levelSelect.value);
+        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
+        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+        const remainingCost = totalCost - ownedCost;
+        const gold = remainingCost * GOLD_PER_COST;
+        coinLine.querySelector("span").textContent = gold.toLocaleString();
+        updateTotal();
+      }
+
+      levelSelect.addEventListener("change", updateGold);
+      updateGold();
+
+      container._getGold = () => {
+        const level = parseInt(levelSelect.value);
+        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
+        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+        const remainingCost = totalCost - ownedCost;
+        return remainingCost * GOLD_PER_COST;
+      };
+
+      return container;
+    }
+
+    function updateTotal() {
+      let total = 0;
+      const containers = document.querySelectorAll(".tsum-container");
+      containers.forEach(c => {
+        if (typeof c._getGold === 'function') {
+          total += c._getGold();
+        }
+      });
+      document.getElementById("totalGold").textContent = total.toLocaleString();
+    }
+
+	// 插入 box_label base64 圖片當標題
+	const labelWrapper = document.getElementById("labelImageWrapper");
+	const firstBox = selectbox[0];
+	if (firstBox.box_label) {
+	  const img = document.createElement("img");
+	  img.src = firstBox.box_label;
+	  img.style.maxHeight = "80px";
+	  img.style.objectFit = "contain";
+	  labelWrapper.appendChild(img);
+	}
+
+    // 初始化
+    selectbox.forEach(box => {
+      box.box_tsum.forEach(tsumId => {
+        const el = createTsumBox(tsumId);
+        if (el) tsumArea.appendChild(el);
+      });
+    });
+  </script>
+</body>
+</html>
