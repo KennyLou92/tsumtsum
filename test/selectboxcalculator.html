@@ -78,23 +78,25 @@
 
       container.appendChild(info);
 
-      function updateGold() {
-        const level = parseInt(levelSelect.value); // SLv0 ~ SLv6
-        const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        const gold = requiredCost * GOLD_PER_COST;
-        goldLine.querySelector("span").textContent = gold.toLocaleString();
-        updateTotal();
-      }
-
+	function updateGold() {
+	  const level = parseInt(levelSelect.value); // SLv0 ~ SLv6
+	  const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
+	  const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+	  const remainingCost = totalCost - ownedCost;
+	  const gold = remainingCost * GOLD_PER_COST;
+	  goldLine.querySelector("span").textContent = gold.toLocaleString();
+	  updateTotal();
+	}
       levelSelect.addEventListener("change", updateGold);
       updateGold(); // 初始化
 
-      container._getGold = () => {
-        const level = parseInt(levelSelect.value);
-        const requiredCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        return requiredCost * GOLD_PER_COST;
-      };
-
+	container._getGold = () => {
+	  const level = parseInt(levelSelect.value);
+	  const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
+	  const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+	  const remainingCost = totalCost - ownedCost;
+	  return remainingCost * GOLD_PER_COST;
+	};
       return container;
     }
 
