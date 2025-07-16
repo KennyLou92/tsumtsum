@@ -8832,7 +8832,7 @@ const tsumData = [
       "分數：2.2倍 大野狼數量：3～4隻",
       "分數：2.5倍 大野狼數量：4隻"
     ],
-    "skill_label": "win_tsumskill_kristoff2.png"
+    "skill_label": "win_tsumskill_kristoff2.png",
 	"skill_cost" : [1,1,2,4,7,14]
   },
   {
