@@ -9,25 +9,26 @@
 	  padding: 0;
 	  font-family: sans-serif;
 	  background-image: url('https://i.postimg.cc/59LJcMNV/win-window02.png');
-	  background-size: cover;        /* 確保填滿整個畫面 */
-	  background-repeat: no-repeat;  /* 不重複 */
-	  background-position: center;   /* 置中顯示 */
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center;
 	  height: 100%;
 	}
-	
+
     #tsumArea {
       display: grid;
-	  grid-template-columns: repeat(5, 1fr); /* 一行顯示 5 個格子 */
-	  gap: 8px;  /* 每個格子之間的間距 */
+	  grid-template-columns: repeat(5, 1fr);
+	  gap: 8px;
 	  margin: 10px;
     }
 
     .tsum-container {
-      border: 1px solid #ccc;
+      border: none;
       border-radius: 10px;
       padding: 4px;
       text-align: center;
-      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      background-color: rgba(0,0,0,0.2);
     }
 
     .tsum-img {
@@ -40,6 +41,7 @@
       font-size: 14px;
       margin-top: 8px;
       font-weight: bold;
+      color: white;
     }
 
     .dropdown-wrap {
@@ -87,9 +89,15 @@
       width: 50px;
       height: 50px;
     }
+
+    #boxSelectorWrapper {
+      text-align: center;
+      margin: 10px;
+    }
   </style>
 </head>
 <body>
+  <div id="boxSelectorWrapper"></div>
   <div id="labelImageWrapper" style="text-align:center; margin-top: 10px;"></div>
   <div id="tsumArea"></div>
 
@@ -98,7 +106,6 @@
     <span id="totalGold">0</span>
   </div>
 
-  <!-- 載入資料 -->
   <script src="tsum.js"></script>
   <script src="selectbox.js"></script>
   <script src="images.js"></script>
@@ -184,24 +191,38 @@
       document.getElementById("totalGold").textContent = total.toLocaleString();
     }
 
-	// 插入 box_label base64 圖片當標題
-	const labelWrapper = document.getElementById("labelImageWrapper");
-	const firstBox = selectbox[0];
-	if (firstBox.box_label) {
-	  const img = document.createElement("img");
-	  img.src = firstBox.box_label;
-	  img.style.maxHeight = "80px";
-	  img.style.objectFit = "contain";
-	  labelWrapper.appendChild(img);
-	}
+    const labelWrapper = document.getElementById("labelImageWrapper");
+    const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
 
-    // 初始化
-    selectbox.forEach(box => {
+    const selector = document.createElement("select");
+    selector.onchange = () => renderBox(selector.value);
+    selectbox.forEach((box, index) => {
+      const option = document.createElement("option");
+      option.value = index;
+      option.textContent = box.box_label ? `Box ${index + 1}` : `Box ${index + 1}`;
+      selector.appendChild(option);
+    });
+    boxSelectorWrapper.appendChild(selector);
+
+    function renderBox(index) {
+      tsumArea.innerHTML = "";
+      labelWrapper.innerHTML = "";
+      const box = selectbox[index];
+      if (box.box_label) {
+        const img = document.createElement("img");
+        img.src = box.box_label;
+        img.style.maxHeight = "80px";
+        img.style.objectFit = "contain";
+        labelWrapper.appendChild(img);
+      }
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
         if (el) tsumArea.appendChild(el);
       });
-    });
+      updateTotal();
+    }
+
+    renderBox(0);
   </script>
 </body>
 </html>
