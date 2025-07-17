@@ -227,21 +227,21 @@
 
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
 
-    // 自訂圖片下拉選單
     function createImageDropdown() {
       const dropdown = document.createElement("div");
       dropdown.className = "tsum-dropdown";
 
       const selected = document.createElement("img");
       selected.className = "tsum-selected";
-      selected.src = selectbox[0]?.box_label || "";
+      const firstVisibleBox = selectbox.find(box => box.show !== 0);
+      selected.src = firstVisibleBox?.box_label || "";
       dropdown.appendChild(selected);
 
       const list = document.createElement("div");
       list.className = "tsum-dropdown-list";
 
       selectbox.forEach((box, index) => {
-        if (box.box_label) {
+        if (box.box_label && box.show !== 0) {
           const item = document.createElement("img");
           item.src = box.box_label;
           item.className = "tsum-dropdown-item";
@@ -273,7 +273,8 @@
     }
 
     createImageDropdown();
-    renderBox(0);
+    const initialIndex = selectbox.findIndex(b => b.show !== 0);
+    if (initialIndex !== -1) renderBox(initialIndex);
   </script>
 </body>
 </html>
