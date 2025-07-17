@@ -4,94 +4,82 @@
   <meta charset="UTF-8">
   <title>Tsum 金幣計算器</title>
   <style>
-	html, body {
-	  margin: 0;
-	  padding: 0;
-	  font-family: sans-serif;
-	}
+		body {
+		  font-family: sans-serif;
+		}
 
-    #tsumArea {
-      display: grid;
-	  grid-template-columns: repeat(5, 1fr);
-	  gap: 8px;
-	  margin: 10px;
-    }
+		#tsumArea {
+		  display: grid;
+		  grid-template-columns: repeat(5, 1fr); /* 一行顯示 5 個格子 */
+		  gap: 8px;  /* 每個格子之間的間距 */
+		  margin: 10px;
+		}
 
-	.tsum-container {
-	  width: 150px;
-	  padding: 4px;
-	  margin: 6px;
-	  background: none;
-	  border: 2px solid #ccc;         /* ✅ 加回邊框 */
-	  box-shadow: none !important;    /* ✅ 拔掉陰影 */
-	  border-radius: 8px;             /* ✅ 可選圓角 */
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	}
-    .tsum-img {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-    }
+		.tsum-container {
+		  border: 1px solid #ccc;
+		  border-radius: 10px;
+		  padding: 4px;
+		  text-align: center;
+		  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+		}
 
-    .name {
-      font-size: 14px;
-      margin-top: 8px;
-      font-weight: bold;
-      color: black;
-    }
+		.tsum-img {
+		  width: 80px;
+		  height: 80px;
+		  border-radius: 10px;
+		}
 
-    .dropdown-wrap {
-      display: flex;
-      justify-content: center;
-      margin-top: 6px;
-    }
+		.name {
+		  font-size: 14px;
+		  margin-top: 8px;
+		  font-weight: bold;
+		}
 
-    select {
-      font-size: 14px;
-      padding: 4px;
-    }
+		.dropdown-wrap {
+		  display: flex;
+		  justify-content: center;
+		  margin-top: 6px;
+		}
 
-    .coin-line {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 8px;
-      gap: 6px;
-    }
+		select {
+		  font-size: 14px;
+		  padding: 4px;
+		}
 
-    .coin-line img {
-      width: 18px;
-      height: 18px;
-    }
+		.coin-line {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  margin-top: 8px;
+		  gap: 6px;
+		}
 
-    .gold {
-      font-weight: bold;
-      color: #cc9900;
-      font-size: 15px;
-    }
+		.coin-line img {
+		  width: 18px;
+		  height: 18px;
+		}
 
-    #totalWrapper {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 50px;
-      color: #cc9900;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-    }
+		.gold {
+		  font-weight: bold;
+		  color: #cc9900;
+		  font-size: 15px;
+		}
 
-    #totalWrapper img {
-      width: 50px;
-      height: 50px;
-    }
+		#totalWrapper {
+		  text-align: center;
+		  margin-top: 30px;
+		  font-size: 50px;
+		  color: #cc9900;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  gap: 12px;
+		}
 
-    #boxSelectorWrapper {
-      text-align: center;
-      margin: 10px;
-    }
+		#totalWrapper img {
+		  width: 50px;
+		  height: 50px;
+		}
   </style>
 </head>
 <body>
