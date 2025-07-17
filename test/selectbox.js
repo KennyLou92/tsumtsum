@@ -13,4 +13,3 @@ const selectbox = [
 					522,101,231,290,426,423,456,521,523,144,232,443]
 	}
 ];
-createDropdown(selectbox);
