@@ -4,82 +4,132 @@
   <meta charset="UTF-8">
   <title>Tsum 金幣計算器</title>
   <style>
-		body {
-		  font-family: sans-serif;
-		}
+    body {
+      font-family: sans-serif;
+    }
 
-		#tsumArea {
-		  display: grid;
-		  grid-template-columns: repeat(5, 1fr); /* 一行顯示 5 個格子 */
-		  gap: 8px;  /* 每個格子之間的間距 */
-		  margin: 10px;
-		}
+    #tsumArea {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin: 10px;
+    }
 
-		.tsum-container {
-		  border: 1px solid #ccc;
-		  border-radius: 10px;
-		  padding: 4px;
-		  text-align: center;
-		  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-		}
+    .tsum-container {
+      border: 2px solid #999;
+      border-radius: 10px;
+      padding: 4px;
+      text-align: center;
+      box-shadow: none;
+      background-color: #fff;
+    }
 
-		.tsum-img {
-		  width: 80px;
-		  height: 80px;
-		  border-radius: 10px;
-		}
+    .tsum-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+    }
 
-		.name {
-		  font-size: 14px;
-		  margin-top: 8px;
-		  font-weight: bold;
-		}
+    .name {
+      font-size: 14px;
+      margin-top: 8px;
+      font-weight: bold;
+      color: black;
+    }
 
-		.dropdown-wrap {
-		  display: flex;
-		  justify-content: center;
-		  margin-top: 6px;
-		}
+    .dropdown-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+    }
 
-		select {
-		  font-size: 14px;
-		  padding: 4px;
-		}
+    select {
+      font-size: 14px;
+      padding: 4px;
+    }
 
-		.coin-line {
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  margin-top: 8px;
-		  gap: 6px;
-		}
+    .coin-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      gap: 6px;
+    }
 
-		.coin-line img {
-		  width: 18px;
-		  height: 18px;
-		}
+    .coin-line img {
+      width: 18px;
+      height: 18px;
+    }
 
-		.gold {
-		  font-weight: bold;
-		  color: #cc9900;
-		  font-size: 15px;
-		}
+    .gold {
+      font-weight: bold;
+      color: #cc9900;
+      font-size: 15px;
+    }
 
-		#totalWrapper {
-		  text-align: center;
-		  margin-top: 30px;
-		  font-size: 50px;
-		  color: #cc9900;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  gap: 12px;
-		}
+    #totalWrapper {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 50px;
+      color: #cc9900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
 
-		#totalWrapper img {
-		  width: 50px;
-		  height: 50px;
-		}
+    #totalWrapper img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* 新增圖片下拉樣式 */
+    #boxSelectorWrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .tsum-dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .tsum-selected {
+      height: 50px;
+      border: 2px solid #666;
+      border-radius: 8px;
+    }
+
+    .tsum-dropdown-list {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      z-index: 100;
+      padding: 5px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .tsum-dropdown-list.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tsum-dropdown-item {
+      height: 50px;
+      margin: 5px 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .tsum-dropdown-item:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -180,15 +230,40 @@
     const labelWrapper = document.getElementById("labelImageWrapper");
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
 
-    const selector = document.createElement("select");
-    selector.onchange = () => renderBox(selector.value);
-    selectbox.forEach((box, index) => {
-      const option = document.createElement("option");
-      option.value = index;
-      option.textContent = box.box_label ? `Box ${index + 1}` : `Box ${index + 1}`;
-      selector.appendChild(option);
-    });
-    boxSelectorWrapper.appendChild(selector);
+    // 建立圖片下拉
+    function createImageDropdown() {
+      const dropdown = document.createElement("div");
+      dropdown.className = "tsum-dropdown";
+
+      const selected = document.createElement("img");
+      selected.className = "tsum-selected";
+      selected.src = selectbox[0]?.box_label || "";
+      dropdown.appendChild(selected);
+
+      const list = document.createElement("div");
+      list.className = "tsum-dropdown-list";
+
+      selectbox.forEach((box, index) => {
+        if (box.box_label) {
+          const item = document.createElement("img");
+          item.src = box.box_label;
+          item.className = "tsum-dropdown-item";
+          item.onclick = () => {
+            selected.src = box.box_label;
+            list.classList.remove("show");
+            renderBox(index);
+          };
+          list.appendChild(item);
+        }
+      });
+
+      selected.onclick = () => {
+        list.classList.toggle("show");
+      };
+
+      dropdown.appendChild(list);
+      boxSelectorWrapper.appendChild(dropdown);
+    }
 
     function renderBox(index) {
       tsumArea.innerHTML = "";
@@ -208,6 +283,7 @@
       updateTotal();
     }
 
+    createImageDropdown();
     renderBox(0);
   </script>
 </body>
