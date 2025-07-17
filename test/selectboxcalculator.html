@@ -20,7 +20,6 @@
       border-radius: 10px;
       padding: 4px;
       text-align: center;
-      box-shadow: none;
       background-color: #fff;
     }
 
@@ -83,7 +82,6 @@
       height: 50px;
     }
 
-    /* 新增圖片下拉樣式 */
     #boxSelectorWrapper {
       display: flex;
       justify-content: center;
@@ -98,7 +96,7 @@
 
     .tsum-selected {
       height: 50px;
-      border: 2px solid #666;
+      border: none;
       border-radius: 8px;
     }
 
@@ -134,7 +132,7 @@
 </head>
 <body>
   <div id="boxSelectorWrapper"></div>
-  <div id="labelImageWrapper" style="text-align:center; margin-top: 10px;"></div>
+  <!-- 移除 labelImageWrapper -->
   <div id="tsumArea"></div>
 
   <div id="totalWrapper">
@@ -227,10 +225,9 @@
       document.getElementById("totalGold").textContent = total.toLocaleString();
     }
 
-    const labelWrapper = document.getElementById("labelImageWrapper");
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
 
-    // 建立圖片下拉
+    // 自訂圖片下拉選單
     function createImageDropdown() {
       const dropdown = document.createElement("div");
       dropdown.className = "tsum-dropdown";
@@ -267,15 +264,7 @@
 
     function renderBox(index) {
       tsumArea.innerHTML = "";
-      labelWrapper.innerHTML = "";
       const box = selectbox[index];
-      if (box.box_label) {
-        const img = document.createElement("img");
-        img.src = box.box_label;
-        img.style.maxHeight = "80px";
-        img.style.objectFit = "contain";
-        labelWrapper.appendChild(img);
-      }
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
         if (el) tsumArea.appendChild(el);
