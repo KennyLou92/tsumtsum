@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Select Box 金幣計算器</title>
+  <title>Tsum 金幣計算器</title>
   <style>
     body {
       font-family: sans-serif;
@@ -10,29 +10,30 @@
 
     #tsumArea {
       display: grid;
-	  grid-template-columns: repeat(5, 1fr); /* 一行顯示 5 個格子 */
-	  gap: 8px;  /* 每個格子之間的間距 */
-	  margin: 10px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin: 10px;
     }
 
     .tsum-container {
-      border: 1px solid #ccc;
+      border: 2px solid #999;
       border-radius: 10px;
       padding: 4px;
       text-align: center;
-      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      background-color: #fff;
     }
 
     .tsum-img {
-      width: 80px;
-      height: 80px;
+      width: 130px;
+      height: 130px;
       border-radius: 10px;
     }
 
     .name {
-      font-size: 14px;
+      font-size: 20px;
       margin-top: 8px;
       font-weight: bold;
+      color: black;
     }
 
     .dropdown-wrap {
@@ -80,10 +81,62 @@
       width: 50px;
       height: 50px;
     }
+
+    #boxSelectorWrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .tsum-dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+	.tsum-selected {
+	  height: 108px;  /* ← 調整選單收起來時顯示的圖高度 */
+	  width: 524px;  /* ← 新增這行：設定你想要的寬度 */
+	  border: none;
+	  border-radius: 8px;
+	  object-fit: contain;  /* ← 保持圖片比例縮放 */
+	}
+
+    .tsum-dropdown-list {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      z-index: 100;
+      padding: 5px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .tsum-dropdown-list.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+	.tsum-dropdown-item {
+	  height: 108px;  /* ← 下拉選單裡每個圖標的高度 */
+	  width: 524px;  /* ← 新增這行：設定你想要的寬度 */
+	  margin: 5px 0;
+	  cursor: pointer;
+	  transition: transform 0.2s ease;
+	  object-fit: contain;
+	}
+
+    .tsum-dropdown-item:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
-  <div id="labelImageWrapper" style="text-align:center; margin-top: 10px;"></div>
+  <div id="boxSelectorWrapper"></div>
+  <!-- 移除 labelImageWrapper -->
   <div id="tsumArea"></div>
 
   <div id="totalWrapper">
@@ -91,7 +144,6 @@
     <span id="totalGold">0</span>
   </div>
 
-  <!-- 載入資料 -->
   <script src="tsum.js"></script>
   <script src="selectbox.js"></script>
   <script src="images.js"></script>
@@ -177,24 +229,56 @@
       document.getElementById("totalGold").textContent = total.toLocaleString();
     }
 
-	// 插入 box_label base64 圖片當標題
-	const labelWrapper = document.getElementById("labelImageWrapper");
-	const firstBox = selectbox[0];
-	if (firstBox.box_label) {
-	  const img = document.createElement("img");
-	  img.src = firstBox.box_label;
-	  img.style.maxHeight = "80px";
-	  img.style.objectFit = "contain";
-	  labelWrapper.appendChild(img);
-	}
+    const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
 
-    // 初始化
-    selectbox.forEach(box => {
+    function createImageDropdown() {
+      const dropdown = document.createElement("div");
+      dropdown.className = "tsum-dropdown";
+
+      const selected = document.createElement("img");
+      selected.className = "tsum-selected";
+      const firstVisibleBox = selectbox.find(box => box.show !== 0);
+      selected.src = firstVisibleBox?.box_label || "";
+      dropdown.appendChild(selected);
+
+      const list = document.createElement("div");
+      list.className = "tsum-dropdown-list";
+
+      selectbox.forEach((box, index) => {
+        if (box.box_label && box.show !== 0) {
+          const item = document.createElement("img");
+          item.src = box.box_label;
+          item.className = "tsum-dropdown-item";
+          item.onclick = () => {
+            selected.src = box.box_label;
+            list.classList.remove("show");
+            renderBox(index);
+          };
+          list.appendChild(item);
+        }
+      });
+
+      selected.onclick = () => {
+        list.classList.toggle("show");
+      };
+
+      dropdown.appendChild(list);
+      boxSelectorWrapper.appendChild(dropdown);
+    }
+
+    function renderBox(index) {
+      tsumArea.innerHTML = "";
+      const box = selectbox[index];
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
         if (el) tsumArea.appendChild(el);
       });
-    });
+      updateTotal();
+    }
+
+    createImageDropdown();
+    const initialIndex = selectbox.findIndex(b => b.show !== 0);
+    if (initialIndex !== -1) renderBox(initialIndex);
   </script>
 </body>
 </html>
