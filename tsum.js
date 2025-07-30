@@ -9539,6 +9539,14 @@ const tsumData = [
     "name": "達菲",
     "image": "block_duffy_l.png",
     "skill_label": "win_tsumskill_duffy.png",
+	"skill_desc": [
+	 "效果範圍：XS",
+	 "效果範圍：S",
+	 "效果範圍：M",
+	 "效果範圍：L",
+	 "效果範圍：XL",
+	 "效果範圍：XXL"
+    ],
 	"skill_cost" : [1,1,2,4,8,20]
   },
 ];
