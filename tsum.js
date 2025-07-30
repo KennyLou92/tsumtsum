@@ -9549,4 +9549,36 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,20]
   },
+  {
+    "id": 607,
+    "name_en": "NAME_GELATONI",
+    "name": "傑拉多尼",
+    "image": "block_gelatoni_l.png",
+    "skill_label": "win_tsumskill_gelatoni.png",
+	"skill_desc": [
+	 "消除數：15",
+	 "消除數：17",
+	 "消除數：20",
+	 "消除數：23",
+	 "消除數：27",
+	 "消除數：32",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+  {
+    "id": 608,
+    "name_en": "NAME_COOKIEANN",
+    "name": "可琦安",
+    "image": "block_COOKIEANN_l.png",
+    "skill_label": "win_tsumskill_COOKIEANN.png",
+	"skill_desc": [
+	 "出現數量：2～3",
+	 "出現數量：3",
+	 "出現數量：3～4",
+	 "出現數量：4",
+	 "出現數量：4～5",
+	 "出現數量：5",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
 ];
