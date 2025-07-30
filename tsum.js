@@ -9532,5 +9532,13 @@ const tsumData = [
     ],
     "skill_label": "win_tsumskill_stitch11th.png",
 	"skill_cost" : [1,1,2,4,8,20]
-  }
+  },
+  {
+    "id": 606,
+    "name_en": "NAME_DUFFY",
+    "name": "達菲",
+    "image": "block_duffy_l.png",
+    "skill_label": "win_tsumskill_duffy.png",
+	"skill_cost" : [1,1,2,4,8,20]
+  },
 ];
