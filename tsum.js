@@ -9570,7 +9570,7 @@ const tsumData = [
     "name_en": "NAME_COOKIEANN",
     "name": "可琦安",
     "image": "block_COOKIEANN_l.png",
-    "skill_label": "win_tsumskill_COOKIEANN.png",
+    "skill_label": "win_tsumskill_cookieann.png",
 	"skill_desc": [
 	 "出現數量：2～3",
 	 "出現數量：3",
