@@ -9532,5 +9532,85 @@ const tsumData = [
     ],
     "skill_label": "win_tsumskill_stitch11th.png",
 	"skill_cost" : [1,1,2,4,8,20]
-  }
+  },
+  {
+    "id": 606,
+    "name_en": "NAME_DUFFY",
+    "name": "達菲",
+    "image": "block_duffy_l.png",
+    "skill_label": "win_tsumskill_duffy.png",
+	"skill_desc": [
+	 "效果範圍：XS",
+	 "效果範圍：S",
+	 "效果範圍：M",
+	 "效果範圍：L",
+	 "效果範圍：XL",
+	 "效果範圍：XXL"
+    ],
+	"skill_cost" : [1,1,2,4,8,20]
+  },
+  {
+    "id": 607,
+    "name_en": "NAME_GELATONI",
+    "name": "傑拉多尼",
+    "image": "block_gelatoni_l.png",
+    "skill_label": "win_tsumskill_gelatoni.png",
+	"skill_desc": [
+	 "消除數：15",
+	 "消除數：17",
+	 "消除數：20",
+	 "消除數：23",
+	 "消除數：27",
+	 "消除數：32",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+  {
+    "id": 608,
+    "name_en": "NAME_COOKIEANN",
+    "name": "可琦安",
+    "image": "block_cookieann_l.png",
+    "skill_label": "win_tsumskill_cookieann.png",
+	"skill_desc": [
+	 "出現數量：2～3",
+	 "出現數量：3",
+	 "出現數量：3～4",
+	 "出現數量：4",
+	 "出現數量：4～5",
+	 "出現數量：5",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+  {
+    "id": 609,
+    "name_en": "NAME_STELLALOU",
+    "name": "星黛露",
+    "image": "block_stellalou_l.png",
+    "skill_label": "win_tsumskill_stellalou.png",
+	"skill_desc": [
+	 "範圍：XS 出現數量：1",
+	 "範圍：S 出現數量：1～2",
+	 "範圍：M 出現數量：1～2",
+	 "範圍：L 出現數量：2",
+	 "範圍：XL 出現數量：2～3",
+	 "範圍：XXL 出現數量：3",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+  {
+    "id": 610,
+    "name_en": "NAME_OLUMEL",
+    "name": "奧樂米拉",
+    "image": "block_olumel_l.png",
+    "skill_label": "win_tsumskill_olumel.png",
+	"skill_desc": [
+	 "音符數：3",
+	 "音符數：3～4",
+	 "音符數：4",
+	 "音符數：4～5",
+	 "音符數：5",
+	 "音符數：5～6",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
 ];
