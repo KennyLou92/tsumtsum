@@ -6,17 +6,15 @@
   <style>
     body {
       font-family: sans-serif;
-	  background:url('bluebg.png') repeat;
-	  background-size:auto;
+      background: url('bluebg.png') repeat;
+      background-size: auto;
     }
-
     #tsumArea {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 8px;
       margin: 10px;
     }
-
     .tsum-container {
       border: 2px solid #999;
       border-radius: 10px;
@@ -24,31 +22,26 @@
       text-align: center;
       background-color: #fff;
     }
-
     .tsum-img {
       width: 130px;
       height: 130px;
       border-radius: 10px;
     }
-
     .name {
       font-size: 20px;
       margin-top: 8px;
       font-weight: bold;
       color: black;
     }
-
     .dropdown-wrap {
       display: flex;
       justify-content: center;
       margin-top: 6px;
     }
-
     select {
       font-size: 14px;
       padding: 4px;
     }
-
     .coin-line {
       display: flex;
       align-items: center;
@@ -56,18 +49,15 @@
       margin-top: 8px;
       gap: 6px;
     }
-
     .coin-line img {
       width: 18px;
       height: 18px;
     }
-
     .gold {
       font-weight: bold;
       color: #cc9900;
       font-size: 15px;
     }
-
     #totalWrapper {
       text-align: center;
       margin-top: 30px;
@@ -78,32 +68,29 @@
       align-items: center;
       gap: 12px;
     }
-
     #totalWrapper img {
       width: 50px;
       height: 50px;
     }
-
     #boxSelectorWrapper {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-top: 10px;
+      gap: 5px;
     }
-
     .tsum-dropdown {
       position: relative;
       display: inline-block;
       cursor: pointer;
     }
-
-	.tsum-selected {
-	  height: 108px;  /* ← 調整選單收起來時顯示的圖高度 */
-	  width: 524px;  /* ← 新增這行：設定你想要的寬度 */
-	  border: none;
-	  border-radius: 8px;
-	  object-fit: contain;  /* ← 保持圖片比例縮放 */
-	}
-
+    .tsum-selected {
+      height: 108px;
+      width: 524px;
+      border: none;
+      border-radius: 8px;
+      object-fit: contain;
+    }
     .tsum-dropdown-list {
       display: none;
       position: absolute;
@@ -116,29 +103,36 @@
       border-radius: 6px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-
     .tsum-dropdown-list.show {
       display: flex;
       flex-direction: column;
     }
-
-	.tsum-dropdown-item {
-	  height: 108px;  /* ← 下拉選單裡每個圖標的高度 */
-	  width: 524px;  /* ← 新增這行：設定你想要的寬度 */
-	  margin: 5px 0;
-	  cursor: pointer;
-	  transition: transform 0.2s ease;
-	  object-fit: contain;
-	}
-
+    .tsum-dropdown-item {
+      height: 108px;
+      width: 524px;
+      margin: 5px 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      object-fit: contain;
+    }
     .tsum-dropdown-item:hover {
       transform: scale(1.05);
+    }
+    .countdown {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+      background: rgba(255,255,255,0.8);
+      padding: 4px 8px;
+      border-radius: 6px;
     }
   </style>
 </head>
 <body>
-  <div id="boxSelectorWrapper"></div>
-  <!-- 移除 labelImageWrapper -->
+  <div id="boxSelectorWrapper">
+    <div id="countdownBox" class="countdown"></div>
+    <div id="rateupCountdown" class="countdown"></div>
+  </div>
   <div id="tsumArea"></div>
 
   <div id="totalWrapper">
@@ -157,11 +151,13 @@
 
     const GOLD_PER_COST = 30000;
     const tsumArea = document.getElementById("tsumArea");
+    const countdownBox = document.getElementById("countdownBox");
+    const rateupCountdown = document.getElementById("rateupCountdown");
+    let countdownInterval, rateupInterval;
 
     function createTsumBox(tsumId) {
       const tsum = tsumMap[tsumId];
       if (!tsum || !tsum.skill_cost) return null;
-
       const container = document.createElement("div");
       container.className = "tsum-container";
 
@@ -222,13 +218,36 @@
 
     function updateTotal() {
       let total = 0;
-      const containers = document.querySelectorAll(".tsum-container");
-      containers.forEach(c => {
-        if (typeof c._getGold === 'function') {
-          total += c._getGold();
-        }
+      document.querySelectorAll(".tsum-container").forEach(c => {
+        if (typeof c._getGold === 'function') total += c._getGold();
       });
       document.getElementById("totalGold").textContent = total.toLocaleString();
+    }
+
+    function renderCountdown(start, end, element, label) {
+      clearInterval(element === countdownBox ? countdownInterval : rateupInterval);
+      function update() {
+        const now = Math.floor(Date.now() / 1000);
+        let target, prefix;
+        if (now < start) {
+          target = start; prefix = label + "開始於";
+        } else if (now >= start && now < end) {
+          target = end; prefix = label + "結束於";
+        } else {
+          element.textContent = label + "已結束";
+          return;
+        }
+        const diff = target - now;
+        const d = Math.floor(diff / 86400);
+        const h = Math.floor((diff % 86400) / 3600);
+        const m = Math.floor((diff % 3600) / 60);
+        const s = diff % 60;
+        element.textContent = `${prefix} ${d}天 ${h}時 ${m}分 ${s}秒`;
+      }
+      update();
+      const interval = setInterval(update, 1000);
+      if (element === countdownBox) countdownInterval = interval;
+      else rateupInterval = interval;
     }
 
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
@@ -236,7 +255,6 @@
     function createImageDropdown() {
       const dropdown = document.createElement("div");
       dropdown.className = "tsum-dropdown";
-
       const selected = document.createElement("img");
       selected.className = "tsum-selected";
       const firstVisibleBox = selectbox.find(box => box.show !== 0);
@@ -260,12 +278,9 @@
         }
       });
 
-      selected.onclick = () => {
-        list.classList.toggle("show");
-      };
-
+      selected.onclick = () => list.classList.toggle("show");
       dropdown.appendChild(list);
-      boxSelectorWrapper.appendChild(dropdown);
+      boxSelectorWrapper.insertBefore(dropdown, countdownBox);
     }
 
     function renderBox(index) {
@@ -276,8 +291,16 @@
         if (el) tsumArea.appendChild(el);
       });
       updateTotal();
-    }
-
+      if (box.startdate && box.enddate) {
+        renderCountdown(box.startdate, box.enddate, countdownBox, "");
+      } else countdownBox.textContent = "";
+	  if (box.rateupstartdate && box.rateupenddate) {
+	  rateupCountdown.style.display = "block";
+	  renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
+	  } else {
+	   rateupCountdown.style.display = "none";
+	  }
+}
     createImageDropdown();
     const initialIndex = selectbox.findIndex(b => b.show !== 0);
     if (initialIndex !== -1) renderBox(initialIndex);
