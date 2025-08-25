@@ -107,5 +107,5 @@ const selectbox = [
 		box_tsum:[541,500,338,430,450,503,145,337,431,79,389,458],
 		startdate:,
 		enddate:,
-	},
+	}
 ];
