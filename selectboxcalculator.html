@@ -283,24 +283,36 @@
       boxSelectorWrapper.insertBefore(dropdown, countdownBox);
     }
 
-    function renderBox(index) {
-      tsumArea.innerHTML = "";
-      const box = selectbox[index];
-      box.box_tsum.forEach(tsumId => {
-        const el = createTsumBox(tsumId);
-        if (el) tsumArea.appendChild(el);
-      });
-      updateTotal();
-      if (box.startdate && box.enddate) {
-        renderCountdown(box.startdate, box.enddate, countdownBox, "");
-      } else countdownBox.textContent = "";
-	  if (box.rateupstartdate && box.rateupenddate) {
-	  rateupCountdown.style.display = "block";
-	  renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
+	function renderBox(index) {
+	  tsumArea.innerHTML = "";
+	  const box = selectbox[index];
+	  box.box_tsum.forEach(tsumId => {
+		const el = createTsumBox(tsumId);
+		if (el) tsumArea.appendChild(el);
+	  });
+	  updateTotal();
+
+	  // 活動時間倒數
+	  if (box.startdate && box.enddate) {
+		countdownBox.style.display = "block";
+		renderCountdown(box.startdate, box.enddate, countdownBox, "");
 	  } else {
-	   rateupCountdown.style.display = "none";
+		countdownBox.style.display = "none";
+		clearInterval(countdownInterval); // 🟢 清除舊的計時器
+		countdownBox.textContent = "";    // 🟢 保證不會殘留舊內容
 	  }
-}
+
+	  // Rate Up 倒數
+	  if (box.rateupstartdate && box.rateupenddate) {
+		rateupCountdown.style.display = "block";
+		renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
+	  } else {
+		rateupCountdown.style.display = "none";
+		clearInterval(rateupInterval); // 🟢 清除舊的計時器
+		rateupCountdown.textContent = "";
+	  }
+	}
+
     createImageDropdown();
     const initialIndex = selectbox.findIndex(b => b.show !== 0);
     if (initialIndex !== -1) renderBox(initialIndex);
