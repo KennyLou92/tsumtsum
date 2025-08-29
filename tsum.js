@@ -9613,4 +9613,20 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,16]
   },
+  {
+    "id": 611,
+    "name_en": "NAME_MICKEYDFPR",
+    "name": "米奇＆達菲",
+    "image": "block_mickeydfprsp_l.png",
+    "skill_label": "win_tsumskill_olumel.png",
+	"skill_desc": [
+	 "^802w^所需Tsum數：37 ^803w^範圍：XS",
+	 "^802w^所需Tsum數：35 ^803w^範圍：S",
+	 "^802w^所需Tsum數：33 ^803w^範圍：M",
+	 "^802w^所需Tsum數：31 ^803w^範圍：L",
+	 "^802w^所需Tsum數：29 ^803w^範圍：XL",
+	 "^802w^所需Tsum數：27 ^803w^範圍：XXL",
+    ],
+	"skill_cost" : [1,1,2,4,8,20]
+  },
 ];
