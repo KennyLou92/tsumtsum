@@ -9629,4 +9629,20 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,20]
   },
+    {
+    "id": 612,
+    "name_en": "NAME_LINABELL",
+    "name": "玲娜貝兒",
+    "image": "block_linabell_l.png",
+    "skill_label": "win_tsumskill_linabell.png",
+	"skill_desc": [
+	 "分數：2.3倍 出現數量：3",
+	 "分數：2.3倍 出現數量：4",
+	 "分數：2.7倍 出現數量：4",
+	 "分數：2.7倍 出現數量：5",
+	 "分數：3.1倍 出現數量：5",
+	 "分數：3.5倍 出現數量：6",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
 ];
