@@ -9613,4 +9613,68 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,16]
   },
+  {
+    "id": 611,
+    "name_en": "NAME_MICKEYDFPR",
+    "name": "米奇＆達菲",
+    "image": "block_mickeydfprsp_l.png",
+    "skill_label": "win_tsumskill_mickeydfpr.png",
+	"skill_desc": [
+	 "^802w^所需Tsum數：37 ^803w^範圍：XS",
+	 "^802w^所需Tsum數：35 ^803w^範圍：S",
+	 "^802w^所需Tsum數：33 ^803w^範圍：M",
+	 "^802w^所需Tsum數：31 ^803w^範圍：L",
+	 "^802w^所需Tsum數：29 ^803w^範圍：XL",
+	 "^802w^所需Tsum數：27 ^803w^範圍：XXL",
+    ],
+	"skill_cost" : [1,1,2,4,8,20]
+  },
+  {
+    "id": 612,
+    "name_en": "NAME_LINABELL",
+    "name": "玲娜貝兒",
+    "image": "block_linabell_l.png",
+    "skill_label": "win_tsumskill_linabell.png",
+	"skill_desc": [
+	 "分數：2.3倍 出現數量：3",
+	 "分數：2.3倍 出現數量：4",
+	 "分數：2.7倍 出現數量：4",
+	 "分數：2.7倍 出現數量：5",
+	 "分數：3.1倍 出現數量：5",
+	 "分數：3.5倍 出現數量：6",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+  {
+    "id": 613,
+    "name_en": "NAME_SHELLIEMAY",
+    "name": "雪莉玫",
+    "image": "block_shelliemay_l.png",
+    "skill_label": "win_tsumskill_shelliemay.png",
+	"skill_desc": [
+	 "效果範圍：XS",
+	 "效果範圍：S",
+	 "效果範圍：M",
+	 "效果範圍：L",
+	 "效果範圍：XL",
+	 "效果範圍：XXL",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+  {
+    "id": 614,
+    "name_en": "NAME_MINNIEDF",
+    "name": "縫紉米妮",
+    "image": "block_minniedf_l.png",
+    "skill_label": "win_tsumskill_minniedf.png",
+	"skill_desc": [
+	 "分數：1倍 消除排數：2",
+	 "分數：1倍 消除排數：3",
+	 "分數：1.4倍 消除排數：3",
+	 "分數：1.4倍 消除排數：4",
+	 "分數：1.8倍 消除排數：4",
+	 "分數：1.8倍 消除排數：5",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
 ];
