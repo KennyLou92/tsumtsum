@@ -9617,7 +9617,7 @@ const tsumData = [
     "id": 611,
     "name_en": "NAME_MICKEYDFPR",
     "name": "米奇＆達菲",
-    "image": "block_mickeydfprsp_l.png",
+    "image": "block_mickeydfpr_l.png",
     "skill_label": "win_tsumskill_mickeydfpr.png",
 	"skill_desc": [
 	 "^802w^所需Tsum數：37 ^803w^範圍：XS",
