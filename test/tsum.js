@@ -1605,7 +1605,7 @@ const tsumData = [
     "id": 108,
     "name_en": "name_chip_pumpkin",
     "name": "南瓜奇奇",
-    "image": "block_chiph2015sp_l.png",
+    "image": "block_chiph2015_l.png",
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
