@@ -140,10 +140,58 @@
     <span id="totalGold">0</span>
   </div>
 
+  <!-- 🔹 YouTube 背景音樂 (隱藏播放器) -->
+  <div id="player" style="width:0;height:0;overflow:hidden;"></div>
+
   <script src="tsum.js"></script>
   <script src="selectbox.js"></script>
   <script src="images.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script>
+    /* ========= YouTube 背景音樂控制 ========= */
+    let ytPlayer;
+
+    // 設定音樂播放時間 (Unix 秒數)
+    const musicStart = 1759248000; // 例: 2025/09/26 16:00 (MYT)
+    const musicEnd   = 1761926399; // 例: 2025/09/30 23:59 (MYT)
+
+    function onYouTubeIframeAPIReady() {
+      ytPlayer = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: 'ZVuToMilP0A', // 👈 換成你的 YouTube 音樂 ID
+        playerVars: {
+          autoplay: 0,
+          loop: 1,
+          playlist: 'ZVuToMilP0A'
+        },
+        events: {
+          'onReady': () => {
+            ytPlayer.setVolume(10); // 音量
+            controlBGM(musicStart, musicEnd);
+          }
+        }
+      });
+    }
+
+    function controlBGM(start, end) {
+      function updateBGM() {
+        const now = Math.floor(Date.now() / 1000);
+        if (now >= start && now < end) {
+          if (ytPlayer && ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING) {
+            ytPlayer.playVideo();
+          }
+        } else {
+          if (ytPlayer && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+            ytPlayer.pauseVideo();
+          }
+        }
+      }
+      updateBGM();
+      setInterval(updateBGM, 1000);
+    }
+
+    /* ========= 你原本的 JS (保留) ========= */
     const tsumMap = {};
     tsumData.forEach(tsum => {
       tsumMap[tsum.id] = tsum;
@@ -283,35 +331,33 @@
       boxSelectorWrapper.insertBefore(dropdown, countdownBox);
     }
 
-	function renderBox(index) {
-	  tsumArea.innerHTML = "";
-	  const box = selectbox[index];
-	  box.box_tsum.forEach(tsumId => {
-		const el = createTsumBox(tsumId);
-		if (el) tsumArea.appendChild(el);
-	  });
-	  updateTotal();
+    function renderBox(index) {
+      tsumArea.innerHTML = "";
+      const box = selectbox[index];
+      box.box_tsum.forEach(tsumId => {
+        const el = createTsumBox(tsumId);
+        if (el) tsumArea.appendChild(el);
+      });
+      updateTotal();
 
-	  // 活動時間倒數
-	  if (box.startdate && box.enddate) {
-		countdownBox.style.display = "block";
-		renderCountdown(box.startdate, box.enddate, countdownBox, "");
-	  } else {
-		countdownBox.style.display = "none";
-		clearInterval(countdownInterval); // 🟢 清除舊的計時器
-		countdownBox.textContent = "";    // 🟢 保證不會殘留舊內容
-	  }
+      if (box.startdate && box.enddate) {
+        countdownBox.style.display = "block";
+        renderCountdown(box.startdate, box.enddate, countdownBox, "");
+      } else {
+        countdownBox.style.display = "none";
+        clearInterval(countdownInterval);
+        countdownBox.textContent = "";
+      }
 
-	  // Rate Up 倒數
-	  if (box.rateupstartdate && box.rateupenddate) {
-		rateupCountdown.style.display = "block";
-		renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
-	  } else {
-		rateupCountdown.style.display = "none";
-		clearInterval(rateupInterval); // 🟢 清除舊的計時器
-		rateupCountdown.textContent = "";
-	  }
-	}
+      if (box.rateupstartdate && box.rateupenddate) {
+        rateupCountdown.style.display = "block";
+        renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
+      } else {
+        rateupCountdown.style.display = "none";
+        clearInterval(rateupInterval);
+        rateupCountdown.textContent = "";
+      }
+    }
 
     createImageDropdown();
     const initialIndex = selectbox.findIndex(b => b.show !== 0);
