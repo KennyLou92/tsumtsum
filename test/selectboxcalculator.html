@@ -152,18 +152,18 @@
     let ytPlayer;
 
     // 設定音樂播放時間 (Unix 秒數)
-    const musicStart = 1759248000; // 例: 2025/09/26 16:00 (MYT)
+    const musicStart = 1758933600; // 例: 2025/09/26 16:00 (MYT)
     const musicEnd   = 1761926399; // 例: 2025/09/30 23:59 (MYT)
 
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'ZVuToMilP0A', // 👈 換成你的 YouTube 音樂 ID
+        videoId: 'ntsrWX-0FE4', // 👈 換成你的 YouTube 音樂 ID
         playerVars: {
           autoplay: 0,
           loop: 1,
-          playlist: 'ZVuToMilP0A'
+          playlist: 'ntsrWX-0FE4'
         },
         events: {
           'onReady': () => {
