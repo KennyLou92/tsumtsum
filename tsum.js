@@ -9737,7 +9737,7 @@ const tsumData = [
 	 "",
 	 "",
 	 "",
-	 "",
+	 "所需Tsum數：17 時間：7秒",
     ],
 	"skill_cost" : []
   },
@@ -9748,12 +9748,12 @@ const tsumData = [
     "image": "block_donaldh2024_l.png",
     "skill_label": "win_tsumskill_donaldh2024.png",
 	"skill_desc": [
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
-	 "",
+	 "所需Tsum數：20 時間：3.5秒",
+	 "所需Tsum數：19 時間：3.9秒",
+	 "所需Tsum數：18 時間：4.3秒",
+	 "所需Tsum數：17 時間：4.7秒",
+	 "所需Tsum數：16 時間：5.1秒",
+	 "所需Tsum數：15 時間：5.5秒",
     ],
 	"skill_cost" : []
   },
