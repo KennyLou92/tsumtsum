@@ -9677,4 +9677,84 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,16]
   },
+  {
+    "id": 615,
+    "name_en": "NAME_MISET",
+    "name": "怪獸電力公司（組合）",
+    "image": "block_miset_l.png",
+    "skill_label": "win_tsumskill_miset.png",
+	"skill_desc": [
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+    ],
+	"skill_cost" : []
+  },
+  {
+    "id": 616,
+    "name_en": "NAME_MICKEYH2024",
+    "name": "吸血鬼米奇",
+    "image": "block_mickeyh2024_l.png",
+    "skill_label": "win_tsumskill_mickeyh2024.png",
+	"skill_desc": [
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+    ],
+	"skill_cost" : []
+  },
+    {
+    "id": 617,
+    "name_en": "NAME_PETEH2024",
+    "name": "螺絲頭皮特",
+    "image": "block_peteh2024_l.png",
+    "skill_label": "win_tsumskill_peteh2024.png",
+	"skill_desc": [
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+    ],
+	"skill_cost" : []
+  },
+    {
+    "id": 618,
+    "name_en": "NAME_GOOFYH2024",
+    "name": "野性獠牙高飛",
+    "image": "block_goofyh2024_l.png",
+    "skill_label": "win_tsumskill_goofyh2024.png",
+	"skill_desc": [
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+    ],
+	"skill_cost" : []
+  },
+    {
+    "id": 619,
+    "name_en": "NAME_DONALDH2024",
+    "name": "惡魔唐老鴨",
+    "image": "block_donaldh2024_l.png",
+    "skill_label": "win_tsumskill_donaldh2024.png",
+	"skill_desc": [
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+	 "",
+    ],
+	"skill_cost" : []
+  },
 ];
