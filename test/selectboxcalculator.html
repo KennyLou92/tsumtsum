@@ -122,14 +122,11 @@
       transition: transform 0.2s ease;
       object-fit: contain;
     }
-    .tsum-dropdown-item:hover {
-      transform: scale(1.05);
-    }
-    /* 突顯選中的 banner */
-    .tsum-dropdown-item.active {
-      outline: 3px solid #ff4444;
-      border-radius: 6px;
-    }
+	.tsum-dropdown-item:hover,
+	.tsum-dropdown-item.active {
+	  transform: scale(1.05);
+	  z-index: 5;
+	}
     .countdown {
       font-size: 16px;
       color: #333;
@@ -194,24 +191,43 @@
       return false;
     }
 
+    /* ========= YouTube 背景音樂控制 ========= */
     let ytPlayer;
-    const musicStart = 1758873600;
-    const musicEnd   = 1759257540;
+
+    // 設定音樂播放時間 (Unix 秒數)
+    const musicStart = 1759248000; // 例: 2025/09/26 16:00 (MYT)
+    const musicEnd   = 1761926399; // 例: 2025/09/30 23:59 (MYT)
+
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('player', {
-        height: '0', width: '0',
-        videoId: 'YOUR_VIDEO_ID',
-        playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'YOUR_VIDEO_ID' },
-        events: { 'onReady': () => { ytPlayer.setVolume(50); controlBGM(musicStart, musicEnd); } }
+        height: '0',
+        width: '0',
+        videoId: 'ntsrWX-0FE4', // 👈 換成你的 YouTube 音樂 ID
+        playerVars: {
+          autoplay: 0,
+          loop: 1,
+          playlist: 'ntsrWX-0FE4'
+        },
+        events: {
+          'onReady': () => {
+            ytPlayer.setVolume(50); // 音量
+            controlBGM(musicStart, musicEnd);
+          }
+        }
       });
     }
+
     function controlBGM(start, end) {
       function updateBGM() {
         const now = Math.floor(Date.now() / 1000);
         if (now >= start && now < end) {
-          if (ytPlayer && ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING) ytPlayer.playVideo();
+          if (ytPlayer && ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING) {
+            ytPlayer.playVideo();
+          }
         } else {
-          if (ytPlayer && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) ytPlayer.pauseVideo();
+          if (ytPlayer && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+            ytPlayer.pauseVideo();
+          }
         }
       }
       updateBGM();
