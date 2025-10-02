@@ -447,19 +447,19 @@
 	  }
 
 	  // 如果當前的失效了，就找第一個新的可見 banner
-	  const newIndex = selectbox.findIndex(isBoxVisible);
-	  if (newIndex !== currentIndex) {
-		currentIndex = newIndex;
-		if (currentIndex === -1) {
-		  tsumArea.innerHTML = "";
-		  countdownBox.style.display = "none";
-		  rateupCountdown.style.display = "none";
-		  updateTotal();
-		} else {
-		  renderBox(currentIndex);
-		}
-	  }
-	}, 60000);
+//	  const newIndex = selectbox.findIndex(isBoxVisible);
+//	  if (newIndex !== currentIndex) {
+//		currentIndex = newIndex;
+//		if (currentIndex === -1) {
+//		  tsumArea.innerHTML = "";
+//		  countdownBox.style.display = "none";
+//		  rateupCountdown.style.display = "none";
+//		  updateTotal();
+//		} else {
+//		  renderBox(currentIndex);
+//		}
+//	  }
+//	}, 60000);
   </script>
 </body>
 </html>
