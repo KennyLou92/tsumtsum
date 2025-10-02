@@ -102,6 +102,13 @@
       padding: 5px;
       border-radius: 6px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-height: 360px;
+      overflow: auto;
+      scrollbar-width: none;   /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+    }
+    .tsum-dropdown-list::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
     }
     .tsum-dropdown-list.show {
       display: flex;
@@ -117,6 +124,11 @@
     }
     .tsum-dropdown-item:hover {
       transform: scale(1.05);
+    }
+    /* 突顯選中的 banner */
+    .tsum-dropdown-item.active {
+      outline: 3px solid #ff4444;
+      border-radius: 6px;
     }
     .countdown {
       font-size: 16px;
@@ -174,32 +186,25 @@
   <script src="images.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
-    /* ========= 判斷 banner 是否可顯示 ========= */
     function isBoxVisible(box) {
       const now = Math.floor(Date.now() / 1000);
-      if (typeof box.show !== "undefined") {
-        return box.show !== 0;
-      } else if (box.startdate && box.enddate) {
-        return now >= box.startdate && now < box.enddate;
-      }
+      if (box.enddate && now >= box.enddate) return false;
+      if (typeof box.show !== "undefined") return box.show !== 0;
+      if (box.startdate && box.enddate) return now >= box.startdate && now < box.enddate;
       return false;
     }
 
-    /* ========= YouTube 背景音樂控制 ========= */
     let ytPlayer;
-    const musicStart = 1759248000;
-    const musicEnd   = 1761926399;
-
+    const musicStart = 1758873600;
+    const musicEnd   = 1759257540;
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: 'ntsrWX-0FE4',
-        playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'ntsrWX-0FE4' },
+        height: '0', width: '0',
+        videoId: 'YOUR_VIDEO_ID',
+        playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'YOUR_VIDEO_ID' },
         events: { 'onReady': () => { ytPlayer.setVolume(50); controlBGM(musicStart, musicEnd); } }
       });
     }
-
     function controlBGM(start, end) {
       function updateBGM() {
         const now = Math.floor(Date.now() / 1000);
@@ -213,17 +218,14 @@
       setInterval(updateBGM, 1000);
     }
 
-    /* ========= 原本程式碼 ========= */
     const tsumMap = {};
     tsumData.forEach(tsum => tsumMap[tsum.id] = tsum);
-
     const GOLD_PER_COST = 30000;
     const tsumArea = document.getElementById("tsumArea");
     const countdownBox = document.getElementById("countdownBox");
     const rateupCountdown = document.getElementById("rateupCountdown");
     let countdownInterval, rateupInterval;
 
-    /* ========= 保留技能等級 (localStorage) ========= */
     let savedLevels = {};
     const savedData = localStorage.getItem("savedLevels");
     if (savedData) {
@@ -257,9 +259,7 @@
         option.textContent = `SLv${i}`;
         levelSelect.appendChild(option);
       }
-      if (savedLevels[tsumId] !== undefined) {
-        levelSelect.value = savedLevels[tsumId];
-      }
+      if (savedLevels[tsumId] !== undefined) levelSelect.value = savedLevels[tsumId];
 
       const dropdownWrap = document.createElement("div");
       dropdownWrap.className = "dropdown-wrap";
@@ -278,7 +278,6 @@
         const level = parseInt(levelSelect.value);
         savedLevels[tsumId] = level;
         saveLevelsToStorage();
-
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
         const remainingCost = totalCost - ownedCost;
@@ -286,7 +285,6 @@
         coinLine.querySelector("span").textContent = gold.toLocaleString();
         updateTotal();
       }
-
       levelSelect.addEventListener("change", updateGold);
       updateGold();
 
@@ -313,14 +311,9 @@
       function update() {
         const now = Math.floor(Date.now() / 1000);
         let target, prefix;
-        if (now < start) {
-          target = start; prefix = label + "開始於";
-        } else if (now >= start && now < end) {
-          target = end; prefix = label + "結束於";
-        } else {
-          element.textContent = label + "已結束";
-          return;
-        }
+        if (now < start) { target = start; prefix = label + "開始於"; }
+        else if (now >= start && now < end) { target = end; prefix = label + "結束於"; }
+        else { element.textContent = label + "已結束"; return; }
         const diff = target - now;
         const d = Math.floor(diff / 86400);
         const h = Math.floor((diff % 86400) / 3600);
@@ -335,49 +328,66 @@
     }
 
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
+    let dropdownSelectedEl = null;
+    let dropdownListEl = null;
 
     function createImageDropdown() {
+      const old = document.querySelector(".tsum-dropdown");
+      if (old) old.remove();
       const dropdown = document.createElement("div");
       dropdown.className = "tsum-dropdown";
       const selected = document.createElement("img");
       selected.className = "tsum-selected";
-
-      const now = Math.floor(Date.now() / 1000);
-      const firstVisibleBox = selectbox.find(isBoxVisible);
-      selected.src = firstVisibleBox?.box_label || "";
+      selected.src = "";
       dropdown.appendChild(selected);
-
       const list = document.createElement("div");
       list.className = "tsum-dropdown-list";
+      dropdown.appendChild(list);
+      dropdownSelectedEl = selected;
+      dropdownListEl = list;
+      selected.onclick = () => list.classList.toggle("show");
+      boxSelectorWrapper.insertBefore(dropdown, countdownBox);
+      rebuildDropdownList();
+    }
 
+    function rebuildDropdownList() {
+      if (!dropdownListEl || !dropdownSelectedEl) return;
+      dropdownListEl.innerHTML = "";
+      let first = null;
       selectbox.forEach((box, index) => {
         if (box.box_label && isBoxVisible(box)) {
           const item = document.createElement("img");
           item.src = box.box_label;
           item.className = "tsum-dropdown-item";
           item.onclick = () => {
-            selected.src = box.box_label;
-            list.classList.remove("show");
+            document.querySelectorAll(".tsum-dropdown-item").forEach(el => el.classList.remove("active"));
+            item.classList.add("active");
+            dropdownSelectedEl.src = box.box_label;
+            dropdownListEl.classList.remove("show");
             renderBox(index);
+            currentIndex = index;
           };
-          list.appendChild(item);
+          dropdownListEl.appendChild(item);
+          if (first === null) first = {box, index, item};
         }
       });
-
-      selected.onclick = () => list.classList.toggle("show");
-      dropdown.appendChild(list);
-      boxSelectorWrapper.insertBefore(dropdown, countdownBox);
+      if (first) {
+        dropdownSelectedEl.src = first.box.box_label || "";
+        first.item.classList.add("active");
+      } else {
+        dropdownSelectedEl.src = "";
+      }
     }
 
     function renderBox(index) {
       tsumArea.innerHTML = "";
       const box = selectbox[index];
+      if (dropdownSelectedEl) dropdownSelectedEl.src = box.box_label || "";
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
         if (el) tsumArea.appendChild(el);
       });
       updateTotal();
-
       if (box.startdate && box.enddate) {
         countdownBox.style.display = "block";
         renderCountdown(box.startdate, box.enddate, countdownBox, "");
@@ -386,7 +396,6 @@
         clearInterval(countdownInterval);
         countdownBox.textContent = "";
       }
-
       if (box.rateupstartdate && box.rateupenddate) {
         rateupCountdown.style.display = "block";
         renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
@@ -401,7 +410,6 @@
     let currentIndex = selectbox.findIndex(isBoxVisible);
     if (currentIndex !== -1) renderBox(currentIndex);
 
-    /* ========= Reset Icon 功能 ========= */
     document.getElementById("resetLevels").addEventListener("click", () => {
       if (confirm("確定要重置所有技能等級嗎？")) {
         localStorage.removeItem("savedLevels");
@@ -409,15 +417,23 @@
         currentIndex = selectbox.findIndex(isBoxVisible);
         if (currentIndex !== -1) renderBox(currentIndex);
         updateTotal();
+        rebuildDropdownList();
       }
     });
 
-    /* ========= 自動刷新 (每分鐘檢查一次) ========= */
     setInterval(() => {
+      rebuildDropdownList();
       const newIndex = selectbox.findIndex(isBoxVisible);
-      if (newIndex !== currentIndex && newIndex !== -1) {
+      if (newIndex !== currentIndex) {
         currentIndex = newIndex;
-        renderBox(currentIndex);
+        if (currentIndex === -1) {
+          tsumArea.innerHTML = "";
+          countdownBox.style.display = "none";
+          rateupCountdown.style.display = "none";
+          updateTotal();
+        } else {
+          renderBox(currentIndex);
+        }
       }
     }, 60000);
   </script>
