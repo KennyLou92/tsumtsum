@@ -162,13 +162,13 @@
         videoId: 'YOUR_VIDEO_ID', // 👈 換成你的 YouTube 音樂 ID
         playerVars: {
           autoplay: 1,
-          mute: 1, // 🔹 靜音才能自動播放
+          mute: 1, // 靜音才能自動播放
           loop: 1,
           playlist: 'YOUR_VIDEO_ID'
         },
         events: {
           'onReady': () => {
-            ytPlayer.setVolume(50); // 音量
+            ytPlayer.setVolume(50);
             controlBGM(musicStart, musicEnd);
           }
         }
@@ -192,7 +192,7 @@
       setInterval(updateBGM, 1000);
     }
 
-    /* ========= 你的原本程式碼 ========= */
+    /* ========= 原本程式碼 ========= */
     const tsumMap = {};
     tsumData.forEach(tsum => {
       tsumMap[tsum.id] = tsum;
@@ -204,8 +204,19 @@
     const rateupCountdown = document.getElementById("rateupCountdown");
     let countdownInterval, rateupInterval;
 
-    /* ========= 保留技能等級設定 ========= */
-    const savedLevels = {}; // { tsumId: level }
+    /* ========= 保留技能等級 (支援 localStorage) ========= */
+    let savedLevels = {};
+    const savedData = localStorage.getItem("savedLevels");
+    if (savedData) {
+      try {
+        savedLevels = JSON.parse(savedData);
+      } catch (e) {
+        savedLevels = {};
+      }
+    }
+    function saveLevelsToStorage() {
+      localStorage.setItem("savedLevels", JSON.stringify(savedLevels));
+    }
 
     function createTsumBox(tsumId) {
       const tsum = tsumMap[tsumId];
@@ -232,7 +243,7 @@
         levelSelect.appendChild(option);
       }
 
-      // 🔹 如果有儲存過等級，恢復
+      // 如果有儲存過等級，恢復
       if (savedLevels[tsumId] !== undefined) {
         levelSelect.value = savedLevels[tsumId];
       }
@@ -252,7 +263,9 @@
 
       function updateGold() {
         const level = parseInt(levelSelect.value);
-        savedLevels[tsumId] = level; // 🔹 變更時同步保存
+        savedLevels[tsumId] = level; 
+        saveLevelsToStorage();       // 🔹 同步存到 localStorage
+
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
         const remainingCost = totalCost - ownedCost;
