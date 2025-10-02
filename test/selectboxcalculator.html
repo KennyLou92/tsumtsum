@@ -126,9 +126,40 @@
       padding: 4px 8px;
       border-radius: 6px;
     }
+    /* Reset Icon Tooltip */
+    #resetLevels {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      z-index: 2000;
+    }
+    #resetLevels:hover::after {
+      content: "Reset Skills";
+      position: absolute;
+      top: 35px;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
+  <!-- 🔹 Reset Icon (右上角) -->
+  <div id="resetLevels">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" 
+         viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" 
+         stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="23 4 23 10 17 10"></polyline>
+      <polyline points="1 20 1 14 7 14"></polyline>
+      <path d="M3.51 9a9 9 0 0 1 14.13-3.36L23 10M1 14l5.36 5.36A9 9 0 0 0 20.49 15"></path>
+    </svg>
+  </div>
+
   <div id="boxSelectorWrapper">
     <div id="countdownBox" class="countdown"></div>
     <div id="rateupCountdown" class="countdown"></div>
@@ -152,17 +183,17 @@
     let ytPlayer;
 
     // 設定音樂播放時間 (Unix 秒數)
-    const musicStart = 1758873600; // 例: 2025/09/26 16:00 (MYT)
-    const musicEnd   = 1759257540; // 例: 2025/09/30 23:59 (MYT)
+    const musicStart = 1758873600;
+    const musicEnd   = 1759257540;
 
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'YOUR_VIDEO_ID', // 👈 換成你的 YouTube 音樂 ID
+        videoId: 'YOUR_VIDEO_ID',
         playerVars: {
           autoplay: 1,
-          mute: 1, // 靜音才能自動播放
+          mute: 1,
           loop: 1,
           playlist: 'YOUR_VIDEO_ID'
         },
@@ -243,7 +274,6 @@
         levelSelect.appendChild(option);
       }
 
-      // 如果有儲存過等級，恢復
       if (savedLevels[tsumId] !== undefined) {
         levelSelect.value = savedLevels[tsumId];
       }
@@ -263,8 +293,8 @@
 
       function updateGold() {
         const level = parseInt(levelSelect.value);
-        savedLevels[tsumId] = level; 
-        saveLevelsToStorage();       // 🔹 同步存到 localStorage
+        savedLevels[tsumId] = level;
+        saveLevelsToStorage();
 
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
@@ -386,6 +416,17 @@
     createImageDropdown();
     const initialIndex = selectbox.findIndex(b => b.show !== 0);
     if (initialIndex !== -1) renderBox(initialIndex);
+
+    /* ========= Reset Icon 功能 ========= */
+    document.getElementById("resetLevels").addEventListener("click", () => {
+      if (confirm("確定要重置所有技能等級嗎？")) {
+        localStorage.removeItem("savedLevels");
+        savedLevels = {};
+        const currentIndex = selectbox.findIndex(b => b.show !== 0);
+        if (currentIndex !== -1) renderBox(currentIndex);
+        updateTotal();
+      }
+    });
   </script>
 </body>
 </html>
