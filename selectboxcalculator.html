@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tsum 金幣計算器</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: url('bluebg.png') repeat;
+      background-size: auto;
+    }
+    #tsumArea {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin: 10px;
+    }
+    .tsum-container {
+      border: 2px solid #999;
+      border-radius: 10px;
+      padding: 4px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .tsum-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 10px;
+    }
+    .name {
+      font-size: 20px;
+      margin-top: 8px;
+      font-weight: bold;
+      color: black;
+    }
+    .dropdown-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+    }
+    select {
+      font-size: 14px;
+      padding: 4px;
+    }
+    .coin-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      gap: 6px;
+    }
+    .coin-line img {
+      width: 18px;
+      height: 18px;
+    }
+    .gold {
+      font-weight: bold;
+      color: #cc9900;
+      font-size: 15px;
+    }
+    #totalWrapper {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 50px;
+      color: #cc9900;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    #totalWrapper img {
+      width: 50px;
+      height: 50px;
+    }
+    #boxSelectorWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      gap: 5px;
+    }
+    .tsum-dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .tsum-selected {
+      height: 108px;
+      width: 524px;
+      border: none;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .tsum-dropdown-list {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      z-index: 100;
+      padding: 5px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-height: 360px;
+      overflow: auto;
+      scrollbar-width: none;   /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+    }
+    .tsum-dropdown-list::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
+    }
+    .tsum-dropdown-list.show {
+      display: flex;
+      flex-direction: column;
+    }
+    .tsum-dropdown-item {
+      height: 108px;
+      width: 524px;
+      margin: 5px 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      object-fit: contain;
+    }
+	.tsum-dropdown-item:hover {
+	  transform: scale(1.05);
+	}
+    .countdown {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+      background: rgba(255,255,255,0.8);
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    /* Reset Icon Tooltip */
+    #resetLevels {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      z-index: 2000;
+    }
+    #resetLevels:hover::after {
+      content: "Reset Skills";
+      position: absolute;
+      top: 40px;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔹 Reset Icon (右上角) -->
+  <div id="resetLevels">
+    <img src="https://i.postimg.cc/7hZzRzFR/reset.png" 
+         alt="Reset" width="64" height="64" />
+  </div>
+
+  <div id="boxSelectorWrapper">
+    <div id="countdownBox" class="countdown"></div>
+    <div id="rateupCountdown" class="countdown"></div>
+  </div>
+  <div id="tsumArea"></div>
+
+  <div id="totalWrapper">
+    <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin" />
+    <span id="totalGold">0</span>
+  </div>
+
+  <!-- 🔹 YouTube 背景音樂 (隱藏播放器) -->
+  <div id="player" style="width:0;height:0;overflow:hidden;"></div>
+
+  <script src="tsum.js"></script>
+  <script src="selectbox.js"></script>
+  <script src="images.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    function isBoxVisible(box) {
+      const now = Math.floor(Date.now() / 1000);
+      if (box.enddate && now >= box.enddate) return false;
+      if (typeof box.show !== "undefined") return box.show !== 0;
+      if (box.startdate && box.enddate) return now >= box.startdate && now < box.enddate;
+      return false;
+    }
+
+    /* ========= YouTube 背景音樂控制 ========= */
+    let ytPlayer;
+
+    // 設定音樂播放時間 (Unix 秒數)
+    const musicStart = 1759248000; // 例: 2025/09/26 16:00 (MYT)
+    const musicEnd   = 1761926399; // 例: 2025/09/30 23:59 (MYT)
+
+    function onYouTubeIframeAPIReady() {
+      ytPlayer = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: 'ntsrWX-0FE4', // 👈 換成你的 YouTube 音樂 ID
+        playerVars: {
+          autoplay: 0,
+          loop: 1,
+          playlist: 'ntsrWX-0FE4'
+        },
+        events: {
+          'onReady': () => {
+            ytPlayer.setVolume(50); // 音量
+            controlBGM(musicStart, musicEnd);
+          }
+        }
+      });
+    }
+
+    function controlBGM(start, end) {
+      function updateBGM() {
+        const now = Math.floor(Date.now() / 1000);
+        if (now >= start && now < end) {
+          if (ytPlayer && ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING) {
+            ytPlayer.playVideo();
+          }
+        } else {
+          if (ytPlayer && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+            ytPlayer.pauseVideo();
+          }
+        }
+      }
+      updateBGM();
+      setInterval(updateBGM, 1000);
+    }
+
+    const tsumMap = {};
+    tsumData.forEach(tsum => tsumMap[tsum.id] = tsum);
+    const GOLD_PER_COST = 30000;
+    const tsumArea = document.getElementById("tsumArea");
+    const countdownBox = document.getElementById("countdownBox");
+    const rateupCountdown = document.getElementById("rateupCountdown");
+    let countdownInterval, rateupInterval;
+
+    let savedLevels = {};
+    const savedData = localStorage.getItem("savedLevels");
+    if (savedData) {
+      try { savedLevels = JSON.parse(savedData); } catch (e) { savedLevels = {}; }
+    }
+    function saveLevelsToStorage() {
+      localStorage.setItem("savedLevels", JSON.stringify(savedLevels));
+    }
+
+    function createTsumBox(tsumId) {
+      const tsum = tsumMap[tsumId];
+      if (!tsum || !tsum.skill_cost) return null;
+
+      const container = document.createElement("div");
+      container.className = "tsum-container";
+
+      const img = document.createElement("img");
+      img.className = "tsum-img";
+      img.src = images[tsum.image] || "";
+      container.appendChild(img);
+
+      const nameLine = document.createElement("div");
+      nameLine.className = "name";
+      nameLine.textContent = tsum.name;
+      container.appendChild(nameLine);
+
+      const levelSelect = document.createElement("select");
+      for (let i = 0; i <= 6; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = `SLv${i}`;
+        levelSelect.appendChild(option);
+      }
+      if (savedLevels[tsumId] !== undefined) levelSelect.value = savedLevels[tsumId];
+
+      const dropdownWrap = document.createElement("div");
+      dropdownWrap.className = "dropdown-wrap";
+      dropdownWrap.appendChild(levelSelect);
+      container.appendChild(dropdownWrap);
+
+      const coinLine = document.createElement("div");
+      coinLine.className = "coin-line";
+      coinLine.innerHTML = `
+        <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin" />
+        <span class="gold">0</span>
+      `;
+      container.appendChild(coinLine);
+
+      function updateGold() {
+        const level = parseInt(levelSelect.value);
+        savedLevels[tsumId] = level;
+        saveLevelsToStorage();
+        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
+        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+        const remainingCost = totalCost - ownedCost;
+        const gold = remainingCost * GOLD_PER_COST;
+        coinLine.querySelector("span").textContent = gold.toLocaleString();
+        updateTotal();
+      }
+      levelSelect.addEventListener("change", updateGold);
+      updateGold();
+
+      container._getGold = () => {
+        const level = parseInt(levelSelect.value);
+        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
+        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
+        const remainingCost = totalCost - ownedCost;
+        return remainingCost * GOLD_PER_COST;
+      };
+      return container;
+    }
+
+    function updateTotal() {
+      let total = 0;
+      document.querySelectorAll(".tsum-container").forEach(c => {
+        if (typeof c._getGold === 'function') total += c._getGold();
+      });
+      document.getElementById("totalGold").textContent = total.toLocaleString();
+    }
+
+    function renderCountdown(start, end, element, label) {
+      clearInterval(element === countdownBox ? countdownInterval : rateupInterval);
+      function update() {
+        const now = Math.floor(Date.now() / 1000);
+        let target, prefix;
+        if (now < start) { target = start; prefix = label + "開始於"; }
+        else if (now >= start && now < end) { target = end; prefix = label + "結束於"; }
+        else { element.textContent = label + "已結束"; return; }
+        const diff = target - now;
+        const d = Math.floor(diff / 86400);
+        const h = Math.floor((diff % 86400) / 3600);
+        const m = Math.floor((diff % 3600) / 60);
+        const s = diff % 60;
+        element.textContent = `${prefix} ${d}天 ${h}時 ${m}分 ${s}秒`;
+      }
+      update();
+      const interval = setInterval(update, 1000);
+      if (element === countdownBox) countdownInterval = interval;
+      else rateupInterval = interval;
+    }
+
+    const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
+    let dropdownSelectedEl = null;
+    let dropdownListEl = null;
+
+    function createImageDropdown() {
+      const old = document.querySelector(".tsum-dropdown");
+      if (old) old.remove();
+      const dropdown = document.createElement("div");
+      dropdown.className = "tsum-dropdown";
+      const selected = document.createElement("img");
+      selected.className = "tsum-selected";
+      selected.src = "";
+      dropdown.appendChild(selected);
+      const list = document.createElement("div");
+      list.className = "tsum-dropdown-list";
+      dropdown.appendChild(list);
+      dropdownSelectedEl = selected;
+      dropdownListEl = list;
+      selected.onclick = () => list.classList.toggle("show");
+      boxSelectorWrapper.insertBefore(dropdown, countdownBox);
+      rebuildDropdownList();
+    }
+
+    function rebuildDropdownList() {
+      if (!dropdownListEl || !dropdownSelectedEl) return;
+      dropdownListEl.innerHTML = "";
+      let first = null;
+      selectbox.forEach((box, index) => {
+        if (box.box_label && isBoxVisible(box)) {
+          const item = document.createElement("img");
+          item.src = box.box_label;
+          item.className = "tsum-dropdown-item";
+          item.onclick = () => {
+            document.querySelectorAll(".tsum-dropdown-item").forEach(el => el.classList.remove("active"));
+            item.classList.add("active");
+            dropdownSelectedEl.src = box.box_label;
+            dropdownListEl.classList.remove("show");
+            renderBox(index);
+            currentIndex = index;
+          };
+          dropdownListEl.appendChild(item);
+          if (first === null) first = {box, index, item};
+        }
+      });
+      if (first) {
+        dropdownSelectedEl.src = first.box.box_label || "";
+        first.item.classList.add("active");
+      } else {
+        dropdownSelectedEl.src = "";
+      }
+    }
+
+    function renderBox(index) {
+      tsumArea.innerHTML = "";
+      const box = selectbox[index];
+      if (dropdownSelectedEl) dropdownSelectedEl.src = box.box_label || "";
+      box.box_tsum.forEach(tsumId => {
+        const el = createTsumBox(tsumId);
+        if (el) tsumArea.appendChild(el);
+      });
+      updateTotal();
+      if (box.startdate && box.enddate) {
+        countdownBox.style.display = "block";
+        renderCountdown(box.startdate, box.enddate, countdownBox, "");
+      } else {
+        countdownBox.style.display = "none";
+        clearInterval(countdownInterval);
+        countdownBox.textContent = "";
+      }
+      if (box.rateupstartdate && box.rateupenddate) {
+        rateupCountdown.style.display = "block";
+        renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
+      } else {
+        rateupCountdown.style.display = "none";
+        clearInterval(rateupInterval);
+        rateupCountdown.textContent = "";
+      }
+    }
+
+    createImageDropdown();
+    let currentIndex = selectbox.findIndex(isBoxVisible);
+    if (currentIndex !== -1) renderBox(currentIndex);
+
+    document.getElementById("resetLevels").addEventListener("click", () => {
+      if (confirm("確定要重置所有技能等級嗎？")) {
+        localStorage.removeItem("savedLevels");
+        savedLevels = {};
+        currentIndex = selectbox.findIndex(isBoxVisible);
+        if (currentIndex !== -1) renderBox(currentIndex);
+        updateTotal();
+        rebuildDropdownList();
+      }
+    });
+
+//	setInterval(() => {
+//	  rebuildDropdownList();
+
+	  // 先檢查目前選中的是否還可見
+//	  if (currentIndex !== -1 && isBoxVisible(selectbox[currentIndex])) {
+		// 還在有效期 → 保持不變
+//		return;
+//	  }
+
+	  // 如果當前的失效了，就找第一個新的可見 banner
+//	  const newIndex = selectbox.findIndex(isBoxVisible);
+//	  if (newIndex !== currentIndex) {
+//		currentIndex = newIndex;
+//		if (currentIndex === -1) {
+//		  tsumArea.innerHTML = "";
+//		  countdownBox.style.display = "none";
+//		  rateupCountdown.style.display = "none";
+//		  updateTotal();
+//		} else {
+//		  renderBox(currentIndex);
+//		}
+//	  }
+//	}, 60000);
+  </script>
+</body>
+</html>
