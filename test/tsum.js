@@ -9677,4 +9677,84 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,16]
   },
+  {
+    "id": 615,
+    "name_en": "NAME_MISET",
+    "name": "怪獸電力公司（組合）",
+    "image": "block_miset_l.png",
+    "skill_label": "win_tsumskill_miset.png",
+	"skill_desc": [
+	 "^814w^ 時間：7秒 ^816w^^815w^^817w^效果範圍：XS",
+	 "^814w^ 時間：7.8秒 ^816w^^815w^^817w^效果範圍：S",
+	 "^814w^ 時間：8.6秒 ^816w^^815w^^817w^效果範圍：M",
+	 "^814w^ 時間：9.4秒 ^816w^^815w^^817w^效果範圍：L",
+	 "^814w^ 時間：10.2秒 ^816w^^815w^^817w^效果範圍：XL",
+	 "^814w^ 時間：11秒 ^816w^^815w^^817w^效果範圍：XXL",
+    ],
+	"skill_cost" : [1,1,2,4,8,20]
+  },
+  {
+    "id": 616,
+    "name_en": "NAME_MICKEYH2024",
+    "name": "吸血鬼米奇",
+    "image": "block_mickeyh2024_l.png",
+    "skill_label": "win_tsumskill_mickeyh2024.png",
+	"skill_desc": [
+	 "所需Tsum數：22 分數：1.2倍",
+	 "所需Tsum數：21 分數：1.7倍",
+	 "所需Tsum數：20 分數：2.2倍",
+	 "所需Tsum數：19 分數：2.7倍",
+	 "所需Tsum數：18 分數：2.7倍",
+	 "所需Tsum數：18 分數：3.2倍",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+    {
+    "id": 617,
+    "name_en": "NAME_PETEH2024",
+    "name": "螺絲頭皮特",
+    "image": "block_peteh2024_l.png",
+    "skill_label": "win_tsumskill_peteh2024.png",
+	"skill_desc": [
+	 "效果範圍：XS 所需Tsum數：22",
+	 "效果範圍：S 所需Tsum數：21",
+	 "效果範圍：M 所需Tsum數：20",
+	 "效果範圍：L 所需Tsum數：19",
+	 "效果範圍：XL 所需Tsum數：18",
+	 "效果範圍：XXL 所需Tsum數：17",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
+  },
+    {
+    "id": 618,
+    "name_en": "NAME_GOOFYH2024",
+    "name": "野性獠牙高飛",
+    "image": "block_goofyh2024_l.png",
+    "skill_label": "win_tsumskill_goofyh2024.png",
+	"skill_desc": [
+	 "所需Tsum數：22 時間：4.5秒",
+	 "所需Tsum數：21 時間：5秒",
+	 "所需Tsum數：20 時間：5.5秒",
+	 "所需Tsum數：19 時間：6秒",
+	 "所需Tsum數：18 時間：6.5秒",
+	 "所需Tsum數：17 時間：7秒",
+    ],
+	"skill_cost" : [1,1,2,4,7,14]
+  },
+    {
+    "id": 619,
+    "name_en": "NAME_DONALDH2024",
+    "name": "惡魔唐老鴨",
+    "image": "block_donaldh2024_l.png",
+    "skill_label": "win_tsumskill_donaldh2024.png",
+	"skill_desc": [
+	 "所需Tsum數：20 時間：3.5秒",
+	 "所需Tsum數：19 時間：3.9秒",
+	 "所需Tsum數：18 時間：4.3秒",
+	 "所需Tsum數：17 時間：4.7秒",
+	 "所需Tsum數：16 時間：5.1秒",
+	 "所需Tsum數：15 時間：5.5秒",
+    ],
+	"skill_cost" : [1,1,1,2,3,3]
+  },
 ];
