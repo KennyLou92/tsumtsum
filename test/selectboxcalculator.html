@@ -152,18 +152,19 @@
     let ytPlayer;
 
     // 設定音樂播放時間 (Unix 秒數)
-    const musicStart = 1758933600; // 例: 2025/09/26 16:00 (MYT)
-    const musicEnd   = 1761926399; // 例: 2025/09/30 23:59 (MYT)
+    const musicStart = 1758873600; // 例: 2025/09/26 16:00 (MYT)
+    const musicEnd   = 1759257540; // 例: 2025/09/30 23:59 (MYT)
 
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'ntsrWX-0FE4', // 👈 換成你的 YouTube 音樂 ID
+        videoId: 'YOUR_VIDEO_ID', // 👈 換成你的 YouTube 音樂 ID
         playerVars: {
-          autoplay: 0,
+          autoplay: 1,
+          mute: 1, // 🔹 靜音才能自動播放
           loop: 1,
-          playlist: 'ntsrWX-0FE4'
+          playlist: 'YOUR_VIDEO_ID'
         },
         events: {
           'onReady': () => {
@@ -191,7 +192,7 @@
       setInterval(updateBGM, 1000);
     }
 
-    /* ========= 你原本的 JS (保留) ========= */
+    /* ========= 你的原本程式碼 ========= */
     const tsumMap = {};
     tsumData.forEach(tsum => {
       tsumMap[tsum.id] = tsum;
@@ -203,9 +204,13 @@
     const rateupCountdown = document.getElementById("rateupCountdown");
     let countdownInterval, rateupInterval;
 
+    /* ========= 保留技能等級設定 ========= */
+    const savedLevels = {}; // { tsumId: level }
+
     function createTsumBox(tsumId) {
       const tsum = tsumMap[tsumId];
       if (!tsum || !tsum.skill_cost) return null;
+
       const container = document.createElement("div");
       container.className = "tsum-container";
 
@@ -227,6 +232,11 @@
         levelSelect.appendChild(option);
       }
 
+      // 🔹 如果有儲存過等級，恢復
+      if (savedLevels[tsumId] !== undefined) {
+        levelSelect.value = savedLevels[tsumId];
+      }
+
       const dropdownWrap = document.createElement("div");
       dropdownWrap.className = "dropdown-wrap";
       dropdownWrap.appendChild(levelSelect);
@@ -242,6 +252,7 @@
 
       function updateGold() {
         const level = parseInt(levelSelect.value);
+        savedLevels[tsumId] = level; // 🔹 變更時同步保存
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
         const remainingCost = totalCost - ownedCost;
