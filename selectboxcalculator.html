@@ -104,6 +104,11 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       max-height: 360px;
       overflow: auto;
+      scrollbar-width: none;   /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+    }
+    .tsum-dropdown-list::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
     }
     .tsum-dropdown-list.show {
       display: flex;
@@ -117,9 +122,9 @@
       transition: transform 0.2s ease;
       object-fit: contain;
     }
-    .tsum-dropdown-item:hover {
-      transform: scale(1.05);
-    }
+	.tsum-dropdown-item:hover {
+	  transform: scale(1.05);
+	}
     .countdown {
       font-size: 16px;
       color: #333;
@@ -176,27 +181,15 @@
   <script src="images.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
-    /* ========= 判斷 banner 是否可顯示 (改為：enddate 已過 -> 一律不顯示) ========= */
     function isBoxVisible(box) {
       const now = Math.floor(Date.now() / 1000);
-
-      // 如果定義了 enddate 並且已經過了 -> 不顯示（enddate 優先）
       if (box.enddate && now >= box.enddate) return false;
-
-      // 若有 show 屬性（由顯式控制） -> 以 show 決定可見性（除非上面 enddate 已過）
-      if (typeof box.show !== "undefined") {
-        return box.show !== 0;
-      }
-
-      // 若沒有 show，就用 startdate/enddate 判斷（兩個都需要）
-      if (box.startdate && box.enddate) {
-        return now >= box.startdate && now < box.enddate;
-      }
-
+      if (typeof box.show !== "undefined") return box.show !== 0;
+      if (box.startdate && box.enddate) return now >= box.startdate && now < box.enddate;
       return false;
     }
 
-     /* ========= YouTube 背景音樂控制 ========= */
+    /* ========= YouTube 背景音樂控制 ========= */
     let ytPlayer;
 
     // 設定音樂播放時間 (Unix 秒數)
@@ -239,17 +232,14 @@
       setInterval(updateBGM, 1000);
     }
 
-    /* ========= 原本程式碼 ========= */
     const tsumMap = {};
     tsumData.forEach(tsum => tsumMap[tsum.id] = tsum);
-
     const GOLD_PER_COST = 30000;
     const tsumArea = document.getElementById("tsumArea");
     const countdownBox = document.getElementById("countdownBox");
     const rateupCountdown = document.getElementById("rateupCountdown");
     let countdownInterval, rateupInterval;
 
-    /* ========= 保留技能等級 (localStorage) ========= */
     let savedLevels = {};
     const savedData = localStorage.getItem("savedLevels");
     if (savedData) {
@@ -283,9 +273,7 @@
         option.textContent = `SLv${i}`;
         levelSelect.appendChild(option);
       }
-      if (savedLevels[tsumId] !== undefined) {
-        levelSelect.value = savedLevels[tsumId];
-      }
+      if (savedLevels[tsumId] !== undefined) levelSelect.value = savedLevels[tsumId];
 
       const dropdownWrap = document.createElement("div");
       dropdownWrap.className = "dropdown-wrap";
@@ -304,7 +292,6 @@
         const level = parseInt(levelSelect.value);
         savedLevels[tsumId] = level;
         saveLevelsToStorage();
-
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
         const remainingCost = totalCost - ownedCost;
@@ -312,7 +299,6 @@
         coinLine.querySelector("span").textContent = gold.toLocaleString();
         updateTotal();
       }
-
       levelSelect.addEventListener("change", updateGold);
       updateGold();
 
@@ -339,14 +325,9 @@
       function update() {
         const now = Math.floor(Date.now() / 1000);
         let target, prefix;
-        if (now < start) {
-          target = start; prefix = label + "開始於";
-        } else if (now >= start && now < end) {
-          target = end; prefix = label + "結束於";
-        } else {
-          element.textContent = label + "已結束";
-          return;
-        }
+        if (now < start) { target = start; prefix = label + "開始於"; }
+        else if (now >= start && now < end) { target = end; prefix = label + "結束於"; }
+        else { element.textContent = label + "已結束"; return; }
         const diff = target - now;
         const d = Math.floor(diff / 86400);
         const h = Math.floor((diff % 86400) / 3600);
@@ -361,65 +342,52 @@
     }
 
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
-
-    /* ========= Dropdown builder (會動態重建清單) ========= */
     let dropdownSelectedEl = null;
     let dropdownListEl = null;
 
     function createImageDropdown() {
-      // 如果已建立過，先移除（保險）
       const old = document.querySelector(".tsum-dropdown");
       if (old) old.remove();
-
       const dropdown = document.createElement("div");
       dropdown.className = "tsum-dropdown";
-
       const selected = document.createElement("img");
       selected.className = "tsum-selected";
-      selected.src = ""; // 由 rebuild() 設定
+      selected.src = "";
       dropdown.appendChild(selected);
-
       const list = document.createElement("div");
       list.className = "tsum-dropdown-list";
       dropdown.appendChild(list);
-
       dropdownSelectedEl = selected;
       dropdownListEl = list;
-
-      // 點擊切換清單顯示
       selected.onclick = () => list.classList.toggle("show");
-
       boxSelectorWrapper.insertBefore(dropdown, countdownBox);
-
-      // 初次建立清單
       rebuildDropdownList();
     }
 
     function rebuildDropdownList() {
       if (!dropdownListEl || !dropdownSelectedEl) return;
       dropdownListEl.innerHTML = "";
-      const now = Math.floor(Date.now() / 1000);
       let first = null;
-
       selectbox.forEach((box, index) => {
         if (box.box_label && isBoxVisible(box)) {
           const item = document.createElement("img");
           item.src = box.box_label;
           item.className = "tsum-dropdown-item";
           item.onclick = () => {
+            document.querySelectorAll(".tsum-dropdown-item").forEach(el => el.classList.remove("active"));
+            item.classList.add("active");
             dropdownSelectedEl.src = box.box_label;
             dropdownListEl.classList.remove("show");
             renderBox(index);
             currentIndex = index;
           };
           dropdownListEl.appendChild(item);
-          if (first === null) first = {box, index};
+          if (first === null) first = {box, index, item};
         }
       });
-
-      // 若找到第一個可見 box，設成選中圖
       if (first) {
         dropdownSelectedEl.src = first.box.box_label || "";
+        first.item.classList.add("active");
       } else {
         dropdownSelectedEl.src = "";
       }
@@ -428,15 +396,12 @@
     function renderBox(index) {
       tsumArea.innerHTML = "";
       const box = selectbox[index];
-      // update dropdown selected image too (if exists)
       if (dropdownSelectedEl) dropdownSelectedEl.src = box.box_label || "";
-
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
         if (el) tsumArea.appendChild(el);
       });
       updateTotal();
-
       if (box.startdate && box.enddate) {
         countdownBox.style.display = "block";
         renderCountdown(box.startdate, box.enddate, countdownBox, "");
@@ -445,7 +410,6 @@
         clearInterval(countdownInterval);
         countdownBox.textContent = "";
       }
-
       if (box.rateupstartdate && box.rateupenddate) {
         rateupCountdown.style.display = "block";
         renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
@@ -456,54 +420,44 @@
       }
     }
 
-    // 建立 dropdown
     createImageDropdown();
-
-    // 決定 initialIndex（依 isBoxVisible）
     let currentIndex = selectbox.findIndex(isBoxVisible);
-    if (currentIndex !== -1) {
-      renderBox(currentIndex);
-    } else {
-      // 沒有任何可見 banner -> 先把區域清空
-      tsumArea.innerHTML = "";
-      countdownBox.style.display = "none";
-      rateupCountdown.style.display = "none";
-    }
+    if (currentIndex !== -1) renderBox(currentIndex);
 
-    /* ========= Reset Icon 功能 ========= */
     document.getElementById("resetLevels").addEventListener("click", () => {
       if (confirm("確定要重置所有技能等級嗎？")) {
         localStorage.removeItem("savedLevels");
         savedLevels = {};
         currentIndex = selectbox.findIndex(isBoxVisible);
         if (currentIndex !== -1) renderBox(currentIndex);
-        else {
-          tsumArea.innerHTML = "";
-          countdownBox.style.display = "none";
-          rateupCountdown.style.display = "none";
-        }
         updateTotal();
         rebuildDropdownList();
       }
     });
 
-    /* ========= 自動刷新 (每分鐘檢查一次) ========= */
-    setInterval(() => {
-      rebuildDropdownList(); // 先重建 dropdown 清單（讓可見項目同步）
-      const newIndex = selectbox.findIndex(isBoxVisible);
-      if (newIndex !== currentIndex) {
-        currentIndex = newIndex;
-        if (currentIndex === -1) {
-          // 沒有可見 banner -> 清空所有展示
-          tsumArea.innerHTML = "";
-          countdownBox.style.display = "none";
-          rateupCountdown.style.display = "none";
-          updateTotal();
-        } else {
-          renderBox(currentIndex);
-        }
-      }
-    }, 60000);
+//	setInterval(() => {
+//	  rebuildDropdownList();
+
+	  // 先檢查目前選中的是否還可見
+//	  if (currentIndex !== -1 && isBoxVisible(selectbox[currentIndex])) {
+		// 還在有效期 → 保持不變
+//		return;
+//	  }
+
+	  // 如果當前的失效了，就找第一個新的可見 banner
+//	  const newIndex = selectbox.findIndex(isBoxVisible);
+//	  if (newIndex !== currentIndex) {
+//		currentIndex = newIndex;
+//		if (currentIndex === -1) {
+//		  tsumArea.innerHTML = "";
+//		  countdownBox.style.display = "none";
+//		  rateupCountdown.style.display = "none";
+//		  updateTotal();
+//		} else {
+//		  renderBox(currentIndex);
+//		}
+//	  }
+//	}, 60000);
   </script>
 </body>
 </html>
