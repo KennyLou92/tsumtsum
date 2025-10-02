@@ -152,7 +152,7 @@
   <!-- 🔹 Reset Icon (右上角) -->
   <div id="resetLevels">
     <img src="https://i.postimg.cc/7hZzRzFR/reset.png" 
-         alt="Reset" width="32" height="32" />
+         alt="Reset" width="64" height="64" />
   </div>
 
   <div id="boxSelectorWrapper">
@@ -187,15 +187,15 @@
 
     /* ========= YouTube 背景音樂控制 ========= */
     let ytPlayer;
-    const musicStart = 1758873600;
-    const musicEnd   = 1759257540;
+    const musicStart = 1759248000;
+    const musicEnd   = 1761926399;
 
     function onYouTubeIframeAPIReady() {
       ytPlayer = new YT.Player('player', {
         height: '0',
         width: '0',
-        videoId: 'YOUR_VIDEO_ID',
-        playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'YOUR_VIDEO_ID' },
+        videoId: 'ntsrWX-0FE4',
+        playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'ntsrWX-0FE4' },
         events: { 'onReady': () => { ytPlayer.setVolume(50); controlBGM(musicStart, musicEnd); } }
       });
     }
