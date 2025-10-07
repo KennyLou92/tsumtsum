@@ -238,7 +238,13 @@
 
 		// 直接根據 cost 是否存在來決定是否加上
 		if (cost !== undefined && cost !== null) {
-		  costLine = `🔸需要 ${cost} Tsum 提升SLv`;
+		  costLine = `
+		  <div style="margin-top: 4px;">
+			<img src="https://i.postimg.cc/nzcz0QBq/win-i-ticket-S.png" 
+				 alt="ticket" 
+				 style="height: 20px; vertical-align: middle; margin-right: 4px;">
+			× ${cost}
+		  </div>`;
 		}
 
           td.innerHTML = mainDesc + (costLine ? costLine : '');
