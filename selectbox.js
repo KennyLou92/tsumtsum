@@ -102,7 +102,7 @@ const selectbox = [
 	},
 	{
 		box:"octbox",
-		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202510/images/event_banner/banner_gl_0754_tw.png",
+		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202510/images/event_banner/banner_gl_0755_tw.png",
 		box_tsum:[618,617,616,615,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
 				  363,349,350,345,337,335,320,319,308,307,288,269,268,267,264,253,208,207,210,192,193,
