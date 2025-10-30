@@ -9762,7 +9762,7 @@ const tsumData = [
     "name_en": "NAME_JASMINET",
     "name": "微服出巡茉莉公主",
     "image": "block_jasminet_l.png",
-    "skill_label": "",
+    "skill_label": "win_tsumskill_jasminet.png",
 	"skill_desc": [
 	 "範圍：XS 所需Tsum數：23",
 	 "範圍：S 所需Tsum數：22",
@@ -9770,6 +9770,22 @@ const tsumData = [
 	 "範圍：L 所需Tsum數：20",
 	 "範圍：XL 所需Tsum數：19",
 	 "範圍：XXL 所需Tsum數：18",
+    ],
+	"skill_cost" : [1,1,2,4,7,14]
+  },
+      {
+    "id": 621,
+    "name_en": "NAME_IAGO",
+    "name": "艾格",
+    "image": "block_iago_l.png",
+    "skill_label": "win_tsumskill_iago.png",
+	"skill_desc": [
+	 "範圍：XS 所需Tsum數：25",
+	 "範圍：S 所需Tsum數：24",
+	 "範圍：M 所需Tsum數：23",
+	 "範圍：L 所需Tsum數：22",
+	 "範圍：XL 所需Tsum數：21",
+	 "範圍：XXL 所需Tsum數：20",
     ],
 	"skill_cost" : [1,1,2,4,7,14]
   },
