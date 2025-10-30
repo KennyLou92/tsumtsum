@@ -9809,7 +9809,7 @@ const tsumData = [
     "id": 623,
     "name_en": "NAME_ALADDINPR",
     "name": "阿拉丁＆精靈",
-    "image": "block_aladdinpr_1_l.png",
+    "image": "block_aladdinpr_l.png",
     "skill_label": "win_tsumskill_aladdinpr.png",
 	"skill_desc": [
 	 "次數：2 ^851w^消除數：17 ^852w^時間：4秒",
