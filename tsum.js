@@ -9773,7 +9773,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,7,14]
   },
-      {
+    {
     "id": 621,
     "name_en": "NAME_IAGO",
     "name": "艾格",
@@ -9788,5 +9788,53 @@ const tsumData = [
 	 "範圍：XXL 所需Tsum數：20",
     ],
 	"skill_cost" : [1,1,2,4,7,14]
+  },
+    {
+    "id": 622,
+    "name_en": "NAME_COW",
+    "name": "彩虹洞穴",
+    "image": "block_cow_l.png",
+    "skill_label": "win_tsumskill_cow.png",
+	"skill_desc": [
+	 "範圍：XS 所需Tsum數：17",
+	 "範圍：S 所需Tsum數：16",
+	 "範圍：M 所需Tsum數：14",
+	 "範圍：L 所需Tsum數：12",
+	 "範圍：XL 所需Tsum數：10",
+	 "範圍：XXL 所需Tsum數：8",
+    ],
+	"skill_cost" : [1,1,2,4,8,20]
+  },
+    {
+    "id": 623,
+    "name_en": "NAME_ALADDINPR",
+    "name": "阿拉丁＆精靈",
+    "image": "block_aladdinpr_1_l.png",
+    "skill_label": "win_tsumskill_aladdinpr.png",
+	"skill_desc": [
+	 "次數：2 ^851w^消除數：17 ^852w^時間：4秒",
+	 "次數：2 ^851w^消除數：18 ^852w^時間：4.4秒",
+	 "次數：2 ^851w^消除數：19 ^852w^時間：4.8秒",
+	 "次數：2 ^851w^消除數：20 ^852w^時間：5.2秒",
+	 "次數：2 ^851w^消除數：22 ^852w^時間：5.6秒",
+	 "次數：2 ^851w^消除數：24 ^852w^時間：6秒",
+    ],
+	"skill_cost" : [1,1,2,4,8,20]
+  },
+    {
+    "id": 624,
+    "name_en": "NAME_JAFARW",
+    "name": "邪惡賈方",
+    "image": "block_jafarw_l.png",
+    "skill_label": "win_tsumskill_jafarw.png",
+	"skill_desc": [
+	 "效果範圍：XS",
+	 "效果範圍：S",
+	 "效果範圍：M",
+	 "效果範圍：L",
+	 "效果範圍：XL",
+	 "效果範圍：XXL",
+    ],
+	"skill_cost" : [1,1,2,4,8,16]
   },
 ];
