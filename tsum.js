@@ -9771,6 +9771,6 @@ const tsumData = [
 	 "範圍：XL 所需Tsum數：19",
 	 "範圍：XXL 所需Tsum數：18",
     ],
-	"skill_cost" : [1,1,1,2,3,3]
+	"skill_cost" : [1,1,2,4,7,14]
   },
 ];
