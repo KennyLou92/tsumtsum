@@ -9757,4 +9757,20 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,1,2,3,3]
   },
+    {
+    "id": 620,
+    "name_en": "NAME_JASMINET",
+    "name": "微服出巡茉莉公主",
+    "image": "block_jasminet_l.png",
+    "skill_label": "",
+	"skill_desc": [
+	 "範圍：XS 所需Tsum數：23",
+	 "範圍：S 所需Tsum數：22",
+	 "範圍：M 所需Tsum數：21",
+	 "範圍：L 所需Tsum數：20",
+	 "範圍：XL 所需Tsum數：19",
+	 "範圍：XXL 所需Tsum數：18",
+    ],
+	"skill_cost" : [1,1,1,2,3,3]
+  },
 ];
