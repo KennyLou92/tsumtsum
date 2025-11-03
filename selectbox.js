@@ -180,6 +180,7 @@ const selectbox = [
 	},
 	{
 		box:"nov25selectbox1",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202511/images/event_banner/banner_gl_0764_tw.png",
 		box_tsum:[583,548,418,388,378,364,347,44,192,49,159,112],
 		startdate:"1762502400",
@@ -187,6 +188,7 @@ const selectbox = [
 	},
 	{
 		box:"nov25selectbox2",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202511/images/event_banner/banner_gl_0766_tw.png",
 		box_tsum:[462,463,549,240,241,243,242,87,588,584,397,376],
 		startdate:"1763107200",
@@ -194,6 +196,7 @@ const selectbox = [
 	},
 	{
 		box:"nov25selectbox3",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202511/images/event_banner/banner_gl_0765_tw.png",
 		box_tsum:[276,66,484,526,275,444,356,274,406,176,115,111],
 		startdate:"1763452800",
