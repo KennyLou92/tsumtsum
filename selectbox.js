@@ -111,9 +111,9 @@ const selectbox = [
 				  67,68,42,43,44,52,60,61,50,51,59,49,37,38,35,27,29,30,32,33,34,31,13,14,15,16,18,
 				  19,21,22,25,28,26],
 		startdate:1759302000,
-		enddate:1762153199,
+		enddate:1762156799,
 		rateupstartdate:1761548400,
-		rateupenddate:1762153199,
+		rateupenddate:1762156799,
 	},
 	{
 		box:"novbox",
