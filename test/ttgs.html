@@ -1,132 +1,123 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<title>Tsum 抽卡模擬器</title>
-<style>
-body {
-  background-color: #222;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-.banner {
-  width: 90%;
-  max-width: 600px;
-  border-radius: 12px;
-  margin: 20px auto;
-  display: block;
-}
-button {
-  background-color: #ff4081;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-button:hover {
-  background-color: #e73370;
-}
-.result-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-.result {
-  background-color: #333;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 5px;
-  width: 100px;
-  text-align: center;
-}
-.result img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-.name {
-  margin-top: 5px;
-  font-size: 13px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Tsum Tsum 抽卡模擬器</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+    }
+    #banner {
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    #drawBtn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #drawBtn:hover {
+      background-color: #0056b3;
+    }
+    #resultContainer {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .tsum {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .tsum img {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+  <h1>Tsum Tsum 抽卡模擬器</h1>
+  <img id="banner" src="" alt="Box Banner">
+  <br>
+  <button id="drawBtn">抽卡！</button>
 
-<h2>Tsum 抽卡模擬器</h2>
+  <div id="resultContainer"></div>
 
-<img id="banner" class="banner" src="" alt="box banner">
+  <!-- 外部載入 JS -->
+  <script src="selectbox.js"></script>
+  <script src="tsum.js"></script>
+  <script src="images.js"></script>
 
-<button id="drawBtn">抽一抽 🎲</button>
+  <script>
+    // 🔹 每次重新整理頁面時，清除抽卡結果
+    window.addEventListener("beforeunload", () => {
+      localStorage.removeItem("tsumResults");
+    });
 
-<div id="results" class="result-container"></div>
+    const resultContainer = document.getElementById("resultContainer");
+    const drawBtn = document.getElementById("drawBtn");
+    const banner = document.getElementById("banner");
 
-<!-- 外部資料 -->
-<script src="selectbox.js"></script>
-<script src="tsum.js"></script>
-<script src="images.js"></script>
-
-<!-- 主邏輯 -->
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  // 兼容 const 定義
-  const boxes = typeof selectbox !== "undefined" ? selectbox : window.selectbox;
-  const tsumList = typeof tsumData !== "undefined" ? tsumData : window.tsumData;
-  const imgData = typeof images !== "undefined" ? images : window.images;
-
-  // 尋找 novbox
-  const currentBox = boxes.find(b => b.box === "novbox");
-  if (!currentBox) {
-    alert("找不到 novbox，請確認 selectbox.js 是否包含。");
-    return;
-  }
-
-  const banner = document.getElementById("banner");
-  const drawBtn = document.getElementById("drawBtn");
-  const resultsDiv = document.getElementById("results");
-
-  banner.src = currentBox.box_label;
-
-  // 載入舊抽卡紀錄
-  let drawHistory = JSON.parse(localStorage.getItem("drawResults_novbox") || "[]");
-  drawHistory.forEach(showResult);
-
-  drawBtn.addEventListener("click", () => {
-    const tsumIdList = currentBox.box_tsum;
-    const randomId = tsumIdList[Math.floor(Math.random() * tsumIdList.length)];
-    const tsum = tsumList.find(t => t.id === randomId);
-    if (!tsum) {
-      console.warn("找不到對應的 tsum id:", randomId);
-      return;
+    // 找 novbox
+    const boxData = selectbox.find(b => b.box === "novbox");
+    if (!boxData) {
+      console.error("找不到 novbox");
+    } else {
+      banner.src = boxData.box_label;
     }
 
-    drawHistory.push(randomId);
-    localStorage.setItem("drawResults_novbox", JSON.stringify(drawHistory));
+    // 讀取已保存的抽卡結果（理論上因為 beforeunload，重整後不會留著）
+    const savedResults = JSON.parse(localStorage.getItem("tsumResults")) || [];
+    savedResults.forEach(showTsum);
 
-    showResult(randomId);
-  });
+    drawBtn.addEventListener("click", () => {
+      if (!boxData) return;
+      const tsumId = boxData.box_tsum[Math.floor(Math.random() * boxData.box_tsum.length)];
+      const tsumInfo = tsumData.find(t => t.id === tsumId);
+      if (!tsumInfo) {
+        console.error(`找不到 tsum id: ${tsumId}`);
+        return;
+      }
 
-  function showResult(tsumId) {
-    const tsum = tsumList.find(t => t.id === tsumId);
-    if (!tsum) return;
+      const tsumImg = images[tsumInfo.image];
+      if (!tsumImg) {
+        console.error(`找不到圖片: ${tsumInfo.image}`);
+        return;
+      }
 
-    const div = document.createElement("div");
-    div.className = "result";
-    const img = document.createElement("img");
-    img.src = imgData[tsum.image] || "https://via.placeholder.com/80";
-    const name = document.createElement("div");
-    name.className = "name";
-    name.textContent = tsum.name;
-    div.appendChild(img);
-    div.appendChild(name);
-    resultsDiv.appendChild(div);
-  }
-});
-</script>
+      const newResult = { id: tsumId, image: tsumImg };
+      savedResults.push(newResult);
+      localStorage.setItem("tsumResults", JSON.stringify(savedResults));
 
+      showTsum(newResult);
+    });
+
+    function showTsum(result) {
+      const tsumDiv = document.createElement("div");
+      tsumDiv.className = "tsum";
+
+      const img = document.createElement("img");
+      img.src = result.image;
+      tsumDiv.appendChild(img);
+
+      resultContainer.appendChild(tsumDiv);
+    }
+  </script>
 </body>
 </html>
