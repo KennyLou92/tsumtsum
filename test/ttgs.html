@@ -112,12 +112,15 @@
     return Math.min(slv,6);
   }
 
+  // ＝＝＝ 關鍵修正：623 第一次抽中要從 SLv3 開始計算（讓當次抽卡的 +1 正好完成 SLv3）＝＝＝
   function applySpecial623FirstTime(){
     if ((obtained[623]||0) > 0) return;
     const t = tsumMap.get(623);
     if (!t) return;
     const thr = cumulativeThresholds(t.skill_cost);
-    obtained[623] = thr[2] || 4; // SLv3 累計量
+    const needForSL3 = thr[2] || 4;
+    // 修正：設為「到達 SLv3 前一張」，讓本次抽卡再 +1 剛好到 SLv3
+    obtained[623] = Math.max(0, (needForSL3 - 1));
   }
 
   function recomputeActiveWeights(){
@@ -132,6 +135,7 @@
       const w = activeWeights[id] || 0;
       if (w>0) items.push({id,w});
     }
+    if (items.length === 0) return null;
     const total = items.reduce((s,it)=>s+it.w,0);
     let r = Math.random()*total;
     for (const it of items){
@@ -218,6 +222,7 @@
       const picked=pickWeightedId();
       if(picked===null){showFinishOverlay();break;}
 
+      // 這裡 applySpecial 先把 obtained 設為 needForSL3 - 1，接著下面的 +1 會讓它成為正好 SLv3
       if(picked===623 && (obtained[623]||0)===0) applySpecial623FirstTime();
 
       obtained[picked]=(obtained[picked]||0)+1;
