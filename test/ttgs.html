@@ -25,33 +25,12 @@
   .btn{background:#222;border:1px solid rgba(255,255,255,0.03);color:#fff;padding:10px 18px;border-radius:10px;font-size:16px;cursor:pointer;min-width:120px}
   .btn:disabled{opacity:0.4;cursor:not-allowed}
   #stats{margin-top:10px;color:var(--muted)}
-  #results{
-    margin-top:18px;
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(86px, 1fr));
-    gap:8px;
-    justify-items:center;
-    align-items:center;
-    max-width:980px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .tsum{
-    width:86px;height:86px;border-radius:10px;
-    background-image:url("https://i.postimg.cc/wBpXSbwN/win-list-panel-off.png");
-    background-size:cover;
-    display:flex;align-items:center;justify-content:center
-  }
+  #results{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));gap:8px;justify-items:center;align-items:center;max-width:980px;margin-left:auto;margin-right:auto}
+  .tsum{width:86px;height:86px;border-radius:10px;background-image:url("https://i.postimg.cc/wBpXSbwN/win-list-panel-off.png");background-size:cover;display:flex;align-items:center;justify-content:center}
   .tsum img{width:68px;height:68px;object-fit:contain;border-radius:8px}
   #overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);z-index:99}
   #overlay .box{background:#111;padding:28px;border-radius:12px;border:2px solid rgba(255,255,255,0.04);font-size:28px;color:#ffd54f}
   .small{font-size:13px;color:var(--muted)}
-  @media (max-width:600px){
-    .special{width:100px;height:100px}
-    .special img{width:68px;height:68px}
-    .tsum{width:74px;height:74px}
-    .tsum img{width:58px;height:58px}
-  }
 </style>
 </head>
 <body>
@@ -175,6 +154,7 @@
     return poolIds.every(id => getSLv(id) >= 6);
   }
 
+  // ---- UI ----
   const bannerEl=document.getElementById('banner');
   const specialsEl=document.getElementById('specials');
   const resultsEl=document.getElementById('results');
@@ -235,14 +215,18 @@
 
   function performDraws(count){
     if(allPoolMaxed()){showFinishOverlay();return;}
+    let actualDraws = 0;
 
     for(let i=0;i<count;i++){
+      if(allPoolMaxed()){showFinishOverlay();break;}
+
       const picked=pickWeightedId();
       if(picked===null){showFinishOverlay();break;}
 
       if(picked===623 && (obtained[623]||0)===0) applySpecial623FirstTime();
 
       obtained[picked]=(obtained[picked]||0)+1;
+      actualDraws++;
 
       const t=tsumMap.get(picked);
       const src=(t&&t.image&&images[t.image])?images[t.image]:placeholderSVG();
@@ -253,8 +237,8 @@
       if(allPoolMaxed()){showFinishOverlay();break;}
     }
 
-    totalDraws+=count;
-    totalCoins+=(count===10?MULTI_COST:SINGLE_COST);
+    totalDraws += actualDraws;
+    totalCoins += actualDraws * SINGLE_COST;
 
     refreshSpecials();
     refreshResultsPanel();
