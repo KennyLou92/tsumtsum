@@ -6,56 +6,84 @@
   <style>
     body {
       font-family: "Microsoft JhengHei", sans-serif;
-      background-color: #f8f8f8;
+      background-color: #121212;
+      color: #f5f5f5;
       text-align: center;
       padding: 20px;
     }
+
     #banner {
       width: 500px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
     }
-    #drawBtn {
-      margin-top: 15px;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    #drawBtn:hover {
-      background-color: #0056b3;
-    }
-    #resultContainer {
+
+    .draw-buttons {
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .draw-btn {
+      background-color: transparent;
+      border: none;
+      color: #f5f5f5;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.2s;
+    }
+
+    .draw-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .draw-btn img {
+      width: 50px;
+      height: 50px;
+    }
+
+    #resultContainer {
+      margin-top: 25px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
     }
+
     .tsum {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
-      background-color: white;
+      background-color: #1e1e1e;
+      box-shadow: 0 0 6px rgba(255,255,255,0.1);
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
     }
+
     .tsum img {
       width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Tsum Tsum 抽卡模擬器</h1>
+ <!-- <h1>Tsum Tsum 抽卡模擬器</h1> -->
   <img id="banner" src="" alt="Box Banner">
-  <br>
-  <button id="drawBtn">抽卡！</button>
+
+  <div class="draw-buttons">
+    <button id="singleDrawBtn" class="draw-btn">
+      <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin"> 單抽 30,000
+    </button>
+    <button id="multiDrawBtn" class="draw-btn">
+      <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin"> 10 連抽 300,000
+    </button>
+  </div>
 
   <div id="resultContainer"></div>
 
@@ -65,16 +93,16 @@
   <script src="images.js"></script>
 
   <script>
-    // 🔹 每次重新整理頁面時，清除抽卡結果
+    // 🔹 重新整理時清除紀錄
     window.addEventListener("beforeunload", () => {
       localStorage.removeItem("tsumResults");
     });
 
     const resultContainer = document.getElementById("resultContainer");
-    const drawBtn = document.getElementById("drawBtn");
+    const singleDrawBtn = document.getElementById("singleDrawBtn");
+    const multiDrawBtn = document.getElementById("multiDrawBtn");
     const banner = document.getElementById("banner");
 
-    // 找 novbox
     const boxData = selectbox.find(b => b.box === "novbox");
     if (!boxData) {
       console.error("找不到 novbox");
@@ -82,31 +110,42 @@
       banner.src = boxData.box_label;
     }
 
-    // 讀取已保存的抽卡結果（理論上因為 beforeunload，重整後不會留著）
-    const savedResults = JSON.parse(localStorage.getItem("tsumResults")) || [];
-    savedResults.forEach(showTsum);
+    let results = JSON.parse(localStorage.getItem("tsumResults")) || [];
+    results.forEach(showTsum);
 
-    drawBtn.addEventListener("click", () => {
+    singleDrawBtn.addEventListener("click", () => draw(1));
+    multiDrawBtn.addEventListener("click", () => draw(10));
+
+    function draw(count) {
       if (!boxData) return;
-      const tsumId = boxData.box_tsum[Math.floor(Math.random() * boxData.box_tsum.length)];
-      const tsumInfo = tsumData.find(t => t.id === tsumId);
-      if (!tsumInfo) {
-        console.error(`找不到 tsum id: ${tsumId}`);
-        return;
+
+      for (let i = 0; i < count; i++) {
+        const tsumId = boxData.box_tsum[Math.floor(Math.random() * boxData.box_tsum.length)];
+        const tsumInfo = tsumData.find(t => t.id === tsumId);
+        if (!tsumInfo) {
+          console.error(`找不到 tsum id: ${tsumId}`);
+          continue;
+        }
+
+        const tsumImg = images[tsumInfo.image];
+        if (!tsumImg) {
+          console.error(`找不到圖片: ${tsumInfo.image}`);
+          continue;
+        }
+
+        const newResult = { id: tsumId, image: tsumImg };
+        results.push(newResult);
+
+        // 只保留最後 30 個
+        if (results.length > 30) {
+          results = results.slice(results.length - 30);
+        }
+
+        showTsum(newResult);
       }
 
-      const tsumImg = images[tsumInfo.image];
-      if (!tsumImg) {
-        console.error(`找不到圖片: ${tsumInfo.image}`);
-        return;
-      }
-
-      const newResult = { id: tsumId, image: tsumImg };
-      savedResults.push(newResult);
-      localStorage.setItem("tsumResults", JSON.stringify(savedResults));
-
-      showTsum(newResult);
-    });
+      localStorage.setItem("tsumResults", JSON.stringify(results));
+    }
 
     function showTsum(result) {
       const tsumDiv = document.createElement("div");
@@ -117,6 +156,11 @@
       tsumDiv.appendChild(img);
 
       resultContainer.appendChild(tsumDiv);
+
+      // 超過 30 個就刪除舊的
+      while (resultContainer.children.length > 30) {
+        resultContainer.removeChild(resultContainer.firstChild);
+      }
     }
   </script>
 </body>
