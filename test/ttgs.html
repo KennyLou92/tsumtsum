@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>Tsum 抽卡模擬</title>
+<title>Tsum 抽卡模擬器</title>
 <style>
 body {
   background-color: #222;
@@ -65,7 +65,7 @@ button:hover {
 
 <div id="results" class="result-container"></div>
 
-<!-- 載入外部 JS -->
+<!-- 外部資料 -->
 <script src="selectbox.js"></script>
 <script src="tsum.js"></script>
 <script src="images.js"></script>
@@ -73,37 +73,51 @@ button:hover {
 <!-- 主邏輯 -->
 <script>
 window.addEventListener('DOMContentLoaded', () => {
-  const currentBox = selectbox[0];
+  // 兼容 const 定義
+  const boxes = typeof selectbox !== "undefined" ? selectbox : window.selectbox;
+  const tsumList = typeof tsumData !== "undefined" ? tsumData : window.tsumData;
+  const imgData = typeof images !== "undefined" ? images : window.images;
+
+  // 尋找 novbox
+  const currentBox = boxes.find(b => b.box === "novbox");
+  if (!currentBox) {
+    alert("找不到 novbox，請確認 selectbox.js 是否包含。");
+    return;
+  }
+
   const banner = document.getElementById("banner");
   const drawBtn = document.getElementById("drawBtn");
   const resultsDiv = document.getElementById("results");
 
   banner.src = currentBox.box_label;
 
-  // 載入已抽過的結果
-  let drawHistory = JSON.parse(localStorage.getItem("drawResults") || "[]");
+  // 載入舊抽卡紀錄
+  let drawHistory = JSON.parse(localStorage.getItem("drawResults_novbox") || "[]");
   drawHistory.forEach(showResult);
 
   drawBtn.addEventListener("click", () => {
     const tsumIdList = currentBox.box_tsum;
     const randomId = tsumIdList[Math.floor(Math.random() * tsumIdList.length)];
-    const tsum = tsumData.find(t => t.id === randomId);
-    if (!tsum) return alert("找不到對應的 tsum id: " + randomId);
+    const tsum = tsumList.find(t => t.id === randomId);
+    if (!tsum) {
+      console.warn("找不到對應的 tsum id:", randomId);
+      return;
+    }
 
     drawHistory.push(randomId);
-    localStorage.setItem("drawResults", JSON.stringify(drawHistory));
+    localStorage.setItem("drawResults_novbox", JSON.stringify(drawHistory));
 
     showResult(randomId);
   });
 
   function showResult(tsumId) {
-    const tsum = tsumData.find(t => t.id === tsumId);
+    const tsum = tsumList.find(t => t.id === tsumId);
     if (!tsum) return;
 
     const div = document.createElement("div");
     div.className = "result";
     const img = document.createElement("img");
-    img.src = images[tsum.image] || "https://via.placeholder.com/80";
+    img.src = imgData[tsum.image] || "https://via.placeholder.com/80";
     const name = document.createElement("div");
     name.className = "name";
     name.textContent = tsum.name;
