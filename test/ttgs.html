@@ -38,9 +38,9 @@
 
   <script>
     // === 使用外部變數 ===
-    const selectbox = window.selectbox || [];
-    const tsumData = window.tsumData || [];
-    const images = window.images || {};
+	const selectbox = typeof selectbox !== 'undefined' ? selectbox : window.selectbox;
+	const tsumData = typeof tsumData !== 'undefined' ? tsumData : window.tsumData;
+	const images = typeof images !== 'undefined' ? images : window.images;
 
     const drawBtn = document.getElementById('drawBtn');
     const drawCount = document.getElementById('drawCount');
