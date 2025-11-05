@@ -132,7 +132,7 @@
   }
 
   function updateResults() {
-    coinUsedEl.textContent = `已使用金幣：${totalCoins.toLocaleString()}`;
+    coinUsedEl.textContent = `：${totalCoins.toLocaleString()}`;
     resultsContainer.innerHTML = "";
     results.forEach(img => {
       const div = document.createElement("div");
