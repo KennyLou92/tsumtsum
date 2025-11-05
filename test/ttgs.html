@@ -35,14 +35,9 @@
 </head>
 <body>
   <div class="panel">
-    <!--<h1>TsumTsum 抽卡模擬器（有權重 / 真 SLv）</h1>-->
-
     <img id="banner" src="" alt="box banner">
 
-    <!-- 三個指定 tsum 以圖示顯示 -->
-    <div class="specials" id="specials">
-      <!-- 由 JS 填充 623 / 620 / 622 -->
-    </div>
+    <div class="specials" id="specials"></div>
 
     <div class="controls">
       <button id="singleBtn" class="btn">單抽</button>
@@ -61,75 +56,51 @@
 
   <div id="overlay"><div class="box">敬請期待</div></div>
 
-  <!-- 外部腳本（請確認檔名與檔案存在） -->
   <script src="selectbox.js"></script>
   <script src="tsum.js"></script>
   <script src="images.js"></script>
 
   <script>
-/* ------------- 注意：本程式使用的外部變數名稱必須與你的檔案一致 -------------
-   selectbox.js 需定義 const selectbox = [ ... ]
-   tsum.js       需定義 const tsumData = [ {id:, name:, image:, skill_cost: [...]}, ... ]
-   image.js      需定義 const images = { "filename.png": "data:image/..;base64,..." }
-   --------------------------------------------------------------------------- */
-
 (function(){
-  // 快速檢查
-  if (typeof selectbox === 'undefined') { alert('selectbox.js 未載入或變數名稱不是 selectbox'); return; }
-  if (typeof tsumData === 'undefined') { alert('tsum.js 未載入或變數名稱不是 tsumData'); return; }
-  if (typeof images === 'undefined') { alert('image.js 未載入或變數名稱不是 images'); return; }
+  if (typeof selectbox === 'undefined' || typeof tsumData === 'undefined' || typeof images === 'undefined') {
+    alert('請確認 selectbox.js、tsum.js、images.js 是否載入正確');
+    return;
+  }
 
-  // 參數
   const SINGLE_COST = 30000;
   const MULTI_COST = 300000;
   const DISPLAY_LIMIT = 30;
 
-  // 取得 novbox
   const box = selectbox.find(b => b.box === 'novbox');
-  if (!box) { alert('selectbox 裡找不到 novbox'); return; }
+  if (!box) { alert('找不到 novbox'); return; }
 
-  // 建 map 方便查詢
   const tsumMap = new Map();
   for (const t of tsumData) tsumMap.set(Number(t.id), t);
+  const poolIds = box.box_tsum.map(x=>Number(x)).filter(id => tsumMap.has(id));
 
-  // poolIds（只採用在 tsumMap 有定義的 id）
-  let poolIds = box.box_tsum.map(x=>Number(x)).filter(id => tsumMap.has(id));
-
-  // 初始 raw 權重：指定 623/620/622，其它 0.61，然後 normalize
   const SPEC = {623:2, 620:8, 622:7};
   const RAW = {};
   for (const id of poolIds) RAW[id] = (SPEC[id] !== undefined) ? SPEC[id] : 0.61;
+
   function normalizeRaw() {
     const total = Object.values(RAW).reduce((s,v)=>s+v,0);
     const f = 100/total;
-    for (const k of Object.keys(RAW)) RAW[k] = RAW[k]*f;
+    for (const k of Object.keys(RAW)) RAW[k] *= f;
   }
   normalizeRaw();
 
-  // activeWeights 會動態改（達 SLv6 則設 0 並重算 normalize）
-  let activeWeights = Object.fromEntries(Object.entries(RAW).map(([k,v])=>[k, v]));
+  let activeWeights = {...RAW};
+  const obtained = {};
 
-  function recomputeActiveWeights(){
-    const sum = Object.values(activeWeights).reduce((s,v)=>s+v,0);
-    if (sum <= 0) return;
-    const f = 100 / sum;
-    for (const k of Object.keys(activeWeights)) activeWeights[k] = activeWeights[k]*f;
-  }
-
-  // 紀錄已獲得次數
-  const obtained = {}; // id -> count
-
-  // helper: 由 skill_cost (每級需數) 轉成累計門檻
-  function cumulativeThresholds(skill_cost){
-    if (!Array.isArray(skill_cost)) return [1,2,4,8,16,32];
-    const out = [];
-    let s = 0;
-    for (const v of skill_cost) { s += Number(v) || 0; out.push(s); }
-    return out;
+  function cumulativeThresholds(cost){
+    if (!Array.isArray(cost)) return [1,2,4,8,16,32];
+    let sum = 0, res=[];
+    for (const v of cost) { sum += Number(v)||0; res.push(sum); }
+    return res;
   }
 
   function getSLv(id){
-    const t = tsumMap.get(Number(id));
+    const t = tsumMap.get(id);
     if (!t) return 0;
     const thr = cumulativeThresholds(t.skill_cost);
     const cnt = obtained[id] || 0;
@@ -141,26 +112,26 @@
     return Math.min(slv,6);
   }
 
-  // 623 special: 初次獲得補到 SLv3 的累計數
-  function applySpecial623FirstTime(id){
-    if (Number(id)!==623) return;
+  function applySpecial623FirstTime(){
     if ((obtained[623]||0) > 0) return;
     const t = tsumMap.get(623);
     if (!t) return;
     const thr = cumulativeThresholds(t.skill_cost);
-    const needForSL3 = thr[2] || (thr.length>=3 ? thr[2] : 3);
-    obtained[623] = needForSL3; // 補足到 SLv3（但之後仍會把本次抽卡再 +1）
+    obtained[623] = thr[2] || 4; // SLv3 累計量
   }
 
-  // weighted pick
+  function recomputeActiveWeights(){
+    const sum = Object.values(activeWeights).reduce((s,v)=>s+v,0);
+    const f = 100/sum;
+    for (const k of Object.keys(activeWeights)) activeWeights[k]*=f;
+  }
+
   function pickWeightedId(){
-    // build items with weight>0
     const items = [];
     for (const id of poolIds) {
       const w = activeWeights[id] || 0;
-      if (w > 0) items.push({id:Number(id), w});
+      if (w>0) items.push({id,w});
     }
-    if (items.length === 0) return null;
     const total = items.reduce((s,it)=>s+it.w,0);
     let r = Math.random()*total;
     for (const it of items){
@@ -170,145 +141,111 @@
     return items[items.length-1].id;
   }
 
-  // UI 元件
-  const bannerEl = document.getElementById('banner');
-  const specialsEl = document.getElementById('specials');
-  const singleBtn = document.getElementById('singleBtn');
-  const multiBtn = document.getElementById('multiBtn');
-  const totalDrawsEl = document.getElementById('totalDraws');
-  const totalCoinsEl = document.getElementById('totalCoins');
-  const resultsEl = document.getElementById('results');
-  const messageEl = document.getElementById('message');
-  const overlay = document.getElementById('overlay');
-  const probSummaryEl = document.getElementById('probSummary');
-
-  // 初始 UI
-  bannerEl.src = box.box_label || '';
-  let totalDraws = 0;
-  let totalCoins = 0;
-  let results = []; // oldest -> newest
-
-  function renderProbSummary(){
-    const w623 = (activeWeights[623]||0).toFixed(2);
-    const w620 = (activeWeights[620]||0).toFixed(2);
-    const w622 = (activeWeights[622]||0).toFixed(2);
-    const others = poolIds.filter(id => id!==623 && id!==620 && id!==622).length;
-    probSummaryEl && (probSummaryEl.textContent = `機率（%） 623 ${w623} / 620 ${w620} / 622 ${w622} / 其他 ${others} 個（合計 100%）`);
-  }
-
-  function refreshSpecials(){
-    specialsEl.innerHTML = '';
-    [623,620,622].forEach(id => {
-      if (!tsumMap.has(id)) return;
-      const t = tsumMap.get(id);
-      const div = document.createElement('div');
-      div.className = 'special';
-      const img = document.createElement('img');
-      // image key in tsumData is filename; images[filename] holds base64 or url
-      img.src = images[t.image] || placeholderSVG();
-      const badge = document.createElement('div');
-      badge.className = 'slv-badge';
-      badge.textContent = 'SLv' + (getSLv(id) || 0);
-      div.appendChild(img);
-      div.appendChild(badge);
-      specialsEl.appendChild(div);
-    });
-  }
-
-  function placeholderSVG(){
-    return 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><rect width="100%" height="100%" fill="#222"/><text x="50%" y="50%" fill="#999" font-size="10" text-anchor="middle" dominant-baseline="middle">no image</text></svg>');
-  }
-
-  function refreshResultsPanel(){
-    resultsEl.innerHTML = '';
-    const visible = results.slice(-DISPLAY_LIMIT); // oldest -> newest
-    for (const src of visible) {
-      const div = document.createElement('div');
-      div.className = 'tsum';
-      const img = document.createElement('img');
-      img.src = src;
-      div.appendChild(img);
-      resultsEl.appendChild(div);
+  function handleSlv6(id){
+    if (getSLv(id) >= 6) {
+      activeWeights[id]=0;
+      recomputeActiveWeights();
     }
-  }
-
-  function refreshStats(){
-    totalDrawsEl.textContent = totalDraws;
-    totalCoinsEl.textContent = totalCoins.toLocaleString();
   }
 
   function allPoolMaxed(){
     return poolIds.every(id => getSLv(id) >= 6);
   }
 
-  function handleSlv6(id){
-    if (getSLv(id) >= 6) {
-      activeWeights[id] = 0;
-      recomputeActiveWeights();
+  // ---- UI ----
+  const bannerEl=document.getElementById('banner');
+  const specialsEl=document.getElementById('specials');
+  const resultsEl=document.getElementById('results');
+  const totalDrawsEl=document.getElementById('totalDraws');
+  const totalCoinsEl=document.getElementById('totalCoins');
+  const singleBtn=document.getElementById('singleBtn');
+  const multiBtn=document.getElementById('multiBtn');
+  const overlay=document.getElementById('overlay');
+
+  bannerEl.src=box.box_label||'';
+  let totalDraws=0,totalCoins=0,results=[];
+
+  function placeholderSVG(){
+    return 'data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><rect width="100%" height="100%" fill="#222"/><text x="50%" y="50%" fill="#999" font-size="10" text-anchor="middle" dominant-baseline="middle">no image</text></svg>');
+  }
+
+  function refreshSpecials(){
+    specialsEl.innerHTML='';
+    [623,620,622].forEach(id=>{
+      if(!tsumMap.has(id))return;
+      const t=tsumMap.get(id);
+      const div=document.createElement('div');
+      div.className='special';
+      const img=document.createElement('img');
+      img.src=images[t.image]||placeholderSVG();
+      const badge=document.createElement('div');
+      badge.className='slv-badge';
+      badge.textContent='SLv'+(getSLv(id)||0);
+      div.appendChild(img);
+      div.appendChild(badge);
+      specialsEl.appendChild(div);
+    });
+  }
+
+  function refreshResultsPanel(){
+    resultsEl.innerHTML='';
+    const visible=results.slice(-DISPLAY_LIMIT);
+    for(const src of visible){
+      const div=document.createElement('div');
+      div.className='tsum';
+      const img=document.createElement('img');
+      img.src=src;
+      div.appendChild(img);
+      resultsEl.appendChild(div);
     }
+  }
+
+  function refreshStats(){
+    totalDrawsEl.textContent=totalDraws;
+    totalCoinsEl.textContent=totalCoins.toLocaleString();
   }
 
   function showFinishOverlay(){
-    overlay.style.display = 'flex';
-    singleBtn.disabled = true;
-    multiBtn.disabled = true;
-    messageEl.textContent = '敬請期待';
+    overlay.style.display='flex';
+    singleBtn.disabled=true;
+    multiBtn.disabled=true;
   }
 
-  // 主抽流程：count 次
   function performDraws(count){
-    if (allPoolMaxed()) { showFinishOverlay(); return; }
+    if(allPoolMaxed()){showFinishOverlay();return;}
 
-    for (let i=0;i<count;i++){
-      const picked = pickWeightedId();
-      if (picked === null) { showFinishOverlay(); break; }
+    for(let i=0;i<count;i++){
+      const picked=pickWeightedId();
+      if(picked===null){showFinishOverlay();break;}
 
-      // special 623 first-time: 抽到時先補足到 SLv3（按你規則）
-      if ((obtained[picked] || 0) === 0 && picked === 623) {
-        applySpecial623FirstTime(623);
-      }
+      if(picked===623 && (obtained[623]||0)===0) applySpecial623FirstTime();
 
-      // 增加一次獲得數
-      obtained[picked] = (obtained[picked] || 0) + 1;
+      obtained[picked]=(obtained[picked]||0)+1;
 
-      // 取得圖
-      const t = tsumMap.get(picked);
-      let src = placeholderSVG();
-      if (t && t.image && images[t.image]) src = images[t.image];
-
-      // push 結果（newest last）
+      const t=tsumMap.get(picked);
+      const src=(t&&t.image&&images[t.image])?images[t.image]:placeholderSVG();
       results.push(src);
-      if (results.length > DISPLAY_LIMIT) results = results.slice(-DISPLAY_LIMIT);
+      if(results.length>DISPLAY_LIMIT) results=results.slice(-DISPLAY_LIMIT);
 
-      // 檢查 SLv6 觸發
       handleSlv6(picked);
-
-      // 若全部滿了
-      if (allPoolMaxed()) { showFinishOverlay(); break; }
+      if(allPoolMaxed()){showFinishOverlay();break;}
     }
 
-    // 次數與金幣
-    totalDraws += count;
-    totalCoins += (count === 10 ? MULTI_COST : SINGLE_COST);
+    totalDraws+=count;
+    totalCoins+=(count===10?MULTI_COST:SINGLE_COST);
 
-    // UI 更新
     refreshSpecials();
     refreshResultsPanel();
     refreshStats();
-    renderProbSummary();
   }
 
-  // 綁定按鈕
-  singleBtn.addEventListener('click', ()=>performDraws(1));
-  multiBtn.addEventListener('click', ()=>performDraws(10));
+  singleBtn.addEventListener('click',()=>performDraws(1));
+  multiBtn.addEventListener('click',()=>performDraws(10));
 
-  // 初始 normalize 並顯示
   recomputeActiveWeights();
-  renderProbSummary();
   refreshSpecials();
   refreshResultsPanel();
   refreshStats();
-
 })();
   </script>
 </body>
