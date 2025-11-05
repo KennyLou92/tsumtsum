@@ -65,16 +65,44 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      transform: scale(0);
+      animation: popIn 0.4s ease forwards;
     }
 
     .tsum img {
       width: 100%;
     }
+
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    #coinUsed {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      gap: 10px;
+      color: #ffd54f;
+    }
+
+    #coinUsed img {
+      width: 40px;
+      height: 40px;
+    }
   </style>
 </head>
 <body>
- <!-- <h1>Tsum Tsum 抽卡模擬器</h1> -->
+  <!--<h1>Tsum Tsum 抽卡模擬器</h1>-->
   <img id="banner" src="" alt="Box Banner">
+
+  <div id="coinUsed">
+    <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin">
+    <span id="coinValue">0</span>
+  </div>
 
   <div class="draw-buttons">
     <button id="singleDrawBtn" class="draw-btn">
@@ -93,15 +121,17 @@
   <script src="images.js"></script>
 
   <script>
-    // 🔹 重新整理時清除紀錄
+    // 🔹 重整時清除紀錄
     window.addEventListener("beforeunload", () => {
       localStorage.removeItem("tsumResults");
+      localStorage.removeItem("coinUsed");
     });
 
     const resultContainer = document.getElementById("resultContainer");
     const singleDrawBtn = document.getElementById("singleDrawBtn");
     const multiDrawBtn = document.getElementById("multiDrawBtn");
     const banner = document.getElementById("banner");
+    const coinValue = document.getElementById("coinValue");
 
     const boxData = selectbox.find(b => b.box === "novbox");
     if (!boxData) {
@@ -111,6 +141,9 @@
     }
 
     let results = JSON.parse(localStorage.getItem("tsumResults")) || [];
+    let coinUsed = Number(localStorage.getItem("coinUsed")) || 0;
+    coinValue.textContent = coinUsed.toLocaleString();
+
     results.forEach(showTsum);
 
     singleDrawBtn.addEventListener("click", () => draw(1));
@@ -144,7 +177,14 @@
         showTsum(newResult);
       }
 
+      // 💰 更新金幣使用量
+      const cost = count === 10 ? 300000 : 30000;
+      coinUsed += cost;
+      coinValue.textContent = coinUsed.toLocaleString();
+
+      // 儲存資料
       localStorage.setItem("tsumResults", JSON.stringify(results));
+      localStorage.setItem("coinUsed", coinUsed);
     }
 
     function showTsum(result) {
@@ -157,7 +197,7 @@
 
       resultContainer.appendChild(tsumDiv);
 
-      // 超過 30 個就刪除舊的
+      // 保留 30 個
       while (resultContainer.children.length > 30) {
         resultContainer.removeChild(resultContainer.firstChild);
       }
