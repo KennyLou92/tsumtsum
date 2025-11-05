@@ -36,15 +36,19 @@
     transform: scale(1.05);
   }
   #results {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 一行 10 個 */
+    gap: 8px;
     justify-content: center;
     margin-top: 20px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .tsum {
     width: 90px;
     height: 90px;
-    margin: 8px;
+    margin: auto;
     border-radius: 12px;
     background-image: url("https://i.postimg.cc/wBpXSbwN/win-list-panel-off.png");
     background-size: cover;
@@ -75,7 +79,7 @@
 </head>
 <body>
 
-<h1>Tsum Tsum 抽卡模擬器</h1>
+<!--<h1>Tsum Tsum 抽卡模擬器</h1>-->
 <img id="banner" src="" alt="Box Banner">
 
 <div id="button-container">
@@ -95,7 +99,6 @@
 <script src="images.js"></script>
 
 <script>
-  // 修正 selectbox 名稱
   const novbox = selectbox.find(b => b.box === "novbox");
   const tsumList = tsumData;
   const imageList = images;
@@ -106,7 +109,7 @@
   const coinUsedEl = document.getElementById("coinUsed");
 
   let results = [];
-  let totalCoins = 0; // 累積消費金幣
+  let totalCoins = 0;
 
   const SINGLE_COST = 30000;
   const MULTI_COST = 300000;
@@ -122,9 +125,9 @@
     totalCoins += cost;
     for (let i = 0; i < count; i++) {
       const imgSrc = getRandomTsum();
-      if (imgSrc) results.unshift(imgSrc);
+      if (imgSrc) results.push(imgSrc); // ✅ 改成 push，新的放最後面
     }
-    if (results.length > 30) results = results.slice(0, 30);
+    if (results.length > 30) results = results.slice(-30); // ✅ 保留最後30個（最舊在前）
     updateResults();
   }
 
@@ -144,7 +147,6 @@
   document.getElementById("singleDraw").addEventListener("click", () => draw(1, SINGLE_COST));
   document.getElementById("multiDraw").addEventListener("click", () => draw(10, MULTI_COST));
 
-  // 每次 F5 清除紀錄
   window.addEventListener("beforeunload", () => {
     localStorage.removeItem("tsumResults");
   });
