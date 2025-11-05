@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TsumTsum 抽卡模擬器</title>
+  <style>
+    body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:18px;background:#f6f7fb;color:#111}
+    .panel{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(24,39,75,0.06);max-width:980px;margin:0 auto}
+    .banner{width:100%;max-height:160px;object-fit:contain;margin-bottom:12px;border-radius:8px}
+    .row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    input[type=number]{padding:8px;border-radius:8px;border:1px solid #e4e7ef}
+    button{padding:10px 14px;border-radius:10px;border:0;background:#5b6cff;color:white;cursor:pointer}
+    #resultGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px;margin-top:16px}
+    .card{background:linear-gradient(180deg, #fff 0%, #fbfdff 100%);padding:8px;border-radius:10px;text-align:center;border:1px solid rgba(16,24,40,0.04)}
+    .card img{width:80px;height:80px;object-fit:contain;background:transparent;border-radius:8px}
+    .small{font-size:12px;color:#8b93a7}
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h2>✔ TsumTsum 抽卡模擬器 (novbox)</h2>
+    <img id="banner" class="banner" />
+
+    <div class="row">
+      <label for="drawCount">抽卡次數：</label>
+      <input id="drawCount" type="number" min="1" value="10" style="width:80px" />
+      <button id="drawBtn">抽卡</button>
+    </div>
+
+    <div id="resultGrid"></div>
+  </div>
+
+  <!-- 請在本檔之前先載入 -->
+  <!-- <script src="images.js"></script> -->
+  <!-- <script src="tsum.js"></script> -->
+  <!-- <script src="selectbox.js"></script> -->
+
+  <script>
+    // === 使用外部變數 ===
+    const selectbox = window.selectbox || [];
+    const tsumData = window.tsumData || [];
+    const images = window.images || {};
+
+    const drawBtn = document.getElementById('drawBtn');
+    const drawCount = document.getElementById('drawCount');
+    const resultGrid = document.getElementById('resultGrid');
+    const banner = document.getElementById('banner');
+
+    // 預設使用 selectbox[0] (novbox)
+    const activeBox = selectbox.length > 0 ? selectbox[0] : null;
+
+    if (activeBox) {
+      banner.src = activeBox.box_label;
+    }
+
+    // 建立 tsum map
+    const tsumMap = new Map();
+    for (const t of tsumData) {
+      tsumMap.set(t.id, t);
+    }
+
+    function randomPickFromArray(arr){
+      if (!arr || arr.length === 0) return null;
+      const i = Math.floor(Math.random() * arr.length);
+      return arr[i];
+    }
+
+    function getImageDataUrl(imageName){
+      if (!imageName) return null;
+      const base64 = images[imageName];
+      if (!base64) return null;
+      const ext = imageName.split('.').pop().toLowerCase();
+      let mime = 'image/png';
+      if (ext === 'jpg' || ext === 'jpeg') mime = 'image/jpeg';
+      else if (ext === 'gif') mime = 'image/gif';
+      else if (ext === 'webp') mime = 'image/webp';
+      return `data:${mime};base64,${base64}`;
+    }
+
+    function renderResult(cards){
+      for (const c of cards) {
+        const div = document.createElement('div');
+        div.className = 'card';
+        const img = document.createElement('img');
+        img.src = c.dataUrl || 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><rect width="100%" height="100%" fill="#f2f4f8"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="10" fill="#99a0b3">no image</text></svg>`);
+        const p = document.createElement('div');
+        p.textContent = c.name || (`ID:${c.id}`);
+        p.className = 'small';
+        div.appendChild(img);
+        div.appendChild(p);
+        resultGrid.appendChild(div);
+      }
+    }
+
+    function performDraw(n){
+      if (!activeBox) return;
+      const tsumIds = activeBox.box_tsum;
+      const cards = [];
+      for (let i=0;i<n;i++){
+        const pickId = randomPickFromArray(tsumIds);
+        const tsum = tsumMap.get(pickId);
+        const dataUrl = tsum ? getImageDataUrl(tsum.image) : null;
+        cards.push({id: pickId, name: tsum ? tsum.name : `#${pickId}`, dataUrl});
+      }
+      renderResult(cards);
+    }
+
+    drawBtn.addEventListener('click', () => {
+      const n = parseInt(drawCount.value,10) || 1;
+      performDraw(n);
+    });
+  </script>
+</body>
+</html>
