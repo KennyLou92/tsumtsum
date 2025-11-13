@@ -217,4 +217,12 @@ const selectbox = [
 		startdate:"1763452800",
 		enddate:"1763971199",
 	},
+	{
+		box:"dec25selectbox1",
+		show:1,
+		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202512/images/event_banner/banner_gl_0772_tw.png",
+		box_tsum:[437,571,572,408,379,407,284,31,83,391,210,80],
+		startdate:"1764914400",
+		enddate:"1765180799",
+	},
 ];
