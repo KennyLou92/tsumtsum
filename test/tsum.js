@@ -7499,6 +7499,7 @@ const tsumData = [
     ],
     "skill_label": "win_tsumskill_buzzl.png",
 	"skill_cost" : [1,1,2,4,8,20]
+  "returndate" : [1740758400]
   },
   {
     "id": 480,

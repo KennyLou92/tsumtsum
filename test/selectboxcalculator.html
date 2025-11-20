@@ -263,6 +263,71 @@
 
       const container = document.createElement("div");
       container.className = "tsum-container";
+      container.style.position = "relative"; // 給 info icon 用
+
+      // --------------------------
+      // 🔹 Info Icon (右上角)
+      // --------------------------
+      const infoIcon = document.createElement("img");
+      infoIcon.src = "https://i.postimg.cc/FR8GhM2m/win-info.png";
+      infoIcon.style.position = "absolute";
+      infoIcon.style.top = "5px";
+      infoIcon.style.right = "5px";
+      infoIcon.style.width = "28px";
+      infoIcon.style.height = "28px";
+      infoIcon.style.cursor = "pointer";
+      infoIcon.style.zIndex = "10";
+      container.appendChild(infoIcon);
+
+      // --------------------------
+      // 🔹 Popup for Return Date
+      // --------------------------
+      const popup = document.createElement("div");
+      popup.style.position = "absolute";
+      popup.style.top = "40px";
+      popup.style.right = "5px";
+      popup.style.background = "rgba(255,255,255,0.95)";
+      popup.style.border = "1px solid #ccc";
+      popup.style.padding = "6px 10px";
+      popup.style.borderRadius = "6px";
+      popup.style.fontSize = "14px";
+      popup.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+      popup.style.display = "none";
+      popup.style.zIndex = "20";
+
+      // 處理 returndate array
+      let text = "No info";
+
+      if (Array.isArray(tsum.returndate) && tsum.returndate.length > 0) {
+        const ts = tsum.returndate[0];
+
+        if (!isNaN(ts)) {
+          const d = new Date(ts * 1000);
+          text = `${d.getFullYear()}-${(d.getMonth()+1)
+            .toString()
+            .padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;
+        } else {
+          text = tsum.returndate[0];
+        }
+      }
+
+      popup.textContent = "Return Date: " + text;
+      container.appendChild(popup);
+
+      // icon toggle popup
+      infoIcon.onclick = (e) => {
+        e.stopPropagation();
+        popup.style.display = popup.style.display === "none" ? "block" : "none";
+      };
+
+      // 點擊外面會關閉
+      document.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      // --------------------------
+      // 原本的內容：圖片、名字、SLv 選單、金幣計算
+      // --------------------------
 
       const img = document.createElement("img");
       img.className = "tsum-img";
@@ -317,6 +382,7 @@
         const remainingCost = totalCost - ownedCost;
         return remainingCost * GOLD_PER_COST;
       };
+
       return container;
     }
 
