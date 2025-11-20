@@ -299,24 +299,35 @@
       let text = "No info";
 
       if (Array.isArray(tsum.returndate) && tsum.returndate.length > 0) {
+        const now = new Date();
+        const nowYear = now.getFullYear();
+        const nowMonth = now.getMonth(); // 0-11
 
-        // 如果只有 1 個 returndate → 顯示「最新推出」
-        if (tsum.returndate.length === 1) {
-          text = "最新推出";
-        }
+        // 取第一個日期
+        const ts = tsum.returndate[0];
 
-        // 如果有多個 returndate → 顯示第一個日期
-        else {
-          const ts = tsum.returndate[0];
+        if (!isNaN(ts)) {
+          const d = new Date(ts * 1000);
+          const y = d.getFullYear();
+          const m = d.getMonth();
 
-          if (!isNaN(ts)) {
-            const d = new Date(ts * 1000);
-            text = `${d.getFullYear()}-${(d.getMonth()+1)
-              .toString()
-              .padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;
-          } else {
-            text = tsum.returndate[0];
+          // 🔹規則 1：如果是當月 → 最新推出
+          if (y === nowYear && m === nowMonth) {
+            text = "最新推出";
           }
+
+          // 🔹規則 2：只有一個日期，而且不是當月 → 常駐Tsum
+          else if (tsum.returndate.length === 1) {
+            text = "常駐Tsum";
+          }
+
+          // 🔹規則 3：有多個 → 顯示第一個日期
+          else {
+            text = `${y}-${(m+1).toString().padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;
+          }
+        } else {
+          // 如果不是 unix 數字，直接吃值
+          text = tsum.returndate[0];
         }
       }
 
