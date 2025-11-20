@@ -9693,7 +9693,8 @@ const tsumData = [
 	 "^814w^ 時間：11秒 ^816w^^815w^^817w^效果範圍：XXL",
     ],
 	"skill_cost" : [1,1,2,4,8,20],
-  "returndate" : [1759248000]
+  "startdate" : [1759248000],
+  "returndate" : []
   },
   {
     "id": 616,
@@ -9710,7 +9711,8 @@ const tsumData = [
 	 "所需Tsum數：18 分數：3.2倍",
     ],
 	"skill_cost" : [1,1,2,4,8,16],
-  "returndate" : [1759248000]
+  "startdate" : [1759248000],
+  "returndate" : []
   },
     {
     "id": 617,
@@ -9727,7 +9729,8 @@ const tsumData = [
 	 "效果範圍：XXL 所需Tsum數：17",
     ],
 	"skill_cost" : [1,1,2,4,8,16],
-  "returndate" : [1759248000]
+  "startdate" : [1759248000],
+  "returndate" : []
   },
     {
     "id": 618,
@@ -9744,7 +9747,8 @@ const tsumData = [
 	 "所需Tsum數：17 時間：7秒",
     ],
 	"skill_cost" : [1,1,2,4,7,14],
-  "returndate" : [1759248000]
+  "startdate" : [1759248000],
+  "returndate" : []
   },
     {
     "id": 619,
@@ -9761,7 +9765,7 @@ const tsumData = [
 	 "所需Tsum數：15 時間：5.5秒",
     ],
 	"skill_cost" : [1,1,1,2,3,3],
-  "returndate" : [1759248000]
+  "returndate" : []
   },
     {
     "id": 620,
@@ -9779,7 +9783,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1761926400],
-  "returndate" : [1761926400]
+  "returndate" : []
   },
     {
     "id": 621,
@@ -9797,7 +9801,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1761926400],
-  "returndate" : [1761926400]
+  "returndate" : []
   },
     {
     "id": 622,
@@ -9815,7 +9819,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1761926400],
-  "returndate" : [1761926400]
+  "returndate" : []
   },
     {
     "id": 623,
@@ -9833,7 +9837,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1761926400],
-  "returndate" : [1761926400]
+  "returndate" : []
   },
     {
     "id": 624,

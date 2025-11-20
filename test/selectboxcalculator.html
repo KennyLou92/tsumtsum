@@ -319,23 +319,42 @@
       popup.style.display = "none";
       popup.style.zIndex = "20";
 
-      let text = "";
+      // --------------------------
+      // 🔹 資訊整理
+      // --------------------------
 
-      // 🎯 新邏輯：檢查 returndate
-      if (!Array.isArray(tsum.returndate) || tsum.returndate.length === 0) {
-        text = "暫未復刻";
-      } else {
-        // 過濾掉不是 unix 的
-        const validUnix = tsum.returndate.filter(x => !isNaN(x));
+      let latestReturnText = "暫未復刻";
+      let returnCountText = "已復刻 0 次";
+      let firstStartText = "未知";
 
-        if (validUnix.length === 0) {
-          text = "暫未復刻";
-        } else {
-          text = `已復刻 ${validUnix.length} 次`;
-        }
+      const validReturns = Array.isArray(tsum.returndate)
+          ? tsum.returndate.filter(x => !isNaN(x))
+          : [];
+
+      // 🟦 復刻次數
+      if (validReturns.length > 0) {
+        returnCountText = `已復刻 ${validReturns.length} 次`;
+
+        // 🟩 最新復刻日期（最大 unix）
+        const latest = Math.max(...validReturns);
+        const d = new Date(latest * 1000);
+        latestReturnText = `${d.getFullYear()}-${(d.getMonth()+1)
+          .toString().padStart(2,'0')}`;
       }
 
-      popup.textContent = text;
+      // 🟥 第一次推出 startdate
+      if (!isNaN(tsum.startdate)) {
+        const sd = new Date(tsum.startdate * 1000);
+        firstStartText = `${sd.getFullYear()}-${(sd.getMonth()+1)
+          .toString().padStart(2,'0')}`;
+      }
+
+      // 🔹 組合 popup 內容
+      popup.innerHTML =
+        `最新復刻：${latestReturnText}<br>` +
+        `${returnCountText}<br>` +
+        `首次推出：${firstStartText}`;
+
       container.appendChild(popup);
 
       // 點 icon 顯示 / 收起 popup
