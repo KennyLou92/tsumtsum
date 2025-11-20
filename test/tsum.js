@@ -7498,7 +7498,7 @@ const tsumData = [
       "所需Tsum數：16 次數 : 5"
     ],
     "skill_label": "win_tsumskill_buzzl.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
   "returndate" : [1740758400]
   },
   {
