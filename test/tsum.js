@@ -9765,6 +9765,7 @@ const tsumData = [
 	 "所需Tsum數：15 時間：5.5秒",
     ],
 	"skill_cost" : [1,1,1,2,3,3],
+  "startdate" : [1759248000],
   "returndate" : []
   },
     {
