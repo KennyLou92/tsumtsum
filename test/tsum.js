@@ -9836,7 +9836,8 @@ const tsumData = [
 	 "效果範圍：XL",
 	 "效果範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "returndate" : [1761926400]
   },
    {
     "id": 625,
