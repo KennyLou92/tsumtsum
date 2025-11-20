@@ -9778,6 +9778,7 @@ const tsumData = [
 	 "範圍：XXL 所需Tsum數：18",
     ],
 	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1761926400],
   "returndate" : [1761926400]
   },
     {
@@ -9795,6 +9796,7 @@ const tsumData = [
 	 "範圍：XXL 所需Tsum數：20",
     ],
 	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1761926400],
   "returndate" : [1761926400]
   },
     {
@@ -9812,6 +9814,7 @@ const tsumData = [
 	 "範圍：XXL 所需Tsum數：8",
     ],
 	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1761926400],
   "returndate" : [1761926400]
   },
     {
@@ -9829,6 +9832,7 @@ const tsumData = [
 	 "次數：2 ^851w^消除數：24 ^852w^時間：6秒",
     ],
 	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1761926400],
   "returndate" : [1761926400]
   },
     {
@@ -9846,7 +9850,8 @@ const tsumData = [
 	 "效果範圍：XXL",
     ],
 	"skill_cost" : [1,1,2,4,8,16],
-  "returndate" : [1761926400]
+  "startdate" : [1761926400],
+  "returndate" : []
   },
    {
     "id": 625,

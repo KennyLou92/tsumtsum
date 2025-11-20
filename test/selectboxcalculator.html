@@ -266,7 +266,31 @@
       container.style.position = "relative"; // 給 info icon 用
 
       // --------------------------
-      // 🔹 Info Icon (右上角)
+      // 🔹 NEW ICON：如果 startdate 是當月
+      // --------------------------
+      if (tsum.startdate) {
+        const now = new Date();
+        const nowYear = now.getFullYear();
+        const nowMonth = now.getMonth(); // 0-11
+
+        const d = new Date(tsum.startdate * 1000);
+        const y = d.getFullYear();
+        const m = d.getMonth();
+
+        if (y === nowYear && m === nowMonth) {
+          const newIcon = document.createElement("img");
+          newIcon.src = "https://i.postimg.cc/brzkbbs0/win-card-icon-new.png";
+          newIcon.style.position = "absolute";
+          newIcon.style.top = "5px";
+          newIcon.style.left = "5px";
+          newIcon.style.width = "38px";
+          newIcon.style.height = "38px";
+          newIcon.style.zIndex = "12";
+          container.appendChild(newIcon);
+        }
+      }
+      // --------------------------
+      // 🔹 Info icon (右上角)
       // --------------------------
       const infoIcon = document.createElement("img");
       infoIcon.src = "https://i.postimg.cc/FR8GhM2m/win-info.png";
@@ -280,7 +304,7 @@
       container.appendChild(infoIcon);
 
       // --------------------------
-      // 🔹 Popup for Return Date
+      // 🔹 popup for Return Info
       // --------------------------
       const popup = document.createElement("div");
       popup.style.position = "absolute";
@@ -295,52 +319,32 @@
       popup.style.display = "none";
       popup.style.zIndex = "20";
 
-      // 處理 returndate array
-      let text = "No info";
+      let text = "";
 
-      if (Array.isArray(tsum.returndate) && tsum.returndate.length > 0) {
-        const now = new Date();
-        const nowYear = now.getFullYear();
-        const nowMonth = now.getMonth(); // 0-11
+      // 🎯 新邏輯：檢查 returndate
+      if (!Array.isArray(tsum.returndate) || tsum.returndate.length === 0) {
+        text = "暫未復刻";
+      } else {
+        // 過濾掉不是 unix 的
+        const validUnix = tsum.returndate.filter(x => !isNaN(x));
 
-        // 取第一個日期
-        const ts = tsum.returndate[0];
-
-        if (!isNaN(ts)) {
-          const d = new Date(ts * 1000);
-          const y = d.getFullYear();
-          const m = d.getMonth();
-
-          // 🔹規則 1：如果是當月 → 最新推出
-          if (y === nowYear && m === nowMonth) {
-            text = "最新推出";
-          }
-
-          // 🔹規則 2：只有一個日期，而且不是當月 → 常駐Tsum
-          else if (tsum.returndate.length === 1) {
-            text = "常駐Tsum";
-          }
-
-          // 🔹規則 3：有多個 → 顯示第一個日期
-          else {
-            text = `${y}-${(m+1).toString().padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;
-          }
+        if (validUnix.length === 0) {
+          text = "暫未復刻";
         } else {
-          // 如果不是 unix 數字，直接吃值
-          text = tsum.returndate[0];
+          text = `已復刻 ${validUnix.length} 次`;
         }
       }
 
-      popup.textContent = "🗓️ " + text;
+      popup.textContent = text;
       container.appendChild(popup);
 
-      // icon toggle popup
+      // 點 icon 顯示 / 收起 popup
       infoIcon.onclick = (e) => {
         e.stopPropagation();
         popup.style.display = popup.style.display === "none" ? "block" : "none";
       };
 
-      // 點擊外面會關閉
+      // 點外面收起
       document.addEventListener("click", () => {
         popup.style.display = "none";
       });
