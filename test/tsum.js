@@ -9871,7 +9871,9 @@ const tsumData = [
    "",
    "",
     ],
-  "skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1764518400],
+  "returndate" : []
   },
    {
     "id": 626,
@@ -9887,7 +9889,9 @@ const tsumData = [
    "",
    "",
     ],
-  "skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1764518400],
+  "returndate" : []
   },
    {
     "id": 627,
@@ -9903,7 +9907,9 @@ const tsumData = [
    "",
    "",
     ],
-  "skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1764518400],
+  "returndate" : []
   },
    {
     "id": 628,
@@ -9919,6 +9925,8 @@ const tsumData = [
    "",
    "",
     ],
-  "skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1764518400],
+  "returndate" : []
   },
 ];
