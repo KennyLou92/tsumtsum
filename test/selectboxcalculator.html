@@ -214,6 +214,14 @@
         }
       });
     }
+	
+	// 🔹 第一次點擊畫面時，自動解除靜音
+	document.addEventListener("click", () => {
+	  if (ytPlayer && ytPlayer.isMuted()) {
+		ytPlayer.unMute();
+		ytPlayer.setVolume(50);
+	  }
+	}, { once: true });
 
     function controlBGM(start, end) {
       function updateBGM() {

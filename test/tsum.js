@@ -9837,4 +9837,68 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,16]
   },
+   {
+    "id": 625,
+    "name_en": "NAME_BAYMAXPR",
+    "name": "杯麵2.0＆阿廣",
+    "image": "block_baymaxpr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+    ],
+  "skill_cost" : [1,1,2,4,8,20]
+  },
+   {
+    "id": 626,
+    "name_en": "NAME_MORCHIPR",
+    "name": "杯麵＆麻糬",
+    "image": "block_mochipr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+    ],
+  "skill_cost" : [1,1,2,4,8,20]
+  },
+   {
+    "id": 627,
+    "name_en": "NAME_MORCHIPR",
+    "name": "神行蛋葆",
+    "image": "block_gogo_l.png",
+    "skill_label": "",
+  "skill_desc": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+    ],
+  "skill_cost" : [1,1,2,4,8,16]
+  },
+   {
+    "id": 628,
+    "name_en": "NAME_WASABI",
+    "name": "芥末",
+    "image": "block_wasabi_l.png",
+    "skill_label": "",
+  "skill_desc": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+    ],
+  "skill_cost" : [1,1,2,4,8,16]
+  },
 ];
