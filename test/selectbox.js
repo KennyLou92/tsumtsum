@@ -147,7 +147,6 @@ const selectbox = [
 	},
 	{
 		box:"decbox_1",
-		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202512/images/event_banner/banner_gl_0769_tw.png",
 		box_tsum:[626,625,622,621,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
@@ -163,7 +162,6 @@ const selectbox = [
 	},
 	{
 		box:"decbox_2",
-		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202512/images/event_banner/banner_gl_0770_tw.png",
 		box_tsum:[628,627,626,625,622,621,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
@@ -179,7 +177,6 @@ const selectbox = [
 	},
 	{
 		box:"decbox_3",
-		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202512/images/event_banner/banner_gl_0771_tw.png",
 		box_tsum:[628,627,626,625,622,621,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
@@ -267,6 +264,7 @@ const selectbox = [
 	},
 	{
 		box:"dec25selectbox1",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202512/images/event_banner/banner_gl_0772_tw.png",
 		box_tsum:[437,571,572,408,379,407,284,31,83,391,210,80],
 		startdate:"1764914400",
