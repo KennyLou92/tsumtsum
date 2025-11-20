@@ -9692,7 +9692,8 @@ const tsumData = [
 	 "^814w^ 時間：10.2秒 ^816w^^815w^^817w^效果範圍：XL",
 	 "^814w^ 時間：11秒 ^816w^^815w^^817w^效果範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "returndate" : [1759248000]
   },
   {
     "id": 616,
@@ -9708,7 +9709,8 @@ const tsumData = [
 	 "所需Tsum數：18 分數：2.7倍",
 	 "所需Tsum數：18 分數：3.2倍",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "returndate" : [1759248000]
   },
     {
     "id": 617,
@@ -9724,7 +9726,8 @@ const tsumData = [
 	 "效果範圍：XL 所需Tsum數：18",
 	 "效果範圍：XXL 所需Tsum數：17",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "returndate" : [1759248000]
   },
     {
     "id": 618,
@@ -9740,7 +9743,8 @@ const tsumData = [
 	 "所需Tsum數：18 時間：6.5秒",
 	 "所需Tsum數：17 時間：7秒",
     ],
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "returndate" : [1759248000]
   },
     {
     "id": 619,
@@ -9756,7 +9760,8 @@ const tsumData = [
 	 "所需Tsum數：16 時間：5.1秒",
 	 "所需Tsum數：15 時間：5.5秒",
     ],
-	"skill_cost" : [1,1,1,2,3,3]
+	"skill_cost" : [1,1,1,2,3,3],
+  "returndate" : [1759248000]
   },
     {
     "id": 620,
@@ -9772,7 +9777,8 @@ const tsumData = [
 	 "範圍：XL 所需Tsum數：19",
 	 "範圍：XXL 所需Tsum數：18",
     ],
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "returndate" : [1761926400]
   },
     {
     "id": 621,
@@ -9788,7 +9794,8 @@ const tsumData = [
 	 "範圍：XL 所需Tsum數：21",
 	 "範圍：XXL 所需Tsum數：20",
     ],
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "returndate" : [1761926400]
   },
     {
     "id": 622,
@@ -9804,7 +9811,8 @@ const tsumData = [
 	 "範圍：XL 所需Tsum數：10",
 	 "範圍：XXL 所需Tsum數：8",
     ],
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "returndate" : [1761926400]
   },
     {
     "id": 623,
@@ -9820,7 +9828,8 @@ const tsumData = [
 	 "次數：2 ^851w^消除數：22 ^852w^時間：5.6秒",
 	 "次數：2 ^851w^消除數：24 ^852w^時間：6秒",
     ],
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "returndate" : [1761926400]
   },
     {
     "id": 624,
