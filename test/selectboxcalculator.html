@@ -345,13 +345,13 @@
       // 🟥 第一次推出 startdate
       if (!isNaN(tsum.startdate)) {
         const sd = new Date(tsum.startdate * 1000);
-        firstStartText = `${sd.getFullYear()}-${(sd.getMonth()+1)
+        firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1)
           .toString().padStart(2,'0')}`;
       }
 
       // 🔹 組合 popup 內容
       popup.innerHTML =
-        `最新復刻：${latestReturnText}<br>` +
+        `最近復刻：${latestReturnText}<br>` +
         `${returnCountText}<br>` +
         `首次推出：${firstStartText}`;
 
