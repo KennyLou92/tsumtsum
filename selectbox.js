@@ -260,7 +260,7 @@ const selectbox = [
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202511/images/event_banner/banner_gl_0765_tw.png",
 		box_tsum:[276,66,484,526,275,444,356,274,406,176,115,111],
 		startdate:"1763452800",
-		enddate:"1763971199",
+		enddate:"1763711999",
 	},
 	{
 		box:"dec25selectbox1",
