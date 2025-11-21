@@ -9548,7 +9548,9 @@ const tsumData = [
 	 "效果範圍：XL",
 	 "效果範圍：XXL"
     ],
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1753977600],
+  "returndate" : []
   },
   {
     "id": 607,
@@ -9564,7 +9566,9 @@ const tsumData = [
 	 "消除數：27",
 	 "消除數：32",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1753977600],
+  "returndate" : []
   },
   {
     "id": 608,
@@ -9580,7 +9584,9 @@ const tsumData = [
 	 "出現數量：4～5",
 	 "出現數量：5",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1753977600],
+  "returndate" : []
   },
   {
     "id": 609,
@@ -9596,7 +9602,9 @@ const tsumData = [
 	 "範圍：XL 出現數量：2～3",
 	 "範圍：XXL 出現數量：3",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1753977600],
+  "returndate" : []
   },
   {
     "id": 610,
@@ -9612,7 +9620,9 @@ const tsumData = [
 	 "音符數：5",
 	 "音符數：5～6",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1753977600],
+  "returndate" : []
   },
   {
     "id": 611,
@@ -9628,7 +9638,9 @@ const tsumData = [
 	 "^802w^所需Tsum數：29 ^803w^範圍：XL",
 	 "^802w^所需Tsum數：27 ^803w^範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1756656000],
+  "returndate" : []  
   },
   {
     "id": 612,
@@ -9644,7 +9656,9 @@ const tsumData = [
 	 "分數：3.1倍 出現數量：5",
 	 "分數：3.5倍 出現數量：6",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1756656000],
+  "returndate" : []
   },
   {
     "id": 613,
@@ -9660,7 +9674,9 @@ const tsumData = [
 	 "效果範圍：XL",
 	 "效果範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1756656000],
+  "returndate" : []
   },
   {
     "id": 614,
@@ -9676,7 +9692,9 @@ const tsumData = [
 	 "分數：1.8倍 消除排數：4",
 	 "分數：1.8倍 消除排數：5",
     ],
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1756656000],
+  "returndate" : []
   },
   {
     "id": 615,
