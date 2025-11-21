@@ -9802,7 +9802,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1761926400],
-  "returndate" : []
+  "returndate" : "permanent"
   },
     {
     "id": 622,
@@ -9820,7 +9820,7 @@ const tsumData = [
     ],
 	"skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1761926400],
-  "returndate" : []
+  "returndate" : "permanent"
   },
     {
     "id": 623,
