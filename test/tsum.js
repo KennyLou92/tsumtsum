@@ -9530,7 +9530,7 @@ const tsumData = [
     "skill_label": "win_tsumskill_kaa.png",
 	"skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1751299200],
-    "returndate" : [""]
+    "returndate" : ["permanent"]
   },
   {
     "id": 603,
