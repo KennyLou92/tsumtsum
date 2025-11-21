@@ -322,46 +322,33 @@
       // --------------------------
       // 🔹 資訊整理
       // --------------------------
-
+      
       let latestReturnText = "暫未復刻";
       let returnCountText = "已復刻 0 次";
       let firstStartText = "未知";
 
-      // ⭐ 統一建立 validReturns，避免 undefined 問題
-      let validReturns = Array.isArray(tsum.returndate)
-          ? tsum.returndate.filter(x => !isNaN(x))
-          : [];
-
-      // ---- 計算復刻相關資訊 ----
+      const returnType = tsum.returndate?.toString().toLowerCase();
 
       // Case 1: permanent
-      if (tsum.returndate === "permanent") {
-
+      if (returnType === "permanent") {
         latestReturnText = `<span style="color:red;font-weight:bold;">常駐Tsum</span>`;
         returnCountText = "";
-
       }
-
       // Case 2: 永不回歸
-      else if (tsum.returndate === "nocomeback") {
-
+      else if (returnType === "nocomeback") {
         latestReturnText = `<span style="color:red;font-weight:bold;">永不回歸</span>`;
         returnCountText = "";
-
       }
-
-      // Case 3: 正常 unix 陣列
+      // Case 3: 陣列
       else {
-
-        // 復刻次數
+        const validReturns = Array.isArray(tsum.returndate)
+            ? tsum.returndate.filter(x => !isNaN(x))
+            : [];
         returnCountText = `已復刻 ${validReturns.length} 次`;
-
-        // 最新復刻日期（如果有）
         if (validReturns.length > 0) {
           const latest = Math.max(...validReturns);
           const d = new Date(latest * 1000);
-          latestReturnText = `${d.getFullYear()}/${(d.getMonth()+1)
-              .toString().padStart(2, '0')}`;
+          latestReturnText = `${d.getFullYear()}/${(d.getMonth()+1).toString().padStart(2,'0')}`;
         }
       }
 
