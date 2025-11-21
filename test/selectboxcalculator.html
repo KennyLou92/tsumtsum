@@ -352,15 +352,26 @@
 
       // Case 3: 正常 unix 陣列
       else {
-        
+
+        // 復刻次數
         returnCountText = `已復刻 ${validReturns.length} 次`;
+
+        // 最新復刻日期（如果有）
+        if (validReturns.length > 0) {
+          const latest = Math.max(...validReturns);
+          const d = new Date(latest * 1000);
+          latestReturnText = `${d.getFullYear()}/${(d.getMonth()+1)
+              .toString().padStart(2, '0')}`;
+        }
       }
 
-      // 第一次推出 startdate
+      // ----------------------
+      // 🔹 第一次推出日期
+      // ----------------------
       if (!isNaN(tsum.startdate)) {
         const sd = new Date(tsum.startdate * 1000);
         firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1)
-          .toString().padStart(2,'0')}`;
+            .toString().padStart(2,'0')}`;
       }
 
       // 🔹 組合 popup 內容
