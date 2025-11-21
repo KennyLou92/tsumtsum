@@ -332,38 +332,31 @@
       // Case 1: permanent
       if (tsum.returndate === "permanent") {
 
-        // 顯示紅字 + 常駐
         latestReturnText = `<span style="color:red;font-weight:bold;">常駐Tsum</span>`;
         returnCountText = "";
-        
+
       } else {
 
-        // 正常 unix 邏輯
+        // Case 2: normal unix array
         const validReturns = Array.isArray(tsum.returndate)
             ? tsum.returndate.filter(x => !isNaN(x))
             : [];
 
         // 最新復刻
         if (validReturns.length > 0) {
-            const latest = Math.max(...validReturns);
-            const d = new Date(latest * 1000);
-            latestReturnText = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}`;
+          const latest = Math.max(...validReturns);
+          const d = new Date(latest * 1000);
+          latestReturnText = `${d.getFullYear()}-${(d.getMonth()+1)
+            .toString().padStart(2,'0')}`;
         } else {
-            latestReturnText = "暫未復刻";
+          latestReturnText = "暫未復刻";
         }
 
         // 復刻次數
         returnCountText = `已復刻 ${validReturns.length} 次`;
       }
 
-        // 🟩 最新復刻日期（最大 unix）
-        const latest = Math.max(...validReturns);
-        const d = new Date(latest * 1000);
-        latestReturnText = `${d.getFullYear()}-${(d.getMonth()+1)
-          .toString().padStart(2,'0')}`;
-      }
-
-      // 🟥 第一次推出 startdate
+      // 第一次推出 startdate
       if (!isNaN(tsum.startdate)) {
         const sd = new Date(tsum.startdate * 1000);
         firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1)
