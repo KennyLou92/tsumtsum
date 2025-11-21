@@ -319,12 +319,9 @@
       popup.style.display = "none";
       popup.style.zIndex = "20";
 
-      // --------------------------
-      // 🔹 資訊整理
-      // --------------------------
-      
+      // ---- 處理 returndate 與復刻資訊 ----
       let latestReturnText = "暫未復刻";
-      let returnCountText = "已復刻 0 次";
+      let returnCountText = "復刻 0 次";
       let firstStartText = "未知";
 
       const returnType = tsum.returndate?.toString().toLowerCase();
@@ -334,21 +331,52 @@
         latestReturnText = `<span style="color:red;font-weight:bold;">常駐Tsum</span>`;
         returnCountText = "";
       }
-      // Case 2: 永不回歸
+      // Case 2: nocomeback
       else if (returnType === "nocomeback") {
         latestReturnText = `<span style="color:red;font-weight:bold;">永不回歸</span>`;
         returnCountText = "";
       }
-      // Case 3: 陣列
+      // Case 3: unix timestamp 陣列
       else {
+        // 取有效數字
         const validReturns = Array.isArray(tsum.returndate)
-            ? tsum.returndate.filter(x => !isNaN(x))
-            : [];
-        returnCountText = `已復刻 ${validReturns.length} 次`;
-        if (validReturns.length > 0) {
-          const latest = Math.max(...validReturns);
-          const d = new Date(latest * 1000);
+          ? tsum.returndate.filter(x => !isNaN(x)).map(Number).sort((a,b)=>a-b)
+          : [];
+
+        // 當前年月
+        const now = new Date();
+        const nowY = now.getFullYear();
+        const nowM = now.getMonth();
+
+        // 過濾掉「本月復刻」
+        const filteredReturns = validReturns.filter(t => {
+          const d = new Date(t * 1000);
+          return !(d.getFullYear() === nowY && d.getMonth() === nowM);
+        });
+
+        // 復刻次數（全部）
+        returnCountText = `目前已復刻 ${validReturns.length} 次`;
+
+        // ----------------------------
+        // ✔ 最近復刻邏輯（含首次復刻）
+        // ----------------------------
+        if (filteredReturns.length > 0) {
+          // 正常顯示最近一次（排除本月之後）
+          const last = filteredReturns[filteredReturns.length - 1];
+          const d = new Date(last * 1000);
           latestReturnText = `${d.getFullYear()}/${(d.getMonth()+1).toString().padStart(2,'0')}`;
+        }
+        else {
+          // 代表 filtered 為空 → 可能是第一次復刻 or 完全沒復刻
+          if (validReturns.length === 1) {
+            // ✔ 唯一一筆就是本月 → 首次復刻
+            const only = validReturns[0];
+            const d = new Date(only * 1000);
+            latestReturnText =
+              `首次復刻（${d.getFullYear()}/${(d.getMonth()+1).toString().padStart(2,'0')}）`;
+          } else {
+            latestReturnText = "暫未復刻";
+          }
         }
       }
 
@@ -357,8 +385,7 @@
       // ----------------------
       if (!isNaN(tsum.startdate)) {
         const sd = new Date(tsum.startdate * 1000);
-        firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1)
-            .toString().padStart(2,'0')}`;
+        firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1).toString().padStart(2,'0')}`;
       }
 
       // 🔹 組合 popup 內容

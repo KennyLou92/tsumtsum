@@ -454,7 +454,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_olaf.png",
-	"skill_cost" : [1,2,3,4,6,18]
+	"skill_cost" : [1,2,3,4,6,18],
+  "startdate" : [1412092800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 32,
@@ -1172,7 +1174,9 @@ const tsumData = [
       "效果時間：6.8秒"
     ],
     "skill_label": "win_tsumskill_randall.png",
-	"skill_cost" : [1,1,2,4,7,21]
+	"skill_cost" : [1,1,2,4,7,21],
+  "startdate" : [1446307200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 81,
@@ -1220,7 +1224,9 @@ const tsumData = [
       "所需Tsum數：16～17"
     ],
     "skill_label": "win_tsumskill_pinocchio.png",
-	"skill_cost" : [1,1,2,4,7,21]
+	"skill_cost" : [1,1,2,4,7,21],
+  "startdate" : [1451577600],
+  "returndate" : ["permanent"]
   },
   {
     "id": 84,
@@ -3223,7 +3229,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_phillip2.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1535731200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 211,
@@ -4270,7 +4278,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickey90th.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1572537600],
+  "returndate" : [1593532800,1604160000,1635696000,1667232000,1761926400]
   },
   {
     "id": 277,
@@ -4395,7 +4405,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chipsnow.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1575129600],
+  "returndate" : [1606752000,1638288000,1669824000,1701360000,1764518400]
   },
   {
     "id": 285,
@@ -5909,7 +5921,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_peteblk.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate": [1630425600],
+  "returndate" : [1675180800,1690819200,1711900800,1727712000,1735660800,1764518400]
   },
   {
     "id": 380,
@@ -6099,7 +6113,9 @@ const tsumData = [
       "變化Tsum數：7 分數：1.6倍"
     ],
     "skill_label": "win_tsumskill_yzma.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1635696000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 392,
@@ -6352,7 +6368,9 @@ const tsumData = [
       "消除數：35"
     ],
     "skill_label": "win_tsumskill_donaldwl.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate": [1646064000],
+  "returndate" : [1685548800,1711900800,1732982400,1743436800,1764518400]
   },
   {
     "id": 408,
@@ -6368,7 +6386,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_goofywl.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1646064000],
+  "returndate" : [1667232000,1688140800,1709222400,1735660800,1743436800,1764518400]
   },
   {
     "id": 409,
@@ -6826,7 +6846,9 @@ const tsumData = [
       "所需Tsum數：20 高麗菜數量：16"
     ],
     "skill_label": "win_tsumskill_mickeycoscm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1661961600],
+  "returndate" : [1704038400,1732982400,1751299200,1761926400]
   },
   {
     "id": 438,
@@ -8978,7 +9000,9 @@ const tsumData = [
       "範圍：XXL 消除數：6"
     ],
     "skill_label": "win_tsumskill_daisypx.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1735660800],
+  "returndate" : [1764518400]
   },
   {
     "id": 572,
@@ -8994,7 +9018,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_claricepx.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1735660800],
+  "returndate" : [1764518400]
   },
   {
     "id": 573,
