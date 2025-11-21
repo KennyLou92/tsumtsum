@@ -333,7 +333,7 @@
       if (tsum.returndate === "permanent") {
 
         latestReturnText = `<span style="color:red;font-weight:bold;">常駐Tsum</span>`;
-        returnCountText = ""; // 常駐不需要復刻次數
+        returnCountText = "";
 
       }
 
@@ -341,7 +341,7 @@
       else if (tsum.returndate === "nocomeback") {
 
         latestReturnText = `<span style="color:red;font-weight:bold;">永不回歸</span>`;
-        returnCountText = ""; // 也不需要復刻次數
+        returnCountText = "";
 
       }
 
@@ -352,16 +352,15 @@
             ? tsum.returndate.filter(x => !isNaN(x))
             : [];
 
-        // 最新復刻
         if (validReturns.length > 0) {
             const latest = Math.max(...validReturns);
             const d = new Date(latest * 1000);
-            latestReturnText = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}`;
+            latestReturnText = `${d.getFullYear()}-${(d.getMonth()+1)
+              .toString().padStart(2,'0')}`;
         } else {
             latestReturnText = "暫未復刻";
         }
 
-        // 復刻次數
         returnCountText = `已復刻 ${validReturns.length} 次`;
       }
 
