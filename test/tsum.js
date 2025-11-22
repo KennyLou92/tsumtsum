@@ -4982,7 +4982,10 @@ const tsumData = [
       "效果範圍：XL",
       "效果範圍：XXL"
     ],
-    "skill_label": "win_tsumskill_rafiki.png"
+    "skill_label": "win_tsumskill_rafiki.png",
+    "skill_cost" : [1,1,2,4,8,16],
+    "startdate" : [1596211200],
+    "returndate" : ["permanent"]
   },
   {
     "id": 320,
@@ -4998,7 +5001,9 @@ const tsumData = [
       "變化Tsum數：7"
     ],
     "skill_label": "win_tsumskill_timon.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1596211200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 321,
@@ -5238,7 +5243,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_kristoff.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1606752000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 336,
@@ -5270,7 +5277,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_frollo.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1609430400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 338,
@@ -5398,7 +5407,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rajah.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1612108800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 346,
@@ -5462,7 +5473,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_wart.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1614528000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 350,
@@ -5478,7 +5491,9 @@ const tsumData = [
       "時間：7秒 分數：4.2倍"
     ],
     "skill_label": "win_tsumskill_merlin.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1614528000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 351,
@@ -5688,7 +5703,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_elliott.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1625068800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 364,
@@ -5797,7 +5814,9 @@ const tsumData = [
       "範圍：XXL 消除數：15"
     ],
     "skill_label": "win_tsumskill_lucifer.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1625068800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 371,
