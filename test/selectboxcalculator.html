@@ -153,6 +153,10 @@
       font-size: 12px;
       white-space: nowrap;
     }
+    
+    .dropdown-wrap img {
+      user-select: none;
+    }
   </style>
 </head>
 <body>
@@ -432,8 +436,52 @@
 
       const dropdownWrap = document.createElement("div");
       dropdownWrap.className = "dropdown-wrap";
+
+      // ----------------
+      //   - 按鈕
+      // ----------------
+      const minusBtn = document.createElement("img");
+      minusBtn.src = "https://i.postimg.cc/d1knxFtm/win-minus-on.png";
+      minusBtn.style.width = "26px";
+      minusBtn.style.height = "26px";
+      minusBtn.style.cursor = "pointer";
+      minusBtn.style.userSelect = "none";
+
+      // ----------------
+      //   + 按鈕
+      // ----------------
+      const plusBtn = document.createElement("img");
+      plusBtn.src = "https://i.postimg.cc/HkdZsFBp/win-plus-on2.png";
+      plusBtn.style.width = "26px";
+      plusBtn.style.height = "26px";
+      plusBtn.style.cursor = "pointer";
+      plusBtn.style.userSelect = "none";
+
+      // 排列順序變成：[-] [dropdown] [+]
+      dropdownWrap.appendChild(minusBtn);
       dropdownWrap.appendChild(levelSelect);
+      dropdownWrap.appendChild(plusBtn);
+
       container.appendChild(dropdownWrap);
+
+      // ----------------
+      //   功能
+      // ----------------
+      minusBtn.addEventListener("click", () => {
+        let v = parseInt(levelSelect.value);
+        if (v > 0) {
+          levelSelect.value = v - 1;
+          levelSelect.dispatchEvent(new Event("change"));
+        }
+      });
+
+      plusBtn.addEventListener("click", () => {
+        let v = parseInt(levelSelect.value);
+        if (v < 6) {
+          levelSelect.value = v + 1;
+          levelSelect.dispatchEvent(new Event("change"));
+        }
+      });
 
       const coinLine = document.createElement("div");
       coinLine.className = "coin-line";
