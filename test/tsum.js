@@ -2636,7 +2636,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tramp.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1514736000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 173,
@@ -2652,7 +2654,9 @@ const tsumData = [
       "所需Tsum數：20 時間：7秒"
     ],
     "skill_label": "win_tsumskill_bluefairy.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1514736000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 174,
@@ -2668,7 +2672,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_patch.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1514736000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 175,
@@ -2924,7 +2930,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_flynn.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1522512000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 191,
@@ -2940,7 +2948,9 @@ const tsumData = [
       "所需Tsum數：9"
     ],
     "skill_label": "win_tsumskill_maximus.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1522512000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 192,
@@ -2956,7 +2966,9 @@ const tsumData = [
       "變化Tsum數：22"
     ],
     "skill_label": "win_tsumskill_mulan.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1522512000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 193,
@@ -2972,7 +2984,9 @@ const tsumData = [
       "所需Tsum數：20 時間：5秒"
     ],
     "skill_label": "win_tsumskill_pocahontas.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1522512000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 194,
@@ -3193,7 +3207,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hercules.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1535731200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 208,
@@ -3209,7 +3225,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hades.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1535731200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 209,
@@ -3922,7 +3940,9 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_boo.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1559318400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 254,
@@ -4098,7 +4118,9 @@ const tsumData = [
       "時間：6秒 分數：4倍"
     ],
     "skill_label": "win_tsumskill_gothel.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1564588800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 265,
@@ -4162,7 +4184,9 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_duchess.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1567267200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 269,
@@ -4178,7 +4202,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_robinhood.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1567267200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 270,
@@ -4487,7 +4513,9 @@ const tsumData = [
       "所需Tsum數：15 金幣數量：XXL"
     ],
     "skill_label": "win_tsumskill_hamm.png",
-	"skill_cost" : [1,1,2,2,3,3]
+	"skill_cost" : [1,1,2,2,3,3],
+  "startdate" : [1577808000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 289,
@@ -4791,7 +4819,9 @@ const tsumData = [
       "所需Tsum數：16 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_remy.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1588262400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 308,
@@ -4807,7 +4837,9 @@ const tsumData = [
       "變化Tsum數：23"
     ],
     "skill_label": "win_tsumskill_flik.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1588262400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 309,
