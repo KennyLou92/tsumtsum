@@ -5875,7 +5875,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_wendy.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1627747200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 376,
@@ -5891,7 +5893,9 @@ const tsumData = [
       "消除數：34"
     ],
     "skill_label": "win_tsumskill_john.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1627747200],
+  "returndate" : ["permanent"]
   },
   {
     "id": 377,
@@ -6099,7 +6103,9 @@ const tsumData = [
       "所需Tsum數：18 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tremaine.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1635696000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 390,
@@ -6165,7 +6171,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_joe.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1638288000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 394,
@@ -6181,7 +6189,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_22.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1638288000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 395,
@@ -6226,7 +6236,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_oliver.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1638288000],
+  "returndate" : ["permanent"]
   },
   {
     "id": 398,
@@ -6274,7 +6286,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_joy.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1640966400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 401,
@@ -6290,7 +6304,9 @@ const tsumData = [
       "出現數量（黃藍+藍）：5(4+1)"
     ],
     "skill_label": "win_tsumskill_sadness.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1640966400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 402,
@@ -6517,7 +6533,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_raya.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1648742400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 416,
@@ -6533,7 +6551,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sisu.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1648742400],
+  "returndate" : ["permanent"]
   },
   {
     "id": 417,
@@ -6661,7 +6681,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tamatoa.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1654012800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 425,
@@ -6738,7 +6760,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_sherekhan.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1656604800],
+  "returndate" : ["permanent"]
   },
   {
     "id": 430,
