@@ -3138,7 +3138,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_olafx.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1543593600],
+  "returndate" : [1572537600,1669824000,1701360000,1730390400,1764518400]
   },
   {
     "id": 195,
@@ -3506,7 +3508,9 @@ const tsumData = [
       "所需Tsum數：18 時間：7秒"
     ],
     "skill_label": "win_tsumskill_bellew.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1541001600],
+  "returndate" : [1572537600,1604160000,1635696000,1701360000,1740758400,1764518400]
   },
   {
     "id": 218,
@@ -3586,7 +3590,9 @@ const tsumData = [
       "所需Tsum數：10 時間：6秒"
     ],
     "skill_label": "win_tsumskill_mariex.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1543593600],
+  "returndate" : [1575129600,1585670400,1606752000,1638288000,1669824000,1701360000,1732982400,1764518400]
   },
   {
     "id": 223,
@@ -3602,7 +3608,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_donaldx.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1543593600],
+  "returndate" : [1575129600,1606752000,1638288000,1669824000,1764518400]
   },
   {
     "id": 224,
@@ -5103,7 +5111,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chernabog.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1593532800],
+  "returndate" : [1617206400,1635696000,1656604800,1698768000,1711900800,1727712000,1738339200,1764518400]
   },
   {
     "id": 317,
@@ -5429,7 +5439,9 @@ const tsumData = [
       "所需Tsum數：19 時間：6秒"
     ],
     "skill_label": "win_tsumskill_maleficentc.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1609430400],
+  "returndate" : [1635696000,1696089600,1711900800,1743436800,1759248000,1764518400]
   },
   {
     "id": 337,
@@ -5839,7 +5851,9 @@ const tsumData = [
       "所需Tsum數：16 消除數：35"
     ],
     "skill_label": "win_tsumskill_constance.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1622476800],
+  "returndate" : [1651334400,1682870400,1704038400,1722441600,1740758400,1764518400]
   },
   {
     "id": 362,
@@ -6394,7 +6408,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chipsc.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1638288000],
+  "returndate" : [1669824000]
   },
   {
     "id": 396,
@@ -7325,7 +7341,9 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_tinkerbellx.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1669824000],
+  "returndate" : [1701360000,1732982400,1764518400]
   },
   {
     "id": 453,
@@ -7341,7 +7359,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stitchxcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1669824000],
+  "returndate" : [1701360000,1732982400,1764518400]
   },
   {
     "id": 454,
@@ -8001,7 +8021,9 @@ const tsumData = [
       "消除數：37"
     ],
     "skill_label": "win_tsumskill_jakesully.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1690819200],
+  "returndate" : [1764518400]
   },
   {
     "id": 494,
@@ -8017,7 +8039,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_neytiri.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1690819200],
+  "returndate" : [1764518400]
   },
   {
     "id": 495,
@@ -9108,7 +9132,9 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_anna3.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1730390400],
+  "returndate" : [1764518400]
   },
   {
     "id": 562,
@@ -9224,7 +9250,9 @@ const tsumData = [
       "範圍：XL 禮物數量：4"
     ],
     "skill_label": "win_tsumskill_sandyclaws.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1732982400],
+  "returndate" : [1764518400]
   },
   {
     "id": 569,
