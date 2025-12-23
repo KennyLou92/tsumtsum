@@ -283,7 +283,7 @@ const selectbox = [
 		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202512/images/event_banner/banner_gl_0774_tw.png",
 		box_tsum:[568,453,395,222,452,194,223,98,335,267,512,164],
-		startdate:"1766736000",
+		startdate:"1766390400",
 		enddate:"1767254399",
 	},
 ];
