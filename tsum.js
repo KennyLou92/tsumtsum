@@ -3598,7 +3598,7 @@ const tsumData = [
     "id": 223,
     "name_en": "name_donald_holiday",
     "name": "禮物唐老鴨",
-    "image": "block_donaldx_l.png",
+    "image": "block_donaldx2_l.png",
     "skill_desc": [
       "範圍：XS 所需Tsum數：21",
       "範圍：S 所需Tsum數：20",
