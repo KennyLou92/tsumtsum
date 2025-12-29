@@ -10332,7 +10332,7 @@ const tsumData = [
     "id": 629,
     "name_en": "NAME_HOOK2",
     "name": "最終決戰虎克船長",
-    "image": "block_hook2_l",
+    "image": "block_hook2_l.png",
     "skill_label": "win_tsumskill_hook2.png",
   "skill_desc": [
   "效果範圍：XS",
