@@ -192,6 +192,7 @@ const selectbox = [
 	},
 	{
 		box:"janbox26_1",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202601/images/event_banner/banner_gl_0777_tw.png",
 		box_tsum:[631,629,622,621,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
@@ -207,6 +208,7 @@ const selectbox = [
 	},
 	{
 		box:"janbox26_2",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202601/images/event_banner/banner_gl_0778_tw.png",
 		box_tsum:[630,631,629,622,621,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
@@ -222,6 +224,7 @@ const selectbox = [
 	},
 	{
 		box:"janbox26_3",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202601/images/event_banner/banner_gl_0778_tw.png",
 		box_tsum:[630,631,629,622,621,602,588,586,587,584,569,563,564,544,524,525,512,513,481,482,480,478,
 				  472,461,457,458,431,433,429,424,415,416,400,401,393,394,397,389,391,375,376,370,
