@@ -247,6 +247,8 @@
     const tsumMap = {};
     tsumData.forEach(tsum => tsumMap[tsum.id] = tsum);
     const GOLD_PER_COST = 30000;
+    const MEDAL_PER_COST = 10000;
+    let currentBoxType = "gold"; // 預設金幣
     const tsumArea = document.getElementById("tsumArea");
     const countdownBox = document.getElementById("countdownBox");
     const rateupCountdown = document.getElementById("rateupCountdown");
@@ -267,21 +269,13 @@
 
       const container = document.createElement("div");
       container.className = "tsum-container";
-      container.style.position = "relative"; // 給 info icon 用
+      container.style.position = "relative";
 
-      // --------------------------
-      // 🔹 NEW ICON：如果 startdate 是當月
-      // --------------------------
+      // NEW icon
       if (tsum.startdate) {
         const now = new Date();
-        const nowYear = now.getFullYear();
-        const nowMonth = now.getMonth(); // 0-11
-
         const d = new Date(tsum.startdate * 1000);
-        const y = d.getFullYear();
-        const m = d.getMonth();
-
-        if (y === nowYear && m === nowMonth) {
+        if (d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth()) {
           const newIcon = document.createElement("img");
           newIcon.src = "https://i.postimg.cc/brzkbbs0/win-card-icon-new.png";
           newIcon.style.position = "absolute";
@@ -293,9 +287,8 @@
           container.appendChild(newIcon);
         }
       }
-      // --------------------------
-      // 🔹 Info icon (右上角)
-      // --------------------------
+
+      // Info icon
       const infoIcon = document.createElement("img");
       infoIcon.src = "https://i.postimg.cc/FR8GhM2m/win-info.png";
       infoIcon.style.position = "absolute";
@@ -307,9 +300,6 @@
       infoIcon.style.zIndex = "10";
       container.appendChild(infoIcon);
 
-      // --------------------------
-      // 🔹 popup for Return Info
-      // --------------------------
       const popup = document.createElement("div");
       popup.style.position = "absolute";
       popup.style.top = "40px";
@@ -400,31 +390,28 @@
 
       container.appendChild(popup);
 
-      // 點 icon 顯示 / 收起 popup
       infoIcon.onclick = (e) => {
         e.stopPropagation();
         popup.style.display = popup.style.display === "none" ? "block" : "none";
       };
 
-      // 點外面收起
       document.addEventListener("click", () => {
         popup.style.display = "none";
       });
 
-      // --------------------------
-      // 原本的內容：圖片、名字、SLv 選單、金幣計算
-      // --------------------------
-
+      // 圖片
       const img = document.createElement("img");
       img.className = "tsum-img";
       img.src = images[tsum.image] || "";
       container.appendChild(img);
 
+      // 名字
       const nameLine = document.createElement("div");
       nameLine.className = "name";
       nameLine.textContent = tsum.name;
       container.appendChild(nameLine);
 
+      // 下拉
       const levelSelect = document.createElement("select");
       for (let i = 0; i <= 6; i++) {
         const option = document.createElement("option");
@@ -437,9 +424,6 @@
       const dropdownWrap = document.createElement("div");
       dropdownWrap.className = "dropdown-wrap";
 
-      // ----------------
-      //   - 按鈕
-      // ----------------
       const minusBtn = document.createElement("img");
       minusBtn.src = "https://i.postimg.cc/d1knxFtm/win-minus-on.png";
       minusBtn.style.width = "26px";
@@ -447,9 +431,6 @@
       minusBtn.style.cursor = "pointer";
       minusBtn.style.userSelect = "none";
 
-      // ----------------
-      //   + 按鈕
-      // ----------------
       const plusBtn = document.createElement("img");
       plusBtn.src = "https://i.postimg.cc/HkdZsFBp/win-plus-on2.png";
       plusBtn.style.width = "26px";
@@ -457,16 +438,11 @@
       plusBtn.style.cursor = "pointer";
       plusBtn.style.userSelect = "none";
 
-      // 排列順序變成：[-] [dropdown] [+]
       dropdownWrap.appendChild(minusBtn);
       dropdownWrap.appendChild(levelSelect);
       dropdownWrap.appendChild(plusBtn);
-
       container.appendChild(dropdownWrap);
 
-      // ----------------
-      //   功能
-      // ----------------
       minusBtn.addEventListener("click", () => {
         let v = parseInt(levelSelect.value);
         if (v > 0) {
@@ -483,34 +459,54 @@
         }
       });
 
+      // 金幣 / Medal 行
       const coinLine = document.createElement("div");
       coinLine.className = "coin-line";
-      coinLine.innerHTML = `
-        <img src="https://i.postimg.cc/QMTy8Ffx/win-coin.png" alt="coin" />
-        <span class="gold">0</span>
-      `;
+
+      const currencyIcon = document.createElement("img");
+      const valueSpan = document.createElement("span");
+      valueSpan.className = "gold";
+
+      coinLine.appendChild(currencyIcon);
+      coinLine.appendChild(valueSpan);
       container.appendChild(coinLine);
 
       function updateGold() {
         const level = parseInt(levelSelect.value);
         savedLevels[tsumId] = level;
         saveLevelsToStorage();
+
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
         const remainingCost = totalCost - ownedCost;
-        const gold = remainingCost * GOLD_PER_COST;
-        coinLine.querySelector("span").textContent = gold.toLocaleString();
+
+        let amount;
+        if (currentBoxType === "medal") {
+          amount = remainingCost * MEDAL_PER_COST;
+          currencyIcon.src = "https://i.postimg.cc/pTbCqB8P/win-medal-lastone.png";
+        } else {
+          amount = remainingCost * GOLD_PER_COST;
+          currencyIcon.src = "https://i.postimg.cc/QMTy8Ffx/win-coin.png";
+        }
+
+        valueSpan.textContent = amount.toLocaleString();
         updateTotal();
       }
+
       levelSelect.addEventListener("change", updateGold);
-      updateGold();
+      updateGold(); // ⭐ 一定要有
 
       container._getGold = () => {
         const level = parseInt(levelSelect.value);
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
         const remainingCost = totalCost - ownedCost;
-        return remainingCost * GOLD_PER_COST;
+
+        if (currentBoxType === "medal") {
+          return remainingCost * MEDAL_PER_COST;
+        } else {
+          return remainingCost * GOLD_PER_COST;
+        }
       };
 
       return container;
@@ -600,6 +596,17 @@
     function renderBox(index) {
       tsumArea.innerHTML = "";
       const box = selectbox[index];
+
+      // 判斷盒子類型
+      currentBoxType = (box.box_type === "medal") ? "medal" : "gold";
+
+      // 換總計圖示
+      const totalIcon = document.querySelector("#totalWrapper img");
+      if (currentBoxType === "medal") {
+        totalIcon.src = "https://i.postimg.cc/pTbCqB8P/win-medal-lastone.png";
+      } else {
+        totalIcon.src = "https://i.postimg.cc/QMTy8Ffx/win-coin.png";
+      }
       if (dropdownSelectedEl) dropdownSelectedEl.src = box.box_label || "";
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
