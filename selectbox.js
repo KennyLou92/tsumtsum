@@ -379,6 +379,6 @@ const selectbox = [
 		show:1,
 		box_type:"medal",
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G20260245gy67jhgedw/images/event_banner/banner_gl_0789_tw.png",
-		box_tsum:[633,632,635,636,490,390,348,334,291,287,263,258,237,224,205,195,187,145,84],
+		box_tsum:[633,632,635,636,388,347,342,312,304,270,262,251,240,236,168,154,27],
 	},
 ];
