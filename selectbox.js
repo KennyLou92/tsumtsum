@@ -395,6 +395,7 @@ const selectbox = [
 	},
 	{
 		box:"feb26selectbox1",
+		show:1,
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G20260245gy67jhgedw/images/event_banner/banner_gl_0792_tw.png",
 		box_tsum:[369,566,502,501,438,451,141,188,260,586,587,114,264,563,389],
 		startdate:1770278400,
