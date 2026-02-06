@@ -2261,7 +2261,10 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_davyjones.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1493568000],
+  "returndate" : [1519833600,1527782400,1538323200,1556640000,1564588800,1596211200,1612108800,1627747200,1635696000,1654012800,
+                  1675180800,1704038400,1743436800,1769875200]
   },
   {
     "id": 142,
@@ -3040,7 +3043,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_salazar.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1519833600],
+  "returndate" : [1535731200,1564588800,1585670400,1596211200,1612108800,1627747200,1727712000,1743436800,1769875200]
   },
   {
     "id": 189,
@@ -6002,7 +6007,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_lotsocm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1625068800],
+  "returndate" : [1675180800,1704038400,1722441600,1769875200]
   },
   {
     "id": 370,
@@ -7145,7 +7152,9 @@ const tsumData = [
       "範圍：L 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_ursular.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1661961600],
+  "returndate" : [1711900800,1743436800,1769875200]
   },
   {
     "id": 439,
@@ -7357,7 +7366,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cruellal.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1669824000],
+  "returndate" : [1706716800,1725120000,1738339200,1769875200]
   },
   {
     "id": 452,
@@ -8189,7 +8200,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_queenofhearts2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1696089600],
+  "returndate" : [1727712000,1748707200,1769875200]
   },
   {
     "id": 502,
@@ -8205,7 +8218,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：23"
     ],
     "skill_label": "win_tsumskill_hookcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" :[1696089600],
+  "returndate" : [1727712000,1743436800,1769875200]
   },
   {
     "id": 503,
@@ -9262,7 +9277,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_scar2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1732982400],
+  "returndate" : [1753977600,1769875200]
   },
   {
     "id": 567,
