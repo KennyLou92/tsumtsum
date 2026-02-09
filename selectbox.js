@@ -421,7 +421,7 @@ const selectbox = [
 		box:"jan26medalbox",
 		show:1,
 		box_type:"medal",
-		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G20260245gy67jhgedw/images/event_banner/banner_gl_0789_tw.png",
-		box_tsum:[633,632,635,636,637,388,347,342,312,304,270,262,251,240,236,233,225,168,154,27],
+		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G20260245gy67jhgedw/images/event_banner/banner_gl_0790_tw.png",
+		box_tsum:[633,632,638,635,636,637,388,347,342,312,304,270,262,251,240,236,233,225,168,154],
 	},
 ];
