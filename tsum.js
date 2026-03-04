@@ -10569,4 +10569,17 @@ const tsumData = [
   "startdate" : [1770019200],
   "returndate" : []
     },
+    {
+    "id": 639,
+    "name_en": "NAME_KOTU",
+    "name": "可嘟",
+    "image": "block_kotu_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+    ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1772438400],
+  "returndate" : []
+    },
 ];
