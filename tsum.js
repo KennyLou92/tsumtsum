@@ -10569,4 +10569,69 @@ const tsumData = [
   "startdate" : [1770019200],
   "returndate" : []
     },
+    {
+    "id": 639,
+    "name_en": "NAME_KOTU",
+    "name": "可嘟",
+    "image": "block_kotu_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+    ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 640,
+    "name_en": "NAME_MOANA3",
+    "name": "領導者莫娜",
+    "image": "block_moana3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1772438400],
+  "returndate" : []
+    },
+    {
+    "id": 641,
+    "name_en": "NAME_ENVY",
+    "name": "阿慕",
+    "image": "block_envy_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 642,
+    "name_en": "NAME_ANXIETY",
+    "name": "阿焦",
+    "image": "block_anxiety_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 643,
+    "name_en": "NAME_MCQUEENPLUS",
+    "name": "閃電麥坤+",
+    "image": "block_mcqueenplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
 ];
