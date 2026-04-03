@@ -10634,4 +10634,30 @@ const tsumData = [
   "startdate" : [1772438400],
   "returndate" : ["permanent"]
     },
+    {
+    "id": 644,
+    "name_en": "NAME_ROXAS",
+    "name": "洛克薩斯",
+    "image": "block_roxas_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 645,
+    "name_en": "NAME_XION",
+    "name": "席恩",
+    "image": "block_xion_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
 ];
