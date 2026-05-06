@@ -1440,9 +1440,11 @@ const tsumData = [
       "效果範圍：S",
       "效果範圍：M",
       "效果範圍：L",
+      "效果範圍：XL",
+      "效果範圍：XXL",
     ],
     "skill_label": "win_tsumskill_leia.png",
-	"skill_cost" : [1,1,1,1]
+	"skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 92,
