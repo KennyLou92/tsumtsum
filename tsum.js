@@ -10662,4 +10662,186 @@ const tsumData = [
   "startdate" : [1775026800],
   "returndate" : []
     },
+    {
+    "id": 646,
+    "name_en": "NAME_RIKU3",
+    "name": "王國之心3里克",
+    "image": "block_riku3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 647,
+    "name_en": "NAME_KAIRI2",
+    "name": "王國之心3凱莉",
+    "image": "block_riku3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 648,
+    "name_en": "NAME_PLUTOPLUS",
+    "name": "布魯托+",
+    "image": "block_plutoplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 649,
+    "name_en": "NAME_REYPR",
+    "name": "芮＆BB-8",
+    "image": "block_reypr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 650,
+    "name_en": "NAME_POEDAMERON",
+    "name": "波戴姆倫",
+    "image": "block_poedameron_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 651,
+    "name_en": "NAME_SNOKE",
+    "name": "史諾克",
+    "image": "block_snoke_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 652,
+    "name_en": "NAME_EPG",
+    "name": "菁英禁衛軍",
+    "image": "block_epg_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 653,
+    "name_en": "NAME_STORMTROOPERPLUS",
+    "name": "風暴兵+",
+    "image": "block_stormtrooperplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 654,
+    "name_en": "NAME_ARIELPLUS",
+    "name": "艾莉兒+",
+    "image": "block_arielplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 655,
+    "name_en": "NAME_DONALDTF2025PR",
+    "name": "海洋唐老鴨＆米奇",
+    "image": "block_donaldtf2025pr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 656,
+    "name_en": "NAME_DONALDTF2025CM",
+    "name": "海洋唐老鴨（飾品）",
+    "image": "block_donaldtf2025cm_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,14],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 657,
+    "name_en": "NAME_STITCHTF2025",
+    "name": "海洋史迪奇",
+    "image": "block_stitchtf2025_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 658,
+    "name_en": "NAME_DAISYTF2025",
+    "name": "海洋黛絲",
+    "image": "block_daisytf2025_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,1,2,2,3],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 659,
+    "name_en": "NAME_MINNIE12THPLUS",
+    "name": "頭冠米妮+",
+    "image": "block_minnie12thplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,2,4],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
 ];
