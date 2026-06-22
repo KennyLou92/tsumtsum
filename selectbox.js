@@ -556,6 +556,14 @@ const selectbox = [
 		enddate:1780988399,
 	},
 	{
+		box:"june26selectbox2",
+		show:1,
+		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G202606hyt45gf12dcb/0619V2mB7vN1kQ6r/images/event_banner/banner_gl_0838_tw.png",
+		box_tsum:[479,398,369,483,286,289,459,399,97.80,79,394,480,524,525],
+		startdate:1781852400,
+		enddate:1782197999,
+	},
+	{
 		box:"jan26medalbox",
 		box_type:"medal",
 		box_label:"https://game-lgtmtmg.line-scdn.net/COMMON/G20260245gy67jhgedw/images/event_banner/banner_gl_0790_tw.png",
