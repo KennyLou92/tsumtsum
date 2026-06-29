@@ -1440,9 +1440,11 @@ const tsumData = [
       "效果範圍：S",
       "效果範圍：M",
       "效果範圍：L",
+      "效果範圍：XL",
+      "效果範圍：XXL",
     ],
     "skill_label": "win_tsumskill_leia.png",
-	"skill_cost" : [1,1,1,1]
+	"skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 92,
@@ -2261,7 +2263,10 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_davyjones.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1493568000],
+  "returndate" : [1519833600,1527782400,1538323200,1556640000,1564588800,1596211200,1612108800,1627747200,1635696000,1654012800,
+                  1675180800,1704038400,1743436800,1769875200]
   },
   {
     "id": 142,
@@ -3040,7 +3045,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_salazar.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1519833600],
+  "returndate" : [1535731200,1564588800,1585670400,1596211200,1612108800,1627747200,1727712000,1743436800,1769875200]
   },
   {
     "id": 189,
@@ -6002,7 +6009,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_lotsocm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+	"skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1625068800],
+  "returndate" : [1675180800,1704038400,1722441600,1769875200]
   },
   {
     "id": 370,
@@ -7145,7 +7154,9 @@ const tsumData = [
       "範圍：L 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_ursular.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1661961600],
+  "returndate" : [1711900800,1743436800,1769875200]
   },
   {
     "id": 439,
@@ -7357,7 +7368,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cruellal.png",
-	"skill_cost" : [1,1,2,4,7,14]
+	"skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1669824000],
+  "returndate" : [1706716800,1725120000,1738339200,1769875200]
   },
   {
     "id": 452,
@@ -8189,7 +8202,9 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_queenofhearts2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1696089600],
+  "returndate" : [1727712000,1748707200,1769875200]
   },
   {
     "id": 502,
@@ -8205,7 +8220,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：23"
     ],
     "skill_label": "win_tsumskill_hookcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" :[1696089600],
+  "returndate" : [1727712000,1743436800,1769875200]
   },
   {
     "id": 503,
@@ -9262,7 +9279,9 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_scar2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+	"skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1732982400],
+  "returndate" : [1753977600,1769875200]
   },
   {
     "id": 567,
@@ -10462,4 +10481,367 @@ const tsumData = [
   "startdate" : [1767254400],
   "returndate" : []
   },
+   {
+    "id": 634,
+    "name_en": "NAME_ALICEPLUS",
+    "name": "愛麗絲+",
+    "image": "block_aliceplus_f_l.png",
+    "skill_label": "win_tsumskill_aliceplus.png",
+  "skill_desc": [
+  "範圍：XS 所需Tsum數：24",
+  "範圍：S 所需Tsum數：23",
+  "範圍：M 所需Tsum數：22",
+  "範圍：L 所需Tsum數：21",
+  "範圍：XL 所需Tsum數：20",
+  "範圍：XXL 所需Tsum數：19",
+    ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1770019200],
+  "returndate" : []
+  },
+   {
+    "id": 635,
+    "name_en": "NAME_CHESHIRECATCM_CHARM",
+    "name": "妙妙貓（飾品）",
+    "image": "block_cheshirecatcm_l.png",
+    "skill_label": "win_tsumskill_cheshirecatcm.png",
+  "skill_desc": [
+  "所需Tsum數：25 時間：5秒",
+  "所需Tsum數：24 時間：6秒",
+  "所需Tsum數：23 時間：7秒",
+  "所需Tsum數：22 時間：8秒",
+  "所需Tsum數：21 時間：9秒",
+  "所需Tsum數：20 時間：10秒",
+    ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1770019200],
+  "returndate" : []
+  },
+   {
+    "id": 636,
+    "name_en": "NAME_MADHATTERCM_CHARM",
+    "name": "瘋帽子（飾品）",
+    "image": "block_madhattercm_l.png",
+    "skill_label": "win_tsumskill_madhattercm.png",
+  "skill_desc": [
+  "消除數：〜17",
+  "消除數：〜20",
+  "消除數：〜23",
+  "消除數：〜26",
+  "消除數：〜29",
+  "消除數：〜33",
+    ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1770019200],
+  "returndate" : []
+  },
+   {
+    "id": 637,
+    "name_en": "NAME_WHITERABBITCM_CHARM",
+    "name": "大白兔（飾品）",
+    "image": "block_whiterabbitcm_l.png",
+    "skill_label": "win_tsumskill_whiterabbitcm.png",
+  "skill_desc": [
+  "範圍：XS 所需Tsum數：27",
+  "範圍：S 所需Tsum數：26",
+  "範圍：M 所需Tsum數：25",
+  "範圍：L 所需Tsum數：24",
+  "範圍：XL 所需Tsum數：23",
+  "範圍：XXL 所需Tsum數：22",
+    ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1770019200],
+  "returndate" : []
+  },
+    {
+    "id": 638,
+    "name_en": "NAME_QUEENOFHEARTS3",
+    "name": "憤怒紅心皇后",
+    "image": "block_queenofhearts3_l.png",
+    "skill_label": "win_tsumskill_queenofhearts3.png",
+  "skill_desc": [
+  "所需Tsum數：23 時間：5秒",
+  "所需Tsum數：22 時間：5.6秒",
+  "所需Tsum數：21 時間：6.2秒",
+  "所需Tsum數：20 時間：6.8秒",
+  "所需Tsum數：19 時間：7.4秒",
+  "所需Tsum數：18 時間：8秒",
+    ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1770019200],
+  "returndate" : []
+    },
+    {
+    "id": 639,
+    "name_en": "NAME_KOTU",
+    "name": "可嘟",
+    "image": "block_kotu_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+    ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 640,
+    "name_en": "NAME_MOANA3",
+    "name": "領導者莫娜",
+    "image": "block_moana3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1772438400],
+  "returndate" : []
+    },
+    {
+    "id": 641,
+    "name_en": "NAME_ENVY",
+    "name": "阿慕",
+    "image": "block_envy_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 642,
+    "name_en": "NAME_ANXIETY",
+    "name": "阿焦",
+    "image": "block_anxiety_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 643,
+    "name_en": "NAME_MCQUEENPLUS",
+    "name": "閃電麥坤+",
+    "image": "block_mcqueenplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1772438400],
+  "returndate" : ["permanent"]
+    },
+    {
+    "id": 644,
+    "name_en": "NAME_ROXAS",
+    "name": "洛克薩斯",
+    "image": "block_roxas_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 645,
+    "name_en": "NAME_XION",
+    "name": "席恩",
+    "image": "block_xion_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 646,
+    "name_en": "NAME_RIKU3",
+    "name": "王國之心3里克",
+    "image": "block_riku3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 647,
+    "name_en": "NAME_KAIRI2",
+    "name": "王國之心3凱莉",
+    "image": "block_riku3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 648,
+    "name_en": "NAME_PLUTOPLUS",
+    "name": "布魯托+",
+    "image": "block_plutoplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1775026800],
+  "returndate" : []
+    },
+    {
+    "id": 649,
+    "name_en": "NAME_REYPR",
+    "name": "芮＆BB-8",
+    "image": "block_reypr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 650,
+    "name_en": "NAME_POEDAMERON",
+    "name": "波戴姆倫",
+    "image": "block_poedameron_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 651,
+    "name_en": "NAME_SNOKE",
+    "name": "史諾克",
+    "image": "block_snoke_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 652,
+    "name_en": "NAME_EPG",
+    "name": "菁英禁衛軍",
+    "image": "block_epg_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 653,
+    "name_en": "NAME_STORMTROOPERPLUS",
+    "name": "風暴兵+",
+    "image": "block_stormtrooperplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1777564800],
+  "returndate" : []
+    },
+    {
+    "id": 654,
+    "name_en": "NAME_ARIELPLUS",
+    "name": "艾莉兒+",
+    "image": "block_arielplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 655,
+    "name_en": "NAME_DONALDTF2025PR",
+    "name": "海洋唐老鴨＆米奇",
+    "image": "block_donaldtf2025pr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 656,
+    "name_en": "NAME_DONALDTF2025CM",
+    "name": "海洋唐老鴨（飾品）",
+    "image": "block_donaldtf2025cm_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,14],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 657,
+    "name_en": "NAME_STITCHTF2025",
+    "name": "海洋史迪奇",
+    "image": "block_stitchtf2025_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 658,
+    "name_en": "NAME_DAISYTF2025",
+    "name": "海洋黛絲",
+    "image": "block_daisytf2025_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,1,2,2,3],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 659,
+    "name_en": "NAME_MINNIE12THPLUS",
+    "name": "頭冠米妮+",
+    "image": "block_minnie12thplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,2,4],
+  "startdate" : [1780243200],
+  "returndate" : []
+    },
 ];

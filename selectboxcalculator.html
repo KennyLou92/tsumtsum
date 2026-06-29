@@ -21,6 +21,7 @@
       padding: 4px;
       text-align: center;
       background-color: #fff;
+      position: relative;
     }
     .tsum-img {
       width: 130px;
@@ -94,21 +95,25 @@
     .tsum-dropdown-list {
       display: none;
       position: absolute;
-      top: 60px;
+      top: 112px;
       left: 0;
-      background: white;
-      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       z-index: 100;
       padding: 5px;
-      border-radius: 6px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
       max-height: 360px;
       overflow: auto;
-      scrollbar-width: none;   /* Firefox */
-      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      box-sizing: border-box;
+      width: 524px;
     }
     .tsum-dropdown-list::-webkit-scrollbar {
-      display: none; /* Chrome/Safari */
+      display: none;
     }
     .tsum-dropdown-list.show {
       display: flex;
@@ -116,15 +121,16 @@
     }
     .tsum-dropdown-item {
       height: 108px;
-      width: 524px;
+      width: 100%;
       margin: 5px 0;
       cursor: pointer;
       transition: transform 0.2s ease;
       object-fit: contain;
+      border-radius: 8px;
     }
-	.tsum-dropdown-item:hover {
-	  transform: scale(1.05);
-	}
+    .tsum-dropdown-item:hover {
+      transform: scale(1.02);
+    }
     .countdown {
       font-size: 16px;
       color: #333;
@@ -133,7 +139,6 @@
       padding: 4px 8px;
       border-radius: 6px;
     }
-    /* Reset Icon Tooltip */
     #resetLevels {
       position: fixed;
       top: 10px;
@@ -153,17 +158,15 @@
       font-size: 12px;
       white-space: nowrap;
     }
-
     .dropdown-wrap img {
       user-select: none;
     }
   </style>
 </head>
 <body>
-  <!-- 🔹 Reset Icon (右上角) -->
+
   <div id="resetLevels">
-    <img src="https://i.postimg.cc/7hZzRzFR/reset.png" 
-         alt="Reset" width="64" height="64" />
+    <img src="https://i.postimg.cc/7hZzRzFR/reset.png" alt="Reset" width="64" height="64" />
   </div>
 
   <div id="boxSelectorWrapper">
@@ -177,113 +180,53 @@
     <span id="totalGold">0</span>
   </div>
 
-  <!-- 🔹 YouTube 背景音樂 (隱藏播放器) -->
-  <div id="player" style="width:0;height:0;overflow:hidden;"></div>
-
   <script src="tsum.js"></script>
   <script src="selectbox.js"></script>
   <script src="images.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
   <script>
     function isBoxVisible(box) {
       const now = Math.floor(Date.now() / 1000);
       if (box.enddate && now >= box.enddate) return false;
-      if (typeof box.show !== "undefined") return box.show !== 0;
-      if (box.startdate && box.enddate) return now >= box.startdate && now < box.enddate;
-      return false;
-    }
-
-    /* ========= YouTube 背景音樂控制 ========= */
-    let ytPlayer;
-
-    // 設定音樂播放時間 (Unix 秒數)
-    const musicStart = 1759248000; // 例: 2025/09/26 16:00 (MYT)
-    const musicEnd   = 1761926399; // 例: 2025/09/30 23:59 (MYT)
-
-    function onYouTubeIframeAPIReady() {
-      ytPlayer = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: 'ntsrWX-0FE4', // 👈 換成你的 YouTube 音樂 ID
-        playerVars: {
-          autoplay: 0,
-          loop: 1,
-          playlist: 'ntsrWX-0FE4'
-        },
-        events: {
-          'onReady': () => {
-            ytPlayer.setVolume(50); // 音量
-            controlBGM(musicStart, musicEnd);
-          }
-        }
-      });
-    }
-	
-	// 🔹 第一次點擊畫面時，自動解除靜音
-	document.addEventListener("click", () => {
-	  if (ytPlayer && ytPlayer.isMuted()) {
-		ytPlayer.unMute();
-		ytPlayer.setVolume(50);
-	  }
-	}, { once: true });
-
-    function controlBGM(start, end) {
-      function updateBGM() {
-        const now = Math.floor(Date.now() / 1000);
-        if (now >= start && now < end) {
-          if (ytPlayer && ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING) {
-            ytPlayer.playVideo();
-          }
-        } else {
-          if (ytPlayer && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
-            ytPlayer.pauseVideo();
-          }
-        }
-      }
-      updateBGM();
-      setInterval(updateBGM, 1000);
+      if (box.show !== undefined) return box.show !== 0;
+      return box.startdate && box.enddate ? (now >= box.startdate && now < box.enddate) : false;
     }
 
     const tsumMap = {};
     tsumData.forEach(tsum => tsumMap[tsum.id] = tsum);
+
     const GOLD_PER_COST = 30000;
     const MEDAL_PER_COST = 10000;
-    let currentBoxType = "gold"; // 預設金幣
+    const IMAGE_COIN = "https://i.postimg.cc/QMTy8Ffx/win-coin.png";
+    const IMAGE_MEDAL = "https://i.postimg.cc/pTbCqB8P/win-medal-lastone.png";
+
+    let currentBoxType = "gold"; 
     const tsumArea = document.getElementById("tsumArea");
     const countdownBox = document.getElementById("countdownBox");
     const rateupCountdown = document.getElementById("rateupCountdown");
     let countdownInterval, rateupInterval;
 
     let savedLevels = {};
-    const savedData = localStorage.getItem("savedLevels");
-    if (savedData) {
-      try { savedLevels = JSON.parse(savedData); } catch (e) { savedLevels = {}; }
+    try {
+      savedLevels = JSON.parse(localStorage.getItem("savedLevels")) || {};
+    } catch (e) {
+      savedLevels = {};
     }
-    function saveLevelsToStorage() {
-      localStorage.setItem("savedLevels", JSON.stringify(savedLevels));
-    }
+    const saveLevelsToStorage = () => localStorage.setItem("savedLevels", JSON.stringify(savedLevels));
 
     function createTsumBox(tsumId) {
-      const tsum = tsumMap[tsumId];
-      if (!tsum || !tsum.skill_cost) return null;
+      const tsum = tsumMap[tsId = tsumId];
+      if (!tsum?.skill_cost) return null;
 
       const container = document.createElement("div");
       container.className = "tsum-container";
-      container.style.position = "relative";
 
       // NEW icon
       if (tsum.startdate) {
-        const now = new Date();
-        const d = new Date(tsum.startdate * 1000);
+        const now = new Date(), d = new Date(tsum.startdate * 1000);
         if (d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth()) {
           const newIcon = document.createElement("img");
+          Object.assign(newIcon.style, { position: 'absolute', top: '5px', left: '5px', width: '38px', height: '38px', zIndex: '12' });
           newIcon.src = "https://i.postimg.cc/brzkbbs0/win-card-icon-new.png";
-          newIcon.style.position = "absolute";
-          newIcon.style.top = "5px";
-          newIcon.style.left = "5px";
-          newIcon.style.width = "38px";
-          newIcon.style.height = "38px";
-          newIcon.style.zIndex = "12";
           container.appendChild(newIcon);
         }
       }
@@ -291,103 +234,46 @@
       // Info icon
       const infoIcon = document.createElement("img");
       infoIcon.src = "https://i.postimg.cc/FR8GhM2m/win-info.png";
-      infoIcon.style.position = "absolute";
-      infoIcon.style.top = "5px";
-      infoIcon.style.right = "5px";
-      infoIcon.style.width = "28px";
-      infoIcon.style.height = "28px";
-      infoIcon.style.cursor = "pointer";
-      infoIcon.style.zIndex = "10";
+      Object.assign(infoIcon.style, { position: 'absolute', top: '5px', right: '5px', width: '28px', height: '28px', cursor: 'pointer', zIndex: '10' });
       container.appendChild(infoIcon);
 
       const popup = document.createElement("div");
-      popup.style.position = "absolute";
-      popup.style.top = "40px";
-      popup.style.right = "5px";
-      popup.style.background = "rgba(255,255,255,0.95)";
-      popup.style.border = "1px solid #ccc";
-      popup.style.padding = "6px 10px";
-      popup.style.borderRadius = "6px";
-      popup.style.fontSize = "14px";
-      popup.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
-      popup.style.display = "none";
-      popup.style.zIndex = "20";
+      Object.assign(popup.style, { position: 'absolute', top: '40px', right: '5px', background: 'rgba(255,255,255,0.95)', border: '1px solid #ccc', padding: '6px 10px', borderRadius: '6px', fontSize: '14px', boxShadow: '0 2px 6px rgba(0,0,0,0.2)', display: 'none', zIndex: '20' });
 
-      // ---- 處理 returndate 與復刻資訊 ----
-      let latestReturnText = "暫未復刻";
-      let returnCountText = "復刻 0 次";
-      let firstStartText = "未知";
-
+      let latestReturnText = "暫未復刻", returnCountText = "復刻 0 次", firstStartText = "未知";
       const returnType = tsum.returndate?.toString().toLowerCase();
 
-      // Case 1: permanent
       if (returnType === "permanent") {
         latestReturnText = `<span style="color:red;font-weight:bold;">常駐Tsum</span>`;
         returnCountText = "";
-      }
-      // Case 2: nocomeback
-      else if (returnType === "nocomeback") {
+      } else if (returnType === "nocomeback") {
         latestReturnText = `<span style="color:red;font-weight:bold;">永不回歸</span>`;
         returnCountText = "";
-      }
-      // Case 3: unix timestamp 陣列
-      else {
-        // 取有效數字
-        const validReturns = Array.isArray(tsum.returndate)
-          ? tsum.returndate.filter(x => !isNaN(x)).map(Number).sort((a,b)=>a-b)
-          : [];
-
-        // 當前年月
+      } else {
+        const validReturns = Array.isArray(tsum.returndate) ? tsum.returndate.filter(x => !isNaN(x)).map(Number).sort((a,b)=>a-b) : [];
         const now = new Date();
-        const nowY = now.getFullYear();
-        const nowM = now.getMonth();
-
-        // 過濾掉「本月復刻」
         const filteredReturns = validReturns.filter(t => {
           const d = new Date(t * 1000);
-          return !(d.getFullYear() === nowY && d.getMonth() === nowM);
+          return !(d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth());
         });
 
-        // 復刻次數（全部）
         returnCountText = `目前已復刻 ${validReturns.length} 次`;
 
-        // ----------------------------
-        // ✔ 最近復刻邏輯（含首次復刻）
-        // ----------------------------
         if (filteredReturns.length > 0) {
-          // 正常顯示最近一次（排除本月之後）
-          const last = filteredReturns[filteredReturns.length - 1];
-          const d = new Date(last * 1000);
+          const d = new Date(filteredReturns[filteredReturns.length - 1] * 1000);
           latestReturnText = `${d.getFullYear()}/${(d.getMonth()+1).toString().padStart(2,'0')}`;
-        }
-        else {
-          // 代表 filtered 為空 → 可能是第一次復刻 or 完全沒復刻
-          if (validReturns.length === 1) {
-            // ✔ 唯一一筆就是本月 → 首次復刻
-            const only = validReturns[0];
-            const d = new Date(only * 1000);
-            latestReturnText =
-              `首次復刻（${d.getFullYear()}/${(d.getMonth()+1).toString().padStart(2,'0')}）`;
-          } else {
-            latestReturnText = "暫未復刻";
-          }
+        } else if (validReturns.length === 1) {
+          const d = new Date(validReturns[0] * 1000);
+          latestReturnText = `首次復刻（${d.getFullYear()}/${(d.getMonth()+1).toString().padStart(2,'0')}）`;
         }
       }
 
-      // ----------------------
-      // 🔹 第一次推出日期
-      // ----------------------
       if (!isNaN(tsum.startdate)) {
         const sd = new Date(tsum.startdate * 1000);
         firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1).toString().padStart(2,'0')}`;
       }
 
-      // 🔹 組合 popup 內容
-      popup.innerHTML =
-        `最近復刻：${latestReturnText}<br>` +
-        `${returnCountText}<br>` +
-        `首次推出：${firstStartText}`;
-
+      popup.innerHTML = `最近復刻：${latestReturnText}<br>${returnCountText}<br>首次推出：${firstStartText}`;
       container.appendChild(popup);
 
       infoIcon.onclick = (e) => {
@@ -395,23 +281,16 @@
         popup.style.display = popup.style.display === "none" ? "block" : "none";
       };
 
-      document.addEventListener("click", () => {
-        popup.style.display = "none";
-      });
-
-      // 圖片
       const img = document.createElement("img");
       img.className = "tsum-img";
       img.src = images[tsum.image] || "";
       container.appendChild(img);
 
-      // 名字
       const nameLine = document.createElement("div");
       nameLine.className = "name";
       nameLine.textContent = tsum.name;
       container.appendChild(nameLine);
 
-      // 下拉
       const levelSelect = document.createElement("select");
       for (let i = 0; i <= 6; i++) {
         const option = document.createElement("option");
@@ -426,89 +305,53 @@
 
       const minusBtn = document.createElement("img");
       minusBtn.src = "https://i.postimg.cc/d1knxFtm/win-minus-on.png";
-      minusBtn.style.width = "26px";
-      minusBtn.style.height = "26px";
-      minusBtn.style.cursor = "pointer";
-      minusBtn.style.userSelect = "none";
+      minusBtn.style.cssText = "width:26px; height:26px; cursor:pointer; user-select:none;";
 
       const plusBtn = document.createElement("img");
       plusBtn.src = "https://i.postimg.cc/HkdZsFBp/win-plus-on2.png";
-      plusBtn.style.width = "26px";
-      plusBtn.style.height = "26px";
-      plusBtn.style.cursor = "pointer";
-      plusBtn.style.userSelect = "none";
+      plusBtn.style.cssText = "width:26px; height:26px; cursor:pointer; user-select:none;";
 
-      dropdownWrap.appendChild(minusBtn);
-      dropdownWrap.appendChild(levelSelect);
-      dropdownWrap.appendChild(plusBtn);
+      dropdownWrap.append(minusBtn, levelSelect, plusBtn); 
       container.appendChild(dropdownWrap);
 
-      minusBtn.addEventListener("click", () => {
-        let v = parseInt(levelSelect.value);
-        if (v > 0) {
-          levelSelect.value = v - 1;
+      const changeLevel = (offset) => {
+        let v = parseInt(levelSelect.value) + offset;
+        if (v >= 0 && v <= 6) {
+          levelSelect.value = v;
           levelSelect.dispatchEvent(new Event("change"));
         }
-      });
+      };
+      minusBtn.onclick = () => changeLevel(-1);
+      plusBtn.onclick = () => changeLevel(1);
 
-      plusBtn.addEventListener("click", () => {
-        let v = parseInt(levelSelect.value);
-        if (v < 6) {
-          levelSelect.value = v + 1;
-          levelSelect.dispatchEvent(new Event("change"));
-        }
-      });
-
-      // 金幣 / Medal 行
       const coinLine = document.createElement("div");
       coinLine.className = "coin-line";
-
       const currencyIcon = document.createElement("img");
       const valueSpan = document.createElement("span");
       valueSpan.className = "gold";
-
-      coinLine.appendChild(currencyIcon);
-      coinLine.appendChild(valueSpan);
+      coinLine.append(currencyIcon, valueSpan);
       container.appendChild(coinLine);
 
-      function updateGold() {
+      const calculateCost = () => {
         const level = parseInt(levelSelect.value);
         savedLevels[tsumId] = level;
-        saveLevelsToStorage();
-
         const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
         const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        const remainingCost = totalCost - ownedCost;
+        return (totalCost - ownedCost) * (currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST);
+      };
 
-        let amount;
-        if (currentBoxType === "medal") {
-          amount = remainingCost * MEDAL_PER_COST;
-          currencyIcon.src = "https://i.postimg.cc/pTbCqB8P/win-medal-lastone.png";
-        } else {
-          amount = remainingCost * GOLD_PER_COST;
-          currencyIcon.src = "https://i.postimg.cc/QMTy8Ffx/win-coin.png";
-        }
-
+      function updateGold() {
+        const amount = calculateCost();
+        saveLevelsToStorage();
+        currencyIcon.src = currentBoxType === "medal" ? IMAGE_MEDAL : IMAGE_COIN;
         valueSpan.textContent = amount.toLocaleString();
         updateTotal();
       }
 
       levelSelect.addEventListener("change", updateGold);
-      updateGold(); // ⭐ 一定要有
+      updateGold(); 
 
-      container._getGold = () => {
-        const level = parseInt(levelSelect.value);
-        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
-        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        const remainingCost = totalCost - ownedCost;
-
-        if (currentBoxType === "medal") {
-          return remainingCost * MEDAL_PER_COST;
-        } else {
-          return remainingCost * GOLD_PER_COST;
-        }
-      };
-
+      container._getGold = calculateCost; 
       return container;
     }
 
@@ -522,19 +365,21 @@
 
     function renderCountdown(start, end, element, label) {
       clearInterval(element === countdownBox ? countdownInterval : rateupInterval);
-      function update() {
+      const update = () => {
         const now = Math.floor(Date.now() / 1000);
-        let target, prefix;
-        if (now < start) { target = start; prefix = label + "開始於"; }
-        else if (now >= start && now < end) { target = end; prefix = label + "結束於"; }
-        else { element.textContent = label + "已結束"; return; }
+        if (now >= end) { element.textContent = label + "已結束"; return; }
+        
+        const isBeforeStart = now < start;
+        const target = isBeforeStart ? start : end;
+        const prefix = label + (isBeforeStart ? "開始於" : "結束於");
+        
         const diff = target - now;
         const d = Math.floor(diff / 86400);
         const h = Math.floor((diff % 86400) / 3600);
         const m = Math.floor((diff % 3600) / 60);
         const s = diff % 60;
         element.textContent = `${prefix} ${d}天 ${h}時 ${m}分 ${s}秒`;
-      }
+      };
       update();
       const interval = setInterval(update, 1000);
       if (element === countdownBox) countdownInterval = interval;
@@ -542,24 +387,27 @@
     }
 
     const boxSelectorWrapper = document.getElementById("boxSelectorWrapper");
-    let dropdownSelectedEl = null;
-    let dropdownListEl = null;
+    let dropdownSelectedEl, dropdownListEl;
 
     function createImageDropdown() {
-      const old = document.querySelector(".tsum-dropdown");
-      if (old) old.remove();
+      document.querySelector(".tsum-dropdown")?.remove();
       const dropdown = document.createElement("div");
       dropdown.className = "tsum-dropdown";
-      const selected = document.createElement("img");
-      selected.className = "tsum-selected";
-      selected.src = "";
-      dropdown.appendChild(selected);
-      const list = document.createElement("div");
-      list.className = "tsum-dropdown-list";
-      dropdown.appendChild(list);
-      dropdownSelectedEl = selected;
-      dropdownListEl = list;
-      selected.onclick = () => list.classList.toggle("show");
+      
+      dropdownSelectedEl = document.createElement("img");
+      dropdownSelectedEl.className = "tsum-selected";
+      
+      dropdownListEl = document.createElement("div");
+      dropdownListEl.className = "tsum-dropdown-list";
+      
+      dropdown.append(dropdownSelectedEl, dropdownListEl);
+      
+      dropdownSelectedEl.onclick = (e) => {
+        e.stopPropagation();
+        dropdownListEl.classList.toggle("show");
+      };
+      
+      document.addEventListener("click", () => dropdownListEl.classList.remove("show"));
       boxSelectorWrapper.insertBefore(dropdown, countdownBox);
       rebuildDropdownList();
     }
@@ -568,12 +416,14 @@
       if (!dropdownListEl || !dropdownSelectedEl) return;
       dropdownListEl.innerHTML = "";
       let first = null;
+      
       selectbox.forEach((box, index) => {
         if (box.box_label && isBoxVisible(box)) {
           const item = document.createElement("img");
           item.src = box.box_label;
           item.className = "tsum-dropdown-item";
-          item.onclick = () => {
+          item.onclick = (e) => {
+            e.stopPropagation();
             document.querySelectorAll(".tsum-dropdown-item").forEach(el => el.classList.remove("active"));
             item.classList.add("active");
             dropdownSelectedEl.src = box.box_label;
@@ -582,7 +432,7 @@
             currentIndex = index;
           };
           dropdownListEl.appendChild(item);
-          if (first === null) first = {box, index, item};
+          if (!first) first = {box, index, item};
         }
       });
       if (first) {
@@ -596,39 +446,30 @@
     function renderBox(index) {
       tsumArea.innerHTML = "";
       const box = selectbox[index];
-
-      // 判斷盒子類型
       currentBoxType = (box.box_type === "medal") ? "medal" : "gold";
 
-      // 換總計圖示
-      const totalIcon = document.querySelector("#totalWrapper img");
-      if (currentBoxType === "medal") {
-        totalIcon.src = "https://i.postimg.cc/pTbCqB8P/win-medal-lastone.png";
-      } else {
-        totalIcon.src = "https://i.postimg.cc/QMTy8Ffx/win-coin.png";
-      }
+      document.querySelector("#totalWrapper img").src = currentBoxType === "medal" ? IMAGE_MEDAL : IMAGE_COIN;
       if (dropdownSelectedEl) dropdownSelectedEl.src = box.box_label || "";
+      
       box.box_tsum.forEach(tsumId => {
         const el = createTsumBox(tsumId);
         if (el) tsumArea.appendChild(el);
       });
       updateTotal();
-      if (box.startdate && box.enddate) {
-        countdownBox.style.display = "block";
-        renderCountdown(box.startdate, box.enddate, countdownBox, "");
-      } else {
-        countdownBox.style.display = "none";
-        clearInterval(countdownInterval);
-        countdownBox.textContent = "";
-      }
-      if (box.rateupstartdate && box.rateupenddate) {
-        rateupCountdown.style.display = "block";
-        renderCountdown(box.rateupstartdate, box.rateupenddate, rateupCountdown, "Rate Up");
-      } else {
-        rateupCountdown.style.display = "none";
-        clearInterval(rateupInterval);
-        rateupCountdown.textContent = "";
-      }
+      
+      const toggleCountdown = (element, start, end, label, interval) => {
+        if (start && end) {
+          element.style.display = "block";
+          renderCountdown(start, end, element, label);
+        } else {
+          element.style.display = "none";
+          clearInterval(interval);
+          element.textContent = "";
+        }
+      };
+
+      toggleCountdown(countdownBox, box.startdate, box.enddate, "", countdownInterval);
+      toggleCountdown(rateupCountdown, box.rateupstartdate, box.rateupenddate, "Rate Up", rateupInterval);
     }
 
     createImageDropdown();
@@ -645,30 +486,10 @@
         rebuildDropdownList();
       }
     });
-
-//	setInterval(() => {
-//	  rebuildDropdownList();
-
-	  // 先檢查目前選中的是否還可見
-//	  if (currentIndex !== -1 && isBoxVisible(selectbox[currentIndex])) {
-		// 還在有效期 → 保持不變
-//		return;
-//	  }
-
-	  // 如果當前的失效了，就找第一個新的可見 banner
-//	  const newIndex = selectbox.findIndex(isBoxVisible);
-//	  if (newIndex !== currentIndex) {
-//		currentIndex = newIndex;
-//		if (currentIndex === -1) {
-//		  tsumArea.innerHTML = "";
-//		  countdownBox.style.display = "none";
-//		  rateupCountdown.style.display = "none";
-//		  updateTotal();
-//		} else {
-//		  renderBox(currentIndex);
-//		}
-//	  }
-//	}, 60000);
+    
+    document.addEventListener("click", () => {
+      document.querySelectorAll(".tsum-container div[style*='display: block']").forEach(p => p.style.display = 'none');
+    });
   </script>
 </body>
 </html>
