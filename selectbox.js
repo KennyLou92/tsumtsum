@@ -377,9 +377,9 @@ const selectbox = [
 				  19,21,22,25,28,26],
 		show:1,
 		startdate:1780988400,
-		enddate:1782802800,
+		enddate:1782630000,
 		rateupstartdate:1780988400,
-		rateupenddate:1781161199,
+		rateupenddate:1782630000,
 	},
 	{
 		box:"junebox26_3",
