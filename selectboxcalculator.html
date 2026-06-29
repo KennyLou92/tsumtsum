@@ -78,7 +78,16 @@
       flex-direction: column;
       align-items: center;
       margin-top: 10px;
+      gap: 10px;
+    }
+    /* 🚀 新增：倒數計時專屬容器，設定預留高度 */
+    #countdownArea {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 5px;
+      min-height: 60px; /* 預留兩行倒數計時的高度，確保 Tsum 位置不跳動 */
+      justify-content: flex-start;
     }
     .tsum-dropdown {
       position: relative;
@@ -170,9 +179,12 @@
   </div>
 
   <div id="boxSelectorWrapper">
-    <div id="countdownBox" class="countdown"></div>
-    <div id="rateupCountdown" class="countdown"></div>
+    <div id="countdownArea">
+      <div id="countdownBox" class="countdown" style="display:none;"></div>
+      <div id="rateupCountdown" class="countdown" style="display:none;"></div>
+    </div>
   </div>
+  
   <div id="tsumArea"></div>
 
   <div id="totalWrapper">
@@ -220,7 +232,6 @@
       const container = document.createElement("div");
       container.className = "tsum-container";
 
-      // NEW icon
       if (tsum.startdate) {
         const now = new Date(), d = new Date(tsum.startdate * 1000);
         if (d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth()) {
@@ -231,7 +242,6 @@
         }
       }
 
-      // Info icon
       const infoIcon = document.createElement("img");
       infoIcon.src = "https://i.postimg.cc/FR8GhM2m/win-info.png";
       Object.assign(infoIcon.style, { position: 'absolute', top: '5px', right: '5px', width: '28px', height: '28px', cursor: 'pointer', zIndex: '10' });
@@ -408,7 +418,9 @@
       };
       
       document.addEventListener("click", () => dropdownListEl.classList.remove("show"));
-      boxSelectorWrapper.insertBefore(dropdown, countdownBox);
+      
+      // 🚀 將下拉選單插入在預留高度容器之前
+      boxSelectorWrapper.insertBefore(dropdown, document.getElementById("countdownArea"));
       rebuildDropdownList();
     }
 
