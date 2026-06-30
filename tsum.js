@@ -10844,4 +10844,69 @@ const tsumData = [
   "startdate" : [1780243200],
   "returndate" : []
     },
+    {
+    "id": 660,
+    "name_en": "NAME_MICKEY12TH",
+    "name": "時髦帽子米奇",
+    "image": "block_mickey12th_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 661,
+    "name_en": "NAME_ELSACO",
+    "name": "加冕典禮艾莎",
+    "image": "block_elsaco_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 662,
+    "name_en": "NAME_BEASTDA",
+    "name": "禮服野獸",
+    "image": "block_beastda_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 663,
+    "name_en": "NAME_RAPUNZELPLUS",
+    "name": "樂佩+",
+    "image": "block_rapunzelplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 664,
+    "name_en": "NAME_DAISYPLUS",
+    "name": "黛絲+",
+    "image": "block_daisyplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
 ];
