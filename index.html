@@ -63,6 +63,7 @@
       z-index: 100;
       display: flex;
       align-items: center;
+      background-color: rgba(34, 34, 34, 0.9); /* 加上微透明背景避免滑動時字體重疊 */
     }
 
     #search {
@@ -71,6 +72,8 @@
       font-size: 16px;
       border: 1px solid #ccc;
       box-sizing: border-box;
+      background-color: #333;
+      color: #eee;
     }
 
     #clearSearchBtn {
@@ -138,32 +141,47 @@
   <script src="littletsum.js"></script>
 
   <script>
-    const imageMap = images;
-    const iconMap = {};
+    const imageMap = images || {};
     const tbody = document.getElementById("tsumBody");
     const searchInput = document.getElementById("search");
     const clearBtn = document.getElementById("clearSearchBtn");
 
+    // 1. 預先編譯替換規則，避免在迴圈中重複運算
+    const iconReplacementRules = [];
     (window.littletsumData || []).forEach(item => {
       const key = Object.keys(item)[0];
-      iconMap[key] = item[key];
+      const filename = item[key];
+      const base64 = imageMap[filename];
+      if (base64) {
+        iconReplacementRules.push({
+          key: key,
+          tag: `<img src="${base64}" class="skill-icon">`
+        });
+      }
     });
 
     function render(data) {
       tbody.innerHTML = "";
+      
+      // 2. 使用 DocumentFragment 來減少重繪 (Reflow/Repaint)
+      const fragment = document.createDocumentFragment();
+
       data.forEach(tsum => {
         const imageNames = Array.isArray(tsum.image)
           ? tsum.image
-          : tsum.image.split(",").map(s => s.trim());
+          : (tsum.image || "").split(",").map(s => s.trim());
         let imageIndex = 0;
 
         const row = document.createElement("tr");
 
+        // --- Tsum 圖片與名稱 ---
         const imgTd = document.createElement("td");
         imgTd.className = "img-cell";
 
-        if (imageMap[imageNames[0]]) {
+        if (imageNames.length > 0 && imageMap[imageNames[0]]) {
           const img = document.createElement("img");
+          // 啟用瀏覽器原生的懶加載功能
+          img.loading = "lazy"; 
           img.src = imageMap[imageNames[0]];
           imgTd.appendChild(img);
 
@@ -172,32 +190,34 @@
           nameSpan.textContent = tsum.name;
           imgTd.appendChild(nameSpan);
 
+          // 圖片輪播事件
           if (imageNames.length > 1) {
             let intervalId = null;
-            img.addEventListener("mouseover", () => {
+            img.addEventListener("mouseenter", () => {
               intervalId = setInterval(() => {
                 imageIndex = (imageIndex + 1) % imageNames.length;
                 const next = imageMap[imageNames[imageIndex]];
                 if (next) img.src = next;
               }, 500);
             });
-            img.addEventListener("mouseout", () => {
+            img.addEventListener("mouseleave", () => {
               clearInterval(intervalId);
               img.src = imageMap[imageNames[0]];
               imageIndex = 0;
             });
           }
         } else {
-          imgTd.textContent = imageNames[0] + "\n" + tsum.name;
+          imgTd.textContent = (imageNames[0] || "未知") + "\n" + tsum.name;
         }
         row.appendChild(imgTd);
 
-        // skill_label
+        // --- 技能標籤 ---
         const labelTd = document.createElement("td");
         labelTd.className = "label-cell";
         const labelKey = tsum.skill_label;
-        if (labelKey && skillLabelMap[labelKey]) {
+        if (labelKey && skillLabelMap && skillLabelMap[labelKey]) {
           const labelImg = document.createElement("img");
+          labelImg.loading = "lazy";
           labelImg.src = skillLabelMap[labelKey];
           labelImg.className = "label-icon";
           labelTd.appendChild(labelImg);
@@ -206,66 +226,83 @@
         }
         row.appendChild(labelTd);
 
+        // --- 技能描述 (SLv1 ~ SLv6) ---
         for (let i = 0; i < 6; i++) {
           const td = document.createElement("td");
-          td.classList.add("skill-desc");
+          td.className = "skill-desc";
 
-          const rawDesc = tsum.skill_desc?.[i] || "";
+          let rawDesc = tsum.skill_desc?.[i] || "";
           const cost = tsum.skill_cost?.[i];
 
-          // 插入圖標
-          let parsedDesc = rawDesc;
-          for (const key in iconMap) {
-            const filename = iconMap[key];
-            const base64 = imageMap[filename];
-            if (base64) {
-              const imgTag = `<img src="${base64}" class="skill-icon">`;
-              parsedDesc = parsedDesc.replaceAll(key, imgTag);
-            }
+          // 替換圖標 (使用預先算好的規則)
+          if (rawDesc) {
+            iconReplacementRules.forEach(rule => {
+              rawDesc = rawDesc.replaceAll(rule.key, rule.tag);
+            });
           }
 
-          // 分離說明與需求
-          const descLines = parsedDesc.split('\n');
-          let mainDesc = '';
-          let costLine = '';
+          // 處理換行與空白
+          let mainDesc = "";
+          if (rawDesc) {
+            const descLines = rawDesc.split('\n');
+            descLines.forEach(line => {
+              mainDesc += line
+                .split(/(<img.*?>)/)
+                .map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
+                .join('') + '<br>';
+            });
+          }
 
-          descLines.forEach(line => {
-		  mainDesc += line
-			.split(/(<img.*?>)/)
-			.map(part => part.startsWith('<img') ? part : part.replaceAll(' ', '<br>'))
-			.join('') + '<br>';
-		});
+          // 技能花費
+          let costLine = "";
+          if (cost !== undefined && cost !== null) {
+            costLine = `
+            <div style="margin-top: 4px;">
+              <img src="https://i.postimg.cc/nzcz0QBq/win-i-ticket-S.png" 
+                   alt="ticket" loading="lazy"
+                   style="height: 24px; vertical-align: middle; margin-right: 4px;">
+              × ${cost}
+            </div>`;
+          }
 
-		// 直接根據 cost 是否存在來決定是否加上
-		if (cost !== undefined && cost !== null) {
-		  costLine = `
-		  <div style="margin-top: 4px;">
-			<img src="https://i.postimg.cc/nzcz0QBq/win-i-ticket-S.png" 
-				 alt="ticket" 
-				 style="height: 24px; vertical-align: middle; margin-right: 4px;">
-			× ${cost}
-		  </div>`;
-		}
-
-          td.innerHTML = mainDesc + (costLine ? costLine : '');
+          td.innerHTML = mainDesc + costLine;
           row.appendChild(td);
         }
 
-        tbody.appendChild(row);
+        fragment.appendChild(row);
       });
+
+      // 將所有組合好的元素一次性放入 DOM 中
+      tbody.appendChild(fragment);
     }
 
-    const sorted = tsumData.sort((a, b) => a.id - b.id);
+    // 初始化與排序
+    const sorted = (window.tsumData || []).sort((a, b) => a.id - b.id);
     render(sorted);
 
-    searchInput.addEventListener("input", () => {
+    // 3. 搜尋防抖 (Debounce) 功能
+    function debounce(func, delay) {
+      let timer;
+      return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => func.apply(this, args), delay);
+      };
+    }
+
+    const handleSearch = debounce(() => {
       const q = searchInput.value.trim().toLowerCase();
+      if (!q) {
+        render(sorted);
+        return;
+      }
       const filtered = sorted.filter(tsum =>
         tsum.name?.toLowerCase().includes(q) ||
         tsum.name_en?.toLowerCase().includes(q)
       );
       render(filtered);
-    });
+    }, 300); // 延遲 300 毫秒觸發
+
+    searchInput.addEventListener("input", handleSearch);
 
     clearBtn.addEventListener("click", () => {
       searchInput.value = "";
@@ -273,10 +310,8 @@
       searchInput.focus();
     });
 
-    searchInput.addEventListener("focus", () => {
-      searchInput.placeholder = "";
-    });
-
+    // 搜尋框樣式小細節
+    searchInput.addEventListener("focus", () => searchInput.placeholder = "");
     searchInput.addEventListener("blur", () => {
       if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
     });
@@ -284,7 +319,6 @@
     document.getElementById("scrollTopBtn").addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
-
     document.getElementById("scrollBottomBtn").addEventListener("click", () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     });
