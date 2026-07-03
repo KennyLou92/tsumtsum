@@ -8949,13 +8949,7 @@ const tsumData = [
     "name_en": "name_mickey_set",
     "name": "繽紛米奇與好朋友（組合）",
     "image": [
-      "block_mickeyset_l.png",
-      "block_mickeyset_1_l.png",
-      "block_mickeyset_2_l.png",
-      "block_mickeyset_3_l.png",
-      "block_mickeyset_4_l.png",
-      "block_mickeyset_5_l.png"
-    ],
+      "block_mickeyset_l.png"],
     "skill_desc": [
       "^750w^時間：8.5秒 ^751w^^752w^^753w^ 所需Tsum數：23",
       "^750w^時間：9.8秒 ^751w^^752w^^753w^ 所需Tsum數：22",
@@ -9737,14 +9731,7 @@ const tsumData = [
     "id": 593,
     "name_en": "name_starwars_set",
     "name": "星際大戰光明面（組合）",
-    "image": [
-      "block_starwarsset_l.png",
-      "block_starwarsset_1_l.png",
-      "block_starwarsset_2_l.png",
-      "block_starwarsset_3_l.png",
-      "block_starwarsset_4_l.png",
-      "block_starwarsset_5_l.png"
-    ],
+    "image": ["block_starwarsset_l.png"],
     "skill_desc": [
       "^782w^時間：8秒 ^783w^^784w^ 效果範圍：XS",
       "^782w^時間：9.4秒 ^783w^^784w^ 效果範圍：S",
@@ -10842,6 +10829,71 @@ const tsumData = [
   ],
   "skill_cost" : [1,2,4],
   "startdate" : [1780243200],
+  "returndate" : []
+    },
+    {
+    "id": 660,
+    "name_en": "NAME_MICKEY12TH",
+    "name": "時髦帽子米奇",
+    "image": "block_mickey12th_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 661,
+    "name_en": "NAME_ELSACO",
+    "name": "加冕典禮艾莎",
+    "image": "block_elsaco_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 662,
+    "name_en": "NAME_BEASTDA",
+    "name": "禮服野獸",
+    "image": "block_beastda_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 663,
+    "name_en": "NAME_RAPUNZELPLUS",
+    "name": "樂佩+",
+    "image": "block_rapunzelplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
+  "returndate" : []
+    },
+    {
+    "id": 664,
+    "name_en": "NAME_DAISYPLUS",
+    "name": "黛絲+",
+    "image": "block_daisyplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1782889200],
   "returndate" : []
     },
 ];

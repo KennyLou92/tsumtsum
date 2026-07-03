@@ -34,15 +34,69 @@
       font-weight: bold;
       color: black;
     }
+    
+    /* 更新 UI 排版 */
     .dropdown-wrap {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-top: 6px;
+      gap: 6px;
     }
     select {
       font-size: 14px;
       padding: 4px;
+    /*  width: 90%; */
     }
+    .progress-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    /* 技能進度條的專屬設定 */
+    .tsum-progress-bar {
+      position: relative;
+      width: 74px;  /* 固定寬度 */
+      height: 18px; /* 固定高度 */
+      border-radius: 9px;
+      overflow: hidden;
+      background-color: #222;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    }
+    .tsum-progress-bar > img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+    .tsum-progress-fill {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      z-index: 2;
+      overflow: hidden;
+      transition: width 0.2s ease;
+    }
+    .tsum-progress-fill img {
+      height: 100%;
+      width: 74px; /* 必須跟父層固定寬度一樣，防止圖片變形，藉由外層 div 的 width 來裁切 */
+      max-width: none;
+    }
+    .tsum-progress-text {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      text-align: center;
+      z-index: 3;
+      font-size: 11px;
+      color: white;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      line-height: 18px;
+      pointer-events: none;
+    }
+
     .coin-line {
       display: flex;
       align-items: center;
@@ -80,13 +134,12 @@
       margin-top: 10px;
       gap: 10px;
     }
-    /* 🚀 新增：倒數計時專屬容器，設定預留高度 */
     #countdownArea {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 5px;
-      min-height: 60px; /* 預留兩行倒數計時的高度，確保 Tsum 位置不跳動 */
+      min-height: 60px;
       justify-content: flex-start;
     }
     .tsum-dropdown {
@@ -217,21 +270,61 @@
     const rateupCountdown = document.getElementById("rateupCountdown");
     let countdownInterval, rateupInterval;
 
-    let savedLevels = {};
+    // 🚀 新增：轉移原本只存 Level 的舊資料，改成儲存精準的「抽箱總數量(Total Boxes)」
+    let savedBoxes = {};
     try {
-      savedLevels = JSON.parse(localStorage.getItem("savedLevels")) || {};
+      savedBoxes = JSON.parse(localStorage.getItem("savedBoxes"));
+      if (!savedBoxes) {
+        savedBoxes = {};
+        const legacyLevels = JSON.parse(localStorage.getItem("savedLevels"));
+        if (legacyLevels) {
+          for (let id in legacyLevels) {
+            const lvl = legacyLevels[id];
+            if (tsumMap[id] && tsumMap[id].skill_cost) {
+              // 將原本的等級轉換為抵達該等級所需的總隻數
+              savedBoxes[id] = tsumMap[id].skill_cost.slice(0, lvl).reduce((a, b) => a + b, 0);
+            }
+          }
+          localStorage.removeItem("savedLevels");
+          localStorage.setItem("savedBoxes", JSON.stringify(savedBoxes));
+        }
+      }
     } catch (e) {
-      savedLevels = {};
+      savedBoxes = {};
     }
-    const saveLevelsToStorage = () => localStorage.setItem("savedLevels", JSON.stringify(savedLevels));
+    const saveBoxesToStorage = () => localStorage.setItem("savedBoxes", JSON.stringify(savedBoxes));
+
+    // 🚀 新增：根據擁有的「總箱數」計算當前等級、升級所需、%數
+    function getLevelInfo(boxes, skillCost) {
+      let level = 0;
+      let remainder = boxes;
+      let nextCost = skillCost[0] || 0;
+      
+      for (let i = 0; i < skillCost.length; i++) {
+        if (remainder >= skillCost[i]) {
+          remainder -= skillCost[i];
+          level = i + 1;
+          nextCost = skillCost[i + 1] || 0; 
+        } else {
+          nextCost = skillCost[i];
+          break;
+        }
+      }
+      
+      let isMax = (level === skillCost.length);
+      let percent = isMax ? 100 : Math.floor((remainder / nextCost) * 100);
+      
+      return { level, percent, isMax };
+    }
 
     function createTsumBox(tsumId) {
-      const tsum = tsumMap[tsId = tsumId];
+      const tsum = tsumMap[tsumId];
       if (!tsum?.skill_cost) return null;
 
       const container = document.createElement("div");
       container.className = "tsum-container";
 
+      // 判斷是否為當月新 Tsum
       if (tsum.startdate) {
         const now = new Date(), d = new Date(tsum.startdate * 1000);
         if (d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth()) {
@@ -242,6 +335,7 @@
         }
       }
 
+      // Info 圖示與復刻資訊
       const infoIcon = document.createElement("img");
       infoIcon.src = "https://i.postimg.cc/FR8GhM2m/win-info.png";
       Object.assign(infoIcon.style, { position: 'absolute', top: '5px', right: '5px', width: '28px', height: '28px', cursor: 'pointer', zIndex: '10' });
@@ -291,49 +385,67 @@
         popup.style.display = popup.style.display === "none" ? "block" : "none";
       };
 
+      // Tsum 圖片
       const img = document.createElement("img");
       img.className = "tsum-img";
       img.src = images[tsum.image] || "";
       container.appendChild(img);
 
+      // 名稱
       const nameLine = document.createElement("div");
       nameLine.className = "name";
       nameLine.textContent = tsum.name;
       container.appendChild(nameLine);
 
+      // 總需要花費的箱數 (滿等)
+      const maxBoxes = tsum.skill_cost.reduce((a, b) => a + b, 0);
+
+      // --- 下拉選單與進度條區塊 ---
+      const dropdownWrap = document.createElement("div");
+      dropdownWrap.className = "dropdown-wrap";
+
       const levelSelect = document.createElement("select");
-      for (let i = 0; i <= 6; i++) {
+      for (let i = 0; i <= tsum.skill_cost.length; i++) {
         const option = document.createElement("option");
         option.value = i;
         option.textContent = `SLv ${i}`;
         levelSelect.appendChild(option);
       }
-      if (savedLevels[tsumId] !== undefined) levelSelect.value = savedLevels[tsumId];
 
-      const dropdownWrap = document.createElement("div");
-      dropdownWrap.className = "dropdown-wrap";
+      const progressWrap = document.createElement("div");
+      progressWrap.className = "progress-wrap";
 
       const minusBtn = document.createElement("img");
       minusBtn.src = "https://i.postimg.cc/d1knxFtm/win-minus-on.png";
-      minusBtn.style.cssText = "width:26px; height:26px; cursor:pointer; user-select:none;";
+      minusBtn.style.cssText = "width:24px; height:24px; cursor:pointer; user-select:none;";
 
       const plusBtn = document.createElement("img");
       plusBtn.src = "https://i.postimg.cc/HkdZsFBp/win-plus-on2.png";
-      plusBtn.style.cssText = "width:26px; height:26px; cursor:pointer; user-select:none;";
+      plusBtn.style.cssText = "width:24px; height:24px; cursor:pointer; user-select:none;";
 
-      dropdownWrap.append(minusBtn, levelSelect, plusBtn); 
+      // 組合進度條
+      const progressBar = document.createElement("div");
+      progressBar.className = "tsum-progress-bar";
+      
+      const baseImg = document.createElement("img");
+      baseImg.src = "https://i.postimg.cc/2SX6LK0h/win-tsumlevelbar-m0.png";
+      
+      const fillWrap = document.createElement("div");
+      fillWrap.className = "tsum-progress-fill";
+      
+      const fillImg = document.createElement("img");
+      fillImg.src = "https://i.postimg.cc/K8sz3H0n/win-tsumskillbar-m1.png";
+      fillWrap.appendChild(fillImg);
+      
+      const progressText = document.createElement("span");
+      progressText.className = "tsum-progress-text";
+      
+      progressBar.append(baseImg, fillWrap, progressText);
+      progressWrap.append(minusBtn, progressBar, plusBtn);
+      dropdownWrap.append(levelSelect, progressWrap);
       container.appendChild(dropdownWrap);
 
-      const changeLevel = (offset) => {
-        let v = parseInt(levelSelect.value) + offset;
-        if (v >= 0 && v <= 6) {
-          levelSelect.value = v;
-          levelSelect.dispatchEvent(new Event("change"));
-        }
-      };
-      minusBtn.onclick = () => changeLevel(-1);
-      plusBtn.onclick = () => changeLevel(1);
-
+      // --- 金幣顯示區塊 ---
       const coinLine = document.createElement("div");
       coinLine.className = "coin-line";
       const currencyIcon = document.createElement("img");
@@ -342,26 +454,60 @@
       coinLine.append(currencyIcon, valueSpan);
       container.appendChild(coinLine);
 
-      const calculateCost = () => {
-        const level = parseInt(levelSelect.value);
-        savedLevels[tsumId] = level;
-        const totalCost = tsum.skill_cost.reduce((a, b) => a + b, 0);
-        const ownedCost = tsum.skill_cost.slice(0, level).reduce((a, b) => a + b, 0);
-        return (totalCost - ownedCost) * (currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST);
-      };
+      // --- 核心更新邏輯 ---
+      let currentBoxes = savedBoxes[tsumId] || 0;
 
-      function updateGold() {
-        const amount = calculateCost();
-        saveLevelsToStorage();
+      function updateUIAndCost() {
+        // 防止數量超過上限或小於0
+        currentBoxes = Math.max(0, Math.min(currentBoxes, maxBoxes));
+        savedBoxes[tsumId] = currentBoxes;
+        saveBoxesToStorage();
+        
+        // 取得當前狀態
+        const info = getLevelInfo(currentBoxes, tsum.skill_cost);
+        
+        // 更新下拉選單
+        levelSelect.value = info.level;
+        
+        // 更新進度條
+        fillWrap.style.width = info.isMax ? "100%" : `${info.percent}%`;
+        progressText.textContent = info.isMax ? "MAX" : `${info.percent}%`;
+        
+        // 更新金幣: (滿等所需隻數 - 擁有隻數) * 單抽價格
+        const remainingBoxes = maxBoxes - currentBoxes;
+        const cost = remainingBoxes * (currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST);
+        
         currencyIcon.src = currentBoxType === "medal" ? IMAGE_MEDAL : IMAGE_COIN;
-        valueSpan.textContent = amount.toLocaleString();
+        valueSpan.textContent = cost.toLocaleString();
+        
         updateTotal();
       }
 
-      levelSelect.addEventListener("change", updateGold);
-      updateGold(); 
+      // 提供給外層匯總使用的方法
+      container._getGold = () => {
+        return (maxBoxes - currentBoxes) * (currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST);
+      }; 
 
-      container._getGold = calculateCost; 
+      // 監聽器
+      levelSelect.addEventListener("change", (e) => {
+        const targetLevel = parseInt(e.target.value);
+        // 若玩家從下拉選單改變，重置該等級的 % 數，變回該等級剛好達到的總隻數
+        currentBoxes = tsum.skill_cost.slice(0, targetLevel).reduce((a, b) => a + b, 0);
+        updateUIAndCost();
+      });
+
+      minusBtn.onclick = () => {
+        currentBoxes--;
+        updateUIAndCost();
+      };
+
+      plusBtn.onclick = () => {
+        currentBoxes++;
+        updateUIAndCost();
+      };
+
+      // 初始渲染
+      updateUIAndCost(); 
       return container;
     }
 
@@ -418,8 +564,6 @@
       };
       
       document.addEventListener("click", () => dropdownListEl.classList.remove("show"));
-      
-      // 🚀 將下拉選單插入在預留高度容器之前
       boxSelectorWrapper.insertBefore(dropdown, document.getElementById("countdownArea"));
       rebuildDropdownList();
     }
@@ -489,9 +633,10 @@
     if (currentIndex !== -1) renderBox(currentIndex);
 
     document.getElementById("resetLevels").addEventListener("click", () => {
-      if (confirm("確定要重置所有技能等級嗎？")) {
+      if (confirm("確定要重置所有技能等級與進度嗎？")) {
+        localStorage.removeItem("savedBoxes");
         localStorage.removeItem("savedLevels");
-        savedLevels = {};
+        savedBoxes = {};
         currentIndex = selectbox.findIndex(isBoxVisible);
         if (currentIndex !== -1) renderBox(currentIndex);
         updateTotal();
