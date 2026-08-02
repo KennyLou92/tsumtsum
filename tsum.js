@@ -10896,4 +10896,82 @@ const tsumData = [
   "startdate" : [1782889200],
   "returndate" : []
     },
+{
+    "id": 665,
+    "name_en": "NAME_MALLEUSMD",
+    "name": "化妝舞會禮服梅琉斯",
+    "image": "block_malleusmd_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1785481200],
+  "returndate" : []
+    },
+{
+    "id": 666,
+    "name_en": "NAME_AZULMD",
+    "name": "化妝舞會禮服烏斯爾",
+    "image": "block_azulmd_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1785481200],
+  "returndate" : []
+    },
+{
+    "id": 667,
+    "name_en": "NAME_IDIAMD",
+    "name": "化妝舞會禮服伊帝亞",
+    "image": "block_idiamd_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1785481200],
+  "returndate" : []
+    },
+{
+    "id": 668,
+    "name_en": "NAME_JACKHOWL",
+    "name": "傑克・霍爾",
+    "image": "block_jackhowl_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1785481200],
+  "returndate" : []
+    },
+{
+    "id": 669,
+    "name_en": "NAME_RUGGIE",
+    "name": "勒吉・布奇",
+    "image": "block_ruggie_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1785481200],
+  "returndate" : []
+    },
+{
+    "id": 670,
+    "name_en": "NAME_SIMBAPLUS",
+    "name": "勒吉・布奇",
+    "image": "block_simbaplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1785481200],
+  "returndate" : []
+    },
 ];
