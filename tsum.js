@@ -10906,7 +10906,7 @@ const tsumData = [
     "",
   ],
   "skill_cost" : [1,1,2,4,8,20],
-  "startdate" : [1785481200],
+  "startdate" : [1785567600],
   "returndate" : []
     },
 {
@@ -10919,7 +10919,7 @@ const tsumData = [
     "",
   ],
   "skill_cost" : [1,1,2,4,8,16],
-  "startdate" : [1785481200],
+  "startdate" : [1785567600],
   "returndate" : []
     },
 {
@@ -10932,7 +10932,7 @@ const tsumData = [
     "",
   ],
   "skill_cost" : [1,1,2,4,8,16],
-  "startdate" : [1785481200],
+  "startdate" : [1785567600],
   "returndate" : []
     },
 {
@@ -10945,7 +10945,7 @@ const tsumData = [
     "",
   ],
   "skill_cost" : [1,1,2,4,8,16],
-  "startdate" : [1785481200],
+  "startdate" : [1785567600],
   "returndate" : []
     },
 {
@@ -10958,20 +10958,20 @@ const tsumData = [
     "",
   ],
   "skill_cost" : [1,1,2,4,8,16],
-  "startdate" : [1785481200],
+  "startdate" : [1785567600],
   "returndate" : []
     },
 {
     "id": 670,
     "name_en": "NAME_SIMBAPLUS",
-    "name": "勒吉・布奇",
+    "name": "辛巴+",
     "image": "block_simbaplus_l.png",
     "skill_label": "",
   "skill_desc": [
     "",
   ],
   "skill_cost" : [1,1,2,4,8,20],
-  "startdate" : [1785481200],
+  "startdate" : [1785567600],
   "returndate" : []
     },
 ];
