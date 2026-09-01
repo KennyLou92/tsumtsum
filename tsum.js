@@ -10974,4 +10974,82 @@ const tsumData = [
   "startdate" : [1785567600],
   "returndate" : []
     },
+{
+    "id": 671,
+    "name_en": "NAME_CHIPKP",
+    "name": "帽T奇奇",
+    "image": "block_chipkp_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1788159600],
+  "returndate" : []
+    },
+{
+    "id": 672,
+    "name_en": "NAME_DALEKP",
+    "name": "墨鏡蒂蒂",
+    "image": "block_dalekp_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1788159600],
+  "returndate" : []
+    },
+{
+    "id": 673,
+    "name_en": "NAME_GOOFYPLUS",
+    "name": "高飛+",
+    "image": "block_goofyplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1788159600],
+  "returndate" : []
+    },
+{
+    "id": 674,
+    "name_en": "NAME_MICKEYINK",
+    "name": "洛卡納米奇",
+    "image": "block_mickeyink_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1788159600],
+  "returndate" : []
+    },
+{
+    "id": 675,
+    "name_en": "NAME_AURORAINK",
+    "name": "洛卡納愛洛公主（變身）",
+    "image": "block_auroraink_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1788159600],
+  "returndate" : []
+    },
+{
+    "id": 676,
+    "name_en": "NAME_TINKERBELLINK",
+    "name": "洛卡納小叮噹（變身）",
+    "image": "block_tinkerbellink_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1788159600],
+  "returndate" : []
+    },
 ];
