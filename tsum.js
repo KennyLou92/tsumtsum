@@ -11132,4 +11132,82 @@ const tsumData = [
   "startdate" : [1788159600],
   "returndate" : []
     },
+{
+    "id": 677,
+    "name_en": "NAME_VILLAINS_SET",
+    "name": "迪士尼反派（組合）",
+    "image": "block_villainsset_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1790838000],
+  "returndate" : []
+    },
+{
+    "id": 678,
+    "name_en": "NAME_GASTON",
+    "name": "詭計多端的加斯頓",
+    "image": "block_gaston3_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1790838000],
+  "returndate" : []
+    },
+{
+    "id": 679,
+    "name_en": "NAME_EPEL",
+    "name": "艾培爾・菲米耶",
+    "image": "block_epel_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1790838000],
+  "returndate" : []
+    },
+{
+    "id": 680,
+    "name_en": "NAME_ORTHO",
+    "name": "奧索・索羅德",
+    "image": "block_ortho_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,7,14],
+  "startdate" : [1790838000],
+  "returndate" : []
+    },
+{
+    "id": 681,
+    "name_en": "NAME_CRUELLAPLUS",
+    "name": "庫伊拉+",
+    "image": "block_cruellaplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1790838000],
+  "returndate" : []
+    },
+{
+    "id": 682,
+    "name_en": "NAME_TREMAINEPLUS",
+    "name": "特曼尼夫人+",
+    "image": "block_tremaineplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1790838000],
+  "returndate" : []
+    },
 ];
