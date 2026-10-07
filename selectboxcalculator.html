@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tsum 金幣計算器</title>
   <style>
 body {
@@ -9,11 +10,12 @@ body {
   /* 將檔名改成你的新圖片 */
   background: url('win_main01.png') center center fixed; 
   /* 建議改成 cover 讓圖片可以自動填滿整個畫面，且 fixed 讓背景在滑動時固定住 */
-  background-size: cover; 
+  background-size: cover;
+  background-color: #dfeaf5; 
     }
     #tsumArea {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 8px;
       margin: 10px;
     }
@@ -24,10 +26,15 @@ body {
       text-align: center;
       background-color: #fff;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .tsum-img {
-      width: 130px;
-      height: 130px;
+      width: 100%;
+      max-width: 130px;
+      height: auto;
+      aspect-ratio: 1;
       border-radius: 10px;
     }
     .name {
@@ -35,6 +42,12 @@ body {
       margin-top: 8px;
       font-weight: bold;
       color: black;
+      flex: 1;
+      min-height: 2.6em;
+      line-height: 1.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     /* 更新 UI 排版 */
@@ -151,7 +164,7 @@ body {
     }
     .tsum-selected {
       height: 108px;
-      width: 524px;
+      width: min(524px, 94vw);
       border: none;
       border-radius: 8px;
       object-fit: contain;
@@ -174,7 +187,7 @@ body {
       scrollbar-width: none;
       -ms-overflow-style: none;
       box-sizing: border-box;
-      width: 524px;
+      width: min(524px, 94vw);
     }
     .tsum-dropdown-list::-webkit-scrollbar {
       display: none;
@@ -225,6 +238,14 @@ body {
     .dropdown-wrap img {
       user-select: none;
     }
+    .tsum-popup { display: none; }
+    .tsum-popup.open { display: block; }
+    .tsum-dropdown-item.active { outline: 3px solid rgba(255,255,255,0.9); outline-offset: -3px; }
+    @media (max-width: 600px) {
+      .name { font-size: 16px; }
+      #totalWrapper { font-size: 36px; }
+      #totalWrapper img { width: 36px; height: 36px; }
+    }
   </style>
 </head>
 <body>
@@ -257,6 +278,8 @@ body {
       if (box.show !== undefined) return box.show !== 0;
       return box.startdate && box.enddate ? (now >= box.startdate && now < box.enddate) : false;
     }
+
+    const isListable = box => box.box_label && isBoxVisible(box);
 
     const tsumMap = {};
     tsumData.forEach(tsum => tsumMap[tsum.id] = tsum);
@@ -294,7 +317,12 @@ body {
     } catch (e) {
       savedBoxes = {};
     }
-    const saveBoxesToStorage = () => localStorage.setItem("savedBoxes", JSON.stringify(savedBoxes));
+    const saveBoxesToStorage = () => {
+      try { localStorage.setItem("savedBoxes", JSON.stringify(savedBoxes)); } catch (e) {}
+    };
+    const closeAllPopups = () =>
+      document.querySelectorAll(".tsum-popup.open").forEach(p => p.classList.remove("open"));
+    const unitCost = () => currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST;
 
     // 🚀 新增：根據擁有的「總箱數」計算當前等級、升級所需、%數
     function getLevelInfo(boxes, skillCost) {
@@ -344,7 +372,8 @@ body {
       container.appendChild(infoIcon);
 
       const popup = document.createElement("div");
-      Object.assign(popup.style, { position: 'absolute', top: '40px', right: '5px', background: 'rgba(255,255,255,0.95)', border: '1px solid #ccc', padding: '6px 10px', borderRadius: '6px', fontSize: '14px', boxShadow: '0 2px 6px rgba(0,0,0,0.2)', display: 'none', zIndex: '20' });
+      popup.className = "tsum-popup";
+      Object.assign(popup.style, { position: 'absolute', top: '40px', right: '5px', background: 'rgba(255,255,255,0.95)', border: '1px solid #ccc', padding: '6px 10px', borderRadius: '6px', fontSize: '14px', boxShadow: '0 2px 6px rgba(0,0,0,0.2)', zIndex: '20' });
 
       let latestReturnText = "暫未復刻", returnCountText = "復刻 0 次", firstStartText = "未知";
       const returnType = tsum.returndate?.toString().toLowerCase();
@@ -374,7 +403,7 @@ body {
         }
       }
 
-      if (!isNaN(tsum.startdate)) {
+      if (tsum.startdate && Number.isFinite(Number(tsum.startdate))) {
         const sd = new Date(tsum.startdate * 1000);
         firstStartText = `${sd.getFullYear()}/${(sd.getMonth()+1).toString().padStart(2,'0')}`;
       }
@@ -384,13 +413,18 @@ body {
 
       infoIcon.onclick = (e) => {
         e.stopPropagation();
-        popup.style.display = popup.style.display === "none" ? "block" : "none";
+        const wasOpen = popup.classList.contains("open");
+        closeAllPopups();
+        if (!wasOpen) popup.classList.add("open");
       };
 
       // Tsum 圖片
       const img = document.createElement("img");
       img.className = "tsum-img";
       img.src = images[tsum.image] || "";
+      img.alt = tsum.name || "";
+      img.loading = "lazy";
+      img.decoding = "async";
       container.appendChild(img);
 
       // 名稱
@@ -459,11 +493,12 @@ body {
       // --- 核心更新邏輯 ---
       let currentBoxes = savedBoxes[tsumId] || 0;
 
-      function updateUIAndCost() {
+      const getCost = () => (maxBoxes - currentBoxes) * unitCost();
+
+      function updateUIAndCost(persist = true) {
         // 防止數量超過上限或小於0
         currentBoxes = Math.max(0, Math.min(currentBoxes, maxBoxes));
-        savedBoxes[tsumId] = currentBoxes;
-        saveBoxesToStorage();
+        
         
         // 取得當前狀態
         const info = getLevelInfo(currentBoxes, tsum.skill_cost);
@@ -476,18 +511,22 @@ body {
         progressText.textContent = info.isMax ? "MAX" : `${info.percent}%`;
         
         // 更新金幣: (滿等所需隻數 - 擁有隻數) * 單抽價格
-        const remainingBoxes = maxBoxes - currentBoxes;
-        const cost = remainingBoxes * (currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST);
+        
+        const cost = getCost();
         
         currencyIcon.src = currentBoxType === "medal" ? IMAGE_MEDAL : IMAGE_COIN;
         valueSpan.textContent = cost.toLocaleString();
-        
-        updateTotal();
+
+        if (persist) {
+          savedBoxes[tsumId] = currentBoxes;
+          saveBoxesToStorage();
+          updateTotal();
+        }
       }
 
       // 提供給外層匯總使用的方法
       container._getGold = () => {
-        return (maxBoxes - currentBoxes) * (currentBoxType === "medal" ? MEDAL_PER_COST : GOLD_PER_COST);
+        return getCost();
       }; 
 
       // 監聽器
@@ -509,7 +548,7 @@ body {
       };
 
       // 初始渲染
-      updateUIAndCost(); 
+      updateUIAndCost(false);
       return container;
     }
 
@@ -523,9 +562,10 @@ body {
 
     function renderCountdown(start, end, element, label) {
       clearInterval(element === countdownBox ? countdownInterval : rateupInterval);
+      let interval;
       const update = () => {
         const now = Math.floor(Date.now() / 1000);
-        if (now >= end) { element.textContent = label + "已結束"; return; }
+        if (now >= end) { element.textContent = label + "已結束"; clearInterval(interval); return; }
         
         const isBeforeStart = now < start;
         const target = isBeforeStart ? start : end;
@@ -538,8 +578,8 @@ body {
         const s = diff % 60;
         element.textContent = `${prefix} ${d}天 ${h}時 ${m}分 ${s}秒`;
       };
+      interval = setInterval(update, 1000);
       update();
-      const interval = setInterval(update, 1000);
       if (element === countdownBox) countdownInterval = interval;
       else rateupInterval = interval;
     }
@@ -594,7 +634,6 @@ body {
         }
       };
       
-      document.addEventListener("click", () => dropdownListEl.classList.remove("show"));
       boxSelectorWrapper.insertBefore(dropdown, document.getElementById("countdownArea"));
       rebuildDropdownList();
     }
@@ -605,10 +644,11 @@ body {
       let first = null;
       
       selectbox.forEach((box, index) => {
-        if (box.box_label && isBoxVisible(box)) {
+        if (isListable(box)) {
           const item = document.createElement("img");
           item.src = box.box_label;
           item.className = "tsum-dropdown-item";
+          item.alt = "扭蛋池";
           item.onclick = (e) => {
             e.stopPropagation();
             document.querySelectorAll(".tsum-dropdown-item").forEach(el => el.classList.remove("active"));
@@ -644,23 +684,23 @@ body {
       });
       updateTotal();
       
-      const toggleCountdown = (element, start, end, label, interval) => {
+      const toggleCountdown = (element, start, end, label) => {
         if (start && end) {
           element.style.display = "block";
           renderCountdown(start, end, element, label);
         } else {
           element.style.display = "none";
-          clearInterval(interval);
+          clearInterval(element === countdownBox ? countdownInterval : rateupInterval);
           element.textContent = "";
         }
       };
 
-      toggleCountdown(countdownBox, box.startdate, box.enddate, "", countdownInterval);
-      toggleCountdown(rateupCountdown, box.rateupstartdate, box.rateupenddate, "Rate Up", rateupInterval);
+      toggleCountdown(countdownBox, box.startdate, box.enddate, "");
+      toggleCountdown(rateupCountdown, box.rateupstartdate, box.rateupenddate, "Rate Up");
     }
 
     createImageDropdown();
-    let currentIndex = selectbox.findIndex(isBoxVisible);
+    let currentIndex = selectbox.findIndex(isListable);
     if (currentIndex !== -1) renderBox(currentIndex);
 
     document.getElementById("resetLevels").addEventListener("click", () => {
@@ -668,7 +708,7 @@ body {
         localStorage.removeItem("savedBoxes");
         localStorage.removeItem("savedLevels");
         savedBoxes = {};
-        currentIndex = selectbox.findIndex(isBoxVisible);
+        currentIndex = selectbox.findIndex(isListable);
         if (currentIndex !== -1) renderBox(currentIndex);
         updateTotal();
         rebuildDropdownList();
@@ -676,7 +716,8 @@ body {
     });
     
     document.addEventListener("click", () => {
-      document.querySelectorAll(".tsum-container div[style*='display: block']").forEach(p => p.style.display = 'none');
+      dropdownListEl?.classList.remove("show");
+      closeAllPopups();
     });
   </script>
 </body>

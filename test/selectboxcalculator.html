@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>Tsum 金幣計算器</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: url('bluebg.png') repeat;
-      background-size: auto;
+body {
+  font-family: sans-serif;
+  /* 將檔名改成你的新圖片 */
+  background: url('win_main01.png') center center fixed; 
+  /* 建議改成 cover 讓圖片可以自動填滿整個畫面，且 fixed 讓背景在滑動時固定住 */
+  background-size: cover; 
     }
     #tsumArea {
       display: grid;
@@ -558,9 +560,38 @@
       
       dropdown.append(dropdownSelectedEl, dropdownListEl);
       
+      // 點擊展開/收起選單
       dropdownSelectedEl.onclick = (e) => {
         e.stopPropagation();
         dropdownListEl.classList.toggle("show");
+      };
+
+      // 🎁 加入彩蛋：雙擊 Banner，當前池子全滿
+      dropdownSelectedEl.ondblclick = (e) => {
+        e.stopPropagation();
+        
+        // 確保目前有選擇池子
+        if (currentIndex !== -1 && selectbox[currentIndex]) {
+          const currentBox = selectbox[currentIndex];
+          
+          // 遍歷當前池子裡的所有 Tsum
+          currentBox.box_tsum.forEach(tsumId => {
+            const tsum = tsumMap[tsumId];
+            if (tsum && tsum.skill_cost) {
+              // 計算該 Tsum 滿等需要的總箱數
+              const maxBoxes = tsum.skill_cost.reduce((a, b) => a + b, 0);
+              // 將儲存的資料設為最大值
+              savedBoxes[tsumId] = maxBoxes;
+            }
+          });
+          
+          // 儲存進 LocalStorage 並重新渲染當前畫面
+          saveBoxesToStorage();
+          renderBox(currentIndex);
+          
+          // 可以在這裡加個小提示讓玩家知道彩蛋觸發了 (可選)
+          // alert("🎉 彩蛋觸發：當前扭蛋池已全滿！");
+        }
       };
       
       document.addEventListener("click", () => dropdownListEl.classList.remove("show"));
