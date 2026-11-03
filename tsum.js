@@ -11210,4 +11210,69 @@ const tsumData = [
   "startdate" : [1790838000],
   "returndate" : []
     },
+{
+    "id": 683,
+    "name_en": "NAME_MINNIETRANS",
+    "name": "魔法棒米妮（變身）",
+    "image": "block_minnietrans_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1793606400],
+  "returndate" : []
+    },
+{
+    "id": 684,
+    "name_en": "NAME_DAISYTRANS",
+    "name": "魔法棒黛絲（變身）",
+    "image": "block_daisytrans_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1793606400],
+  "returndate" : []
+    },
+{
+    "id": 685,
+    "name_en": "NAME_CLARICETRANS",
+    "name": "魔法棒克莉絲（變身）",
+    "image": "block_claricetrans_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1793606400],
+  "returndate" : []
+    },
+{
+    "id": 686,
+    "name_en": "NAME_MICKEYR",
+    "name": "神祕騎士米奇",
+    "image": "block_mickeyr_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,16],
+  "startdate" : [1793606400],
+  "returndate" : []
+    },
+{
+    "id": 687,
+    "name_en": "NAME_MABELPLUS",
+    "name": "梅寶+",
+    "image": "block_mabelplus_l.png",
+    "skill_label": "",
+  "skill_desc": [
+    "",
+  ],
+  "skill_cost" : [1,1,2,4,8,20],
+  "startdate" : [1793606400],
+  "returndate" : []
+    },
 ];
