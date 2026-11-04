@@ -10038,7 +10038,7 @@ const tsumData = [
   },
   {
     "id": 610,
-    "name_en": "‘Olu Mel",
+    "name_en": "Olu Mel",
     "name": "奧樂米拉",
     "image": "block_olumel_l.png",
     "skill_label": "win_tsumskill_olumel.png",
