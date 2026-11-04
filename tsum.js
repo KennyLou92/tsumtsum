@@ -1,7 +1,7 @@
 const tsumData = [
   {
     "id": 1,
-    "name_en": "name_mickey",
+    "name_en": "Mickey",
     "name": "米奇",
     "image": "block_mickey_l.png",
     "skill_desc": [
@@ -14,7 +14,7 @@ const tsumData = [
   },
   {
     "id": 2,
-    "name_en": "name_minnie",
+    "name_en": "Minnie",
     "name": "米妮",
     "image": "block_minnie_l.png",
     "skill_desc": [
@@ -27,7 +27,7 @@ const tsumData = [
   },
   {
     "id": 3,
-    "name_en": "name_donald",
+    "name_en": "Donald",
     "name": "唐老鴨",
     "image": "block_donald_l.png",
     "skill_desc": [
@@ -40,7 +40,7 @@ const tsumData = [
   },
   {
     "id": 4,
-    "name_en": "name_daisy",
+    "name_en": "Daisy",
     "name": "黛絲",
     "image": "block_daisy_l.png",
     "skill_desc": [
@@ -53,7 +53,7 @@ const tsumData = [
   },
   {
     "id": 5,
-    "name_en": "name_goofy",
+    "name_en": "Goofy",
     "name": "高飛",
     "image": "block_goofy_l.png",
     "skill_desc": [
@@ -66,7 +66,7 @@ const tsumData = [
   },
   {
     "id": 6,
-    "name_en": "name_pluto",
+    "name_en": "Pluto",
     "name": "布魯托",
     "image": "block_pluto_l.png",
     "skill_desc": [
@@ -79,7 +79,7 @@ const tsumData = [
   },
   {
     "id": 7,
-    "name_en": "name_chip",
+    "name_en": "Chip",
     "name": "奇奇",
     "image": "block_chip_l.png",
     "skill_desc": [
@@ -92,7 +92,7 @@ const tsumData = [
   },
   {
     "id": 8,
-    "name_en": "name_dale",
+    "name_en": "Dale",
     "name": "蒂蒂",
     "image": "block_dale_l.png",
     "skill_desc": [
@@ -105,7 +105,7 @@ const tsumData = [
   },
   {
     "id": 9,
-    "name_en": "name_pooh",
+    "name_en": "Pooh",
     "name": "小熊維尼",
     "image": "block_pooh_l.png",
     "skill_desc": [
@@ -118,7 +118,7 @@ const tsumData = [
   },
   {
     "id": 10,
-    "name_en": "name_piglet",
+    "name_en": "Piglet",
     "name": "小豬",
     "image": "block_piglet_l.png",
     "skill_desc": [
@@ -131,7 +131,7 @@ const tsumData = [
   },
   {
     "id": 11,
-    "name_en": "name_tigger",
+    "name_en": "Tigger",
     "name": "跳跳虎",
     "image": "block_tigger_l.png",
     "skill_desc": [
@@ -144,7 +144,7 @@ const tsumData = [
   },
   {
     "id": 12,
-    "name_en": "name_eeyore",
+    "name_en": "Eeyore",
     "name": "屹耳",
     "image": "block_eeyore_l.png",
     "skill_desc": [
@@ -157,7 +157,7 @@ const tsumData = [
   },
   {
     "id": 13,
-    "name_en": "name_stitch",
+    "name_en": "Stitch",
     "name": "史迪奇",
     "image": "block_stitch_l.png",
     "skill_desc": [
@@ -175,7 +175,7 @@ const tsumData = [
   },
   {
     "id": 14,
-    "name_en": "name_scrump",
+    "name_en": "Scrump",
     "name": "醜丫頭",
     "image": "block_scramp_l.png",
     "skill_desc": [
@@ -193,7 +193,7 @@ const tsumData = [
   },
   {
     "id": 15,
-    "name_en": "name_marie",
+    "name_en": "Marie",
     "name": "瑪麗貓",
     "image": "block_marie_l.png",
     "skill_desc": [
@@ -211,7 +211,7 @@ const tsumData = [
   },
   {
     "id": 16,
-    "name_en": "name_lady",
+    "name_en": "Lady",
     "name": "麗滴",
     "image": "block_lady_l.png",
     "skill_desc": [
@@ -229,7 +229,7 @@ const tsumData = [
   },
   {
     "id": 17,
-    "name_en": "name_perry",
+    "name_en": "Perry",
     "name": "泰瑞",
     "image": "block_perry_l.png",
     "skill_desc": [
@@ -245,7 +245,7 @@ const tsumData = [
   },
   {
     "id": 18,
-    "name_en": "name_woody",
+    "name_en": "Woody",
     "name": "胡迪",
     "image": "block_woody_l.png",
     "skill_desc": [
@@ -263,7 +263,7 @@ const tsumData = [
   },
   {
     "id": 19,
-    "name_en": "name_buzz",
+    "name_en": "Buzz Lightyear",
     "name": "巴斯光年",
     "image": "block_buzz_l.png",
     "skill_desc": [
@@ -281,7 +281,7 @@ const tsumData = [
   },
   {
     "id": 20,
-    "name_en": "name_littlegreenmen",
+    "name_en": "Alien",
     "name": "外星人",
     "image": "block_littlegreenmen_l.png",
     "skill_desc": [
@@ -294,7 +294,7 @@ const tsumData = [
   },
   {
     "id": 21,
-    "name_en": "name_mike",
+    "name_en": "Mike",
     "name": "大眼仔",
     "image": "block_mike_l.png",
     "skill_desc": [
@@ -312,7 +312,7 @@ const tsumData = [
   },
   {
     "id": 22,
-    "name_en": "name_sulley",
+    "name_en": "Sulley",
     "name": "毛怪",
     "image": "block_sulley_l.png",
     "skill_desc": [
@@ -330,7 +330,7 @@ const tsumData = [
   },
   {
     "id": 23,
-    "name_en": "name_jack",
+    "name_en": "Jack Skellington",
     "name": "傑克",
     "image": "block_jack_l.png",
     "skill_desc": [
@@ -346,7 +346,7 @@ const tsumData = [
   },
   {
     "id": 24,
-    "name_en": "name_zero",
+    "name_en": "Zero",
     "name": "零零",
     "image": "block_zero_l.png",
     "skill_desc": [
@@ -362,7 +362,7 @@ const tsumData = [
   },
   {
     "id": 25,
-    "name_en": "name_dumbo",
+    "name_en": "Dumbo",
     "name": "小飛象",
     "image": "block_dumbo_l.png",
     "skill_desc": [
@@ -380,7 +380,7 @@ const tsumData = [
   },
   {
     "id": 26,
-    "name_en": "name_tink",
+    "name_en": "Tinker Bell",
     "name": "小叮噹",
     "image": "block_tinkerbell_l.png",
     "skill_desc": [
@@ -398,7 +398,7 @@ const tsumData = [
   },
   {
     "id": 27,
-    "name_en": "name_alice",
+    "name_en": "Alice",
     "name": "愛麗絲",
     "image": "block_alice_l.png",
     "skill_desc": [
@@ -416,7 +416,7 @@ const tsumData = [
   },
   {
     "id": 28,
-    "name_en": "name_whiterabbit",
+    "name_en": "White Rabbit",
     "name": "大白兔",
     "image": "block_whiterabbit_l.png",
     "skill_desc": [
@@ -434,7 +434,7 @@ const tsumData = [
   },
   {
     "id": 29,
-    "name_en": "name_cheshirecat",
+    "name_en": "Cheshire Cat",
     "name": "妙妙貓",
     "image": "block_cheshirecat_l.png",
     "skill_desc": [
@@ -452,7 +452,7 @@ const tsumData = [
   },
   {
     "id": 30,
-    "name_en": "name_youngoyster",
+    "name_en": "Little Oyster",
     "name": "小牡蠣",
     "image": "block_youngoyster_l.png",
     "skill_desc": [
@@ -470,7 +470,7 @@ const tsumData = [
   },
   {
     "id": 31,
-    "name_en": "name_olaf",
+    "name_en": "Olaf",
     "name": "雪寶",
     "image": "block_olaf_l.png",
     "skill_desc": [
@@ -488,7 +488,7 @@ const tsumData = [
   },
   {
     "id": 32,
-    "name_en": "name_bambi",
+    "name_en": "Bambi",
     "name": "小鹿斑比",
     "image": "block_bambi_l.png",
     "skill_desc": [
@@ -506,7 +506,7 @@ const tsumData = [
   },
   {
     "id": 33,
-    "name_en": "name_thumper",
+    "name_en": "Thumper",
     "name": "桑普",
     "image": "block_thumper_l.png",
     "skill_desc": [
@@ -524,7 +524,7 @@ const tsumData = [
   },
   {
     "id": 34,
-    "name_en": "name_missbunny",
+    "name_en": "Miss Bunny",
     "name": "小兔子",
     "image": "block_missbunny_l.png",
     "skill_desc": [
@@ -542,7 +542,7 @@ const tsumData = [
   },
   {
     "id": 35,
-    "name_en": "name_maleficent",
+    "name_en": "Maleficent",
     "name": "黑魔女",
     "image": "block_maleficent_l.png",
     "skill_desc": [
@@ -560,7 +560,7 @@ const tsumData = [
   },
   {
     "id": 36,
-    "name_en": "name_oswald",
+    "name_en": "Oswald",
     "name": "幸運兔奧斯華",
     "image": "block_oswald_l.png",
     "skill_desc": [
@@ -573,7 +573,7 @@ const tsumData = [
   },
   {
     "id": 37,
-    "name_en": "name_elsa",
+    "name_en": "Elsa",
     "name": "艾莎",
     "image": "block_elsa_l.png",
     "skill_desc": [
@@ -591,7 +591,7 @@ const tsumData = [
   },
   {
     "id": 38,
-    "name_en": "name_anna",
+    "name_en": "Anna",
     "name": "安娜",
     "image": "block_anna_l.png",
     "skill_desc": [
@@ -609,7 +609,7 @@ const tsumData = [
   },
   {
     "id": 39,
-    "name_en": "name_pooh_honey",
+    "name_en": "Bumblebee Pooh",
     "name": "大黃蜂維尼",
     "image": "block_hpooh_l.png",
     "skill_desc": [
@@ -622,7 +622,7 @@ const tsumData = [
   },
   {
     "id": 40,
-    "name_en": "name_robin",
+    "name_en": "Christopher Robin",
     "name": "羅賓",
     "image": "block_robin_l.png",
     "skill_desc": [
@@ -635,7 +635,7 @@ const tsumData = [
   },
   {
     "id": 41,
-    "name_en": "name_roo",
+    "name_en": "Roo",
     "name": "小荳",
     "image": "block_roo_l.png",
     "skill_desc": [
@@ -651,7 +651,7 @@ const tsumData = [
   },
   {
     "id": 42,
-    "name_en": "name_ariel",
+    "name_en": "Ariel",
     "name": "艾莉兒",
     "image": "block_ariel_l.png",
     "skill_desc": [
@@ -669,7 +669,7 @@ const tsumData = [
   },
   {
     "id": 43,
-    "name_en": "name_flounder",
+    "name_en": "Flounder",
     "name": "小比目魚",
     "image": "block_flounder_l.png",
     "skill_desc": [
@@ -687,7 +687,7 @@ const tsumData = [
   },
   {
     "id": 44,
-    "name_en": "name_sebastian",
+    "name_en": "Sebastian",
     "name": "賽巴斯丁",
     "image": "block_sebastian_l.png",
     "skill_desc": [
@@ -705,7 +705,7 @@ const tsumData = [
   },
   {
     "id": 45,
-    "name_en": "name_jack_xmas",
+    "name_en": "Holiday Jack",
     "name": "假日傑克",
     "image": "block_jackx_l.png",
     "skill_desc": [
@@ -717,7 +717,7 @@ const tsumData = [
   },
   {
     "id": 46,
-    "name_en": "name_sally_nbc",
+    "name_en": "Sally",
     "name": "莎莉",
     "image": "block_sallynbc_l.png",
     "skill_desc": [
@@ -733,7 +733,7 @@ const tsumData = [
   },
   {
     "id": 47,
-    "name_en": "name_mickey_pumpkin",
+    "name_en": "Pumpkin Mickey",
     "name": "南瓜米奇",
     "image": "block_mickeyh_l.png",
     "skill_desc": [
@@ -746,7 +746,7 @@ const tsumData = [
   },
   {
     "id": 48,
-    "name_en": "name_minnie_pumpkin",
+    "name_en": "Pumpkin Minnie",
     "name": "南瓜米妮",
     "image": "block_minnieh_l.png",
     "skill_desc": [
@@ -759,7 +759,7 @@ const tsumData = [
   },
   {
     "id": 49,
-    "name_en": "name_sven",
+    "name_en": "Sven",
     "name": "斯特",
     "image": "block_sven_l.png",
     "skill_desc": [
@@ -777,7 +777,7 @@ const tsumData = [
   },
   {
     "id": 50,
-    "name_en": "name_rapunzel",
+    "name_en": "Rapunzel",
     "name": "樂佩",
     "image": "block_rapunzel_l.png",
     "skill_desc": [
@@ -795,7 +795,7 @@ const tsumData = [
   },
   {
     "id": 51,
-    "name_en": "name_pascal",
+    "name_en": "Pascal",
     "name": "帕斯卡",
     "image": "block_pascal_l.png",
     "skill_desc": [
@@ -813,7 +813,7 @@ const tsumData = [
   },
   {
     "id": 52,
-    "name_en": "name_pete",
+    "name_en": "Pete",
     "name": "皮特",
     "image": "block_pete_l.png",
     "skill_desc": [
@@ -831,7 +831,7 @@ const tsumData = [
   },
   {
     "id": 53,
-    "name_en": "name_mickey_xmas",
+    "name_en": "Holiday Mickey",
     "name": "假日米奇",
     "image": "block_mickeyx_l.png",
     "skill_desc": [
@@ -845,7 +845,7 @@ const tsumData = [
   },
   {
     "id": 54,
-    "name_en": "name_minnie_xmas",
+    "name_en": "Holiday Minnie",
     "name": "假日米妮",
     "image": "block_minniex_l.png",
     "skill_desc": [
@@ -858,7 +858,7 @@ const tsumData = [
   },
   {
     "id": 55,
-    "name_en": "name_donald_xmas",
+    "name_en": "Holiday Donald",
     "name": "假日唐老鴨",
     "image": "block_donaldx_l.png",
     "skill_desc": [
@@ -872,7 +872,7 @@ const tsumData = [
   },
   {
     "id": 56,
-    "name_en": "name_daisy_xmas",
+    "name_en": "Holiday Daisy",
     "name": "假日黛絲",
     "image": "block_daisyx_l.png",
     "skill_desc": [
@@ -886,7 +886,7 @@ const tsumData = [
   },
   {
     "id": 57,
-    "name_en": "name_goofy_xmas",
+    "name_en": "Holiday Goofy",
     "name": "假日高飛",
     "image": "block_goofyx_l.png",
     "skill_desc": [
@@ -900,7 +900,7 @@ const tsumData = [
   },
   {
     "id": 58,
-    "name_en": "name_pluto_xmas",
+    "name_en": "Holiday Pluto",
     "name": "假日布魯托",
     "image": "block_plutox_l.png",
     "skill_desc": [
@@ -913,7 +913,7 @@ const tsumData = [
   },
   {
     "id": 59,
-    "name_en": "name_baymax",
+    "name_en": "Baymax",
     "name": "杯麵",
     "image": "block_baymax_l.png",
     "skill_desc": [
@@ -931,7 +931,7 @@ const tsumData = [
   },
   {
     "id": 60,
-    "name_en": "name_jessie",
+    "name_en": "Jessie",
     "name": "翠絲",
     "image": "block_jessie_l.png",
     "skill_desc": [
@@ -949,7 +949,7 @@ const tsumData = [
   },
   {
     "id": 61,
-    "name_en": "name_lotso",
+    "name_en": "Lotso",
     "name": "熊抱哥",
     "image": "block_lotso_l.png",
     "skill_desc": [
@@ -967,7 +967,7 @@ const tsumData = [
   },
   {
     "id": 62,
-    "name_en": "name_mickey_valentine",
+    "name_en": "Valentine Mickey",
     "name": "情人米奇(未上線)",
     "image": "block_mickeyv_l.png",
     "skill_desc": [],
@@ -975,7 +975,7 @@ const tsumData = [
   },
   {
     "id": 63,
-    "name_en": "name_minnie_valentine",
+    "name_en": "Valentine Minnie",
     "name": "情人米妮",
     "image": "block_minniev_l.png",
     "skill_desc": [
@@ -989,7 +989,7 @@ const tsumData = [
   },
   {
     "id": 64,
-    "name_en": "name_donald_valentine",
+    "name_en": "Valentine Donald",
     "name": "情人唐老鴨(未上線)",
     "image": "block_donaldv_l.png",
     "skill_desc": [],
@@ -997,7 +997,7 @@ const tsumData = [
   },
   {
     "id": 65,
-    "name_en": "name_daisy_valentine",
+    "name_en": "Valentine Daisy",
     "name": "情人黛絲",
     "image": "block_daisyv_l.png",
     "skill_desc": [
@@ -1010,7 +1010,7 @@ const tsumData = [
   },
   {
     "id": 66,
-    "name_en": "name_mickey_sorcerer",
+    "name_en": "Sorcerer Mickey",
     "name": "魔法師米奇",
     "image": "block_mickeys_l.png",
     "skill_desc": [
@@ -1028,7 +1028,7 @@ const tsumData = [
   },
   {
     "id": 67,
-    "name_en": "name_belle",
+    "name_en": "Belle",
     "name": "貝兒",
     "image": "block_belle_l.png",
     "skill_desc": [
@@ -1046,7 +1046,7 @@ const tsumData = [
   },
   {
     "id": 68,
-    "name_en": "name_beast",
+    "name_en": "Beast",
     "name": "野獸",
     "image": "block_beast_l.png",
     "skill_desc": [
@@ -1064,7 +1064,7 @@ const tsumData = [
   },
   {
     "id": 69,
-    "name_en": "name_pooh_rabbit",
+    "name_en": "Bunny Pooh",
     "name": "兔子維尼",
     "image": "block_poohr_l.png",
     "skill_desc": [
@@ -1077,7 +1077,7 @@ const tsumData = [
   },
   {
     "id": 70,
-    "name_en": "name_tigger_rabbit",
+    "name_en": "Bunny Tigger",
     "name": "兔子跳跳虎",
     "image": "block_tiggerr_l.png",
     "skill_desc": [
@@ -1090,7 +1090,7 @@ const tsumData = [
   },
   {
     "id": 71,
-    "name_en": "name_yellow_rabbit",
+    "name_en": "Rabbit",
     "name": "瑞比",
     "image": "block_rabbit_l.png",
     "skill_desc": [
@@ -1103,7 +1103,7 @@ const tsumData = [
   },
   {
     "id": 72,
-    "name_en": "name_elsa_fever",
+    "name_en": "Surprise Elsa",
     "name": "驚喜艾莎",
     "image": "block_elsaf_l.png",
     "skill_desc": [
@@ -1121,7 +1121,7 @@ const tsumData = [
   },
   {
     "id": 73,
-    "name_en": "name_anna_fever",
+    "name_en": "Birthday Anna",
     "name": "生日安娜",
     "image": "block_annaf_l.png",
     "skill_desc": [
@@ -1139,7 +1139,7 @@ const tsumData = [
   },
   {
     "id": 74,
-    "name_en": "name_angel",
+    "name_en": "Angel",
     "name": "安琪",
     "image": "block_angel_l.png",
     "skill_desc": [
@@ -1157,7 +1157,7 @@ const tsumData = [
   },
   {
     "id": 75,
-    "name_en": "name_stitch_hawaiian",
+    "name_en": "Hawaiian Stitch",
     "name": "夏威夷史迪奇",
     "image": "block_stitchf_l.png",
     "skill_desc": [
@@ -1173,7 +1173,7 @@ const tsumData = [
   },
   {
     "id": 76,
-    "name_en": "name_lilo",
+    "name_en": "Lilo",
     "name": "莉蘿",
     "image": "block_lilo_l.png",
     "skill_desc": [
@@ -1186,7 +1186,7 @@ const tsumData = [
   },
   {
     "id": 77,
-    "name_en": "name_mcqueen",
+    "name_en": "Lightning McQueen",
     "name": "閃電麥坤",
     "image": "block_mcqueen_l.png",
     "skill_desc": [
@@ -1204,7 +1204,7 @@ const tsumData = [
   },
   {
     "id": 78,
-    "name_en": "name_mater",
+    "name_en": "Mater",
     "name": "拖線",
     "image": "block_mater_l.png",
     "skill_desc": [
@@ -1222,7 +1222,7 @@ const tsumData = [
   },
   {
     "id": 79,
-    "name_en": "name_rex",
+    "name_en": "Rex",
     "name": "抱抱龍",
     "image": "block_rex_l.png",
     "skill_desc": [
@@ -1240,7 +1240,7 @@ const tsumData = [
   },
   {
     "id": 80,
-    "name_en": "name_randall",
+    "name_en": "Randall",
     "name": "藍道",
     "image": "block_randall_l.png",
     "skill_desc": [
@@ -1258,7 +1258,7 @@ const tsumData = [
   },
   {
     "id": 81,
-    "name_en": "name_aladdin",
+    "name_en": "Aladdin",
     "name": "阿拉丁",
     "image": "block_aladdin_l.png",
     "skill_desc": [
@@ -1276,7 +1276,7 @@ const tsumData = [
   },
   {
     "id": 82,
-    "name_en": "name_jasmine",
+    "name_en": "Jasmine",
     "name": "茉莉公主",
     "image": "block_jasmine_l.png",
     "skill_desc": [
@@ -1294,7 +1294,7 @@ const tsumData = [
   },
   {
     "id": 83,
-    "name_en": "name_pinocchio",
+    "name_en": "Pinocchio",
     "name": "小木偶",
     "image": "block_pinocchio_l.png",
     "skill_desc": [
@@ -1312,7 +1312,7 @@ const tsumData = [
   },
   {
     "id": 84,
-    "name_en": "name_jiminy",
+    "name_en": "Jiminy Cricket",
     "name": "蟋蟀吉明尼",
     "image": "block_jiminy_l.png",
     "skill_desc": [
@@ -1328,7 +1328,7 @@ const tsumData = [
   },
   {
     "id": 85,
-    "name_en": "name_nick",
+    "name_en": "Nick Wilde",
     "name": "尼克",
     "image": "block_nick_l.png",
     "skill_desc": [
@@ -1346,7 +1346,7 @@ const tsumData = [
   },
   {
     "id": 86,
-    "name_en": "name_judy",
+    "name_en": "Judy Hopps",
     "name": "茱蒂",
     "image": "block_judy_l.png",
     "skill_desc": [
@@ -1364,7 +1364,7 @@ const tsumData = [
   },
   {
     "id": 87,
-    "name_en": "name_finnick",
+    "name_en": "Finnick",
     "name": "飛仔",
     "image": "block_finnick_l.png",
     "skill_desc": [
@@ -1382,7 +1382,7 @@ const tsumData = [
   },
   {
     "id": 88,
-    "name_en": "name_maximillian",
+    "name_en": "Max",
     "name": "麥斯",
     "image": "block_max_l.png",
     "skill_desc": [
@@ -1398,7 +1398,7 @@ const tsumData = [
   },
   {
     "id": 89,
-    "name_en": "name_clarice",
+    "name_en": "Clarice",
     "name": "克莉絲",
     "image": "block_clarice_l.png",
     "skill_desc": [
@@ -1416,7 +1416,7 @@ const tsumData = [
   },
   {
     "id": 90,
-    "name_en": "name_luke",
+    "name_en": "Luke",
     "name": "路克",
     "image": "block_luke_l.png",
     "skill_desc": [
@@ -1432,7 +1432,7 @@ const tsumData = [
   },
   {
     "id": 91,
-    "name_en": "name_leia",
+    "name_en": "Princess Leia",
     "name": "莉亞公主",
     "image": "block_leia_l.png",
     "skill_desc": [
@@ -1448,7 +1448,7 @@ const tsumData = [
   },
   {
     "id": 92,
-    "name_en": "name_r2d2",
+    "name_en": "R2-D2",
     "name": "R2-D2",
     "image": "block_r2d2_l.png",
     "skill_desc": [
@@ -1464,7 +1464,7 @@ const tsumData = [
   },
   {
     "id": 93,
-    "name_en": "name_c3po",
+    "name_en": "C-3PO",
     "name": "C-3PO",
     "image": "block_c3po_l.png",
     "skill_desc": [
@@ -1480,7 +1480,7 @@ const tsumData = [
   },
   {
     "id": 94,
-    "name_en": "name_yoda",
+    "name_en": "Yoda",
     "name": "尤達",
     "image": "block_yoda_l.png",
     "skill_desc": [
@@ -1496,7 +1496,7 @@ const tsumData = [
   },
   {
     "id": 95,
-    "name_en": "name_darthvader",
+    "name_en": "Darth Vader",
     "name": "達斯維達",
     "image": "block_vader_l.png",
     "skill_desc": [
@@ -1512,7 +1512,7 @@ const tsumData = [
   },
   {
     "id": 96,
-    "name_en": "name_bb8",
+    "name_en": "BB-8",
     "name": "BB-8",
     "image": "block_bb8_l.png",
     "skill_desc": [
@@ -1528,7 +1528,7 @@ const tsumData = [
   },
   {
     "id": 97,
-    "name_en": "name_arlo",
+    "name_en": "Arlo",
     "name": "阿羅",
     "image": "block_arlo_l.png",
     "skill_desc": [
@@ -1544,7 +1544,7 @@ const tsumData = [
   },
   {
     "id": 98,
-    "name_en": "name_snowwhite",
+    "name_en": "Snow White",
     "name": "白雪公主",
     "image": "block_snowwhite_l.png",
     "skill_desc": [
@@ -1562,7 +1562,7 @@ const tsumData = [
   },
   {
     "id": 99,
-    "name_en": "name_rapunzel_bride",
+    "name_en": "Bride Rapunzel",
     "name": "婚紗樂佩",
     "image": "block_rapunzelb_l.png",
     "skill_desc": [
@@ -1578,7 +1578,7 @@ const tsumData = [
   },
   {
     "id": 100,
-    "name_en": "name_aurora",
+    "name_en": "Princess Aurora",
     "name": "愛洛公主",
     "image": "block_aurora_l.png",
     "skill_desc": [
@@ -1596,7 +1596,7 @@ const tsumData = [
   },
   {
     "id": 101,
-    "name_en": "name_ariel_romance",
+    "name_en": "Romance Ariel",
     "name": "浪漫艾莉兒",
     "image": "block_arielr_l.png",
     "skill_desc": [
@@ -1612,7 +1612,7 @@ const tsumData = [
   },
   {
     "id": 102,
-    "name_en": "name_triton",
+    "name_en": "King Triton",
     "name": "川頓國王",
     "image": "block_triton_l.png",
     "skill_desc": [
@@ -1630,7 +1630,7 @@ const tsumData = [
   },
   {
     "id": 103,
-    "name_en": "name_scuttle",
+    "name_en": "Skuttle",
     "name": "史考托",
     "image": "block_scuttle_l.png",
     "skill_desc": [
@@ -1643,7 +1643,7 @@ const tsumData = [
   },
   {
     "id": 104,
-    "name_en": "name_abu",
+    "name_en": "Abu",
     "name": "阿布",
     "image": "block_abu_l.png",
     "skill_desc": [
@@ -1659,7 +1659,7 @@ const tsumData = [
   },
   {
     "id": 105,
-    "name_en": "name_genie",
+    "name_en": "Genie",
     "name": "精靈",
     "image": "block_genie_l.png",
     "skill_desc": [
@@ -1677,7 +1677,7 @@ const tsumData = [
   },
   {
     "id": 106,
-    "name_en": "name_mickey_devil",
+    "name_en": "Horn Hat Mickey",
     "name": "角帽米奇",
     "image": "block_mickeyh2015_l.png",
     "skill_desc": [
@@ -1693,7 +1693,7 @@ const tsumData = [
   },
   {
     "id": 107,
-    "name_en": "name_minnie_cathat",
+    "name_en": "Cat Hat Minnie",
     "name": "貓帽米妮",
     "image": "block_minnieh2015_l.png",
     "skill_desc": [
@@ -1709,7 +1709,7 @@ const tsumData = [
   },
   {
     "id": 108,
-    "name_en": "name_chip_pumpkin",
+    "name_en": "Pumpkin Chip",
     "name": "南瓜奇奇",
     "image": "block_chiph2015_l.png",
     "skill_desc": [
@@ -1725,7 +1725,7 @@ const tsumData = [
   },
   {
     "id": 109,
-    "name_en": "name_dale_ghost",
+    "name_en": "Ghost Dale",
     "name": "小鬼蒂蒂",
     "image": "block_daleh2015_l.png",
     "skill_desc": [
@@ -1741,7 +1741,7 @@ const tsumData = [
   },
   {
     "id": 110,
-    "name_en": "name_pluto_bone",
+    "name_en": "Rattle Bones Pluto",
     "name": "骷髏布魯托",
     "image": "block_plutoh2015_l.png",
     "skill_desc": [
@@ -1754,7 +1754,7 @@ const tsumData = [
   },
   {
     "id": 111,
-    "name_en": "name_mickey_concert",
+    "name_en": "Conductor Mickey",
     "name": "指揮家米奇",
     "image": "block_mickeyc_l.png",
     "skill_desc": [
@@ -1773,7 +1773,7 @@ const tsumData = [
   },
   {
     "id": 112,
-    "name_en": "name_evilqueen",
+    "name_en": "Evil Queen",
     "name": "邪惡皇后",
     "image": "block_evilqueen_l.png",
     "skill_desc": [
@@ -1791,7 +1791,7 @@ const tsumData = [
   },
   {
     "id": 113,
-    "name_en": "name_maleficent_dragon",
+    "name_en": "Maleficent Dragon",
     "name": "黑魔女火龍",
     "image": "block_maleficentd_l.png",
     "skill_desc": [
@@ -1807,7 +1807,7 @@ const tsumData = [
   },
   {
     "id": 114,
-    "name_en": "name_ursula",
+    "name_en": "Ursula",
     "name": "烏蘇拉",
     "image": "block_ursula_l.png",
     "skill_desc": [
@@ -1825,7 +1825,7 @@ const tsumData = [
   },
   {
     "id": 115,
-    "name_en": "name_mickey_steamboat",
+    "name_en": "Steamboat Mickey",
     "name": "汽船米奇",
     "image": "block_mickeyb_l.png",
     "skill_desc": [
@@ -1843,7 +1843,7 @@ const tsumData = [
   },
   {
     "id": 116,
-    "name_en": "name_minnie_steamboat",
+    "name_en": "Steamboat Minnie",
     "name": "汽船米妮",
     "image": "block_minnieb_l.png",
     "skill_desc": [
@@ -1859,7 +1859,7 @@ const tsumData = [
   },
   {
     "id": 117,
-    "name_en": "name_pete_steamboat",
+    "name_en": "Steamboat Pete",
     "name": "汽船皮特",
     "image": "block_peteb_l.png",
     "skill_desc": [
@@ -1878,7 +1878,7 @@ const tsumData = [
   },
   {
     "id": 118,
-    "name_en": "name_cinderella",
+    "name_en": "Cinderella",
     "name": "仙度瑞拉",
     "image": "block_cinderella_l.png",
     "skill_desc": [
@@ -1896,7 +1896,7 @@ const tsumData = [
   },
   {
     "id": 119,
-    "name_en": "name_fairygodmother",
+    "name_en": "Fairy Godmother",
     "name": "仙女教母",
     "image": "block_fairygodmother_l.png",
     "skill_desc": [
@@ -1914,7 +1914,7 @@ const tsumData = [
   },
   {
     "id": 120,
-    "name_en": "name_charming",
+    "name_en": "Prince Charming",
     "name": "基特王子",
     "image": "block_charming_l.png",
     "skill_desc": [
@@ -1930,7 +1930,7 @@ const tsumData = [
   },
   {
     "id": 121,
-    "name_en": "name_simba",
+    "name_en": "Simba",
     "name": "辛巴",
     "image": "block_simba_l.png",
     "skill_desc": [
@@ -1948,7 +1948,7 @@ const tsumData = [
   },
   {
     "id": 122,
-    "name_en": "name_nala",
+    "name_en": "Nala",
     "name": "娜娜",
     "image": "block_nala_l.png",
     "skill_desc": [
@@ -1966,7 +1966,7 @@ const tsumData = [
   },
   {
     "id": 123,
-    "name_en": "name_scar",
+    "name_en": "Scar",
     "name": "刀疤",
     "image": "block_scar_l.png",
     "skill_desc": [
@@ -1984,7 +1984,7 @@ const tsumData = [
   },
   {
     "id": 124,
-    "name_en": "name_zazu",
+    "name_en": "Zazu",
     "name": "沙祖",
     "image": "block_zazu_l.png",
     "skill_desc": [
@@ -1997,7 +1997,7 @@ const tsumData = [
   },
   {
     "id": 125,
-    "name_en": "name_mowgli",
+    "name_en": "Mowgli",
     "name": "毛克利",
     "image": "block_mowgli_l.png",
     "skill_desc": [
@@ -2013,7 +2013,7 @@ const tsumData = [
   },
   {
     "id": 126,
-    "name_en": "name_alice_2",
+    "name_en": "Wonderland Alice",
     "name": "仙境愛麗絲",
     "image": "block_alice2_l.png",
     "skill_desc": [
@@ -2029,7 +2029,7 @@ const tsumData = [
   },
   {
     "id": 127,
-    "name_en": "name_queenofhearts",
+    "name_en": "Queen of Hearts",
     "name": "紅心皇后",
     "image": "block_queenofhearts_l.png",
     "skill_desc": [
@@ -2047,7 +2047,7 @@ const tsumData = [
   },
   {
     "id": 128,
-    "name_en": "name_madhatter",
+    "name_en": "Mad Hatter",
     "name": "瘋帽子",
     "image": "block_madhatter_l.png",
     "skill_desc": [
@@ -2065,7 +2065,7 @@ const tsumData = [
   },
   {
     "id": 129,
-    "name_en": "name_marchhare",
+    "name_en": "March Hare",
     "name": "三月兔",
     "image": "block_marchhare_l.png",
     "skill_desc": [
@@ -2078,7 +2078,7 @@ const tsumData = [
   },
   {
     "id": 130,
-    "name_en": "name_madhatter_johnny",
+    "name_en": "Theatrical Mad Hatter",
     "name": "瘋狂帽客 ",
     "image": "block_madhatterj_l.png",
     "skill_desc": [
@@ -2094,7 +2094,7 @@ const tsumData = [
   },
   {
     "id": 131,
-    "name_en": "name_luke_jedi",
+    "name_en": "Jedi Luke",
     "name": "絕地路克",
     "image": "block_lukej_l.png",
     "skill_desc": [
@@ -2110,7 +2110,7 @@ const tsumData = [
   },
   {
     "id": 132,
-    "name_en": "name_hansolo",
+    "name_en": "Han Solo",
     "name": "韓索羅",
     "image": "block_hansolo_l.png",
     "skill_desc": [
@@ -2126,7 +2126,7 @@ const tsumData = [
   },
   {
     "id": 133,
-    "name_en": "name_chewbacca",
+    "name_en": "Chewbacca",
     "name": "丘巴卡",
     "image": "block_chewbacca_l.png",
     "skill_desc": [
@@ -2142,7 +2142,7 @@ const tsumData = [
   },
   {
     "id": 134,
-    "name_en": "name_k2so",
+    "name_en": "K-2SO",
     "name": "K-2SO",
     "image": "block_k2so_l.png",
     "skill_desc": [
@@ -2158,7 +2158,7 @@ const tsumData = [
   },
   {
     "id": 135,
-    "name_en": "name_deathtrooper",
+    "name_en": "Death Trooper",
     "name": "死亡特種兵",
     "image": "block_deathtrooper_l.png",
     "skill_desc": [
@@ -2171,7 +2171,7 @@ const tsumData = [
   },
   {
     "id": 136,
-    "name_en": "name_stormtrooper",
+    "name_en": "Stormtrooper",
     "name": "帝國風暴兵",
     "image": "block_stormtrooper_l.png",
     "skill_desc": [
@@ -2187,7 +2187,7 @@ const tsumData = [
   },
   {
     "id": 137,
-    "name_en": "name_rey",
+    "name_en": "Rey",
     "name": "芮",
     "image": "block_rey_l.png",
     "skill_desc": [
@@ -2203,7 +2203,7 @@ const tsumData = [
   },
   {
     "id": 138,
-    "name_en": "name_kyloren",
+    "name_en": "Kylo Ren",
     "name": "凱羅忍",
     "image": "block_kyloren_l.png",
     "skill_desc": [
@@ -2219,7 +2219,7 @@ const tsumData = [
   },
   {
     "id": 139,
-    "name_en": "name_jacksparrow",
+    "name_en": "Jack Sparrow",
     "name": "史傑克船長",
     "image": "block_jacksparrow_l.png",
     "skill_desc": [
@@ -2235,7 +2235,7 @@ const tsumData = [
   },
   {
     "id": 140,
-    "name_en": "name_elizabethswann",
+    "name_en": "Elizabeth Swann",
     "name": "伊莉莎白",
     "image": "block_elizabethswann_l.png",
     "skill_desc": [
@@ -2251,7 +2251,7 @@ const tsumData = [
   },
   {
     "id": 141,
-    "name_en": "name_davyjones",
+    "name_en": "Davy Jones",
     "name": "深海閻王",
     "image": "block_davyjones_l.png",
     "skill_desc": [
@@ -2270,7 +2270,7 @@ const tsumData = [
   },
   {
     "id": 142,
-    "name_en": "name_mickey_parade",
+    "name_en": "Parade Mickey",
     "name": "遊行米奇",
     "image": "block_mickeyp_l.png",
     "skill_desc": [
@@ -2286,7 +2286,7 @@ const tsumData = [
   },
   {
     "id": 143,
-    "name_en": "name_tink_parade",
+    "name_en": "Parade Tinker Bell",
     "name": "遊行叮叮",
     "image": "block_tinkerbellp_l.png",
     "skill_desc": [
@@ -2302,7 +2302,7 @@ const tsumData = [
   },
   {
     "id": 144,
-    "name_en": "name_belle_romance",
+    "name_en": "Romance Belle",
     "name": "浪漫貝兒",
     "image": "block_bellel_l.png",
     "skill_desc": [
@@ -2318,7 +2318,7 @@ const tsumData = [
   },
   {
     "id": 145,
-    "name_en": "name_beast_romance",
+    "name_en": "Romance Beast",
     "name": "浪漫野獸",
     "image": "block_beastl_l.png",
     "skill_desc": [
@@ -2334,7 +2334,7 @@ const tsumData = [
   },
   {
     "id": 146,
-    "name_en": "name_gaston",
+    "name_en": "Gaston",
     "name": "加斯頓",
     "image": "block_gaston_l.png",
     "skill_desc": [
@@ -2352,7 +2352,7 @@ const tsumData = [
   },
   {
     "id": 147,
-    "name_en": "name_lumiere",
+    "name_en": "Lumiere",
     "name": "盧米亞",
     "image": "block_lumiere_l.png",
     "skill_desc": [
@@ -2370,7 +2370,7 @@ const tsumData = [
   },
   {
     "id": 148,
-    "name_en": "name_potts",
+    "name_en": "Mrs.Potts",
     "name": "茶煲太太",
     "image": "block_potts_l.png",
     "skill_desc": [
@@ -2383,7 +2383,7 @@ const tsumData = [
   },
   {
     "id": 149,
-    "name_en": "name_nemo",
+    "name_en": "Nemo",
     "name": "尼莫",
     "image": "block_nemo_l.png",
     "skill_desc": [
@@ -2401,7 +2401,7 @@ const tsumData = [
   },
   {
     "id": 150,
-    "name_en": "name_dory",
+    "name_en": "Dory",
     "name": "多莉",
     "image": "block_dory_l.png",
     "skill_desc": [
@@ -2419,7 +2419,7 @@ const tsumData = [
   },
   {
     "id": 151,
-    "name_en": "name_crush",
+    "name_en": "Crush",
     "name": "龜龜",
     "image": "block_crush_l.png",
     "skill_desc": [
@@ -2437,7 +2437,7 @@ const tsumData = [
   },
   {
     "id": 152,
-    "name_en": "name_moana",
+    "name_en": "Moana",
     "name": "莫娜",
     "image": "block_moana_l.png",
     "skill_desc": [
@@ -2455,7 +2455,7 @@ const tsumData = [
   },
   {
     "id": 153,
-    "name_en": "name_maui",
+    "name_en": "Maui",
     "name": "毛伊",
     "image": "block_maui_l.png",
     "skill_desc": [
@@ -2473,7 +2473,7 @@ const tsumData = [
   },
   {
     "id": 154,
-    "name_en": "name_elsa_cute",
+    "name_en": "Young Elsa",
     "name": "小艾莎",
     "image": "block_elsac_l.png",
     "skill_desc": [
@@ -2489,7 +2489,7 @@ const tsumData = [
   },
   {
     "id": 155,
-    "name_en": "name_anna_cute",
+    "name_en": "Young Anna",
     "name": "小安娜",
     "image": "block_annac_l.png",
     "skill_desc": [
@@ -2505,7 +2505,7 @@ const tsumData = [
   },
   {
     "id": 156,
-    "name_en": "name_olaf_summer",
+    "name_en": "Summer Olaf",
     "name": "夏日雪寶",
     "image": "block_olafs_l.png",
     "skill_desc": [
@@ -2521,7 +2521,7 @@ const tsumData = [
   },
   {
     "id": 157,
-    "name_en": "name_sora",
+    "name_en": "Sora",
     "name": "索拉",
     "image": "block_sora_l.png",
     "skill_desc": [
@@ -2537,7 +2537,7 @@ const tsumData = [
   },
   {
     "id": 158,
-    "name_en": "name_riku",
+    "name_en": "Riku",
     "name": "里克",
     "image": "block_riku_l.png",
     "skill_desc": [
@@ -2553,7 +2553,7 @@ const tsumData = [
   },
   {
     "id": 159,
-    "name_en": "name_cruella",
+    "name_en": "Cruella De Vil",
     "name": "庫伊拉",
     "image": "block_cruella_l.png",
     "skill_desc": [
@@ -2571,7 +2571,7 @@ const tsumData = [
   },
   {
     "id": 160,
-    "name_en": "name_captainhook",
+    "name_en": "Captain Hook",
     "name": "虎克船長",
     "image": "block_hook_l.png",
     "skill_desc": [
@@ -2589,7 +2589,7 @@ const tsumData = [
   },
   {
     "id": 161,
-    "name_en": "name_jafar",
+    "name_en": "Jafar",
     "name": "賈方",
     "image": "block_jafar_l.png",
     "skill_desc": [
@@ -2607,7 +2607,7 @@ const tsumData = [
   },
   {
     "id": 162,
-    "name_en": "name_scrooge",
+    "name_en": "Scrooge",
     "name": "史高治",
     "image": "block_scrooge_l.png",
     "skill_desc": [
@@ -2623,7 +2623,7 @@ const tsumData = [
   },
   {
     "id": 163,
-    "name_en": "name_goofy_joker",
+    "name_en": "Jester Goofy",
     "name": "小丑高飛",
     "image": "block_goofyh2016_l.png",
     "skill_desc": [
@@ -2636,7 +2636,7 @@ const tsumData = [
   },
   {
     "id": 164,
-    "name_en": "name_ramirez",
+    "name_en": "Cruz Ramirez",
     "name": "克魯茲拉米雷茲",
     "image": "block_ramirez_l.png",
     "skill_desc": [
@@ -2654,7 +2654,7 @@ const tsumData = [
   },
   {
     "id": 165,
-    "name_en": "name_mike_student",
+    "name_en": "MU Mike",
     "name": "大學生大眼仔",
     "image": "block_mikeu_l.png",
     "skill_desc": [
@@ -2670,7 +2670,7 @@ const tsumData = [
   },
   {
     "id": 166,
-    "name_en": "name_walle",
+    "name_en": "Wall-E",
     "name": "瓦力",
     "image": "block_walle_l.png",
     "skill_desc": [
@@ -2686,7 +2686,7 @@ const tsumData = [
   },
   {
     "id": 167,
-    "name_en": "name_carl",
+    "name_en": "Carl",
     "name": "卡爾",
     "image": "block_carl_l.png",
     "skill_desc": [
@@ -2702,7 +2702,7 @@ const tsumData = [
   },
   {
     "id": 168,
-    "name_en": "name_littlegreenmen_2",
+    "name_en": "Jet Pack Alien",
     "name": "噴氣包外星人",
     "image": "block_littlegreenmen2_l.png",
     "skill_desc": [
@@ -2718,7 +2718,7 @@ const tsumData = [
   },
   {
     "id": 169,
-    "name_en": "name_hiro",
+    "name_en": "Hiro",
     "name": "阿廣",
     "image": "block_hiro_l.png",
     "skill_desc": [
@@ -2734,7 +2734,7 @@ const tsumData = [
   },
   {
     "id": 170,
-    "name_en": "name_baymax_2",
+    "name_en": "Baymax 2.0",
     "name": "杯麵 2.0",
     "image": "block_baymax2_l.png",
     "skill_desc": [
@@ -2750,7 +2750,7 @@ const tsumData = [
   },
   {
     "id": 171,
-    "name_en": "name_peterpan",
+    "name_en": "Peter Pan",
     "name": "彼得潘",
     "image": "block_peterpan_l.png",
     "skill_desc": [
@@ -2766,7 +2766,7 @@ const tsumData = [
   },
   {
     "id": 172,
-    "name_en": "name_tramp",
+    "name_en": "Tramp",
     "name": "流氓",
     "image": "block_tramp_l.png",
     "skill_desc": [
@@ -2784,7 +2784,7 @@ const tsumData = [
   },
   {
     "id": 173,
-    "name_en": "name_bluefairy",
+    "name_en": "Blue Fairy",
     "name": "藍仙女",
     "image": "block_bluefairy_l.png",
     "skill_desc": [
@@ -2802,7 +2802,7 @@ const tsumData = [
   },
   {
     "id": 174,
-    "name_en": "name_patch",
+    "name_en": "Patch",
     "name": "小斑",
     "image": "block_patch_l.png",
     "skill_desc": [
@@ -2820,7 +2820,7 @@ const tsumData = [
   },
   {
     "id": 175,
-    "name_en": "name_timothy",
+    "name_en": "Timothy",
     "name": "提摩太",
     "image": "block_timothy_l.png",
     "skill_desc": [
@@ -2838,7 +2838,7 @@ const tsumData = [
   },
   {
     "id": 176,
-    "name_en": "name_mickey_musketeers",
+    "name_en": "Musketeer Mickey",
     "name": "米奇劍客",
     "image": "block_mickeyt_l.png",
     "skill_desc": [
@@ -2857,7 +2857,7 @@ const tsumData = [
   },
   {
     "id": 177,
-    "name_en": "name_donald_musketeers",
+    "name_en": "Musketeer Donald",
     "name": "唐老鴨劍客",
     "image": "block_donaldt_l.png",
     "skill_desc": [
@@ -2873,7 +2873,7 @@ const tsumData = [
   },
   {
     "id": 178,
-    "name_en": "name_goofy_musketeers",
+    "name_en": "Musketeer Goofy",
     "name": "高飛劍客",
     "image": "block_goofyt_l.png",
     "skill_desc": [
@@ -2889,7 +2889,7 @@ const tsumData = [
   },
   {
     "id": 179,
-    "name_en": "name_minnie_princess",
+    "name_en": "Princess Minnie",
     "name": "公主米妮",
     "image": "block_minniet_l.png",
     "skill_desc": [
@@ -2902,7 +2902,7 @@ const tsumData = [
   },
   {
     "id": 180,
-    "name_en": "name_donald_ninja",
+    "name_en": "Ninja Donald",
     "name": "忍者唐老鴨",
     "image": "block_donaldn_l.png",
     "skill_desc": [
@@ -2918,7 +2918,7 @@ const tsumData = [
   },
   {
     "id": 181,
-    "name_en": "name_daisy_princess",
+    "name_en": "Kimono Daisy",
     "name": "和服黛絲",
     "image": "block_daisyn_l.png",
     "skill_desc": [
@@ -2934,7 +2934,7 @@ const tsumData = [
   },
   {
     "id": 182,
-    "name_en": "name_snowwhite_happy",
+    "name_en": "Happy Snow White",
     "name": "快樂白雪公主",
     "image": "block_snowwhite2_l.png",
     "skill_desc": [
@@ -2950,7 +2950,7 @@ const tsumData = [
   },
   {
     "id": 183,
-    "name_en": "name_prince",
+    "name_en": "Prince",
     "name": "王子",
     "image": "block_prince_l.png",
     "skill_desc": [
@@ -2966,7 +2966,7 @@ const tsumData = [
   },
   {
     "id": 184,
-    "name_en": "name_mickey_pirates",
+    "name_en": "Pirate Mickey",
     "name": "海盜米奇",
     "image": "block_mickeypi_l.png",
     "skill_desc": [
@@ -2985,7 +2985,7 @@ const tsumData = [
   },
   {
     "id": 185,
-    "name_en": "name_stitch_pirates",
+    "name_en": "Pirate Stitch",
     "name": "海盜史迪奇",
     "image": "block_stitchpi_l.png",
     "skill_desc": [
@@ -3001,7 +3001,7 @@ const tsumData = [
   },
   {
     "id": 186,
-    "name_en": "name_clarice_pirates",
+    "name_en": "Pirate Clarice",
     "name": "海盜克莉絲",
     "image": "block_claricepi_l.png",
     "skill_desc": [
@@ -3017,7 +3017,7 @@ const tsumData = [
   },
   {
     "id": 187,
-    "name_en": "name_jacksparrow_young",
+    "name_en": "Young Jack Sparrow",
     "name": "年輕史傑克",
     "image": "block_jacksparrow2_l.png",
     "skill_desc": [
@@ -3033,7 +3033,7 @@ const tsumData = [
   },
   {
     "id": 188,
-    "name_en": "name_salazar",
+    "name_en": "Salazar",
     "name": "薩拉查",
     "image": "block_salazar_l.png",
     "skill_desc": [
@@ -3051,7 +3051,7 @@ const tsumData = [
   },
   {
     "id": 189,
-    "name_en": "name_rapunzel2",
+    "name_en": "Happy Rapunzel",
     "name": "快樂樂佩",
     "image": "block_rapunzel2_l.png",
     "skill_desc": [
@@ -3067,7 +3067,7 @@ const tsumData = [
   },
   {
     "id": 190,
-    "name_en": "name_flynn",
+    "name_en": "Flynn Rider",
     "name": "費林雷德",
     "image": "block_flynn_l.png",
     "skill_desc": [
@@ -3085,7 +3085,7 @@ const tsumData = [
   },
   {
     "id": 191,
-    "name_en": "name_maximus",
+    "name_en": "Maximus",
     "name": "麥西瑪斯",
     "image": "block_maximus_l.png",
     "skill_desc": [
@@ -3103,7 +3103,7 @@ const tsumData = [
   },
   {
     "id": 192,
-    "name_en": "name_mulan",
+    "name_en": "Mulan",
     "name": "木蘭",
     "image": "block_mulan_l.png",
     "skill_desc": [
@@ -3121,7 +3121,7 @@ const tsumData = [
   },
   {
     "id": 193,
-    "name_en": "name_pocahontas",
+    "name_en": "Pocahontas",
     "name": "寶嘉康蒂",
     "image": "block_pocahontas_l.png",
     "skill_desc": [
@@ -3139,7 +3139,7 @@ const tsumData = [
   },
   {
     "id": 194,
-    "name_en": "name_olaf_holiday",
+    "name_en": "Holiday Olaf",
     "name": "假期雪寶",
     "image": "block_olafx_l.png",
     "skill_desc": [
@@ -3157,7 +3157,7 @@ const tsumData = [
   },
   {
     "id": 195,
-    "name_en": "name_woody_2",
+    "name_en": "Sheriff Woody",
     "name": "警長胡迪",
     "image": "block_woody2_l.png",
     "skill_desc": [
@@ -3173,7 +3173,7 @@ const tsumData = [
   },
   {
     "id": 196,
-    "name_en": "name_buzz_2",
+    "name_en": "Space Ranger Buzz",
     "name": "太空騎警巴斯",
     "image": "block_buzz2_l.png",
     "skill_desc": [
@@ -3189,7 +3189,7 @@ const tsumData = [
   },
   {
     "id": 197,
-    "name_en": "name_zurg",
+    "name_en": "Zurg",
     "name": "札克",
     "image": "block_zurg_l.png",
     "skill_desc": [
@@ -3205,7 +3205,7 @@ const tsumData = [
   },
   {
     "id": 198,
-    "name_en": "name_miguel",
+    "name_en": "Miguel",
     "name": "米高",
     "image": "block_miguel_l.png",
     "skill_desc": [
@@ -3221,7 +3221,7 @@ const tsumData = [
   },
   {
     "id": 199,
-    "name_en": "name_donald_caballero",
+    "name_en": "Caballero Donald",
     "name": "唐老鴨騎士",
     "image": "block_donaldc_l.png",
     "skill_desc": [
@@ -3234,7 +3234,7 @@ const tsumData = [
   },
   {
     "id": 200,
-    "name_en": "name_jose",
+    "name_en": "José Carioca",
     "name": "荷西騎士",
     "image": "block_jose_l.png",
     "skill_desc": [
@@ -3250,7 +3250,7 @@ const tsumData = [
   },
   {
     "id": 201,
-    "name_en": "name_panchito",
+    "name_en": "Panchito Pistoles",
     "name": "潘奇托騎士",
     "image": "block_panchito_l.png",
     "skill_desc": [
@@ -3266,7 +3266,7 @@ const tsumData = [
   },
   {
     "id": 202,
-    "name_en": "name_pooh_sunny",
+    "name_en": "Happy Pooh",
     "name": "快樂維尼",
     "image": "block_pooh2_l.png",
     "skill_desc": [
@@ -3282,7 +3282,7 @@ const tsumData = [
   },
   {
     "id": 203,
-    "name_en": "name_lumpy",
+    "name_en": "Lumpy",
     "name": "嘟嘟",
     "image": "block_lumpy_l.png",
     "skill_desc": [
@@ -3298,7 +3298,7 @@ const tsumData = [
   },
   {
     "id": 204,
-    "name_en": "name_owl",
+    "name_en": "Owl",
     "name": "貓頭鷹",
     "image": "block_owl_l.png",
     "skill_desc": [
@@ -3314,7 +3314,7 @@ const tsumData = [
   },
   {
     "id": 205,
-    "name_en": "name_piglet_sunney",
+    "name_en": "Shivering Piglet",
     "name": "抖抖小豬",
     "image": "block_piglet2_l.png",
     "skill_desc": [
@@ -3330,7 +3330,7 @@ const tsumData = [
   },
   {
     "id": 206,
-    "name_en": "name_mickey_fantasmic",
+    "name_en": "Fantasmic Mickey",
     "name": "幻想米奇",
     "image": "block_mickeyf_l.png",
     "skill_desc": [
@@ -3346,7 +3346,7 @@ const tsumData = [
   },
   {
     "id": 207,
-    "name_en": "name_hercules",
+    "name_en": "Hercules",
     "name": "海格力斯",
     "image": "block_hercules_l.png",
     "skill_desc": [
@@ -3364,7 +3364,7 @@ const tsumData = [
   },
   {
     "id": 208,
-    "name_en": "name_hades",
+    "name_en": "Hades",
     "name": "凱帝斯",
     "image": "block_hades_l.png",
     "skill_desc": [
@@ -3382,7 +3382,7 @@ const tsumData = [
   },
   {
     "id": 209,
-    "name_en": "name_megara",
+    "name_en": "Meg",
     "name": "蜜兒",
     "image": "block_megara_l.png",
     "skill_desc": [
@@ -3398,7 +3398,7 @@ const tsumData = [
   },
   {
     "id": 210,
-    "name_en": "name_phillip2",
+    "name_en": "Prince Phillip",
     "name": "菲利浦王子",
     "image": "block_phillip2_l.png",
     "skill_desc": [
@@ -3416,7 +3416,7 @@ const tsumData = [
   },
   {
     "id": 211,
-    "name_en": "name_sora_halloween_town",
+    "name_en": "Halloween Sora",
     "name": "萬聖節索拉",
     "image": "block_soraht_l.png",
     "skill_desc": [
@@ -3432,7 +3432,7 @@ const tsumData = [
   },
   {
     "id": 212,
-    "name_en": "name_donald_halloween_town",
+    "name_en": "Mummy Donald",
     "name": "木乃伊唐老鴨",
     "image": "block_donaldht_l.png",
     "skill_desc": [
@@ -3448,7 +3448,7 @@ const tsumData = [
   },
   {
     "id": 213,
-    "name_en": "name_goofy_halloween_town",
+    "name_en": "Bolt-head Goofy",
     "name": "閃電高飛",
     "image": "block_goofyht_l.png",
     "skill_desc": [
@@ -3464,7 +3464,7 @@ const tsumData = [
   },
   {
     "id": 214,
-    "name_en": "name_pumpkinking",
+    "name_en": "Pumpkin King",
     "name": "南瓜王",
     "image": "block_pumpkinking_l.png",
     "skill_desc": [
@@ -3480,7 +3480,7 @@ const tsumData = [
   },
   {
     "id": 215,
-    "name_en": "name_boogie",
+    "name_en": "Oogie Boogie",
     "name": "布袋怪",
     "image": "block_boogie_l.png",
     "skill_desc": [
@@ -3496,7 +3496,7 @@ const tsumData = [
   },
   {
     "id": 216,
-    "name_en": "name_minnieh2017",
+    "name_en": "Bat Hat Minnie",
     "name": "蝙蝠帽米妮",
     "image": "block_minnieh2017_l.png",
     "skill_desc": [
@@ -3509,7 +3509,7 @@ const tsumData = [
   },
   {
     "id": 217,
-    "name_en": "name_belle_winter",
+    "name_en": "Winter Belle",
     "name": "冬季貝兒",
     "image": "block_bellew_l.png",
     "skill_desc": [
@@ -3527,7 +3527,7 @@ const tsumData = [
   },
   {
     "id": 218,
-    "name_en": "name_cinderella_winter",
+    "name_en": "Winter Cinderella",
     "name": "冬季仙度瑞拉",
     "image": "block_cinderellaw_l.png",
     "skill_desc": [
@@ -3543,7 +3543,7 @@ const tsumData = [
   },
   {
     "id": 219,
-    "name_en": "name_aurora_winter",
+    "name_en": "Winter Aurora",
     "name": "冬季愛洛公主",
     "image": "block_auroraw_l.png",
     "skill_desc": [
@@ -3559,7 +3559,7 @@ const tsumData = [
   },
   {
     "id": 220,
-    "name_en": "name_ralph",
+    "name_en": "Ralph",
     "name": "破壞王",
     "image": "block_ralph_l.png",
     "skill_desc": [
@@ -3575,7 +3575,7 @@ const tsumData = [
   },
   {
     "id": 221,
-    "name_en": "name_baymax_holiday",
+    "name_en": "Holiday Baymax",
     "name": "假期杯麵",
     "image": "block_baymaxx_l.png",
     "skill_desc": [
@@ -3591,7 +3591,7 @@ const tsumData = [
   },
   {
     "id": 222,
-    "name_en": "name_marie_holiday",
+    "name_en": "Holiday Marie",
     "name": "假期瑪麗貓",
     "image": "block_mariex_l.png",
     "skill_desc": [
@@ -3609,7 +3609,7 @@ const tsumData = [
   },
   {
     "id": 223,
-    "name_en": "name_donald_holiday",
+    "name_en": "Holiday Gift Donald",
     "name": "禮物唐老鴨",
     "image": "block_donaldx2_l.png",
     "skill_desc": [
@@ -3627,7 +3627,7 @@ const tsumData = [
   },
   {
     "id": 224,
-    "name_en": "name_stitch_2",
+    "name_en": "Experiment 626",
     "name": "實驗品626",
     "image": "block_stitch2_l.png",
     "skill_desc": [
@@ -3643,7 +3643,7 @@ const tsumData = [
   },
   {
     "id": 225,
-    "name_en": "name_jumba",
+    "name_en": "Dr. Jumba Jookiba",
     "name": "強霸博士",
     "image": "block_jumba_l.png",
     "skill_desc": [
@@ -3659,7 +3659,7 @@ const tsumData = [
   },
   {
     "id": 226,
-    "name_en": "name_pleakley",
+    "name_en": "Pleakley",
     "name": "獨眼霹靂",
     "image": "block_pleakley_l.png",
     "skill_desc": [
@@ -3675,7 +3675,7 @@ const tsumData = [
   },
   {
     "id": 227,
-    "name_en": "name_gadget",
+    "name_en": "Gadget Hackwrench",
     "name": "阿潔",
     "image": "block_gadget_l.png",
     "skill_desc": [
@@ -3688,7 +3688,7 @@ const tsumData = [
   },
   {
     "id": 228,
-    "name_en": "name_aqua",
+    "name_en": "Aqua",
     "name": "阿奎雅",
     "image": "block_aqua_l.png",
     "skill_desc": [
@@ -3704,7 +3704,7 @@ const tsumData = [
   },
   {
     "id": 229,
-    "name_en": "name_kairi",
+    "name_en": "Kairi",
     "name": "凱莉",
     "image": "block_kairi_l.png",
     "skill_desc": [
@@ -3720,7 +3720,7 @@ const tsumData = [
   },
   {
     "id": 230,
-    "name_en": "name_cogsworth",
+    "name_en": "Cogsworth",
     "name": "葛士華",
     "image": "block_cogsworth_l.png",
     "skill_desc": [
@@ -3736,7 +3736,7 @@ const tsumData = [
   },
   {
     "id": 231,
-    "name_en": "name_jasmine_bride",
+    "name_en": "Bride Jasmine",
     "name": "新娘茉莉公主",
     "image": "block_jasmineb_l.png",
     "skill_desc": [
@@ -3752,7 +3752,7 @@ const tsumData = [
   },
   {
     "id": 232,
-    "name_en": "name_ariel_bride",
+    "name_en": "Bride Ariel",
     "name": "新娘艾莉兒",
     "image": "block_arielb_l.png",
     "skill_desc": [
@@ -3768,7 +3768,7 @@ const tsumData = [
   },
   {
     "id": 233,
-    "name_en": "name_esmeralda",
+    "name_en": "Esmeralda",
     "name": "愛斯梅達",
     "image": "block_esmeralda_l.png",
     "skill_desc": [
@@ -3784,7 +3784,7 @@ const tsumData = [
   },
   {
     "id": 234,
-    "name_en": "name_merida",
+    "name_en": "Merida",
     "name": "梅莉達",
     "image": "block_merida_l.png",
     "skill_desc": [
@@ -3800,7 +3800,7 @@ const tsumData = [
   },
   {
     "id": 235,
-    "name_en": "name_tiana",
+    "name_en": "Tiana",
     "name": "蒂安娜",
     "image": "block_tiana_l.png",
     "skill_desc": [
@@ -3816,7 +3816,7 @@ const tsumData = [
   },
   {
     "id": 236,
-    "name_en": "name_mrincredible",
+    "name_en": "Mr. Incredible",
     "name": "超能先生",
     "image": "block_mrincredible_l.png",
     "skill_desc": [
@@ -3832,7 +3832,7 @@ const tsumData = [
   },
   {
     "id": 237,
-    "name_en": "name_mrsincredible",
+    "name_en": "Mrs. Incredible",
     "name": "超能太太 ",
     "image": "block_mrsincredible_l.png",
     "skill_desc": [
@@ -3848,7 +3848,7 @@ const tsumData = [
   },
   {
     "id": 238,
-    "name_en": "name_jackjack",
+    "name_en": "Jack-Jack",
     "name": "巴小傑 ",
     "image": "block_jackjack_l.png",
     "skill_desc": [
@@ -3864,7 +3864,7 @@ const tsumData = [
   },
   {
     "id": 239,
-    "name_en": "name_missbunny_2",
+    "name_en": "Spring Miss Bunny",
     "name": "春天小兔子",
     "image": "block_missbunnys_l.png",
     "skill_desc": [
@@ -3880,7 +3880,7 @@ const tsumData = [
   },
   {
     "id": 240,
-    "name_en": "name_nick_2",
+    "name_en": "Officer Nick",
     "name": "胡尼克警員",
     "image": "block_nick2_l.png",
     "skill_desc": [
@@ -3896,7 +3896,7 @@ const tsumData = [
   },
   {
     "id": 241,
-    "name_en": "name_judy_2",
+    "name_en": "Officer Judy",
     "name": "哈茱蒂警員",
     "image": "block_judy2_l.png",
     "skill_desc": [
@@ -3912,7 +3912,7 @@ const tsumData = [
   },
   {
     "id": 242,
-    "name_en": "name_clawhauser",
+    "name_en": "Clawhauser",
     "name": "洪金豹",
     "image": "block_clawhauser_l.png",
     "skill_desc": [
@@ -3928,7 +3928,7 @@ const tsumData = [
   },
   {
     "id": 243,
-    "name_en": "name_flash",
+    "name_en": "Flash",
     "name": "快俠",
     "image": "block_flash_l.png",
     "skill_desc": [
@@ -3944,7 +3944,7 @@ const tsumData = [
   },
   {
     "id": 244,
-    "name_en": "name_mickey_king",
+    "name_en": "King Mickey",
     "name": "米奇國王",
     "image": "block_mickeyking_l.png",
     "skill_desc": [
@@ -3960,7 +3960,7 @@ const tsumData = [
   },
   {
     "id": 245,
-    "name_en": "name_sora_3",
+    "name_en": "KH3 Sora",
     "name": "王國之心3索拉",
     "image": "block_sora3_l.png",
     "skill_desc": [
@@ -3976,7 +3976,7 @@ const tsumData = [
   },
   {
     "id": 246,
-    "name_en": "name_ansem",
+    "name_en": "Ansem",
     "name": "安森",
     "image": "block_ansem_l.png",
     "skill_desc": [
@@ -3992,7 +3992,7 @@ const tsumData = [
   },
   {
     "id": 247,
-    "name_en": "name_xemnas",
+    "name_en": "Xemnas",
     "name": "傑姆那斯",
     "image": "block_xemnas_l.png",
     "skill_desc": [
@@ -4008,7 +4008,7 @@ const tsumData = [
   },
   {
     "id": 248,
-    "name_en": "name_shadow",
+    "name_en": "Shadow",
     "name": "暗影",
     "image": "block_shadow_l.png",
     "skill_desc": [
@@ -4021,7 +4021,7 @@ const tsumData = [
   },
   {
     "id": 249,
-    "name_en": "name_darthsidious",
+    "name_en": "Emperor Palpatine",
     "name": "白卜庭皇帝",
     "image": "block_sidious_l.png",
     "skill_desc": [
@@ -4037,7 +4037,7 @@ const tsumData = [
   },
   {
     "id": 250,
-    "name_en": "name_darthmaul",
+    "name_en": "Darth Maul",
     "name": "達斯魔",
     "image": "block_maul_l.png",
     "skill_desc": [
@@ -4053,7 +4053,7 @@ const tsumData = [
   },
   {
     "id": 251,
-    "name_en": "name_mike_happy",
+    "name_en": "Happy Mike",
     "name": "快樂大眼仔",
     "image": "block_mike2_l.png",
     "skill_desc": [
@@ -4069,7 +4069,7 @@ const tsumData = [
   },
   {
     "id": 252,
-    "name_en": "name_sulley_scarer",
+    "name_en": "Top Scarer Sulley",
     "name": "最強驚嚇專員毛怪",
     "image": "block_sulley2_l.png",
     "skill_desc": [
@@ -4085,7 +4085,7 @@ const tsumData = [
   },
   {
     "id": 253,
-    "name_en": "name_boo",
+    "name_en": "Boo",
     "name": "阿布",
     "image": "block_boo_l.png",
     "skill_desc": [
@@ -4103,7 +4103,7 @@ const tsumData = [
   },
   {
     "id": 254,
-    "name_en": "name_practicalpig",
+    "name_en": "Practical",
     "name": "求實兒",
     "image": "block_practicalpig_l.png",
     "skill_desc": [
@@ -4119,7 +4119,7 @@ const tsumData = [
   },
   {
     "id": 255,
-    "name_en": "name_bigbadwolf",
+    "name_en": "Big Bad Wolf",
     "name": "大壞狼",
     "image": "block_bigbadwolf_l.png",
     "skill_desc": [
@@ -4135,7 +4135,7 @@ const tsumData = [
   },
   {
     "id": 256,
-    "name_en": "name_chip_idol",
+    "name_en": "Dancing Chip",
     "name": "跳舞奇奇",
     "image": "block_chipj_l.png",
     "skill_desc": [
@@ -4151,7 +4151,7 @@ const tsumData = [
   },
   {
     "id": 257,
-    "name_en": "name_dale_idol",
+    "name_en": "Dancing Dale",
     "name": "跳舞蒂蒂",
     "image": "block_dalej_l.png",
     "skill_desc": [
@@ -4167,7 +4167,7 @@ const tsumData = [
   },
   {
     "id": 258,
-    "name_en": "name_pumbaa",
+    "name_en": "Pumbaa",
     "name": "彭彭",
     "image": "block_pumbaa_l.png",
     "skill_desc": [
@@ -4183,7 +4183,7 @@ const tsumData = [
   },
   {
     "id": 259,
-    "name_en": "name_elsa_5th",
+    "name_en": "Queen Elsa",
     "name": "艾莎女王",
     "image": "block_elsa2_l.png",
     "skill_desc": [
@@ -4199,7 +4199,7 @@ const tsumData = [
   },
   {
     "id": 260,
-    "name_en": "name_maleficent_5th",
+    "name_en": "Dark Fairy Maleficent",
     "name": "闇黑黑魔女",
     "image": "block_maleficent2_l.png",
     "skill_desc": [
@@ -4215,7 +4215,7 @@ const tsumData = [
   },
   {
     "id": 261,
-    "name_en": "name_cleo",
+    "name_en": "Cleo",
     "name": "阿克",
     "image": "block_cleo_l.png",
     "skill_desc": [
@@ -4231,7 +4231,7 @@ const tsumData = [
   },
   {
     "id": 262,
-    "name_en": "name_figaro",
+    "name_en": "Figaro",
     "name": "費加洛",
     "image": "block_figaro_l.png",
     "skill_desc": [
@@ -4247,7 +4247,7 @@ const tsumData = [
   },
   {
     "id": 263,
-    "name_en": "name_facilier",
+    "name_en": "Dr. Facilier",
     "name": "霍博士",
     "image": "block_facilier_l.png",
     "skill_desc": [
@@ -4263,7 +4263,7 @@ const tsumData = [
   },
   {
     "id": 264,
-    "name_en": "name_gothel",
+    "name_en": "Mother Gothel",
     "name": "葛索媽媽",
     "image": "block_gothel_l.png",
     "skill_desc": [
@@ -4281,7 +4281,7 @@ const tsumData = [
   },
   {
     "id": 265,
-    "name_en": "name_hornedking",
+    "name_en": "Horned King",
     "name": "長角國王",
     "image": "block_hornedking_l.png",
     "skill_desc": [
@@ -4300,7 +4300,7 @@ const tsumData = [
   },
   {
     "id": 266,
-    "name_en": "name_bianca",
+    "name_en": "Miss Bianca",
     "name": "碧安卡",
     "image": "block_bianca_l.png",
     "skill_desc": [
@@ -4316,7 +4316,7 @@ const tsumData = [
   },
   {
     "id": 267,
-    "name_en": "name_flower",
+    "name_en": "Flower",
     "name": "花兒",
     "image": "block_flower_l.png",
     "skill_desc": [
@@ -4332,7 +4332,7 @@ const tsumData = [
   },
   {
     "id": 268,
-    "name_en": "name_duchess",
+    "name_en": "Duchess",
     "name": "杜翠絲",
     "image": "block_duchess_l.png",
     "skill_desc": [
@@ -4350,7 +4350,7 @@ const tsumData = [
   },
   {
     "id": 269,
-    "name_en": "name_robinhood",
+    "name_en": "Robin Hood",
     "name": "羅賓漢",
     "image": "block_robinhood_l.png",
     "skill_desc": [
@@ -4368,7 +4368,7 @@ const tsumData = [
   },
   {
     "id": 270,
-    "name_en": "name_dumbo_camera",
+    "name_en": "Photographer Dumbo",
     "name": "攝影師小飛象",
     "image": "block_dumboc_l.png",
     "skill_desc": [
@@ -4384,7 +4384,7 @@ const tsumData = [
   },
   {
     "id": 271,
-    "name_en": "name_jack_2",
+    "name_en": "Mischievous Jack",
     "name": "淘氣傑克",
     "image": "block_jack2_l.png",
     "skill_desc": [
@@ -4400,7 +4400,7 @@ const tsumData = [
   },
   {
     "id": 272,
-    "name_en": "name_lock",
+    "name_en": "Lock",
     "name": "鎖頭",
     "image": "block_lock_l.png",
     "skill_desc": [
@@ -4416,7 +4416,7 @@ const tsumData = [
   },
   {
     "id": 273,
-    "name_en": "name_vampireteddy",
+    "name_en": "Vampire Teddy Bear",
     "name": "吸血鬼泰迪熊",
     "image": "block_vampireteddy_l.png",
     "skill_desc": [
@@ -4432,7 +4432,7 @@ const tsumData = [
   },
   {
     "id": 274,
-    "name_en": "name_mickey_classic",
+    "name_en": "Classic Mickey",
     "name": "經典米奇",
     "image": "block_mickeyclsc_l.png",
     "skill_desc": [
@@ -4450,7 +4450,7 @@ const tsumData = [
   },
   {
     "id": 275,
-    "name_en": "name_mickey_jack",
+    "name_en": "Beanstalk Mickey",
     "name": "魔豆米奇",
     "image": "block_mickeyj_l.png",
     "skill_desc": [
@@ -4468,7 +4468,7 @@ const tsumData = [
   },
   {
     "id": 276,
-    "name_en": "name_mickey_anniversary",
+    "name_en": "Anniversary Mickey",
     "name": "週年慶米奇",
     "image": "block_mickey90th_l.png",
     "skill_desc": [
@@ -4486,7 +4486,7 @@ const tsumData = [
   },
   {
     "id": 277,
-    "name_en": "name_minnie_anniversary",
+    "name_en": "Anniversary Minnie",
     "name": "週年慶米妮",
     "image": "block_minnie90th_l.png",
     "skill_desc": [
@@ -4499,7 +4499,7 @@ const tsumData = [
   },
   {
     "id": 278,
-    "name_en": "name_pacman",
+    "name_en": "PAC-MAN",
     "name": "PAC-MAN",
     "image": "block_pacman_l.png",
     "skill_desc": [
@@ -4515,7 +4515,7 @@ const tsumData = [
   },
   {
     "id": 279,
-    "name_en": "name_blinky",
+    "name_en": "BLINKY",
     "name": "BLINKY",
     "image": "block_blinky_l.png",
     "skill_desc": [
@@ -4531,7 +4531,7 @@ const tsumData = [
   },
   {
     "id": 280,
-    "name_en": "name_pooh_sleepy",
+    "name_en": "Good Night Pooh",
     "name": "晚安維尼",
     "image": "block_pooh3_l.png",
     "skill_desc": [
@@ -4549,7 +4549,7 @@ const tsumData = [
   },
   {
     "id": 281,
-    "name_en": "name_gopher",
+    "name_en": "Gopher",
     "name": "谷佛",
     "image": "block_gopher_l.png",
     "skill_desc": [
@@ -4565,7 +4565,7 @@ const tsumData = [
   },
   {
     "id": 282,
-    "name_en": "name_vanellope",
+    "name_en": "Vanellope",
     "name": "雲妮露",
     "image": "block_vanellope_l.png",
     "skill_desc": [
@@ -4581,7 +4581,7 @@ const tsumData = [
   },
   {
     "id": 283,
-    "name_en": "name_felix",
+    "name_en": "Fix-It Felix, Jr.",
     "name": "修繕王阿修",
     "image": "block_felix_l.png",
     "skill_desc": [
@@ -4597,7 +4597,7 @@ const tsumData = [
   },
   {
     "id": 284,
-    "name_en": "name_chip_snowman",
+    "name_en": "Snowman Chip",
     "name": "雪人奇奇",
     "image": "block_chipsnow_l.png",
     "skill_desc": [
@@ -4615,7 +4615,7 @@ const tsumData = [
   },
   {
     "id": 285,
-    "name_en": "name_dale_snowman",
+    "name_en": "Snowman Dale",
     "name": "雪人蒂蒂",
     "image": "block_dalesnow_l.png",
     "skill_desc": [
@@ -4631,7 +4631,7 @@ const tsumData = [
   },
   {
     "id": 286,
-    "name_en": "name_bopeep",
+    "name_en": "Bo Peep",
     "name": "牧羊女",
     "image": "block_bopeep_l.png",
     "skill_desc": [
@@ -4650,7 +4650,7 @@ const tsumData = [
   },
   {
     "id": 287,
-    "name_en": "name_forky",
+    "name_en": "Forky",
     "name": "叉奇",
     "image": "block_forky_l.png",
     "skill_desc": [
@@ -4666,7 +4666,7 @@ const tsumData = [
   },
   {
     "id": 288,
-    "name_en": "name_hamm",
+    "name_en": "Hamm",
     "name": "火腿",
     "image": "block_hamm_l.png",
     "skill_desc": [
@@ -4684,7 +4684,7 @@ const tsumData = [
   },
   {
     "id": 289,
-    "name_en": "name_bunny",
+    "name_en": "Bunny",
     "name": "兔崽子",
     "image": "block_bunny_l.png",
     "skill_desc": [
@@ -4700,7 +4700,7 @@ const tsumData = [
   },
   {
     "id": 290,
-    "name_en": "name_ariel_pastel",
+    "name_en": "Pastel Ariel",
     "name": "粉彩艾莉兒",
     "image": "block_arielps_l.png",
     "skill_desc": [
@@ -4716,7 +4716,7 @@ const tsumData = [
   },
   {
     "id": 291,
-    "name_en": "name_flounder_pastel",
+    "name_en": "Pastel Flounder",
     "name": "粉彩小比目魚",
     "image": "block_flounderps_l.png",
     "skill_desc": [
@@ -4732,7 +4732,7 @@ const tsumData = [
   },
   {
     "id": 292,
-    "name_en": "name_genie_2",
+    "name_en": "Top Hat Genie",
     "name": "高帽精靈",
     "image": "block_genie2_l.png",
     "skill_desc": [
@@ -4748,7 +4748,7 @@ const tsumData = [
   },
   {
     "id": 293,
-    "name_en": "name_jafar_2",
+    "name_en": "Jafar Genie",
     "name": "精靈賈方",
     "image": "block_jafar2_l.png",
     "skill_desc": [
@@ -4764,7 +4764,7 @@ const tsumData = [
   },
   {
     "id": 294,
-    "name_en": "name_ali",
+    "name_en": "Prince Ali",
     "name": "阿里王子",
     "image": "block_aladdinp_l.png",
     "skill_desc": [
@@ -4780,7 +4780,7 @@ const tsumData = [
   },
   {
     "id": 295,
-    "name_en": "name_sofia",
+    "name_en": "Sofia",
     "name": "蘇菲亞",
     "image": "block_sofia_l.png",
     "skill_desc": [
@@ -4796,7 +4796,7 @@ const tsumData = [
   },
   {
     "id": 296,
-    "name_en": "name_sofia_2",
+    "name_en": "Horse Riding Sofia",
     "name": "騎士蘇菲亞",
     "image": "block_sofia2_l.png",
     "skill_desc": [
@@ -4812,7 +4812,7 @@ const tsumData = [
   },
   {
     "id": 297,
-    "name_en": "name_elena",
+    "name_en": "Elena",
     "name": "艾蓮娜",
     "image": "block_elena_l.png",
     "skill_desc": [
@@ -4828,7 +4828,7 @@ const tsumData = [
   },
   {
     "id": 298,
-    "name_en": "name_rey_traning",
+    "name_en": "Jedi Training Rey",
     "name": "絕地武士訓練者芮",
     "image": "block_reyj_l.png",
     "skill_desc": [
@@ -4844,7 +4844,7 @@ const tsumData = [
   },
   {
     "id": 299,
-    "name_en": "name_kyloren_leader",
+    "name_en": "Supreme Leader Kylo Ren",
     "name": "最高指導者凱羅忍",
     "image": "block_kyloren2_l.png",
     "skill_desc": [
@@ -4860,7 +4860,7 @@ const tsumData = [
   },
   {
     "id": 300,
-    "name_en": "name_ventus",
+    "name_en": "Ventus",
     "name": "菲恩圖斯",
     "image": "block_ventus_l.png",
     "skill_desc": [
@@ -4876,7 +4876,7 @@ const tsumData = [
   },
   {
     "id": 301,
-    "name_en": "name_terra",
+    "name_en": "Terra",
     "name": "泰拉",
     "image": "block_terra_l.png",
     "skill_desc": [
@@ -4892,7 +4892,7 @@ const tsumData = [
   },
   {
     "id": 302,
-    "name_en": "name_chirithy",
+    "name_en": "Chirithy",
     "name": "奇利喜",
     "image": "block_chirithy_l.png",
     "skill_desc": [
@@ -4908,7 +4908,7 @@ const tsumData = [
   },
   {
     "id": 303,
-    "name_en": "name_honeylemon",
+    "name_en": "Honey Lemon",
     "name": "哈妮蕾夢",
     "image": "block_honeylemon_l.png",
     "skill_desc": [
@@ -4924,7 +4924,7 @@ const tsumData = [
   },
   {
     "id": 304,
-    "name_en": "name_fred",
+    "name_en": "Fred",
     "name": "費吉拉",
     "image": "block_fred_l.png",
     "skill_desc": [
@@ -4940,7 +4940,7 @@ const tsumData = [
   },
   {
     "id": 305,
-    "name_en": "name_ian",
+    "name_en": "Ian",
     "name": "伊恩",
     "image": "block_ian_l.png",
     "skill_desc": [
@@ -4956,7 +4956,7 @@ const tsumData = [
   },
   {
     "id": 306,
-    "name_en": "name_barley",
+    "name_en": "Barley",
     "name": "巴利",
     "image": "block_barley_l.png",
     "skill_desc": [
@@ -4972,7 +4972,7 @@ const tsumData = [
   },
   {
     "id": 307,
-    "name_en": "name_remy",
+    "name_en": "Remy",
     "name": "小米",
     "image": "block_remy_l.png",
     "skill_desc": [
@@ -4990,7 +4990,7 @@ const tsumData = [
   },
   {
     "id": 308,
-    "name_en": "name_flik",
+    "name_en": "Flik",
     "name": "飛力",
     "image": "block_flik_l.png",
     "skill_desc": [
@@ -5008,7 +5008,7 @@ const tsumData = [
   },
   {
     "id": 309,
-    "name_en": "name_randall_student",
+    "name_en": "MU Randy",
     "name": "怪獸大學藍道",
     "image": "block_randall2_l.png",
     "skill_desc": [
@@ -5024,7 +5024,7 @@ const tsumData = [
   },
   {
     "id": 310,
-    "name_en": "name_eve",
+    "name_en": "EVE",
     "name": "伊芙 ",
     "image": "block_eve_l.png",
     "skill_desc": [
@@ -5040,7 +5040,7 @@ const tsumData = [
   },
   {
     "id": 311,
-    "name_en": "name_tink_fairy",
+    "name_en": "Rainbow Tinker Bell",
     "name": "彩虹叮叮",
     "image": "block_tinkerbellf_l.png",
     "skill_desc": [
@@ -5056,7 +5056,7 @@ const tsumData = [
   },
   {
     "id": 312,
-    "name_en": "name_periwinkle",
+    "name_en": "Periwinkle",
     "name": "佩瑞薇格",
     "image": "block_periwinkle_l.png",
     "skill_desc": [
@@ -5072,7 +5072,7 @@ const tsumData = [
   },
   {
     "id": 313,
-    "name_en": "name_silvermist",
+    "name_en": "Silvermist",
     "name": "希芙蜜絲",
     "image": "block_silvermist_l.png",
     "skill_desc": [
@@ -5088,7 +5088,7 @@ const tsumData = [
   },
   {
     "id": 314,
-    "name_en": "name_rosetta",
+    "name_en": "Rosetta",
     "name": "羅賽塔",
     "image": "block_rosetta_l.png",
     "skill_desc": [
@@ -5104,7 +5104,7 @@ const tsumData = [
   },
   {
     "id": 315,
-    "name_en": "name_yensid",
+    "name_en": "Yen Sid",
     "name": "伊恩西德",
     "image": "block_yensid_l.png",
     "skill_desc": [
@@ -5120,7 +5120,7 @@ const tsumData = [
   },
   {
     "id": 316,
-    "name_en": "name_chernabog",
+    "name_en": "Chernabog",
     "name": "查立保",
     "image": "block_chernabog_l.png",
     "skill_desc": [
@@ -5138,7 +5138,7 @@ const tsumData = [
   },
   {
     "id": 317,
-    "name_en": "name_jasmine_romance",
+    "name_en": "Spirited Jasmine",
     "name": "堅強茉莉",
     "image": "block_jasminel_l.png",
     "skill_desc": [
@@ -5154,7 +5154,7 @@ const tsumData = [
   },
   {
     "id": 318,
-    "name_en": "name_simba_2",
+    "name_en": "Hakuna Matata Simba",
     "name": "Hakuna Matata辛巴 ",
     "image": "block_simba2_l.png",
     "skill_desc": [
@@ -5170,7 +5170,7 @@ const tsumData = [
   },
   {
     "id": 319,
-    "name_en": "name_rafiki",
+    "name_en": "Rafiki",
     "name": "拉飛奇",
     "image": "block_rafiki_l.png",
     "skill_desc": [
@@ -5188,7 +5188,7 @@ const tsumData = [
   },
   {
     "id": 320,
-    "name_en": "name_timon",
+    "name_en": "Timon",
     "name": "丁滿",
     "image": "block_timon_l.png",
     "skill_desc": [
@@ -5206,7 +5206,7 @@ const tsumData = [
   },
   {
     "id": 321,
-    "name_en": "name_masterluke",
+    "name_en": "Master Luke",
     "name": "路克大師",
     "image": "block_lukem_l.png",
     "skill_desc": [
@@ -5222,7 +5222,7 @@ const tsumData = [
   },
   {
     "id": 322,
-    "name_en": "name_ben",
+    "name_en": "Ben Kenobi",
     "name": "班肯諾比",
     "image": "block_ben_l.png",
     "skill_desc": [
@@ -5238,7 +5238,7 @@ const tsumData = [
   },
   {
     "id": 323,
-    "name_en": "name_mace",
+    "name_en": "Mace Windu",
     "name": "魅使雲杜",
     "image": "block_mace_l.png",
     "skill_desc": [
@@ -5254,7 +5254,7 @@ const tsumData = [
   },
   {
     "id": 324,
-    "name_en": "name_padme",
+    "name_en": "Padme Amidala",
     "name": "帕米艾米達拉",
     "image": "block_padme_l.png",
     "skill_desc": [
@@ -5270,7 +5270,7 @@ const tsumData = [
   },
   {
     "id": 325,
-    "name_en": "name_anakin",
+    "name_en": "Anakin Skywalker",
     "name": "安納金天行者",
     "image": "block_anakin_l.png",
     "skill_desc": [
@@ -5286,7 +5286,7 @@ const tsumData = [
   },
   {
     "id": 326,
-    "name_en": "name_finn",
+    "name_en": "Finn",
     "name": "芬恩",
     "image": "block_finn_l.png",
     "skill_desc": [
@@ -5302,7 +5302,7 @@ const tsumData = [
   },
   {
     "id": 327,
-    "name_en": "name_mickey_pixel",
+    "name_en": "Brave Mickey",
     "name": "勇者米奇",
     "image": "block_mickeypx_l.png",
     "skill_desc": [
@@ -5318,7 +5318,7 @@ const tsumData = [
   },
   {
     "id": 328,
-    "name_en": "name_donald_pixel",
+    "name_en": "Brave Donald",
     "name": "勇者唐老鴨",
     "image": "block_donaldpx_l.png",
     "skill_desc": [
@@ -5334,7 +5334,7 @@ const tsumData = [
   },
   {
     "id": 329,
-    "name_en": "name_goofy_pixel",
+    "name_en": "Brave Goofy",
     "name": "勇者高飛",
     "image": "block_goofypx_l.png",
     "skill_desc": [
@@ -5350,7 +5350,7 @@ const tsumData = [
   },
   {
     "id": 330,
-    "name_en": "name_genie_romance",
+    "name_en": "Dancing Genie",
     "name": "跳舞精靈",
     "image": "block_genie2_l.png",
     "skill_desc": [
@@ -5366,7 +5366,7 @@ const tsumData = [
   },
   {
     "id": 331,
-    "name_en": "name_cinderella_enchanted",
+    "name_en": "Enchanted Cinderella",
     "name": "魔法仙度瑞拉",
     "image": "block_cinderellal_l.png",
     "skill_desc": [
@@ -5382,7 +5382,7 @@ const tsumData = [
   },
   {
     "id": 332,
-    "name_en": "name_aurora_enchanted",
+    "name_en": "Enchanted Aurora",
     "name": "魔法愛洛公主",
     "image": "block_auroral_l.png",
     "skill_desc": [
@@ -5398,7 +5398,7 @@ const tsumData = [
   },
   {
     "id": 333,
-    "name_en": "name_elsa_adventure",
+    "name_en": "Travel Elsa",
     "name": "旅遊艾莎",
     "image": "block_elsaf2_l.png",
     "skill_desc": [
@@ -5414,7 +5414,7 @@ const tsumData = [
   },
   {
     "id": 334,
-    "name_en": "name_anna_adventure",
+    "name_en": "Travel Anna",
     "name": "旅遊安娜",
     "image": "block_annaf2_l.png",
     "skill_desc": [
@@ -5430,7 +5430,7 @@ const tsumData = [
   },
   {
     "id": 335,
-    "name_en": "name_kristoff",
+    "name_en": "Kristoff",
     "name": "克斯托夫 (阿克)",
     "image": "block_kristoff_l.png",
     "skill_desc": [
@@ -5448,7 +5448,7 @@ const tsumData = [
   },
   {
     "id": 336,
-    "name_en": "name_maleficentc",
+    "name_en": "Classic Maleficent",
     "name": "經典黑魔女",
     "image": "block_maleficentc_l.png",
     "skill_desc": [
@@ -5466,7 +5466,7 @@ const tsumData = [
   },
   {
     "id": 337,
-    "name_en": "name_frollo",
+    "name_en": "Judge Frollo",
     "name": "孚羅洛法官",
     "image": "block_frollo_l.png",
     "skill_desc": [
@@ -5484,7 +5484,7 @@ const tsumData = [
   },
   {
     "id": 338,
-    "name_en": "name_hades2",
+    "name_en": "Angry Hades",
     "name": "憤怒凱帝斯",
     "image": "block_hades2_l.png",
     "skill_desc": [
@@ -5500,7 +5500,7 @@ const tsumData = [
   },
   {
     "id": 339,
-    "name_en": "name_soraca",
+    "name_en": "Pirate Sora",
     "name": "海盗索拉",
     "image": "block_soraca_l.png",
     "skill_desc": [
@@ -5516,7 +5516,7 @@ const tsumData = [
   },
   {
     "id": 340,
-    "name_en": "name_xehanorty",
+    "name_en": "Young Xehanort",
     "name": "年輕的賽亞諾特",
     "image": "block_xehanorty_l.png",
     "skill_desc": [
@@ -5532,7 +5532,7 @@ const tsumData = [
   },
   {
     "id": 341,
-    "name_en": "name_rapunzel_charm",
+    "name_en": "Rapunzel(Charm)",
     "name": "樂佩（飾品）",
     "image": "block_rapunzelcm_l.png",
     "skill_desc": [
@@ -5548,7 +5548,7 @@ const tsumData = [
   },
   {
     "id": 342,
-    "name_en": "name_ariel_charm",
+    "name_en": "Ariel(Charm)",
     "name": "艾莉兒（飾品）",
     "image": "block_arielcm_l.png",
     "skill_desc": [
@@ -5564,7 +5564,7 @@ const tsumData = [
   },
   {
     "id": 343,
-    "name_en": "name_belle_charm",
+    "name_en": "Belle(Charm)",
     "name": "貝兒（飾品）",
     "image": "block_bellecm_l.png",
     "skill_desc": [
@@ -5580,7 +5580,7 @@ const tsumData = [
   },
   {
     "id": 344,
-    "name_en": "name_jasmine_charm",
+    "name_en": "Jasmine(Charm)",
     "name": "茉莉公主（飾品）",
     "image": "block_jasminecm_l.png",
     "skill_desc": [
@@ -5596,7 +5596,7 @@ const tsumData = [
   },
   {
     "id": 345,
-    "name_en": "name_rajah",
+    "name_en": "Rajah",
     "name": "樂雅",
     "image": "block_rajah_l.png",
     "skill_desc": [
@@ -5614,7 +5614,7 @@ const tsumData = [
   },
   {
     "id": 346,
-    "name_en": "name_leroy",
+    "name_en": "Leroy",
     "name": "利羅",
     "image": "block_leroy_l.png",
     "skill_desc": [
@@ -5632,7 +5632,7 @@ const tsumData = [
   },
   {
     "id": 347,
-    "name_en": "name_gantu",
+    "name_en": "Gantu",
     "name": "鋼圖",
     "image": "block_gantu_l.png",
     "skill_desc": [
@@ -5648,7 +5648,7 @@ const tsumData = [
   },
   {
     "id": 348,
-    "name_en": "name_hamsterviel",
+    "name_en": "Dr. Hämsterviel",
     "name": "倉鼠飛輪博士",
     "image": "block_hamsterviel_l.png",
     "skill_desc": [
@@ -5664,7 +5664,7 @@ const tsumData = [
   },
   {
     "id": 349,
-    "name_en": "name_wart",
+    "name_en": "Wart",
     "name": "亞瑟",
     "image": "block_wart_l.png",
     "skill_desc": [
@@ -5682,7 +5682,7 @@ const tsumData = [
   },
   {
     "id": 350,
-    "name_en": "name_merlin",
+    "name_en": "Merlin",
     "name": "梅林",
     "image": "block_merlin_l.png",
     "skill_desc": [
@@ -5700,7 +5700,7 @@ const tsumData = [
   },
   {
     "id": 351,
-    "name_en": "name_marypoppins",
+    "name_en": "Mary Poppins",
     "name": "瑪莉包萍",
     "image": "block_marypoppins_l.png",
     "skill_desc": [
@@ -5716,7 +5716,7 @@ const tsumData = [
   },
   {
     "id": 352,
-    "name_en": "name_giselle",
+    "name_en": "Giselle",
     "name": "吉賽爾",
     "image": "block_giselle_l.png",
     "skill_desc": [
@@ -5734,7 +5734,7 @@ const tsumData = [
   },
   {
     "id": 353,
-    "name_en": "name_mulan2",
+    "name_en": "Mulan – Warrior",
     "name": "士兵木蘭",
     "image": "block_mulanl_l.png",
     "skill_desc": [
@@ -5750,7 +5750,7 @@ const tsumData = [
   },
   {
     "id": 354,
-    "name_en": "name_mirana",
+    "name_en": "The White Queen",
     "name": "白皇后",
     "image": "block_mirana_l.png",
     "skill_desc": [
@@ -5766,7 +5766,7 @@ const tsumData = [
   },
   {
     "id": 355,
-    "name_en": "name_cheshirecatl",
+    "name_en": "Wonderland Cheshire Cat",
     "name": "咧嘴貓",
     "image": "block_cheshirecatl_l.png",
     "skill_desc": [
@@ -5782,7 +5782,7 @@ const tsumData = [
   },
   {
     "id": 356,
-    "name_en": "name_mickeyjp",
+    "name_en": "Ninja Mickey",
     "name": "忍者米奇",
     "image": "block_mickeyjp_l.png",
     "skill_desc": [
@@ -5800,7 +5800,7 @@ const tsumData = [
   },
   {
     "id": 357,
-    "name_en": "name_minniejp",
+    "name_en": "Kimono Minnie",
     "name": "和服米妮",
     "image": "block_minniejp_l.png",
     "skill_desc": [
@@ -5816,7 +5816,7 @@ const tsumData = [
   },
   {
     "id": 358,
-    "name_en": "name_donaldjp",
+    "name_en": "Festival Donald",
     "name": "節慶唐老鴨",
     "image": "block_donaldjp_l.png",
     "skill_desc": [
@@ -5832,7 +5832,7 @@ const tsumData = [
   },
   {
     "id": 359,
-    "name_en": "name_mandalorian",
+    "name_en": "Mandalorian",
     "name": "曼德羅人",
     "image": "block_mandalorian_l.png",
     "skill_desc": [
@@ -5848,7 +5848,7 @@ const tsumData = [
   },
   {
     "id": 360,
-    "name_en": "name_child",
+    "name_en": "The Child",
     "name": "孩子",
     "image": "block_child_l.png",
     "skill_desc": [
@@ -5864,7 +5864,7 @@ const tsumData = [
   },
   {
     "id": 361,
-    "name_en": "name_constance",
+    "name_en": "Constance",
     "name": "康斯坦斯",
     "image": "block_constance_l.png",
     "skill_desc": [
@@ -5882,7 +5882,7 @@ const tsumData = [
   },
   {
     "id": 362,
-    "name_en": "name_parrot",
+    "name_en": "Parrot",
     "name": "鸚鵡",
     "image": "block_parrot_l.png",
     "skill_desc": [
@@ -5900,7 +5900,7 @@ const tsumData = [
   },
   {
     "id": 363,
-    "name_en": "name_elliott",
+    "name_en": "Elliot",
     "name": "艾略特",
     "image": "block_elliott_l.png",
     "skill_desc": [
@@ -5918,7 +5918,7 @@ const tsumData = [
   },
   {
     "id": 364,
-    "name_en": "name_donaldw",
+    "name_en": "Woodchuck Donald",
     "name": "童子軍唐老鴨",
     "image": "block_donaldw_l.png",
     "skill_desc": [
@@ -5934,7 +5934,7 @@ const tsumData = [
   },
   {
     "id": 365,
-    "name_en": "name_henry",
+    "name_en": "Henry",
     "name": "亨利",
     "image": "block_henry_l.png",
     "skill_desc": [
@@ -5952,7 +5952,7 @@ const tsumData = [
   },
   {
     "id": 366,
-    "name_en": "name_minnieg",
+    "name_en": "Sunday Minnie",
     "name": "星期日米妮",
     "image": "block_minnieg_l.png",
     "skill_desc": [
@@ -5965,7 +5965,7 @@ const tsumData = [
   },
   {
     "id": 367,
-    "name_en": "name_elsapr",
+    "name_en": "Elsa & Bruni",
     "name": "艾莎＆布魯尼",
     "image": "block_elsapr_l.png",
     "skill_desc": [
@@ -5981,7 +5981,7 @@ const tsumData = [
   },
   {
     "id": 368,
-    "name_en": "name_clarabellecow",
+    "name_en": "Clarabelle",
     "name": "克拉貝兒",
     "image": "block_clarabellecow_l.png",
     "skill_desc": [
@@ -5997,7 +5997,7 @@ const tsumData = [
   },
   {
     "id": 369,
-    "name_en": "name_lotso_charm",
+    "name_en": "Lotso(Charm)",
     "name": "熊抱哥（飾品）",
     "image": "block_lotsocm_l.png",
     "skill_desc": [
@@ -6015,7 +6015,7 @@ const tsumData = [
   },
   {
     "id": 370,
-    "name_en": "name_lucifer",
+    "name_en": "Lucifer",
     "name": "魯斯佛",
     "image": "block_lucifer_l.png",
     "skill_desc": [
@@ -6033,7 +6033,7 @@ const tsumData = [
   },
   {
     "id": 371,
-    "name_en": "name_donaldd",
+    "name_en": "Daruma Donald",
     "name": "達摩唐老鴨",
     "image": "block_donaldd_l.png",
     "skill_desc": [
@@ -6047,7 +6047,7 @@ const tsumData = [
   },
   {
     "id": 372,
-    "name_en": "name_mickeyr_charm",
+    "name_en": "Rugby Mickey(Charm)",
     "name": "橄欖球米奇（飾品）",
     "image": "block_mickeyrcm_l.png",
     "skill_desc": [
@@ -6063,7 +6063,7 @@ const tsumData = [
   },
   {
     "id": 373,
-    "name_en": "name_poohb",
+    "name_en": "Baseball Pooh",
     "name": "棒球維尼",
     "image": "block_poohb_l.png",
     "skill_desc": [
@@ -6079,7 +6079,7 @@ const tsumData = [
   },
   {
     "id": 374,
-    "name_en": "name_stitchs",
+    "name_en": "Surfing Stitch",
     "name": "衝浪史迪奇",
     "image": "block_stitchs_l.png",
     "skill_desc": [
@@ -6095,7 +6095,7 @@ const tsumData = [
   },
   {
     "id": 375,
-    "name_en": "name_wendy",
+    "name_en": "Wendy Darling",
     "name": "溫蒂",
     "image": "block_wendy_l.png",
     "skill_desc": [
@@ -6113,7 +6113,7 @@ const tsumData = [
   },
   {
     "id": 376,
-    "name_en": "name_johnp",
+    "name_en": "John Darling",
     "name": "約翰",
     "image": "block_john_l.png",
     "skill_desc": [
@@ -6131,7 +6131,7 @@ const tsumData = [
   },
   {
     "id": 377,
-    "name_en": "name_cinderellapr",
+    "name_en": "Cinderella & bluebird",
     "name": "仙度瑞拉＆小藍鳥",
     "image": "block_cinderellapr_l.png",
     "skill_desc": [
@@ -6147,7 +6147,7 @@ const tsumData = [
   },
   {
     "id": 378,
-    "name_en": "name_rapunzel3",
+    "name_en": "Shining Rapunzel",
     "name": "閃閃發光的樂佩",
     "image": "block_rapunzel3_l.png",
     "skill_desc": [
@@ -6163,7 +6163,7 @@ const tsumData = [
   },
   {
     "id": 379,
-    "name_en": "name_peteblk",
+    "name_en": "Scheming Pete",
     "name": "詭計多端的皮特",
     "image": "block_peteblk_l.png",
     "skill_desc": [
@@ -6181,7 +6181,7 @@ const tsumData = [
   },
   {
     "id": 380,
-    "name_en": "name_perry2",
+    "name_en": "Agent P",
     "name": "特務P",
     "image": "block_perry2_l.png",
     "skill_desc": [
@@ -6197,7 +6197,7 @@ const tsumData = [
   },
   {
     "id": 381,
-    "name_en": "name_goofyr",
+    "name_en": "Explorer Goofy",
     "name": "探險家高飛",
     "image": "block_goofyr_l.png",
     "skill_desc": [
@@ -6211,7 +6211,7 @@ const tsumData = [
   },
   {
     "id": 382,
-    "name_en": "name_cinderellamm",
+    "name_en": "Masquerade Cinderella",
     "name": "化妝舞會仙度瑞拉",
     "image": "block_cinderellamm_l.png",
     "skill_desc": [
@@ -6227,7 +6227,7 @@ const tsumData = [
   },
   {
     "id": 383,
-    "name_en": "name_rapunzelmm",
+    "name_en": "Masquerade Rapunzel",
     "name": "化妝舞會樂佩",
     "image": "block_rapunzelmm_l.png",
     "skill_desc": [
@@ -6243,7 +6243,7 @@ const tsumData = [
   },
   {
     "id": 384,
-    "name_en": "name_esmeraldamm",
+    "name_en": "Masquerade Esmeralda",
     "name": "化妝舞會愛斯梅達",
     "image": "block_esmeraldamm_l.png",
     "skill_desc": [
@@ -6259,7 +6259,7 @@ const tsumData = [
   },
   {
     "id": 385,
-    "name_en": "name_bellemm",
+    "name_en": "Masquerade Belle",
     "name": "化妝舞會貝兒",
     "image": "block_bellemm_l.png",
     "skill_desc": [
@@ -6275,7 +6275,7 @@ const tsumData = [
   },
   {
     "id": 386,
-    "name_en": "name_megaramm",
+    "name_en": "Masquerade Meg",
     "name": "化妝舞會蜜兒",
     "image": "block_megaramm_l.png",
     "skill_desc": [
@@ -6291,7 +6291,7 @@ const tsumData = [
   },
   {
     "id": 387,
-    "name_en": "name_evilqueenpr",
+    "name_en": "Evil Queen & Magic Mirror",
     "name": "邪惡皇后＆魔鏡",
     "image": "block_evilqueenpr_l.png",
     "skill_desc": [
@@ -6307,7 +6307,7 @@ const tsumData = [
   },
   {
     "id": 388,
-    "name_en": "name_ursula2",
+    "name_en": "Sea Witch Ursula",
     "name": "海巫烏蘇拉",
     "image": "block_ursula2_l.png",
     "skill_desc": [
@@ -6323,7 +6323,7 @@ const tsumData = [
   },
   {
     "id": 389,
-    "name_en": "name_tremaine",
+    "name_en": "Lady Tremaine",
     "name": "特曼尼夫人",
     "image": "block_tremaine_l.png",
     "skill_desc": [
@@ -6341,7 +6341,7 @@ const tsumData = [
   },
   {
     "id": 390,
-    "name_en": "name_jafarc",
+    "name_en": "Cobra Jafar",
     "name": "眼鏡蛇賈方",
     "image": "block_jafarc_l.png",
     "skill_desc": [
@@ -6357,7 +6357,7 @@ const tsumData = [
   },
   {
     "id": 391,
-    "name_en": "name_yzma",
+    "name_en": "Yzma",
     "name": "伊絲瑪",
     "image": "block_yzma_l.png",
     "skill_desc": [
@@ -6375,7 +6375,7 @@ const tsumData = [
   },
   {
     "id": 392,
-    "name_en": "name_mickeypr",
+    "name_en": "Mickey & Pluto",
     "name": "米奇&布魯托",
     "image": "block_mickeypr_l.png",
     "skill_desc": [
@@ -6391,7 +6391,7 @@ const tsumData = [
   },
   {
     "id": 393,
-    "name_en": "name_joe",
+    "name_en": "Joe Gardner",
     "name": "喬賈德納",
     "image": "block_joe_l.png",
     "skill_desc": [
@@ -6409,7 +6409,7 @@ const tsumData = [
   },
   {
     "id": 394,
-    "name_en": "name_22",
+    "name_en": "22",
     "name": "二十二(號)",
     "image": "block_22_l.png",
     "skill_desc": [
@@ -6427,7 +6427,7 @@ const tsumData = [
   },
   {
     "id": 395,
-    "name_en": "name_chipsc",
+    "name_en": "Santa Claus Chip",
     "name": "聖誕老人奇奇",
     "image": "block_chipsc_l.png",
     "skill_desc": [
@@ -6445,7 +6445,7 @@ const tsumData = [
   },
   {
     "id": 396,
-    "name_en": "name_dalet",
+    "name_en": "Reindeer Dale",
     "name": "馴鹿蒂蒂",
     "image": "block_dalet_l.png",
     "skill_desc": [
@@ -6458,7 +6458,7 @@ const tsumData = [
   },
   {
     "id": 397,
-    "name_en": "name_oliver",
+    "name_en": "Oliver",
     "name": "奧麗華",
     "image": "block_oliver_l.png",
     "skill_desc": [
@@ -6476,7 +6476,7 @@ const tsumData = [
   },
   {
     "id": 398,
-    "name_en": "name_woodypr",
+    "name_en": "Woody & Buzz",
     "name": "胡迪＆巴斯光年",
     "image": "block_woodypr_l.png",
     "skill_desc": [
@@ -6492,7 +6492,7 @@ const tsumData = [
   },
   {
     "id": 399,
-    "name_en": "name_mcqueenf",
+    "name_en": "Fabulous Lightning McQueen",
     "name": "傳奇閃電麥坤",
     "image": "block_mcqueenf_l.png",
     "skill_desc": [
@@ -6508,7 +6508,7 @@ const tsumData = [
   },
   {
     "id": 400,
-    "name_en": "name_joy",
+    "name_en": "Joy",
     "name": "樂樂",
     "image": "block_joy_l.png",
     "skill_desc": [
@@ -6526,7 +6526,7 @@ const tsumData = [
   },
   {
     "id": 401,
-    "name_en": "name_sadness",
+    "name_en": "Sadness",
     "name": "憂憂",
     "image": "block_sadness_l.png",
     "skill_desc": [
@@ -6544,7 +6544,7 @@ const tsumData = [
   },
   {
     "id": 402,
-    "name_en": "name_alicep",
+    "name_en": "Parade Alice",
     "name": "遊行愛麗絲",
     "image": "block_alicep_l.png",
     "skill_desc": [
@@ -6560,7 +6560,7 @@ const tsumData = [
   },
   {
     "id": 403,
-    "name_en": "name_snowwhitep",
+    "name_en": "Parade Snow White",
     "name": "遊行白雪公主",
     "image": "block_snowwhitep_l.png",
     "skill_desc": [
@@ -6576,7 +6576,7 @@ const tsumData = [
   },
   {
     "id": 404,
-    "name_en": "name_mickeyjc",
+    "name_en": "Jungle Cruise Mickey",
     "name": "叢林奇航米奇",
     "image": "block_mickeyjc_l.png",
     "skill_desc": [
@@ -6592,7 +6592,7 @@ const tsumData = [
   },
   {
     "id": 405,
-    "name_en": "name_minnieiasw",
+    "name_en": "It's a Small World Minnie",
     "name": "小小世界米妮",
     "image": "block_minnieiasw_l.png",
     "skill_desc": [
@@ -6608,7 +6608,7 @@ const tsumData = [
   },
   {
     "id": 406,
-    "name_en": "name_mickeywl",
+    "name_en": "General Mickey",
     "name": "大將米奇",
     "image": "block_mickeywl_l.png",
     "skill_desc": [
@@ -6626,7 +6626,7 @@ const tsumData = [
   },
   {
     "id": 407,
-    "name_en": "name_donaldwl",
+    "name_en": "Kabuto Donald",
     "name": "盔甲唐老鴨",
     "image": "block_donaldwl_l.png",
     "skill_desc": [
@@ -6644,7 +6644,7 @@ const tsumData = [
   },
   {
     "id": 408,
-    "name_en": "name_goofywl",
+    "name_en": "Kabuto Goofy",
     "name": "盔甲高飛",
     "image": "block_goofywl_l.png",
     "skill_desc": [
@@ -6662,7 +6662,7 @@ const tsumData = [
   },
   {
     "id": 409,
-    "name_en": "name_vaderwl",
+    "name_en": "Samurai General Darth Vader",
     "name": "侍大將達斯維達",
     "image": "block_vaderwl_l.png",
     "skill_desc": [
@@ -6678,7 +6678,7 @@ const tsumData = [
   },
   {
     "id": 410,
-    "name_en": "name_stormtrooperwl",
+    "name_en": "Ashigaru Stormtrooper",
     "name": "足輕風暴兵",
     "image": "block_stormtrooperwl_l.png",
     "skill_desc": [
@@ -6694,7 +6694,7 @@ const tsumData = [
   },
   {
     "id": 411,
-    "name_en": "name_minniep",
+    "name_en": "Royal Minnie",
     "name": "皇家公主米妮",
     "image": "block_minniep_l.png",
     "skill_desc": [
@@ -6707,7 +6707,7 @@ const tsumData = [
   },
   {
     "id": 412,
-    "name_en": "name_daisy_charm",
+    "name_en": "Easter Daisy(Charm)",
     "name": "復活節黛絲（飾品）",
     "image": "block_daisycm_l.png",
     "skill_desc": [
@@ -6723,7 +6723,7 @@ const tsumData = [
   },
   {
     "id": 413,
-    "name_en": "name_clarice_charm",
+    "name_en": "Easter Clarice(Charm)",
     "name": "復活節克莉絲（飾品）",
     "image": "block_claricecm_l.png",
     "skill_desc": [
@@ -6739,7 +6739,7 @@ const tsumData = [
   },
   {
     "id": 414,
-    "name_en": "name_tinkerbell_charm",
+    "name_en": "Flower Tink(Charm)",
     "name": "花朵叮叮（飾品）",
     "image": "block_tinkerbellcm_l.png",
     "skill_desc": [
@@ -6755,7 +6755,7 @@ const tsumData = [
   },
   {
     "id": 415,
-    "name_en": "name_raya",
+    "name_en": "Raya",
     "name": "拉雅",
     "image": "block_raya_l.png",
     "skill_desc": [
@@ -6773,7 +6773,7 @@ const tsumData = [
   },
   {
     "id": 416,
-    "name_en": "name_sisu",
+    "name_en": "Sisu",
     "name": "西蘇",
     "image": "block_sisu_l.png",
     "skill_desc": [
@@ -6791,7 +6791,7 @@ const tsumData = [
   },
   {
     "id": 417,
-    "name_en": "name_pooh_charm",
+    "name_en": "Detective Pooh(Charm)",
     "name": "偵探小熊維尼（飾品）",
     "image": "block_poohcm_l.png",
     "skill_desc": [
@@ -6807,7 +6807,7 @@ const tsumData = [
   },
   {
     "id": 418,
-    "name_en": "name_piglet_charm",
+    "name_en": "Piglet(Charm)",
     "name": "小豬（飾品）",
     "image": "block_pigletcm_l.png",
     "skill_desc": [
@@ -6823,7 +6823,7 @@ const tsumData = [
   },
   {
     "id": 419,
-    "name_en": "name_owlcm_charm",
+    "name_en": "Owl(Charm)",
     "name": "貓頭鷹（飾品）",
     "image": "block_owlcm_l.png",
     "skill_desc": [
@@ -6839,7 +6839,7 @@ const tsumData = [
   },
   {
     "id": 420,
-    "name_en": "name_donaldpspr",
+    "name_en": "Pastel Donald & Daisy",
     "name": "粉彩唐老鴨&黛絲",
     "image": "block_donaldpspr_l.png",
     "skill_desc": [
@@ -6855,7 +6855,7 @@ const tsumData = [
   },
   {
     "id": 421,
-    "name_en": "name_mickeyps",
+    "name_en": "Pastel Mickey",
     "name": "粉彩米奇",
     "image": "block_mickeyps_l.png",
     "skill_desc": [
@@ -6871,7 +6871,7 @@ const tsumData = [
   },
   {
     "id": 422,
-    "name_en": "name_goofyps",
+    "name_en": "Pastel Goofy",
     "name": "粉彩高飛",
     "image": "block_goofyps_l.png",
     "skill_desc": [
@@ -6889,7 +6889,7 @@ const tsumData = [
   },
   {
     "id": 423,
-    "name_en": "name_moana2",
+    "name_en": "Voyager Moana",
     "name": "航海莫娜",
     "image": "block_moana2_l.png",
     "skill_desc": [
@@ -6907,7 +6907,7 @@ const tsumData = [
   },
   {
     "id": 424,
-    "name_en": "name_tamatoa",
+    "name_en": "Tamatoa",
     "name": "塔瑪托",
     "image": "block_tamatoa_l.png",
     "skill_desc": [
@@ -6925,7 +6925,7 @@ const tsumData = [
   },
   {
     "id": 425,
-    "name_en": "name_rapunzelup",
+    "name_en": "Princess Rapunzel",
     "name": "皇冠樂佩",
     "image": "block_rapunzelup_l.png",
     "skill_desc": [
@@ -6941,7 +6941,7 @@ const tsumData = [
   },
   {
     "id": 426,
-    "name_en": "name_jasmineup",
+    "name_en": "Princess Jasmine",
     "name": "皇冠茉莉",
     "image": "block_jasmineup_l.png",
     "skill_desc": [
@@ -6959,7 +6959,7 @@ const tsumData = [
   },
   {
     "id": 427,
-    "name_en": "name_arielup",
+    "name_en": "Princess Ariel",
     "name": "皇冠艾莉兒",
     "image": "block_arielup_l.png",
     "skill_desc": [
@@ -6977,7 +6977,7 @@ const tsumData = [
   },
   {
     "id": 428,
-    "name_en": "name_minnie8th",
+    "name_en": "Sparkly Princess Minnie",
     "name": "閃亮米妮公主",
     "image": "block_minnie8th_l.png",
     "skill_desc": [
@@ -6990,7 +6990,7 @@ const tsumData = [
   },
   {
     "id": 429,
-    "name_en": "name_sherekhan",
+    "name_en": "Shere Khan",
     "name": "謝利",
     "image": "block_sherekhan_l.png",
     "skill_desc": [
@@ -7008,7 +7008,7 @@ const tsumData = [
   },
   {
     "id": 430,
-    "name_en": "name_miguel2",
+    "name_en": "Land of the Dead Miguel",
     "name": "夜總會米高",
     "image": "block_miguel2_l.png",
     "skill_desc": [
@@ -7024,7 +7024,7 @@ const tsumData = [
   },
   {
     "id": 431,
-    "name_en": "name_dante",
+    "name_en": "Dante",
     "name": "丹丹",
     "image": "block_dante_l.png",
     "skill_desc": [
@@ -7042,7 +7042,7 @@ const tsumData = [
   },
   {
     "id": 432,
-    "name_en": "name_mikepr",
+    "name_en": "Mike & Sulley",
     "name": "大眼仔&毛怪",
     "image": "block_mikepr_l.png",
     "skill_desc": [
@@ -7058,7 +7058,7 @@ const tsumData = [
   },
   {
     "id": 433,
-    "name_en": "name_hank",
+    "name_en": "Hank",
     "name": "七條郎",
     "image": "block_hank_l.png",
     "skill_desc": [
@@ -7076,7 +7076,7 @@ const tsumData = [
   },
   {
     "id": 434,
-    "name_en": "name_minniecos",
+    "name_en": "Strawberry Minnie",
     "name": "草莓米妮",
     "image": "block_minniecos_l.png",
     "skill_desc": [
@@ -7092,7 +7092,7 @@ const tsumData = [
   },
   {
     "id": 435,
-    "name_en": "name_goofycos",
+    "name_en": "Coffee Cup Goofy",
     "name": "咖啡杯高飛",
     "image": "block_goofycos_l.png",
     "skill_desc": [
@@ -7108,7 +7108,7 @@ const tsumData = [
   },
   {
     "id": 436,
-    "name_en": "name_donaldcos",
+    "name_en": "Airplane Donald",
     "name": "飛機唐老鴨",
     "image": "block_donaldcos_l.png",
     "skill_desc": [
@@ -7124,7 +7124,7 @@ const tsumData = [
   },
   {
     "id": 437,
-    "name_en": "name_mickeycos_charm",
+    "name_en": "Cabbage Mickey(Charm)",
     "name": "高麗菜米奇（飾品）",
     "image": "block_mickeycoscm_l.png",
     "skill_desc": [
@@ -7142,7 +7142,7 @@ const tsumData = [
   },
   {
     "id": 438,
-    "name_en": "name_ursular",
+    "name_en": "Diva Ursula",
     "name": "歌后烏蘇拉",
     "image": "block_ursular_l.png",
     "skill_desc": [
@@ -7160,7 +7160,7 @@ const tsumData = [
   },
   {
     "id": 439,
-    "name_en": "name_maleficentmm",
+    "name_en": "Masquerade Maleficent",
     "name": "化妝舞會黑魔女",
     "image": "block_maleficentmm_l.png",
     "skill_desc": [
@@ -7176,7 +7176,7 @@ const tsumData = [
   },
   {
     "id": 440,
-    "name_en": "name_hadesmm",
+    "name_en": "Masquerade Hades",
     "name": "化妝舞會凱帝斯",
     "image": "block_hadesmm_l.png",
     "skill_desc": [
@@ -7192,7 +7192,7 @@ const tsumData = [
   },
   {
     "id": 441,
-    "name_en": "name_evilqueenmm",
+    "name_en": "Masquerade Evil Queen",
     "name": "化妝舞會邪惡皇后",
     "image": "block_evilqueenmm_l.png",
     "skill_desc": [
@@ -7208,7 +7208,7 @@ const tsumData = [
   },
   {
     "id": 442,
-    "name_en": "name_auroramm",
+    "name_en": "Masquerade Aurora",
     "name": "化妝舞會愛洛公主",
     "image": "block_auroramm_l.png",
     "skill_desc": [
@@ -7224,7 +7224,7 @@ const tsumData = [
   },
   {
     "id": 443,
-    "name_en": "name_tianamm",
+    "name_en": "Masquerade Tiana",
     "name": "化妝舞會蒂安娜",
     "image": "block_tianamm_l.png",
     "skill_desc": [
@@ -7240,7 +7240,7 @@ const tsumData = [
   },
   {
     "id": 444,
-    "name_en": "name_mickeyph",
+    "name_en": "Philharmagic Mickey",
     "name": "魔法交響樂米奇",
     "image": "block_mickeyph_l.png",
     "skill_desc": [
@@ -7258,7 +7258,7 @@ const tsumData = [
   },
   {
     "id": 445,
-    "name_en": "name_simba3",
+    "name_en": "Courageous Simba",
     "name": "勇敢辛巴",
     "image": "block_simba3_l.png",
     "skill_desc": [
@@ -7276,7 +7276,7 @@ const tsumData = [
   },
   {
     "id": 446,
-    "name_en": "name_anna2",
+    "name_en": "Happy Anna",
     "name": "快樂安娜",
     "image": "block_anna2_l.png",
     "skill_desc": [
@@ -7292,7 +7292,7 @@ const tsumData = [
   },
   {
     "id": 447,
-    "name_en": "name_bobawl",
+    "name_en": "Ronin Boba Fett",
     "name": "浪人波巴費特",
     "image": "block_bobawl_l.png",
     "skill_desc": [
@@ -7308,7 +7308,7 @@ const tsumData = [
   },
   {
     "id": 448,
-    "name_en": "name_maulwl",
+    "name_en": "Sohei Darth Maul",
     "name": "僧兵達斯魔",
     "image": "block_maulwl_l.png",
     "skill_desc": [
@@ -7324,7 +7324,7 @@ const tsumData = [
   },
   {
     "id": 449,
-    "name_en": "name_bellepr",
+    "name_en": "Belle & Beast",
     "name": "貝兒＆野獸",
     "image": "block_bellepr_l.png",
     "skill_desc": [
@@ -7340,7 +7340,7 @@ const tsumData = [
   },
   {
     "id": 450,
-    "name_en": "name_gaston2",
+    "name_en": "Wild Gaston",
     "name": "狂野加斯頓",
     "image": "block_gaston2_l.png",
     "skill_desc": [
@@ -7356,7 +7356,7 @@ const tsumData = [
   },
   {
     "id": 451,
-    "name_en": "name_cruellal",
+    "name_en": "Stylish Cruella",
     "name": "時尚庫伊拉",
     "image": "block_cruellal_l.png",
     "skill_desc": [
@@ -7374,7 +7374,7 @@ const tsumData = [
   },
   {
     "id": 452,
-    "name_en": "name_tinkerbellx",
+    "name_en": "Holiday Tinker Bell",
     "name": "假期叮叮",
     "image": "block_tinkerbellx_l.png",
     "skill_desc": [
@@ -7392,7 +7392,7 @@ const tsumData = [
   },
   {
     "id": 453,
-    "name_en": "name_stitchxcm_charm",
+    "name_en": "Holiday Stitch(Charm)",
     "name": "假期史迪奇（飾品）",
     "image": "block_stitchxcm_l.png",
     "skill_desc": [
@@ -7410,7 +7410,7 @@ const tsumData = [
   },
   {
     "id": 454,
-    "name_en": "name_cinderellaup",
+    "name_en": "Princess Cinderella",
     "name": "皇冠仙度瑞拉",
     "image": "block_cinderellaup_l.png",
     "skill_desc": [
@@ -7426,7 +7426,7 @@ const tsumData = [
   },
   {
     "id": 455,
-    "name_en": "name_snowwhiteup",
+    "name_en": "Princess Snow White",
     "name": "皇冠白雪公主",
     "image": "block_snowwhiteup_l.png",
     "skill_desc": [
@@ -7442,7 +7442,7 @@ const tsumData = [
   },
   {
     "id": 456,
-    "name_en": "name_tianaup",
+    "name_en": "Princess Tiana",
     "name": "皇冠蒂安娜",
     "image": "block_tianaup_l.png",
     "skill_desc": [
@@ -7458,7 +7458,7 @@ const tsumData = [
   },
   {
     "id": 457,
-    "name_en": "name_mirabel",
+    "name_en": "Mirabel",
     "name": "米拉貝兒",
     "image": "block_mirabel_l.png",
     "skill_desc": [
@@ -7476,7 +7476,7 @@ const tsumData = [
   },
   {
     "id": 458,
-    "name_en": "name_isabela",
+    "name_en": "Isabela",
     "name": "伊莎貝拉",
     "image": "block_isabela_l.png",
     "skill_desc": [
@@ -7494,7 +7494,7 @@ const tsumData = [
   },
   {
     "id": 459,
-    "name_en": "name_mike3",
+    "name_en": "Comedian Mike",
     "name": "喜劇演員大眼仔",
     "image": "block_mike3_l.png",
     "skill_desc": [
@@ -7510,7 +7510,7 @@ const tsumData = [
   },
   {
     "id": 460,
-    "name_en": "name_boo_charm",
+    "name_en": "Boo(Charm)",
     "name": "阿布（飾品）",
     "image": "block_boocm_l.png",
     "skill_desc": [
@@ -7526,7 +7526,7 @@ const tsumData = [
   },
   {
     "id": 461,
-    "name_en": "name_roz",
+    "name_en": "Roz",
     "name": "羅絲",
     "image": "block_roz_l.png",
     "skill_desc": [
@@ -7544,7 +7544,7 @@ const tsumData = [
   },
   {
     "id": 462,
-    "name_en": "name_judyc",
+    "name_en": "Little Judy",
     "name": "小茱蒂",
     "image": "block_judyc_l.png",
     "skill_desc": [
@@ -7560,7 +7560,7 @@ const tsumData = [
   },
   {
     "id": 463,
-    "name_en": "name_nickc",
+    "name_en": "Little Nick",
     "name": "小尼克",
     "image": "block_nickc_l.png",
     "skill_desc": [
@@ -7576,7 +7576,7 @@ const tsumData = [
   },
   {
     "id": 464,
-    "name_en": "name_sorapr",
+    "name_en": "Sora & Roxas",
     "name": "索拉＆洛克薩斯",
     "image": "block_sorapr_l.png",
     "skill_desc": [
@@ -7592,7 +7592,7 @@ const tsumData = [
   },
   {
     "id": 465,
-    "name_en": "name_riku2",
+    "name_en": "Dark Riku",
     "name": "黑暗里克",
     "image": "block_riku2_l.png",
     "skill_desc": [
@@ -7608,7 +7608,7 @@ const tsumData = [
   },
   {
     "id": 466,
-    "name_en": "name_mickeyking2",
+    "name_en": "King Mickey KH3 Ver.",
     "name": "王國之心3米奇國王",
     "image": "block_mickeyking2_l.png",
     "skill_desc": [
@@ -7624,7 +7624,7 @@ const tsumData = [
   },
   {
     "id": 467,
-    "name_en": "name_axel",
+    "name_en": "Axel",
     "name": "亞克賽爾",
     "image": "block_axel_l.png",
     "skill_desc": [
@@ -7640,7 +7640,7 @@ const tsumData = [
   },
   {
     "id": 468,
-    "name_en": "name_namine",
+    "name_en": "Namine",
     "name": "娜米奈",
     "image": "block_namine_l.png",
     "skill_desc": [
@@ -7656,7 +7656,7 @@ const tsumData = [
   },
   {
     "id": 469,
-    "name_en": "name_chipcm",
+    "name_en": "Rescue Ranger Chip(Charm)",
     "name": "救難小福星 奇奇（飾品）",
     "image": "block_chipcm_l.png",
     "skill_desc": [
@@ -7672,7 +7672,7 @@ const tsumData = [
   },
   {
     "id": 470,
-    "name_en": "name_dalecm",
+    "name_en": "Rescue Ranger Dale(Charm)",
     "name": "救難小福星 蒂蒂（飾品）",
     "image": "block_dalecm_l.png",
     "skill_desc": [
@@ -7688,7 +7688,7 @@ const tsumData = [
   },
   {
     "id": 471,
-    "name_en": "name_gadget2",
+    "name_en": "Rescue Ranger Gadget",
     "name": "救難小福星 阿潔",
     "image": "block_gadget2_l.png",
     "skill_desc": [
@@ -7704,7 +7704,7 @@ const tsumData = [
   },
   {
     "id": 472,
-    "name_en": "name_quasimodo",
+    "name_en": "Quasimodo",
     "name": "加西莫多",
     "image": "block_quasimodo_l.png",
     "skill_desc": [
@@ -7722,7 +7722,7 @@ const tsumData = [
   },
   {
     "id": 473,
-    "name_en": "name_esmeralda2",
+    "name_en": "Dancer Esmeralda",
     "name": "舞者愛斯梅達",
     "image": "block_esmeralda2_l.png",
     "skill_desc": [
@@ -7738,7 +7738,7 @@ const tsumData = [
   },
   {
     "id": 474,
-    "name_en": "name_lukepr",
+    "name_en": "Pilot Luke & R2-D2",
     "name": "駕駛員路克＆R2-D2",
     "image": "block_lukepr_l.png",
     "skill_desc": [
@@ -7754,7 +7754,7 @@ const tsumData = [
   },
   {
     "id": 475,
-    "name_en": "name_obiwan",
+    "name_en": "Obi-Wan Kenobi",
     "name": "歐比王肯諾比",
     "image": "block_obiwan_l.png",
     "skill_desc": [
@@ -7770,7 +7770,7 @@ const tsumData = [
   },
   {
     "id": 476,
-    "name_en": "name_ahsoka",
+    "name_en": "Ahsoka Tano",
     "name": "亞蘇卡 譚諾",
     "image": "block_ahsoka_l.png",
     "skill_desc": [
@@ -7786,7 +7786,7 @@ const tsumData = [
   },
   {
     "id": 477,
-    "name_en": "name_pinocchiod",
+    "name_en": "Donkey Pinocchio",
     "name": "驢耳小木偶皮諾丘",
     "image": "block_pinocchiod_l.png",
     "skill_desc": [
@@ -7802,7 +7802,7 @@ const tsumData = [
   },
   {
     "id": 478,
-    "name_en": "name_monstro",
+    "name_en": "Monstro",
     "name": "魔斯路",
     "image": "block_monstro_l.png",
     "skill_desc": [
@@ -7820,7 +7820,7 @@ const tsumData = [
   },
   {
     "id": 479,
-    "name_en": "name_buzzl",
+    "name_en": "Captain Lightyear",
     "name": "光年隊長",
     "image": "block_buzzl_l.png",
     "skill_desc": [
@@ -7838,7 +7838,7 @@ const tsumData = [
   },
   {
     "id": 480,
-    "name_en": "name_sox",
+    "name_en": "Sox",
     "name": "白襪",
     "image": "block_sox_l.png",
     "skill_desc": [
@@ -7856,7 +7856,7 @@ const tsumData = [
   },
   {
     "id": 481,
-    "name_en": "name_luca",
+    "name_en": "Luca Paguro",
     "name": "路卡・帕古洛",
     "image": "block_luca_l.png",
     "skill_desc": [
@@ -7874,7 +7874,7 @@ const tsumData = [
   },
   {
     "id": 482,
-    "name_en": "name_meilin",
+    "name_en": "Meilin Lee",
     "name": "李美玲",
     "image": "block_meilin_l.png",
     "skill_desc": [
@@ -7892,7 +7892,7 @@ const tsumData = [
   },
   {
     "id": 483,
-    "name_en": "name_luxojr",
+    "name_en": "Pixar Lamp",
     "name": "皮克斯小燈",
     "image": "block_luxojr_l.png",
     "skill_desc": [
@@ -7908,7 +7908,7 @@ const tsumData = [
   },
   {
     "id": 484,
-    "name_en": "name_mickeyst",
+    "name_en": "Star Mickey",
     "name": "星空米奇",
     "image": "block_mickeyst_l.png",
     "skill_desc": [
@@ -7926,7 +7926,7 @@ const tsumData = [
   },
   {
     "id": 485,
-    "name_en": "name_bluefairy2",
+    "name_en": "Blue Fairy Godmother",
     "name": "藍仙女教母",
     "image": "block_bluefairy2_l.png",
     "skill_desc": [
@@ -7942,7 +7942,7 @@ const tsumData = [
   },
   {
     "id": 486,
-    "name_en": "name_maleficentd2",
+    "name_en": "Inferno Maleficent Dragon",
     "name": "綠炎魔獸黑魔女火龍",
     "image": "block_maleficentd2_l.png",
     "skill_desc": [
@@ -7958,7 +7958,7 @@ const tsumData = [
   },
   {
     "id": 487,
-    "name_en": "name_minniest",
+    "name_en": "Star Minnie",
     "name": "星空米妮",
     "image": "block_minniest_l.png",
     "skill_desc": [
@@ -7974,7 +7974,7 @@ const tsumData = [
   },
   {
     "id": 488,
-    "name_en": "name_daisyst",
+    "name_en": "Star Daisy",
     "name": "星空黛絲",
     "image": "block_daisyst_l.png",
     "skill_desc": [
@@ -7990,7 +7990,7 @@ const tsumData = [
   },
   {
     "id": 489,
-    "name_en": "name_donaldst",
+    "name_en": "Star Donald",
     "name": "星空唐老鴨",
     "image": "block_donaldst_l.png",
     "skill_desc": [
@@ -8006,7 +8006,7 @@ const tsumData = [
   },
   {
     "id": 490,
-    "name_en": "name_cinderellafcm_charm",
+    "name_en": "Flower Cinderella(Charm)",
     "name": "花朵仙度瑞拉（飾品）",
     "image": "block_cinderellafcm_l.png",
     "skill_desc": [
@@ -8022,7 +8022,7 @@ const tsumData = [
   },
   {
     "id": 491,
-    "name_en": "name_snowwhitefcm_charm",
+    "name_en": "Flower Snow White(Charm)",
     "name": "花朵白雪公主（飾品）",
     "image": "block_snowwhitefcm_l.png",
     "skill_desc": [
@@ -8040,7 +8040,7 @@ const tsumData = [
   },
   {
     "id": 492,
-    "name_en": "name_aurorafcm_charm",
+    "name_en": "Flower Aurora(Charm)",
     "name": "花朵愛洛公主（飾品）",
     "image": "block_aurorafcm_l.png",
     "skill_desc": [
@@ -8056,7 +8056,7 @@ const tsumData = [
   },
   {
     "id": 493,
-    "name_en": "name_jakesully",
+    "name_en": "Jake Sully",
     "name": "蘇傑克",
     "image": "block_jakesully_l.png",
     "skill_desc": [
@@ -8074,7 +8074,7 @@ const tsumData = [
   },
   {
     "id": 494,
-    "name_en": "name_neytiri",
+    "name_en": "Neytiri",
     "name": "奈蒂莉",
     "image": "block_neytiri_l.png",
     "skill_desc": [
@@ -8092,7 +8092,7 @@ const tsumData = [
   },
   {
     "id": 495,
-    "name_en": "name_stitchvpr",
+    "name_en": "Lovely Stitch & Angel",
     "name": "甜心史迪奇＆安琪",
     "image": "block_stitchvpr_l.png",
     "skill_desc": [
@@ -8108,7 +8108,7 @@ const tsumData = [
   },
   {
     "id": 496,
-    "name_en": "name_claricev",
+    "name_en": "Lovely Clarice",
     "name": "甜心克莉絲",
     "image": "block_claricev_l.png",
     "skill_desc": [
@@ -8124,7 +8124,7 @@ const tsumData = [
   },
   {
     "id": 497,
-    "name_en": "name_tinkerbellv",
+    "name_en": "Lovely Tinker Bell",
     "name": "甜心叮叮",
     "image": "block_tinkerbellv_l.png",
     "skill_desc": [
@@ -8142,7 +8142,7 @@ const tsumData = [
   },
   {
     "id": 498,
-    "name_en": "name_jackt",
+    "name_en": "Jack Dawson",
     "name": "傑克・道森",
     "image": "block_jackt_l.png",
     "skill_desc": [
@@ -8158,7 +8158,7 @@ const tsumData = [
   },
   {
     "id": 499,
-    "name_en": "name_roset",
+    "name_en": "Rose DeWitt Bukater",
     "name": "蘿絲・狄威特・布克特",
     "image": "block_roset_l.png",
     "skill_desc": [
@@ -8174,7 +8174,7 @@ const tsumData = [
   },
   {
     "id": 500,
-    "name_en": "name_jafar3",
+    "name_en": "Scheming Jafar",
     "name": "陰險大臣賈方",
     "image": "block_jafar3_l.png",
     "skill_desc": [
@@ -8190,7 +8190,7 @@ const tsumData = [
   },
   {
     "id": 501,
-    "name_en": "name_queenofhearts2",
+    "name_en": "Tyrannical Queen of Hearts",
     "name": "凶殘暴君紅心皇后",
     "image": "block_queenofhearts2_l.png",
     "skill_desc": [
@@ -8208,7 +8208,7 @@ const tsumData = [
   },
   {
     "id": 502,
-    "name_en": "name_hookcm",
+    "name_en": "Sly Captain Hook(Charm)",
     "name": "狡猾海賊虎克船長（飾品）",
     "image": "block_hookcm_l.png",
     "skill_desc": [
@@ -8226,7 +8226,7 @@ const tsumData = [
   },
   {
     "id": 503,
-    "name_en": "name_cruella2",
+    "name_en": "Dastardly Cruella",
     "name": "貪婪惡女庫伊拉",
     "image": "block_cruella2_l.png",
     "skill_desc": [
@@ -8242,7 +8242,7 @@ const tsumData = [
   },
   {
     "id": 504,
-    "name_en": "name_mickeyd100pr",
+    "name_en": "Disney100 Mickey & Donald",
     "name": "Disney100 米奇＆唐老鴨",
     "image": "block_mickeyd100pr_l.png",
     "skill_desc": [
@@ -8258,7 +8258,7 @@ const tsumData = [
   },
   {
     "id": 505,
-    "name_en": "name_snowwhited100",
+    "name_en": "Disney100 Snow White",
     "name": "Disney100 白雪公主",
     "image": "block_snowwhited100_l.png",
     "skill_desc": [
@@ -8274,7 +8274,7 @@ const tsumData = [
   },
   {
     "id": 506,
-    "name_en": "name_woodyd100",
+    "name_en": "Disney100 Woody",
     "name": "Disney100 胡迪",
     "image": "block_woodyd100_l.png",
     "skill_desc": [
@@ -8290,7 +8290,7 @@ const tsumData = [
   },
   {
     "id": 507,
-    "name_en": "name_r2d2d100",
+    "name_en": "Disney100 R2-D2",
     "name": "Disney100 R2-D2",
     "image": "block_r2d2d100_l.png",
     "skill_desc": [
@@ -8306,7 +8306,7 @@ const tsumData = [
   },
   {
     "id": 508,
-    "name_en": "name_rapunzelpr",
+    "name_en": "Rapunzel & Pascal",
     "name": "樂佩＆帕斯卡",
     "image": "block_rapunzelpr_l.png",
     "skill_desc": [
@@ -8322,7 +8322,7 @@ const tsumData = [
   },
   {
     "id": 509,
-    "name_en": "name_flynn2",
+    "name_en": "Wanted Man Flynn",
     "name": "通緝犯費林雷德",
     "image": "block_flynn2_l.png",
     "skill_desc": [
@@ -8338,7 +8338,7 @@ const tsumData = [
   },
   {
     "id": 510,
-    "name_en": "name_gothel2",
+    "name_en": "Evil Mother Gothel",
     "name": "惡女葛索媽媽",
     "image": "block_gothel2_l.png",
     "skill_desc": [
@@ -8356,7 +8356,7 @@ const tsumData = [
   },
   {
     "id": 511,
-    "name_en": "name_arielpr",
+    "name_en": "Ariel & Flounder",
     "name": "艾莉兒＆小比目魚",
     "image": "block_arielpr_l.png",
     "skill_desc": [
@@ -8372,7 +8372,7 @@ const tsumData = [
   },
   {
     "id": 512,
-    "name_en": "name_foulfellow",
+    "name_en": "Honest John",
     "name": "老實約翰",
     "image": "block_foulfellow_l.png",
     "skill_desc": [
@@ -8390,7 +8390,7 @@ const tsumData = [
   },
   {
     "id": 513,
-    "name_en": "name_gideon",
+    "name_en": "Gideon",
     "name": "吉頓",
     "image": "block_gideon_l.png",
     "skill_desc": [
@@ -8408,7 +8408,7 @@ const tsumData = [
   },
   {
     "id": 514,
-    "name_en": "name_ariell",
+    "name_en": "Adventure Ariel",
     "name": "旅遊艾莉兒",
     "image": "block_ariell_l.png",
     "skill_desc": [
@@ -8424,7 +8424,7 @@ const tsumData = [
   },
   {
     "id": 515,
-    "name_en": "name_tritonl",
+    "name_en": "The Powerful King Triton",
     "name": "神力川頓國王",
     "image": "block_tritonl_l.png",
     "skill_desc": [
@@ -8440,7 +8440,7 @@ const tsumData = [
   },
   {
     "id": 516,
-    "name_en": "name_grim",
+    "name_en": "Grim",
     "name": "格林",
     "image": "block_grim_l.png",
     "skill_desc": [
@@ -8456,7 +8456,7 @@ const tsumData = [
   },
   {
     "id": 517,
-    "name_en": "name_riddle",
+    "name_en": "Riddle Rosehearts",
     "name": "里鐸・羅茲哈特",
     "image": "block_riddle_l.png",
     "skill_desc": [
@@ -8472,7 +8472,7 @@ const tsumData = [
   },
   {
     "id": 518,
-    "name_en": "name_leona",
+    "name_en": "Leona Kingscholar",
     "name": "雷歐納・金史卡勒",
     "image": "block_leona_l.png",
     "skill_desc": [
@@ -8488,7 +8488,7 @@ const tsumData = [
   },
   {
     "id": 519,
-    "name_en": "name_azul",
+    "name_en": "Azul Ashengrotto",
     "name": "烏斯爾・艾歇古羅特",
     "image": "block_azul_l.png",
     "skill_desc": [
@@ -8504,7 +8504,7 @@ const tsumData = [
   },
   {
     "id": 520,
-    "name_en": "name_kalim",
+    "name_en": "Kalim Al-Asim",
     "name": "卡利姆・阿爾艾吉姆",
     "image": "block_kalim_l.png",
     "skill_desc": [
@@ -8520,7 +8520,7 @@ const tsumData = [
   },
   {
     "id": 521,
-    "name_en": "name_rapunzeldc",
+    "name_en": "Elegant Rapunzel",
     "name": "優雅樂佩",
     "image": "block_rapunzeldc_l.png",
     "skill_desc": [
@@ -8536,7 +8536,7 @@ const tsumData = [
   },
   {
     "id": 522,
-    "name_en": "name_arieldc",
+    "name_en": "Elegant Ariel",
     "name": "優雅艾莉兒",
     "image": "block_arieldc_l.png",
     "skill_desc": [
@@ -8552,7 +8552,7 @@ const tsumData = [
   },
   {
     "id": 523,
-    "name_en": "name_tianadc",
+    "name_en": "Elegant Tiana",
     "name": "優雅蒂安娜",
     "image": "block_tianadc_l.png",
     "skill_desc": [
@@ -8568,7 +8568,7 @@ const tsumData = [
   },
   {
     "id": 524,
-    "name_en": "name_ember",
+    "name_en": "Ember",
     "name": "安柏",
     "image": "block_ember_l.png",
     "skill_desc": [
@@ -8586,7 +8586,7 @@ const tsumData = [
   },
   {
     "id": 525,
-    "name_en": "name_wade",
+    "name_en": "Wade",
     "name": "韋德",
     "image": "block_wade_l.png",
     "skill_desc": [
@@ -8604,7 +8604,7 @@ const tsumData = [
   },
   {
     "id": 526,
-    "name_en": "name_mickey_dharma",
+    "name_en": "Daruma Mickey",
     "name": "達摩米奇",
     "image": "block_mickeyd_l.png",
     "skill_desc": [
@@ -8622,7 +8622,7 @@ const tsumData = [
   },
   {
     "id": 527,
-    "name_en": "name_vil",
+    "name_en": "Vil Schoenheit",
     "name": "維爾・歇恩海特",
     "image": "block_vil_l.png",
     "skill_desc": [
@@ -8638,7 +8638,7 @@ const tsumData = [
   },
   {
     "id": 528,
-    "name_en": "name_idia",
+    "name_en": "Idia Shroud",
     "name": "伊帝亞・索羅德",
     "image": "block_idia_l.png",
     "skill_desc": [
@@ -8654,7 +8654,7 @@ const tsumData = [
   },
   {
     "id": 529,
-    "name_en": "name_malleus",
+    "name_en": "Malleus Draconia",
     "name": "梅琉斯・爪寇尼亞",
     "image": "block_malleus_l.png",
     "skill_desc": [
@@ -8670,7 +8670,7 @@ const tsumData = [
   },
   {
     "id": 530,
-    "name_en": "name_crowley",
+    "name_en": "Dire Crowley",
     "name": "迪爾・克羅里",
     "image": "block_crowley_l.png",
     "skill_desc": [
@@ -8686,7 +8686,7 @@ const tsumData = [
   },
   {
     "id": 531,
-    "name_en": "name_mirror",
+    "name_en": "The Dark Mirror",
     "name": "暗夜魔鏡",
     "image": "block_mirror_l.png",
     "skill_desc": [
@@ -8702,7 +8702,7 @@ const tsumData = [
   },
   {
     "id": 532,
-    "name_en": "name_grievous",
+    "name_en": "General Grievous",
     "name": "葛理維斯將軍",
     "image": "block_grievous_l.png",
     "skill_desc": [
@@ -8718,7 +8718,7 @@ const tsumData = [
   },
   {
     "id": 533,
-    "name_en": "name_dooku",
+    "name_en": "Count Dooku",
     "name": "杜酷伯爵",
     "image": "block_dooku_l.png",
     "skill_desc": [
@@ -8734,7 +8734,7 @@ const tsumData = [
   },
   {
     "id": 534,
-    "name_en": "name_phasma",
+    "name_en": "Captain Phasma",
     "name": "法斯瑪隊長",
     "image": "block_phasma_l.png",
     "skill_desc": [
@@ -8750,7 +8750,7 @@ const tsumData = [
   },
   {
     "id": 535,
-    "name_en": "name_kyloren3",
+    "name_en": "Exasperated Kylo Ren",
     "name": "激昂凱羅忍",
     "image": "block_kyloren3_l.png",
     "skill_desc": [
@@ -8766,7 +8766,7 @@ const tsumData = [
   },
   {
     "id": 536,
-    "name_en": "name_vaderpr",
+    "name_en": "Lord Vader & Stormtrooper",
     "name": "維達大臣＆風暴兵",
     "image": "block_vaderpr_l.png",
     "skill_desc": [
@@ -8782,7 +8782,7 @@ const tsumData = [
   },
   {
     "id": 537,
-    "name_en": "name_indianajones",
+    "name_en": "Indiana Jones",
     "name": "印第安納瓊斯",
     "image": "block_indianajones_l.png",
     "skill_desc": [
@@ -8798,7 +8798,7 @@ const tsumData = [
   },
   {
     "id": 538,
-    "name_en": "name_donaldr",
+    "name_en": "Explorer Donald",
     "name": "探險家唐老鴨",
     "image": "block_donaldr_l.png",
     "skill_desc": [
@@ -8816,7 +8816,7 @@ const tsumData = [
   },
   {
     "id": 539,
-    "name_en": "name_scrooger",
+    "name_en": "Explorer Scrooge",
     "name": "探險家史高治",
     "image": "block_scrooger_l.png",
     "skill_desc": [
@@ -8832,7 +8832,7 @@ const tsumData = [
   },
   {
     "id": 540,
-    "name_en": "name_milo",
+    "name_en": "Milo",
     "name": "麥羅 ",
     "image": "block_milo_l.png",
     "skill_desc": [
@@ -8848,7 +8848,7 @@ const tsumData = [
   },
   {
     "id": 541,
-    "name_en": "name_kida",
+    "name_en": "Kida",
     "name": "姬坦公主",
     "image": "block_kida_l.png",
     "skill_desc": [
@@ -8864,7 +8864,7 @@ const tsumData = [
   },
   {
     "id": 542,
-    "name_en": "name_mickeyfes",
+    "name_en": "Festival Mickey",
     "name": "慶典米奇",
     "image": "block_mickeyfes_l.png",
     "skill_desc": [
@@ -8880,7 +8880,7 @@ const tsumData = [
   },
   {
     "id": 543,
-    "name_en": "name_minniefes",
+    "name_en": "Festival Minnie",
     "name": "慶典米妮",
     "image": "block_minniefes_l.png",
     "skill_desc": [
@@ -8896,7 +8896,7 @@ const tsumData = [
   },
   {
     "id": 544,
-    "name_en": "name_mushu",
+    "name_en": "Mushu",
     "name": "木須龍",
     "image": "block_mushu_l.png",
     "skill_desc": [
@@ -8914,7 +8914,7 @@ const tsumData = [
   },
   {
     "id": 545,
-    "name_en": "name_poohfes",
+    "name_en": "Festival Pooh",
     "name": "慶典維尼",
     "image": "block_poohfes_l.png",
     "skill_desc": [
@@ -8930,7 +8930,7 @@ const tsumData = [
   },
   {
     "id": 546,
-    "name_en": "name_stitchfes",
+    "name_en": "Festival Stitch",
     "name": "慶典史迪奇",
     "image": "block_stitchfes_l.png",
     "skill_desc": [
@@ -8946,7 +8946,7 @@ const tsumData = [
   },
   {
     "id": 547,
-    "name_en": "name_mickey_set",
+    "name_en": "Colorful Mickey and Friends(Set)",
     "name": "繽紛米奇與好朋友（組合）",
     "image": [
       "block_mickeyset_l.png"],
@@ -8963,7 +8963,7 @@ const tsumData = [
   },
   {
     "id": 548,
-    "name_en": "name_alicecm_charm",
+    "name_en": "Perfume Alice(Charm)",
     "name": "香水愛麗絲（飾品）",
     "image": "block_alicecm_l.png",
     "skill_desc": [
@@ -8979,7 +8979,7 @@ const tsumData = [
   },
   {
     "id": 549,
-    "name_en": "name_mariecm_charm",
+    "name_en": "Perfume Marie(Charm)",
     "name": "香水瑪麗貓（飾品）",
     "image": "block_mariecm_l.png",
     "skill_desc": [
@@ -8995,7 +8995,7 @@ const tsumData = [
   },
   {
     "id": 550,
-    "name_en": "name_dumbocm_charm",
+    "name_en": "Perfume Dumbo(Charm)",
     "name": "香水小飛象（飾品）",
     "image": "block_dumbocm_l.png",
     "skill_desc": [
@@ -9011,7 +9011,7 @@ const tsumData = [
   },
   {
     "id": 551,
-    "name_en": "name_minniecb",
+    "name_en": "Sakura Minnie",
     "name": "櫻花米妮",
     "image": "block_minniecb_l.png",
     "skill_desc": [
@@ -9027,7 +9027,7 @@ const tsumData = [
   },
   {
     "id": 552,
-    "name_en": "name_daisycb",
+    "name_en": "Sakura Daisy",
     "name": "櫻花黛絲",
     "image": "block_daisycb_l.png",
     "skill_desc": [
@@ -9043,7 +9043,7 @@ const tsumData = [
   },
   {
     "id": 553,
-    "name_en": "name_jade",
+    "name_en": "Jade Leech",
     "name": "賈伊德・利奇",
     "image": "block_jade_l.png",
     "skill_desc": [
@@ -9059,7 +9059,7 @@ const tsumData = [
   },
   {
     "id": 554,
-    "name_en": "name_floyd",
+    "name_en": "Floyd Leech",
     "name": "胡伊德・利奇",
     "image": "block_floyd_l.png",
     "skill_desc": [
@@ -9075,7 +9075,7 @@ const tsumData = [
   },
   {
     "id": 555,
-    "name_en": "name_ace",
+    "name_en": "Ace Trappola",
     "name": "艾斯・川波拉",
     "image": "block_ace_l.png",
     "skill_desc": [
@@ -9091,7 +9091,7 @@ const tsumData = [
   },
   {
     "id": 556,
-    "name_en": "name_deuce",
+    "name_en": "Deuce Spade",
     "name": "迪烏斯・斯佩德",
     "image": "block_deuce_l.png",
     "skill_desc": [
@@ -9107,7 +9107,7 @@ const tsumData = [
   },
   {
     "id": 557,
-    "name_en": "name_evilqueen2",
+    "name_en": "Poison Apple Evil Queen",
     "name": "憎恨之后邪惡皇后",
     "image": "block_evilqueen2_l.png",
     "skill_desc": [
@@ -9123,7 +9123,7 @@ const tsumData = [
   },
   {
     "id": 558,
-    "name_en": "name_chernabog2",
+    "name_en": "Night Chernabog",
     "name": "闇夜魔人查立保",
     "image": "block_chernabog2_l.png",
     "skill_desc": [
@@ -9139,7 +9139,7 @@ const tsumData = [
   },
   {
     "id": 559,
-    "name_en": "name_tremainemm",
+    "name_en": "Masquerade Lady Tremaine",
     "name": "化妝舞會特曼尼夫人",
     "image": "block_tremainemm_l.png",
     "skill_desc": [
@@ -9155,7 +9155,7 @@ const tsumData = [
   },
   {
     "id": 560,
-    "name_en": "name_ursulamm",
+    "name_en": "Masquerade Ursula",
     "name": "化妝舞會烏蘇拉",
     "image": "block_ursulamm_l.png",
     "skill_desc": [
@@ -9173,7 +9173,7 @@ const tsumData = [
   },
   {
     "id": 561,
-    "name_en": "name_anna3",
+    "name_en": "Winter Anna",
     "name": "冬季安娜",
     "image": "block_anna3_l.png",
     "skill_desc": [
@@ -9191,7 +9191,7 @@ const tsumData = [
   },
   {
     "id": 562,
-    "name_en": "name_kristoff2",
+    "name_en": "Winter Kristoff",
     "name": "冬季克斯托夫 (阿克)",
     "image": "block_kristoff2_l.png",
     "skill_desc": [
@@ -9207,7 +9207,7 @@ const tsumData = [
   },
   {
     "id": 563,
-    "name_en": "name_hans",
+    "name_en": "Prince Hans",
     "name": "漢斯王子",
     "image": "block_hans_l.png",
     "skill_desc": [
@@ -9225,7 +9225,7 @@ const tsumData = [
   },
   {
     "id": 564,
-    "name_en": "name_marshmallow",
+    "name_en": "Marshmallow",
     "name": "棉花糖",
     "image": "block_marshmallow_l.png",
     "skill_desc": [
@@ -9243,7 +9243,7 @@ const tsumData = [
   },
   {
     "id": 565,
-    "name_en": "name_elsa2pr",
+    "name_en": "Elsa & Olaf",
     "name": "艾莎＆雪寶",
     "image": "block_elsa2pr_l.png",
     "skill_desc": [
@@ -9261,7 +9261,7 @@ const tsumData = [
   },
   {
     "id": 566,
-    "name_en": "name_scar2",
+    "name_en": "Ambitious Scar",
     "name": "陰謀策士刀疤",
     "image": "block_scar2_l.png",
     "skill_desc": [
@@ -9279,7 +9279,7 @@ const tsumData = [
   },
   {
     "id": 567,
-    "name_en": "name_jackpr",
+    "name_en": "Jack & Sally",
     "name": "傑克＆莎莉",
     "image": "block_jackpr_l.png",
     "skill_desc": [
@@ -9295,7 +9295,7 @@ const tsumData = [
   },
   {
     "id": 568,
-    "name_en": "name_sandyclaws",
+    "name_en": "Sandy Claws",
     "name": "聖誕老人",
     "image": "block_sandyclaws_l.png",
     "skill_desc": [
@@ -9313,7 +9313,7 @@ const tsumData = [
   },
   {
     "id": 569,
-    "name_en": "name_asha",
+    "name_en": "Asha",
     "name": "艾霞",
     "image": "block_asha_l.png",
     "skill_desc": [
@@ -9331,7 +9331,7 @@ const tsumData = [
   },
   {
     "id": 570,
-    "name_en": "name_minniepx",
+    "name_en": "Brave Minnie",
     "name": "勇者米妮",
     "image": "block_minniepx_l.png",
     "skill_desc": [
@@ -9347,7 +9347,7 @@ const tsumData = [
   },
   {
     "id": 571,
-    "name_en": "name_daisypx",
+    "name_en": "Archer Daisy",
     "name": "弓箭手黛絲",
     "image": "block_daisypx_l.png",
     "skill_desc": [
@@ -9365,7 +9365,7 @@ const tsumData = [
   },
   {
     "id": 572,
-    "name_en": "name_claricepx",
+    "name_en": "Mage Clarice",
     "name": "魔法師克莉絲",
     "image": "block_claricepx_l.png",
     "skill_desc": [
@@ -9383,7 +9383,7 @@ const tsumData = [
   },
   {
     "id": 573,
-    "name_en": "name_poohrain",
+    "name_en": "Rainy Day Pooh",
     "name": "雨衣維尼",
     "image": "block_poohrain_l.png",
     "skill_desc": [
@@ -9399,7 +9399,7 @@ const tsumData = [
   },
   {
     "id": 574,
-    "name_en": "name_robinrain",
+    "name_en": "Rainy Christopher Robin",
     "name": "雨衣羅賓",
     "image": "block_robinrain_l.png",
     "skill_desc": [
@@ -9415,7 +9415,7 @@ const tsumData = [
   },
   {
     "id": 575,
-    "name_en": "name_vil2",
+    "name_en": "Beans Camo Vil",
     "name": "豆豆迷彩維爾",
     "image": "block_vil2_l.png",
     "skill_desc": [
@@ -9431,7 +9431,7 @@ const tsumData = [
   },
   {
     "id": 576,
-    "name_en": "name_kalimcm_charm",
+    "name_en": "Gala Couture Kalim(Charm)",
     "name": "盛會時裝卡利姆（飾品）",
     "image": "block_kalimcm_l.png",
     "skill_desc": [
@@ -9447,7 +9447,7 @@ const tsumData = [
   },
   {
     "id": 577,
-    "name_en": "name_grim2",
+    "name_en": "Ceremonial Robes Grim",
     "name": "式典服格林",
     "image": "block_grim2_l.png",
     "skill_desc": [
@@ -9463,7 +9463,7 @@ const tsumData = [
   },
   {
     "id": 578,
-    "name_en": "name_jamil",
+    "name_en": "Jamil Viper",
     "name": "賈密爾・拜普",
     "image": "block_jamil_l.png",
     "skill_desc": [
@@ -9479,7 +9479,7 @@ const tsumData = [
   },
   {
     "id": 579,
-    "name_en": "name_rook",
+    "name_en": "Rook Hunt",
     "name": "路克・杭特",
     "image": "block_rook_l.png",
     "skill_desc": [
@@ -9495,7 +9495,7 @@ const tsumData = [
   },
   {
     "id": 580,
-    "name_en": "name_rapunzela",
+    "name_en": "Painter Rapunzel",
     "name": "畫圖樂佩",
     "image": "block_rapunzela_l.png",
     "skill_desc": [
@@ -9513,7 +9513,7 @@ const tsumData = [
   },
   {
     "id": 581,
-    "name_en": "name_bellea",
+    "name_en": "Book Reader Belle",
     "name": "書迷貝兒",
     "image": "block_bellea_l.png",
     "skill_desc": [
@@ -9531,7 +9531,7 @@ const tsumData = [
   },
   {
     "id": 582,
-    "name_en": "name_tianaa",
+    "name_en": "Entrepreneur Tiana",
     "name": "餐廳老闆蒂安娜",
     "image": "block_tianaa_l.png",
     "skill_desc": [
@@ -9549,7 +9549,7 @@ const tsumData = [
   },
   {
     "id": 583,
-    "name_en": "name_tinkerbellf2",
+    "name_en": "Autumn Tinker Bell",
     "name": "秋季小叮噹",
     "image": "block_tinkerbellf2_l.png",
     "skill_desc": [
@@ -9567,7 +9567,7 @@ const tsumData = [
   },
   {
     "id": 584,
-    "name_en": "name_cheese",
+    "name_en": "Cheese the Mouse",
     "name": "起司",
     "image": "block_cheese_l.png",
     "skill_desc": [
@@ -9585,7 +9585,7 @@ const tsumData = [
   },
   {
     "id": 585,
-    "name_en": "name_magnifico",
+    "name_en": "King Magnifico",
     "name": "摩尼菲國王",
     "image": "block_magnifico_l.png",
     "skill_desc": [
@@ -9603,7 +9603,7 @@ const tsumData = [
   },
   {
     "id": 586,
-    "name_en": "name_delacruz",
+    "name_en": "Ernesto de la Cruz",
     "name": "恩尼托德拉古司",
     "image": "block_delacruz_l.png",
     "skill_desc": [
@@ -9621,7 +9621,7 @@ const tsumData = [
   },
   {
     "id": 587,
-    "name_en": "name_kingcandy",
+    "name_en": "King Candy",
     "name": "糖果王",
     "image": "block_kingcandy_l.png",
     "skill_desc": [
@@ -9639,7 +9639,7 @@ const tsumData = [
   },
   {
     "id": 588,
-    "name_en": "name_bellwether",
+    "name_en": "Assistant Mayor Bellwether",
     "name": "楊咩咩副市長",
     "image": "block_bellwether_l.png",
     "skill_desc": [
@@ -9657,7 +9657,7 @@ const tsumData = [
   },
   {
     "id": 589,
-    "name_en": "name_yokai",
+    "name_en": "Yokai",
     "name": "面具怪人",
     "image": "block_yokai_l.png",
     "skill_desc": [
@@ -9675,7 +9675,7 @@ const tsumData = [
   },
   {
     "id": 590,
-    "name_en": "name_boba",
+    "name_en": "Boba Fett",
     "name": "波巴費特",
     "image": "block_boba_l.png",
     "skill_desc": [
@@ -9693,7 +9693,7 @@ const tsumData = [
   },
   {
     "id": 591,
-    "name_en": "name_jabba",
+    "name_en": "Jabba the Hutt",
     "name": "赫特族賈霸",
     "image": "block_jabba_l.png",
     "skill_desc": [
@@ -9711,7 +9711,7 @@ const tsumData = [
   },
   {
     "id": 592,
-    "name_en": "name_anakinpod",
+    "name_en": "Podracer Anakin",
     "name": "飛梭賽車安納金",
     "image": "block_anakinpod_l.png",
     "skill_desc": [
@@ -9729,7 +9729,7 @@ const tsumData = [
   },
   {
     "id": 593,
-    "name_en": "name_starwars_set",
+    "name_en": "Star Wars Light Side (Set)",
     "name": "星際大戰光明面（組合）",
     "image": ["block_starwarsset_l.png"],
     "skill_desc": [
@@ -9747,7 +9747,7 @@ const tsumData = [
   },
   {
     "id": 594,
-    "name_en": "name_quigon",
+    "name_en": "Qui-Gon Jinn",
     "name": "魁剛金",
     "image": "block_quigon_l.png",
     "skill_desc": [
@@ -9765,7 +9765,7 @@ const tsumData = [
   },
   {
     "id": 595,
-    "name_en": "name_malleus2",
+    "name_en": "Halloween Malleus",
     "name": "恐怖禮服梅琉斯",
     "image": [
       "block_malleus2_l.png",
@@ -9786,7 +9786,7 @@ const tsumData = [
   },
   {
     "id": 596,
-    "name_en": "name_azul2",
+    "name_en": "Beans Camo Azul",
     "name": "豆豆迷彩烏斯爾",
     "image": "block_azul2_l.png",
     "skill_desc": [
@@ -9804,7 +9804,7 @@ const tsumData = [
   },
   {
     "id": 597,
-    "name_en": "name_idiacm_charm",
+    "name_en": "Starsending Robes Idia(Charm)",
     "name": "送星服伊帝亞（飾品）",
     "image": "block_idiacm_l.png",
     "skill_desc": [
@@ -9822,7 +9822,7 @@ const tsumData = [
   },
   {
     "id": 598,
-    "name_en": "name_leona2",
+    "name_en": "Gala Couture Leona",
     "name": "盛會時裝雷歐納",
     "image": "block_leona2_l.png",
     "skill_desc": [
@@ -9840,7 +9840,7 @@ const tsumData = [
   },
   {
     "id": 599,
-    "name_en": "name_riddlecm_charm",
+    "name_en": "Suitor Suit Riddle(Charm)",
     "name": "新郎裝扮里鐸（飾品）",
     "image": "block_riddlecm_l.png",
     "skill_desc": [
@@ -9858,7 +9858,7 @@ const tsumData = [
   },
   {
     "id": 600,
-    "name_en": "NAME_MICKEY11TH",
+    "name_en": "Streetwear Mickey",
     "name": "街頭造型米奇",
     "image": "block_mickey11th_l.png",
     "skill_desc": [
@@ -9876,7 +9876,7 @@ const tsumData = [
   },
   {
     "id": 601,
-    "name_en": "NAME_MAXPRIZE",
+    "name_en": "Sporty Max",
     "name": "運動風麥斯",
     "image": "block_maxprize_l.png",
     "skill_desc": [
@@ -9894,7 +9894,7 @@ const tsumData = [
   },
   {
     "id": 602,
-    "name_en": "NAME_KAA",
+    "name_en": "Kaa",
     "name": "卡奧",
     "image": "block_kaa_l.png",
     "skill_desc": [
@@ -9912,7 +9912,7 @@ const tsumData = [
   },
   {
     "id": 603,
-    "name_en": "NAME_MINNIE11TH",
+    "name_en": "Streetwear Minnie",
     "name": "街頭造型米妮",
     "image": "block_minnie11th_l.png",
     "skill_desc": [
@@ -9930,7 +9930,7 @@ const tsumData = [
   },
   {
     "id": 604,
-    "name_en": "NAME_ANGEL11TH",
+    "name_en": "Streetwear Angel",
     "name": "街頭造型安琪",
     "image": "block_angel11th_l.png",
     "skill_desc": [
@@ -9948,7 +9948,7 @@ const tsumData = [
   },
   {
     "id": 605,
-    "name_en": "NAME_STITCH11TH",
+    "name_en": "Streetwear Stitch",
     "name": "街頭造型史迪奇",
     "image": "block_stitch11th_l.png",
     "skill_desc": [
@@ -9966,7 +9966,7 @@ const tsumData = [
   },
   {
     "id": 606,
-    "name_en": "NAME_DUFFY",
+    "name_en": "Duffy",
     "name": "達菲",
     "image": "block_duffy_l.png",
     "skill_label": "win_tsumskill_duffy.png",
@@ -9984,7 +9984,7 @@ const tsumData = [
   },
   {
     "id": 607,
-    "name_en": "NAME_GELATONI",
+    "name_en": "Gelatoni",
     "name": "傑拉多尼",
     "image": "block_gelatoni_l.png",
     "skill_label": "win_tsumskill_gelatoni.png",
@@ -10002,7 +10002,7 @@ const tsumData = [
   },
   {
     "id": 608,
-    "name_en": "NAME_COOKIEANN",
+    "name_en": "CookieAnn",
     "name": "可琦安",
     "image": "block_cookieann_l.png",
     "skill_label": "win_tsumskill_cookieann.png",
@@ -10020,7 +10020,7 @@ const tsumData = [
   },
   {
     "id": 609,
-    "name_en": "NAME_STELLALOU",
+    "name_en": "StellaLou",
     "name": "星黛露",
     "image": "block_stellalou_l.png",
     "skill_label": "win_tsumskill_stellalou.png",
@@ -10038,7 +10038,7 @@ const tsumData = [
   },
   {
     "id": 610,
-    "name_en": "NAME_OLUMEL",
+    "name_en": "‘Olu Mel",
     "name": "奧樂米拉",
     "image": "block_olumel_l.png",
     "skill_label": "win_tsumskill_olumel.png",
@@ -10056,7 +10056,7 @@ const tsumData = [
   },
   {
     "id": 611,
-    "name_en": "NAME_MICKEYDFPR",
+    "name_en": "Mickey & Duffy",
     "name": "米奇＆達菲",
     "image": "block_mickeydfpr_l.png",
     "skill_label": "win_tsumskill_mickeydfpr.png",
@@ -10074,7 +10074,7 @@ const tsumData = [
   },
   {
     "id": 612,
-    "name_en": "NAME_LINABELL",
+    "name_en": "LinaBell",
     "name": "玲娜貝兒",
     "image": "block_linabell_l.png",
     "skill_label": "win_tsumskill_linabell.png",
@@ -10092,7 +10092,7 @@ const tsumData = [
   },
   {
     "id": 613,
-    "name_en": "NAME_SHELLIEMAY",
+    "name_en": "ShellieMay",
     "name": "雪莉玫",
     "image": "block_shelliemay_l.png",
     "skill_label": "win_tsumskill_shelliemay.png",
@@ -10110,7 +10110,7 @@ const tsumData = [
   },
   {
     "id": 614,
-    "name_en": "NAME_MINNIEDF",
+    "name_en": "Sewing Minnie",
     "name": "縫紉米妮",
     "image": "block_minniedf_l.png",
     "skill_label": "win_tsumskill_minniedf.png",
@@ -10128,7 +10128,7 @@ const tsumData = [
   },
   {
     "id": 615,
-    "name_en": "NAME_MISET",
+    "name_en": "Monsters, Inc. (Set)",
     "name": "怪獸電力公司（組合）",
     "image": "block_miset_l.png",
     "skill_label": "win_tsumskill_miset.png",
@@ -10146,7 +10146,7 @@ const tsumData = [
   },
   {
     "id": 616,
-    "name_en": "NAME_MICKEYH2024",
+    "name_en": "Vampire Mickey",
     "name": "吸血鬼米奇",
     "image": "block_mickeyh2024_l.png",
     "skill_label": "win_tsumskill_mickeyh2024.png",
@@ -10164,7 +10164,7 @@ const tsumData = [
   },
     {
     "id": 617,
-    "name_en": "NAME_PETEH2024",
+    "name_en": "Screwed Head Pete",
     "name": "螺絲頭皮特",
     "image": "block_peteh2024_l.png",
     "skill_label": "win_tsumskill_peteh2024.png",
@@ -10182,7 +10182,7 @@ const tsumData = [
   },
     {
     "id": 618,
-    "name_en": "NAME_GOOFYH2024",
+    "name_en": "Wild Fang Goofy",
     "name": "野性獠牙高飛",
     "image": "block_goofyh2024_l.png",
     "skill_label": "win_tsumskill_goofyh2024.png",
@@ -10200,7 +10200,7 @@ const tsumData = [
   },
     {
     "id": 619,
-    "name_en": "NAME_DONALDH2024",
+    "name_en": "Devil Donald",
     "name": "惡魔唐老鴨",
     "image": "block_donaldh2024_l.png",
     "skill_label": "win_tsumskill_donaldh2024.png",
@@ -10218,7 +10218,7 @@ const tsumData = [
   },
     {
     "id": 620,
-    "name_en": "NAME_JASMINET",
+    "name_en": "Incognito Jasmine",
     "name": "微服出巡茉莉公主",
     "image": "block_jasminet_l.png",
     "skill_label": "win_tsumskill_jasminet.png",
@@ -10236,7 +10236,7 @@ const tsumData = [
   },
     {
     "id": 621,
-    "name_en": "NAME_IAGO",
+    "name_en": "Iago",
     "name": "艾格",
     "image": "block_iago_l.png",
     "skill_label": "win_tsumskill_iago.png",
@@ -10254,7 +10254,7 @@ const tsumData = [
   },
     {
     "id": 622,
-    "name_en": "NAME_COW",
+    "name_en": "Cave of Wonders",
     "name": "彩虹洞穴",
     "image": "block_cow_l.png",
     "skill_label": "win_tsumskill_cow.png",
@@ -10272,7 +10272,7 @@ const tsumData = [
   },
     {
     "id": 623,
-    "name_en": "NAME_ALADDINPR",
+    "name_en": "Aladdin & Genie",
     "name": "阿拉丁＆精靈",
     "image": "block_aladdinpr_l.png",
     "skill_label": "win_tsumskill_aladdinpr.png",
@@ -10290,7 +10290,7 @@ const tsumData = [
   },
     {
     "id": 624,
-    "name_en": "NAME_JAFARW",
+    "name_en": "Evil Jafar",
     "name": "邪惡賈方",
     "image": "block_jafarw_l.png",
     "skill_label": "win_tsumskill_jafarw.png",
@@ -10308,7 +10308,7 @@ const tsumData = [
   },
    {
     "id": 625,
-    "name_en": "NAME_BAYMAXPR",
+    "name_en": "Baymax 2.0 & Hiro",
     "name": "杯麵2.0＆阿廣",
     "image": "block_baymaxpr_l.png",
     "skill_label": "win_tsumskill_baymaxpr.png",
@@ -10326,7 +10326,7 @@ const tsumData = [
   },
    {
     "id": 626,
-    "name_en": "NAME_MORCHIPR",
+    "name_en": "Baymax & Mochi",
     "name": "杯麵＆麻糬",
     "image": "block_mochipr_l.png",
     "skill_label": "win_tsumskill_mochipr.png",
@@ -10344,7 +10344,7 @@ const tsumData = [
   },
    {
     "id": 627,
-    "name_en": "NAME_MORCHIPR",
+    "name_en": "Go Go Tomago",
     "name": "神行蛋葆",
     "image": "block_gogo_l.png",
     "skill_label": "win_tsumskill_gogo.png",
@@ -10362,7 +10362,7 @@ const tsumData = [
   },
    {
     "id": 628,
-    "name_en": "NAME_WASABI",
+    "name_en": "Wasabi",
     "name": "芥末",
     "image": "block_wasabi_l.png",
     "skill_label": "win_tsumskill_wasabi.png",
@@ -10380,7 +10380,7 @@ const tsumData = [
   },
    {
     "id": 629,
-    "name_en": "NAME_HOOK2",
+    "name_en": "Final Battle Captain Hook",
     "name": "最終決戰虎克船長",
     "image": "block_hook2_l.png",
     "skill_label": "win_tsumskill_hook2.png",
@@ -10398,7 +10398,7 @@ const tsumData = [
   },
    {
     "id": 630,
-    "name_en": "NAME_SMEE",
+    "name_en": "Smee",
     "name": "海盜史密",
     "image": "block_smee_l.png",
     "skill_label": "win_tsumskill_smee.png",
@@ -10416,7 +10416,7 @@ const tsumData = [
   },
    {
     "id": 631,
-    "name_en": "NAME_PETERPAN2",
+    "name_en": "Captain Peter Pan",
     "name": "船長彼得潘",
     "image": "block_peterpan2_l.png",
     "skill_label": "win_tsumskill_peterpan2.png",
@@ -10434,7 +10434,7 @@ const tsumData = [
   },
    {
     "id": 632,
-    "name_en": "NAME_DONALDPLUS",
+    "name_en": "Donald+",
     "name": "唐老鴨+",
     "image": "block_donaldplus_l.png",
     "skill_label": "win_tsumskill_donaldplus.png",
@@ -10452,7 +10452,7 @@ const tsumData = [
   },
    {
     "id": 633,
-    "name_en": "NAME_MICKEYPLUS",
+    "name_en": "Mickey+",
     "name": "米奇+",
     "image": "block_mickeyplus_l.png",
     "skill_label": "win_tsumskill_mickeyplus.png",
@@ -10470,9 +10470,9 @@ const tsumData = [
   },
    {
     "id": 634,
-    "name_en": "NAME_ALICEPLUS",
+    "name_en": "Alice+",
     "name": "愛麗絲+",
-    "image": "block_aliceplus_f_l.png",
+    "image": "block_aliceplus_l.png",
     "skill_label": "win_tsumskill_aliceplus.png",
   "skill_desc": [
   "範圍：XS 所需Tsum數：24",
@@ -10488,7 +10488,7 @@ const tsumData = [
   },
    {
     "id": 635,
-    "name_en": "NAME_CHESHIRECATCM_CHARM",
+    "name_en": "Cheshire Cat(Charm)",
     "name": "妙妙貓（飾品）",
     "image": "block_cheshirecatcm_l.png",
     "skill_label": "win_tsumskill_cheshirecatcm.png",
@@ -10506,7 +10506,7 @@ const tsumData = [
   },
    {
     "id": 636,
-    "name_en": "NAME_MADHATTERCM_CHARM",
+    "name_en": "Mad Hatter(Charm)",
     "name": "瘋帽子（飾品）",
     "image": "block_madhattercm_l.png",
     "skill_label": "win_tsumskill_madhattercm.png",
@@ -10524,7 +10524,7 @@ const tsumData = [
   },
    {
     "id": 637,
-    "name_en": "NAME_WHITERABBITCM_CHARM",
+    "name_en": "White Rabbit(Charm)",
     "name": "大白兔（飾品）",
     "image": "block_whiterabbitcm_l.png",
     "skill_label": "win_tsumskill_whiterabbitcm.png",
@@ -10542,7 +10542,7 @@ const tsumData = [
   },
     {
     "id": 638,
-    "name_en": "NAME_QUEENOFHEARTS3",
+    "name_en": "Enraged Queen of Hearts",
     "name": "憤怒紅心皇后",
     "image": "block_queenofhearts3_l.png",
     "skill_label": "win_tsumskill_queenofhearts3.png",
@@ -10560,7 +10560,7 @@ const tsumData = [
     },
     {
     "id": 639,
-    "name_en": "NAME_KOTU",
+    "name_en": "Kotu",
     "name": "可嘟",
     "image": "block_kotu_l.png",
     "skill_label": "win_tsumskill_kotu.png",
@@ -10578,7 +10578,7 @@ const tsumData = [
     },
     {
     "id": 640,
-    "name_en": "NAME_MOANA3",
+    "name_en": "Wayfinder Moana",
     "name": "領導者莫娜",
     "image": "block_moana3_l.png",
     "skill_label": "win_tsumskill_moana3.png",
@@ -10596,7 +10596,7 @@ const tsumData = [
     },
     {
     "id": 641,
-    "name_en": "NAME_ENVY",
+    "name_en": "Envy",
     "name": "阿慕",
     "image": "block_envy_l.png",
     "skill_label": "win_tsumskill_envy.png",
@@ -10614,7 +10614,7 @@ const tsumData = [
     },
     {
     "id": 642,
-    "name_en": "NAME_ANXIETY",
+    "name_en": "Anxiety",
     "name": "阿焦",
     "image": "block_anxiety_l.png",
     "skill_label": "win_tsumskill_anxiety.png",
@@ -10632,7 +10632,7 @@ const tsumData = [
     },
     {
     "id": 643,
-    "name_en": "NAME_MCQUEENPLUS",
+    "name_en": "Lightning McQueen+",
     "name": "閃電麥坤+",
     "image": "block_mcqueenplus_l.png",
     "skill_label": "win_tsumskill_mcqueenplus.png",
@@ -10650,7 +10650,7 @@ const tsumData = [
     },
     {
     "id": 644,
-    "name_en": "NAME_ROXAS",
+    "name_en": "Roxas",
     "name": "洛克薩斯",
     "image": "block_roxas_l.png",
     "skill_label": "win_tsumskill_roxas.png",
@@ -10668,7 +10668,7 @@ const tsumData = [
     },
     {
     "id": 645,
-    "name_en": "NAME_XION",
+    "name_en": "Xion",
     "name": "席恩",
     "image": "block_xion_l.png",
     "skill_label": "win_tsumskill_xion.png",
@@ -10686,7 +10686,7 @@ const tsumData = [
     },
     {
     "id": 646,
-    "name_en": "NAME_RIKU3",
+    "name_en": "Riku KH3 Ver.",
     "name": "王國之心3里克",
     "image": "block_riku3_l.png",
     "skill_label": "win_tsumskill_riku3.png",
@@ -10704,7 +10704,7 @@ const tsumData = [
     },
     {
     "id": 647,
-    "name_en": "NAME_KAIRI2",
+    "name_en": "Kairi KH3 Ver.",
     "name": "王國之心3凱莉",
     "image": "block_kairi2_l.png",
     "skill_label": "win_tsumskill_kairi2.png",
@@ -10722,7 +10722,7 @@ const tsumData = [
     },
     {
     "id": 648,
-    "name_en": "NAME_PLUTOPLUS",
+    "name_en": "Pluto+",
     "name": "布魯托+",
     "image": "block_plutoplus_l.png",
     "skill_label": "win_tsumskill_plutoplus.png",
@@ -10740,7 +10740,7 @@ const tsumData = [
     },
     {
     "id": 649,
-    "name_en": "NAME_REYPR",
+    "name_en": "Rey & BB-8",
     "name": "芮＆BB-8",
     "image": "block_reypr_l.png",
     "skill_label": "win_tsumskill_reypr.png",
@@ -10758,7 +10758,7 @@ const tsumData = [
     },
     {
     "id": 650,
-    "name_en": "NAME_POEDAMERON",
+    "name_en": "Poe Dameron",
     "name": "波戴姆倫",
     "image": "block_poedameron_l.png",
     "skill_label": "win_tsumskill_poedameron.png",
@@ -10776,7 +10776,7 @@ const tsumData = [
     },
     {
     "id": 651,
-    "name_en": "NAME_SNOKE",
+    "name_en": "Snoke",
     "name": "史諾克",
     "image": "block_snoke_l.png",
     "skill_label": "win_tsumskill_snoke.png",
@@ -10794,7 +10794,7 @@ const tsumData = [
     },
     {
     "id": 652,
-    "name_en": "NAME_EPG",
+    "name_en": "Elite Praetorian Guard",
     "name": "菁英禁衛軍",
     "image": "block_epg_l.png",
     "skill_label": "win_tsumskill_epg.png",
@@ -10812,7 +10812,7 @@ const tsumData = [
     },
     {
     "id": 653,
-    "name_en": "NAME_STORMTROOPERPLUS",
+    "name_en": "Stormtrooper+",
     "name": "風暴兵+",
     "image": "block_stormtrooperplus_l.png",
     "skill_label": "win_tsumskill_stormtrooperplus.png",
@@ -10830,7 +10830,7 @@ const tsumData = [
     },
     {
     "id": 654,
-    "name_en": "NAME_ARIELPLUS",
+    "name_en": "Ariel+",
     "name": "艾莉兒+",
     "image": "block_arielplus_l.png",
     "skill_label": "win_tsumskill_arielplus.png",
@@ -10848,7 +10848,7 @@ const tsumData = [
     },
     {
     "id": 655,
-    "name_en": "NAME_DONALDTF2025PR",
+    "name_en": "Beach Donald & Mickey",
     "name": "海洋唐老鴨＆米奇",
     "image": "block_donaldtf2025pr_l.png",
     "skill_label": "win_tsumskill_donaldtf2025pr.png",
@@ -10866,7 +10866,7 @@ const tsumData = [
     },
     {
     "id": 656,
-    "name_en": "NAME_DONALDTF2025CM",
+    "name_en": "Beach Donald(Charm)",
     "name": "海洋唐老鴨（飾品）",
     "image": "block_donaldtf2025cm_l.png",
     "skill_label": "win_tsumskill_donaldtf2025cm.png",
@@ -10884,7 +10884,7 @@ const tsumData = [
     },
     {
     "id": 657,
-    "name_en": "NAME_STITCHTF2025",
+    "name_en": "Beach Stitch",
     "name": "海洋史迪奇",
     "image": "block_stitchtf2025_l.png",
     "skill_label": "win_tsumskill_stitchtf2025.png",
@@ -10902,7 +10902,7 @@ const tsumData = [
     },
     {
     "id": 658,
-    "name_en": "NAME_DAISYTF2025",
+    "name_en": "Beach Daisy",
     "name": "海洋黛絲",
     "image": "block_daisytf2025_l.png",
     "skill_label": "win_tsumskill_daisytf2025.png",
@@ -10920,7 +10920,7 @@ const tsumData = [
     },
     {
     "id": 659,
-    "name_en": "NAME_MINNIE12THPLUS",
+    "name_en": "Tiara Minnie+",
     "name": "頭冠米妮+",
     "image": "block_minnie12thplus_l.png",
     "skill_label": "win_tsumskill_minnie12thplus.png",
@@ -10935,7 +10935,7 @@ const tsumData = [
     },
     {
     "id": 660,
-    "name_en": "NAME_MICKEY12TH",
+    "name_en": "Dapper Hat Mickey",
     "name": "時髦帽子米奇",
     "image": "block_mickey12th_l.png",
     "skill_label": "win_tsumskill_mickey12th.png",
@@ -10953,7 +10953,7 @@ const tsumData = [
     },
     {
     "id": 661,
-    "name_en": "NAME_ELSACO",
+    "name_en": "Coronation Day Elsa",
     "name": "加冕典禮艾莎",
     "image": "block_elsaco_l.png",
     "skill_label": "win_tsumskill_elsaco.png",
@@ -10971,7 +10971,7 @@ const tsumData = [
     },
     {
     "id": 662,
-    "name_en": "NAME_BEASTDA",
+    "name_en": "Formal Suit Beast",
     "name": "禮服野獸",
     "image": "block_beastda_l.png",
     "skill_label": "win_tsumskill_beastda.png",
@@ -10989,7 +10989,7 @@ const tsumData = [
     },
     {
     "id": 663,
-    "name_en": "NAME_RAPUNZELPLUS",
+    "name_en": "Rapunzel+",
     "name": "樂佩+",
     "image": "block_rapunzelplus_l.png",
     "skill_label": "win_tsumskill_rapunzelplus.png",
@@ -11007,7 +11007,7 @@ const tsumData = [
     },
     {
     "id": 664,
-    "name_en": "NAME_DAISYPLUS",
+    "name_en": "Daisy+",
     "name": "黛絲+",
     "image": "block_daisyplus_l.png",
     "skill_label": "win_tsumskill_daisyplus.png",
@@ -11025,7 +11025,7 @@ const tsumData = [
     },
 {
     "id": 665,
-    "name_en": "NAME_MALLEUSMD",
+    "name_en": "Masquerade Attire Malleus",
     "name": "化妝舞會禮服梅琉斯",
     "image": "block_malleusmd_l.png",
     "skill_label": "win_tsumskill_malleusmd.png",
@@ -11043,7 +11043,7 @@ const tsumData = [
     },
 {
     "id": 666,
-    "name_en": "NAME_AZULMD",
+    "name_en": "Masquerade Attire Azul",
     "name": "化妝舞會禮服烏斯爾",
     "image": "block_azulmd_l.png",
     "skill_label": "win_tsumskill_azulmd.png",
@@ -11061,7 +11061,7 @@ const tsumData = [
     },
 {
     "id": 667,
-    "name_en": "NAME_IDIAMD",
+    "name_en": "Masquerade Attire Idia",
     "name": "化妝舞會禮服伊帝亞",
     "image": "block_idiamd_l.png",
     "skill_label": "win_tsumskill_idiamd.png",
@@ -11079,7 +11079,7 @@ const tsumData = [
     },
 {
     "id": 668,
-    "name_en": "NAME_JACKHOWL",
+    "name_en": "Jack Howl",
     "name": "傑克・霍爾",
     "image": "block_jackhowl_l.png",
     "skill_label": "win_tsumskill_jackhowl.png",
@@ -11097,7 +11097,7 @@ const tsumData = [
     },
 {
     "id": 669,
-    "name_en": "NAME_RUGGIE",
+    "name_en": "Ruggie Bucchi",
     "name": "勒吉・布奇",
     "image": "block_ruggie_l.png",
     "skill_label": "win_tsumskill_ruggie.png",
@@ -11115,7 +11115,7 @@ const tsumData = [
     },
 {
     "id": 670,
-    "name_en": "NAME_SIMBAPLUS",
+    "name_en": "Simba+",
     "name": "辛巴+",
     "image": "block_simbaplus_l.png",
     "skill_label": "win_tsumskill_simbaplus.png",
@@ -11133,7 +11133,7 @@ const tsumData = [
     },
 {
     "id": 671,
-    "name_en": "NAME_CHIPKP",
+    "name_en": "Hoodie Chip",
     "name": "帽T奇奇",
     "image": "block_chipkp_l.png",
     "skill_label": "win_tsumskill_chipkp.png",
@@ -11151,7 +11151,7 @@ const tsumData = [
     },
 {
     "id": 672,
-    "name_en": "NAME_DALEKP",
+    "name_en": "Sunglasses Dale",
     "name": "墨鏡蒂蒂",
     "image": "block_dalekp_l.png",
     "skill_label": "win_tsumskill_dalekp.png",
@@ -11169,7 +11169,7 @@ const tsumData = [
     },
 {
     "id": 673,
-    "name_en": "NAME_GOOFYPLUS",
+    "name_en": "Goofy+",
     "name": "高飛+",
     "image": "block_goofyplus_l.png",
     "skill_label": "win_tsumskill_goofyplus.png",
@@ -11187,7 +11187,7 @@ const tsumData = [
     },
 {
     "id": 674,
-    "name_en": "NAME_MICKEYINK",
+    "name_en": "Lorcana Mickey",
     "name": "洛卡納米奇",
     "image": "block_mickeyink_l.png",
     "skill_label": "win_tsumskill_mickeyink.png",
@@ -11205,7 +11205,7 @@ const tsumData = [
     },
 {
     "id": 675,
-    "name_en": "NAME_AURORAINK",
+    "name_en": "Lorcana Aurora(Shift)",
     "name": "洛卡納愛洛公主（變身）",
     "image": "block_auroraink_l.png",
     "skill_label": "win_tsumskill_auroraink.png",
@@ -11223,7 +11223,7 @@ const tsumData = [
     },
 {
     "id": 676,
-    "name_en": "NAME_TINKERBELLINK",
+    "name_en": "Lorcana Tinker Bell(Shift)",
     "name": "洛卡納小叮噹（變身）",
     "image": "block_tinkerbellink_l.png",
     "skill_label": "win_tsumskill_tinkerbellink.png",
@@ -11241,7 +11241,7 @@ const tsumData = [
     },
 {
     "id": 677,
-    "name_en": "NAME_VILLAINS_SET",
+    "name_en": "Disney Villains (Set)",
     "name": "迪士尼反派（組合）",
     "image": "block_villainsset_l.png",
     "skill_label": "win_tsumskill_villainsset.png",
@@ -11259,7 +11259,7 @@ const tsumData = [
     },
 {
     "id": 678,
-    "name_en": "NAME_GASTON",
+    "name_en": "Scheming Gaston",
     "name": "詭計多端的加斯頓",
     "image": "block_gaston3_l.png",
     "skill_label": "win_tsumskill_gaston3.png",
@@ -11277,7 +11277,7 @@ const tsumData = [
     },
 {
     "id": 679,
-    "name_en": "NAME_EPEL",
+    "name_en": "Epel Felmier",
     "name": "艾培爾・菲米耶",
     "image": "block_epel_l.png",
     "skill_label": "win_tsumskill_epel.png",
@@ -11295,7 +11295,7 @@ const tsumData = [
     },
 {
     "id": 680,
-    "name_en": "NAME_ORTHO",
+    "name_en": "Ortho Shroud",
     "name": "奧索・索羅德",
     "image": "block_ortho_l.png",
     "skill_label": "win_tsumskill_ortho.png",
@@ -11313,7 +11313,7 @@ const tsumData = [
     },
 {
     "id": 681,
-    "name_en": "NAME_CRUELLAPLUS",
+    "name_en": "Cruella+",
     "name": "庫伊拉+",
     "image": "block_cruellaplus_l.png",
     "skill_label": "win_tsumskill_cruellaplus.png",
@@ -11331,7 +11331,7 @@ const tsumData = [
     },
 {
     "id": 682,
-    "name_en": "NAME_TREMAINEPLUS",
+    "name_en": "Lady Tremaine+",
     "name": "特曼尼夫人+",
     "image": "block_tremaineplus_l.png",
     "skill_label": "win_tsumskill_tremaineplus.png",
@@ -11349,7 +11349,7 @@ const tsumData = [
     },
 {
     "id": 683,
-    "name_en": "NAME_MINNIETRANS",
+    "name_en": "Magic Wand Minnie(Change)",
     "name": "魔法棒米妮（變身）",
     "image": "block_minnietrans_l.png",
     "skill_label": "win_tsumskill_minnietrans.png",
@@ -11367,7 +11367,7 @@ const tsumData = [
     },
 {
     "id": 684,
-    "name_en": "NAME_DAISYTRANS",
+    "name_en": "Magic Wand Daisy(Change)",
     "name": "魔法棒黛絲（變身）",
     "image": "block_daisytrans_l.png",
     "skill_label": "win_tsumskill_daisytrans.png",
@@ -11385,7 +11385,7 @@ const tsumData = [
     },
 {
     "id": 685,
-    "name_en": "NAME_CLARICETRANS",
+    "name_en": "Magic Wand Clarice(Change)",
     "name": "魔法棒克莉絲（變身）",
     "image": "block_claricetrans_l.png",
     "skill_label": "win_tsumskill_claricetrans.png",
@@ -11403,7 +11403,7 @@ const tsumData = [
     },
 {
     "id": 686,
-    "name_en": "NAME_MICKEYR",
+    "name_en": "Mysterious Knight Mickey",
     "name": "神祕騎士米奇",
     "image": "block_mickeyr_l.png",
     "skill_label": "win_tsumskill_mickeyr.png",
@@ -11421,7 +11421,7 @@ const tsumData = [
     },
 {
     "id": 687,
-    "name_en": "NAME_MABELPLUS",
+    "name_en": "Mabel+",
     "name": "梅寶+",
     "image": "block_mabelplus_l.png",
     "skill_label": "win_tsumskill_mabelplus.png",
