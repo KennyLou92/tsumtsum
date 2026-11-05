@@ -3474,7 +3474,7 @@ const tsumDataJP = [
   {
     "id": 218,
     "name": "ハッピー白雪姫",
-    "image": "",
+    "image": "block_snowwhite2_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3506,7 +3506,7 @@ const tsumDataJP = [
   {
     "id": 220,
     "name": "ウィンターオーロラ姫",
-    "image": "",
+    "image": "block_auroraw_l.png",
     "skill_desc": [
       "必要ツム数：28",
       "必要ツム数：26",
@@ -3522,7 +3522,7 @@ const tsumDataJP = [
   {
     "id": 221,
     "name": "ウィンターシンデレラ",
-    "image": "",
+    "image": "block_cinderellaw_l.png",
     "skill_desc": [
       "範囲:SS 時間:2秒",
       "範囲:S 時間:2.2秒",
@@ -3538,7 +3538,7 @@ const tsumDataJP = [
   {
     "id": 222,
     "name": "ウィンターベル",
-    "image": "",
+    "image": "block_bellew_l.png",
     "skill_desc": [
       "必要ツム数:21 時間:3秒",
       "必要ツム数:20 時間:3.8秒",
@@ -3570,7 +3570,7 @@ const tsumDataJP = [
   {
     "id": 224,
     "name": "ホリデードナルド",
-    "image": "",
+    "image": "block_donaldx_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:21",
       "範囲:S 必要ツム数:20",
@@ -3618,7 +3618,7 @@ const tsumDataJP = [
   {
     "id": 227,
     "name": "D23スペシャルミッキー",
-    "image": "",
+    "image": "block_mickeye_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3634,7 +3634,7 @@ const tsumDataJP = [
   {
     "id": 228,
     "name": "アイドルチップ",
-    "image": "",
+    "image": "block_chipj_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3650,7 +3650,7 @@ const tsumDataJP = [
   {
     "id": 229,
     "name": "アイドルデール",
-    "image": "",
+    "image": "block_dalej_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3826,7 +3826,7 @@ const tsumDataJP = [
   {
     "id": 240,
     "name": "スプリングミス・バニー",
-    "image": "",
+    "image": "block_missbunnys_l.png",
     "skill_desc": [
       "必要ツム数:18 変化数:2",
       "必要ツム数:17 変化数:2",
@@ -3858,7 +3858,7 @@ const tsumDataJP = [
   {
     "id": 242,
     "name": "カバレロドナルド",
-    "image": "",
+    "image": "block_donaldc_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3954,7 +3954,7 @@ const tsumDataJP = [
   {
     "id": 248,
     "name": "ブライドジャスミン",
-    "image": "",
+    "image": "block_jasmineb_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3970,7 +3970,7 @@ const tsumDataJP = [
   {
     "id": 249,
     "name": "ブライドアリエル",
-    "image": "",
+    "image": "block_arielb_l.png",
     "skill_desc": [
       "時間:4秒 スコア:2.2倍",
       "時間:4.4秒 スコア:2.8倍",
@@ -4066,7 +4066,7 @@ const tsumDataJP = [
   {
     "id": 255,
     "name": "アリ王子",
-    "image": "",
+    "image": "block_aladdinp_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4114,7 +4114,7 @@ const tsumDataJP = [
   {
     "id": 258,
     "name": "ハッピーマイク",
-    "image": "",
+    "image": "block_mike2_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4130,7 +4130,7 @@ const tsumDataJP = [
   {
     "id": 259,
     "name": "怖がらせ屋サリー",
-    "image": "",
+    "image": "block_sulley2_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4370,7 +4370,7 @@ const tsumDataJP = [
   {
     "id": 274,
     "name": "おやすみプー",
-    "image": "",
+    "image": "block_pooh3_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4402,7 +4402,7 @@ const tsumDataJP = [
   {
     "id": 276,
     "name": "アニバーサリーミッキー",
-    "image": "",
+    "image": "block_mickey90th_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4418,7 +4418,7 @@ const tsumDataJP = [
   {
     "id": 277,
     "name": "アニバーサリーミニー",
-    "image": "",
+    "image": "block_minnie90th_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4434,7 +4434,7 @@ const tsumDataJP = [
   {
     "id": 278,
     "name": "クラシックミッキー",
-    "image": "",
+    "image": "block_mickeyclsc_l.png",
     "skill_desc": [
       "消去数：8+8",
       "消去数：9+9",
@@ -4450,7 +4450,7 @@ const tsumDataJP = [
   {
     "id": 279,
     "name": "豆の木ミッキー",
-    "image": "",
+    "image": "block_mickeyj_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
