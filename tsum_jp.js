@@ -2306,7 +2306,7 @@ const tsumDataJP = [
   {
     "id": 145,
     "name": "ジョーカーグーフィー",
-    "image": "",
+    "image": "block_goofyh2016_l.png",
     "skill_desc": [
       "消去数：16",
       "消去数：19",
@@ -2322,7 +2322,7 @@ const tsumDataJP = [
   {
     "id": 146,
     "name": "パレードミッキー",
-    "image": "",
+    "image": "block_mickeyp_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -12210,7 +12210,7 @@ const tsumDataJP = [
   {
     "id": 764,
     "name": "ナイトメアー〈セット〉",
-    "image": "",
+    "image": "block_nbcset_l.png",
     "skill_desc": [
       "必要ツム数:28 回数:3",
       "必要ツム数:28 回数:4",
@@ -12258,7 +12258,7 @@ const tsumDataJP = [
   {
     "id": 767,
     "name": "コンスタンス〈チャーム〉",
-    "image": "",
+    "image": "block_constancecm_l.png",
     "skill_desc": [
       "必要ツム数:40 効果:SS",
       "必要ツム数:38 効果:S",
