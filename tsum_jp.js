@@ -10690,7 +10690,7 @@ const tsumDataJP = [
   {
     "id": 669,
     "name": "チェシャ猫〈チャーム〉",
-    "image": "",
+    "image": "block_cheshirecatcm_l.png",
     "skill_desc": [
       "必要ツム数:25 時間:5秒",
       "必要ツム数:24 時間:6秒",
@@ -10706,7 +10706,7 @@ const tsumDataJP = [
   {
     "id": 670,
     "name": "マッドハッター〈チャーム〉",
-    "image": "",
+    "image": "block_madhattercm_l.png",
     "skill_desc": [
       "消去数：～17",
       "消去数：～20",
@@ -10722,7 +10722,7 @@ const tsumDataJP = [
   {
     "id": 671,
     "name": "白うさぎ〈チャーム〉",
-    "image": "",
+    "image": "block_whiterabbitcm_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:27",
       "範囲:S 必要ツム数:26",
