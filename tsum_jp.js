@@ -7746,7 +7746,7 @@ const tsumDataJP = [
   {
     "id": 485,
     "name": "ブー〈チャーム〉",
-    "image": "",
+    "image": "block_boocm_l.png",
     "skill_desc": [
       "範囲:SS 消去数:14",
       "範囲:S 消去数:16",
@@ -7986,7 +7986,7 @@ const tsumDataJP = [
   {
     "id": 500,
     "name": "キャベツミッキー〈チャーム〉",
-    "image": "",
+    "image": "block_mickeycoscm_l.png",
     "skill_desc": [
       "必要ツム数:30 キャベツ数:6",
       "必要ツム数:28 キャベツ数:8",
@@ -8690,7 +8690,7 @@ const tsumDataJP = [
   {
     "id": 544,
     "name": "フラワーシンデレラ〈チャーム〉",
-    "image": "",
+    "image": "block_cinderellafcm_l.png",
     "skill_desc": [
       "必要ツム数:26 効果:SS",
       "必要ツム数:25 効果:S",
@@ -8706,7 +8706,7 @@ const tsumDataJP = [
   {
     "id": 545,
     "name": "フラワー白雪姫〈チャーム〉",
-    "image": "",
+    "image": "block_snowwhitefcm_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:30",
       "範囲:S 必要ツム数:29",
@@ -8722,7 +8722,7 @@ const tsumDataJP = [
   {
     "id": 546,
     "name": "フラワーオーロラ姫〈チャーム〉",
-    "image": "",
+    "image": "block_aurorafcm_l.png",
     "skill_desc": [
       "変化数：2",
       "変化数：2～3",
@@ -9218,7 +9218,7 @@ const tsumDataJP = [
   {
     "id": 577,
     "name": "星送りの衣 イデア〈チャーム〉",
-    "image": "",
+    "image": "block_idiacm_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:33",
       "範囲:S 必要ツム数:32",
@@ -9250,7 +9250,7 @@ const tsumDataJP = [
   {
     "id": 579,
     "name": "なりきり花婿 リドル〈チャーム〉",
-    "image": "",
+    "image": "block_riddlecm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -9650,7 +9650,7 @@ const tsumDataJP = [
   {
     "id": 604,
     "name": "パフュームアリス〈チャーム〉",
-    "image": "",
+    "image": "block_alicecm_l.png",
     "skill_desc": [
       "必要ツム数:25 時間:3秒",
       "必要ツム数:24 時間:3.6秒",
@@ -9666,7 +9666,7 @@ const tsumDataJP = [
   {
     "id": 605,
     "name": "パフュームマリー〈チャーム〉",
-    "image": "",
+    "image": "block_mariecm_l.png",
     "skill_desc": [
       "変化数：5",
       "変化数：7",
@@ -9682,7 +9682,7 @@ const tsumDataJP = [
   {
     "id": 606,
     "name": "パフュームダンボ〈チャーム〉",
-    "image": "",
+    "image": "block_dumbocm_l.png",
     "skill_desc": [
       "消去数：18",
       "消去数：21",
@@ -9746,7 +9746,7 @@ const tsumDataJP = [
   {
     "id": 610,
     "name": "ガラ・クチュール カリム〈チャーム〉",
-    "image": "",
+    "image": "block_kalimcm_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:32",
       "範囲:S 必要ツム数:31",
