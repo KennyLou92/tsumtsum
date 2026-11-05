@@ -346,6 +346,7 @@
   <script src="tsum_jp.js"></script>
   <script src="images.js"></script>
   <script src="skilllabel.js"></script>
+  <script src="skilllabeljp.js"></script>
   <script src="littletsum.js"></script>
   <script src="pluspin.js"></script>
 
@@ -533,11 +534,33 @@
       }
     }
 
+    // ---------- Skill Label 來源 ----------
+    // JP 版只從 skilllabeljp.js (skillLabelMapJP) 讀取；GL 版只從 skilllabel.js (skillLabelMap) 讀取，兩邊不互相 fallback。
+    // JP 資料的 skill_label 若是空的，就用 image 名稱推出 win_tsumskill_<名稱>.png 去找。
+    function getSkillLabelSrc(tsum) {
+      const isJP = region === "jp";
+      const map = isJP
+        ? (typeof skillLabelMapJP !== "undefined" ? skillLabelMapJP : null)
+        : (typeof skillLabelMap !== "undefined" ? skillLabelMap : null);
+      if (!map) {
+        console.error(isJP
+          ? "skillLabelMapJP 未定義：請確認 skilllabeljp.js 第一行是 const skillLabelMapJP = {"
+          : "skillLabelMap 未定義：請確認 skilllabel.js 有正確載入");
+        return undefined;
+      }
+      let key = tsum.skill_label;
+      if (!key && isJP) {
+        const m = /^block_(.+?)_l\.png$/.exec(tsum.image || "");
+        if (m) key = `win_tsumskill_${m[1]}.png`;
+      }
+      return key ? map[key] : undefined;
+    }
+
     // ---------- 詳細視窗 ----------
     function openModal(tsum) {
       const imageNames = getImageNames(tsum);
       const imgSrc = imageMap[imageNames[0]];
-      const labelSrc = tsum.skill_label && skillLabelMap[tsum.skill_label];
+      const labelSrc = getSkillLabelSrc(tsum);
 
       // 各等級
       let rows = "";

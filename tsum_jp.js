@@ -12,8 +12,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyx.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 2,
@@ -28,8 +28,8 @@ const tsumDataJP = [
       "変化数：15",
       "変化数：15～16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnie.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 3,
@@ -44,8 +44,8 @@ const tsumDataJP = [
       "効果時間：5.8秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donald.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 4,
@@ -60,8 +60,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisy.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 5,
@@ -76,8 +76,8 @@ const tsumDataJP = [
       "消去数：14～16",
       "消去数：16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofy.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 6,
@@ -92,8 +92,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pluto.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 7,
@@ -108,8 +108,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chip.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 8,
@@ -124,8 +124,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dale.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 9,
@@ -140,8 +140,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pooh.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 10,
@@ -156,8 +156,8 @@ const tsumDataJP = [
       "効果時間：4.8秒",
       "効果時間：5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_piglet.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 11,
@@ -172,8 +172,8 @@ const tsumDataJP = [
       "消去数：14",
       "消去数：14～17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tigger.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 12,
@@ -188,8 +188,8 @@ const tsumDataJP = [
       "変化数：12～14",
       "変化数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_eeyore.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 13,
@@ -204,8 +204,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitch.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 14,
@@ -220,8 +220,8 @@ const tsumDataJP = [
       "スキル候補数：8",
       "スキル候補数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_scramp.png",
+  "skill_cost" : [1,2,3,4,6,12]
   },
   {
     "id": 15,
@@ -236,8 +236,8 @@ const tsumDataJP = [
       "発生数：5～6",
       "発生数：6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_marie.png",
+  "skill_cost" : [1,2,3,4,6,14]
   },
   {
     "id": 16,
@@ -252,8 +252,8 @@ const tsumDataJP = [
       "効果時間：8.8秒",
       "効果時間：9秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lady.png",
+  "skill_cost" : [1,2,3,4,6,12]
   },
   {
     "id": 17,
@@ -268,8 +268,8 @@ const tsumDataJP = [
       "消去数：4",
       "消去数：4～5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_perry.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 18,
@@ -284,8 +284,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_woody.png",
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 19,
@@ -300,8 +300,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_buzz.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 20,
@@ -316,8 +316,8 @@ const tsumDataJP = [
       "種類：5",
       "種類：5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_littlegreenmen.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 21,
@@ -332,8 +332,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mike.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 22,
@@ -348,8 +348,8 @@ const tsumDataJP = [
       "変化数：4～5",
       "変化数：5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sulley.png",
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 23,
@@ -364,8 +364,8 @@ const tsumDataJP = [
       "効果時間：5秒",
       "効果時間：5.2秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jack.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 24,
@@ -380,8 +380,8 @@ const tsumDataJP = [
       "効果時間：5.8秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_zero.png",
+  "skill_cost" : [1,2,3,4,6,12]
   },
   {
     "id": 25,
@@ -396,8 +396,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dumbo.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 26,
@@ -412,8 +412,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbell.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 27,
@@ -428,8 +428,8 @@ const tsumDataJP = [
       "スコア：15コ分",
       "スコア：16コ分"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_alice.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 28,
@@ -444,8 +444,8 @@ const tsumDataJP = [
       "効果時間：6.5秒",
       "効果時間：7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_whiterabbit.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 29,
@@ -460,8 +460,8 @@ const tsumDataJP = [
       "消去数：17～20",
       "消去数：18～21"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cheshirecat.png",
+  "skill_cost" : [1,2,3,4,6,14]
   },
   {
     "id": 30,
@@ -476,8 +476,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_youngoyster.png",
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 31,
@@ -492,8 +492,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_olaf.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 32,
@@ -508,8 +508,8 @@ const tsumDataJP = [
       "消去数：6～9",
       "消去数：7～10"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bambi.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 33,
@@ -524,8 +524,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_thumper.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 34,
@@ -540,8 +540,8 @@ const tsumDataJP = [
       "発生数：6",
       "発生数：6～7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_missbunny.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 35,
@@ -556,8 +556,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maleficent.png",
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 36,
@@ -572,8 +572,8 @@ const tsumDataJP = [
       "効果時間：7.5秒",
       "効果時間：8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_oswald.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 37,
@@ -588,8 +588,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsa.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 38,
@@ -604,8 +604,8 @@ const tsumDataJP = [
       "変化数：9～12",
       "変化数：10～13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_anna.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 39,
@@ -620,8 +620,8 @@ const tsumDataJP = [
       "効果時間：6.5秒",
       "効果時間：7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hpooh.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 40,
@@ -636,8 +636,8 @@ const tsumDataJP = [
       "出現数：4",
       "出現数：4～5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_robin.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 41,
@@ -652,8 +652,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_roo.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 42,
@@ -668,8 +668,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ariel.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 43,
@@ -684,8 +684,8 @@ const tsumDataJP = [
       "ライン数：6",
       "ライン数：7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flounder.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 44,
@@ -700,8 +700,8 @@ const tsumDataJP = [
       "消去数：15～18",
       "消去数：16～19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sebastian.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 45,
@@ -716,8 +716,8 @@ const tsumDataJP = [
       "効果時間：5.5秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jackx.png",
+  "skill_cost" : [1,1]
   },
   {
     "id": 46,
@@ -732,8 +732,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sallynbc.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 47,
@@ -748,8 +748,8 @@ const tsumDataJP = [
       "必要ツム数：10",
       "必要ツム数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyh.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 48,
@@ -764,8 +764,8 @@ const tsumDataJP = [
       "出現数：15",
       "出現数：17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnieh.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 49,
@@ -780,8 +780,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sven.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 50,
@@ -796,8 +796,8 @@ const tsumDataJP = [
       "消去数：31",
       "消去数：32"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzel.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 51,
@@ -812,8 +812,8 @@ const tsumDataJP = [
       "必要ツム数：4",
       "必要ツム数：3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pascal.png",
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 52,
@@ -828,8 +828,8 @@ const tsumDataJP = [
       "必要ツム数：14",
       "必要ツム数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pete.png",
+  "skill_cost" : [1,2,4,6,12,25]
   },
   {
     "id": 53,
@@ -844,8 +844,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyx.png",
+  "skill_cost" : [1,1,2,3]
   },
   {
     "id": 54,
@@ -860,8 +860,8 @@ const tsumDataJP = [
       "",
       ""
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniex.png",
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 55,
@@ -876,8 +876,8 @@ const tsumDataJP = [
       "",
       ""
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldx.png",
+  "skill_cost" : []
   },
   {
     "id": 56,
@@ -892,8 +892,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisyx.png",
+  "skill_cost" : [1,1,2,3]
   },
   {
     "id": 57,
@@ -908,8 +908,8 @@ const tsumDataJP = [
       "",
       ""
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyx.png",
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 58,
@@ -924,8 +924,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_plutox.png",
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 59,
@@ -940,8 +940,8 @@ const tsumDataJP = [
       "変化数：5",
       "変化数：5～6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_baymax.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 60,
@@ -956,8 +956,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jessie.png",
+  "skill_cost" : [1,2,3,4,6,18]
   },
   {
     "id": 61,
@@ -972,8 +972,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lotso.png",
+  "skill_cost" : [1,2,3,4,6,19]
   },
   {
     "id": 62,
@@ -988,8 +988,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyv.png",
+  "skill_cost" : []
   },
   {
     "id": 63,
@@ -1004,8 +1004,8 @@ const tsumDataJP = [
       "",
       ""
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniev.png",
+  "skill_cost" : [1,1,2,3]
   },
   {
     "id": 64,
@@ -1020,8 +1020,8 @@ const tsumDataJP = [
       "",
       ""
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldv.png",
+  "skill_cost" : []
   },
   {
     "id": 65,
@@ -1036,8 +1036,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisyv.png",
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 66,
@@ -1052,8 +1052,8 @@ const tsumDataJP = [
       "範囲:LL 回数:5",
       "範囲:LL 回数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeys.png",
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 67,
@@ -1068,8 +1068,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_belle.png",
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 68,
@@ -1084,8 +1084,8 @@ const tsumDataJP = [
       "必要ツム数：14",
       "必要ツム数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_beast.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 69,
@@ -1100,8 +1100,8 @@ const tsumDataJP = [
       "入るツム数：21",
       "入るツム数：22"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohr.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 70,
@@ -1116,8 +1116,8 @@ const tsumDataJP = [
       "ジャンプ数：6",
       "ジャンプ数：7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tiggerr.png",
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 71,
@@ -1132,8 +1132,8 @@ const tsumDataJP = [
       "ニンジン数：24",
       "ニンジン数：27"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rabbit.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 72,
@@ -1148,8 +1148,8 @@ const tsumDataJP = [
       "雪だるま数：24",
       "雪だるま数：30"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsaf.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 73,
@@ -1164,8 +1164,8 @@ const tsumDataJP = [
       "変化数：9～12",
       "変化数：10～13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_annaf.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 74,
@@ -1180,8 +1180,8 @@ const tsumDataJP = [
       "効果時間：7秒",
       "効果時間：7.3秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_angel.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 75,
@@ -1196,8 +1196,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchf.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 76,
@@ -1212,8 +1212,8 @@ const tsumDataJP = [
       "必要ツム数：15",
       "必要ツム数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lilo.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 77,
@@ -1228,8 +1228,8 @@ const tsumDataJP = [
       "走る範囲：3L",
       "走る範囲：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mcqueen.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 78,
@@ -1244,8 +1244,8 @@ const tsumDataJP = [
       "消去数：25～28",
       "消去数：26～29"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mater.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 79,
@@ -1260,8 +1260,8 @@ const tsumDataJP = [
       "消去数：5～6",
       "消去数：6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rex.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 80,
@@ -1276,8 +1276,8 @@ const tsumDataJP = [
       "効果時間：6.8秒",
       "効果時間：7.2秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_randall.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 81,
@@ -1292,8 +1292,8 @@ const tsumDataJP = [
       "変化数：9～10",
       "変化数：10～11"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielr.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 82,
@@ -1308,8 +1308,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_triton.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 83,
@@ -1324,8 +1324,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_scuttle.png",
+  "skill_cost" : [1,2,2]
   },
   {
     "id": 84,
@@ -1340,8 +1340,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ursula.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 85,
@@ -1356,8 +1356,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aladdin.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 86,
@@ -1372,8 +1372,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jasmine.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 87,
@@ -1388,8 +1388,8 @@ const tsumDataJP = [
       "必要ツム数：10",
       "必要ツム数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_abu.png",
+  "skill_cost" : [1,2,2,3,4,5]
   },
   {
     "id": 88,
@@ -1404,8 +1404,8 @@ const tsumDataJP = [
       "スキル候補数：9",
       "スキル候補数：10"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_genie.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 89,
@@ -1420,8 +1420,8 @@ const tsumDataJP = [
       "発生数：5～6",
       "発生数：6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyh2015.png",
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 90,
@@ -1436,8 +1436,8 @@ const tsumDataJP = [
       "変化数：17",
       "変化数：18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnieh2015.png",
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 91,
@@ -1452,8 +1452,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daleh2015.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 92,
@@ -1468,8 +1468,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chiph2015.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 93,
@@ -1484,8 +1484,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_plutoh2015.png",
+  "skill_cost" : [1,2,2]
   },
   {
     "id": 94,
@@ -1500,8 +1500,8 @@ const tsumDataJP = [
       "音符の数：5～6",
       "音符の数：6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyc.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 95,
@@ -1516,8 +1516,8 @@ const tsumDataJP = [
       "必要ツム数：16～17",
       "必要ツム数：15～16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pinocchio.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 96,
@@ -1532,8 +1532,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jiminy.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 97,
@@ -1548,8 +1548,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_peterpan.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 98,
@@ -1564,8 +1564,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_luke.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 99,
@@ -1580,8 +1580,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_leia.png",
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 100,
@@ -1596,8 +1596,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_r2d2.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 101,
@@ -1612,8 +1612,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_c3po.png",
+  "skill_cost" : [1,1,1,1,2,3]
   },
   {
     "id": 102,
@@ -1628,8 +1628,8 @@ const tsumDataJP = [
       "必要ツム数：20",
       "必要ツム数：19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_yoda.png",
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 103,
@@ -1644,8 +1644,8 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:19",
       "範囲:LL 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vader.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 104,
@@ -1660,8 +1660,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stormtrooper.png",
+  "skill_cost" : [1,1,2,3,6,14]
   },
   {
     "id": 105,
@@ -1676,8 +1676,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bb8.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 106,
@@ -1692,8 +1692,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mocha.png",
+  "skill_cost" : []
   },
   {
     "id": 107,
@@ -1708,8 +1708,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pudding.png",
+  "skill_cost" : []
   },
   {
     "id": 108,
@@ -1724,8 +1724,8 @@ const tsumDataJP = [
       "出現数：4～5",
       "出現数：5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_souffle.png",
+  "skill_cost" : []
   },
   {
     "id": 109,
@@ -1740,8 +1740,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_max.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 110,
@@ -1756,8 +1756,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_clarice.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 111,
@@ -1772,8 +1772,8 @@ const tsumDataJP = [
       "消去数：12",
       "消去数：12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderella.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 112,
@@ -1788,8 +1788,8 @@ const tsumDataJP = [
       "出現数：7",
       "出現数：7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snowwhite.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 113,
@@ -1804,8 +1804,8 @@ const tsumDataJP = [
       "効果時間：6.5秒",
       "効果時間：7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aurora.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 114,
@@ -1820,8 +1820,8 @@ const tsumDataJP = [
       "必要ツム数:16 変化数:10",
       "必要ツム数:16 変化数:10"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_fairygodmother.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 115,
@@ -1836,8 +1836,8 @@ const tsumDataJP = [
       "出現数：4～5",
       "出現数：5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_evilqueen.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 116,
@@ -1852,8 +1852,8 @@ const tsumDataJP = [
       "必要ツム数:19 時間:6秒",
       "必要ツム数:19 時間:6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maleficentd.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 117,
@@ -1868,8 +1868,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzelb.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 118,
@@ -1884,8 +1884,8 @@ const tsumDataJP = [
       "消去数：28～34",
       "消去数：29～32"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_nick.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 119,
@@ -1900,8 +1900,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_judy.png",
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 120,
@@ -1916,8 +1916,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_finnick.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 121,
@@ -1932,8 +1932,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arlo.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 122,
@@ -1948,8 +1948,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_simba.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 123,
@@ -1964,8 +1964,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_nala.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 124,
@@ -1980,8 +1980,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_scar.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 125,
@@ -1996,8 +1996,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_zazu.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 126,
@@ -2012,8 +2012,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_brerrabbit.png",
+  "skill_cost" : []
   },
   {
     "id": 127,
@@ -2028,8 +2028,8 @@ const tsumDataJP = [
       "効果時間：10秒",
       "効果時間：11秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_alice2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 128,
@@ -2044,8 +2044,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_queenofhearts.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 129,
@@ -2060,8 +2060,8 @@ const tsumDataJP = [
       "中:1 大:2",
       "大：3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_madhatter.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 130,
@@ -2076,8 +2076,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_marchhare.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 131,
@@ -2092,8 +2092,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_madhatterj.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 132,
@@ -2108,8 +2108,8 @@ const tsumDataJP = [
       "必要ツム数：9",
       "必要ツム数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_nemo.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 133,
@@ -2124,8 +2124,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dory.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 134,
@@ -2140,8 +2140,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_crush.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 135,
@@ -2156,8 +2156,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rey.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 136,
@@ -2172,8 +2172,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kyloren.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 137,
@@ -2188,8 +2188,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_charming.png",
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 138,
@@ -2204,8 +2204,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jacksparrow.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 139,
@@ -2220,8 +2220,8 @@ const tsumDataJP = [
       "変化数：20",
       "変化数：20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elizabethswann.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 140,
@@ -2236,8 +2236,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_davyjones.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 141,
@@ -2252,8 +2252,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mowgli.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 142,
@@ -2268,8 +2268,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cruella.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 143,
@@ -2284,8 +2284,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hook.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 144,
@@ -2300,8 +2300,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jafar.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 145,
@@ -2316,8 +2316,8 @@ const tsumDataJP = [
       "消去数：22",
       "消去数：22"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyh2016.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 146,
@@ -2332,13 +2332,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyp.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 147,
     "name": "パレードティンク",
-    "image": "",
+    "image": "block_tinkerbellp_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:18",
       "範囲:S 必要ツム数:18",
@@ -2348,13 +2348,13 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:16",
       "範囲:L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellp.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 148,
     "name": "蒸気船ミッキー",
-    "image": "",
+    "image": "block_mickeyb_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2364,13 +2364,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyb.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 149,
     "name": "蒸気船ミニー",
-    "image": "",
+    "image": "block_minnieb_l.png",
     "skill_desc": [
       "消去数：15",
       "消去数：17",
@@ -2380,13 +2380,13 @@ const tsumDataJP = [
       "消去数：25",
       "消去数：25"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnieb.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 150,
     "name": "蒸気船ピート",
-    "image": "",
+    "image": "block_peteb_l.png",
     "skill_desc": [
       "必要ツム数：30",
       "必要ツム数：28",
@@ -2396,13 +2396,13 @@ const tsumDataJP = [
       "必要ツム数：18",
       "必要ツム数：18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_peteb.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 151,
     "name": "ジェダイルーク",
-    "image": "",
+    "image": "block_lukej_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:22",
       "範囲:S 必要ツム数:22",
@@ -2412,8 +2412,8 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:20",
       "範囲:L 必要ツム数:20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lukej.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 152,
@@ -2428,8 +2428,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hansolo.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 153,
@@ -2444,8 +2444,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chewbacca.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 154,
@@ -2460,8 +2460,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_k2so.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 155,
@@ -2476,8 +2476,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_deathtrooper.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 156,
@@ -2492,8 +2492,8 @@ const tsumDataJP = [
       "コイン量：3L",
       "コイン量：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_scrooge.png",
+  "skill_cost" : [1,2,3,3,3,3]
   },
   {
     "id": 157,
@@ -2508,8 +2508,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hiro.png",
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 158,
@@ -2524,8 +2524,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_baymax2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 159,
@@ -2540,8 +2540,8 @@ const tsumDataJP = [
       "消去数：20",
       "消去数：20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_whip.png",
+  "skill_cost" : []
   },
   {
     "id": 160,
@@ -2556,13 +2556,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_puffy.png",
+  "skill_cost" : []
   },
   {
     "id": 161,
     "name": "三銃士ミッキー",
-    "image": "",
+    "image": "block_mickeyt_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2572,13 +2572,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyt.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 162,
     "name": "三銃士ドナルド",
-    "image": "",
+    "image": "block_donaldt_l.png",
     "skill_desc": [
       "消去数：8",
       "消去数：10",
@@ -2588,13 +2588,13 @@ const tsumDataJP = [
       "消去数：18",
       "消去数：18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldt.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 163,
     "name": "三銃士グーフィー",
-    "image": "",
+    "image": "block_goofyt_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2604,13 +2604,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyt.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 164,
     "name": "ミニー姫",
-    "image": "",
+    "image": "block_minniet_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2620,13 +2620,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniet.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 165,
     "name": "忍者ドナルド",
-    "image": "",
+    "image": "block_donaldn_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2636,13 +2636,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldn.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 166,
     "name": "お姫様デイジー",
-    "image": "",
+    "image": "block_daisyn_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2652,13 +2652,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisyn.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 167,
     "name": "キュートエルサ",
-    "image": "",
+    "image": "block_elsac_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2668,13 +2668,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsac.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 168,
     "name": "キュートアナ",
-    "image": "",
+    "image": "block_annac_l.png",
     "skill_desc": [
       "必要ツム数：21",
       "必要ツム数：19",
@@ -2684,13 +2684,13 @@ const tsumDataJP = [
       "必要ツム数：11",
       "必要ツム数：11"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_annac.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 169,
     "name": "サマーオラフ",
-    "image": "",
+    "image": "block_olafs_l.png",
     "skill_desc": [
       "効果時間：3秒",
       "効果時間：3.6秒",
@@ -2700,8 +2700,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_olafs.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 170,
@@ -2716,8 +2716,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:8",
       "範囲:4L 必要ツム数:8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_moana.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 171,
@@ -2732,13 +2732,13 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maui.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 172,
     "name": "ファンタズミックミッキー",
-    "image": "",
+    "image": "block_mickeyf_l.png",
     "skill_desc": [
       "必要ツム数:26 時間:2.5秒",
       "必要ツム数:25 時間:2.9秒",
@@ -2748,8 +2748,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:4.5秒",
       "必要ツム数:20 時間:4.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyf.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 173,
@@ -2764,8 +2764,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hercules.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 174,
@@ -2780,8 +2780,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hades.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 175,
@@ -2796,8 +2796,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_megara.png",
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 176,
@@ -2812,8 +2812,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_phillip2.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 177,
@@ -2828,8 +2828,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sora.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 178,
@@ -2844,13 +2844,13 @@ const tsumDataJP = [
       "範囲:3L 回数:5",
       "範囲:4L 回数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_riku.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 179,
     "name": "ロマンスベル",
-    "image": "",
+    "image": "block_bellel_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2860,13 +2860,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellel.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 180,
     "name": "ロマンス野獣",
-    "image": "",
+    "image": "block_beastl_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2876,8 +2876,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_beastl.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 181,
@@ -2892,8 +2892,8 @@ const tsumDataJP = [
       "マイツム出現率：100%",
       "マイツム出現率：100%"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gaston.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 182,
@@ -2908,8 +2908,8 @@ const tsumDataJP = [
       "消去数：25",
       "消去数：25"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lumiere.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 183,
@@ -2924,8 +2924,8 @@ const tsumDataJP = [
       "変化数：20",
       "変化数：20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_potts.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 184,
@@ -2940,8 +2940,8 @@ const tsumDataJP = [
       "必要ツム数:13 チェーン数:11",
       "必要ツム数:13 チェーン数:11"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzel2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 185,
@@ -2956,8 +2956,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flynn.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 186,
@@ -2972,8 +2972,8 @@ const tsumDataJP = [
       "必要ツム数：9",
       "必要ツム数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maximus.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 187,
@@ -2988,8 +2988,8 @@ const tsumDataJP = [
       "変化数：22",
       "変化数：22"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mulan.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 188,
@@ -3004,13 +3004,13 @@ const tsumDataJP = [
       "必要ツム数:20 時間:5秒",
       "必要ツム数:20 時間:5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pocahontas.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 189,
     "name": "パイレーツミッキー",
-    "image": "",
+    "image": "block_mickeypi_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:19",
       "範囲:S 必要ツム数:19",
@@ -3020,13 +3020,13 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeypi.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 190,
     "name": "パイレーツスティッチ",
-    "image": "",
+    "image": "block_stitchpi_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3036,13 +3036,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchpi.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 191,
     "name": "パイレーツクラリス",
-    "image": "",
+    "image": "block_claricepi_l.png",
     "skill_desc": [
       "消去数：8",
       "消去数：10",
@@ -3052,13 +3052,13 @@ const tsumDataJP = [
       "消去数：18",
       "消去数：18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_claricepi.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 192,
     "name": "ヤングジャック・スパロウ",
-    "image": "",
+    "image": "block_jacksparrow2_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3068,8 +3068,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jacksparrow2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 193,
@@ -3084,8 +3084,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_salazar.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 194,
@@ -3100,8 +3100,8 @@ const tsumDataJP = [
       "必要ツム数：14",
       "必要ツム数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jailerdog.png",
+  "skill_cost" : []
   },
   {
     "id": 195,
@@ -3116,13 +3116,13 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ramirez.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 196,
     "name": "MUマイク",
-    "image": "",
+    "image": "block_mikeu_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3132,8 +3132,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mikeu.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 197,
@@ -3148,8 +3148,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:10",
       "範囲:4L 必要ツム数:10"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_walle.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 198,
@@ -3164,8 +3164,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_carl.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 199,
@@ -3180,8 +3180,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_littlegreenmen2.png",
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 200,
@@ -3196,8 +3196,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tramp.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 201,
@@ -3212,8 +3212,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:7秒",
       "必要ツム数:20 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bluefairy.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 202,
@@ -3228,8 +3228,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_patch.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 203,
@@ -3244,13 +3244,13 @@ const tsumDataJP = [
       "発生数：6",
       "発生数：6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_timothy.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 204,
     "name": "ハロウィンソラ",
-    "image": "",
+    "image": "block_soraht_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3260,13 +3260,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_soraht.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 205,
     "name": "まきまきドナルド",
-    "image": "",
+    "image": "block_donaldht_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3276,13 +3276,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldht.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 206,
     "name": "ねじねじグーフィー",
-    "image": "",
+    "image": "block_goofyht_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3292,8 +3292,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyht.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 207,
@@ -3308,8 +3308,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:4.5秒",
       "必要ツム数:20 時間:4.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pumpkinking.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 208,
@@ -3324,8 +3324,8 @@ const tsumDataJP = [
       "必要ツム数:15 消去数:15～45",
       "必要ツム数:15 消去数:15～45"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_boogie.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 209,
@@ -3340,13 +3340,13 @@ const tsumDataJP = [
       "出現数：10",
       "出現数：10"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnieh2017.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 210,
     "name": "ごきげんプー",
-    "image": "",
+    "image": "block_pooh2_l.png",
     "skill_desc": [
       "変化数：5",
       "変化数：6",
@@ -3356,8 +3356,8 @@ const tsumDataJP = [
       "変化数：12",
       "変化数：12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pooh2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 211,
@@ -3372,8 +3372,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lumpy.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 212,
@@ -3388,13 +3388,13 @@ const tsumDataJP = [
       "必要ツム数：3",
       "必要ツム数：3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_owl.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 213,
     "name": "さむがりピグレット",
-    "image": "",
+    "image": "block_piglet2_l.png",
     "skill_desc": [
       "必要ツム数：21",
       "必要ツム数：20",
@@ -3404,8 +3404,8 @@ const tsumDataJP = [
       "必要ツム数：16",
       "必要ツム数：16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_piglet2.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 214,
@@ -3420,13 +3420,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_drossel.png",
+  "skill_cost" : []
   },
   {
     "id": 215,
     "name": "ホリデーベイマックス",
-    "image": "",
+    "image": "block_baymaxx_l.png",
     "skill_desc": [
       "効果時間：3秒",
       "効果時間：3.5秒",
@@ -3436,13 +3436,13 @@ const tsumDataJP = [
       "効果時間：5.5秒",
       "効果時間：5.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_baymaxx.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 216,
     "name": "ホリデーオラフ",
-    "image": "",
+    "image": "block_olafx_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -3452,13 +3452,13 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_olafx.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 217,
     "name": "ホリデーマリー",
-    "image": "",
+    "image": "block_mariex_l.png",
     "skill_desc": [
       "必要ツム数:15 時間:3秒",
       "必要ツム数:14 時間:3.6秒",
@@ -3468,8 +3468,8 @@ const tsumDataJP = [
       "必要ツム数:10 時間:6秒",
       "必要ツム数:10 時間:6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mariex.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 218,
@@ -3484,8 +3484,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snowwhite2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 219,
@@ -3500,8 +3500,8 @@ const tsumDataJP = [
       "変化数：22",
       "変化数：22"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_prince.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 220,
@@ -3516,8 +3516,8 @@ const tsumDataJP = [
       "必要ツム数：18",
       "必要ツム数：18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_auroraw.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 221,
@@ -3532,8 +3532,8 @@ const tsumDataJP = [
       "範囲:3L 時間:3秒",
       "範囲:4L 時間:3秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderellaw.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 222,
@@ -3548,8 +3548,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:7秒",
       "必要ツム数:18 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellew.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 223,
@@ -3564,8 +3564,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cogsworth.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 224,
@@ -3580,8 +3580,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:16",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldx.png",
+  "skill_cost" : []
   },
   {
     "id": 225,
@@ -3596,8 +3596,8 @@ const tsumDataJP = [
       "範囲:3L 時間:7秒",
       "範囲:4L 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_yensid.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 226,
@@ -3612,8 +3612,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chernabog.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 227,
@@ -3628,8 +3628,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeye.png",
+  "skill_cost" : []
   },
   {
     "id": 228,
@@ -3644,8 +3644,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chipj.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 229,
@@ -3660,8 +3660,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dalej.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 230,
@@ -3676,8 +3676,8 @@ const tsumDataJP = [
       "変化数：22",
       "変化数：22"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_practicalpig.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 231,
@@ -3692,8 +3692,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bigbadwolf.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 232,
@@ -3708,8 +3708,8 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:20",
       "範囲:L 必要ツム数:20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_buzz2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 233,
@@ -3724,8 +3724,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_woody2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 234,
@@ -3740,8 +3740,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_zurg.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 235,
@@ -3756,8 +3756,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_miguel.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 236,
@@ -3772,8 +3772,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_judy2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 237,
@@ -3788,8 +3788,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_nick2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 238,
@@ -3804,8 +3804,8 @@ const tsumDataJP = [
       "出現数：7",
       "出現数：7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_clawhauser.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 239,
@@ -3820,8 +3820,8 @@ const tsumDataJP = [
       "時間:6秒 スコア:4倍",
       "時間:6秒 スコア:4倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flash.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 240,
@@ -3836,8 +3836,8 @@ const tsumDataJP = [
       "必要ツム数:15 変化数:4",
       "必要ツム数:15 変化数:4"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_missbunnys.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 241,
@@ -3852,8 +3852,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_spiderman.png",
+  "skill_cost" : []
   },
   {
     "id": 242,
@@ -3868,8 +3868,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldc.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 243,
@@ -3884,8 +3884,8 @@ const tsumDataJP = [
       "時間:6秒 スコア:3倍",
       "時間:6秒 スコア:3倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jose.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 244,
@@ -3900,8 +3900,8 @@ const tsumDataJP = [
       "必要ツム数:16 ライン数:3",
       "必要ツム数:16 ライン数:3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_panchito.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 245,
@@ -3916,8 +3916,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ironman7.png",
+  "skill_cost" : []
   },
   {
     "id": 246,
@@ -3932,8 +3932,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_captainamerica.png",
+  "skill_cost" : []
   },
   {
     "id": 247,
@@ -3948,8 +3948,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_thanos.png",
+  "skill_cost" : []
   },
   {
     "id": 248,
@@ -3964,8 +3964,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jasmineb.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 249,
@@ -3980,8 +3980,8 @@ const tsumDataJP = [
       "時間:6秒 スコア:5.5倍",
       "時間:6秒 スコア:5.5倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielb.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 250,
@@ -3996,8 +3996,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_esmeralda.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 251,
@@ -4012,8 +4012,8 @@ const tsumDataJP = [
       "変化数：26",
       "変化数：26"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_merida.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 252,
@@ -4028,8 +4028,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tiana.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 253,
@@ -4044,8 +4044,8 @@ const tsumDataJP = [
       "必要ツム数:16 効果:3L",
       "必要ツム数:16 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_genie2.png",
+  "skill_cost" : []
   },
   {
     "id": 254,
@@ -4060,8 +4060,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jafar2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 255,
@@ -4076,8 +4076,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aladdinp.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 256,
@@ -4092,8 +4092,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_drossel3.png",
+  "skill_cost" : []
   },
   {
     "id": 257,
@@ -4108,8 +4108,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sofia.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 258,
@@ -4124,8 +4124,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mike2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 259,
@@ -4140,8 +4140,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sulley2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 260,
@@ -4156,8 +4156,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_boo.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 261,
@@ -4172,8 +4172,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mrincredible.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 262,
@@ -4188,8 +4188,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mrsincredible.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 263,
@@ -4204,8 +4204,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jackjack.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 264,
@@ -4220,8 +4220,8 @@ const tsumDataJP = [
       "必要ツム数:15 ライン数:5",
       "必要ツム数:15 ライン数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitch2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 265,
@@ -4236,8 +4236,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jumba.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 266,
@@ -4252,8 +4252,8 @@ const tsumDataJP = [
       "必要ツム数:12 スコア:3倍",
       "必要ツム数:12 スコア:3倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pleakley.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 267,
@@ -4268,8 +4268,8 @@ const tsumDataJP = [
       "効果範囲：Mサイズ",
       "効果範囲：Mサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gadget.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 268,
@@ -4284,8 +4284,8 @@ const tsumDataJP = [
       "効果時間：7秒",
       "効果時間：7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aqua.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 269,
@@ -4300,8 +4300,8 @@ const tsumDataJP = [
       "必要ツム数:18 変化数:7",
       "必要ツム数:18 変化数:7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kairi.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 270,
@@ -4316,8 +4316,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_shadow.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 271,
@@ -4332,8 +4332,8 @@ const tsumDataJP = [
       "消去数:21 ボム効果:3L",
       "消去数:21 ボム効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jack2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 272,
@@ -4348,8 +4348,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lock.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 273,
@@ -4364,8 +4364,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vampireteddy.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 274,
@@ -4380,8 +4380,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pooh3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 275,
@@ -4396,8 +4396,8 @@ const tsumDataJP = [
       "効果時間：5秒",
       "効果時間：5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gopher.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 276,
@@ -4412,8 +4412,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickey90th.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 277,
@@ -4428,8 +4428,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnie90th.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 278,
@@ -4444,8 +4444,8 @@ const tsumDataJP = [
       "消去数：13+13",
       "消去数：13+13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyclsc.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 279,
@@ -4460,8 +4460,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyj.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 280,
@@ -4476,8 +4476,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_figaro.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 281,
@@ -4492,8 +4492,8 @@ const tsumDataJP = [
       "変化数：20",
       "変化数：20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cleo.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 282,
@@ -4508,8 +4508,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ralph.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 283,
@@ -4524,8 +4524,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vanellope.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 284,
@@ -4540,8 +4540,8 @@ const tsumDataJP = [
       "必要ツム数:20 回数:4",
       "必要ツム数:20 回数:4"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_felix.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 285,
@@ -4556,8 +4556,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chipsnow.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 286,
@@ -4572,8 +4572,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dalesnow.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 287,
@@ -4588,8 +4588,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pumbaa.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 288,
@@ -4604,8 +4604,8 @@ const tsumDataJP = [
       "範囲:3L 時間:6秒",
       "範囲:4L 時間:6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsa2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 289,
@@ -4620,8 +4620,8 @@ const tsumDataJP = [
       "必要ツム数:19 時間:6秒",
       "必要ツム数:19 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maleficent2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 290,
@@ -4636,8 +4636,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:23",
       "範囲:4L 必要ツム数:23"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sora3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 291,
@@ -4652,8 +4652,8 @@ const tsumDataJP = [
       "範囲:L 回数:3",
       "範囲:L 回数:3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyking.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 292,
@@ -4668,8 +4668,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:25",
       "範囲:4L 必要ツム数:25"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ansem.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 293,
@@ -4684,8 +4684,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_xemnas.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 294,
@@ -4700,8 +4700,8 @@ const tsumDataJP = [
       "必要ツム数:18 変化数:4",
       "必要ツム数:17 変化数:4"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bianca.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 295,
@@ -4716,8 +4716,8 @@ const tsumDataJP = [
       "出現数：17",
       "出現数：17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flower.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 296,
@@ -4732,8 +4732,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_duchess.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 297,
@@ -4748,8 +4748,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_robinhood.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 298,
@@ -4764,8 +4764,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dumboc.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 299,
@@ -4780,8 +4780,8 @@ const tsumDataJP = [
       "変化数:11 消去数:29",
       "変化数:12 消去数:31"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hornedking.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 300,
@@ -4796,8 +4796,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_facilier.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 301,
@@ -4812,8 +4812,8 @@ const tsumDataJP = [
       "時間:6秒 スコア:4倍",
       "時間:6.4秒 スコア:4.4倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gothel.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 302,
@@ -4828,8 +4828,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bobawl.png",
+  "skill_cost" : []
   },
   {
     "id": 303,
@@ -4844,8 +4844,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maulwl.png",
+  "skill_cost" : []
   },
   {
     "id": 304,
@@ -4860,8 +4860,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tony.png",
+  "skill_cost" : []
   },
   {
     "id": 305,
@@ -4876,8 +4876,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_thor.png",
+  "skill_cost" : []
   },
   {
     "id": 306,
@@ -4892,8 +4892,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hulk.png",
+  "skill_cost" : []
   },
   {
     "id": 307,
@@ -4908,8 +4908,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sofia2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 308,
@@ -4924,8 +4924,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elena.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 309,
@@ -4940,8 +4940,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellf.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 310,
@@ -4956,8 +4956,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rosetta.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 311,
@@ -4972,8 +4972,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_silvermist.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 312,
@@ -4988,8 +4988,8 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:12",
       "範囲:L 必要ツム数:12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_periwinkle.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 313,
@@ -5004,8 +5004,8 @@ const tsumDataJP = [
       "変化数：11",
       "変化数：12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jasminel.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 314,
@@ -5020,8 +5020,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bopeep.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 315,
@@ -5036,8 +5036,8 @@ const tsumDataJP = [
       "効果時間：8秒",
       "効果時間：8.8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_forky.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 316,
@@ -5052,8 +5052,8 @@ const tsumDataJP = [
       "必要ツム数:15 コイン量:3L",
       "必要ツム数:14 コイン量:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hamm.png",
+  "skill_cost" : [1,1,2,2,3,3]
   },
   {
     "id": 317,
@@ -5068,8 +5068,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bunny.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 318,
@@ -5084,8 +5084,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielps.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 319,
@@ -5100,8 +5100,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flounderps.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 320,
@@ -5116,8 +5116,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_simba2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 321,
@@ -5132,8 +5132,8 @@ const tsumDataJP = [
       "変化数：7",
       "変化数：7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_timon.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 322,
@@ -5148,8 +5148,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rafiki.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 323,
@@ -5164,8 +5164,8 @@ const tsumDataJP = [
       "必要ツム数：16",
       "必要ツム数：15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_freddie.png",
+  "skill_cost" : []
   },
   {
     "id": 324,
@@ -5180,8 +5180,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_brian.png",
+  "skill_cost" : []
   },
   {
     "id": 325,
@@ -5196,8 +5196,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_roger.png",
+  "skill_cost" : []
   },
   {
     "id": 326,
@@ -5212,8 +5212,8 @@ const tsumDataJP = [
       "必要ツム数:21 回数:5",
       "必要ツム数:21 回数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ventus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 327,
@@ -5228,8 +5228,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_terra.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 328,
@@ -5244,8 +5244,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chirithy.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 329,
@@ -5260,8 +5260,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_honeylemon.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 330,
@@ -5276,8 +5276,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_fred.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 331,
@@ -5292,8 +5292,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeypx.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 332,
@@ -5308,8 +5308,8 @@ const tsumDataJP = [
       "距離：3L",
       "距離：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldpx.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 333,
@@ -5324,8 +5324,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofypx.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 334,
@@ -5340,8 +5340,8 @@ const tsumDataJP = [
       "必要ツム数:18 スコア:3倍",
       "必要ツム数:18 スコア:3.3倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pacman.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 335,
@@ -5356,8 +5356,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_blinky.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 336,
@@ -5372,8 +5372,8 @@ const tsumDataJP = [
       "必要ツム数：13",
       "必要ツム数：12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_geniel.png",
+  "skill_cost" : []
   },
   {
     "id": 337,
@@ -5388,8 +5388,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderellal.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 338,
@@ -5404,8 +5404,8 @@ const tsumDataJP = [
       "必要ツム数：16",
       "必要ツム数：15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_auroral.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 339,
@@ -5420,8 +5420,8 @@ const tsumDataJP = [
       "スコア：4.2倍",
       "スコア：4.2倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeykn.png",
+  "skill_cost" : []
   },
   {
     "id": 340,
@@ -5436,8 +5436,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldkn.png",
+  "skill_cost" : []
   },
   {
     "id": 341,
@@ -5452,8 +5452,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsaf2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 342,
@@ -5468,8 +5468,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:3秒",
       "必要ツム数:19 時間:3.3秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_annaf2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 343,
@@ -5484,8 +5484,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kristoff.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 344,
@@ -5500,8 +5500,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_reyj.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 345,
@@ -5516,8 +5516,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kyloren2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 346,
@@ -5532,8 +5532,8 @@ const tsumDataJP = [
       "時間:7秒 効果:3L",
       "時間:7.6秒 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyd.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 347,
@@ -5548,8 +5548,8 @@ const tsumDataJP = [
       "時間:9秒 効果:3L",
       "時間:10秒 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnied.png",
+  "skill_cost" : []
   },
   {
     "id": 348,
@@ -5564,8 +5564,8 @@ const tsumDataJP = [
       "必要ツム数:16 効果:3L",
       "必要ツム数:15 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_freddie2.png",
+  "skill_cost" : []
   },
   {
     "id": 349,
@@ -5580,8 +5580,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_johnd2.png",
+  "skill_cost" : []
   },
   {
     "id": 350,
@@ -5596,8 +5596,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzelcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 351,
@@ -5612,8 +5612,8 @@ const tsumDataJP = [
       "変化数：7",
       "変化数：7～8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 352,
@@ -5628,8 +5628,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellecm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 353,
@@ -5644,8 +5644,8 @@ const tsumDataJP = [
       "消去数：31",
       "消去数：33"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jasminecm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 354,
@@ -5660,8 +5660,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rajah.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 355,
@@ -5676,8 +5676,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:6秒",
       "必要ツム数:20 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_randall2.png",
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 356,
@@ -5692,8 +5692,8 @@ const tsumDataJP = [
       "必要ツム数:16 効果:3L",
       "必要ツム数:15 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_remy.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 357,
@@ -5708,8 +5708,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_eve.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 358,
@@ -5724,8 +5724,8 @@ const tsumDataJP = [
       "変化数：23",
       "変化数：25"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flik.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 359,
@@ -5740,8 +5740,8 @@ const tsumDataJP = [
       "必要ツム数:14 時間:9秒",
       "必要ツム数:13 時間:9.9秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ian.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 360,
@@ -5756,8 +5756,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:19",
       "範囲:4L 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_barley.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 361,
@@ -5772,8 +5772,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_marypoppins.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 362,
@@ -5788,8 +5788,8 @@ const tsumDataJP = [
       "必要ツム数：15",
       "必要ツム数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_giselle.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 363,
@@ -5804,8 +5804,8 @@ const tsumDataJP = [
       "効果時間：3秒",
       "効果時間：3.3秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mulanl.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 364,
@@ -5820,8 +5820,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mirana.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 365,
@@ -5836,8 +5836,8 @@ const tsumDataJP = [
       "効果時間：5秒",
       "効果時間：5.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cheshirecatl.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 366,
@@ -5852,8 +5852,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lukem.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 367,
@@ -5868,8 +5868,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ben.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 368,
@@ -5884,8 +5884,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mace.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 369,
@@ -5900,8 +5900,8 @@ const tsumDataJP = [
       "必要ツム数：18",
       "必要ツム数：16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_padme.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 370,
@@ -5916,8 +5916,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:14",
       "範囲:4L 必要ツム数:12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_anakin.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 371,
@@ -5932,8 +5932,8 @@ const tsumDataJP = [
       "必要ツム数：18",
       "必要ツム数：17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_finn.png",
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 372,
@@ -5948,8 +5948,8 @@ const tsumDataJP = [
       "消去回数：16",
       "消去回数：18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_leroy.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 373,
@@ -5964,8 +5964,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gantu.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 374,
@@ -5980,8 +5980,8 @@ const tsumDataJP = [
       "距離：3L",
       "距離：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hamsterviel.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 375,
@@ -5996,8 +5996,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_wart.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 376,
@@ -6012,8 +6012,8 @@ const tsumDataJP = [
       "時間:7秒 スコア:4.2倍",
       "時間:7.6秒 スコア:4.7倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_merlin.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 377,
@@ -6028,8 +6028,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyjp.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 378,
@@ -6044,8 +6044,8 @@ const tsumDataJP = [
       "発生数：7～8",
       "発生数：8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniejp.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 379,
@@ -6060,8 +6060,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldjp.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 380,
@@ -6076,8 +6076,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_joe.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 381,
@@ -6092,8 +6092,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_22.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 382,
@@ -6108,8 +6108,8 @@ const tsumDataJP = [
       "必要ツム数:19 時間:6.5秒",
       "必要ツム数:18 時間:7.2秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsapr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 383,
@@ -6124,8 +6124,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dante.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 384,
@@ -6140,8 +6140,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohb.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 385,
@@ -6156,8 +6156,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchs.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 386,
@@ -6172,8 +6172,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyrcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 387,
@@ -6188,8 +6188,8 @@ const tsumDataJP = [
       "範囲:3L 時間:7秒",
       "範囲:4L 時間:7.7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_miguel2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 388,
@@ -6204,8 +6204,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_wendy.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 389,
@@ -6220,8 +6220,8 @@ const tsumDataJP = [
       "消去数：34",
       "消去数：38"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vision.png",
+  "skill_cost" : []
   },
   {
     "id": 390,
@@ -6236,8 +6236,8 @@ const tsumDataJP = [
       "必要ツム数:19 時間:6秒",
       "必要ツム数:19 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maleficentc.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 391,
@@ -6252,8 +6252,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_frollo.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 392,
@@ -6268,8 +6268,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hades2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 393,
@@ -6284,8 +6284,8 @@ const tsumDataJP = [
       "効果:3L ^441w^必要数:16",
       "効果:4L ^441w^必要数:15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mikepr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 394,
@@ -6300,8 +6300,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_soraca.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 395,
@@ -6316,8 +6316,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_xehanorty.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 396,
@@ -6332,8 +6332,8 @@ const tsumDataJP = [
       "必要ツム数:16 時間:6秒",
       "必要ツム数:15 時間:6.7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderellamm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 397,
@@ -6348,8 +6348,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzelmm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 398,
@@ -6364,8 +6364,8 @@ const tsumDataJP = [
       "必要ツム数:16 時間:8秒",
       "必要ツム数:15 時間:8.8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_esmeraldamm.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 399,
@@ -6380,8 +6380,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellemm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 400,
@@ -6396,8 +6396,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_megaramm.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 401,
@@ -6412,8 +6412,8 @@ const tsumDataJP = [
       "必要ツム数:16 消去数:35",
       "必要ツム数:15 消去数:38"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_constance.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 402,
@@ -6428,8 +6428,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_parrot.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 403,
@@ -6444,8 +6444,8 @@ const tsumDataJP = [
       "範囲:3Lサイズ 必要ツム数:14",
       "範囲:4Lサイズ 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elliott.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 404,
@@ -6460,8 +6460,8 @@ const tsumDataJP = [
       "必要ツム数:12 効果:3L",
       "必要ツム数:10 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldw.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 405,
@@ -6476,8 +6476,8 @@ const tsumDataJP = [
       "必要ツム数:10 スコア:3倍",
       "必要ツム数:9 スコア:3.3倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_henry.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 406,
@@ -6492,8 +6492,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeypr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 407,
@@ -6508,8 +6508,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnieg.png",
+  "skill_cost" : [1,1,2]
   },
   {
     "id": 408,
@@ -6524,8 +6524,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mandalorian.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 409,
@@ -6540,8 +6540,8 @@ const tsumDataJP = [
       "消去数：38",
       "消去数：42"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_child.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 410,
@@ -6556,8 +6556,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chipsc.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 411,
@@ -6572,8 +6572,8 @@ const tsumDataJP = [
       "変化数：0",
       "変化数：0"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dalet.png",
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 412,
@@ -6588,8 +6588,8 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:18",
       "範囲:LL 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_clarabellecow.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 413,
@@ -6604,8 +6604,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lotsocm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 414,
@@ -6620,8 +6620,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderellapr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 415,
@@ -6636,8 +6636,8 @@ const tsumDataJP = [
       "必要ツム数:19 スコア:1.7倍",
       "必要ツム数:19 スコア:1.7倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldd.png",
+  "skill_cost" : [1,3,3,3]
   },
   {
     "id": 416,
@@ -6652,8 +6652,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzel3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 417,
@@ -6668,8 +6668,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_peteblk.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 418,
@@ -6684,8 +6684,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_perry2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 419,
@@ -6700,8 +6700,8 @@ const tsumDataJP = [
       "範囲:3L 消去数:15",
       "範囲:4L 消去数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lucifer.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 420,
@@ -6716,8 +6716,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_oliver.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 421,
@@ -6732,8 +6732,8 @@ const tsumDataJP = [
       "必要ツム数:15 スコア:2.4倍",
       "必要ツム数:15 スコア:2.4倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyr.png",
+  "skill_cost" : [1,2,5,7]
   },
   {
     "id": 422,
@@ -6748,8 +6748,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_evilqueenpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 423,
@@ -6764,8 +6764,8 @@ const tsumDataJP = [
       "消去回数：3L",
       "消去回数：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ursula2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 424,
@@ -6780,8 +6780,8 @@ const tsumDataJP = [
       "必要ツム数:18 効果:3L",
       "必要ツム数:17 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tremaine.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 425,
@@ -6796,8 +6796,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jafarc.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 426,
@@ -6812,8 +6812,8 @@ const tsumDataJP = [
       "変化数:7 スコア:1.6倍",
       "変化数:7 スコア:1.9倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_yzma.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 427,
@@ -6828,8 +6828,8 @@ const tsumDataJP = [
       "消去数：29",
       "消去数：32"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisycm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 428,
@@ -6844,8 +6844,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_claricecm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 429,
@@ -6860,8 +6860,8 @@ const tsumDataJP = [
       "発生数:4 スコア:1.7倍",
       "発生数:4 スコア:2倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 430,
@@ -6876,8 +6876,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_raya.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 431,
@@ -6892,8 +6892,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sisu.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 432,
@@ -6908,8 +6908,8 @@ const tsumDataJP = [
       "範囲:L 時間:5.5秒",
       "範囲:L 時間:6.8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeywl.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 433,
@@ -6924,8 +6924,8 @@ const tsumDataJP = [
       "消去数：35",
       "消去数：39"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldwl.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 434,
@@ -6940,8 +6940,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofywl.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 435,
@@ -6956,8 +6956,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniep.png",
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 436,
@@ -6972,8 +6972,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vaderwl.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 437,
@@ -6988,8 +6988,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stormtrooperwl.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 438,
@@ -7004,8 +7004,8 @@ const tsumDataJP = [
       "^508w^発生数:4～5 ^509w^範囲:3L",
       "^508w^発生数:5 ^509w^範囲:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_woodypr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 439,
@@ -7020,8 +7020,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mcqueenf.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 440,
@@ -7036,8 +7036,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_joy.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 441,
@@ -7052,8 +7052,8 @@ const tsumDataJP = [
       "発生数(黄青+青)：5(4+1)",
       "発生数(黄青+青)：6(4+2)"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sadness.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 442,
@@ -7068,8 +7068,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hank.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 443,
@@ -7084,8 +7084,8 @@ const tsumDataJP = [
       "変化数：7",
       "変化数：8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 444,
@@ -7100,8 +7100,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pigletcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 445,
@@ -7116,8 +7116,8 @@ const tsumDataJP = [
       "発生数：4～9",
       "発生数：5～9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_owlcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 446,
@@ -7132,8 +7132,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_loki.png",
+  "skill_cost" : []
   },
   {
     "id": 447,
@@ -7148,8 +7148,8 @@ const tsumDataJP = [
       "変化数：11",
       "変化数：12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vision.png",
+  "skill_cost" : []
   },
   {
     "id": 448,
@@ -7164,8 +7164,8 @@ const tsumDataJP = [
       "消去数：37",
       "消去数：40"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_wanda.png",
+  "skill_cost" : []
   },
   {
     "id": 449,
@@ -7180,8 +7180,8 @@ const tsumDataJP = [
       "^524w^効果:3L ^525w^範囲:3L",
       "^524w^効果:4L ^525w^範囲:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 450,
@@ -7196,8 +7196,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_alicep.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 451,
@@ -7212,8 +7212,8 @@ const tsumDataJP = [
       "必要ツム数:16 変化数:6～8",
       "必要ツム数:15 変化数:7～9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snowwhitep.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 452,
@@ -7228,8 +7228,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyjc.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 453,
@@ -7244,8 +7244,8 @@ const tsumDataJP = [
       "必要ツム数:12 チェーン数:11",
       "必要ツム数:12 チェーン数:12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnieiasw.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 454,
@@ -7260,8 +7260,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:6秒",
       "必要ツム数:18 時間:7.3秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_grim.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 455,
@@ -7276,8 +7276,8 @@ const tsumDataJP = [
       "時間:7秒 スコア:2倍",
       "時間:7.6秒 スコア:2.2倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_riddle.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 456,
@@ -7292,8 +7292,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_leona.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 457,
@@ -7308,8 +7308,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_azul.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 458,
@@ -7324,8 +7324,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kalim.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 459,
@@ -7340,8 +7340,8 @@ const tsumDataJP = [
       "範囲:3Lサイズ 時間:6.5秒",
       "範囲:4Lサイズ 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maleficentmm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 460,
@@ -7356,8 +7356,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hadesmm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 461,
@@ -7372,8 +7372,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:16",
       "範囲:4L 必要ツム数:15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_evilqueenmm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 462,
@@ -7388,8 +7388,8 @@ const tsumDataJP = [
       "変化数：4",
       "変化数：4～5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_auroramm.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 463,
@@ -7404,8 +7404,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tianamm.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 464,
@@ -7420,8 +7420,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyph.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 465,
@@ -7436,8 +7436,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_simba3.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 466,
@@ -7452,8 +7452,8 @@ const tsumDataJP = [
       "範囲:3Lサイズ スコア:1.9倍",
       "範囲:4Lサイズ スコア:2.06倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_anna2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 467,
@@ -7468,8 +7468,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bobawl.png",
+  "skill_cost" : []
   },
   {
     "id": 468,
@@ -7484,8 +7484,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maulwl.png",
+  "skill_cost" : []
   },
   {
     "id": 469,
@@ -7500,8 +7500,8 @@ const tsumDataJP = [
       "^554w^時間:6秒 ^555w^スコア:3.5倍",
       "^554w^時間:6.4秒 ^555w^スコア:3.8倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellepr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 470,
@@ -7516,8 +7516,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gaston2.png",
+  "skill_cost" : []
   },
   {
     "id": 471,
@@ -7532,8 +7532,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellx.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 472,
@@ -7548,8 +7548,8 @@ const tsumDataJP = [
       "時間:6秒 スコア:4.2倍",
       "時間:6.6秒 スコア:4.8倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gaston2.png",
+  "skill_cost" : []
   },
   {
     "id": 473,
@@ -7564,8 +7564,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cruellal.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 474,
@@ -7580,8 +7580,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzelup.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 475,
@@ -7596,8 +7596,8 @@ const tsumDataJP = [
       "必要ツム数:16 変化数:3",
       "必要ツム数:14 変化数:3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jasmineup.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 476,
@@ -7612,8 +7612,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielup.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 477,
@@ -7628,8 +7628,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnie8th.png",
+  "skill_cost" : [1,1,3]
   },
   {
     "id": 478,
@@ -7644,8 +7644,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sherekhan.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 479,
@@ -7660,8 +7660,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldpspr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 480,
@@ -7676,8 +7676,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:6秒",
       "必要ツム数:18 時間:7秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyps.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 481,
@@ -7692,8 +7692,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyps.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 482,
@@ -7708,8 +7708,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_moana2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 483,
@@ -7724,8 +7724,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tamatoa.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 484,
@@ -7740,8 +7740,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mike3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 485,
@@ -7756,8 +7756,8 @@ const tsumDataJP = [
       "範囲:3L 消去数:24",
       "範囲:4L 消去数:26"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_boocm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 486,
@@ -7772,8 +7772,8 @@ const tsumDataJP = [
       "範囲:M 必要ツム数:17",
       "範囲:L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_roz.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 487,
@@ -7788,8 +7788,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:14",
       "範囲:4L 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_judyc.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 488,
@@ -7804,8 +7804,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_nickc.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 489,
@@ -7820,8 +7820,8 @@ const tsumDataJP = [
       "消去数：37",
       "消去数：41"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vil.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 490,
@@ -7836,8 +7836,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_idia.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 491,
@@ -7852,8 +7852,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_crowley.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 492,
@@ -7868,8 +7868,8 @@ const tsumDataJP = [
       "消去数：13～45",
       "消去数：14～47"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mirror.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 493,
@@ -7884,8 +7884,8 @@ const tsumDataJP = [
       "必要ツム数:19 時間:6.5秒",
       "必要ツム数:19 時間:7.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_malleus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 494,
@@ -7900,8 +7900,8 @@ const tsumDataJP = [
       "必要ツム数:15 時間:7秒",
       "必要ツム数:14 時間:7.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_pinocchiod.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 495,
@@ -7916,8 +7916,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_monstro.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 496,
@@ -7932,8 +7932,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ahsoka.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 497,
@@ -7948,8 +7948,8 @@ const tsumDataJP = [
       "^598w^範囲:3L ^599w^時間:6.5秒",
       "^598w^範囲:4L ^599w^時間:6.9秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lukepr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 498,
@@ -7964,8 +7964,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:19",
       "範囲:4L 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_obiwan.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 499,
@@ -7980,8 +7980,8 @@ const tsumDataJP = [
       "範囲:L 必要ツム数:15",
       "範囲:L 必要ツム数:12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ursular.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 500,
@@ -7996,8 +7996,8 @@ const tsumDataJP = [
       "必要ツム数:20 キャベツ数:16",
       "必要ツム数:18 キャベツ数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeycoscm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 501,
@@ -8012,8 +8012,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniecos.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 502,
@@ -8028,8 +8028,8 @@ const tsumDataJP = [
       "消去数：25～35",
       "消去数：28～38"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofycos.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 503,
@@ -8044,8 +8044,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldcos.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 504,
@@ -8060,8 +8060,8 @@ const tsumDataJP = [
       "必要ツム数：17",
       "必要ツム数：15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_meilin.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 505,
@@ -8076,8 +8076,8 @@ const tsumDataJP = [
       "必要ツム数:16 回数:5",
       "必要ツム数:13 回数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_buzzl.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 506,
@@ -8092,8 +8092,8 @@ const tsumDataJP = [
       "必要ツム数:16 消去数:35",
       "必要ツム数:15 消去数:38"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sox.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 507,
@@ -8108,8 +8108,8 @@ const tsumDataJP = [
       "範囲:3L スコア:3倍",
       "範囲:4L スコア:3.2倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_luca.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 508,
@@ -8124,8 +8124,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_luxojr.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 509,
@@ -8140,8 +8140,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderellaup.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 510,
@@ -8156,8 +8156,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snowwhiteup.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 511,
@@ -8172,8 +8172,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tianaup.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 512,
@@ -8188,8 +8188,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mirabel.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 513,
@@ -8204,8 +8204,8 @@ const tsumDataJP = [
       "消去数：35",
       "消去数：39"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_isabela.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 514,
@@ -8220,8 +8220,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:14",
       "範囲:4L 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_riku2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 515,
@@ -8236,8 +8236,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyking2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 516,
@@ -8252,8 +8252,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_axel.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 517,
@@ -8268,8 +8268,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_namine.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 518,
@@ -8284,8 +8284,8 @@ const tsumDataJP = [
       "^626w^範囲:3L ^627w^時間:8秒",
       "^626w^範囲:4L ^627w^時間:8.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sorapr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 519,
@@ -8300,8 +8300,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_foulfellow.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 520,
@@ -8316,8 +8316,8 @@ const tsumDataJP = [
       "必要ツム数:16 消去数:35",
       "必要ツム数:15 消去数:38"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gideon.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 521,
@@ -8332,8 +8332,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jafar3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 522,
@@ -8348,8 +8348,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_queenofhearts2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 523,
@@ -8364,8 +8364,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:23",
       "範囲:4L 必要ツム数:22"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hookcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 524,
@@ -8380,8 +8380,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cruella2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 525,
@@ -8396,8 +8396,8 @@ const tsumDataJP = [
       "範囲:3L スコア:1.6倍",
       "範囲:4L スコア:1.7倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gadget2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 526,
@@ -8412,8 +8412,8 @@ const tsumDataJP = [
       "必要ツム数:18 効果:3L",
       "必要ツム数:17 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_esmeralda2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 527,
@@ -8428,8 +8428,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_quasimodo.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 528,
@@ -8444,8 +8444,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chipcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 529,
@@ -8460,8 +8460,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dalecm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 530,
@@ -8476,8 +8476,8 @@ const tsumDataJP = [
       "^647w^消去上限数:30 ^648w^ボム効果:3L",
       "^647w^消去上限数:32 ^648w^ボム効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzelpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 531,
@@ -8492,8 +8492,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_flynn2.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 532,
@@ -8508,8 +8508,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gothel2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 533,
@@ -8524,8 +8524,8 @@ const tsumDataJP = [
       "変化数：8",
       "変化数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyst.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 534,
@@ -8540,8 +8540,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldst.png",
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 535,
@@ -8556,8 +8556,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniest.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 536,
@@ -8572,8 +8572,8 @@ const tsumDataJP = [
       "消去数：38",
       "消去数：42"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisyst.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 537,
@@ -8588,8 +8588,8 @@ const tsumDataJP = [
       "範囲:3L 変化数:14",
       "範囲:4L 変化数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maleficentd2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 538,
@@ -8604,8 +8604,8 @@ const tsumDataJP = [
       "範囲:3L 時間:7秒",
       "範囲:4L 時間:7.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bluefairy2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 539,
@@ -8620,8 +8620,8 @@ const tsumDataJP = [
       "^660w^範囲:3L ^661w^スコア:2.8倍",
       "^660w^範囲:4L ^661w^スコア:3.1倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchvpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 540,
@@ -8636,8 +8636,8 @@ const tsumDataJP = [
       "必要ツム数:14 回数:4",
       "必要ツム数:14 回数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellv.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 541,
@@ -8652,8 +8652,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_claricev.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 542,
@@ -8668,8 +8668,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jackt.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 543,
@@ -8684,8 +8684,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:6秒",
       "必要ツム数:19 時間:6.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_roset.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 544,
@@ -8700,8 +8700,8 @@ const tsumDataJP = [
       "必要ツム数:21 効果:3L",
       "必要ツム数:20 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cinderellafcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 545,
@@ -8716,8 +8716,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:25",
       "範囲:4L 必要ツム数:24"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snowwhitefcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 546,
@@ -8732,8 +8732,8 @@ const tsumDataJP = [
       "変化数：4～5",
       "変化数：5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aurorafcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 547,
@@ -8748,8 +8748,8 @@ const tsumDataJP = [
       "消去数：37",
       "消去数：40"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jakesully.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 548,
@@ -8764,8 +8764,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_neytiri.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 549,
@@ -8780,8 +8780,8 @@ const tsumDataJP = [
       "必要ツム数:10 スコア:28コ分",
       "必要ツム数:9 スコア:31コ分"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vanessa.png",
+  "skill_cost" : []
   },
   {
     "id": 550,
@@ -8796,8 +8796,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cardsoldiers.png",
+  "skill_cost" : []
   },
   {
     "id": 551,
@@ -8812,8 +8812,8 @@ const tsumDataJP = [
       "変化数：8",
       "変化数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jade.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 552,
@@ -8828,8 +8828,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_floyd.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 553,
@@ -8844,8 +8844,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ace.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 554,
@@ -8860,8 +8860,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_deuce.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 555,
@@ -8876,8 +8876,8 @@ const tsumDataJP = [
       "範囲:3L 消去数:26",
       "範囲:4L 消去数:29"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_grievous.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 556,
@@ -8892,8 +8892,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dooku.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 557,
@@ -8908,8 +8908,8 @@ const tsumDataJP = [
       "範囲:3L スコア:2.8倍",
       "範囲:4L スコア:3.1倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_phasma.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 558,
@@ -8924,8 +8924,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:19",
       "範囲:4L 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kyloren3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 559,
@@ -8940,8 +8940,8 @@ const tsumDataJP = [
       "^691w^範囲:3L ^692w^スコア:2.5倍",
       "^691w^範囲:4L ^692w^スコア:2.7倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vaderpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 560,
@@ -8956,8 +8956,8 @@ const tsumDataJP = [
       "必要ツム数：15",
       "必要ツム数：14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_spidermiles.png",
+  "skill_cost" : []
   },
   {
     "id": 561,
@@ -8972,8 +8972,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_spidergwen.png",
+  "skill_cost" : []
   },
   {
     "id": 562,
@@ -8988,8 +8988,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_spiderman2099.png",
+  "skill_cost" : []
   },
   {
     "id": 563,
@@ -9004,8 +9004,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ariell.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 564,
@@ -9020,8 +9020,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tritonl.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 565,
@@ -9036,8 +9036,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_indianajones.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 566,
@@ -9052,8 +9052,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldr.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 567,
@@ -9068,8 +9068,8 @@ const tsumDataJP = [
       "範囲:3L コイン量:3L",
       "範囲:4L コイン量:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_scrooger.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 568,
@@ -9084,8 +9084,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_milo.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 569,
@@ -9100,8 +9100,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:6秒",
       "必要ツム数:17 時間:6.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kida.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 570,
@@ -9116,8 +9116,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snowwhited100.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 571,
@@ -9132,8 +9132,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_woodyd100.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 572,
@@ -9148,8 +9148,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_r2d2d100.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 573,
@@ -9164,8 +9164,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ironmand100.png",
+  "skill_cost" : []
   },
   {
     "id": 574,
@@ -9180,8 +9180,8 @@ const tsumDataJP = [
       "^710w^範囲:3L ^711w^スコア:1.35倍",
       "^710w^範囲:4L ^711w^スコア:1.4倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyd100pr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 575,
@@ -9196,8 +9196,8 @@ const tsumDataJP = [
       "効果:3L 必要ツム数:21",
       "効果:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_malleus2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 576,
@@ -9212,8 +9212,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_azul2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 577,
@@ -9228,8 +9228,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:28",
       "範囲:4L 必要ツム数:27"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_idiacm.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 578,
@@ -9244,8 +9244,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_leona2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 579,
@@ -9260,8 +9260,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_riddlecm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 580,
@@ -9276,8 +9276,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:16",
       "範囲:4L 必要ツム数:15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_scar2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 581,
@@ -9292,8 +9292,8 @@ const tsumDataJP = [
       "範囲:LL 必要ツム数:15",
       "範囲:LL 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_evilqueen2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 582,
@@ -9308,8 +9308,8 @@ const tsumDataJP = [
       "必要ツム数:15 時間:8秒",
       "必要ツム数:14 時間:8.8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chernabog2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 583,
@@ -9324,8 +9324,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tremainemm.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 584,
@@ -9340,8 +9340,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ursulamm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 585,
@@ -9356,8 +9356,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzeldc.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 586,
@@ -9372,8 +9372,8 @@ const tsumDataJP = [
       "必要ツム数:21 発生数:4",
       "必要ツム数:21 発生数:4"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arieldc.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 587,
@@ -9388,8 +9388,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tianadc.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 588,
@@ -9404,8 +9404,8 @@ const tsumDataJP = [
       "必要ツム数:22 時間:6秒",
       "必要ツム数:21 時間:6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ember.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 589,
@@ -9420,8 +9420,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_wade.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 590,
@@ -9436,8 +9436,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyfes.png",
+  "skill_cost" : [1,1,1,2,3,5]
   },
   {
     "id": 591,
@@ -9452,8 +9452,8 @@ const tsumDataJP = [
       "時間：6秒",
       "時間：6.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniefes.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 592,
@@ -9468,8 +9468,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_asha.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 593,
@@ -9484,8 +9484,8 @@ const tsumDataJP = [
       "^744w^必要ツム数:18 ^745w^必要ツム数:36",
       "^744w^必要ツム数:17 ^745w^必要ツム数:34"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jackpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 594,
@@ -9500,8 +9500,8 @@ const tsumDataJP = [
       "範囲:LL プレゼント数:4",
       "範囲:LL プレゼント数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sandyclaws.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 595,
@@ -9516,8 +9516,8 @@ const tsumDataJP = [
       "必要ツム数：17",
       "必要ツム数：15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mushu.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 596,
@@ -9532,8 +9532,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohfes.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 597,
@@ -9548,8 +9548,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchfes.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 598,
@@ -9564,8 +9564,8 @@ const tsumDataJP = [
       "^750w^時間:15秒 ^751w^^752w^^753w^必要ツム数:18",
       "^750w^時間:16.3秒 ^751w^^752w^^753w^必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyset.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 599,
@@ -9580,8 +9580,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_anna3.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 600,
@@ -9596,8 +9596,8 @@ const tsumDataJP = [
       "スコア:2.5倍 オオカミ数:4匹",
       "スコア:2.5倍 オオカミ数:4匹"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kristoff2.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 601,
@@ -9612,8 +9612,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hans.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 602,
@@ -9628,8 +9628,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_marshmallow.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 603,
@@ -9644,8 +9644,8 @@ const tsumDataJP = [
       "^761w^消去数:32 ^762w^必要ツム数:26",
       "^761w^消去数:34 ^762w^必要ツム数:24"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsa2pr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 604,
@@ -9660,8 +9660,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:6秒",
       "必要ツム数:19 時間:6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_alicecm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 605,
@@ -9676,8 +9676,8 @@ const tsumDataJP = [
       "変化数：15",
       "変化数：17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mariecm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 606,
@@ -9692,8 +9692,8 @@ const tsumDataJP = [
       "消去数：36",
       "消去数：40"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dumbocm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 607,
@@ -9708,8 +9708,8 @@ const tsumDataJP = [
       "さくら餅数：8個",
       "さくら餅数：9個"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniecb.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 608,
@@ -9724,8 +9724,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisycb.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 609,
@@ -9740,8 +9740,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vil2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 610,
@@ -9756,8 +9756,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:27",
       "範囲:4L 必要ツム数:26"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kalimcm.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 611,
@@ -9772,8 +9772,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_grim2.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 612,
@@ -9788,8 +9788,8 @@ const tsumDataJP = [
       "必要ツム数:17 スコア:3.4倍",
       "必要ツム数:16 スコア:3.8倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jamil.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 613,
@@ -9804,8 +9804,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rook.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 614,
@@ -9820,8 +9820,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_boba.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 615,
@@ -9836,8 +9836,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:6秒",
       "必要ツム数:18 時間:6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jabba.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 616,
@@ -9852,8 +9852,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_anakinpod.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 617,
@@ -9868,8 +9868,8 @@ const tsumDataJP = [
       "^782w^時間:15秒 ^783w^^784w^効果:3L",
       "^782w^時間:16.4秒 ^783w^^784w^効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_starwarsset.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 618,
@@ -9884,8 +9884,8 @@ const tsumDataJP = [
       "効果時間：4.7秒",
       "効果時間：5.1秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_quigon.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 619,
@@ -9900,8 +9900,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniepx.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 620,
@@ -9916,8 +9916,8 @@ const tsumDataJP = [
       "範囲:LL 消去数:6",
       "範囲:LL 消去数:8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisypx.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 621,
@@ -9932,8 +9932,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_claricepx.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 622,
@@ -9948,8 +9948,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohrain.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 623,
@@ -9964,8 +9964,8 @@ const tsumDataJP = [
       "変化数:20 スコア:5.5倍",
       "変化数:22 スコア:5.7倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_robinrain.png",
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 624,
@@ -9980,8 +9980,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_duffy.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 625,
@@ -9996,8 +9996,8 @@ const tsumDataJP = [
       "消去数：32",
       "消去数：37"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gelatoni.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 626,
@@ -10012,8 +10012,8 @@ const tsumDataJP = [
       "発生数：5",
       "発生数：5～6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cookieann.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 627,
@@ -10028,8 +10028,8 @@ const tsumDataJP = [
       "範囲:3L 発生数:3",
       "範囲:4L 発生数:3"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stellalou.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 628,
@@ -10044,8 +10044,8 @@ const tsumDataJP = [
       "音符の数：5～6",
       "音符の数：6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_olumel.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 629,
@@ -10060,8 +10060,8 @@ const tsumDataJP = [
       "^802w^必要ツム数:27 ^803w^範囲:3L",
       "^802w^必要ツム数:25 ^803w^範囲:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeydfpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 630,
@@ -10076,8 +10076,8 @@ const tsumDataJP = [
       "スコア:3.5倍 出現数:6",
       "スコア:4倍 出現数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_linabell.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 631,
@@ -10092,8 +10092,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_shelliemay.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 632,
@@ -10108,8 +10108,8 @@ const tsumDataJP = [
       "スコア:1.8倍 ライン数:5",
       "スコア:2.2倍 ライン数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minniedf.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 633,
@@ -10124,8 +10124,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzela.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 634,
@@ -10140,8 +10140,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellea.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 635,
@@ -10156,8 +10156,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tianaa.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 636,
@@ -10172,8 +10172,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellf2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 637,
@@ -10188,8 +10188,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cheese.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 638,
@@ -10204,8 +10204,8 @@ const tsumDataJP = [
       "^814w^ 時間:11秒 ^816w^^815w^^817w^効果:3L",
       "^814w^ 時間:11.8秒 ^816w^^815w^^817w^効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_miset.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 639,
@@ -10220,8 +10220,8 @@ const tsumDataJP = [
       "必要ツム数:18 スコア:3.2倍",
       "必要ツム数:17 スコア:3.7倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyh2024.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 640,
@@ -10236,8 +10236,8 @@ const tsumDataJP = [
       "効果範囲:3Lサイズ 必要ツム数:17",
       "効果範囲:4Lサイズ 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_peteh2024.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 641,
@@ -10252,8 +10252,8 @@ const tsumDataJP = [
       "必要ツム数:17 時間:7秒",
       "必要ツム数:16 時間:7.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyh2024.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 642,
@@ -10268,8 +10268,8 @@ const tsumDataJP = [
       "必要ツム数:15 時間:5.5秒",
       "必要ツム数:14 時間:5.9秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldh2024.png",
+  "skill_cost" : [1,1,1,2,3,3]
   },
   {
     "id": 643,
@@ -10284,8 +10284,8 @@ const tsumDataJP = [
       "必要ツム数:15 効果:3L",
       "必要ツム数:13 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_magnifico.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 644,
@@ -10300,8 +10300,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:19",
       "範囲:4L 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_delacruz.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 645,
@@ -10316,8 +10316,8 @@ const tsumDataJP = [
       "出現数：5",
       "出現数：5～6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kingcandy.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 646,
@@ -10332,8 +10332,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_bellwether.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 647,
@@ -10348,8 +10348,8 @@ const tsumDataJP = [
       "必要ツム数:16 時間:6秒",
       "必要ツム数:15 時間:6.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_yokai.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 648,
@@ -10364,8 +10364,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:25",
       "範囲:4L 必要ツム数:24"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_wasabi.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 649,
@@ -10380,8 +10380,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gogo.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 650,
@@ -10396,8 +10396,8 @@ const tsumDataJP = [
       "^833w^必要ツム数:24 ^834w^必要ツム数:13",
       "^833w^必要ツム数:22 ^834w^必要ツム数:12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mochipr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 651,
@@ -10412,8 +10412,8 @@ const tsumDataJP = [
       "必要ツム数:25 効果:3L",
       "必要ツム数:23 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_baymaxpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 652,
@@ -10428,8 +10428,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickey11th.png",
+  "skill_cost" : [1,1,1,2,2,3]
   },
   {
     "id": 653,
@@ -10444,8 +10444,8 @@ const tsumDataJP = [
       "消去回数：6",
       "消去回数：7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maxprize.png",
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 654,
@@ -10460,8 +10460,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kaa.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 655,
@@ -10476,8 +10476,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnie11th.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 656,
@@ -10492,8 +10492,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_angel11th.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 657,
@@ -10508,8 +10508,8 @@ const tsumDataJP = [
       "必要ツム数:19 時間:5.5秒",
       "必要ツム数:18 時間:5.9秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitch11th.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 658,
@@ -10524,8 +10524,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jasminet.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 659,
@@ -10540,8 +10540,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_iago.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 660,
@@ -10556,8 +10556,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:8",
       "範囲:4L 必要ツム数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cow.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 661,
@@ -10572,8 +10572,8 @@ const tsumDataJP = [
       "回数:4 ^851w^消去数:24 ^852w^時間:6秒",
       "回数:5 ^851w^消去数:26 ^852w^時間:6.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aladdinpr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 662,
@@ -10588,8 +10588,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jafarw.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 663,
@@ -10604,8 +10604,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_hook2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 664,
@@ -10620,8 +10620,8 @@ const tsumDataJP = [
       "消去回数：7",
       "消去回数：8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_smee.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 665,
@@ -10636,8 +10636,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:9秒",
       "必要ツム数:17 時間:10秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_peterpan2.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 666,
@@ -10652,8 +10652,8 @@ const tsumDataJP = [
       "効果時間：3.5秒",
       "効果時間：3.8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 667,
@@ -10668,8 +10668,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 668,
@@ -10684,8 +10684,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:19",
       "範囲:4L 必要ツム数:18"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aliceplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 669,
@@ -10700,8 +10700,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:10秒",
       "必要ツム数:19 時間:11秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cheshirecatcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 670,
@@ -10716,8 +10716,8 @@ const tsumDataJP = [
       "消去数：～33",
       "消去数：～36"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_madhattercm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 671,
@@ -10732,8 +10732,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:22",
       "範囲:4L 必要ツム数:21"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_whiterabbitcm.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 672,
@@ -10748,8 +10748,8 @@ const tsumDataJP = [
       "時間:8秒 必要ツム数:18",
       "時間:8.6秒 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_queenofhearts3.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 673,
@@ -10764,8 +10764,8 @@ const tsumDataJP = [
       "範囲:3L ^872w^時間:6秒",
       "範囲:4L ^872w^時間:6.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_reypr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 674,
@@ -10780,8 +10780,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poedameron.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 675,
@@ -10796,8 +10796,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:8秒",
       "必要ツム数:17 時間:8.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_snoke.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 676,
@@ -10812,8 +10812,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_epg.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 677,
@@ -10828,8 +10828,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stormtrooperplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 678,
@@ -10844,8 +10844,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kotu.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 679,
@@ -10860,8 +10860,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:10秒",
       "必要ツム数:19 時間:11.2秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_moana3.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 680,
@@ -10876,8 +10876,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_envy.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 681,
@@ -10892,8 +10892,8 @@ const tsumDataJP = [
       "範囲:3L 時間:10秒",
       "範囲:4L 時間:10.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_anxiety.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 682,
@@ -10908,8 +10908,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mcqueenplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 683,
@@ -10924,8 +10924,8 @@ const tsumDataJP = [
       "必要ツム数:18 効果:3L",
       "必要ツム数:16 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_roxas.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 684,
@@ -10940,8 +10940,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_xion.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 685,
@@ -10956,8 +10956,8 @@ const tsumDataJP = [
       "必要ツム数:16 時間:5秒",
       "必要ツム数:15 時間:5.3秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_riku3.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 686,
@@ -10972,8 +10972,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kairi2.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 687,
@@ -10988,8 +10988,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_plutoplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 688,
@@ -11004,8 +11004,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:17",
       "範囲:4L 必要ツム数:16"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_arielplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 689,
@@ -11020,8 +11020,8 @@ const tsumDataJP = [
       "^893w^必要ツム数:11 ^893w^^894w^効果:3L",
       "^893w^必要ツム数:10 ^893w^^894w^効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldtf2025pr.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 690,
@@ -11036,8 +11036,8 @@ const tsumDataJP = [
       "必要ツム数:16 時間:8秒",
       "必要ツム数:15 時間:8.8秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldtf2025cm.png",
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 691,
@@ -11052,8 +11052,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchtf2025.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 692,
@@ -11068,8 +11068,8 @@ const tsumDataJP = [
       "消去数：23～",
       "消去数：25～"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisytf2025.png",
+  "skill_cost" : [1,1,1,2,2,3]
   },
   {
     "id": 693,
@@ -11084,8 +11084,8 @@ const tsumDataJP = [
       "必要ツム数:18 時間:10秒",
       "必要ツム数:17 時間:11.2秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_malleusmd.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 694,
@@ -11100,8 +11100,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:22",
       "範囲:4L 必要ツム数:21"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_azulmd.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 695,
@@ -11116,8 +11116,8 @@ const tsumDataJP = [
       "必要ツム数:18 消去数:6～",
       "必要ツム数:17 消去数:7～"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_idiamd.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 696,
@@ -11132,8 +11132,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jackhowl.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 697,
@@ -11148,8 +11148,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ruggie.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 698,
@@ -11164,8 +11164,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_simbaplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 699,
@@ -11180,8 +11180,8 @@ const tsumDataJP = [
       "必要ツム数:30 効果:3L",
       "必要ツム数:27 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_villainsset.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 700,
@@ -11196,8 +11196,8 @@ const tsumDataJP = [
       "効果時間：5.3秒",
       "効果時間：6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gaston3.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 701,
@@ -11212,8 +11212,8 @@ const tsumDataJP = [
       "効果時間：7秒",
       "効果時間：7.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_epel.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 702,
@@ -11228,8 +11228,8 @@ const tsumDataJP = [
       "範囲:LL 回数:3",
       "範囲:LL 回数:4"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ortho.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 703,
@@ -11244,8 +11244,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cruellaplus.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 704,
@@ -11260,8 +11260,8 @@ const tsumDataJP = [
       "効果時間：10秒",
       "効果時間：11秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tremaineplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 705,
@@ -11276,8 +11276,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_chipkp.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 706,
@@ -11292,8 +11292,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dalekp.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 707,
@@ -11308,8 +11308,8 @@ const tsumDataJP = [
       "消去数：29",
       "消去数：31"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_goofyplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 708,
@@ -11324,8 +11324,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyink.png",
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 709,
@@ -11340,8 +11340,8 @@ const tsumDataJP = [
       "必要ツム数:18 変化数:5～6",
       "必要ツム数:17 変化数:5～7"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_auroraink.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 710,
@@ -11356,8 +11356,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:20",
       "範囲:4L 必要ツム数:19"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellink.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 711,
@@ -11372,8 +11372,8 @@ const tsumDataJP = [
       "必要ツム数:20 時間:10秒",
       "必要ツム数:19 時間:10.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_judypr.png",
+  "skill_cost" : []
   },
   {
     "id": 712,
@@ -11388,8 +11388,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_gary.png",
+  "skill_cost" : []
   },
   {
     "id": 713,
@@ -11404,8 +11404,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_woodyplus.png",
+  "skill_cost" : []
   },
   {
     "id": 714,
@@ -11420,8 +11420,8 @@ const tsumDataJP = [
       "回数：7",
       "回数：8"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_buzzplus.png",
+  "skill_cost" : []
   },
   {
     "id": 715,
@@ -11436,8 +11436,8 @@ const tsumDataJP = [
       "必要ツム数:20 消去数:30～",
       "必要ツム数:19 消去数:33～"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickey12th.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 716,
@@ -11452,8 +11452,8 @@ const tsumDataJP = [
       "プレゼント数：2～6",
       "プレゼント数：2～6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnie12thplus.png",
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 717,
@@ -11468,8 +11468,8 @@ const tsumDataJP = [
       "時間：10秒",
       "時間：11秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_elsaco.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 718,
@@ -11484,8 +11484,8 @@ const tsumDataJP = [
       "範囲:3L 時間:15秒",
       "範囲:4L 時間:16.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_beastda.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 719,
@@ -11500,8 +11500,8 @@ const tsumDataJP = [
       "範囲:3L 消去数:24",
       "範囲:4L 消去数:27"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rapunzelplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 720,
@@ -11516,8 +11516,8 @@ const tsumDataJP = [
       "必要ツム数:17 効果:3L",
       "必要ツム数:16 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisyplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 721,
@@ -11532,8 +11532,8 @@ const tsumDataJP = [
       "必要ツム数:15 スコア:4.1倍",
       "必要ツム数:14 スコア:4.8倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_soraplus.png",
+  "skill_cost" : []
   },
   {
     "id": 722,
@@ -11548,8 +11548,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:10",
       "範囲:4L 必要ツム数:9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cloud.png",
+  "skill_cost" : []
   },
   {
     "id": 723,
@@ -11564,8 +11564,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:21",
       "範囲:4L 必要ツム数:20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyking3.png",
+  "skill_cost" : []
   },
   {
     "id": 724,
@@ -11580,8 +11580,8 @@ const tsumDataJP = [
       "必要ツム数:14 効果:3L",
       "必要ツム数:13 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_aerith.png",
+  "skill_cost" : []
   },
   {
     "id": 725,
@@ -11596,8 +11596,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tifa.png",
+  "skill_cost" : []
   },
   {
     "id": 726,
@@ -11612,8 +11612,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_conanplus.png",
+  "skill_cost" : []
   },
   {
     "id": 727,
@@ -11628,8 +11628,8 @@ const tsumDataJP = [
       "範囲:3L 効果時間:15秒",
       "範囲:4L 効果時間:16.4秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_conanpr.png",
+  "skill_cost" : []
   },
   {
     "id": 728,
@@ -11644,8 +11644,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ran.png",
+  "skill_cost" : []
   },
   {
     "id": 729,
@@ -11660,8 +11660,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_amuro.png",
+  "skill_cost" : []
   },
   {
     "id": 730,
@@ -11676,8 +11676,8 @@ const tsumDataJP = [
       "スコア:25コ分 必要ツム数:16",
       "スコア:29コ分 必要ツム数:15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_haibara.png",
+  "skill_cost" : []
   },
   {
     "id": 731,
@@ -11692,8 +11692,8 @@ const tsumDataJP = [
       "効果:3L 必要ツム数:15",
       "効果:4L 必要ツム数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_kogoro.png",
+  "skill_cost" : []
   },
   {
     "id": 732,
@@ -11708,8 +11708,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_minnietrans.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 733,
@@ -11724,8 +11724,8 @@ const tsumDataJP = [
       "必要ツム数:16 変化数:5",
       "必要ツム数:15 変化数:5～6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_daisytrans.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 734,
@@ -11740,8 +11740,8 @@ const tsumDataJP = [
       "効果：3L",
       "効果：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_claricetrans.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 735,
@@ -11756,8 +11756,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:18",
       "範囲:4L 必要ツム数:17"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeyr.png",
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 736,
@@ -11772,8 +11772,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mabelplus.png",
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 737,
@@ -11788,8 +11788,8 @@ const tsumDataJP = [
       "時間:20秒 効果:3L",
       "時間:21秒 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_starwarsdset.png",
+  "skill_cost" : []
   },
   {
     "id": 738,
@@ -11804,8 +11804,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_moffgideon.png",
+  "skill_cost" : []
   },
   {
     "id": 739,
@@ -11820,8 +11820,8 @@ const tsumDataJP = [
       "必要ツム数:15 回数:5",
       "必要ツム数:13 回数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_luketm.png",
+  "skill_cost" : []
   },
   {
     "id": 740,
@@ -11836,8 +11836,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mandalorianplus.png",
+  "skill_cost" : []
   },
   {
     "id": 741,
@@ -11852,8 +11852,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_groguplus.png",
+  "skill_cost" : []
   },
   {
     "id": 742,
@@ -11868,8 +11868,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dug.png",
+  "skill_cost" : []
   },
   {
     "id": 743,
@@ -11884,8 +11884,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:14",
       "範囲:4L 必要ツム数:13"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_stitchtrans.png",
+  "skill_cost" : []
   },
   {
     "id": 744,
@@ -11900,8 +11900,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_maui2.png",
+  "skill_cost" : []
   },
   {
     "id": 745,
@@ -11916,8 +11916,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:21",
       "範囲:4L 必要ツム数:20"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_rayaplus.png",
+  "skill_cost" : []
   },
   {
     "id": 746,
@@ -11932,8 +11932,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jimhawkins.png",
+  "skill_cost" : []
   },
   {
     "id": 747,
@@ -11948,8 +11948,8 @@ const tsumDataJP = [
       "時間：10秒",
       "時間：11秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_lilia.png",
+  "skill_cost" : []
   },
   {
     "id": 748,
@@ -11964,8 +11964,8 @@ const tsumDataJP = [
       "時間：10秒",
       "時間：11秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_sebek.png",
+  "skill_cost" : []
   },
   {
     "id": 749,
@@ -11980,8 +11980,8 @@ const tsumDataJP = [
       "スコア：4倍",
       "スコア：4.6倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_silver.png",
+  "skill_cost" : []
   },
   {
     "id": 750,
@@ -11996,8 +11996,8 @@ const tsumDataJP = [
       "範囲:3L 時間:15秒",
       "範囲:4L 時間:16秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_trey.png",
+  "skill_cost" : []
   },
   {
     "id": 751,
@@ -12012,8 +12012,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cater.png",
+  "skill_cost" : []
   },
   {
     "id": 752,
@@ -12028,8 +12028,8 @@ const tsumDataJP = [
       "必要ツム数:18 変化数:5",
       "必要ツム数:18 変化数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_jessieplus.png",
+  "skill_cost" : []
   },
   {
     "id": 753,
@@ -12044,8 +12044,8 @@ const tsumDataJP = [
       "スコア：3倍",
       "スコア：3.4倍"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohplus.png",
+  "skill_cost" : []
   },
   {
     "id": 754,
@@ -12060,8 +12060,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tinkerbellplus.png",
+  "skill_cost" : []
   },
   {
     "id": 755,
@@ -12076,8 +12076,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:13",
       "範囲:4L 必要ツム数:12"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_tiggertf2026.png",
+  "skill_cost" : []
   },
   {
     "id": 756,
@@ -12092,8 +12092,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeytf2026.png",
+  "skill_cost" : []
   },
   {
     "id": 757,
@@ -12108,8 +12108,8 @@ const tsumDataJP = [
       "必要ツム数:11 時間:16秒",
       "必要ツム数:9 時間:17.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_petetf2026.png",
+  "skill_cost" : []
   },
   {
     "id": 758,
@@ -12124,8 +12124,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_poohtf2026pr.png",
+  "skill_cost" : []
   },
   {
     "id": 759,
@@ -12140,8 +12140,8 @@ const tsumDataJP = [
       "範囲:3L 変化数:13",
       "範囲:4L 変化数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_vanellope2.png",
+  "skill_cost" : []
   },
   {
     "id": 760,
@@ -12156,8 +12156,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:15",
       "範囲:4L 必要ツム数:14"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_ralph2.png",
+  "skill_cost" : []
   },
   {
     "id": 761,
@@ -12172,8 +12172,8 @@ const tsumDataJP = [
       "範囲:3L 必要ツム数:16",
       "範囲:4L 必要ツム数:15"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_felix2.png",
+  "skill_cost" : []
   },
   {
     "id": 762,
@@ -12188,8 +12188,8 @@ const tsumDataJP = [
       "範囲:L サイ・バグ数:6",
       "範囲:LL サイ・バグ数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_calhoun.png",
+  "skill_cost" : []
   },
   {
     "id": 763,
@@ -12204,8 +12204,8 @@ const tsumDataJP = [
       "効果時間：6秒",
       "効果時間：6.6秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_marieplus.png",
+  "skill_cost" : []
   },
   {
     "id": 764,
@@ -12220,8 +12220,8 @@ const tsumDataJP = [
       "必要ツム数:22 回数:6",
       "必要ツム数:19 回数:6"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_nbcset.png",
+  "skill_cost" : []
   },
   {
     "id": 765,
@@ -12236,8 +12236,8 @@ const tsumDataJP = [
       "変化数：8",
       "変化数：9"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_finkelstein.png",
+  "skill_cost" : []
   },
   {
     "id": 766,
@@ -12252,8 +12252,8 @@ const tsumDataJP = [
       "効果時間：15秒",
       "効果時間：16.5秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_leota.png",
+  "skill_cost" : []
   },
   {
     "id": 767,
@@ -12268,8 +12268,8 @@ const tsumDataJP = [
       "必要ツム数:30 効果:3L",
       "必要ツム数:28 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_constancecm.png",
+  "skill_cost" : []
   },
   {
     "id": 768,
@@ -12284,8 +12284,8 @@ const tsumDataJP = [
       "効果範囲：3L",
       "効果範囲：4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_dumboplus.png",
+  "skill_cost" : []
   },
   {
     "id": 769,
@@ -12300,8 +12300,8 @@ const tsumDataJP = [
       "変化数:10～20 効果:3L",
       "変化数:11～22 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_woodyink.png",
+  "skill_cost" : []
   },
   {
     "id": 770,
@@ -12316,8 +12316,8 @@ const tsumDataJP = [
       "必要ツム数:16 時間:15秒",
       "必要ツム数:15 時間:16秒"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_cruellaink.png",
+  "skill_cost" : []
   },
   {
     "id": 771,
@@ -12332,8 +12332,8 @@ const tsumDataJP = [
       "必要ツム数:20 効果:3L",
       "必要ツム数:18 効果:4L"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_belleink.png",
+  "skill_cost" : []
   },
   {
     "id": 772,
@@ -12348,8 +12348,8 @@ const tsumDataJP = [
       "効果範囲：3Lサイズ",
       "効果範囲：4Lサイズ"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_donaldink.png",
+  "skill_cost" : []
   },
   {
     "id": 773,
@@ -12364,7 +12364,7 @@ const tsumDataJP = [
       "必要ツム数:20 回数:4",
       "必要ツム数:20 回数:5"
     ],
-    "skill_label": "",
-	"skill_cost" : []
+    "skill_label": "win_tsumskill_mickeysplus.png",
+  "skill_cost" : []
   },
 ];
