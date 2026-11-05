@@ -2614,11 +2614,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_minniet.png",
   "skill_cost" : [1,1,1]
@@ -6950,11 +6946,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_minniep.png",
   "skill_cost" : [1,2,3]
@@ -11446,10 +11438,6 @@ const tsumDataJP = [
     "skill_desc": [
       "プレゼント数：2～4",
       "プレゼント数：2～5",
-      "プレゼント数：2～6",
-      "プレゼント数：2～6",
-      "プレゼント数：2～6",
-      "プレゼント数：2～6",
       "プレゼント数：2～6"
     ],
     "skill_label": "win_tsumskill_minnie12thplus.png",
