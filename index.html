@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🎵TsumTsum圖鑑</title>
+  <script src="window-bg.js"></script>
   <script>
     try {
       if (localStorage.getItem("tsumTheme") === "dark") {
@@ -170,7 +171,7 @@
       overflow: hidden;
       padding: 0;
       /* 視窗背景圖：不加底色、邊框與圓角，完全使用圖片本身的外形 */
-      background: url("https://i.postimg.cc/RCdPxrRY/win-window03.png") center / 100% 100% no-repeat;
+      background: var(--window-bg-img, none) center / 100% 100% no-repeat;
       border: none;
       border-radius: 0;
       /* 內部尺寸用 cqw（視窗寬度的 1%），視窗縮放時文字與留白會跟著等比例縮放 */
