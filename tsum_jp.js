@@ -210,7 +210,7 @@ const tsumDataJP = [
   {
     "id": 14,
     "name": "スクランプ",
-    "image": "",
+    "image": "block_scramp_l.png",
     "skill_desc": [
       "スキル候補数：3",
       "スキル候補数：4",
@@ -402,7 +402,7 @@ const tsumDataJP = [
   {
     "id": 26,
     "name": "ティンカー・ベル",
-    "image": "",
+    "image": "block_tinkerbell_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -610,7 +610,7 @@ const tsumDataJP = [
   {
     "id": 39,
     "name": "ハチプー",
-    "image": "",
+    "image": "block_hpooh_l.png",
     "skill_desc": [
       "効果時間：4秒",
       "効果時間：4.5秒",
@@ -706,7 +706,7 @@ const tsumDataJP = [
   {
     "id": 45,
     "name": "サンタジャック",
-    "image": "",
+    "image": "block_jackx_l.png",
     "skill_desc": [
       "効果時間：3秒",
       "効果時間：3.5秒",
@@ -738,7 +738,7 @@ const tsumDataJP = [
   {
     "id": 47,
     "name": "かぼちゃミッキー",
-    "image": "",
+    "image": "block_mickeyh_l.png",
     "skill_desc": [
       "必要ツム数：15",
       "必要ツム数：14",
@@ -754,7 +754,7 @@ const tsumDataJP = [
   {
     "id": 48,
     "name": "かぼちゃミニー",
-    "image": "",
+    "image": "block_minnieh_l.png",
     "skill_desc": [
       "出現数：5",
       "出現数：7",
@@ -834,7 +834,7 @@ const tsumDataJP = [
   {
     "id": 53,
     "name": "クリスマスミッキー",
-    "image": "",
+    "image": "block_mickeyx_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -850,7 +850,7 @@ const tsumDataJP = [
   {
     "id": 54,
     "name": "クリスマスミニー",
-    "image": "",
+    "image": "block_minniex_l.png",
     "skill_desc": [
       "変化数：12",
       "変化数：14",
@@ -866,7 +866,7 @@ const tsumDataJP = [
   {
     "id": 55,
     "name": "クリスマスドナルド",
-    "image": "",
+    "image": "block_donaldx_l.png",
     "skill_desc": [
       "効果時間：4.5秒",
       "効果時間：5秒",
@@ -882,7 +882,7 @@ const tsumDataJP = [
   {
     "id": 56,
     "name": "クリスマスデイジー",
-    "image": "",
+    "image": "block_daisyx_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -898,7 +898,7 @@ const tsumDataJP = [
   {
     "id": 57,
     "name": "クリスマスグーフィー",
-    "image": "",
+    "image": "block_goofyx_l.png",
     "skill_desc": [
       "消去数：14",
       "消去数：16",
@@ -914,7 +914,7 @@ const tsumDataJP = [
   {
     "id": 58,
     "name": "クリスマスプルート",
-    "image": "",
+    "image": "block_plutox_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -978,7 +978,7 @@ const tsumDataJP = [
   {
     "id": 62,
     "name": "バレンタインミッキー",
-    "image": "",
+    "image": "block_mickeyv_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -994,7 +994,7 @@ const tsumDataJP = [
   {
     "id": 63,
     "name": "バレンタインミニー",
-    "image": "",
+    "image": "block_minniev_l.png",
     "skill_desc": [
       "変化数：12",
       "変化数：14",
@@ -1010,7 +1010,7 @@ const tsumDataJP = [
   {
     "id": 64,
     "name": "バレンタインドナルド",
-    "image": "",
+    "image": "block_donaldv_l.png",
     "skill_desc": [
       "効果時間：4.5秒",
       "効果時間：5秒",
@@ -1026,7 +1026,7 @@ const tsumDataJP = [
   {
     "id": 65,
     "name": "バレンタインデイジー",
-    "image": "",
+    "image": "block_daisyv_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -1042,7 +1042,7 @@ const tsumDataJP = [
   {
     "id": 66,
     "name": "ソーサラーミッキー",
-    "image": "",
+    "image": "block_mickeys_l.png",
     "skill_desc": [
       "範囲:S 回数:3",
       "範囲:M 回数:3",
@@ -1090,7 +1090,7 @@ const tsumDataJP = [
   {
     "id": 69,
     "name": "ウサプー",
-    "image": "",
+    "image": "block_poohr_l.png",
     "skill_desc": [
       "入るツム数：12",
       "入るツム数：15",
@@ -1106,7 +1106,7 @@ const tsumDataJP = [
   {
     "id": 70,
     "name": "ウサティガー",
-    "image": "",
+    "image": "block_tiggerr_l.png",
     "skill_desc": [
       "ジャンプ数：1",
       "ジャンプ数：2",
@@ -1122,7 +1122,7 @@ const tsumDataJP = [
   {
     "id": 71,
     "name": "ラビット",
-    "image": "",
+    "image": "block_rabbit_l.png",
     "skill_desc": [
       "ニンジン数：9",
       "ニンジン数：12",
@@ -1138,7 +1138,7 @@ const tsumDataJP = [
   {
     "id": 72,
     "name": "サプライズエルサ",
-    "image": "",
+    "image": "block_elsaf_l.png",
     "skill_desc": [
       "雪だるま数：6",
       "雪だるま数：9",
@@ -1154,7 +1154,7 @@ const tsumDataJP = [
   {
     "id": 73,
     "name": "バースデーアナ",
-    "image": "",
+    "image": "block_annaf_l.png",
     "skill_desc": [
       "変化数：4～7",
       "変化数：5～8",
@@ -1186,7 +1186,7 @@ const tsumDataJP = [
   {
     "id": 75,
     "name": "ハワイアンスティッチ",
-    "image": "",
+    "image": "block_stitchf_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -1282,7 +1282,7 @@ const tsumDataJP = [
   {
     "id": 81,
     "name": "ロマンスアリエル",
-    "image": "",
+    "image": "block_arielr_l.png",
     "skill_desc": [
       "変化数：4～5",
       "変化数：5～6",
@@ -1410,7 +1410,7 @@ const tsumDataJP = [
   {
     "id": 89,
     "name": "ホーンハットミッキー",
-    "image": "",
+    "image": "block_mickeyh2015_l.png",
     "skill_desc": [
       "発生数：3",
       "発生数：3～4",
@@ -1426,7 +1426,7 @@ const tsumDataJP = [
   {
     "id": 90,
     "name": "キャットハットミニー",
-    "image": "",
+    "image": "block_minnieh2015_l.png",
     "skill_desc": [
       "変化数：10",
       "変化数：12",
@@ -1442,7 +1442,7 @@ const tsumDataJP = [
   {
     "id": 91,
     "name": "かぼちゃチップ",
-    "image": "",
+    "image": "block_daleh2015_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -1458,7 +1458,7 @@ const tsumDataJP = [
   {
     "id": 92,
     "name": "おばけデール",
-    "image": "",
+    "image": "block_chiph2015_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -1474,7 +1474,7 @@ const tsumDataJP = [
   {
     "id": 93,
     "name": "ほねほねプルート",
-    "image": "",
+    "image": "block_plutoh2015_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -1490,7 +1490,7 @@ const tsumDataJP = [
   {
     "id": 94,
     "name": "コンサートミッキー",
-    "image": "",
+    "image": "block_mickeyc_l.png",
     "skill_desc": [
       "音符の数：3",
       "音符の数：3～4",
@@ -1634,7 +1634,7 @@ const tsumDataJP = [
   {
     "id": 103,
     "name": "ダース・ベイダー",
-    "image": "",
+    "image": "block_vader_l.png",
     "skill_desc": [
       "範囲:S 必要ツム数:22",
       "範囲:S 必要ツム数:21",
@@ -1730,7 +1730,7 @@ const tsumDataJP = [
   {
     "id": 109,
     "name": "マックス",
-    "image": "",
+    "image": "block_max_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -1842,7 +1842,7 @@ const tsumDataJP = [
   {
     "id": 116,
     "name": "マレフィセントドラゴン",
-    "image": "",
+    "image": "block_maleficentd_l.png",
     "skill_desc": [
       "必要ツム数:22 時間:4秒",
       "必要ツム数:21 時間:4秒",
@@ -1858,7 +1858,7 @@ const tsumDataJP = [
   {
     "id": 117,
     "name": "ブライドラプンツェル",
-    "image": "",
+    "image": "block_rapunzelb_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2082,7 +2082,7 @@ const tsumDataJP = [
   {
     "id": 131,
     "name": "おしゃれマッドハッター",
-    "image": "",
+    "image": "block_madhatterj_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -2274,7 +2274,7 @@ const tsumDataJP = [
   {
     "id": 143,
     "name": "フック船長",
-    "image": "",
+    "image": "block_hook_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
