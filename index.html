@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🎵TsumTsum 列表</title>
+  <title>🎵TsumTsum圖鑑</title>
   <script>
     try {
       if (localStorage.getItem("tsumTheme") === "dark") {
@@ -161,80 +161,135 @@
     #modal.open { display: flex; }
     .modal-box {
       position: relative;
-      width: 100%;
-      max-width: 560px;
-      max-height: 100%;
-      overflow-y: auto;
-      padding: 20px;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-    }
-    .modal-close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 36px;
-      height: 36px;
-      font-size: 22px;
-      line-height: 1;
-      color: var(--text);
-      background: transparent;
+      /* 固定圖片比例 601:752，寬度不超過原圖，也不超出螢幕高度，背景圖不會被拉伸 */
+      width: min(601px, 100%, calc((100vh - 32px) * 601 / 752));
+      width: min(601px, 100%, calc((100dvh - 32px) * 601 / 752));
+      aspect-ratio: 601 / 752;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0;
+      /* 視窗背景圖：不加底色、邊框與圓角，完全使用圖片本身的外形 */
+      background: url("https://i.postimg.cc/RCdPxrRY/win-window03.png") center / 100% 100% no-repeat;
       border: none;
-      cursor: pointer;
+      border-radius: 0;
+      /* 內部尺寸用 cqw（視窗寬度的 1%），視窗縮放時文字與留白會跟著等比例縮放 */
+      container-type: inline-size;
+      /* 上方白色標題帶：深色文字 */
+      --text: #3a2a1a;
+      --muted: #6a5a48;
+      --accent: #ffd34d;
+      color: var(--text);
     }
-    .modal-close:hover { color: var(--accent); }
+    /* 標題：對齊背景圖上方的白色標題帶 */
     .modal-head {
+      flex: none;
       display: flex;
       align-items: center;
-      gap: 14px;
-      padding-right: 30px;
+      gap: 2.5cqw;
+      margin-top: 12.6cqw;
+      height: 9.8cqw;
+      padding: 0 9cqw;
+      line-height: 1.15;
     }
     .modal-head img {
-      width: 80px;
-      height: 80px;
+      width: 8.6cqw;
+      height: 8.6cqw;
       object-fit: contain;
     }
-    .modal-head .no { font-size: 13px; color: var(--muted); }
-    .modal-head .name { font-size: 20px; font-weight: bold; }
-    .modal-head .name-en { font-size: 13px; color: var(--muted); }
+    .modal-head .no { font-size: max(9px, 2.1cqw); color: var(--muted); }
+    .modal-head .name { font-size: max(12px, 3.4cqw); font-weight: bold; }
+    .modal-head .name-en { font-size: max(9px, 2.1cqw); color: var(--muted); }
 
+    /* 內容：位在深藍色區域，改用淺色文字；內容過多時只捲動這一塊 */
+    .modal-body {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      margin: 0 3.5cqw 13.5cqw;
+      padding: 0 5.5cqw;
+      --text: #ffffff;
+      --muted: #cfe3ff;
+      --accent: #ffd34d;
+      --line: rgba(255, 255, 255, 0.2);
+      color: var(--text);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    }
+    /* skill label 置中；Plus 圖章在它的下方 */
     .modal-label {
-      margin: 16px 0 8px;
+      --label-h: 15cqw;      /* skill label 的高度（以原圖為準） */
+      margin: 3cqw 0 2cqw;
+      min-height: var(--label-h);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
-    .modal-label img {
-      max-width: 100%;
-      height: 100px;
-      object-fit: contain;
-    }
     .modal-label .none { color: var(--muted); }
+    .label-img {
+      display: block;
+      max-width: 100%;
+      width: calc(var(--w) * var(--ks) * 1cqw);
+      height: auto;
+    }
+
+    /* Plus 圖章：圖片會先裁掉四周透明邊再顯示，所以大小只要調整 --plus-scale：
+       數字越大圖章與文字越大（每 1 像素的原圖 = 幾 cqw）。
+       一隻 Tsum 有多組圖章時，每組（圖章＋文字）左右並排置中；
+       一行放不下時不會換行，而是整體等比例縮小。
+       沒有 Plus 資料時這一塊不佔位置。 */
+    .modal-plus {
+      --plus-scale: 0.12;
+      margin: 0 0 2cqw;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3cqw;
+    }
+    .modal-plus:empty { display: none; }
+    .plus-item {
+      flex: 0 1 auto;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 1cqw;
+    }
+    .plus-item img {
+      flex: 0 1 auto;
+      min-width: 0;
+      display: block;
+      width: calc(var(--w) * var(--plus-scale) * 1cqw);
+      height: auto;
+    }
 
     .skill-list { margin: 0; padding: 0; list-style: none; }
     .skill-row {
       display: grid;
-      grid-template-columns: 52px 1fr auto;
-      gap: 10px;
+      grid-template-columns: 9cqw 1fr auto;
+      gap: 1.5cqw;
       align-items: center;
-      padding: 10px 0;
+      padding: 1.6cqw 0;
+      font-size: max(12px, 2.6cqw);
       border-top: 1px solid var(--line);
     }
+    .skill-row:first-child { border-top: none; }
     .skill-row .lv {
       font-weight: bold;
       color: var(--accent);
     }
     .skill-row .desc { line-height: 1.5; }
     .skill-icon {
-      height: 30px;
+      height: 4.6cqw;
       vertical-align: middle;
     }
     .cost {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 0.7cqw;
       white-space: nowrap;
     }
-    .cost img { height: 24px; }
+    .cost img { height: 4cqw; }
     .skill-empty { padding: 16px 0; text-align: center; color: var(--muted); }
 
     /* ---------- 捲動按鈕 ---------- */
@@ -274,9 +329,11 @@
   <script src="images.js"></script>
   <script src="skilllabel.js"></script>
   <script src="littletsum.js"></script>
+  <script src="pluspin.js"></script>
 
   <script>
     const imageMap = images;
+    const pinMap = typeof wappen !== "undefined" ? wappen : {};
     const TICKET_IMG = "https://i.postimg.cc/nzcz0QBq/win-i-ticket-S.png";
     const iconMap = {};
     const grid = document.getElementById("tsumGrid");
@@ -380,6 +437,84 @@
       });
     }
 
+    // ---------- Plus 圖章：裁掉透明邊 ----------
+    // 圖章與文字標籤的原圖四周有很多透明空白，直接縮放會讓內容看起來很小，
+    // 所以先用 canvas 找出有內容的範圍並裁切，結果快取起來。
+    const trimCache = new Map();
+    function trimImage(src) {
+      if (trimCache.has(src)) return Promise.resolve(trimCache.get(src));
+      return new Promise(resolve => {
+        const im = new Image();
+        im.onload = () => {
+          const w = im.naturalWidth, h = im.naturalHeight;
+          let result = { url: src, w, h, nw: w, nh: h };
+          try {
+            const c = document.createElement("canvas");
+            c.width = w; c.height = h;
+            const ctx = c.getContext("2d");
+            ctx.drawImage(im, 0, 0);
+            const d = ctx.getImageData(0, 0, w, h).data;
+            let x0 = w, y0 = h, x1 = -1, y1 = -1;
+            for (let y = 0; y < h; y++) {
+              for (let x = 0; x < w; x++) {
+                if (d[(y * w + x) * 4 + 3] > 16) {
+                  if (x < x0) x0 = x;
+                  if (x > x1) x1 = x;
+                  if (y < y0) y0 = y;
+                  if (y > y1) y1 = y;
+                }
+              }
+            }
+            if (x1 >= 0) {
+              const tw = x1 - x0 + 1, th = y1 - y0 + 1;
+              const o = document.createElement("canvas");
+              o.width = tw; o.height = th;
+              o.getContext("2d").drawImage(c, x0, y0, tw, th, 0, 0, tw, th);
+              result = { url: o.toDataURL("image/png"), w: tw, h: th, nw: w, nh: h };
+            }
+          } catch (e) { /* 裁切失敗就用原圖 */ }
+          trimCache.set(src, result);
+          resolve(result);
+        };
+        im.onerror = () => resolve({ url: src, w: 100, h: 100, nw: 100, nh: 100 });
+        im.src = src;
+      });
+    }
+
+    let plusToken = 0;
+    // 顯示 skill label 與其下方的 Plus 圖章。兩者都先裁掉透明邊。
+    // skill label 維持原本的視覺大小：原圖高度 = 15cqw。
+    async function fillLabelRow(labelSrc, pairs) {
+      const token = ++plusToken;
+      const flat = pairs.flat();
+      const [labelItem, ...flatItems] = await Promise.all(
+        [labelSrc, ...flat].map(src => src ? trimImage(src) : Promise.resolve(null))
+      );
+      if (token !== plusToken || !modal.classList.contains("open")) return; // 已切換到別的 Tsum 或已關閉
+      const row = modalBox.querySelector(".modal-label");
+      if (!row) return;
+
+      if (labelItem) {
+        const ks = 15 / labelItem.nh;   // cqw per px
+        row.innerHTML = `<img class="label-img" src="${labelItem.url}" alt="技能" style="--w:${labelItem.w};--ks:${ks}">`;
+      } else {
+        row.innerHTML = `<span class="none">暫無</span>`;
+      }
+
+      const plusBox = modalBox.querySelector(".modal-plus");
+      if (plusBox && pairs.length) {
+        let i = 0;
+        plusBox.innerHTML = pairs.map(pair =>
+          `<div class="plus-item">` +
+          pair.map(() => {
+            const it = flatItems[i++];
+            return `<img src="${it.url}" alt="" style="--w:${it.w}">`;
+          }).join("") +
+          `</div>`
+        ).join("");
+      }
+    }
+
     // ---------- 詳細視窗 ----------
     function openModal(tsum) {
       const imageNames = getImageNames(tsum);
@@ -404,8 +539,18 @@
           </li>`;
       }
 
+      // Plus 圖章：plus_pin / plus_pin_label 可以是單一字串，也可以是陣列（多組圖章），
+      // 依順序一一配對；沒有資料就不顯示。
+      const toArr = v => Array.isArray(v) ? v : (v ? [v] : []);
+      const pins = toArr(tsum.plus_pin);
+      const pinLabels = toArr(tsum.plus_pin_label);
+      const plusPairs = [];
+      for (let i = 0; i < Math.max(pins.length, pinLabels.length); i++) {
+        const pair = [pinMap[pins[i]], pinMap[pinLabels[i]]].filter(Boolean);
+        if (pair.length) plusPairs.push(pair);
+      }
+
       modalBox.innerHTML = `
-        <button type="button" class="modal-close" aria-label="關閉">×</button>
         <div class="modal-head">
           ${imgSrc ? `<img src="${imgSrc}" alt="">` : ""}
           <div>
@@ -414,21 +559,23 @@
             ${tsum.name_en ? `<div class="name-en">${esc(tsum.name_en)}</div>` : ""}
           </div>
         </div>
-        <div class="modal-label">
-          ${labelSrc ? `<img src="${labelSrc}" alt="技能">` : `<span class="none">暫無</span>`}
+        <div class="modal-body">
+          <div class="modal-label"></div>
+          <div class="modal-plus"></div>
+          ${rows
+            ? `<ul class="skill-list">${rows}</ul>`
+            : `<div class="skill-empty">暫無技能資料</div>`}
         </div>
-        ${rows
-          ? `<ul class="skill-list">${rows}</ul>`
-          : `<div class="skill-empty">暫無技能資料</div>`}
       `;
 
-      modalBox.querySelector(".modal-close").addEventListener("click", closeModal);
       modal.classList.add("open");
       document.body.style.overflow = "hidden";
-      modalBox.scrollTop = 0;
+      modalBox.querySelector(".modal-body").scrollTop = 0;
+      fillLabelRow(labelSrc, plusPairs);
     }
 
     function closeModal() {
+      plusToken++;
       modal.classList.remove("open");
       document.body.style.overflow = "";
     }

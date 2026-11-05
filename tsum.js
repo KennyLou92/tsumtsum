@@ -10437,6 +10437,8 @@ const tsumData = [
     "name_en": "Donald+",
     "name": "唐老鴨+",
     "image": "block_donaldplus_l.png",
+    "plus_pin" : ["wappen_donaldplus_1_on.png","wappen_donaldplus_2_on.png"],
+    "plus_pin_label" : ["wappen_donaldplus_1_txt.png","wappen_donaldplus_2_txt.png"],
     "skill_label": "win_tsumskill_donaldplus.png",
   "skill_desc": [
   "效果時間：2秒",
@@ -10455,6 +10457,8 @@ const tsumData = [
     "name_en": "Mickey+",
     "name": "米奇+",
     "image": "block_mickeyplus_l.png",
+    "plus_pin" : ["wappen_mickeyplus_1_on.png"],
+    "plus_pin_label" : ["wappen_mickeyplus_1_txt.png"],
     "skill_label": "win_tsumskill_mickeyplus.png",
   "skill_desc": [
   "效果範圍：XS",
@@ -10473,6 +10477,8 @@ const tsumData = [
     "name_en": "Alice+",
     "name": "愛麗絲+",
     "image": "block_aliceplus_l.png",
+    "plus_pin" : ["wappen_aliceplus_1_on.png","wappen_aliceplus_2_on.png"],
+    "plus_pin_label" : ["wappen_aliceplus_1_txt.png","wappen_aliceplus_2_txt.png"],
     "skill_label": "win_tsumskill_aliceplus.png",
   "skill_desc": [
   "範圍：XS 所需Tsum數：24",
@@ -10635,6 +10641,8 @@ const tsumData = [
     "name_en": "Lightning McQueen+",
     "name": "閃電麥坤+",
     "image": "block_mcqueenplus_l.png",
+    "plus_pin" : ["wappen_mcqueenplus_1_on.png"],
+    "plus_pin_label" : ["wappen_mcqueenplus_1_txt.png"],
     "skill_label": "win_tsumskill_mcqueenplus.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -10725,6 +10733,8 @@ const tsumData = [
     "name_en": "Pluto+",
     "name": "布魯托+",
     "image": "block_plutoplus_l.png",
+    "plus_pin" : ["wappen_plutoplus_1_on.png"],
+    "plus_pin_label" : ["wappen_plutoplus_1_txt.png"],
     "skill_label": "win_tsumskill_plutoplus.png",
   "skill_desc": [
 	"效果範圍：XS",
@@ -10815,6 +10825,8 @@ const tsumData = [
     "name_en": "Stormtrooper+",
     "name": "風暴兵+",
     "image": "block_stormtrooperplus_l.png",
+    "plus_pin" : ["wappen_stormtrooperplus_1_on.png"],
+    "plus_pin_label" : ["wappen_stormtrooperplus_1_txt.png"],
     "skill_label": "win_tsumskill_stormtrooperplus.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -10833,6 +10845,8 @@ const tsumData = [
     "name_en": "Ariel+",
     "name": "艾莉兒+",
     "image": "block_arielplus_l.png",
+    "plus_pin" : ["wappen_arielplus_1_on.png","wappen_arielplus_2_on.png"],
+    "plus_pin_label" : ["wappen_arielplus_1_txt.png","wappen_arielplus_2_txt.png"],
     "skill_label": "win_tsumskill_arielplus.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：22",
@@ -10923,6 +10937,8 @@ const tsumData = [
     "name_en": "Tiara Minnie+",
     "name": "頭冠米妮+",
     "image": "block_minnie12thplus_l.png",
+    "plus_pin" : ["wappen_minnie12thplus_1_on.png"],
+    "plus_pin_label" : ["wappen_minnie12thplus_1_txt.png"],
     "skill_label": "win_tsumskill_minnie12thplus.png",
   "skill_desc": [
     "禮物數量：2～4",
@@ -10992,6 +11008,8 @@ const tsumData = [
     "name_en": "Rapunzel+",
     "name": "樂佩+",
     "image": "block_rapunzelplus_l.png",
+    "plus_pin" : ["wappen_rapunzelplus_1_on.png","wappen_rapunzelplus_2_on.png"],
+    "plus_pin_label" : ["wappen_rapunzelplus_1_txt.png","wappen_rapunzelplus_2_txt.png"],
     "skill_label": "win_tsumskill_rapunzelplus.png",
   "skill_desc": [
     "範圍：XS 消除數：9",
@@ -11010,6 +11028,8 @@ const tsumData = [
     "name_en": "Daisy+",
     "name": "黛絲+",
     "image": "block_daisyplus_l.png",
+    "plus_pin" : ["wappen_daisyplus_1_on.png"],
+    "plus_pin_label" : ["wappen_daisyplus_1_txt.png"],
     "skill_label": "win_tsumskill_daisyplus.png",
   "skill_desc": [
     "所需Tsum數：22 效果範圍：XS",
@@ -11118,6 +11138,8 @@ const tsumData = [
     "name_en": "Simba+",
     "name": "辛巴+",
     "image": "block_simbaplus_l.png",
+    "plus_pin" : ["wappen_simbaplus_1_on.png"],
+    "plus_pin_label" : ["wappen_simbaplus_1_txt.png"],
     "skill_label": "win_tsumskill_simbaplus.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：23",
@@ -11172,6 +11194,8 @@ const tsumData = [
     "name_en": "Goofy+",
     "name": "高飛+",
     "image": "block_goofyplus_l.png",
+    "plus_pin" : ["wappen_goofyplus_1_on.png"],
+    "plus_pin_label" : ["wappen_goofyplus_1_txt.png"],
     "skill_label": "win_tsumskill_goofyplus.png",
   "skill_desc": [
     "消除數：20",
@@ -11315,6 +11339,8 @@ const tsumData = [
     "id": 681,
     "name_en": "Cruella+",
     "name": "庫伊拉+",
+    "plus_pin" : ["wappen_cruellaplus_1_on.png","wappen_cruellaplus_2_on.png"],
+    "plus_pin_label" : ["wappen_cruellaplus_1_txt.png","wappen_cruellaplus_2_txt.png"],
     "image": "block_cruellaplus_l.png",
     "skill_label": "win_tsumskill_cruellaplus.png",
   "skill_desc": [
@@ -11334,6 +11360,8 @@ const tsumData = [
     "name_en": "Lady Tremaine+",
     "name": "特曼尼夫人+",
     "image": "block_tremaineplus_l.png",
+    "plus_pin" : "wappen_tremaineplus_1_on.png",
+    "plus_pin_label" : "wappen_tremaineplus_1_txt.png",
     "skill_label": "win_tsumskill_tremaineplus.png",
   "skill_desc": [
     "效果時間：5秒",
@@ -11424,6 +11452,8 @@ const tsumData = [
     "name_en": "Mabel+",
     "name": "梅寶+",
     "image": "block_mabelplus_l.png",
+    "plus_pin" : "wappen_mabelplus_1_on.png",
+    "plus_pin_label" : "wappen_mabelplus_1_txt.png",
     "skill_label": "win_tsumskill_mabelplus.png",
   "skill_desc": [
     "效果範圍：XS",
