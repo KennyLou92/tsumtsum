@@ -4546,7 +4546,7 @@ const tsumDataJP = [
   {
     "id": 285,
     "name": "雪だるまチップ",
-    "image": "",
+    "image": "block_chipsnow_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4562,7 +4562,7 @@ const tsumDataJP = [
   {
     "id": 286,
     "name": "雪だるまデール",
-    "image": "",
+    "image": "block_dalesnow_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4594,7 +4594,7 @@ const tsumDataJP = [
   {
     "id": 288,
     "name": "雪の女王エルサ",
-    "image": "",
+    "image": "block_elsa2_l.png",
     "skill_desc": [
       "範囲:SS 時間:3.5秒",
       "範囲:S 時間:4秒",
@@ -4610,7 +4610,7 @@ const tsumDataJP = [
   {
     "id": 289,
     "name": "邪悪な妖精マレフィセント",
-    "image": "",
+    "image": "block_maleficent2_l.png",
     "skill_desc": [
       "必要ツム数:28 時間:4秒",
       "必要ツム数:25 時間:4秒",
@@ -4754,7 +4754,7 @@ const tsumDataJP = [
   {
     "id": 298,
     "name": "カメラダンボ",
-    "image": "",
+    "image": "block_dumboc_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4818,7 +4818,7 @@ const tsumDataJP = [
   {
     "id": 302,
     "name": "パルパティーン皇帝",
-    "image": "",
+    "image": "block_bobawl_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4834,7 +4834,7 @@ const tsumDataJP = [
   {
     "id": 303,
     "name": "ダース・モール",
-    "image": "",
+    "image": "block_maulwl_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4930,7 +4930,7 @@ const tsumDataJP = [
   {
     "id": 309,
     "name": "レインボーティンク",
-    "image": "",
+    "image": "block_tinkerbellf_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -4994,7 +4994,7 @@ const tsumDataJP = [
   {
     "id": 313,
     "name": "ロマンスジャスミン",
-    "image": "",
+    "image": "block_jasminel_l.png",
     "skill_desc": [
       "変化数：6",
       "変化数：7",
@@ -5074,7 +5074,7 @@ const tsumDataJP = [
   {
     "id": 318,
     "name": "パステルアリエル",
-    "image": "",
+    "image": "block_arielps_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5090,7 +5090,7 @@ const tsumDataJP = [
   {
     "id": 319,
     "name": "パステルフランダー",
-    "image": "",
+    "image": "block_flounderps_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5282,7 +5282,7 @@ const tsumDataJP = [
   {
     "id": 331,
     "name": "勇者ミッキー",
-    "image": "",
+    "image": "block_mickeypx_l.png",
     "skill_desc": [
       "効果：SS",
       "効果：S",
@@ -5298,7 +5298,7 @@ const tsumDataJP = [
   {
     "id": 332,
     "name": "勇者ドナルド",
-    "image": "",
+    "image": "block_donaldpx_l.png",
     "skill_desc": [
       "距離：SS",
       "距離：S",
@@ -5314,7 +5314,7 @@ const tsumDataJP = [
   {
     "id": 333,
     "name": "勇者グーフィー",
-    "image": "",
+    "image": "block_goofypx_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5362,7 +5362,7 @@ const tsumDataJP = [
   {
     "id": 336,
     "name": "ダンシングジーニー",
-    "image": "",
+    "image": "block_geniel_l.png",
     "skill_desc": [
       "必要ツム数：18",
       "必要ツム数：17",
@@ -5378,7 +5378,7 @@ const tsumDataJP = [
   {
     "id": 337,
     "name": "エンチャンテッドシンデレラ",
-    "image": "",
+    "image": "block_cinderellal_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5394,7 +5394,7 @@ const tsumDataJP = [
   {
     "id": 338,
     "name": "エンチャンテッドオーロラ",
-    "image": "",
+    "image": "block_auroral_l.png",
     "skill_desc": [
       "必要ツム数：21",
       "必要ツム数：20",
@@ -5410,7 +5410,7 @@ const tsumDataJP = [
   {
     "id": 339,
     "name": "ほっこりミッキー",
-    "image": "",
+    "image": "block_mickeykn_l.png",
     "skill_desc": [
       "スコア：2倍",
       "スコア：2.4倍",
@@ -5426,7 +5426,7 @@ const tsumDataJP = [
   {
     "id": 340,
     "name": "ゆるっとドナルド",
-    "image": "",
+    "image": "block_donaldkn_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5442,7 +5442,7 @@ const tsumDataJP = [
   {
     "id": 341,
     "name": "アドベンチャーエルサ",
-    "image": "",
+    "image": "block_elsaf2_l.png",
     "skill_desc": [
       "効果：SS",
       "効果：S",
@@ -5458,7 +5458,7 @@ const tsumDataJP = [
   {
     "id": 342,
     "name": "アドベンチャーアナ",
-    "image": "",
+    "image": "block_annaf2_l.png",
     "skill_desc": [
       "必要ツム数:25 時間:1.5秒",
       "必要ツム数:24 時間:1.8秒",
@@ -5490,7 +5490,7 @@ const tsumDataJP = [
   {
     "id": 344,
     "name": "ジェダイトレーニング レイ",
-    "image": "",
+    "image": "block_reyj_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5506,7 +5506,7 @@ const tsumDataJP = [
   {
     "id": 345,
     "name": "最高指導者カイロ・レン",
-    "image": "",
+    "image": "block_kyloren2_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5522,7 +5522,7 @@ const tsumDataJP = [
   {
     "id": 346,
     "name": "だるまミッキー",
-    "image": "",
+    "image": "block_mickeyd_l.png",
     "skill_desc": [
       "時間:4秒 効果:SS",
       "時間:4.6秒 効果:S",
@@ -5538,7 +5538,7 @@ const tsumDataJP = [
   {
     "id": 347,
     "name": "だるまミニー",
-    "image": "",
+    "image": "block_minnied_l.png",
     "skill_desc": [
       "時間:4秒 効果:SS",
       "時間:5秒 効果:S",
@@ -5570,7 +5570,7 @@ const tsumDataJP = [
   {
     "id": 349,
     "name": "ジョン・ディーコン",
-    "image": "",
+    "image": "block_johnd2_l.png",
     "skill_desc": [
       "効果：SS",
       "効果：S",
@@ -5586,7 +5586,7 @@ const tsumDataJP = [
   {
     "id": 350,
     "name": "ラプンツェル〈チャーム〉",
-    "image": "",
+    "image": "block_rapunzelcm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5602,7 +5602,7 @@ const tsumDataJP = [
   {
     "id": 351,
     "name": "アリエル〈チャーム〉",
-    "image": "",
+    "image": "block_arielcm_l.png",
     "skill_desc": [
       "変化数：4～5",
       "変化数：5",
@@ -5618,7 +5618,7 @@ const tsumDataJP = [
   {
     "id": 352,
     "name": "ベル〈チャーム〉",
-    "image": "",
+    "image": "block_bellecm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -5634,7 +5634,7 @@ const tsumDataJP = [
   {
     "id": 353,
     "name": "ジャスミン〈チャーム〉",
-    "image": "",
+    "image": "block_jasminecm_l.png",
     "skill_desc": [
       "消去数：21",
       "消去数：23",
