@@ -5666,7 +5666,7 @@ const tsumDataJP = [
   {
     "id": 355,
     "name": "MUランドール",
-    "image": "",
+    "image": "block_randall2_l.png",
     "skill_desc": [
       "必要ツム数:23 時間:4秒",
       "必要ツム数:22 時間:4秒",
@@ -5794,7 +5794,7 @@ const tsumDataJP = [
   {
     "id": 363,
     "name": "兵士ムーラン",
-    "image": "",
+    "image": "block_mulanl_l.png",
     "skill_desc": [
       "効果時間：1.5秒",
       "効果時間：1.8秒",
@@ -5842,7 +5842,7 @@ const tsumDataJP = [
   {
     "id": 366,
     "name": "マスタールーク",
-    "image": "",
+    "image": "block_lukem_l.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:25",
       "範囲:S 必要ツム数:23",
@@ -6162,7 +6162,7 @@ const tsumDataJP = [
   {
     "id": 386,
     "name": "ラグビーミッキー〈チャーム〉",
-    "image": "",
+    "image": "block_mickeyrcm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -6210,7 +6210,7 @@ const tsumDataJP = [
   {
     "id": 389,
     "name": "ジョン",
-    "image": "",
+    "image": "block_vision_l.png",
     "skill_desc": [
       "消去数：16",
       "消去数：19",
@@ -6594,7 +6594,7 @@ const tsumDataJP = [
   {
     "id": 413,
     "name": "ロッツォ〈チャーム〉",
-    "image": "",
+    "image": "block_lotsocm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -6818,7 +6818,7 @@ const tsumDataJP = [
   {
     "id": 427,
     "name": "イースターデイジー〈チャーム〉",
-    "image": "",
+    "image": "block_daisycm_l.png",
     "skill_desc": [
       "消去数：18",
       "消去数：20",
@@ -6834,7 +6834,7 @@ const tsumDataJP = [
   {
     "id": 428,
     "name": "イースタークラリス〈チャーム〉",
-    "image": "",
+    "image": "block_claricecm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -6850,7 +6850,7 @@ const tsumDataJP = [
   {
     "id": 429,
     "name": "フラワーティンク〈チャーム〉",
-    "image": "",
+    "image": "block_tinkerbellcm_l.png",
     "skill_desc": [
       "発生数:2～3 スコア:1倍",
       "発生数:3 スコア:1倍",
@@ -7074,7 +7074,7 @@ const tsumDataJP = [
   {
     "id": 443,
     "name": "探偵プー〈チャーム〉",
-    "image": "",
+    "image": "block_poohcm_l.png",
     "skill_desc": [
       "変化数：2",
       "変化数：3",
@@ -7090,7 +7090,7 @@ const tsumDataJP = [
   {
     "id": 444,
     "name": "ピグレット〈チャーム〉",
-    "image": "",
+    "image": "block_pigletcm_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -7106,7 +7106,7 @@ const tsumDataJP = [
   {
     "id": 445,
     "name": "オウル〈チャーム〉",
-    "image": "",
+    "image": "block_owlcm_l.png",
     "skill_desc": [
       "発生数：2～6",
       "発生数：2～7",
@@ -7506,7 +7506,7 @@ const tsumDataJP = [
   {
     "id": 470,
     "name": "ホリデースティッチ〈チャーム〉",
-    "image": "",
+    "image": "block_gaston2_l.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
