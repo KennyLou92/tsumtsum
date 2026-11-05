@@ -71,8 +71,29 @@
       background: var(--input-bg);
       border: 1px solid var(--input-line);
     }
-    #themeBtn {
+    #regionSwitch {
+      display: flex;
       margin-left: auto;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    #regionSwitch button {
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--text);
+      background: var(--panel);
+      border: none;
+      cursor: pointer;
+    }
+    #regionSwitch button + button { border-left: 1px solid var(--line); }
+    #regionSwitch button:hover:not(:disabled) { background: var(--panel-hover); }
+    #regionSwitch button.active { color: #2a2a2a; background: var(--accent); }
+    #regionSwitch button:disabled { opacity: 0.4; cursor: not-allowed; }
+    #regionSwitch button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    #themeBtn {
+      margin-left: 8px;
       padding: 8px 12px;
       font-size: 14px;
       color: var(--text);
@@ -313,6 +334,10 @@
   <div id="search-container">
     <input type="text" id="search" placeholder="🔍 輸入Tsum名稱..." />
     <img id="clearSearchBtn" src="https://i.postimg.cc/6pVSz87S/win-batsu-s.png" alt="Clear" />
+    <div id="regionSwitch" role="group" aria-label="版本切換">
+      <button type="button" data-region="jp">JP</button>
+      <button type="button" data-region="gl">GL</button>
+    </div>
     <button type="button" id="themeBtn"></button>
   </div>
 
@@ -327,6 +352,7 @@
   <img id="scrollBottomBtn" class="scroll-button" src="https://i.postimg.cc/MGpDRDhs/win-arrow-down.png" alt="Bottom" />
 
   <script src="tsum.js"></script>
+  <script src="tsum_jp.js"></script>
   <script src="images.js"></script>
   <script src="skilllabel.js"></script>
   <script src="littletsum.js"></script>
@@ -589,23 +615,62 @@
     });
 
     // ---------- 搜尋 ----------
-    const sorted = tsumData.sort((a, b) => a.id - b.id);
-    render(sorted);
+    // GL = tsum.js 的 tsumData；JP = tsum_jp.js 的 tsumDataJP
+    const byId = (a, b) => a.id - b.id;
+    const dataSets = {
+      gl: typeof tsumData !== "undefined" ? tsumData.slice().sort(byId) : [],
+      jp: typeof tsumDataJP !== "undefined" ? tsumDataJP.slice().sort(byId) : []
+    };
+    const regionBtns = document.querySelectorAll("#regionSwitch button");
 
-    searchInput.addEventListener("input", () => {
+    let region = "gl";
+    try {
+      const saved = localStorage.getItem("tsumRegion");
+      if (saved === "jp" || saved === "gl") region = saved;
+    } catch (e) {}
+    if (!dataSets[region].length) region = dataSets.gl.length ? "gl" : "jp";
+
+    regionBtns.forEach(b => {
+      if (!dataSets[b.dataset.region].length) {
+        b.disabled = true;
+        b.title = "資料載入失敗";
+      }
+    });
+
+    function applyFilter() {
       const q = searchInput.value.trim().toLowerCase();
-      render(sorted.filter(tsum =>
+      const list = dataSets[region];
+      render(!q ? list : list.filter(tsum =>
         tsum.name?.toLowerCase().includes(q) ||
         tsum.name_en?.toLowerCase().includes(q) ||
         String(tsum.id).includes(q)
       ));
-    });
+    }
+
+    function setRegion(r) {
+      region = r;
+      regionBtns.forEach(b => {
+        const on = b.dataset.region === r;
+        b.classList.toggle("active", on);
+        b.setAttribute("aria-pressed", on);
+      });
+      try { localStorage.setItem("tsumRegion", r); } catch (e) {}
+      applyFilter();
+    }
+
+    regionBtns.forEach(b => b.addEventListener("click", () => {
+      if (b.dataset.region !== region) setRegion(b.dataset.region);
+    }));
+
+    searchInput.addEventListener("input", applyFilter);
 
     clearBtn.addEventListener("click", () => {
       searchInput.value = "";
-      render(sorted);
+      applyFilter();
       searchInput.focus();
     });
+
+    setRegion(region);
 
     searchInput.addEventListener("focus", () => { searchInput.placeholder = ""; });
     searchInput.addEventListener("blur", () => {
