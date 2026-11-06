@@ -839,10 +839,7 @@ const tsumDataJP = [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
       "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Lサイズ"
     ],
     "skill_label": "win_tsumskill_mickeyx.png",
   "skill_cost" : [1,1,2,3]
@@ -854,9 +851,7 @@ const tsumDataJP = [
     "skill_desc": [
       "変化数：12",
       "変化数：14",
-      "変化数：15",
-      "変化数：16",
-      "変化数：17",
+      "変化数：15"
       "",
       ""
     ],
@@ -887,10 +882,7 @@ const tsumDataJP = [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
       "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Lサイズ"
     ],
     "skill_label": "win_tsumskill_daisyx.png",
   "skill_cost" : [1,1,2,3]
@@ -902,9 +894,7 @@ const tsumDataJP = [
     "skill_desc": [
       "消去数：14",
       "消去数：16",
-      "消去数：17",
-      "消去数：18",
-      "消去数：19",
+      "消去数：17"
       "",
       ""
     ],
@@ -918,11 +908,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_plutox.png",
   "skill_cost" : [1,2,3]
