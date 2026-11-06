@@ -4,162 +4,188 @@ const tsumData = [
     "name_en": "Mickey",
     "name": "米奇",
     "image": "block_mickey_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_mickeyx.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 2,
     "name_en": "Minnie",
     "name": "米妮",
     "image": "block_minnie_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：7～10",
       "變化Tsum數：10",
       "變化Tsum數：10～13",
     ],
     "skill_label": "win_tsumskill_minnie.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 3,
     "name_en": "Donald",
     "name": "唐老鴨",
     "image": "block_donald_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.5秒",
       "效果時間：5秒",
     ],
     "skill_label": "win_tsumskill_donald.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 4,
     "name_en": "Daisy",
     "name": "黛絲",
     "image": "block_daisy_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_daisy.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 5,
     "name_en": "Goofy",
     "name": "高飛",
     "image": "block_goofy_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "消除數：10",
       "消除數：10～12",
       "消除數：12",
     ],
     "skill_label": "win_tsumskill_goofy.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 6,
     "name_en": "Pluto",
     "name": "布魯托",
     "image": "block_pluto_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_pluto.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 7,
     "name_en": "Chip",
     "name": "奇奇",
     "image": "block_chip_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_chip.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 8,
     "name_en": "Dale",
     "name": "蒂蒂",
     "image": "block_dale_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_dale.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 9,
     "name_en": "Pooh",
     "name": "小熊維尼",
     "image": "block_pooh_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.2秒",
       "效果時間：4.5秒",
     ],
     "skill_label": "win_tsumskill_pooh.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 10,
     "name_en": "Piglet",
     "name": "小豬",
     "image": "block_piglet_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["粉紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.5秒",
       "效果時間：4秒",
     ],
     "skill_label": "win_tsumskill_piglet.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 11,
     "name_en": "Tigger",
     "name": "跳跳虎",
     "image": "block_tigger_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "橘色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "消除數：9～10",
       "消除數：10",
       "消除數：10～12",
     ],
     "skill_label": "win_tsumskill_tigger.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 12,
     "name_en": "Eeyore",
     "name": "屹耳",
     "image": "block_eeyore_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：8",
       "變化Tsum數：8～10",
       "變化Tsum數：10",
     ],
     "skill_label": "win_tsumskill_eeyore.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 13,
     "name_en": "Stitch",
     "name": "史迪奇",
     "image": "block_stitch_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -169,7 +195,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stitch.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -178,6 +204,8 @@ const tsumData = [
     "name_en": "Scrump",
     "name": "醜丫頭",
     "image": "block_scramp_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "技能種類數：3",
       "技能種類數：4",
@@ -187,7 +215,7 @@ const tsumData = [
       "技能種類數：8"
     ],
     "skill_label": "win_tsumskill_scramp.png",
-	"skill_cost" : [1,2,3,4,6,12],
+  "skill_cost" : [1,2,3,4,6,12],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -196,6 +224,8 @@ const tsumData = [
     "name_en": "Marie",
     "name": "瑪麗貓",
     "image": "block_marie_l.png",
+    "series": "貓兒歷險記",
+    "tsumtype": ["白色Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "出現數量：3",
       "出現數量：3～4",
@@ -205,7 +235,7 @@ const tsumData = [
       "出現數量：5～6"
     ],
     "skill_label": "win_tsumskill_marie.png",
-	"skill_cost" : [1,2,3,4,6,14],
+  "skill_cost" : [1,2,3,4,6,14],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -214,6 +244,8 @@ const tsumData = [
     "name_en": "Lady",
     "name": "麗滴",
     "image": "block_lady_l.png",
+    "series": "小姐與流氓",
+    "tsumtype": ["黃色Tsum", "女孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果時間：7秒",
       "效果時間：7.5秒",
@@ -223,7 +255,7 @@ const tsumData = [
       "效果時間：8.8秒"
     ],
     "skill_label": "win_tsumskill_lady.png",
-	"skill_cost" : [1,2,3,4,6,12],
+  "skill_cost" : [1,2,3,4,6,12],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -232,6 +264,8 @@ const tsumData = [
     "name_en": "Perry",
     "name": "泰瑞",
     "image": "block_perry_l.png",
+    "series": "飛哥與小佛",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：1～2",
       "消除數：2",
@@ -241,13 +275,15 @@ const tsumData = [
       "消除數：4"
     ],
     "skill_label": "win_tsumskill_perry.png",
-	"skill_cost" : [1,2,3,4,6,16]
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 18,
     "name_en": "Woody",
     "name": "胡迪",
     "image": "block_woody_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -257,7 +293,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_woody.png",
-	"skill_cost" : [1,2,3,4,6,20],
+  "skill_cost" : [1,2,3,4,6,20],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -266,6 +302,8 @@ const tsumData = [
     "name_en": "Buzz Lightyear",
     "name": "巴斯光年",
     "image": "block_buzz_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -275,7 +313,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_buzz.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -284,19 +322,23 @@ const tsumData = [
     "name_en": "Alien",
     "name": "外星人",
     "image": "block_littlegreenmen_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["綠色Tsum"],
     "skill_desc": [
       "種類：1",
       "種類：2",
       "種類：3"
     ],
     "skill_label": "win_tsumskill_littlegreenmen.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 21,
     "name_en": "Mike",
     "name": "大眼仔",
     "image": "block_mike_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -306,7 +348,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mike.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -315,6 +357,8 @@ const tsumData = [
     "name_en": "Sulley",
     "name": "毛怪",
     "image": "block_sulley_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：2",
       "變化Tsum數：2～3",
@@ -324,7 +368,7 @@ const tsumData = [
       "變化Tsum數：4～5"
     ],
     "skill_label": "win_tsumskill_sulley.png",
-	"skill_cost" : [1,2,3,4,6,20],
+  "skill_cost" : [1,2,3,4,6,20],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -333,6 +377,8 @@ const tsumData = [
     "name_en": "Jack Skellington",
     "name": "傑克",
     "image": "block_jack_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.2秒",
@@ -342,13 +388,15 @@ const tsumData = [
       "效果時間：5秒"
     ],
     "skill_label": "win_tsumskill_jack.png",
-	"skill_cost" : [1,2,3,4,6,16]
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 24,
     "name_en": "Zero",
     "name": "零零",
     "image": "block_zero_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.5秒",
@@ -358,13 +406,15 @@ const tsumData = [
       "效果時間：5.8秒"
     ],
     "skill_label": "win_tsumskill_zero.png",
-	"skill_cost" : [1,2,3,4,6,12]
+  "skill_cost" : [1,2,3,4,6,12]
   },
   {
     "id": 25,
     "name_en": "Dumbo",
     "name": "小飛象",
     "image": "block_dumbo_l.png",
+    "series": "小飛象",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -374,7 +424,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dumbo.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -383,6 +433,8 @@ const tsumData = [
     "name_en": "Tinker Bell",
     "name": "小叮噹",
     "image": "block_tinkerbell_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -392,7 +444,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tinkerbell.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1406822400],
   "returndate" : ["permanent"]
   },
@@ -401,6 +453,8 @@ const tsumData = [
     "name_en": "Alice",
     "name": "愛麗絲",
     "image": "block_alice_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "分數：相當於10個Tsum",
       "分數：相當於11個Tsum",
@@ -410,7 +464,7 @@ const tsumData = [
       "分數：相當於15個Tsum",
     ],
     "skill_label": "win_tsumskill_alice.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1409500800],
   "returndate" : ["permanent"]
   },
@@ -419,6 +473,8 @@ const tsumData = [
     "name_en": "White Rabbit",
     "name": "大白兔",
     "image": "block_whiterabbit_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["白色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.5秒",
@@ -428,7 +484,7 @@ const tsumData = [
       "效果時間：6.5秒"
     ],
     "skill_label": "win_tsumskill_whiterabbit.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1388505600],
   "returndate" : ["permanent"]
   },
@@ -437,6 +493,8 @@ const tsumData = [
     "name_en": "Cheshire Cat",
     "name": "妙妙貓",
     "image": "block_cheshirecat_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["紅色Tsum", "粉紅色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "消除數：12～15",
       "消除數：13～16",
@@ -446,7 +504,7 @@ const tsumData = [
       "消除數：17～20"
     ],
     "skill_label": "win_tsumskill_cheshirecat.png",
-	"skill_cost" : [1,2,3,4,6,14],
+  "skill_cost" : [1,2,3,4,6,14],
   "startdate" : [1409500800],
   "returndate" : ["permanent"]
   },
@@ -455,6 +513,8 @@ const tsumData = [
     "name_en": "Little Oyster",
     "name": "小牡蠣",
     "image": "block_youngoyster_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["紫色Tsum", "粉紅色Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -464,7 +524,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_youngoyster.png",
-	"skill_cost" : [1,2,3,4,6,20],
+  "skill_cost" : [1,2,3,4,6,20],
   "startdate" : [1409500800],
   "returndate" : ["permanent"]
   },
@@ -473,6 +533,8 @@ const tsumData = [
     "name_en": "Olaf",
     "name": "雪寶",
     "image": "block_olaf_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -482,7 +544,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_olaf.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1412092800],
   "returndate" : ["permanent"]
   },
@@ -491,6 +553,8 @@ const tsumData = [
     "name_en": "Bambi",
     "name": "小鹿斑比",
     "image": "block_bambi_l.png",
+    "series": "小鹿斑比",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：1～4",
       "消除數：2～5",
@@ -500,7 +564,7 @@ const tsumData = [
       "消除數：6～9"
     ],
     "skill_label": "win_tsumskill_bambi.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1412092800],
   "returndate" : ["permanent"]
   },
@@ -509,6 +573,8 @@ const tsumData = [
     "name_en": "Thumper",
     "name": "桑普",
     "image": "block_thumper_l.png",
+    "series": "小鹿斑比",
+    "tsumtype": ["灰色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -518,7 +584,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_thumper.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1412092800],
   "returndate" : ["permanent"]
   },
@@ -527,6 +593,8 @@ const tsumData = [
     "name_en": "Miss Bunny",
     "name": "小兔子",
     "image": "block_missbunny_l.png",
+    "series": "小鹿斑比",
+    "tsumtype": ["黃色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "出現數量：3～4",
       "出現數量：4",
@@ -536,7 +604,7 @@ const tsumData = [
       "出現數量：6"
     ],
     "skill_label": "win_tsumskill_missbunny.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1412092800],
   "returndate" : ["permanent"]
   },
@@ -545,6 +613,8 @@ const tsumData = [
     "name_en": "Maleficent",
     "name": "黑魔女",
     "image": "block_maleficent_l.png",
+    "series": "黑魔女",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：3.3秒",
       "效果時間：3.8秒",
@@ -554,7 +624,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_maleficent.png",
-	"skill_cost" : [1,2,3,4,6,20],
+  "skill_cost" : [1,2,3,4,6,20],
   "startdate" : [1422720000],
   "returndate" : ["permanent"]
   },
@@ -563,19 +633,23 @@ const tsumData = [
     "name_en": "Oswald",
     "name": "幸運兔奧斯華",
     "image": "block_oswald_l.png",
+    "series": "幸運兔奧斯華",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果時間：5秒",
       "效果時間：5.5秒",
       "效果時間：6秒",
     ],
     "skill_label": "win_tsumskill_oswald.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 37,
     "name_en": "Elsa",
     "name": "艾莎",
     "image": "block_elsa_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -585,7 +659,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_elsa.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1417363200],
   "returndate" : ["permanent"]
   },
@@ -594,6 +668,8 @@ const tsumData = [
     "name_en": "Anna",
     "name": "安娜",
     "image": "block_anna_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：4～7",
       "變化Tsum數：5～8",
@@ -603,7 +679,7 @@ const tsumData = [
       "變化Tsum數：9～12"
     ],
     "skill_label": "win_tsumskill_anna.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1417363200],
   "returndate" : ["permanent"]
   },
@@ -612,32 +688,38 @@ const tsumData = [
     "name_en": "Bumblebee Pooh",
     "name": "大黃蜂維尼",
     "image": "block_hpooh_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.5秒",
       "效果時間：5秒",
     ],
     "skill_label": "win_tsumskill_hpooh.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 40,
     "name_en": "Christopher Robin",
     "name": "羅賓",
     "image": "block_robin_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "出現數量：1～2",
       "出現數量：2",
       "出現數量：2～3",
     ],
     "skill_label": "win_tsumskill_robin.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 41,
     "name_en": "Roo",
     "name": "小荳",
     "image": "block_roo_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -647,13 +729,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_roo.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 42,
     "name_en": "Ariel",
     "name": "艾莉兒",
     "image": "block_ariel_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -663,7 +747,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_ariel.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1430409600],
   "returndate" : ["permanent"]
   },
@@ -672,6 +756,8 @@ const tsumData = [
     "name_en": "Flounder",
     "name": "小比目魚",
     "image": "block_flounder_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除排數：1",
       "消除排數：2",
@@ -681,7 +767,7 @@ const tsumData = [
       "消除排數：6"
     ],
     "skill_label": "win_tsumskill_flounder.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1430409600],
   "returndate" : ["permanent"]
   },
@@ -690,6 +776,8 @@ const tsumData = [
     "name_en": "Sebastian",
     "name": "賽巴斯丁",
     "image": "block_sebastian_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：10～13",
       "消除數：11～14",
@@ -699,7 +787,7 @@ const tsumData = [
       "消除數：15～18"
     ],
     "skill_label": "win_tsumskill_sebastian.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1430409600],
   "returndate" : ["permanent"]
   },
@@ -708,18 +796,22 @@ const tsumData = [
     "name_en": "Holiday Jack",
     "name": "假日傑克",
     "image": "block_jackx_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.5秒",
     ],
     "skill_label": "win_tsumskill_jackx.png",
-	"skill_cost" : [1,1]
+  "skill_cost" : [1,1]
   },
   {
     "id": 46,
     "name_en": "Sally",
     "name": "莎莉",
     "image": "block_sallynbc_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "紅色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -729,39 +821,45 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sallynbc.png",
-	"skill_cost" : [1,2,3,4,6,16]
+  "skill_cost" : [1,2,3,4,6,16]
   },
   {
     "id": 47,
     "name_en": "Pumpkin Mickey",
     "name": "南瓜米奇",
     "image": "block_mickeyh_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：15",
       "所需Tsum數：14",
       "所需Tsum數：13",
     ],
     "skill_label": "win_tsumskill_mickeyh.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 48,
     "name_en": "Pumpkin Minnie",
     "name": "南瓜米妮",
     "image": "block_minnieh_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量：5",
       "出現數量：7",
       "出現數量：9",
     ],
     "skill_label": "win_tsumskill_minnieh.png",
-	"skill_cost" : [1,2,4]
+  "skill_cost" : [1,2,4]
   },
   {
     "id": 49,
     "name_en": "Sven",
     "name": "斯特",
     "image": "block_sven_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -771,7 +869,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sven.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1417363200],
   "returndate" : ["permanent"]
   },
@@ -780,6 +878,8 @@ const tsumData = [
     "name_en": "Rapunzel",
     "name": "樂佩",
     "image": "block_rapunzel_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：14",
       "消除數：18",
@@ -789,7 +889,7 @@ const tsumData = [
       "消除數：31"
     ],
     "skill_label": "win_tsumskill_rapunzel.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1420041600],
   "returndate" : ["permanent"]
   },
@@ -798,6 +898,8 @@ const tsumData = [
     "name_en": "Pascal",
     "name": "帕斯卡",
     "image": "block_pascal_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：9",
       "所需Tsum數：8",
@@ -807,7 +909,7 @@ const tsumData = [
       "所需Tsum數：4"
     ],
     "skill_label": "win_tsumskill_pascal.png",
-	"skill_cost" : [1,2,3,4,6,16],
+  "skill_cost" : [1,2,3,4,6,16],
   "startdate" : [1420041600],
   "returndate" : ["permanent"]
   },
@@ -816,6 +918,8 @@ const tsumData = [
     "name_en": "Pete",
     "name": "皮特",
     "image": "block_pete_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "所需Tsum數：28",
       "所需Tsum數：24",
@@ -825,7 +929,7 @@ const tsumData = [
       "所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_pete.png",
-	"skill_cost" : [1,2,4,6,12,25],
+  "skill_cost" : [1,2,4,6,12,25],
   "startdate" : [1427817600],
   "returndate" : ["permanent"]
   },
@@ -834,6 +938,8 @@ const tsumData = [
     "name_en": "Holiday Mickey",
     "name": "假日米奇",
     "image": "block_mickeyx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -841,26 +947,30 @@ const tsumData = [
       "效果範圍：L",
     ],
     "skill_label": "win_tsumskill_mickeyx.png",
-	"skill_cost" : [1,1,2,3]
+  "skill_cost" : [1,1,2,3]
   },
   {
     "id": 54,
     "name_en": "Holiday Minnie",
     "name": "假日米妮",
     "image": "block_minniex_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：14",
       "變化Tsum數：15",
     ],
     "skill_label": "win_tsumskill_minniex.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 55,
     "name_en": "Holiday Donald",
     "name": "假日唐老鴨",
     "image": "block_donaldx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4.5秒",
       "效果時間：5秒",
@@ -868,13 +978,15 @@ const tsumData = [
       ""
     ],
     "skill_label": "win_tsumskill_donaldx.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 56,
     "name_en": "Holiday Daisy",
     "name": "假日黛絲",
     "image": "block_daisyx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -882,13 +994,15 @@ const tsumData = [
       "效果範圍：L",
     ],
     "skill_label": "win_tsumskill_daisyx.png",
-	"skill_cost" : [1,1,2,3]
+  "skill_cost" : [1,1,2,3]
   },
   {
     "id": 57,
     "name_en": "Holiday Goofy",
     "name": "假日高飛",
     "image": "block_goofyx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "消除數：14",
       "消除數：16",
@@ -896,26 +1010,30 @@ const tsumData = [
       ""
     ],
     "skill_label": "win_tsumskill_goofyx.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 58,
     "name_en": "Holiday Pluto",
     "name": "假日布魯托",
     "image": "block_plutox_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_plutox.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 59,
     "name_en": "Baymax",
     "name": "杯麵",
     "image": "block_baymax_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：2～3",
       "變化Tsum數：3",
@@ -925,7 +1043,7 @@ const tsumData = [
       "變化Tsum數：5"
     ],
     "skill_label": "win_tsumskill_baymax.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1420041600],
   "returndate" : ["permanent"]
   },
@@ -934,6 +1052,8 @@ const tsumData = [
     "name_en": "Jessie",
     "name": "翠絲",
     "image": "block_jessie_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -943,7 +1063,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jessie.png",
-	"skill_cost" : [1,2,3,4,6,18],
+  "skill_cost" : [1,2,3,4,6,18],
   "startdate" : [1422720000],
   "returndate" : ["permanent"]
   },
@@ -952,6 +1072,8 @@ const tsumData = [
     "name_en": "Lotso",
     "name": "熊抱哥",
     "image": "block_lotso_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["紅色Tsum", "粉紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -961,7 +1083,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_lotso.png",
-	"skill_cost" : [1,2,3,4,6,19],
+  "skill_cost" : [1,2,3,4,6,19],
   "startdate" : [1422720000],
   "returndate" : ["permanent"]
   },
@@ -978,6 +1100,8 @@ const tsumData = [
     "name_en": "Valentine Minnie",
     "name": "情人米妮",
     "image": "block_minniev_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：14",
@@ -985,7 +1109,7 @@ const tsumData = [
       "變化Tsum數：16",
     ],
     "skill_label": "win_tsumskill_minniev.png",
-		"skill_cost" : [1,1,2,3]
+    "skill_cost" : [1,1,2,3]
   },
   {
     "id": 64,
@@ -1000,19 +1124,23 @@ const tsumData = [
     "name_en": "Valentine Daisy",
     "name": "情人黛絲",
     "image": "block_daisyv_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_daisyv.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 66,
     "name_en": "Sorcerer Mickey",
     "name": "魔法師米奇",
     "image": "block_mickeys_l.png",
+    "series": "幻想曲",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：S 次數：3",
       "範圍：M 次數：3",
@@ -1022,7 +1150,7 @@ const tsumData = [
       "範圍：XL 次數：5"
     ],
     "skill_label": "win_tsumskill_mickeys.png",
-	"skill_cost" : [1,2,3,4,6,20],
+  "skill_cost" : [1,2,3,4,6,20],
   "startdate" : [1438358400],
   "returndate" : [1477929600,1509465600,1541001600,1561910400,1572537600,1593532800,1625068800,1667232000,1761926400]
   },
@@ -1031,6 +1159,8 @@ const tsumData = [
     "name_en": "Belle",
     "name": "貝兒",
     "image": "block_belle_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1040,7 +1170,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_belle.png",
-	"skill_cost" : [1,1,2,4,7,20],
+  "skill_cost" : [1,1,2,4,7,20],
   "startdate" : [1433088000],
   "returndate" : ["permanent"]
   },
@@ -1049,6 +1179,8 @@ const tsumData = [
     "name_en": "Beast",
     "name": "野獸",
     "image": "block_beast_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：28",
       "所需Tsum數：24",
@@ -1058,7 +1190,7 @@ const tsumData = [
       "所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_beast.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1433088000],
   "returndate" : ["permanent"]
   },
@@ -1067,45 +1199,53 @@ const tsumData = [
     "name_en": "Bunny Pooh",
     "name": "兔子維尼",
     "image": "block_poohr_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "可累積Tsum數：12",
       "可累積Tsum數：15",
       "可累積Tsum數：17",
     ],
     "skill_label": "win_tsumskill_poohr.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 70,
     "name_en": "Bunny Tigger",
     "name": "兔子跳跳虎",
     "image": "block_tiggerr_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "橘色Tsum", "男孩Tsum", "兔子Tsum", "貓科Tsum"],
     "skill_desc": [
       "跳躍次數：1",
       "跳躍次數：2",
       "跳躍次數：3",
     ],
     "skill_label": "win_tsumskill_tiggerr.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 71,
     "name_en": "Rabbit",
     "name": "瑞比",
     "image": "block_rabbit_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "胡蘿蔔數：9",
       "胡蘿蔔數：12",
       "胡蘿蔔數：15",
     ],
     "skill_label": "win_tsumskill_rabbit.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 72,
     "name_en": "Surprise Elsa",
     "name": "驚喜艾莎",
     "image": "block_elsaf_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "小雪人數：6",
       "小雪人數：9",
@@ -1115,7 +1255,7 @@ const tsumData = [
       "小雪人數：24"
     ],
     "skill_label": "win_tsumskill_elsaf.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1441036800],
   "returndate" : ["permanent"]
   },
@@ -1124,6 +1264,8 @@ const tsumData = [
     "name_en": "Birthday Anna",
     "name": "生日安娜",
     "image": "block_annaf_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：4～7",
       "變化Tsum數：5～8",
@@ -1133,7 +1275,7 @@ const tsumData = [
       "變化Tsum數：9～12"
     ],
     "skill_label": "win_tsumskill_annaf.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1441036800],
   "returndate" : ["permanent"]
   },
@@ -1142,6 +1284,8 @@ const tsumData = [
     "name_en": "Angel",
     "name": "安琪",
     "image": "block_angel_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：5秒",
       "效果時間：5.4秒",
@@ -1151,7 +1295,7 @@ const tsumData = [
       "效果時間：7秒"
     ],
     "skill_label": "win_tsumskill_angel.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1441036800],
   "returndate" : ["permanent"]
   },
@@ -1160,6 +1304,8 @@ const tsumData = [
     "name_en": "Hawaiian Stitch",
     "name": "夏威夷史迪奇",
     "image": "block_stitchf_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1169,26 +1315,30 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stitchf.png",
-	"skill_cost" : [1,1,2,4,7,21]
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 76,
     "name_en": "Lilo",
     "name": "莉蘿",
     "image": "block_lilo_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22",
       "所需Tsum數：20",
       "所需Tsum數：18",
     ],
     "skill_label": "win_tsumskill_lilo.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 77,
     "name_en": "Lightning McQueen",
     "name": "閃電麥坤",
     "image": "block_mcqueen_l.png",
+    "series": "汽車總動員",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "行駛範圍：XS",
       "行駛範圍：S",
@@ -1198,7 +1348,7 @@ const tsumData = [
       "行駛範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mcqueen.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1446307200],
   "returndate" : ["permanent"]
   },
@@ -1207,6 +1357,8 @@ const tsumData = [
     "name_en": "Mater",
     "name": "拖線",
     "image": "block_mater_l.png",
+    "series": "汽車總動員",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：15～18",
       "消除數：17～20",
@@ -1216,7 +1368,7 @@ const tsumData = [
       "消除數：25～28"
     ],
     "skill_label": "win_tsumskill_mater.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1446307200],
   "returndate" : ["permanent"]
   },
@@ -1225,6 +1377,8 @@ const tsumData = [
     "name_en": "Rex",
     "name": "抱抱龍",
     "image": "block_rex_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：3",
       "消除數：3～4",
@@ -1234,7 +1388,7 @@ const tsumData = [
       "消除數：5～6"
     ],
     "skill_label": "win_tsumskill_rex.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1446307200],
   "returndate" : ["permanent"]
   },
@@ -1243,6 +1397,8 @@ const tsumData = [
     "name_en": "Randall",
     "name": "藍道",
     "image": "block_randall_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4.5秒",
       "效果時間：5秒",
@@ -1252,7 +1408,7 @@ const tsumData = [
       "效果時間：6.8秒"
     ],
     "skill_label": "win_tsumskill_randall.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1446307200],
   "returndate" : ["permanent"]
   },
@@ -1261,6 +1417,8 @@ const tsumData = [
     "name_en": "Aladdin",
     "name": "阿拉丁",
     "image": "block_aladdin_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1270,7 +1428,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_aladdin.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1448899200],
   "returndate" : ["permanent"],
   },
@@ -1279,6 +1437,8 @@ const tsumData = [
     "name_en": "Jasmine",
     "name": "茉莉公主",
     "image": "block_jasmine_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1288,7 +1448,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jasmine.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1448899200],
   "returndate" : ["permanent"],
   },
@@ -1297,6 +1457,8 @@ const tsumData = [
     "name_en": "Pinocchio",
     "name": "小木偶",
     "image": "block_pinocchio_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25～26",
       "所需Tsum數：23～24",
@@ -1306,7 +1468,7 @@ const tsumData = [
       "所需Tsum數：16～17"
     ],
     "skill_label": "win_tsumskill_pinocchio.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1451577600],
   "returndate" : ["permanent"],
   },
@@ -1315,6 +1477,8 @@ const tsumData = [
     "name_en": "Jiminy Cricket",
     "name": "蟋蟀吉明尼",
     "image": "block_jiminy_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1324,13 +1488,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jiminy.png",
-	"skill_cost" : [1,1,2,4,7,21]
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 85,
     "name_en": "Nick Wilde",
     "name": "尼克",
     "image": "block_nick_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：17～20",
       "消除數：19～22",
@@ -1340,7 +1506,7 @@ const tsumData = [
       "消除數：28～34"
     ],
     "skill_label": "win_tsumskill_nick.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1456761600],
   "returndate" : ["permanent"]
   },
@@ -1349,6 +1515,8 @@ const tsumData = [
     "name_en": "Judy Hopps",
     "name": "茱蒂",
     "image": "block_judy_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "灰色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1358,7 +1526,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_judy.png",
-	"skill_cost" : [1,1,2,4,8,14],
+  "skill_cost" : [1,1,2,4,8,14],
   "startdate" : [1456761600],
   "returndate" : ["permanent"]
   },
@@ -1367,6 +1535,8 @@ const tsumData = [
     "name_en": "Finnick",
     "name": "飛仔",
     "image": "block_finnick_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1376,7 +1546,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_finnick.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1456761600],
   "returndate" : ["permanent"]
   },
@@ -1385,6 +1555,8 @@ const tsumData = [
     "name_en": "Max",
     "name": "麥斯",
     "image": "block_max_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1394,13 +1566,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_max.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 89,
     "name_en": "Clarice",
     "name": "克莉絲",
     "image": "block_clarice_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1410,7 +1584,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_clarice.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1459440000],
   "returndate" : ["permanent"]
   },
@@ -1419,6 +1593,8 @@ const tsumData = [
     "name_en": "Luke",
     "name": "路克",
     "image": "block_luke_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1428,13 +1604,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_luke.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 91,
     "name_en": "Princess Leia",
     "name": "莉亞公主",
     "image": "block_leia_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1444,13 +1622,15 @@ const tsumData = [
       "效果範圍：XXL",
     ],
     "skill_label": "win_tsumskill_leia.png",
-	"skill_cost" : [1,1,1,1,1,1]
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 92,
     "name_en": "R2-D2",
     "name": "R2-D2",
     "image": "block_r2d2_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1460,13 +1640,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_r2d2.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 93,
     "name_en": "C-3PO",
     "name": "C-3PO",
     "image": "block_c3po_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1476,13 +1658,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_c3po.png",
-	"skill_cost" : [1,1,1,1,2,3]	
+  "skill_cost" : [1,1,1,1,2,3]  
   },
   {
     "id": 94,
     "name_en": "Yoda",
     "name": "尤達",
     "image": "block_yoda_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25",
       "所需Tsum數：24",
@@ -1492,13 +1676,15 @@ const tsumData = [
       "所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_yoda.png",
-	"skill_cost" : [1,1,2,4,7,20]
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 95,
     "name_en": "Darth Vader",
     "name": "達斯維達",
     "image": "block_vader_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：S 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -1508,13 +1694,15 @@ const tsumData = [
       "範圍：L 所需Tsum數：19"
     ],
     "skill_label": "win_tsumskill_vader.png",
-	"skill_cost" : [1,1,2,4,7,21]	
+  "skill_cost" : [1,1,2,4,7,21] 
   },
   {
     "id": 96,
     "name_en": "BB-8",
     "name": "BB-8",
     "image": "block_bb8_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1524,13 +1712,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bb8.png",
-	"skill_cost" : [1,1,2,4,7,14]	
+  "skill_cost" : [1,1,2,4,7,14] 
   },
   {
     "id": 97,
     "name_en": "Arlo",
     "name": "阿羅",
     "image": "block_arlo_l.png",
+    "series": "恐龍當家",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1540,13 +1730,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_arlo.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 98,
     "name_en": "Snow White",
     "name": "白雪公主",
     "image": "block_snowwhite_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量：2～3",
       "出現數量：3～4",
@@ -1556,7 +1748,7 @@ const tsumData = [
       "出現數量：7"
     ],
     "skill_label": "win_tsumskill_snowwhite.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1467302400],
   "returndate" : ["permanent"]
   },
@@ -1565,6 +1757,8 @@ const tsumData = [
     "name_en": "Bride Rapunzel",
     "name": "婚紗樂佩",
     "image": "block_rapunzelb_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1574,13 +1768,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rapunzelb.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 100,
     "name_en": "Princess Aurora",
     "name": "愛洛公主",
     "image": "block_aurora_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.5秒",
@@ -1590,7 +1786,7 @@ const tsumData = [
       "效果時間：6.5秒"
     ],
     "skill_label": "win_tsumskill_aurora.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1467302400],
   "returndate" : ["permanent"]
   },
@@ -1599,6 +1795,8 @@ const tsumData = [
     "name_en": "Romance Ariel",
     "name": "浪漫艾莉兒",
     "image": "block_arielr_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：4～5",
       "變化Tsum數：5～6",
@@ -1608,13 +1806,15 @@ const tsumData = [
       "變化Tsum數：9～10"
     ],
     "skill_label": "win_tsumskill_arielr.png",
-	"skill_cost" : [1,1,2,4,7,21]
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 102,
     "name_en": "King Triton",
     "name": "川頓國王",
     "image": "block_triton_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1624,7 +1824,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_triton.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1469980800],
   "returndate" : ["permanent"]
   },
@@ -1633,19 +1833,23 @@ const tsumData = [
     "name_en": "Skuttle",
     "name": "史考托",
     "image": "block_scuttle_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_scuttle.png",
-	"skill_cost" : [1,2,2]
+  "skill_cost" : [1,2,2]
   },
   {
     "id": 104,
     "name_en": "Abu",
     "name": "阿布",
     "image": "block_abu_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：18",
       "所需Tsum數：16",
@@ -1655,13 +1859,15 @@ const tsumData = [
       "所需Tsum數：10"
     ],
     "skill_label": "win_tsumskill_abu.png",
-	"skill_cost" : [1,2,2,3,4,5]
+  "skill_cost" : [1,2,2,3,4,5]
   },
   {
     "id": 105,
     "name_en": "Genie",
     "name": "精靈",
     "image": "block_genie_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "技能種類數：4",
       "技能種類數：5",
@@ -1671,7 +1877,7 @@ const tsumData = [
       "技能種類數：9"
     ],
     "skill_label": "win_tsumskill_genie.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1472659200],
   "returndate" : ["permanent"]
   },
@@ -1680,6 +1886,8 @@ const tsumData = [
     "name_en": "Horn Hat Mickey",
     "name": "角帽米奇",
     "image": "block_mickeyh2015_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "出現數量：3",
       "出現數量：3～4",
@@ -1689,13 +1897,15 @@ const tsumData = [
       "出現數量：5～6"
     ],
     "skill_label": "win_tsumskill_mickeyh2015.png",
-	"skill_cost" : [1,1,2,4,7,20]
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 107,
     "name_en": "Cat Hat Minnie",
     "name": "貓帽米妮",
     "image": "block_minnieh2015_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["紫色Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "變化Tsum數：10",
       "變化Tsum數：12",
@@ -1705,13 +1915,15 @@ const tsumData = [
       "變化Tsum數：17"
     ],
     "skill_label": "win_tsumskill_minnieh2015.png",
-	"skill_cost" : [1,1,2,4,7,20]
+  "skill_cost" : [1,1,2,4,7,20]
   },
   {
     "id": 108,
     "name_en": "Pumpkin Chip",
     "name": "南瓜奇奇",
     "image": "block_chiph2015_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1721,13 +1933,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chiph2015.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 109,
     "name_en": "Ghost Dale",
     "name": "小鬼蒂蒂",
     "image": "block_daleh2015_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1737,26 +1951,30 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_daleh2015.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 110,
     "name_en": "Rattle Bones Pluto",
     "name": "骷髏布魯托",
     "image": "block_plutoh2015_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_plutoh2015.png",
-	"skill_cost" : [1,2,2]
+  "skill_cost" : [1,2,2]
   },
   {
     "id": 111,
     "name_en": "Conductor Mickey",
     "name": "指揮家米奇",
     "image": "block_mickeyc_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "音符數：3",
       "音符數：3～4",
@@ -1766,7 +1984,7 @@ const tsumData = [
       "音符數：5～6"
     ],
     "skill_label": "win_tsumskill_mickeyc.png",
-	"skill_cost" : [1,1,2,4,7,21],
+  "skill_cost" : [1,1,2,4,7,21],
   "startdate" : [1477929600],
   "returndate" : [1509465600,1519833600,1533052800,1541001600,1543593600,1572537600,1590940800,1604160000,1667232000,1698768000,
                   1730390400,1761926400]
@@ -1776,6 +1994,8 @@ const tsumData = [
     "name_en": "Evil Queen",
     "name": "邪惡皇后",
     "image": "block_evilqueen_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量：2",
       "出現數量：2～3",
@@ -1785,7 +2005,7 @@ const tsumData = [
       "出現數量：4～5"
     ],
     "skill_label": "win_tsumskill_evilqueen.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1477929600],
   "returndate" : ["permanent"]
   },
@@ -1794,6 +2014,8 @@ const tsumData = [
     "name_en": "Maleficent Dragon",
     "name": "黑魔女火龍",
     "image": "block_maleficentd_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22 時間：4秒",
       "所需Tsum數：21 時間：4秒",
@@ -1803,13 +2025,15 @@ const tsumData = [
       "所需Tsum數：19 時間：6秒"
     ],
     "skill_label": "win_tsumskill_maleficentd.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 114,
     "name_en": "Ursula",
     "name": "烏蘇拉",
     "image": "block_ursula_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["白色Tsum", "紫色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1819,7 +2043,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_ursula.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1477929600],
   "returndate" : ["permanent"]
   },
@@ -1828,6 +2052,8 @@ const tsumData = [
     "name_en": "Steamboat Mickey",
     "name": "汽船米奇",
     "image": "block_mickeyb_l.png",
+    "series": "汽船威利號",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1837,7 +2063,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyb.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1480521600],
   "returndate" : [1496246400,1533052800,1541001600,1572537600,1593532800,1635696000,1667232000,1738339200,1761926400]
   },
@@ -1846,6 +2072,8 @@ const tsumData = [
     "name_en": "Steamboat Minnie",
     "name": "汽船米妮",
     "image": "block_minnieb_l.png",
+    "series": "汽船威利號",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：15",
       "消除數：17",
@@ -1855,13 +2083,15 @@ const tsumData = [
       "消除數：25"
     ],
     "skill_label": "win_tsumskill_minnieb.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 117,
     "name_en": "Steamboat Pete",
     "name": "汽船皮特",
     "image": "block_peteb_l.png",
+    "series": "汽船威利號",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "所需Tsum數：30",
       "所需Tsum數：28",
@@ -1871,7 +2101,7 @@ const tsumData = [
       "所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_peteb.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1480521600],
   "returndate" : [1496246400,1527782400,1530374400,1538323200,1546272000,1551369600,1556640000,1564588800,1569859200,
                   1580486400,1593532800,1635696000,1711900800,1743436800,1767196800]
@@ -1881,6 +2111,8 @@ const tsumData = [
     "name_en": "Cinderella",
     "name": "仙度瑞拉",
     "image": "block_cinderella_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：7",
       "消除數：8",
@@ -1890,7 +2122,7 @@ const tsumData = [
       "消除數：12"
     ],
     "skill_label": "win_tsumskill_cinderella.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1483200000],
   "returndate" : ["permanent"]
   },
@@ -1899,6 +2131,8 @@ const tsumData = [
     "name_en": "Fairy Godmother",
     "name": "仙女教母",
     "image": "block_fairygodmother_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：19 變化Tsum數：5",
       "所需Tsum數：18 變化Tsum數：6",
@@ -1908,7 +2142,7 @@ const tsumData = [
       "所需Tsum數：16 變化Tsum數：10"
     ],
     "skill_label": "win_tsumskill_fairygodmother.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1483200000],
   "returndate" : ["permanent"]
   },
@@ -1917,6 +2151,8 @@ const tsumData = [
     "name_en": "Prince Charming",
     "name": "基特王子",
     "image": "block_charming_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["黑色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1926,13 +2162,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_charming.png",
-	"skill_cost" : [1,1,1,1,1,1]
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 121,
     "name_en": "Simba",
     "name": "辛巴",
     "image": "block_simba_l.png",
+    "series": "獅子王",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1942,7 +2180,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_simba.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1485878400],
   "returndate" : ["permanent"]
   },
@@ -1951,6 +2189,8 @@ const tsumData = [
     "name_en": "Nala",
     "name": "娜娜",
     "image": "block_nala_l.png",
+    "series": "獅子王",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1960,7 +2200,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_nala.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1485878400],
   "returndate" : ["permanent"]
   },
@@ -1969,6 +2209,8 @@ const tsumData = [
     "name_en": "Scar",
     "name": "刀疤",
     "image": "block_scar_l.png",
+    "series": "獅子王",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -1978,7 +2220,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_scar.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1485878400],
   "returndate" : ["permanent"]
   },
@@ -1987,19 +2229,23 @@ const tsumData = [
     "name_en": "Zazu",
     "name": "沙祖",
     "image": "block_zazu_l.png",
+    "series": "獅子王",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_zazu.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 125,
     "name_en": "Mowgli",
     "name": "毛克利",
     "image": "block_mowgli_l.png",
+    "series": "森林王子",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2009,13 +2255,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mowgli.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 126,
     "name_en": "Wonderland Alice",
     "name": "仙境愛麗絲",
     "image": "block_alice2_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：5秒",
       "效果時間：6秒",
@@ -2025,13 +2273,15 @@ const tsumData = [
       "效果時間：10秒"
     ],
     "skill_label": "win_tsumskill_alice2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 127,
     "name_en": "Queen of Hearts",
     "name": "紅心皇后",
     "image": "block_queenofhearts_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2041,7 +2291,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_queenofhearts.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1488297600],
   "returndate" : ["permanent"]
   },
@@ -2050,6 +2300,8 @@ const tsumData = [
     "name_en": "Mad Hatter",
     "name": "瘋帽子",
     "image": "block_madhatter_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "小：3",
       "小：2 中：1",
@@ -2059,7 +2311,7 @@ const tsumData = [
       "中：1 大：2"
     ],
     "skill_label": "win_tsumskill_madhatter.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1488297600],
   "returndate" : ["permanent"]
   },
@@ -2068,19 +2320,23 @@ const tsumData = [
     "name_en": "March Hare",
     "name": "三月兔",
     "image": "block_marchhare_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_marchhare.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 130,
     "name_en": "Theatrical Mad Hatter",
     "name": "瘋狂帽客 ",
     "image": "block_madhatterj_l.png",
+    "series": "魔境夢遊",
+    "tsumtype": ["白色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2090,13 +2346,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_madhatterj.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 131,
     "name_en": "Jedi Luke",
     "name": "絕地路克",
     "image": "block_lukej_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：22",
@@ -2106,13 +2364,15 @@ const tsumData = [
       "範圍：L 所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_lukej.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 132,
     "name_en": "Han Solo",
     "name": "韓索羅",
     "image": "block_hansolo_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2122,13 +2382,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hansolo.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 133,
     "name_en": "Chewbacca",
     "name": "丘巴卡",
     "image": "block_chewbacca_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2138,13 +2400,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chewbacca.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 134,
     "name_en": "K-2SO",
     "name": "K-2SO",
     "image": "block_k2so_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2154,26 +2418,30 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_k2so.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 135,
     "name_en": "Death Trooper",
     "name": "死亡特種兵",
     "image": "block_deathtrooper_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_deathtrooper.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 136,
     "name_en": "Stormtrooper",
     "name": "帝國風暴兵",
     "image": "block_stormtrooper_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2183,13 +2451,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stormtrooper.png",
-	"skill_cost" : [1,1,2,3,6,14]
+  "skill_cost" : [1,1,2,3,6,14]
   },
   {
     "id": 137,
     "name_en": "Rey",
     "name": "芮",
     "image": "block_rey_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2199,13 +2469,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rey.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 138,
     "name_en": "Kylo Ren",
     "name": "凱羅忍",
     "image": "block_kyloren_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2215,13 +2487,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_kyloren.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 139,
     "name_en": "Jack Sparrow",
     "name": "史傑克船長",
     "image": "block_jacksparrow_l.png",
+    "series": "神鬼奇航",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2231,13 +2505,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jacksparrow.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 140,
     "name_en": "Elizabeth Swann",
     "name": "伊莉莎白",
     "image": "block_elizabethswann_l.png",
+    "series": "神鬼奇航",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：13",
       "變化Tsum數：15",
@@ -2247,13 +2523,15 @@ const tsumData = [
       "變化Tsum數：20"
     ],
     "skill_label": "win_tsumskill_elizabethswann.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 141,
     "name_en": "Davy Jones",
     "name": "深海閻王",
     "image": "block_davyjones_l.png",
+    "series": "神鬼奇航",
+    "tsumtype": ["茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2263,7 +2541,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_davyjones.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1493568000],
   "returndate" : [1519833600,1527782400,1538323200,1556640000,1564588800,1596211200,1612108800,1627747200,1635696000,1654012800,
                   1675180800,1704038400,1743436800,1769875200]
@@ -2273,6 +2551,8 @@ const tsumData = [
     "name_en": "Parade Mickey",
     "name": "遊行米奇",
     "image": "block_mickeyp_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2282,13 +2562,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyp.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 143,
     "name_en": "Parade Tinker Bell",
     "name": "遊行叮叮",
     "image": "block_tinkerbellp_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：18",
       "範圍：S 所需Tsum數：18",
@@ -2298,13 +2580,15 @@ const tsumData = [
       "範圍：L 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_tinkerbellp.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 144,
     "name_en": "Romance Belle",
     "name": "浪漫貝兒",
     "image": "block_bellel_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2314,13 +2598,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bellel.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 145,
     "name_en": "Romance Beast",
     "name": "浪漫野獸",
     "image": "block_beastl_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2330,13 +2616,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_beastl.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 146,
     "name_en": "Gaston",
     "name": "加斯頓",
     "image": "block_gaston_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "我的Tsum出現率：50%",
       "我的Tsum出現率：60%",
@@ -2346,7 +2634,7 @@ const tsumData = [
       "我的Tsum出現率：100%"
     ],
     "skill_label": "win_tsumskill_gaston.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1498838400],
   "returndate" : ["permanent"]
   },
@@ -2355,6 +2643,8 @@ const tsumData = [
     "name_en": "Lumiere",
     "name": "盧米亞",
     "image": "block_lumiere_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：14",
       "消除數：16",
@@ -2364,7 +2654,7 @@ const tsumData = [
       "消除數：25"
     ],
     "skill_label": "win_tsumskill_lumiere.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1498838400],
   "returndate" : ["permanent"]
   },
@@ -2373,19 +2663,23 @@ const tsumData = [
     "name_en": "Mrs.Potts",
     "name": "茶煲太太",
     "image": "block_potts_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：16",
       "變化Tsum數：20",
     ],
     "skill_label": "win_tsumskill_potts.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 149,
     "name_en": "Nemo",
     "name": "尼莫",
     "image": "block_nemo_l.png",
+    "series": "海底總動員",
+    "tsumtype": ["男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：19",
       "所需Tsum數：17",
@@ -2395,7 +2689,7 @@ const tsumData = [
       "所需Tsum數：9"
     ],
     "skill_label": "win_tsumskill_nemo.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1501516800],
   "returndate" : ["permanent"]
   },
@@ -2404,6 +2698,8 @@ const tsumData = [
     "name_en": "Dory",
     "name": "多莉",
     "image": "block_dory_l.png",
+    "series": "海底總動員",
+    "tsumtype": ["藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2413,7 +2709,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dory.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1501516800],
   "returndate" : ["permanent"]
   },
@@ -2422,6 +2718,8 @@ const tsumData = [
     "name_en": "Crush",
     "name": "龜龜",
     "image": "block_crush_l.png",
+    "series": "海底總動員",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2431,7 +2729,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_crush.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1501516800],
   "returndate" : ["permanent"]
   },
@@ -2440,6 +2738,8 @@ const tsumData = [
     "name_en": "Moana",
     "name": "莫娜",
     "image": "block_moana_l.png",
+    "series": "海洋奇緣",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：17",
       "範圍：S 所需Tsum數：16",
@@ -2449,7 +2749,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：8"
     ],
     "skill_label": "win_tsumskill_moana.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1501516800],
   "returndate" : ["permanent"]
   },
@@ -2458,6 +2758,8 @@ const tsumData = [
     "name_en": "Maui",
     "name": "毛伊",
     "image": "block_maui_l.png",
+    "series": "海洋奇緣",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2467,7 +2769,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_maui.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1501516800],
   "returndate" : ["permanent"]
   },
@@ -2476,6 +2778,8 @@ const tsumData = [
     "name_en": "Young Elsa",
     "name": "小艾莎",
     "image": "block_elsac_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2485,13 +2789,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_elsac.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 155,
     "name_en": "Young Anna",
     "name": "小安娜",
     "image": "block_annac_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21",
       "所需Tsum數：19",
@@ -2501,13 +2807,15 @@ const tsumData = [
       "所需Tsum數：11"
     ],
     "skill_label": "win_tsumskill_annac.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 156,
     "name_en": "Summer Olaf",
     "name": "夏日雪寶",
     "image": "block_olafs_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.6秒",
@@ -2517,13 +2825,15 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_olafs.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 157,
     "name_en": "Sora",
     "name": "索拉",
     "image": "block_sora_l.png",
+    "series": "王國之心",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：26",
       "範圍：S 所需Tsum數：25",
@@ -2533,13 +2843,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_sora.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 158,
     "name_en": "Riku",
     "name": "里克",
     "image": "block_riku_l.png",
+    "series": "王國之心",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 次數：3",
       "範圍：S 次數：3",
@@ -2549,13 +2861,15 @@ const tsumData = [
       "範圍：XXL 次數：5"
     ],
     "skill_label": "win_tsumskill_riku.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 159,
     "name_en": "Cruella De Vil",
     "name": "庫伊拉",
     "image": "block_cruella_l.png",
+    "series": "101忠狗",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2565,7 +2879,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cruella.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1506787200],
   "returndate" : ["permanent"]
   },
@@ -2574,6 +2888,8 @@ const tsumData = [
     "name_en": "Captain Hook",
     "name": "虎克船長",
     "image": "block_hook_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2583,7 +2899,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hook.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1506787200],
   "returndate" : ["permanent"]
   },
@@ -2592,6 +2908,8 @@ const tsumData = [
     "name_en": "Jafar",
     "name": "賈方",
     "image": "block_jafar_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2601,7 +2919,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jafar.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1506787200],
   "returndate" : ["permanent"]
   },
@@ -2610,6 +2928,8 @@ const tsumData = [
     "name_en": "Scrooge",
     "name": "史高治",
     "image": "block_scrooge_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "金幣數量：XS",
       "金幣數量：S",
@@ -2619,26 +2939,30 @@ const tsumData = [
       "金幣數量：XXL"
     ],
     "skill_label": "win_tsumskill_scrooge.png",
-	"skill_cost" : [1,2,3,3,3,3]
+  "skill_cost" : [1,2,3,3,3,3]
   },
   {
     "id": 163,
     "name_en": "Jester Goofy",
     "name": "小丑高飛",
     "image": "block_goofyh2016_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "消除數：16",
       "消除數：19",
       "消除數：22",
     ],
     "skill_label": "win_tsumskill_goofyh2016.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 164,
     "name_en": "Cruz Ramirez",
     "name": "克魯茲拉米雷茲",
     "image": "block_ramirez_l.png",
+    "series": "汽車總動員",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：22",
@@ -2648,7 +2972,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_ramirez.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1514736000],
   "returndate" : ["permanent"]
   },
@@ -2657,6 +2981,8 @@ const tsumData = [
     "name_en": "MU Mike",
     "name": "大學生大眼仔",
     "image": "block_mikeu_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2666,13 +2992,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mikeu.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 166,
     "name_en": "Wall-E",
     "name": "瓦力",
     "image": "block_walle_l.png",
+    "series": "瓦力",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：15",
       "範圍：S 所需Tsum數：14",
@@ -2682,13 +3010,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：10"
     ],
     "skill_label": "win_tsumskill_walle.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 167,
     "name_en": "Carl",
     "name": "卡爾",
     "image": "block_carl_l.png",
+    "series": "天外奇蹟",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2698,13 +3028,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_carl.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 168,
     "name_en": "Jet Pack Alien",
     "name": "噴氣包外星人",
     "image": "block_littlegreenmen2_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["綠色Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2714,13 +3046,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_littlegreenmen2.png",
-	"skill_cost" : [1,1,2,4,8,14]
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 169,
     "name_en": "Hiro",
     "name": "阿廣",
     "image": "block_hiro_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2730,13 +3064,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hiro.png",
-	"skill_cost" : [1,1,2,4,8,14]
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 170,
     "name_en": "Baymax 2.0",
     "name": "杯麵 2.0",
     "image": "block_baymax2_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2746,13 +3082,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_baymax2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 171,
     "name_en": "Peter Pan",
     "name": "彼得潘",
     "image": "block_peterpan_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "綠色Tsum", "橘色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2762,13 +3100,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_peterpan.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 172,
     "name_en": "Tramp",
     "name": "流氓",
     "image": "block_tramp_l.png",
+    "series": "小姐與流氓",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2778,7 +3118,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tramp.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1514736000],
   "returndate" : ["permanent"]
   },
@@ -2787,6 +3127,8 @@ const tsumData = [
     "name_en": "Blue Fairy",
     "name": "藍仙女",
     "image": "block_bluefairy_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 時間：4秒",
       "所需Tsum數：24 時間：5秒",
@@ -2796,7 +3138,7 @@ const tsumData = [
       "所需Tsum數：20 時間：7秒"
     ],
     "skill_label": "win_tsumskill_bluefairy.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1514736000],
   "returndate" : ["permanent"]
   },
@@ -2805,6 +3147,8 @@ const tsumData = [
     "name_en": "Patch",
     "name": "小斑",
     "image": "block_patch_l.png",
+    "series": "101忠狗",
+    "tsumtype": ["白色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2814,7 +3158,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_patch.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1514736000],
   "returndate" : ["permanent"]
   },
@@ -2823,6 +3167,8 @@ const tsumData = [
     "name_en": "Timothy",
     "name": "提摩太",
     "image": "block_timothy_l.png",
+    "series": "小飛象",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "出現數量：3～4",
       "出現數量：4",
@@ -2832,7 +3178,7 @@ const tsumData = [
       "出現數量：6"
     ],
     "skill_label": "win_tsumskill_timothy.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1514736000],
   "returndate" : ["permanent"]
   },
@@ -2841,6 +3187,8 @@ const tsumData = [
     "name_en": "Musketeer Mickey",
     "name": "米奇劍客",
     "image": "block_mickeyt_l.png",
+    "series": "米奇、唐老鴨、高飛的三劍客",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2850,7 +3198,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyt.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1517414400],
   "returndate" : [1541001600,1546272000,1548950400,1554048000,1564588800,1572537600,1588262400,1604160000,1622476800,1648742400,
                   1675180800,1740758400,1761926400]
@@ -2860,6 +3208,8 @@ const tsumData = [
     "name_en": "Musketeer Donald",
     "name": "唐老鴨劍客",
     "image": "block_donaldt_l.png",
+    "series": "米奇、唐老鴨、高飛的三劍客",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：8",
       "消除數：10",
@@ -2869,13 +3219,15 @@ const tsumData = [
       "消除數：18"
     ],
     "skill_label": "win_tsumskill_donaldt.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 178,
     "name_en": "Musketeer Goofy",
     "name": "高飛劍客",
     "image": "block_goofyt_l.png",
+    "series": "米奇、唐老鴨、高飛的三劍客",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2885,26 +3237,30 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_goofyt.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 179,
     "name_en": "Princess Minnie",
     "name": "公主米妮",
     "image": "block_minniet_l.png",
+    "series": "米奇、唐老鴨、高飛的三劍客",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_minniet.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 180,
     "name_en": "Ninja Donald",
     "name": "忍者唐老鴨",
     "image": "block_donaldn_l.png",
+    "series": "短篇動畫「Tsum Tsum」",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2914,13 +3270,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_donaldn.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 181,
     "name_en": "Kimono Daisy",
     "name": "和服黛絲",
     "image": "block_daisyn_l.png",
+    "series": "短篇動畫「Tsum Tsum」",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2930,13 +3288,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_daisyn.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 182,
     "name_en": "Happy Snow White",
     "name": "快樂白雪公主",
     "image": "block_snowwhite2_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2946,13 +3306,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_snowwhite2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 183,
     "name_en": "Prince",
     "name": "王子",
     "image": "block_prince_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["藍色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：14",
@@ -2962,13 +3324,15 @@ const tsumData = [
       "變化Tsum數：22"
     ],
     "skill_label": "win_tsumskill_prince.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 184,
     "name_en": "Pirate Mickey",
     "name": "海盜米奇",
     "image": "block_mickeypi_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：19",
       "範圍：S 所需Tsum數：19",
@@ -2978,7 +3342,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_mickeypi.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1519833600],
   "returndate" : [1530374400,1541001600,1551369600,1572537600,1596211200,1604160000,1614528000,
                   1630425600,1651334400,1748707200,1767196800]
@@ -2988,6 +3352,8 @@ const tsumData = [
     "name_en": "Pirate Stitch",
     "name": "海盜史迪奇",
     "image": "block_stitchpi_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -2997,13 +3363,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stitchpi.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 186,
     "name_en": "Pirate Clarice",
     "name": "海盜克莉絲",
     "image": "block_claricepi_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "紫色Tsum", "橘色Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：8",
       "消除數：10",
@@ -3013,13 +3381,15 @@ const tsumData = [
       "消除數：18"
     ],
     "skill_label": "win_tsumskill_claricepi.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 187,
     "name_en": "Young Jack Sparrow",
     "name": "年輕史傑克",
     "image": "block_jacksparrow2_l.png",
+    "series": "神鬼奇航",
+    "tsumtype": ["茶色Tsum", "綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3029,13 +3399,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jacksparrow2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 188,
     "name_en": "Salazar",
     "name": "薩拉查",
     "image": "block_salazar_l.png",
+    "series": "神鬼奇航",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3045,7 +3417,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_salazar.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1519833600],
   "returndate" : [1535731200,1564588800,1585670400,1596211200,1612108800,1627747200,1727712000,1743436800,1769875200]
   },
@@ -3054,6 +3426,8 @@ const tsumData = [
     "name_en": "Happy Rapunzel",
     "name": "快樂樂佩",
     "image": "block_rapunzel2_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：15 連鎖數：6",
       "所需Tsum數：15 連鎖數：7",
@@ -3063,13 +3437,15 @@ const tsumData = [
       "所需Tsum數：13 連鎖數：11"
     ],
     "skill_label": "win_tsumskill_rapunzel2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 190,
     "name_en": "Flynn Rider",
     "name": "費林雷德",
     "image": "block_flynn_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3079,7 +3455,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_flynn.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1522512000],
   "returndate" : ["permanent"]
   },
@@ -3088,6 +3464,8 @@ const tsumData = [
     "name_en": "Maximus",
     "name": "麥西瑪斯",
     "image": "block_maximus_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：19",
       "所需Tsum數：17",
@@ -3097,7 +3475,7 @@ const tsumData = [
       "所需Tsum數：9"
     ],
     "skill_label": "win_tsumskill_maximus.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1522512000],
   "returndate" : ["permanent"]
   },
@@ -3106,6 +3484,8 @@ const tsumData = [
     "name_en": "Mulan",
     "name": "木蘭",
     "image": "block_mulan_l.png",
+    "series": "花木蘭",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：14",
@@ -3115,7 +3495,7 @@ const tsumData = [
       "變化Tsum數：22"
     ],
     "skill_label": "win_tsumskill_mulan.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1522512000],
   "returndate" : ["permanent"]
   },
@@ -3124,6 +3504,8 @@ const tsumData = [
     "name_en": "Pocahontas",
     "name": "寶嘉康蒂",
     "image": "block_pocahontas_l.png",
+    "series": "風中奇緣",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25 時間：2.5秒",
       "所需Tsum數：25 時間：3秒",
@@ -3133,7 +3515,7 @@ const tsumData = [
       "所需Tsum數：20 時間：5秒"
     ],
     "skill_label": "win_tsumskill_pocahontas.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1522512000],
   "returndate" : ["permanent"]
   },
@@ -3142,6 +3524,8 @@ const tsumData = [
     "name_en": "Holiday Olaf",
     "name": "假期雪寶",
     "image": "block_olafx_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3151,7 +3535,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_olafx.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1543593600],
   "returndate" : [1572537600,1669824000,1701360000,1730390400,1764518400]
   },
@@ -3160,6 +3544,8 @@ const tsumData = [
     "name_en": "Sheriff Woody",
     "name": "警長胡迪",
     "image": "block_woody2_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3169,13 +3555,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_woody2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 196,
     "name_en": "Space Ranger Buzz",
     "name": "太空騎警巴斯",
     "image": "block_buzz2_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：S 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -3185,13 +3573,15 @@ const tsumData = [
       "範圍：L 所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_buzz2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 197,
     "name_en": "Zurg",
     "name": "札克",
     "image": "block_zurg_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["紫色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3201,13 +3591,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_zurg.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 198,
     "name_en": "Miguel",
     "name": "米高",
     "image": "block_miguel_l.png",
+    "series": "可可夜總會",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3217,26 +3609,30 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_miguel.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 199,
     "name_en": "Caballero Donald",
     "name": "唐老鴨騎士",
     "image": "block_donaldc_l.png",
+    "series": "三騎士",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_donaldc.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 200,
     "name_en": "José Carioca",
     "name": "荷西騎士",
     "image": "block_jose_l.png",
+    "series": "三騎士",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：4秒 分數：2倍",
       "時間：4.4秒 分數：2.2倍",
@@ -3246,13 +3642,15 @@ const tsumData = [
       "時間：6秒 分數：3倍"
     ],
     "skill_label": "win_tsumskill_jose.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 201,
     "name_en": "Panchito Pistoles",
     "name": "潘奇托騎士",
     "image": "block_panchito_l.png",
+    "series": "三騎士",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 消除排數：2",
       "所需Tsum數：19 消除排數：2",
@@ -3262,13 +3660,15 @@ const tsumData = [
       "所需Tsum數：16 消除排數：3"
     ],
     "skill_label": "win_tsumskill_panchito.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 202,
     "name_en": "Happy Pooh",
     "name": "快樂維尼",
     "image": "block_pooh2_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：5",
       "變化Tsum數：6",
@@ -3278,13 +3678,15 @@ const tsumData = [
       "變化Tsum數：12"
     ],
     "skill_label": "win_tsumskill_pooh2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 203,
     "name_en": "Lumpy",
     "name": "嘟嘟",
     "image": "block_lumpy_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3294,13 +3696,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_lumpy.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 204,
     "name_en": "Owl",
     "name": "貓頭鷹",
     "image": "block_owl_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：8",
       "所需Tsum數：7",
@@ -3310,13 +3714,15 @@ const tsumData = [
       "所需Tsum數：3"
     ],
     "skill_label": "win_tsumskill_owl.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 205,
     "name_en": "Shivering Piglet",
     "name": "抖抖小豬",
     "image": "block_piglet2_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["粉紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21",
       "所需Tsum數：20",
@@ -3326,13 +3732,15 @@ const tsumData = [
       "所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_piglet2.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 206,
     "name_en": "Fantasmic Mickey",
     "name": "幻想米奇",
     "image": "block_mickeyf_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：26 時間：2.5秒",
       "所需Tsum數：25 時間：2.9秒",
@@ -3342,13 +3750,15 @@ const tsumData = [
       "所需Tsum數：20 時間：4.5秒"
     ],
     "skill_label": "win_tsumskill_mickeyf.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 207,
     "name_en": "Hercules",
     "name": "海格力斯",
     "image": "block_hercules_l.png",
+    "series": "大力士",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3358,7 +3768,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hercules.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1535731200],
   "returndate" : ["permanent"]
   },
@@ -3367,6 +3777,8 @@ const tsumData = [
     "name_en": "Hades",
     "name": "凱帝斯",
     "image": "block_hades_l.png",
+    "series": "大力士",
+    "tsumtype": ["藍色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3376,7 +3788,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hades.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1535731200],
   "returndate" : ["permanent"]
   },
@@ -3385,6 +3797,8 @@ const tsumData = [
     "name_en": "Meg",
     "name": "蜜兒",
     "image": "block_megara_l.png",
+    "series": "大力士",
+    "tsumtype": ["紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3394,13 +3808,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_megara.png",
-	"skill_cost" : [1,1,1,1,1,1]
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 210,
     "name_en": "Prince Phillip",
     "name": "菲利浦王子",
     "image": "block_phillip2_l.png",
+    "series": "睡美人",
+    "tsumtype": ["紅色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3410,7 +3826,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_phillip2.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1535731200],
   "returndate" : ["permanent"]
   },
@@ -3419,6 +3835,8 @@ const tsumData = [
     "name_en": "Halloween Sora",
     "name": "萬聖節索拉",
     "image": "block_soraht_l.png",
+    "series": "王國之心",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3428,13 +3846,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_soraht.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 212,
     "name_en": "Mummy Donald",
     "name": "木乃伊唐老鴨",
     "image": "block_donaldht_l.png",
+    "series": "王國之心",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3444,13 +3864,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_donaldht.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 213,
     "name_en": "Bolt-head Goofy",
     "name": "閃電高飛",
     "image": "block_goofyht_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3460,13 +3882,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_goofyht.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 214,
     "name_en": "Pumpkin King",
     "name": "南瓜王",
     "image": "block_pumpkinking_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["茶色Tsum", "橘色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 時間：3秒",
       "所需Tsum數：24 時間：3.5秒",
@@ -3476,13 +3900,15 @@ const tsumData = [
       "所需Tsum數：20 時間：4.5秒"
     ],
     "skill_label": "win_tsumskill_pumpkinking.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 215,
     "name_en": "Oogie Boogie",
     "name": "布袋怪",
     "image": "block_boogie_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：18 消除數：5～35",
       "所需Tsum數：17 消除數：7～37",
@@ -3492,26 +3918,30 @@ const tsumData = [
       "所需Tsum數：15 消除數：15～45"
     ],
     "skill_label": "win_tsumskill_boogie.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 216,
     "name_en": "Bat Hat Minnie",
     "name": "蝙蝠帽米妮",
     "image": "block_minnieh2017_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量：3",
       "出現數量：6",
       "出現數量：10",
     ],
     "skill_label": "win_tsumskill_minnieh2017.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 217,
     "name_en": "Winter Belle",
     "name": "冬季貝兒",
     "image": "block_bellew_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 時間：3秒",
       "所需Tsum數：20 時間：3.8秒",
@@ -3521,7 +3951,7 @@ const tsumData = [
       "所需Tsum數：18 時間：7秒"
     ],
     "skill_label": "win_tsumskill_bellew.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1541001600],
   "returndate" : [1572537600,1604160000,1635696000,1701360000,1740758400,1764518400]
   },
@@ -3530,6 +3960,8 @@ const tsumData = [
     "name_en": "Winter Cinderella",
     "name": "冬季仙度瑞拉",
     "image": "block_cinderellaw_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：2秒",
       "範圍：S 時間：2.2秒",
@@ -3539,13 +3971,15 @@ const tsumData = [
       "範圍：XXL 時間：3秒"
     ],
     "skill_label": "win_tsumskill_cinderellaw.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 219,
     "name_en": "Winter Aurora",
     "name": "冬季愛洛公主",
     "image": "block_auroraw_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：28",
       "所需Tsum數：26",
@@ -3555,13 +3989,15 @@ const tsumData = [
       "所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_auroraw.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 220,
     "name_en": "Ralph",
     "name": "破壞王",
     "image": "block_ralph_l.png",
+    "series": "無敵破壞王",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3571,13 +4007,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_ralph.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 221,
     "name_en": "Holiday Baymax",
     "name": "假期杯麵",
     "image": "block_baymaxx_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["白色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.5秒",
@@ -3587,13 +4025,15 @@ const tsumData = [
       "效果時間：5.5秒"
     ],
     "skill_label": "win_tsumskill_baymaxx.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 222,
     "name_en": "Holiday Marie",
     "name": "假期瑪麗貓",
     "image": "block_mariex_l.png",
+    "series": "貓兒歷險記",
+    "tsumtype": ["白色Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "所需Tsum數：15 時間：3秒",
       "所需Tsum數：14 時間：3.6秒",
@@ -3603,7 +4043,7 @@ const tsumData = [
       "所需Tsum數：10 時間：6秒"
     ],
     "skill_label": "win_tsumskill_mariex.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1543593600],
   "returndate" : [1575129600,1585670400,1606752000,1638288000,1669824000,1701360000,1732982400,1764518400]
   },
@@ -3621,7 +4061,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_donaldx.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1543593600],
   "returndate" : [1575129600,1606752000,1638288000,1669824000,1764518400]
   },
@@ -3630,6 +4070,8 @@ const tsumData = [
     "name_en": "Experiment 626",
     "name": "實驗品626",
     "image": "block_stitch2_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 消除排數：3",
       "所需Tsum數：19 消除排數：3",
@@ -3639,13 +4081,15 @@ const tsumData = [
       "所需Tsum數：15 消除排數：5"
     ],
     "skill_label": "win_tsumskill_stitch2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 225,
     "name_en": "Dr. Jumba Jookiba",
     "name": "強霸博士",
     "image": "block_jumba_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3655,13 +4099,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jumba.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 226,
     "name_en": "Pleakley",
     "name": "獨眼霹靂",
     "image": "block_pleakley_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22 分數：1倍",
       "所需Tsum數：20 分數：1.4倍",
@@ -3671,26 +4117,30 @@ const tsumData = [
       "所需Tsum數：12 分數：3倍"
     ],
     "skill_label": "win_tsumskill_pleakley.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 227,
     "name_en": "Gadget Hackwrench",
     "name": "阿潔",
     "image": "block_gadget_l.png",
+    "series": "救難小福星",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_gadget.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 228,
     "name_en": "Aqua",
     "name": "阿奎雅",
     "image": "block_aqua_l.png",
+    "series": "王國之心",
+    "tsumtype": ["藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.6秒",
@@ -3700,13 +4150,15 @@ const tsumData = [
       "效果時間：7秒"
     ],
     "skill_label": "win_tsumskill_aqua.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 229,
     "name_en": "Kairi",
     "name": "凱莉",
     "image": "block_kairi_l.png",
+    "series": "王國之心",
+    "tsumtype": ["紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22 變化Tsum數：4",
       "所需Tsum數：22 變化Tsum數：5",
@@ -3716,13 +4168,15 @@ const tsumData = [
       "所需Tsum數：18 變化Tsum數：7"
     ],
     "skill_label": "win_tsumskill_kairi.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 230,
     "name_en": "Cogsworth",
     "name": "葛士華",
     "image": "block_cogsworth_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.6秒",
@@ -3732,13 +4186,15 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_cogsworth.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 231,
     "name_en": "Bride Jasmine",
     "name": "新娘茉莉公主",
     "image": "block_jasmineb_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3748,13 +4204,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jasmineb.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 232,
     "name_en": "Bride Ariel",
     "name": "新娘艾莉兒",
     "image": "block_arielb_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "時間：4秒 分數：2.2倍",
       "時間：4.4秒 分數：2.8倍",
@@ -3764,13 +4222,15 @@ const tsumData = [
       "時間：6秒 分數：5.5倍"
     ],
     "skill_label": "win_tsumskill_arielb.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 233,
     "name_en": "Esmeralda",
     "name": "愛斯梅達",
     "image": "block_esmeralda_l.png",
+    "series": "鐘樓怪人",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3780,13 +4240,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_esmeralda.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 234,
     "name_en": "Merida",
     "name": "梅莉達",
     "image": "block_merida_l.png",
+    "series": "勇敢傳說",
+    "tsumtype": ["橘色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：13",
       "變化Tsum數：15",
@@ -3796,13 +4258,15 @@ const tsumData = [
       "變化Tsum數：26"
     ],
     "skill_label": "win_tsumskill_merida.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 235,
     "name_en": "Tiana",
     "name": "蒂安娜",
     "image": "block_tiana_l.png",
+    "series": "公主與青蛙",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3812,13 +4276,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tiana.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 236,
     "name_en": "Mr. Incredible",
     "name": "超能先生",
     "image": "block_mrincredible_l.png",
+    "series": "超人特攻隊",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3828,13 +4294,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mrincredible.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 237,
     "name_en": "Mrs. Incredible",
     "name": "超能太太 ",
     "image": "block_mrsincredible_l.png",
+    "series": "超人特攻隊",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3844,13 +4312,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mrsincredible.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 238,
     "name_en": "Jack-Jack",
     "name": "巴小傑 ",
     "image": "block_jackjack_l.png",
+    "series": "超人特攻隊",
+    "tsumtype": ["男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3860,13 +4330,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jackjack.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 239,
     "name_en": "Spring Miss Bunny",
     "name": "春天小兔子",
     "image": "block_missbunnys_l.png",
+    "series": "小鹿斑比",
+    "tsumtype": ["黃色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "所需Tsum數：18 變化Tsum數：2",
       "所需Tsum數：17 變化Tsum數：2",
@@ -3876,13 +4348,15 @@ const tsumData = [
       "所需Tsum數：15 變化Tsum數：4"
     ],
     "skill_label": "win_tsumskill_missbunnys.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 240,
     "name_en": "Officer Nick",
     "name": "胡尼克警員",
     "image": "block_nick2_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3892,13 +4366,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_nick2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 241,
     "name_en": "Officer Judy",
     "name": "哈茱蒂警員",
     "image": "block_judy2_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -3908,13 +4384,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_judy2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 242,
     "name_en": "Clawhauser",
     "name": "洪金豹",
     "image": "block_clawhauser_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["黃色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "出現數量：2",
       "出現數量：3",
@@ -3924,13 +4402,15 @@ const tsumData = [
       "出現數量：7"
     ],
     "skill_label": "win_tsumskill_clawhauser.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 243,
     "name_en": "Flash",
     "name": "快俠",
     "image": "block_flash_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["茶色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：4秒 分數：2倍",
       "時間：4.4秒 分數：2.4倍",
@@ -3940,13 +4420,15 @@ const tsumData = [
       "時間：6秒 分數：4倍"
     ],
     "skill_label": "win_tsumskill_flash.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 244,
     "name_en": "King Mickey",
     "name": "米奇國王",
     "image": "block_mickeyking_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 次數：1",
       "範圍：S 次數：1",
@@ -3956,13 +4438,15 @@ const tsumData = [
       "範圍：L 次數：3"
     ],
     "skill_label": "win_tsumskill_mickeyking.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 245,
     "name_en": "KH3 Sora",
     "name": "王國之心3索拉",
     "image": "block_sora3_l.png",
+    "series": "王國之心",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：28",
       "範圍：S 所需Tsum數：27",
@@ -3972,13 +4456,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：23"
     ],
     "skill_label": "win_tsumskill_sora3.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 246,
     "name_en": "Ansem",
     "name": "安森",
     "image": "block_ansem_l.png",
+    "series": "王國之心",
+    "tsumtype": ["茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：30",
       "範圍：S 所需Tsum數：29",
@@ -3988,13 +4474,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：25"
     ],
     "skill_label": "win_tsumskill_ansem.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 247,
     "name_en": "Xemnas",
     "name": "傑姆那斯",
     "image": "block_xemnas_l.png",
+    "series": "王國之心",
+    "tsumtype": ["茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4004,20 +4492,22 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_xemnas.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 248,
     "name_en": "Shadow",
     "name": "暗影",
     "image": "block_shadow_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "反派Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_shadow.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 249,
@@ -4033,7 +4523,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sidious.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 250,
@@ -4049,13 +4539,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_maul.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 251,
     "name_en": "Happy Mike",
     "name": "快樂大眼仔",
     "image": "block_mike2_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4065,13 +4557,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mike2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 252,
     "name_en": "Top Scarer Sulley",
     "name": "最強驚嚇專員毛怪",
     "image": "block_sulley2_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4081,13 +4575,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sulley2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 253,
     "name_en": "Boo",
     "name": "阿布",
     "image": "block_boo_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["女孩Tsum"],
     "skill_desc": [
       "效果時間：3.5秒",
       "效果時間：4秒",
@@ -4097,7 +4593,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_boo.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1559318400],
   "returndate" : ["permanent"]
   },
@@ -4106,6 +4602,8 @@ const tsumData = [
     "name_en": "Practical",
     "name": "求實兒",
     "image": "block_practicalpig_l.png",
+    "series": "三隻小豬",
+    "tsumtype": ["男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：14",
@@ -4115,13 +4613,15 @@ const tsumData = [
       "變化Tsum數：22"
     ],
     "skill_label": "win_tsumskill_practicalpig.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 255,
     "name_en": "Big Bad Wolf",
     "name": "大壞狼",
     "image": "block_bigbadwolf_l.png",
+    "series": "三隻小豬",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4131,13 +4631,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bigbadwolf.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 256,
     "name_en": "Dancing Chip",
     "name": "跳舞奇奇",
     "image": "block_chipj_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4147,13 +4649,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chipj.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 257,
     "name_en": "Dancing Dale",
     "name": "跳舞蒂蒂",
     "image": "block_dalej_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4163,13 +4667,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dalej.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 258,
     "name_en": "Pumbaa",
     "name": "彭彭",
     "image": "block_pumbaa_l.png",
+    "series": "獅子王",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4179,13 +4685,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_pumbaa.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 259,
     "name_en": "Queen Elsa",
     "name": "艾莎女王",
     "image": "block_elsa2_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：3.5秒",
       "範圍：S 時間：4秒",
@@ -4195,13 +4703,15 @@ const tsumData = [
       "範圍：XXL 時間：6秒"
     ],
     "skill_label": "win_tsumskill_elsa2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 260,
     "name_en": "Dark Fairy Maleficent",
     "name": "闇黑黑魔女",
     "image": "block_maleficent2_l.png",
+    "series": "黑魔女",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：28 時間：4秒",
       "所需Tsum數：25 時間：4秒",
@@ -4211,13 +4721,15 @@ const tsumData = [
       "所需Tsum數：19 時間：6秒"
     ],
     "skill_label": "win_tsumskill_maleficent2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 261,
     "name_en": "Cleo",
     "name": "阿克",
     "image": "block_cleo_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：12",
       "變化Tsum數：13",
@@ -4227,13 +4739,15 @@ const tsumData = [
       "變化Tsum數：20"
     ],
     "skill_label": "win_tsumskill_cleo.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 262,
     "name_en": "Figaro",
     "name": "費加洛",
     "image": "block_figaro_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4243,13 +4757,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_figaro.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 263,
     "name_en": "Dr. Facilier",
     "name": "霍博士",
     "image": "block_facilier_l.png",
+    "series": "公主與青蛙",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4259,13 +4775,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_facilier.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 264,
     "name_en": "Mother Gothel",
     "name": "葛索媽媽",
     "image": "block_gothel_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "時間：4秒 分數：2倍",
       "時間：4.4秒 分數：2.4倍",
@@ -4275,7 +4793,7 @@ const tsumData = [
       "時間：6秒 分數：4倍"
     ],
     "skill_label": "win_tsumskill_gothel.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1564588800],
   "returndate" : ["permanent"]
   },
@@ -4284,6 +4802,8 @@ const tsumData = [
     "name_en": "Horned King",
     "name": "長角國王",
     "image": "block_hornedking_l.png",
+    "series": "黑神鍋傳奇",
+    "tsumtype": ["綠色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：6 消除數：19",
       "變化Tsum數：7 消除數：21",
@@ -4293,7 +4813,7 @@ const tsumData = [
       "變化Tsum數：11 消除數：29"
     ],
     "skill_label": "win_tsumskill_hornedking.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1564588800],
   "returndate" : [1580486400,1588262400,1596211200,1606752000,1622476800,1648742400,1672502400,1690819200,
                   1714492800,1727712000,1743436800,1767196800]
@@ -4303,6 +4823,8 @@ const tsumData = [
     "name_en": "Miss Bianca",
     "name": "碧安卡",
     "image": "block_bianca_l.png",
+    "series": "救難小英雄",
+    "tsumtype": ["白色Tsum", "紫色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 變化Tsum數：1",
       "所需Tsum數：20 變化Tsum數：2",
@@ -4312,13 +4834,15 @@ const tsumData = [
       "所需Tsum數：18 變化Tsum數：4"
     ],
     "skill_label": "win_tsumskill_bianca.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 267,
     "name_en": "Flower",
     "name": "花兒",
     "image": "block_flower_l.png",
+    "series": "小鹿斑比",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "出現數量：5",
       "出現數量：7",
@@ -4328,13 +4852,15 @@ const tsumData = [
       "出現數量：17"
     ],
     "skill_label": "win_tsumskill_flower.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 268,
     "name_en": "Duchess",
     "name": "杜翠絲",
     "image": "block_duchess_l.png",
+    "series": "貓兒歷險記",
+    "tsumtype": ["白色Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果時間：3.5秒",
       "效果時間：4秒",
@@ -4344,7 +4870,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_duchess.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1567267200],
   "returndate" : ["permanent"]
   },
@@ -4353,6 +4879,8 @@ const tsumData = [
     "name_en": "Robin Hood",
     "name": "羅賓漢",
     "image": "block_robinhood_l.png",
+    "series": "羅賓漢",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4362,7 +4890,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_robinhood.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1567267200],
   "returndate" : ["permanent"]
   },
@@ -4371,6 +4899,8 @@ const tsumData = [
     "name_en": "Photographer Dumbo",
     "name": "攝影師小飛象",
     "image": "block_dumboc_l.png",
+    "series": "短篇動畫「Tsum Tsum」",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4380,13 +4910,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dumboc.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 271,
     "name_en": "Mischievous Jack",
     "name": "淘氣傑克",
     "image": "block_jack2_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：16 泡泡效果：XS",
       "消除數：17 泡泡效果：S",
@@ -4396,13 +4928,15 @@ const tsumData = [
       "消除數：21 泡泡效果：XXL"
     ],
     "skill_label": "win_tsumskill_jack2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 272,
     "name_en": "Lock",
     "name": "鎖頭",
     "image": "block_lock_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4412,13 +4946,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_lock.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 273,
     "name_en": "Vampire Teddy Bear",
     "name": "吸血鬼泰迪熊",
     "image": "block_vampireteddy_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4428,13 +4964,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_vampireteddy.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 274,
     "name_en": "Classic Mickey",
     "name": "經典米奇",
     "image": "block_mickeyclsc_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：8+8",
       "消除數：9+9",
@@ -4444,7 +4982,7 @@ const tsumData = [
       "消除數：13+13"
     ],
     "skill_label": "win_tsumskill_mickeyclsc.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1572537600],
   "returndate" : [1593532800,1625068800,1667232000,1698768000,1730390400,1761926400]
   },
@@ -4453,6 +4991,8 @@ const tsumData = [
     "name_en": "Beanstalk Mickey",
     "name": "魔豆米奇",
     "image": "block_mickeyj_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4462,7 +5002,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyj.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1572537600],
   "returndate" : [1582992000,1596211200,1609430400,1630425600,1640966400,1667232000,1685548800,1730390400,1761926400]
   },
@@ -4471,6 +5011,8 @@ const tsumData = [
     "name_en": "Anniversary Mickey",
     "name": "週年慶米奇",
     "image": "block_mickey90th_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4480,7 +5022,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickey90th.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1572537600],
   "returndate" : [1593532800,1604160000,1635696000,1667232000,1761926400]
   },
@@ -4489,19 +5031,23 @@ const tsumData = [
     "name_en": "Anniversary Minnie",
     "name": "週年慶米妮",
     "image": "block_minnie90th_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_minnie90th.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 278,
     "name_en": "PAC-MAN",
     "name": "PAC-MAN",
     "image": "block_pacman_l.png",
+    "series": "無敵破壞王",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：23 分數：1.5倍",
       "所需Tsum數：22 分數：1.8倍",
@@ -4511,13 +5057,15 @@ const tsumData = [
       "所需Tsum數：18 分數：3倍"
     ],
     "skill_label": "win_tsumskill_pacman.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 279,
     "name_en": "BLINKY",
     "name": "BLINKY",
     "image": "block_blinky_l.png",
+    "series": "無敵破壞王",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4527,13 +5075,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_blinky.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 280,
     "name_en": "Good Night Pooh",
     "name": "晚安維尼",
     "image": "block_pooh3_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4543,7 +5093,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_pooh3.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1575129600],
   "returndate" : [1590940800,1598889600,1609430400,1622476800,1659283200,1680278400,1725120000,1748707200,1767196800]
   },
@@ -4552,6 +5102,8 @@ const tsumData = [
     "name_en": "Gopher",
     "name": "谷佛",
     "image": "block_gopher_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：2秒",
       "效果時間：2.6秒",
@@ -4561,13 +5113,15 @@ const tsumData = [
       "效果時間：5秒"
     ],
     "skill_label": "win_tsumskill_gopher.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 282,
     "name_en": "Vanellope",
     "name": "雲妮露",
     "image": "block_vanellope_l.png",
+    "series": "無敵破壞王",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4577,13 +5131,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_vanellope.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 283,
     "name_en": "Fix-It Felix, Jr.",
     "name": "修繕王阿修",
     "image": "block_felix_l.png",
+    "series": "無敵破壞王",
+    "tsumtype": ["藍色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 次數：1",
       "所需Tsum數：24 次數：2",
@@ -4593,13 +5149,15 @@ const tsumData = [
       "所需Tsum數：20 次數：4"
     ],
     "skill_label": "win_tsumskill_felix.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 284,
     "name_en": "Snowman Chip",
     "name": "雪人奇奇",
     "image": "block_chipsnow_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4609,7 +5167,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chipsnow.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1575129600],
   "returndate" : [1606752000,1638288000,1669824000,1701360000,1764518400]
   },
@@ -4618,6 +5176,8 @@ const tsumData = [
     "name_en": "Snowman Dale",
     "name": "雪人蒂蒂",
     "image": "block_dalesnow_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4627,13 +5187,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dalesnow.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 286,
     "name_en": "Bo Peep",
     "name": "牧羊女",
     "image": "block_bopeep_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：20",
       "範圍：S 所需Tsum數：19",
@@ -4643,7 +5205,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_bopeep.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1577808000],
   "returndate" : [1588262400,1601481600,1612108800,1625068800,1640966400,1651334400,1664553600,1680278400,1696089600,1711900800,
                   1748707200,1767196800]
@@ -4653,6 +5215,8 @@ const tsumData = [
     "name_en": "Forky",
     "name": "叉奇",
     "image": "block_forky_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.8秒",
@@ -4662,13 +5226,15 @@ const tsumData = [
       "效果時間：8秒"
     ],
     "skill_label": "win_tsumskill_forky.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 288,
     "name_en": "Hamm",
     "name": "火腿",
     "image": "block_hamm_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["粉紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 金幣數量：XS",
       "所需Tsum數：19 金幣數量：S",
@@ -4678,7 +5244,7 @@ const tsumData = [
       "所需Tsum數：15 金幣數量：XXL"
     ],
     "skill_label": "win_tsumskill_hamm.png",
-	"skill_cost" : [1,1,2,2,3,3],
+  "skill_cost" : [1,1,2,2,3,3],
   "startdate" : [1577808000],
   "returndate" : ["permanent"]
   },
@@ -4687,6 +5253,8 @@ const tsumData = [
     "name_en": "Bunny",
     "name": "兔崽子",
     "image": "block_bunny_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4696,13 +5264,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bunny.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 290,
     "name_en": "Pastel Ariel",
     "name": "粉彩艾莉兒",
     "image": "block_arielps_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["粉紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4712,13 +5282,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_arielps.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 291,
     "name_en": "Pastel Flounder",
     "name": "粉彩小比目魚",
     "image": "block_flounderps_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4728,13 +5300,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_flounderps.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 292,
     "name_en": "Top Hat Genie",
     "name": "高帽精靈",
     "image": "block_genie2_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 效果範圍：XS",
       "所需Tsum數：20 效果範圍：S",
@@ -4744,13 +5318,15 @@ const tsumData = [
       "所需Tsum數：16 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_genie2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 293,
     "name_en": "Jafar Genie",
     "name": "精靈賈方",
     "image": "block_jafar2_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4760,13 +5336,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jafar2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 294,
     "name_en": "Prince Ali",
     "name": "阿里王子",
     "image": "block_aladdinp_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["白色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4776,13 +5354,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_aladdinp.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 295,
     "name_en": "Sofia",
     "name": "蘇菲亞",
     "image": "block_sofia_l.png",
+    "series": "小公主蘇菲亞",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4792,13 +5372,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sofia.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 296,
     "name_en": "Horse Riding Sofia",
     "name": "騎士蘇菲亞",
     "image": "block_sofia2_l.png",
+    "series": "小公主蘇菲亞",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4808,13 +5390,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sofia2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 297,
     "name_en": "Elena",
     "name": "艾蓮娜",
     "image": "block_elena_l.png",
+    "series": "阿瓦洛的艾蓮娜公主",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4824,13 +5408,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_elena.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 298,
     "name_en": "Jedi Training Rey",
     "name": "絕地武士訓練者芮",
     "image": "block_reyj_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4840,13 +5426,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_reyj.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 299,
     "name_en": "Supreme Leader Kylo Ren",
     "name": "最高指導者凱羅忍",
     "image": "block_kyloren2_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4856,13 +5444,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_kyloren2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 300,
     "name_en": "Ventus",
     "name": "菲恩圖斯",
     "image": "block_ventus_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 次數：3",
       "所需Tsum數：23 次數：3",
@@ -4872,13 +5462,15 @@ const tsumData = [
       "所需Tsum數：21 次數：5"
     ],
     "skill_label": "win_tsumskill_ventus.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 301,
     "name_en": "Terra",
     "name": "泰拉",
     "image": "block_terra_l.png",
+    "series": "王國之心",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4888,13 +5480,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_terra.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 302,
     "name_en": "Chirithy",
     "name": "奇利喜",
     "image": "block_chirithy_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4904,13 +5498,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chirithy.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 303,
     "name_en": "Honey Lemon",
     "name": "哈妮蕾夢",
     "image": "block_honeylemon_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4920,13 +5516,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_honeylemon.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 304,
     "name_en": "Fred",
     "name": "費吉拉",
     "image": "block_fred_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -4936,13 +5534,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_fred.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 305,
     "name_en": "Ian",
     "name": "伊恩",
     "image": "block_ian_l.png",
+    "series": "二分之一的魔法",
+    "tsumtype": ["藍色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：19 時間：6秒",
       "所需Tsum數：18 時間：6.4秒",
@@ -4952,13 +5552,15 @@ const tsumData = [
       "所需Tsum數：14 時間：9秒"
     ],
     "skill_label": "win_tsumskill_ian.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 306,
     "name_en": "Barley",
     "name": "巴利",
     "image": "block_barley_l.png",
+    "series": "二分之一的魔法",
+    "tsumtype": ["藍色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：24",
       "範圍：S 所需Tsum數：23",
@@ -4968,13 +5570,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：19"
     ],
     "skill_label": "win_tsumskill_barley.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 307,
     "name_en": "Remy",
     "name": "小米",
     "image": "block_remy_l.png",
+    "series": "料理鼠王",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 效果範圍：XS",
       "所需Tsum數：20 效果範圍：S",
@@ -4984,7 +5588,7 @@ const tsumData = [
       "所需Tsum數：16 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_remy.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1588262400],
   "returndate" : ["permanent"]
   },
@@ -4993,6 +5597,8 @@ const tsumData = [
     "name_en": "Flik",
     "name": "飛力",
     "image": "block_flik_l.png",
+    "series": "蟲蟲危機",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：13",
       "變化Tsum數：15",
@@ -5002,7 +5608,7 @@ const tsumData = [
       "變化Tsum數：23"
     ],
     "skill_label": "win_tsumskill_flik.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1588262400],
   "returndate" : ["permanent"]
   },
@@ -5011,6 +5617,8 @@ const tsumData = [
     "name_en": "MU Randy",
     "name": "怪獸大學藍道",
     "image": "block_randall2_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：23 時間：4秒",
       "所需Tsum數：22 時間：4秒",
@@ -5020,13 +5628,15 @@ const tsumData = [
       "所需Tsum數：20 時間：6秒"
     ],
     "skill_label": "win_tsumskill_randall2.png",
-	"skill_cost" : [1,1,2,4,7,21]
+  "skill_cost" : [1,1,2,4,7,21]
   },
   {
     "id": 310,
     "name_en": "EVE",
     "name": "伊芙 ",
     "image": "block_eve_l.png",
+    "series": "瓦力",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5036,13 +5646,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_eve.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 311,
     "name_en": "Rainbow Tinker Bell",
     "name": "彩虹叮叮",
     "image": "block_tinkerbellf_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5052,13 +5664,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tinkerbellf.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 312,
     "name_en": "Periwinkle",
     "name": "佩瑞薇格",
     "image": "block_periwinkle_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：S 所需Tsum數：21",
       "範圍：S 所需Tsum數：18",
@@ -5068,13 +5682,15 @@ const tsumData = [
       "範圍：L 所需Tsum數：12"
     ],
     "skill_label": "win_tsumskill_periwinkle.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 313,
     "name_en": "Silvermist",
     "name": "希芙蜜絲",
     "image": "block_silvermist_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5084,13 +5700,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_silvermist.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 314,
     "name_en": "Rosetta",
     "name": "羅賽塔",
     "image": "block_rosetta_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5100,13 +5718,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rosetta.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 315,
     "name_en": "Yen Sid",
     "name": "伊恩西德",
     "image": "block_yensid_l.png",
+    "series": "幻想曲",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：4.5秒",
       "範圍：S 時間：5秒",
@@ -5116,13 +5736,15 @@ const tsumData = [
       "範圍：XXL 時間：7秒"
     ],
     "skill_label": "win_tsumskill_yensid.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 316,
     "name_en": "Chernabog",
     "name": "查立保",
     "image": "block_chernabog_l.png",
+    "series": "幻想曲",
+    "tsumtype": ["藍色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5132,7 +5754,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chernabog.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1593532800],
   "returndate" : [1617206400,1635696000,1656604800,1698768000,1711900800,1727712000,1738339200,1764518400]
   },
@@ -5141,6 +5763,8 @@ const tsumData = [
     "name_en": "Spirited Jasmine",
     "name": "堅強茉莉",
     "image": "block_jasminel_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：6",
       "變化Tsum數：7",
@@ -5150,13 +5774,15 @@ const tsumData = [
       "變化Tsum數：11"
     ],
     "skill_label": "win_tsumskill_jasminel.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 318,
     "name_en": "Hakuna Matata Simba",
     "name": "Hakuna Matata辛巴 ",
     "image": "block_simba2_l.png",
+    "series": "獅子王",
+    "tsumtype": ["茶色Tsum", "王子Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5166,13 +5792,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_simba2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 319,
     "name_en": "Rafiki",
     "name": "拉飛奇",
     "image": "block_rafiki_l.png",
+    "series": "獅子王",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5191,6 +5819,8 @@ const tsumData = [
     "name_en": "Timon",
     "name": "丁滿",
     "image": "block_timon_l.png",
+    "series": "獅子王",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：2",
       "變化Tsum數：3",
@@ -5200,7 +5830,7 @@ const tsumData = [
       "變化Tsum數：7"
     ],
     "skill_label": "win_tsumskill_timon.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1596211200],
   "returndate" : ["permanent"]
   },
@@ -5209,6 +5839,8 @@ const tsumData = [
     "name_en": "Master Luke",
     "name": "路克大師",
     "image": "block_lukem_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：25",
       "範圍：S 所需Tsum數：23",
@@ -5218,13 +5850,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_lukem.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 322,
     "name_en": "Ben Kenobi",
     "name": "班肯諾比",
     "image": "block_ben_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5234,13 +5868,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_ben.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 323,
     "name_en": "Mace Windu",
     "name": "魅使雲杜",
     "image": "block_mace_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -5250,13 +5886,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_mace.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 324,
     "name_en": "Padme Amidala",
     "name": "帕米艾米達拉",
     "image": "block_padme_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：28",
       "所需Tsum數：26",
@@ -5266,13 +5904,15 @@ const tsumData = [
       "所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_padme.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 325,
     "name_en": "Anakin Skywalker",
     "name": "安納金天行者",
     "image": "block_anakin_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：24",
       "範圍：S 所需Tsum數：22",
@@ -5282,13 +5922,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_anakin.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 326,
     "name_en": "Finn",
     "name": "芬恩",
     "image": "block_finn_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：23",
       "所需Tsum數：22",
@@ -5298,13 +5940,15 @@ const tsumData = [
       "所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_finn.png",
-	"skill_cost" : [1,1,2,4,8,14]
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 327,
     "name_en": "Brave Mickey",
     "name": "勇者米奇",
     "image": "block_mickeypx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5314,13 +5958,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeypx.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 328,
     "name_en": "Brave Donald",
     "name": "勇者唐老鴨",
     "image": "block_donaldpx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "距離：XS",
       "距離：S",
@@ -5330,13 +5976,15 @@ const tsumData = [
       "距離：XXL"
     ],
     "skill_label": "win_tsumskill_donaldpx.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 329,
     "name_en": "Brave Goofy",
     "name": "勇者高飛",
     "image": "block_goofypx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["綠色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5346,13 +5994,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_goofypx.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 330,
     "name_en": "Dancing Genie",
     "name": "跳舞精靈",
     "image": "block_genie2_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：18",
       "所需Tsum數：17",
@@ -5362,13 +6012,15 @@ const tsumData = [
       "所需Tsum數：13"
     ],
     "skill_label": "win_tsumskill_genie2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 331,
     "name_en": "Enchanted Cinderella",
     "name": "魔法仙度瑞拉",
     "image": "block_cinderellal_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5378,13 +6030,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cinderellal.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 332,
     "name_en": "Enchanted Aurora",
     "name": "魔法愛洛公主",
     "image": "block_auroral_l.png",
+    "series": "黑魔女",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21",
       "所需Tsum數：20",
@@ -5394,13 +6048,15 @@ const tsumData = [
       "所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_auroral.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 333,
     "name_en": "Travel Elsa",
     "name": "旅遊艾莎",
     "image": "block_elsaf2_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5410,13 +6066,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_elsaf2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 334,
     "name_en": "Travel Anna",
     "name": "旅遊安娜",
     "image": "block_annaf2_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25 時間：1.5秒",
       "所需Tsum數：24 時間：1.8秒",
@@ -5426,13 +6084,15 @@ const tsumData = [
       "所需Tsum數：20 時間：3秒"
     ],
     "skill_label": "win_tsumskill_annaf2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 335,
     "name_en": "Kristoff",
     "name": "克斯托夫 (阿克)",
     "image": "block_kristoff_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5442,7 +6102,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_kristoff.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1606752000],
   "returndate" : ["permanent"]
   },
@@ -5451,6 +6111,8 @@ const tsumData = [
     "name_en": "Classic Maleficent",
     "name": "經典黑魔女",
     "image": "block_maleficentc_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22 時間：4秒",
       "所需Tsum數：21 時間：4秒",
@@ -5460,7 +6122,7 @@ const tsumData = [
       "所需Tsum數：19 時間：6秒"
     ],
     "skill_label": "win_tsumskill_maleficentc.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1609430400],
   "returndate" : [1635696000,1696089600,1711900800,1743436800,1759248000,1764518400]
   },
@@ -5469,6 +6131,8 @@ const tsumData = [
     "name_en": "Judge Frollo",
     "name": "孚羅洛法官",
     "image": "block_frollo_l.png",
+    "series": "鐘樓怪人",
+    "tsumtype": ["紫色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5478,7 +6142,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_frollo.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1609430400],
   "returndate" : ["permanent"]
   },
@@ -5487,6 +6151,8 @@ const tsumData = [
     "name_en": "Angry Hades",
     "name": "憤怒凱帝斯",
     "image": "block_hades2_l.png",
+    "series": "大力士",
+    "tsumtype": ["藍色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5496,13 +6162,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hades2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 339,
     "name_en": "Pirate Sora",
     "name": "海盗索拉",
     "image": "block_soraca_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5512,13 +6180,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_soraca.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 340,
     "name_en": "Young Xehanort",
     "name": "年輕的賽亞諾特",
     "image": "block_xehanorty_l.png",
+    "series": "王國之心",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -5528,13 +6198,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_xehanorty.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 341,
     "name_en": "Rapunzel(Charm)",
     "name": "樂佩（飾品）",
     "image": "block_rapunzelcm_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5544,13 +6216,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rapunzelcm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 342,
     "name_en": "Ariel(Charm)",
     "name": "艾莉兒（飾品）",
     "image": "block_arielcm_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：4～5",
       "變化Tsum數：5",
@@ -5560,13 +6234,15 @@ const tsumData = [
       "變化Tsum數：7"
     ],
     "skill_label": "win_tsumskill_arielcm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 343,
     "name_en": "Belle(Charm)",
     "name": "貝兒（飾品）",
     "image": "block_bellecm_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5576,13 +6252,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bellecm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 344,
     "name_en": "Jasmine(Charm)",
     "name": "茉莉公主（飾品）",
     "image": "block_jasminecm_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["藍色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：21",
       "消除數：23",
@@ -5592,13 +6270,15 @@ const tsumData = [
       "消除數：31"
     ],
     "skill_label": "win_tsumskill_jasminecm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 345,
     "name_en": "Rajah",
     "name": "樂雅",
     "image": "block_rajah_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5608,7 +6288,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rajah.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1612108800],
   "returndate" : ["permanent"]
   },
@@ -5617,6 +6297,8 @@ const tsumData = [
     "name_en": "Leroy",
     "name": "利羅",
     "image": "block_leroy_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除次數：6",
       "消除次數：8",
@@ -5626,7 +6308,7 @@ const tsumData = [
       "消除次數：16"
     ],
     "skill_label": "win_tsumskill_leroy.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1614528000],
   "returndate" : [1630425600,1677600000,1693497600,1709222400,1746028800,1767196800]
   },
@@ -5635,6 +6317,8 @@ const tsumData = [
     "name_en": "Gantu",
     "name": "鋼圖",
     "image": "block_gantu_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5644,13 +6328,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_gantu.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 348,
     "name_en": "Dr. Hämsterviel",
     "name": "倉鼠飛輪博士",
     "image": "block_hamsterviel_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "距離：XS",
       "距離：S",
@@ -5660,13 +6346,15 @@ const tsumData = [
       "距離：XXL"
     ],
     "skill_label": "win_tsumskill_hamsterviel.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 349,
     "name_en": "Wart",
     "name": "亞瑟",
     "image": "block_wart_l.png",
+    "series": "石中劍",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5676,7 +6364,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_wart.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1614528000],
   "returndate" : ["permanent"]
   },
@@ -5685,6 +6373,8 @@ const tsumData = [
     "name_en": "Merlin",
     "name": "梅林",
     "image": "block_merlin_l.png",
+    "series": "石中劍",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：4秒 分數：2倍",
       "時間：4.6秒 分數：2.4倍",
@@ -5694,7 +6384,7 @@ const tsumData = [
       "時間：7秒 分數：4.2倍"
     ],
     "skill_label": "win_tsumskill_merlin.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1614528000],
   "returndate" : ["permanent"]
   },
@@ -5703,6 +6393,8 @@ const tsumData = [
     "name_en": "Mary Poppins",
     "name": "瑪莉包萍",
     "image": "block_marypoppins_l.png",
+    "series": "歡樂滿人間",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5712,13 +6404,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_marypoppins.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 352,
     "name_en": "Giselle",
     "name": "吉賽爾",
     "image": "block_giselle_l.png",
+    "series": "魔法奇緣",
+    "tsumtype": ["茶色Tsum", "橘色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20",
       "所需Tsum數：19",
@@ -5728,7 +6422,7 @@ const tsumData = [
       "所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_giselle.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1617206400],
   "returndate" : [1648742400,1680278400,1706716800,1730390400,1751299200,1767196800]
   },
@@ -5737,6 +6431,8 @@ const tsumData = [
     "name_en": "Mulan – Warrior",
     "name": "士兵木蘭",
     "image": "block_mulanl_l.png",
+    "series": "花木蘭",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：1.5秒",
       "效果時間：1.8秒",
@@ -5746,13 +6442,15 @@ const tsumData = [
       "效果時間：3秒"
     ],
     "skill_label": "win_tsumskill_mulanl.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 354,
     "name_en": "The White Queen",
     "name": "白皇后",
     "image": "block_mirana_l.png",
+    "series": "魔境夢遊",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5762,13 +6460,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mirana.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 355,
     "name_en": "Wonderland Cheshire Cat",
     "name": "咧嘴貓",
     "image": "block_cheshirecatl_l.png",
+    "series": "魔境夢遊",
+    "tsumtype": ["綠色Tsum", "灰色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.4秒",
@@ -5778,13 +6478,15 @@ const tsumData = [
       "效果時間：5秒"
     ],
     "skill_label": "win_tsumskill_cheshirecatl.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 356,
     "name_en": "Ninja Mickey",
     "name": "忍者米奇",
     "image": "block_mickeyjp_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5794,7 +6496,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyjp.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1619798400],
   "returndate" : [1640966400,1672502400,1690819200,1714492800,1730390400,1743436800,1761926400]
   },
@@ -5803,6 +6505,8 @@ const tsumData = [
     "name_en": "Kimono Minnie",
     "name": "和服米妮",
     "image": "block_minniejp_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量：5",
       "出現數量：5～6",
@@ -5812,13 +6516,15 @@ const tsumData = [
       "出現數量：7～8"
     ],
     "skill_label": "win_tsumskill_minniejp.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 358,
     "name_en": "Festival Donald",
     "name": "節慶唐老鴨",
     "image": "block_donaldjp_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -5828,13 +6534,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_donaldjp.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 359,
     "name_en": "Mandalorian",
     "name": "曼德羅人",
     "image": "block_mandalorian_l.png",
+    "series": "曼達洛人",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5844,13 +6552,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mandalorian.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 360,
     "name_en": "The Child",
     "name": "孩子",
     "image": "block_child_l.png",
+    "series": "曼達洛人",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：21",
       "消除數：24",
@@ -5860,13 +6570,15 @@ const tsumData = [
       "消除數：38"
     ],
     "skill_label": "win_tsumskill_child.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 361,
     "name_en": "Constance",
     "name": "康斯坦斯",
     "image": "block_constance_l.png",
+    "series": "幽靈公館",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 消除數：20",
       "所需Tsum數：20 消除數：23",
@@ -5876,7 +6588,7 @@ const tsumData = [
       "所需Tsum數：16 消除數：35"
     ],
     "skill_label": "win_tsumskill_constance.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1622476800],
   "returndate" : [1651334400,1682870400,1704038400,1722441600,1740758400,1764518400]
   },
@@ -5885,6 +6597,8 @@ const tsumData = [
     "name_en": "Parrot",
     "name": "鸚鵡",
     "image": "block_parrot_l.png",
+    "series": "加勒比海盜",
+    "tsumtype": ["黑色Tsum", "綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -5894,7 +6608,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_parrot.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1622476800],
   "returndate" : [1672502400,1690819200,1709222400,1740758400,1767196800]
   },
@@ -5903,6 +6617,8 @@ const tsumData = [
     "name_en": "Elliot",
     "name": "艾略特",
     "image": "block_elliott_l.png",
+    "series": "彼得的龍",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：19",
       "範圍：S 所需Tsum數：18",
@@ -5912,7 +6628,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_elliott.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1625068800],
   "returndate" : ["permanent"]
   },
@@ -5921,6 +6637,8 @@ const tsumData = [
     "name_en": "Woodchuck Donald",
     "name": "童子軍唐老鴨",
     "image": "block_donaldw_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22 效果範圍：XS",
       "所需Tsum數：20 效果範圍：S",
@@ -5930,13 +6648,15 @@ const tsumData = [
       "所需Tsum數：12 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_donaldw.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 365,
     "name_en": "Henry",
     "name": "亨利",
     "image": "block_henry_l.png",
+    "series": "鄉村熊歌舞秀",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：15 分數：1.5倍",
       "所需Tsum數：14 分數：1.8倍",
@@ -5946,7 +6666,7 @@ const tsumData = [
       "所需Tsum數：10 分數：3倍"
     ],
     "skill_label": "win_tsumskill_henry.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1622476800],
   "returndate" : [1675180800,1690819200,1719763200,1743436800,1767196800]
   },
@@ -5955,19 +6675,23 @@ const tsumData = [
     "name_en": "Sunday Minnie",
     "name": "星期日米妮",
     "image": "block_minnieg_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_minnieg.png",
-	"skill_cost" : [1,1,2]
+  "skill_cost" : [1,1,2]
   },
   {
     "id": 367,
     "name_en": "Elsa & Bruni",
     "name": "艾莎＆布魯尼",
     "image": "block_elsapr_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["藍色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 時間：3秒",
       "所需Tsum數：23 時間：3.7秒",
@@ -5977,13 +6701,15 @@ const tsumData = [
       "所需Tsum數：19 時間：6.5秒"
     ],
     "skill_label": "win_tsumskill_elsapr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 368,
     "name_en": "Clarabelle",
     "name": "克拉貝兒",
     "image": "block_clarabellecow_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：S 所需Tsum數：21",
       "範圍：S 所需Tsum數：20",
@@ -5993,13 +6719,15 @@ const tsumData = [
       "範圍：L 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_clarabellecow.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 369,
     "name_en": "Lotso(Charm)",
     "name": "熊抱哥（飾品）",
     "image": "block_lotsocm_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["紅色Tsum", "粉紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6009,7 +6737,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_lotsocm.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1625068800],
   "returndate" : [1675180800,1704038400,1722441600,1769875200]
   },
@@ -6018,6 +6746,8 @@ const tsumData = [
     "name_en": "Lucifer",
     "name": "魯斯佛",
     "image": "block_lucifer_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "範圍：XS 消除數：5",
       "範圍：S 消除數：7",
@@ -6027,7 +6757,7 @@ const tsumData = [
       "範圍：XXL 消除數：15"
     ],
     "skill_label": "win_tsumskill_lucifer.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1625068800],
   "returndate" : ["permanent"]
   },
@@ -6036,6 +6766,8 @@ const tsumData = [
     "name_en": "Daruma Donald",
     "name": "達摩唐老鴨",
     "image": "block_donaldd_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25 分數：1.1倍",
       "所需Tsum數：23 分數：1.3倍",
@@ -6043,13 +6775,15 @@ const tsumData = [
       "所需Tsum數：19 分數：1.7倍",
     ],
     "skill_label": "win_tsumskill_donaldd.png",
-	"skill_cost" : [1,3,3,3]
+  "skill_cost" : [1,3,3,3]
   },
   {
     "id": 372,
     "name_en": "Rugby Mickey(Charm)",
     "name": "橄欖球米奇（飾品）",
     "image": "block_mickeyrcm_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6059,13 +6793,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyrcm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 373,
     "name_en": "Baseball Pooh",
     "name": "棒球維尼",
     "image": "block_poohb_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6075,13 +6811,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_poohb.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 374,
     "name_en": "Surfing Stitch",
     "name": "衝浪史迪奇",
     "image": "block_stitchs_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6091,13 +6829,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stitchs.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 375,
     "name_en": "Wendy Darling",
     "name": "溫蒂",
     "image": "block_wendy_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6107,7 +6847,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_wendy.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1627747200],
   "returndate" : ["permanent"]
   },
@@ -6125,7 +6865,7 @@ const tsumData = [
       "消除數：34"
     ],
     "skill_label": "win_tsumskill_john.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1627747200],
   "returndate" : ["permanent"]
   },
@@ -6134,6 +6874,8 @@ const tsumData = [
     "name_en": "Cinderella & bluebird",
     "name": "仙度瑞拉＆小藍鳥",
     "image": "block_cinderellapr_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "水藍色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6143,13 +6885,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cinderellapr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 378,
     "name_en": "Shining Rapunzel",
     "name": "閃閃發光的樂佩",
     "image": "block_rapunzel3_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6159,13 +6903,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rapunzel3.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 379,
     "name_en": "Scheming Pete",
     "name": "詭計多端的皮特",
     "image": "block_peteblk_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6175,7 +6921,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_peteblk.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate": [1630425600],
   "returndate" : [1675180800,1690819200,1711900800,1727712000,1735660800,1764518400]
   },
@@ -6184,6 +6930,8 @@ const tsumData = [
     "name_en": "Agent P",
     "name": "特務P",
     "image": "block_perry2_l.png",
+    "series": "飛哥與小佛",
+    "tsumtype": ["藍色Tsum", "茶色Tsum", "綠色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -6193,13 +6941,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_perry2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 381,
     "name_en": "Explorer Goofy",
     "name": "探險家高飛",
     "image": "block_goofyr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "所需Tsum數：21 分數：1倍",
       "所需Tsum數：19 分數：1.2倍",
@@ -6207,13 +6957,15 @@ const tsumData = [
       "所需Tsum數：15 分數：2.4倍",
     ],
     "skill_label": "win_tsumskill_goofyr.png",
-	"skill_cost" : [1,2,5,7]
+  "skill_cost" : [1,2,5,7]
   },
   {
     "id": 382,
     "name_en": "Masquerade Cinderella",
     "name": "化妝舞會仙度瑞拉",
     "image": "block_cinderellamm_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 時間：2.5秒",
       "所需Tsum數：20 時間：3.2秒",
@@ -6223,13 +6975,15 @@ const tsumData = [
       "所需Tsum數：16 時間：6秒"
     ],
     "skill_label": "win_tsumskill_cinderellamm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 383,
     "name_en": "Masquerade Rapunzel",
     "name": "化妝舞會樂佩",
     "image": "block_rapunzelmm_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6239,13 +6993,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rapunzelmm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 384,
     "name_en": "Masquerade Esmeralda",
     "name": "化妝舞會愛斯梅達",
     "image": "block_esmeraldamm_l.png",
+    "series": "鐘樓怪人",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 時間：4秒",
       "所需Tsum數：20 時間：4.8秒",
@@ -6255,13 +7011,15 @@ const tsumData = [
       "所需Tsum數：16 時間：8秒"
     ],
     "skill_label": "win_tsumskill_esmeraldamm.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 385,
     "name_en": "Masquerade Belle",
     "name": "化妝舞會貝兒",
     "image": "block_bellemm_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6271,13 +7029,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bellemm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 386,
     "name_en": "Masquerade Meg",
     "name": "化妝舞會蜜兒",
     "image": "block_megaramm_l.png",
+    "series": "大力士",
+    "tsumtype": ["黃色Tsum", "紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6287,13 +7047,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_megaramm.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 387,
     "name_en": "Evil Queen & Magic Mirror",
     "name": "邪惡皇后＆魔鏡",
     "image": "block_evilqueenpr_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "綠色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6303,13 +7065,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_evilqueenpr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 388,
     "name_en": "Sea Witch Ursula",
     "name": "海巫烏蘇拉",
     "image": "block_ursula2_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紫色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除次數：XS",
       "消除次數：S",
@@ -6319,13 +7083,15 @@ const tsumData = [
       "消除次數：XXL"
     ],
     "skill_label": "win_tsumskill_ursula2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 389,
     "name_en": "Lady Tremaine",
     "name": "特曼尼夫人",
     "image": "block_tremaine_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["灰色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：23 效果範圍：XS",
       "所需Tsum數：22 效果範圍：S",
@@ -6335,7 +7101,7 @@ const tsumData = [
       "所需Tsum數：18 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tremaine.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1635696000],
   "returndate" : ["permanent"]
   },
@@ -6344,6 +7110,8 @@ const tsumData = [
     "name_en": "Cobra Jafar",
     "name": "眼鏡蛇賈方",
     "image": "block_jafarc_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6353,13 +7121,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jafarc.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 391,
     "name_en": "Yzma",
     "name": "伊絲瑪",
     "image": "block_yzma_l.png",
+    "series": "變身國王",
+    "tsumtype": ["紫色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：4 分數：1.1倍",
       "變化Tsum數：5 分數：1.1倍",
@@ -6369,7 +7139,7 @@ const tsumData = [
       "變化Tsum數：7 分數：1.6倍"
     ],
     "skill_label": "win_tsumskill_yzma.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1635696000],
   "returndate" : ["permanent"]
   },
@@ -6378,6 +7148,8 @@ const tsumData = [
     "name_en": "Mickey & Pluto",
     "name": "米奇&布魯托",
     "image": "block_mickeypr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6387,13 +7159,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeypr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 393,
     "name_en": "Joe Gardner",
     "name": "喬賈德納",
     "image": "block_joe_l.png",
+    "series": "靈魂急轉彎",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6403,7 +7177,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_joe.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1638288000],
   "returndate" : ["permanent"]
   },
@@ -6412,6 +7186,8 @@ const tsumData = [
     "name_en": "22",
     "name": "二十二(號)",
     "image": "block_22_l.png",
+    "series": "靈魂急轉彎",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6421,7 +7197,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_22.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1638288000],
   "returndate" : ["permanent"]
   },
@@ -6430,6 +7206,8 @@ const tsumData = [
     "name_en": "Santa Claus Chip",
     "name": "聖誕老人奇奇",
     "image": "block_chipsc_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6439,7 +7217,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chipsc.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1638288000],
   "returndate" : [1669824000]
   },
@@ -6448,19 +7226,23 @@ const tsumData = [
     "name_en": "Reindeer Dale",
     "name": "馴鹿蒂蒂",
     "image": "block_dalet_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：1～2",
       "變化Tsum數：2～3",
       "變化Tsum數：3～4",
     ],
     "skill_label": "win_tsumskill_dalet.png",
-	"skill_cost" : [1,1,1]
+  "skill_cost" : [1,1,1]
   },
   {
     "id": 397,
     "name_en": "Oliver",
     "name": "奧麗華",
     "image": "block_oliver_l.png",
+    "series": "奧利華歷險記",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6470,7 +7252,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_oliver.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1638288000],
   "returndate" : ["permanent"]
   },
@@ -6479,6 +7261,8 @@ const tsumData = [
     "name_en": "Woody & Buzz",
     "name": "胡迪＆巴斯光年",
     "image": "block_woodypr_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["茶色Tsum", "紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "^508w^出現數量：2 ^509w^範圍：XS",
       "^508w^出現數量：2～3 ^509w^範圍：S",
@@ -6488,13 +7272,15 @@ const tsumData = [
       "^508w^出現數量：4～5 ^509w^範圍：XXL"
     ],
     "skill_label": "win_tsumskill_woodypr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 399,
     "name_en": "Fabulous Lightning McQueen",
     "name": "傳奇閃電麥坤",
     "image": "block_mcqueenf_l.png",
+    "series": "汽車總動員",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6504,13 +7290,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mcqueenf.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 400,
     "name_en": "Joy",
     "name": "樂樂",
     "image": "block_joy_l.png",
+    "series": "腦筋急轉彎",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6520,7 +7308,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_joy.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1640966400],
   "returndate" : ["permanent"]
   },
@@ -6529,6 +7317,8 @@ const tsumData = [
     "name_en": "Sadness",
     "name": "憂憂",
     "image": "block_sadness_l.png",
+    "series": "腦筋急轉彎",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量（黃藍+藍）：3(1+2)",
       "出現數量（黃藍+藍）：3(2+1)",
@@ -6538,7 +7328,7 @@ const tsumData = [
       "出現數量（黃藍+藍）：5(4+1)"
     ],
     "skill_label": "win_tsumskill_sadness.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1640966400],
   "returndate" : ["permanent"]
   },
@@ -6547,6 +7337,8 @@ const tsumData = [
     "name_en": "Parade Alice",
     "name": "遊行愛麗絲",
     "image": "block_alicep_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6556,13 +7348,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_alicep.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 403,
     "name_en": "Parade Snow White",
     "name": "遊行白雪公主",
     "image": "block_snowwhitep_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 變化Tsum數：1～3",
       "所需Tsum數：20 變化Tsum數：2～4",
@@ -6572,13 +7366,15 @@ const tsumData = [
       "所需Tsum數：16 變化Tsum數：6～8"
     ],
     "skill_label": "win_tsumskill_snowwhitep.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 404,
     "name_en": "Jungle Cruise Mickey",
     "name": "叢林奇航米奇",
     "image": "block_mickeyjc_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6588,13 +7384,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyjc.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 405,
     "name_en": "It's a Small World Minnie",
     "name": "小小世界米妮",
     "image": "block_minnieiasw_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：14 連鎖數：6",
       "所需Tsum數：14 連鎖數：7",
@@ -6604,13 +7402,15 @@ const tsumData = [
       "所需Tsum數：12 連鎖數：11"
     ],
     "skill_label": "win_tsumskill_minnieiasw.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 406,
     "name_en": "General Mickey",
     "name": "大將米奇",
     "image": "block_mickeywl_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：3秒",
       "範圍：S 時間：3秒",
@@ -6620,7 +7420,7 @@ const tsumData = [
       "範圍：L 時間：5.5秒"
     ],
     "skill_label": "win_tsumskill_mickeywl.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1646064000],
   "returndate" : [1682870400,1725120000,1761926400]
   },
@@ -6629,6 +7429,8 @@ const tsumData = [
     "name_en": "Kabuto Donald",
     "name": "盔甲唐老鴨",
     "image": "block_donaldwl_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：19",
       "消除數：22",
@@ -6638,7 +7440,7 @@ const tsumData = [
       "消除數：35"
     ],
     "skill_label": "win_tsumskill_donaldwl.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate": [1646064000],
   "returndate" : [1685548800,1711900800,1732982400,1743436800,1764518400]
   },
@@ -6647,6 +7449,8 @@ const tsumData = [
     "name_en": "Kabuto Goofy",
     "name": "盔甲高飛",
     "image": "block_goofywl_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6656,7 +7460,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_goofywl.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1646064000],
   "returndate" : [1667232000,1688140800,1709222400,1735660800,1743436800,1764518400]
   },
@@ -6665,6 +7469,8 @@ const tsumData = [
     "name_en": "Samurai General Darth Vader",
     "name": "侍大將達斯維達",
     "image": "block_vaderwl_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6674,13 +7480,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_vaderwl.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 410,
     "name_en": "Ashigaru Stormtrooper",
     "name": "足輕風暴兵",
     "image": "block_stormtrooperwl_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6690,26 +7498,30 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stormtrooperwl.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 411,
     "name_en": "Royal Minnie",
     "name": "皇家公主米妮",
     "image": "block_minniep_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_minniep.png",
-	"skill_cost" : [1,2,3]
+  "skill_cost" : [1,2,3]
   },
   {
     "id": 412,
     "name_en": "Easter Daisy(Charm)",
     "name": "復活節黛絲（飾品）",
     "image": "block_daisycm_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "消除數：18",
       "消除數：20",
@@ -6719,13 +7531,15 @@ const tsumData = [
       "消除數：29"
     ],
     "skill_label": "win_tsumskill_daisycm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 413,
     "name_en": "Easter Clarice(Charm)",
     "name": "復活節克莉絲（飾品）",
     "image": "block_claricecm_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "紫色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6735,13 +7549,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_claricecm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 414,
     "name_en": "Flower Tink(Charm)",
     "name": "花朵叮叮（飾品）",
     "image": "block_tinkerbellcm_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "出現數量：2～3 分數：1倍",
       "出現數量：3 分數：1倍",
@@ -6751,13 +7567,15 @@ const tsumData = [
       "出現數量：4 分數：1.7倍"
     ],
     "skill_label": "win_tsumskill_tinkerbellcm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 415,
     "name_en": "Raya",
     "name": "拉雅",
     "image": "block_raya_l.png",
+    "series": "尋龍使者：拉雅",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6767,7 +7585,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_raya.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1648742400],
   "returndate" : ["permanent"]
   },
@@ -6776,6 +7594,8 @@ const tsumData = [
     "name_en": "Sisu",
     "name": "西蘇",
     "image": "block_sisu_l.png",
+    "series": "尋龍使者：拉雅",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6785,7 +7605,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_sisu.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1648742400],
   "returndate" : ["permanent"]
   },
@@ -6794,6 +7614,8 @@ const tsumData = [
     "name_en": "Detective Pooh(Charm)",
     "name": "偵探小熊維尼（飾品）",
     "image": "block_poohcm_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：2",
       "變化Tsum數：3",
@@ -6803,13 +7625,15 @@ const tsumData = [
       "變化Tsum數：7"
     ],
     "skill_label": "win_tsumskill_poohcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 418,
     "name_en": "Piglet(Charm)",
     "name": "小豬（飾品）",
     "image": "block_pigletcm_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["粉紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6819,13 +7643,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_pigletcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 419,
     "name_en": "Owl(Charm)",
     "name": "貓頭鷹（飾品）",
     "image": "block_owlcm_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "出現數量：2～6",
       "出現數量：2～7",
@@ -6835,13 +7661,15 @@ const tsumData = [
       "出現數量：4～9"
     ],
     "skill_label": "win_tsumskill_owlcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 420,
     "name_en": "Pastel Donald & Daisy",
     "name": "粉彩唐老鴨&黛絲",
     "image": "block_donaldpspr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "水藍色Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6851,13 +7679,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_donaldpspr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 421,
     "name_en": "Pastel Mickey",
     "name": "粉彩米奇",
     "image": "block_mickeyps_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["紅色Tsum", "粉紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 時間：4秒",
       "所需Tsum數：22 時間：4秒",
@@ -6867,13 +7697,15 @@ const tsumData = [
       "所需Tsum數：18 時間：6秒"
     ],
     "skill_label": "win_tsumskill_mickeyps.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 422,
     "name_en": "Pastel Goofy",
     "name": "粉彩高飛",
     "image": "block_goofyps_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["綠色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6883,7 +7715,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_goofyps.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1654012800],
   "returndate" : [1698768000,1709222400,1751299200,1767196800]
   },
@@ -6892,6 +7724,8 @@ const tsumData = [
     "name_en": "Voyager Moana",
     "name": "航海莫娜",
     "image": "block_moana2_l.png",
+    "series": "海洋奇緣",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6901,7 +7735,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_moana2.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1654012800],
   "returndate" : [1685548800,1717171200,1732982400,1751299200,1767196800]
   },
@@ -6910,6 +7744,8 @@ const tsumData = [
     "name_en": "Tamatoa",
     "name": "塔瑪托",
     "image": "block_tamatoa_l.png",
+    "series": "海洋奇緣",
+    "tsumtype": ["藍色Tsum", "茶色Tsum", "紫色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6919,7 +7755,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tamatoa.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1654012800],
   "returndate" : ["permanent"]
   },
@@ -6928,6 +7764,8 @@ const tsumData = [
     "name_en": "Princess Rapunzel",
     "name": "皇冠樂佩",
     "image": "block_rapunzelup_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6937,13 +7775,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rapunzelup.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 426,
     "name_en": "Princess Jasmine",
     "name": "皇冠茉莉",
     "image": "block_jasmineup_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 變化Tsum數：1～2",
       "所需Tsum數：20 變化Tsum數：2",
@@ -6953,7 +7793,7 @@ const tsumData = [
       "所需Tsum數：16 變化Tsum數：3"
     ],
     "skill_label": "win_tsumskill_jasmineup.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1656604800],
   "returndate" : [1690819200,1709222400,1730390400,1751299200,1767196800]
   },
@@ -6962,6 +7802,8 @@ const tsumData = [
     "name_en": "Princess Ariel",
     "name": "皇冠艾莉兒",
     "image": "block_arielup_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -6971,7 +7813,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_arielup.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1656604800],
   "returndate" : [1688140800,1711900800,1732982400,1751299200,1767196800]
   },
@@ -6980,19 +7822,23 @@ const tsumData = [
     "name_en": "Sparkly Princess Minnie",
     "name": "閃亮米妮公主",
     "image": "block_minnie8th_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
       "效果範圍：M",
     ],
     "skill_label": "win_tsumskill_minnie8th.png",
-	"skill_cost" : [1,1,3]
+  "skill_cost" : [1,1,3]
   },
   {
     "id": 429,
     "name_en": "Shere Khan",
     "name": "謝利",
     "image": "block_sherekhan_l.png",
+    "series": "森林王子",
+    "tsumtype": ["黃色Tsum", "橘色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -7002,7 +7848,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_sherekhan.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1656604800],
   "returndate" : ["permanent"]
   },
@@ -7011,6 +7857,8 @@ const tsumData = [
     "name_en": "Land of the Dead Miguel",
     "name": "夜總會米高",
     "image": "block_miguel2_l.png",
+    "series": "可可夜總會",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：3.5秒",
       "範圍：S 時間：4.2秒",
@@ -7020,13 +7868,15 @@ const tsumData = [
       "範圍：XXL 時間：7秒"
     ],
     "skill_label": "win_tsumskill_miguel2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 431,
     "name_en": "Dante",
     "name": "丹丹",
     "image": "block_dante_l.png",
+    "series": "可可夜總會",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7036,7 +7886,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dante.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1659283200],
   "returndate" : ["permanent"]
   },
@@ -7045,6 +7895,8 @@ const tsumData = [
     "name_en": "Mike & Sulley",
     "name": "大眼仔&毛怪",
     "image": "block_mikepr_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS ^441w^所需Tsum數：21",
       "效果範圍：S ^441w^所需Tsum數：20",
@@ -7054,13 +7906,15 @@ const tsumData = [
       "效果範圍：XXL ^441w^所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_mikepr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 433,
     "name_en": "Hank",
     "name": "七條郎",
     "image": "block_hank_l.png",
+    "series": "海底總動員",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7070,7 +7924,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hank.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1659283200],
   "returndate" : ["permanent"]
   },
@@ -7079,6 +7933,8 @@ const tsumData = [
     "name_en": "Strawberry Minnie",
     "name": "草莓米妮",
     "image": "block_minniecos_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7088,13 +7944,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_minniecos.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 435,
     "name_en": "Coffee Cup Goofy",
     "name": "咖啡杯高飛",
     "image": "block_goofycos_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "消除數：10～20",
       "消除數：13～23",
@@ -7104,13 +7962,15 @@ const tsumData = [
       "消除數：25～35"
     ],
     "skill_label": "win_tsumskill_goofycos.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 436,
     "name_en": "Airplane Donald",
     "name": "飛機唐老鴨",
     "image": "block_donaldcos_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7120,13 +7980,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_donaldcos.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 437,
     "name_en": "Cabbage Mickey(Charm)",
     "name": "高麗菜米奇（飾品）",
     "image": "block_mickeycoscm_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：30 高麗菜數量：6",
       "所需Tsum數：28 高麗菜數量：8",
@@ -7136,7 +7998,7 @@ const tsumData = [
       "所需Tsum數：20 高麗菜數量：16"
     ],
     "skill_label": "win_tsumskill_mickeycoscm.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1661961600],
   "returndate" : [1704038400,1732982400,1751299200,1761926400]
   },
@@ -7145,6 +8007,8 @@ const tsumData = [
     "name_en": "Diva Ursula",
     "name": "歌后烏蘇拉",
     "image": "block_ursular_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["白色Tsum", "紫色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：21",
       "範圍：S 所需Tsum數：21",
@@ -7154,7 +8018,7 @@ const tsumData = [
       "範圍：L 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_ursular.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1661961600],
   "returndate" : [1711900800,1743436800,1769875200]
   },
@@ -7163,6 +8027,8 @@ const tsumData = [
     "name_en": "Masquerade Maleficent",
     "name": "化妝舞會黑魔女",
     "image": "block_maleficentmm_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黑色Tsum", "綠色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：4秒",
       "範圍：S 時間：4.5秒",
@@ -7172,13 +8038,15 @@ const tsumData = [
       "範圍：XXL 時間：6.5秒"
     ],
     "skill_label": "win_tsumskill_maleficentmm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 440,
     "name_en": "Masquerade Hades",
     "name": "化妝舞會凱帝斯",
     "image": "block_hadesmm_l.png",
+    "series": "大力士",
+    "tsumtype": ["藍色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7188,13 +8056,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hadesmm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 441,
     "name_en": "Masquerade Evil Queen",
     "name": "化妝舞會邪惡皇后",
     "image": "block_evilqueenmm_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：21",
       "範圍：S 所需Tsum數：20",
@@ -7204,13 +8074,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_evilqueenmm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 442,
     "name_en": "Masquerade Aurora",
     "name": "化妝舞會愛洛公主",
     "image": "block_auroramm_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：1～2",
       "變化Tsum數：2",
@@ -7220,13 +8092,15 @@ const tsumData = [
       "變化Tsum數：4"
     ],
     "skill_label": "win_tsumskill_auroramm.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 443,
     "name_en": "Masquerade Tiana",
     "name": "化妝舞會蒂安娜",
     "image": "block_tianamm_l.png",
+    "series": "公主與青蛙",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7236,13 +8110,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tianamm.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 444,
     "name_en": "Philharmagic Mickey",
     "name": "魔法交響樂米奇",
     "image": "block_mickeyph_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：20",
       "範圍：S 所需Tsum數：19",
@@ -7252,7 +8128,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_mickeyph.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1667232000],
   "returndate" : [1698768000,1730390400,1761926400]
   },
@@ -7261,6 +8137,8 @@ const tsumData = [
     "name_en": "Courageous Simba",
     "name": "勇敢辛巴",
     "image": "block_simba3_l.png",
+    "series": "獅子王",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "紅色Tsum", "王子Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7270,7 +8148,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_simba3.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1667232000],
   "returndate" : [1706716800,1722441600,1740758400,1767196800]
   },
@@ -7279,6 +8157,8 @@ const tsumData = [
     "name_en": "Happy Anna",
     "name": "快樂安娜",
     "image": "block_anna2_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 分數：1.1倍",
       "範圍：S 分數：1.26倍",
@@ -7288,13 +8168,15 @@ const tsumData = [
       "範圍：XXL 分數：1.9倍"
     ],
     "skill_label": "win_tsumskill_anna2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 447,
     "name_en": "Ronin Boba Fett",
     "name": "浪人波巴費特",
     "image": "block_bobawl_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7304,13 +8186,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bobawl.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 448,
     "name_en": "Sohei Darth Maul",
     "name": "僧兵達斯魔",
     "image": "block_maulwl_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7320,13 +8204,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_maulwl.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 449,
     "name_en": "Belle & Beast",
     "name": "貝兒＆野獸",
     "image": "block_bellepr_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "王子Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "^554w^時間：4秒 ^555w^分數：2倍",
       "^554w^時間：4.4秒 ^555w^分數：2.3倍",
@@ -7336,13 +8222,15 @@ const tsumData = [
       "^554w^時間：6秒 ^555w^分數：3.5倍"
     ],
     "skill_label": "win_tsumskill_bellepr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 450,
     "name_en": "Wild Gaston",
     "name": "狂野加斯頓",
     "image": "block_gaston2_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：3秒 分數：1.6倍",
       "時間：3.6秒 分數：2.1倍",
@@ -7352,13 +8240,15 @@ const tsumData = [
       "時間：6秒 分數：4.2倍"
     ],
     "skill_label": "win_tsumskill_gaston2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 451,
     "name_en": "Stylish Cruella",
     "name": "時尚庫伊拉",
     "image": "block_cruellal_l.png",
+    "series": "庫伊拉",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7368,7 +8258,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cruellal.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1669824000],
   "returndate" : [1706716800,1725120000,1738339200,1769875200]
   },
@@ -7377,6 +8267,8 @@ const tsumData = [
     "name_en": "Holiday Tinker Bell",
     "name": "假期叮叮",
     "image": "block_tinkerbellx_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.6秒",
@@ -7386,7 +8278,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_tinkerbellx.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1669824000],
   "returndate" : [1701360000,1732982400,1764518400]
   },
@@ -7404,7 +8296,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_stitchxcm.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1669824000],
   "returndate" : [1701360000,1732982400,1764518400]
   },
@@ -7413,6 +8305,8 @@ const tsumData = [
     "name_en": "Princess Cinderella",
     "name": "皇冠仙度瑞拉",
     "image": "block_cinderellaup_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7422,13 +8316,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cinderellaup.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 455,
     "name_en": "Princess Snow White",
     "name": "皇冠白雪公主",
     "image": "block_snowwhiteup_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["黑色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7438,13 +8334,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_snowwhiteup.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 456,
     "name_en": "Princess Tiana",
     "name": "皇冠蒂安娜",
     "image": "block_tianaup_l.png",
+    "series": "公主與青蛙",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7454,13 +8352,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tianaup.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 457,
     "name_en": "Mirabel",
     "name": "米拉貝兒",
     "image": "block_mirabel_l.png",
+    "series": "魔法滿屋",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7470,7 +8370,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mirabel.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1672502400],
   "returndate" : ["permanent"]
   },
@@ -7479,6 +8379,8 @@ const tsumData = [
     "name_en": "Isabela",
     "name": "伊莎貝拉",
     "image": "block_isabela_l.png",
+    "series": "魔法滿屋",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：19",
       "消除數：22",
@@ -7488,7 +8390,7 @@ const tsumData = [
       "消除數：35"
     ],
     "skill_label": "win_tsumskill_isabela.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1672502400],
   "returndate" : ["permanent"]
   },
@@ -7497,6 +8399,8 @@ const tsumData = [
     "name_en": "Comedian Mike",
     "name": "喜劇演員大眼仔",
     "image": "block_mike3_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7506,13 +8410,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mike3.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 460,
     "name_en": "Boo(Charm)",
     "name": "阿布（飾品）",
     "image": "block_boocm_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["茶色Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 消除數：14",
       "範圍：S 消除數：16",
@@ -7522,13 +8428,15 @@ const tsumData = [
       "範圍：XXL 消除數：24"
     ],
     "skill_label": "win_tsumskill_boocm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 461,
     "name_en": "Roz",
     "name": "羅絲",
     "image": "block_roz_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["黃色Tsum", "綠色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：XS 所需Tsum數：21",
@@ -7538,7 +8446,7 @@ const tsumData = [
       "範圍：M 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_roz.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1675180800],
   "returndate" : ["permanent"]
   },
@@ -7547,6 +8455,8 @@ const tsumData = [
     "name_en": "Little Judy",
     "name": "小茱蒂",
     "image": "block_judyc_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["黑色Tsum", "灰色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：19",
       "範圍：S 所需Tsum數：18",
@@ -7556,13 +8466,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_judyc.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 463,
     "name_en": "Little Nick",
     "name": "小尼克",
     "image": "block_nickc_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["茶色Tsum", "綠色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7572,13 +8484,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_nickc.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 464,
     "name_en": "Sora & Roxas",
     "name": "索拉＆洛克薩斯",
     "image": "block_sorapr_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "^626w^範圍：XS ^627w^時間：6秒",
       "^626w^範圍：S ^627w^時間：6.4秒",
@@ -7588,13 +8502,15 @@ const tsumData = [
       "^626w^範圍：XXL ^627w^時間：8秒"
     ],
     "skill_label": "win_tsumskill_sorapr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 465,
     "name_en": "Dark Riku",
     "name": "黑暗里克",
     "image": "block_riku2_l.png",
+    "series": "王國之心",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：19",
       "範圍：S 所需Tsum數：18",
@@ -7604,13 +8520,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：14"
     ],
     "skill_label": "win_tsumskill_riku2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 466,
     "name_en": "King Mickey KH3 Ver.",
     "name": "王國之心3米奇國王",
     "image": "block_mickeyking2_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7620,13 +8538,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyking2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 467,
     "name_en": "Axel",
     "name": "亞克賽爾",
     "image": "block_axel_l.png",
+    "series": "王國之心",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -7636,13 +8556,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_axel.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 468,
     "name_en": "Namine",
     "name": "娜米奈",
     "image": "block_namine_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.6秒",
@@ -7652,13 +8574,15 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_namine.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 469,
     "name_en": "Rescue Ranger Chip(Charm)",
     "name": "救難小福星 奇奇（飾品）",
     "image": "block_chipcm_l.png",
+    "series": "救難小福星",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7668,13 +8592,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_chipcm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 470,
     "name_en": "Rescue Ranger Dale(Charm)",
     "name": "救難小福星 蒂蒂（飾品）",
     "image": "block_dalecm_l.png",
+    "series": "救難小福星",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -7684,13 +8610,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_dalecm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 471,
     "name_en": "Rescue Ranger Gadget",
     "name": "救難小福星 阿潔",
     "image": "block_gadget2_l.png",
+    "series": "救難小福星",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 分數：1.1倍",
       "範圍：S 分數：1.2倍",
@@ -7700,13 +8628,15 @@ const tsumData = [
       "範圍：XXL 分數：1.6倍"
     ],
     "skill_label": "win_tsumskill_gadget2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 472,
     "name_en": "Quasimodo",
     "name": "加西莫多",
     "image": "block_quasimodo_l.png",
+    "series": "鐘樓怪人",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.4秒",
@@ -7716,7 +8646,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_quasimodo.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1680278400],
   "returndate" : ["permanent"]
   },
@@ -7725,6 +8655,8 @@ const tsumData = [
     "name_en": "Dancer Esmeralda",
     "name": "舞者愛斯梅達",
     "image": "block_esmeralda2_l.png",
+    "series": "鐘樓怪人",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：23 效果範圍：XS",
       "所需Tsum數：22 效果範圍：S",
@@ -7734,13 +8666,15 @@ const tsumData = [
       "所需Tsum數：18 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_esmeralda2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 474,
     "name_en": "Pilot Luke & R2-D2",
     "name": "駕駛員路克＆R2-D2",
     "image": "block_lukepr_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "黃色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "^598w^範圍：XS ^599w^時間：4.5秒",
       "^598w^範圍：S ^599w^時間：4.9秒",
@@ -7750,13 +8684,15 @@ const tsumData = [
       "^598w^範圍：XXL ^599w^時間：6.5秒"
     ],
     "skill_label": "win_tsumskill_lukepr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 475,
     "name_en": "Obi-Wan Kenobi",
     "name": "歐比王肯諾比",
     "image": "block_obiwan_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：24",
       "範圍：S 所需Tsum數：23",
@@ -7766,13 +8702,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：19"
     ],
     "skill_label": "win_tsumskill_obiwan.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 476,
     "name_en": "Ahsoka Tano",
     "name": "亞蘇卡 譚諾",
     "image": "block_ahsoka_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -7782,13 +8720,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_ahsoka.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 477,
     "name_en": "Donkey Pinocchio",
     "name": "驢耳小木偶皮諾丘",
     "image": "block_pinocchiod_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 時間：4秒",
       "所需Tsum數：19 時間：4.6秒",
@@ -7798,13 +8738,15 @@ const tsumData = [
       "所需Tsum數：15 時間：7秒"
     ],
     "skill_label": "win_tsumskill_pinocchiod.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 478,
     "name_en": "Monstro",
     "name": "魔斯路",
     "image": "block_monstro_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["藍色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -7814,7 +8756,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_monstro.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1682870400],
   "returndate" : ["permanent"]
   },
@@ -7823,6 +8765,8 @@ const tsumData = [
     "name_en": "Captain Lightyear",
     "name": "光年隊長",
     "image": "block_buzzl_l.png",
+    "series": "巴斯光年",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22 次數 : 2",
       "所需Tsum數：22 次數 : 3",
@@ -7832,7 +8776,7 @@ const tsumData = [
       "所需Tsum數：16 次數 : 5"
     ],
     "skill_label": "win_tsumskill_buzzl.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1685548800],
   "returndate" : [1722441600,1740758400]
   },
@@ -7841,6 +8785,8 @@ const tsumData = [
     "name_en": "Sox",
     "name": "白襪",
     "image": "block_sox_l.png",
+    "series": "巴斯光年",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "所需Tsum數：21 消除數：20",
       "所需Tsum數：20 消除數：23",
@@ -7850,7 +8796,7 @@ const tsumData = [
       "所需Tsum數：16 消除數：35"
     ],
     "skill_label": "win_tsumskill_sox.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1685548800],
   "returndate" : ["permanent"]
   },
@@ -7859,6 +8805,8 @@ const tsumData = [
     "name_en": "Luca Paguro",
     "name": "路卡・帕古洛",
     "image": "block_luca_l.png",
+    "series": "夏日友晴天",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 分數：2倍",
       "範圍：S 分數：2.2倍",
@@ -7868,7 +8816,7 @@ const tsumData = [
       "範圍：XXL 分數：3倍"
     ],
     "skill_label": "win_tsumskill_luca.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1685548800],
   "returndate" : ["permanent"]
   },
@@ -7877,6 +8825,8 @@ const tsumData = [
     "name_en": "Meilin Lee",
     "name": "李美玲",
     "image": "block_meilin_l.png",
+    "series": "熊抱青春",
+    "tsumtype": ["紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：27",
       "所需Tsum數：25",
@@ -7886,7 +8836,7 @@ const tsumData = [
       "所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_meilin.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1685548800],
   "returndate" : ["permanent"]
   },
@@ -7895,6 +8845,8 @@ const tsumData = [
     "name_en": "Pixar Lamp",
     "name": "皮克斯小燈",
     "image": "block_luxojr_l.png",
+    "series": "皮克斯",
+    "tsumtype": ["白色Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：20",
       "範圍：S 所需Tsum數：19",
@@ -7904,13 +8856,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_luxojr.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 484,
     "name_en": "Star Mickey",
     "name": "星空米奇",
     "image": "block_mickeyst_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：3",
       "變化Tsum數：4",
@@ -7920,7 +8874,7 @@ const tsumData = [
       "變化Tsum數：8"
     ],
     "skill_label": "win_tsumskill_mickeyst.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1688140800],
   "returndate" : [1730390400,1761926400]
   },
@@ -7929,6 +8883,8 @@ const tsumData = [
     "name_en": "Blue Fairy Godmother",
     "name": "藍仙女教母",
     "image": "block_bluefairy2_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 時間：5秒",
       "範圍：S 時間：5.4秒",
@@ -7938,13 +8894,15 @@ const tsumData = [
       "範圍：XXL 時間：7秒"
     ],
     "skill_label": "win_tsumskill_bluefairy2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 486,
     "name_en": "Inferno Maleficent Dragon",
     "name": "綠炎魔獸黑魔女火龍",
     "image": "block_maleficentd2_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 變化Tsum數：6",
       "範圍：S 變化Tsum數：7",
@@ -7954,13 +8912,15 @@ const tsumData = [
       "範圍：XXL 變化Tsum數：14"
     ],
     "skill_label": "win_tsumskill_maleficentd2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 487,
     "name_en": "Star Minnie",
     "name": "星空米妮",
     "image": "block_minniest_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：25",
       "範圍：S 所需Tsum數：24",
@@ -7970,13 +8930,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_minniest.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 488,
     "name_en": "Star Daisy",
     "name": "星空黛絲",
     "image": "block_daisyst_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "消除數：20",
       "消除數：23",
@@ -7986,13 +8948,15 @@ const tsumData = [
       "消除數：38"
     ],
     "skill_label": "win_tsumskill_daisyst.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 489,
     "name_en": "Star Donald",
     "name": "星空唐老鴨",
     "image": "block_donaldst_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8002,13 +8966,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_donaldst.png",
-	"skill_cost" : [1,1,1,1,1,1]
+  "skill_cost" : [1,1,1,1,1,1]
   },
   {
     "id": 490,
     "name_en": "Flower Cinderella(Charm)",
     "name": "花朵仙度瑞拉（飾品）",
     "image": "block_cinderellafcm_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "水藍色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：26 效果範圍：XS",
       "所需Tsum數：25 效果範圍：S",
@@ -8018,13 +8984,15 @@ const tsumData = [
       "所需Tsum數：21 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cinderellafcm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 491,
     "name_en": "Flower Snow White(Charm)",
     "name": "花朵白雪公主（飾品）",
     "image": "block_snowwhitefcm_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：30",
       "範圍：S 所需Tsum數：29",
@@ -8034,7 +9002,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：25"
     ],
     "skill_label": "win_tsumskill_snowwhitefcm.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1690819200],
   "returndate" : [1719763200,1740758400,1767196800]
   },
@@ -8043,6 +9011,8 @@ const tsumData = [
     "name_en": "Flower Aurora(Charm)",
     "name": "花朵愛洛公主（飾品）",
     "image": "block_aurorafcm_l.png",
+    "series": "睡美人",
+    "tsumtype": ["黃色Tsum", "粉紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "變化Tsum數：2",
       "變化Tsum數：2～3",
@@ -8052,13 +9022,15 @@ const tsumData = [
       "變化Tsum數：4～5"
     ],
     "skill_label": "win_tsumskill_aurorafcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 493,
     "name_en": "Jake Sully",
     "name": "蘇傑克",
     "image": "block_jakesully_l.png",
+    "series": "阿凡達：水之道",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：22",
       "消除數：25",
@@ -8068,7 +9040,7 @@ const tsumData = [
       "消除數：37"
     ],
     "skill_label": "win_tsumskill_jakesully.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1690819200],
   "returndate" : [1764518400]
   },
@@ -8077,6 +9049,8 @@ const tsumData = [
     "name_en": "Neytiri",
     "name": "奈蒂莉",
     "image": "block_neytiri_l.png",
+    "series": "阿凡達：水之道",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "水藍色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8086,7 +9060,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_neytiri.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1690819200],
   "returndate" : [1764518400]
   },
@@ -8095,6 +9069,8 @@ const tsumData = [
     "name_en": "Lovely Stitch & Angel",
     "name": "甜心史迪奇＆安琪",
     "image": "block_stitchvpr_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "粉紅色Tsum", "水藍色Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "^660w^範圍：XS ^661w^ 分數：1.3倍",
       "^660w^範圍：S ^661w^ 分數：1.6倍",
@@ -8104,13 +9080,15 @@ const tsumData = [
       "^660w^範圍：XXL ^661w^ 分數：2.8倍"
     ],
     "skill_label": "win_tsumskill_stitchvpr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 496,
     "name_en": "Lovely Clarice",
     "name": "甜心克莉絲",
     "image": "block_claricev_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8120,13 +9098,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_claricev.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 497,
     "name_en": "Lovely Tinker Bell",
     "name": "甜心叮叮",
     "image": "block_tinkerbellv_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 次數 : 2",
       "所需Tsum數：18 次數 : 2",
@@ -8136,7 +9116,7 @@ const tsumData = [
       "所需Tsum數：14 次數 : 4"
     ],
     "skill_label": "win_tsumskill_tinkerbellv.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1693497600],
   "returndate" : [1738339200,1767196800]
   },
@@ -8145,6 +9125,8 @@ const tsumData = [
     "name_en": "Jack Dawson",
     "name": "傑克・道森",
     "image": "block_jackt_l.png",
+    "series": "鐵達尼號",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8154,13 +9136,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jackt.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 499,
     "name_en": "Rose DeWitt Bukater",
     "name": "蘿絲・狄威特・布克特",
     "image": "block_roset_l.png",
+    "series": "鐵達尼號",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25 時間：3.5秒",
       "所需Tsum數：24 時間：4秒",
@@ -8170,13 +9154,15 @@ const tsumData = [
       "所需Tsum數：20 時間：6秒"
     ],
     "skill_label": "win_tsumskill_roset.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 500,
     "name_en": "Scheming Jafar",
     "name": "陰險大臣賈方",
     "image": "block_jafar3_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8186,13 +9172,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_jafar3.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 501,
     "name_en": "Tyrannical Queen of Hearts",
     "name": "凶殘暴君紅心皇后",
     "image": "block_queenofhearts2_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8202,7 +9190,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_queenofhearts2.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1696089600],
   "returndate" : [1727712000,1748707200,1769875200]
   },
@@ -8211,6 +9199,8 @@ const tsumData = [
     "name_en": "Sly Captain Hook(Charm)",
     "name": "狡猾海賊虎克船長（飾品）",
     "image": "block_hookcm_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：28",
       "範圍：S 所需Tsum數：27",
@@ -8220,7 +9210,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：23"
     ],
     "skill_label": "win_tsumskill_hookcm.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" :[1696089600],
   "returndate" : [1727712000,1743436800,1769875200]
   },
@@ -8229,6 +9219,8 @@ const tsumData = [
     "name_en": "Dastardly Cruella",
     "name": "貪婪惡女庫伊拉",
     "image": "block_cruella2_l.png",
+    "series": "101忠狗",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8238,13 +9230,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_cruella2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 504,
     "name_en": "Disney100 Mickey & Donald",
     "name": "Disney100 米奇＆唐老鴨",
     "image": "block_mickeyd100pr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "^710w^範圍：XS ^711w^ 分數：1.1倍",
       "^710w^範圍：S ^711w^ 分數：1.15倍",
@@ -8254,13 +9248,15 @@ const tsumData = [
       "^710w^範圍：XXL ^711w^ 分數：1.35倍"
     ],
     "skill_label": "win_tsumskill_mickeyd100pr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 505,
     "name_en": "Disney100 Snow White",
     "name": "Disney100 白雪公主",
     "image": "block_snowwhited100_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8270,13 +9266,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_snowwhited100.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 506,
     "name_en": "Disney100 Woody",
     "name": "Disney100 胡迪",
     "image": "block_woodyd100_l.png",
+    "series": "玩具總動員",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8286,13 +9284,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_woodyd100.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 507,
     "name_en": "Disney100 R2-D2",
     "name": "Disney100 R2-D2",
     "image": "block_r2d2d100_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8302,13 +9302,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_r2d2d100.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 508,
     "name_en": "Rapunzel & Pascal",
     "name": "樂佩＆帕斯卡",
     "image": "block_rapunzelpr_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "綠色Tsum", "公主Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "^647w^消除數上限：20 ^648w^ 泡泡效果：XS",
       "^647w^消除數上限：22 ^648w^ 泡泡效果：S",
@@ -8318,13 +9320,15 @@ const tsumData = [
       "^647w^消除數上限：30 ^648w^ 泡泡效果：XXL"
     ],
     "skill_label": "win_tsumskill_rapunzelpr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 509,
     "name_en": "Wanted Man Flynn",
     "name": "通緝犯費林雷德",
     "image": "block_flynn2_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8334,13 +9338,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_flynn2.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 510,
     "name_en": "Evil Mother Gothel",
     "name": "惡女葛索媽媽",
     "image": "block_gothel2_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8350,7 +9356,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_gothel2.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1701360000],
   "returndate" : [1727712000,1743436800,1767196800]
   },
@@ -8359,6 +9365,8 @@ const tsumData = [
     "name_en": "Ariel & Flounder",
     "name": "艾莉兒＆小比目魚",
     "image": "block_arielpr_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["黃色Tsum", "紅色Tsum", "公主Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "^524w^效果範圍：XS ^525w^ 範圍：XS",
       "^524w^效果範圍：S ^525w^ 範圍：S",
@@ -8368,13 +9376,15 @@ const tsumData = [
       "^524w^效果範圍：XXL ^525w^ 範圍：XXL"
     ],
     "skill_label": "win_tsumskill_arielpr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 512,
     "name_en": "Honest John",
     "name": "老實約翰",
     "image": "block_foulfellow_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8384,7 +9394,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_foulfellow.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1709222400],
   "returndate" : ["permanent"]
   },
@@ -8393,6 +9403,8 @@ const tsumData = [
     "name_en": "Gideon",
     "name": "吉頓",
     "image": "block_gideon_l.png",
+    "series": "木偶奇遇記",
+    "tsumtype": ["茶色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "所需Tsum數：21 消除數：20",
       "所需Tsum數：20 消除數：23",
@@ -8402,7 +9414,7 @@ const tsumData = [
       "所需Tsum數：16 消除數：35"
     ],
     "skill_label": "win_tsumskill_gideon.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1709222400],
   "returndate" : ["permanent"]
   },
@@ -8411,6 +9423,8 @@ const tsumData = [
     "name_en": "Adventure Ariel",
     "name": "旅遊艾莉兒",
     "image": "block_ariell_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8420,13 +9434,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_ariell.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 515,
     "name_en": "The Powerful King Triton",
     "name": "神力川頓國王",
     "image": "block_tritonl_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["白色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：25",
       "範圍：S 所需Tsum數：23",
@@ -8436,13 +9452,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_tritonl.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 516,
     "name_en": "Grim",
     "name": "格林",
     "image": "block_grim_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 時間：3.5秒",
       "所需Tsum數：20 時間：3.5秒",
@@ -8452,13 +9470,15 @@ const tsumData = [
       "所需Tsum數：18 時間：6秒"
     ],
     "skill_label": "win_tsumskill_grim.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 517,
     "name_en": "Riddle Rosehearts",
     "name": "里鐸・羅茲哈特",
     "image": "block_riddle_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：4秒 分數：1倍",
       "時間：4.6秒 分數：1.2倍",
@@ -8468,13 +9488,15 @@ const tsumData = [
       "時間：7秒 分數：2倍"
     ],
     "skill_label": "win_tsumskill_riddle.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 518,
     "name_en": "Leona Kingscholar",
     "name": "雷歐納・金史卡勒",
     "image": "block_leona_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8484,13 +9506,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_leona.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 519,
     "name_en": "Azul Ashengrotto",
     "name": "烏斯爾・艾歇古羅特",
     "image": "block_azul_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8500,13 +9524,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_azul.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 520,
     "name_en": "Kalim Al-Asim",
     "name": "卡利姆・阿爾艾吉姆",
     "image": "block_kalim_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["茶色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8516,13 +9542,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_kalim.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 521,
     "name_en": "Elegant Rapunzel",
     "name": "優雅樂佩",
     "image": "block_rapunzeldc_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "粉紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：25",
       "範圍：S 所需Tsum數：24",
@@ -8532,13 +9560,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_rapunzeldc.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 522,
     "name_en": "Elegant Ariel",
     "name": "優雅艾莉兒",
     "image": "block_arieldc_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：27 出現數量：2",
       "所需Tsum數：25 出現數量：2",
@@ -8548,13 +9578,15 @@ const tsumData = [
       "所需Tsum數：21 出現數量：4"
     ],
     "skill_label": "win_tsumskill_arieldc.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 523,
     "name_en": "Elegant Tiana",
     "name": "優雅蒂安娜",
     "image": "block_tianadc_l.png",
+    "series": "公主與青蛙",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8564,13 +9596,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tianadc.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 524,
     "name_en": "Ember",
     "name": "安柏",
     "image": "block_ember_l.png",
+    "series": "元素方城市",
+    "tsumtype": ["紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：27 時間：3秒",
       "所需Tsum數：26 時間：3.6秒",
@@ -8580,7 +9614,7 @@ const tsumData = [
       "所需Tsum數：22 時間：6秒"
     ],
     "skill_label": "win_tsumskill_ember.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1709222400],
   "returndate" : ["permanent"]
   },
@@ -8589,6 +9623,8 @@ const tsumData = [
     "name_en": "Wade",
     "name": "韋德",
     "image": "block_wade_l.png",
+    "series": "元素方城市",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8598,7 +9634,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_wade.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1709222400],
   "returndate" : ["permanent"]
   },
@@ -8607,6 +9643,8 @@ const tsumData = [
     "name_en": "Daruma Mickey",
     "name": "達摩米奇",
     "image": "block_mickeyd_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：4秒 效果範圍：XS倍",
       "時間：4.6秒 效果範圍：S倍",
@@ -8616,7 +9654,7 @@ const tsumData = [
       "時間：7秒 效果範圍：XXL倍"
     ],
     "skill_label": "win_tsumskill_mickeyd.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1709222400],
   "returndate" : [1730390400,1761926400]
   },
@@ -8625,6 +9663,8 @@ const tsumData = [
     "name_en": "Vil Schoenheit",
     "name": "維爾・歇恩海特",
     "image": "block_vil_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：18",
       "消除數：21",
@@ -8634,13 +9674,15 @@ const tsumData = [
       "消除數：37"
     ],
     "skill_label": "win_tsumskill_vil.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 528,
     "name_en": "Idia Shroud",
     "name": "伊帝亞・索羅德",
     "image": "block_idia_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -8650,13 +9692,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_idia.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 529,
     "name_en": "Malleus Draconia",
     "name": "梅琉斯・爪寇尼亞",
     "image": "block_malleus_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：28 時間：4.5秒",
       "所需Tsum數：25 時間：4.5秒",
@@ -8666,13 +9710,15 @@ const tsumData = [
       "所需Tsum數：19 時間：6.5秒"
     ],
     "skill_label": "win_tsumskill_malleus.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 530,
     "name_en": "Dire Crowley",
     "name": "迪爾・克羅里",
     "image": "block_crowley_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：20",
       "範圍：S 所需Tsum數：19",
@@ -8682,13 +9728,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_crowley.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 531,
     "name_en": "The Dark Mirror",
     "name": "暗夜魔鏡",
     "image": "block_mirror_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["茶色Tsum", "綠色Tsum"],
     "skill_desc": [
       "消除數：8～35",
       "消除數：9～37",
@@ -8698,13 +9746,15 @@ const tsumData = [
       "消除數：13～45"
     ],
     "skill_label": "win_tsumskill_mirror.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 532,
     "name_en": "General Grievous",
     "name": "葛理維斯將軍",
     "image": "block_grievous_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 消除數：11",
       "範圍：S 消除數：14",
@@ -8714,13 +9764,15 @@ const tsumData = [
       "範圍：XXL 消除數：26"
     ],
     "skill_label": "win_tsumskill_grievous.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 533,
     "name_en": "Count Dooku",
     "name": "杜酷伯爵",
     "image": "block_dooku_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -8730,13 +9782,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_dooku.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 534,
     "name_en": "Captain Phasma",
     "name": "法斯瑪隊長",
     "image": "block_phasma_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "灰色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 分數：1.3倍",
       "範圍：S 分數：1.6倍",
@@ -8746,13 +9800,15 @@ const tsumData = [
       "範圍：XXL 分數：2.8倍"
     ],
     "skill_label": "win_tsumskill_phasma.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 535,
     "name_en": "Exasperated Kylo Ren",
     "name": "激昂凱羅忍",
     "image": "block_kyloren3_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：24",
       "範圍：S 所需Tsum數：23",
@@ -8762,13 +9818,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：19"
     ],
     "skill_label": "win_tsumskill_kyloren3.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 536,
     "name_en": "Lord Vader & Stormtrooper",
     "name": "維達大臣＆風暴兵",
     "image": "block_vaderpr_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "^691w^範圍：XS ^692w^ 分數：1.5倍",
       "^691w^範圍：S ^692w^ 分數：1.7倍",
@@ -8778,13 +9836,15 @@ const tsumData = [
       "^691w^範圍：XXL ^692w^ 分數：2.5倍"
     ],
     "skill_label": "win_tsumskill_vaderpr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 537,
     "name_en": "Indiana Jones",
     "name": "印第安納瓊斯",
     "image": "block_indianajones_l.png",
+    "series": "奪寶奇兵：命運輪盤",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -8794,13 +9854,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_indianajones.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 538,
     "name_en": "Explorer Donald",
     "name": "探險家唐老鴨",
     "image": "block_donaldr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -8810,7 +9872,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_donaldr.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1717171200],
   "returndate" : [1751299200,1767196800]
   },
@@ -8819,6 +9881,8 @@ const tsumData = [
     "name_en": "Explorer Scrooge",
     "name": "探險家史高治",
     "image": "block_scrooger_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 金幣數量：XS",
       "範圍：S 金幣數量：S",
@@ -8828,13 +9892,15 @@ const tsumData = [
       "範圍：XXL 金幣數量：XXL"
     ],
     "skill_label": "win_tsumskill_scrooger.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 540,
     "name_en": "Milo",
     "name": "麥羅 ",
     "image": "block_milo_l.png",
+    "series": "亞特蘭提斯：失落的帝國",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8844,13 +9910,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_milo.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 541,
     "name_en": "Kida",
     "name": "姬坦公主",
     "image": "block_kida_l.png",
+    "series": "亞特蘭提斯：失落的帝國",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：23 時間：4秒",
       "所需Tsum數：22 時間：4.4秒",
@@ -8860,13 +9928,15 @@ const tsumData = [
       "所需Tsum數：18 時間：6秒"
     ],
     "skill_label": "win_tsumskill_kida.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 542,
     "name_en": "Festival Mickey",
     "name": "慶典米奇",
     "image": "block_mickeyfes_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "紫色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8876,13 +9946,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickeyfes.png",
-	"skill_cost" : [1,1,1,2,3,5]
+  "skill_cost" : [1,1,1,2,3,5]
   },
   {
     "id": 543,
     "name_en": "Festival Minnie",
     "name": "慶典米妮",
     "image": "block_minniefes_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "紫色Tsum", "女孩Tsum"],
     "skill_desc": [
       "時間：3.5秒",
       "時間：4秒",
@@ -8892,13 +9964,15 @@ const tsumData = [
       "時間：6秒"
     ],
     "skill_label": "win_tsumskill_minniefes.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 544,
     "name_en": "Mushu",
     "name": "木須龍",
     "image": "block_mushu_l.png",
+    "series": "花木蘭",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：27",
       "所需Tsum數：25",
@@ -8908,7 +9982,7 @@ const tsumData = [
       "所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_mushu.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1719763200],
   "returndate" : ["permanent"]
   },
@@ -8917,6 +9991,8 @@ const tsumData = [
     "name_en": "Festival Pooh",
     "name": "慶典維尼",
     "image": "block_poohfes_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -8926,13 +10002,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_poohfes.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 546,
     "name_en": "Festival Stitch",
     "name": "慶典史迪奇",
     "image": "block_stitchfes_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -8942,7 +10020,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_stitchfes.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 547,
@@ -8950,6 +10028,8 @@ const tsumData = [
     "name": "繽紛米奇與好朋友（組合）",
     "image": [
       "block_mickeyset_l.png"],
+    "series": "米奇與好朋友",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "綠色Tsum", "紅色Tsum", "紫色Tsum", "男孩Tsum", "女孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "^750w^時間：8.5秒 ^751w^^752w^^753w^ 所需Tsum數：23",
       "^750w^時間：9.8秒 ^751w^^752w^^753w^ 所需Tsum數：22",
@@ -8959,13 +10039,15 @@ const tsumData = [
       "^750w^時間：15秒 ^751w^^752w^^753w^ 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_mickeyset.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 548,
     "name_en": "Perfume Alice(Charm)",
     "name": "香水愛麗絲（飾品）",
     "image": "block_alicecm_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25 時間：3秒",
       "所需Tsum數：24 時間：3.6秒",
@@ -8975,13 +10057,15 @@ const tsumData = [
       "所需Tsum數：20 時間：6秒"
     ],
     "skill_label": "win_tsumskill_alicecm.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 549,
     "name_en": "Perfume Marie(Charm)",
     "name": "香水瑪麗貓（飾品）",
     "image": "block_mariecm_l.png",
+    "series": "貓兒歷險記",
+    "tsumtype": ["白色Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "變化Tsum數：5",
       "變化Tsum數：7",
@@ -8991,13 +10075,15 @@ const tsumData = [
       "變化Tsum數：15"
     ],
     "skill_label": "win_tsumskill_mariecm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 550,
     "name_en": "Perfume Dumbo(Charm)",
     "name": "香水小飛象（飾品）",
     "image": "block_dumbocm_l.png",
+    "series": "小飛象",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "消除數：18",
       "消除數：21",
@@ -9007,13 +10093,15 @@ const tsumData = [
       "消除數：36"
     ],
     "skill_label": "win_tsumskill_dumbocm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 551,
     "name_en": "Sakura Minnie",
     "name": "櫻花米妮",
     "image": "block_minniecb_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "櫻花麻糬數量：3個",
       "櫻花麻糬數量：4個",
@@ -9023,13 +10111,15 @@ const tsumData = [
       "櫻花麻糬數量：8個"
     ],
     "skill_label": "win_tsumskill_minniecb.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 552,
     "name_en": "Sakura Daisy",
     "name": "櫻花黛絲",
     "image": "block_daisycb_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9039,13 +10129,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_daisycb.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 553,
     "name_en": "Jade Leech",
     "name": "賈伊德・利奇",
     "image": "block_jade_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "綠色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：3",
       "變化Tsum數：4",
@@ -9055,13 +10147,15 @@ const tsumData = [
       "變化Tsum數：8"
     ],
     "skill_label": "win_tsumskill_jade.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 554,
     "name_en": "Floyd Leech",
     "name": "胡伊德・利奇",
     "image": "block_floyd_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "綠色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9071,13 +10165,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_floyd.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 555,
     "name_en": "Ace Trappola",
     "name": "艾斯・川波拉",
     "image": "block_ace_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9087,13 +10183,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_ace.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 556,
     "name_en": "Deuce Spade",
     "name": "迪烏斯・斯佩德",
     "image": "block_deuce_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9103,13 +10201,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_deuce.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 557,
     "name_en": "Poison Apple Evil Queen",
     "name": "憎恨之后邪惡皇后",
     "image": "block_evilqueen2_l.png",
+    "series": "白雪公主",
+    "tsumtype": ["反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：S 所需Tsum數：19",
       "範圍：M 所需Tsum數：19",
@@ -9119,13 +10219,15 @@ const tsumData = [
       "範圍：XL 所需Tsum數：15"
     ],
     "skill_label": "win_tsumskill_evilqueen2.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 558,
     "name_en": "Night Chernabog",
     "name": "闇夜魔人查立保",
     "image": "block_chernabog2_l.png",
+    "series": "幻想曲",
+    "tsumtype": ["藍色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：20 時間：4秒",
       "所需Tsum數：19 時間：4.8秒",
@@ -9135,13 +10237,15 @@ const tsumData = [
       "所需Tsum數：15 時間：8秒"
     ],
     "skill_label": "win_tsumskill_chernabog2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 559,
     "name_en": "Masquerade Lady Tremaine",
     "name": "化妝舞會特曼尼夫人",
     "image": "block_tremainemm_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["灰色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9151,13 +10255,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tremainemm.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 560,
     "name_en": "Masquerade Ursula",
     "name": "化妝舞會烏蘇拉",
     "image": "block_ursulamm_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["白色Tsum", "紫色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -9167,7 +10273,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_ursulamm.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1727712000],
   "returndate" : [1748707200,1767196800]
   },
@@ -9176,6 +10282,8 @@ const tsumData = [
     "name_en": "Winter Anna",
     "name": "冬季安娜",
     "image": "block_anna3_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：3秒",
       "效果時間：3.6秒",
@@ -9185,7 +10293,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_anna3.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1730390400],
   "returndate" : [1764518400]
   },
@@ -9194,6 +10302,8 @@ const tsumData = [
     "name_en": "Winter Kristoff",
     "name": "冬季克斯托夫 (阿克)",
     "image": "block_kristoff2_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "分數：1.5倍 大野狼數量：2隻",
       "分數：1.5倍 大野狼數量：2～3隻",
@@ -9203,13 +10313,15 @@ const tsumData = [
       "分數：2.5倍 大野狼數量：4隻"
     ],
     "skill_label": "win_tsumskill_kristoff2.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 563,
     "name_en": "Prince Hans",
     "name": "漢斯王子",
     "image": "block_hans_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["茶色Tsum", "反派Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9219,7 +10331,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_hans.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1730390400],
   "returndate" : ["permanent"]
   },
@@ -9228,6 +10340,8 @@ const tsumData = [
     "name_en": "Marshmallow",
     "name": "棉花糖",
     "image": "block_marshmallow_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9237,7 +10351,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_marshmallow.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1730390400],
   "returndate" : ["permanent"]
   },
@@ -9246,6 +10360,8 @@ const tsumData = [
     "name_en": "Elsa & Olaf",
     "name": "艾莎＆雪寶",
     "image": "block_elsa2pr_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["白色Tsum", "公主Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "^761w^消除數：22 ^762w^ 所需Tsum數：36",
       "^761w^消除數：24 ^762w^ 所需Tsum數：34",
@@ -9255,7 +10371,7 @@ const tsumData = [
       "^761w^消除數：32 ^762w^ 所需Tsum數：26"
     ],
     "skill_label": "win_tsumskill_elsa2pr.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1730390400],
   "returndate" : [1767196800]
   },
@@ -9264,6 +10380,8 @@ const tsumData = [
     "name_en": "Ambitious Scar",
     "name": "陰謀策士刀疤",
     "image": "block_scar2_l.png",
+    "series": "獅子王",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：21",
       "範圍：S 所需Tsum數：20",
@@ -9273,7 +10391,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：16"
     ],
     "skill_label": "win_tsumskill_scar2.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1732982400],
   "returndate" : [1753977600,1769875200]
   },
@@ -9282,6 +10400,8 @@ const tsumData = [
     "name_en": "Jack & Sally",
     "name": "傑克＆莎莉",
     "image": "block_jackpr_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "綠色Tsum", "紅色Tsum", "水藍色Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_desc": [
       "^744w^所需Tsum數：23  ^745w^ 所需Tsum數：46",
       "^744w^所需Tsum數：22  ^745w^ 所需Tsum數：44",
@@ -9291,13 +10411,15 @@ const tsumData = [
       "^744w^所需Tsum數：18  ^745w^ 所需Tsum數：36"
     ],
     "skill_label": "win_tsumskill_jackpr.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 568,
     "name_en": "Sandy Claws",
     "name": "聖誕老人",
     "image": "block_sandyclaws_l.png",
+    "series": "聖誕夜驚魂",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：S 禮物數量：2",
       "範圍：M 禮物數量：2",
@@ -9307,7 +10429,7 @@ const tsumData = [
       "範圍：XL 禮物數量：4"
     ],
     "skill_label": "win_tsumskill_sandyclaws.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1732982400],
   "returndate" : [1764518400]
   },
@@ -9316,6 +10438,8 @@ const tsumData = [
     "name_en": "Asha",
     "name": "艾霞",
     "image": "block_asha_l.png",
+    "series": "星願",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9325,7 +10449,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_asha.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1732982400],
   "returndate" : ["permanent"]
   },
@@ -9334,6 +10458,8 @@ const tsumData = [
     "name_en": "Brave Minnie",
     "name": "勇者米妮",
     "image": "block_minniepx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9343,13 +10469,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_minniepx.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 571,
     "name_en": "Archer Daisy",
     "name": "弓箭手黛絲",
     "image": "block_daisypx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "紫色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 消除數：2",
       "範圍：S 消除數：2",
@@ -9359,7 +10487,7 @@ const tsumData = [
       "範圍：XXL 消除數：6"
     ],
     "skill_label": "win_tsumskill_daisypx.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1735660800],
   "returndate" : [1764518400]
   },
@@ -9368,6 +10496,8 @@ const tsumData = [
     "name_en": "Mage Clarice",
     "name": "魔法師克莉絲",
     "image": "block_claricepx_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -9377,7 +10507,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_claricepx.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1735660800],
   "returndate" : [1764518400]
   },
@@ -9386,6 +10516,8 @@ const tsumData = [
     "name_en": "Rainy Day Pooh",
     "name": "雨衣維尼",
     "image": "block_poohrain_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9395,13 +10527,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_poohrain.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 574,
     "name_en": "Rainy Christopher Robin",
     "name": "雨衣羅賓",
     "image": "block_robinrain_l.png",
+    "series": "小熊維尼",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "變化Tsum數：10 分數：4.5倍",
       "變化Tsum數：12 分數：4.7倍",
@@ -9411,13 +10545,15 @@ const tsumData = [
       "變化Tsum數：20 分數：5.5倍"
     ],
     "skill_label": "win_tsumskill_robinrain.png",
-	"skill_cost" : [1,1,2,4,8,14]
+  "skill_cost" : [1,1,2,4,8,14]
   },
   {
     "id": 575,
     "name_en": "Beans Camo Vil",
     "name": "豆豆迷彩維爾",
     "image": "block_vil2_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9427,13 +10563,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_vil2.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 576,
     "name_en": "Gala Couture Kalim(Charm)",
     "name": "盛會時裝卡利姆（飾品）",
     "image": "block_kalimcm_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：32",
       "範圍：S 所需Tsum數：31",
@@ -9443,13 +10581,15 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：27"
     ],
     "skill_label": "win_tsumskill_kalimcm.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 577,
     "name_en": "Ceremonial Robes Grim",
     "name": "式典服格林",
     "image": "block_grim2_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9459,13 +10599,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_grim2.png",
-	"skill_cost" : [1,1,2,4,7,14]
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 578,
     "name_en": "Jamil Viper",
     "name": "賈密爾・拜普",
     "image": "block_jamil_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：22  分數：1.4倍",
       "所需Tsum數：21  分數：1.8倍",
@@ -9475,13 +10617,15 @@ const tsumData = [
       "所需Tsum數：17  分數：3.4倍"
     ],
     "skill_label": "win_tsumskill_jamil.png",
-	"skill_cost" : [1,1,2,4,8,20]
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 579,
     "name_en": "Rook Hunt",
     "name": "路克・杭特",
     "image": "block_rook_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["藍色Tsum", "黃色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9491,13 +10635,15 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_rook.png",
-	"skill_cost" : [1,1,2,4,8,16]
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 580,
     "name_en": "Painter Rapunzel",
     "name": "畫圖樂佩",
     "image": "block_rapunzela_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -9507,7 +10653,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_rapunzela.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
     "startdate" : [1740758400],
     "returndate" : [""]
   },
@@ -9516,6 +10662,8 @@ const tsumData = [
     "name_en": "Book Reader Belle",
     "name": "書迷貝兒",
     "image": "block_bellea_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果時間：4秒",
       "效果時間：4.4秒",
@@ -9525,7 +10673,7 @@ const tsumData = [
       "效果時間：6秒"
     ],
     "skill_label": "win_tsumskill_bellea.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1740758400],
     "returndate" : [""]
   },
@@ -9534,6 +10682,8 @@ const tsumData = [
     "name_en": "Entrepreneur Tiana",
     "name": "餐廳老闆蒂安娜",
     "image": "block_tianaa_l.png",
+    "series": "公主與青蛙",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9543,7 +10693,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tianaa.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1740758400],
     "returndate" : [""]
   },
@@ -9552,6 +10702,8 @@ const tsumData = [
     "name_en": "Autumn Tinker Bell",
     "name": "秋季小叮噹",
     "image": "block_tinkerbellf2_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["黃色Tsum", "綠色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9561,7 +10713,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_tinkerbellf2.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1740758400],
     "returndate" : [""]
   },
@@ -9570,6 +10722,8 @@ const tsumData = [
     "name_en": "Cheese the Mouse",
     "name": "起司",
     "image": "block_cheese_l.png",
+    "series": "迪士尼精靈",
+    "tsumtype": ["灰色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：25",
       "範圍：S 所需Tsum數：24",
@@ -9579,7 +10733,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：20"
     ],
     "skill_label": "win_tsumskill_cheese.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1740758400],
     "returndate" : ["permanent"]
   },
@@ -9588,6 +10742,8 @@ const tsumData = [
     "name_en": "King Magnifico",
     "name": "摩尼菲國王",
     "image": "block_magnifico_l.png",
+    "series": "星願",
+    "tsumtype": ["白色Tsum", "灰色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：25  效果範圍：XS",
       "所需Tsum數：23  效果範圍：S",
@@ -9597,7 +10753,7 @@ const tsumData = [
       "所需Tsum數：15  效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_magnifico.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
     "startdate" : [1743436800],
     "returndate" : [""]
   },
@@ -9606,6 +10762,8 @@ const tsumData = [
     "name_en": "Ernesto de la Cruz",
     "name": "恩尼托德拉古司",
     "image": "block_delacruz_l.png",
+    "series": "可可夜總會",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：24",
       "範圍：S 所需Tsum數：23",
@@ -9615,7 +10773,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：19"
     ],
   "skill_label": "win_tsumskill_delacruz.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1743436800],
     "returndate" : ["permanent"]
   },
@@ -9624,6 +10782,8 @@ const tsumData = [
     "name_en": "King Candy",
     "name": "糖果王",
     "image": "block_kingcandy_l.png",
+    "series": "無敵破壞王",
+    "tsumtype": ["反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "出現數量：2～3",
       "出現數量：3",
@@ -9633,7 +10793,7 @@ const tsumData = [
       "出現數量：5"
     ],
     "skill_label": "win_tsumskill_kingcandy.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1743436800],
     "returndate" : ["permanent"]
   },
@@ -9642,6 +10802,8 @@ const tsumData = [
     "name_en": "Assistant Mayor Bellwether",
     "name": "楊咩咩副市長",
     "image": "block_bellwether_l.png",
+    "series": "動物方城市",
+    "tsumtype": ["白色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9651,7 +10813,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_bellwether.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1743436800],
     "returndate" : ["permanent"]
   },
@@ -9660,6 +10822,8 @@ const tsumData = [
     "name_en": "Yokai",
     "name": "面具怪人",
     "image": "block_yokai_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：21 時間：4秒",
       "所需Tsum數：20 時間：4.4秒",
@@ -9669,7 +10833,7 @@ const tsumData = [
       "所需Tsum數：16 時間：6秒"
     ],
     "skill_label": "win_tsumskill_yokai.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1743436800],
     "returndate" : [""]
   },
@@ -9678,6 +10842,8 @@ const tsumData = [
     "name_en": "Boba Fett",
     "name": "波巴費特",
     "image": "block_boba_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9687,7 +10853,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_boba.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1746028800],
     "returndate" : [""]
   },
@@ -9696,6 +10862,8 @@ const tsumData = [
     "name_en": "Jabba the Hutt",
     "name": "赫特族賈霸",
     "image": "block_jabba_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黃色Tsum", "綠色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 時間：4秒",
       "所需Tsum數：24 時間：4.6秒",
@@ -9705,7 +10873,7 @@ const tsumData = [
       "所需Tsum數：20 時間：6秒"
     ],
     "skill_label": "win_tsumskill_jabba.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1746028800],
     "returndate" : [""]
   },
@@ -9714,6 +10882,8 @@ const tsumData = [
     "name_en": "Podracer Anakin",
     "name": "飛梭賽車安納金",
     "image": "block_anakinpod_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9723,7 +10893,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_anakinpod.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1746028800],
     "returndate" : [""]
   },
@@ -9732,6 +10902,8 @@ const tsumData = [
     "name_en": "Star Wars Light Side (Set)",
     "name": "星際大戰光明面（組合）",
     "image": ["block_starwarsset_l.png"],
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "黃色Tsum", "茶色Tsum", "綠色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "^782w^時間：8秒 ^783w^^784w^ 效果範圍：XS",
       "^782w^時間：9.4秒 ^783w^^784w^ 效果範圍：S",
@@ -9741,7 +10913,7 @@ const tsumData = [
       "^782w^時間：15秒 ^783w^^784w^ 效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_starwarsset.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
     "startdate" : [1746028800],
     "returndate" : [""]
   },
@@ -9750,6 +10922,8 @@ const tsumData = [
     "name_en": "Qui-Gon Jinn",
     "name": "魁剛金",
     "image": "block_quigon_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果時間：2.7秒",
       "效果時間：3.1秒",
@@ -9759,7 +10933,7 @@ const tsumData = [
       "效果時間：4.7秒"
     ],
     "skill_label": "win_tsumskill_quigon.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
     "startdate" : [1746028800],
     "returndate" : [""]
   },
@@ -9771,6 +10945,8 @@ const tsumData = [
       "block_malleus2_l.png",
       "block_malleus2sp_l.png"
     ],
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS 所需Tsum數：31",
       "效果範圍：S 所需Tsum數：29",
@@ -9780,7 +10956,7 @@ const tsumData = [
       "效果範圍：XXL 所需Tsum數：21"
     ],
     "skill_label": "win_tsumskill_malleus2.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
     "startdate" : [1748707200],
     "returndate" : [""]
   },
@@ -9789,6 +10965,8 @@ const tsumData = [
     "name_en": "Beans Camo Azul",
     "name": "豆豆迷彩烏斯爾",
     "image": "block_azul2_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9798,7 +10976,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_azul2.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1748707200],
     "returndate" : [""]
   },
@@ -9807,6 +10985,8 @@ const tsumData = [
     "name_en": "Starsending Robes Idia(Charm)",
     "name": "送星服伊帝亞（飾品）",
     "image": "block_idiacm_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：33",
       "範圍：S 所需Tsum數：32",
@@ -9816,7 +10996,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：28"
     ],
     "skill_label": "win_tsumskill_idiacm.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1748707200],
     "returndate" : [""]
   },
@@ -9825,6 +11005,8 @@ const tsumData = [
     "name_en": "Gala Couture Leona",
     "name": "盛會時裝雷歐納",
     "image": "block_leona2_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：23",
       "範圍：S 所需Tsum數：22",
@@ -9834,7 +11016,7 @@ const tsumData = [
       "範圍：XXL 所需Tsum數：18"
     ],
     "skill_label": "win_tsumskill_leona2.png",
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
     "startdate" : [1748707200],
     "returndate" : [""]
   },
@@ -9843,6 +11025,8 @@ const tsumData = [
     "name_en": "Suitor Suit Riddle(Charm)",
     "name": "新郎裝扮里鐸（飾品）",
     "image": "block_riddlecm_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9852,7 +11036,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_riddlecm.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1748707200],
     "returndate" : []
   },
@@ -9861,6 +11045,8 @@ const tsumData = [
     "name_en": "Streetwear Mickey",
     "name": "街頭造型米奇",
     "image": "block_mickey11th_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9870,7 +11056,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_mickey11th.png",
-	"skill_cost" : [1,1,1,2,2,3],
+  "skill_cost" : [1,1,1,2,2,3],
     "startdate" : [1751299200],
     "returndate" : []
   },
@@ -9879,6 +11065,8 @@ const tsumData = [
     "name_en": "Sporty Max",
     "name": "運動風麥斯",
     "image": "block_maxprize_l.png",
+    "series": "高飛電影版：假期最棒！！",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_desc": [
       "消除次數：1",
       "消除次數：2",
@@ -9888,7 +11076,7 @@ const tsumData = [
       "消除次數：6"
     ],
     "skill_label": "win_tsumskill_maxprize.png",
-	"skill_cost" : [1,1,1,1,1,1],
+  "skill_cost" : [1,1,1,1,1,1],
     "startdate" : [1751299200],
     "returndate" : [""]
   },
@@ -9897,6 +11085,8 @@ const tsumData = [
     "name_en": "Kaa",
     "name": "卡奧",
     "image": "block_kaa_l.png",
+    "series": "森林王子",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9906,7 +11096,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_kaa.png",
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
     "startdate" : [1751299200],
     "returndate" : ["permanent"]
   },
@@ -9915,6 +11105,8 @@ const tsumData = [
     "name_en": "Streetwear Minnie",
     "name": "街頭造型米妮",
     "image": "block_minnie11th_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
@@ -9924,7 +11116,7 @@ const tsumData = [
       "效果範圍：XXL"
     ],
     "skill_label": "win_tsumskill_minnie11th.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1751299200],
     "returndate" : [1767196800]
   },
@@ -9933,6 +11125,8 @@ const tsumData = [
     "name_en": "Streetwear Angel",
     "name": "街頭造型安琪",
     "image": "block_angel11th_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_desc": [
       "範圍：XS 所需Tsum數：22",
       "範圍：S 所需Tsum數：21",
@@ -9942,7 +11136,7 @@ const tsumData = [
       "效果範圍：XXL 所需Tsum數：17"
     ],
     "skill_label": "win_tsumskill_angel11th.png",
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
     "startdate" : [1751299200],
     "returndate" : [""]
   },
@@ -9951,6 +11145,8 @@ const tsumData = [
     "name_en": "Streetwear Stitch",
     "name": "街頭造型史迪奇",
     "image": "block_stitch11th_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "所需Tsum數：24 時間：3.5秒",
       "所需Tsum數：23 時間：3.9秒",
@@ -9969,16 +11165,18 @@ const tsumData = [
     "name_en": "Duffy",
     "name": "達菲",
     "image": "block_duffy_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_duffy.png",
-	"skill_desc": [
-	 "效果範圍：XS",
-	 "效果範圍：S",
-	 "效果範圍：M",
-	 "效果範圍：L",
-	 "效果範圍：XL",
-	 "效果範圍：XXL"
+  "skill_desc": [
+   "效果範圍：XS",
+   "效果範圍：S",
+   "效果範圍：M",
+   "效果範圍：L",
+   "效果範圍：XL",
+   "效果範圍：XXL"
     ],
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1753977600],
   "returndate" : ["nocomeback"]
   },
@@ -9987,16 +11185,18 @@ const tsumData = [
     "name_en": "Gelatoni",
     "name": "傑拉多尼",
     "image": "block_gelatoni_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["綠色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_label": "win_tsumskill_gelatoni.png",
-	"skill_desc": [
-	 "消除數：15",
-	 "消除數：17",
-	 "消除數：20",
-	 "消除數：23",
-	 "消除數：27",
-	 "消除數：32",
+  "skill_desc": [
+   "消除數：15",
+   "消除數：17",
+   "消除數：20",
+   "消除數：23",
+   "消除數：27",
+   "消除數：32",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1753977600],
   "returndate" : ["nocomeback"]
   },
@@ -10005,16 +11205,18 @@ const tsumData = [
     "name_en": "CookieAnn",
     "name": "可琦安",
     "image": "block_cookieann_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "橘色Tsum", "女孩Tsum", "狗狗Tsum"],
     "skill_label": "win_tsumskill_cookieann.png",
-	"skill_desc": [
-	 "出現數量：2～3",
-	 "出現數量：3",
-	 "出現數量：3～4",
-	 "出現數量：4",
-	 "出現數量：4～5",
-	 "出現數量：5",
+  "skill_desc": [
+   "出現數量：2～3",
+   "出現數量：3",
+   "出現數量：3～4",
+   "出現數量：4",
+   "出現數量：4～5",
+   "出現數量：5",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1753977600],
   "returndate" : ["nocomeback"]
   },
@@ -10023,16 +11225,18 @@ const tsumData = [
     "name_en": "StellaLou",
     "name": "星黛露",
     "image": "block_stellalou_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["藍色Tsum", "紫色Tsum", "女孩Tsum", "兔子Tsum"],
     "skill_label": "win_tsumskill_stellalou.png",
-	"skill_desc": [
-	 "範圍：XS 出現數量：1",
-	 "範圍：S 出現數量：1～2",
-	 "範圍：M 出現數量：1～2",
-	 "範圍：L 出現數量：2",
-	 "範圍：XL 出現數量：2～3",
-	 "範圍：XXL 出現數量：3",
+  "skill_desc": [
+   "範圍：XS 出現數量：1",
+   "範圍：S 出現數量：1～2",
+   "範圍：M 出現數量：1～2",
+   "範圍：L 出現數量：2",
+   "範圍：XL 出現數量：2～3",
+   "範圍：XXL 出現數量：3",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1753977600],
   "returndate" : ["nocomeback"]
   },
@@ -10041,16 +11245,18 @@ const tsumData = [
     "name_en": "Olu Mel",
     "name": "奧樂米拉",
     "image": "block_olumel_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["綠色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_olumel.png",
-	"skill_desc": [
-	 "音符數：3",
-	 "音符數：3～4",
-	 "音符數：4",
-	 "音符數：4～5",
-	 "音符數：5",
-	 "音符數：5～6",
+  "skill_desc": [
+   "音符數：3",
+   "音符數：3～4",
+   "音符數：4",
+   "音符數：4～5",
+   "音符數：5",
+   "音符數：5～6",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1753977600],
   "returndate" : ["nocomeback"]
   },
@@ -10059,16 +11265,18 @@ const tsumData = [
     "name_en": "Mickey & Duffy",
     "name": "米奇＆達菲",
     "image": "block_mickeydfpr_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_mickeydfpr.png",
-	"skill_desc": [
-	 "^802w^所需Tsum數：37 ^803w^範圍：XS",
-	 "^802w^所需Tsum數：35 ^803w^範圍：S",
-	 "^802w^所需Tsum數：33 ^803w^範圍：M",
-	 "^802w^所需Tsum數：31 ^803w^範圍：L",
-	 "^802w^所需Tsum數：29 ^803w^範圍：XL",
-	 "^802w^所需Tsum數：27 ^803w^範圍：XXL",
+  "skill_desc": [
+   "^802w^所需Tsum數：37 ^803w^範圍：XS",
+   "^802w^所需Tsum數：35 ^803w^範圍：S",
+   "^802w^所需Tsum數：33 ^803w^範圍：M",
+   "^802w^所需Tsum數：31 ^803w^範圍：L",
+   "^802w^所需Tsum數：29 ^803w^範圍：XL",
+   "^802w^所需Tsum數：27 ^803w^範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1756656000],
   "returndate" : ["nocomeback"]  
   },
@@ -10077,16 +11285,18 @@ const tsumData = [
     "name_en": "LinaBell",
     "name": "玲娜貝兒",
     "image": "block_linabell_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_linabell.png",
-	"skill_desc": [
-	 "分數：2.3倍 出現數量：3",
-	 "分數：2.3倍 出現數量：4",
-	 "分數：2.7倍 出現數量：4",
-	 "分數：2.7倍 出現數量：5",
-	 "分數：3.1倍 出現數量：5",
-	 "分數：3.5倍 出現數量：6",
+  "skill_desc": [
+   "分數：2.3倍 出現數量：3",
+   "分數：2.3倍 出現數量：4",
+   "分數：2.7倍 出現數量：4",
+   "分數：2.7倍 出現數量：5",
+   "分數：3.1倍 出現數量：5",
+   "分數：3.5倍 出現數量：6",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1756656000],
   "returndate" : ["nocomeback"]
   },
@@ -10095,16 +11305,18 @@ const tsumData = [
     "name_en": "ShellieMay",
     "name": "雪莉玫",
     "image": "block_shelliemay_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["粉紅色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_shelliemay.png",
-	"skill_desc": [
-	 "效果範圍：XS",
-	 "效果範圍：S",
-	 "效果範圍：M",
-	 "效果範圍：L",
-	 "效果範圍：XL",
-	 "效果範圍：XXL",
+  "skill_desc": [
+   "效果範圍：XS",
+   "效果範圍：S",
+   "效果範圍：M",
+   "效果範圍：L",
+   "效果範圍：XL",
+   "效果範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1756656000],
   "returndate" : ["nocomeback"]
   },
@@ -10113,16 +11325,18 @@ const tsumData = [
     "name_en": "Sewing Minnie",
     "name": "縫紉米妮",
     "image": "block_minniedf_l.png",
+    "series": "達菲與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_minniedf.png",
-	"skill_desc": [
-	 "分數：1倍 消除排數：2",
-	 "分數：1倍 消除排數：3",
-	 "分數：1.4倍 消除排數：3",
-	 "分數：1.4倍 消除排數：4",
-	 "分數：1.8倍 消除排數：4",
-	 "分數：1.8倍 消除排數：5",
+  "skill_desc": [
+   "分數：1倍 消除排數：2",
+   "分數：1倍 消除排數：3",
+   "分數：1.4倍 消除排數：3",
+   "分數：1.4倍 消除排數：4",
+   "分數：1.8倍 消除排數：4",
+   "分數：1.8倍 消除排數：5",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1756656000],
   "returndate" : ["nocomeback"]
   },
@@ -10131,16 +11345,18 @@ const tsumData = [
     "name_en": "Monsters, Inc. (Set)",
     "name": "怪獸電力公司（組合）",
     "image": "block_miset_l.png",
+    "series": "怪獸電力公司",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "紅色Tsum", "紫色Tsum", "水藍色Tsum", "反派Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_miset.png",
-	"skill_desc": [
-	 "^814w^ 時間：7秒 ^816w^^815w^^817w^效果範圍：XS",
-	 "^814w^ 時間：7.8秒 ^816w^^815w^^817w^效果範圍：S",
-	 "^814w^ 時間：8.6秒 ^816w^^815w^^817w^效果範圍：M",
-	 "^814w^ 時間：9.4秒 ^816w^^815w^^817w^效果範圍：L",
-	 "^814w^ 時間：10.2秒 ^816w^^815w^^817w^效果範圍：XL",
-	 "^814w^ 時間：11秒 ^816w^^815w^^817w^效果範圍：XXL",
+  "skill_desc": [
+   "^814w^ 時間：7秒 ^816w^^815w^^817w^效果範圍：XS",
+   "^814w^ 時間：7.8秒 ^816w^^815w^^817w^效果範圍：S",
+   "^814w^ 時間：8.6秒 ^816w^^815w^^817w^效果範圍：M",
+   "^814w^ 時間：9.4秒 ^816w^^815w^^817w^效果範圍：L",
+   "^814w^ 時間：10.2秒 ^816w^^815w^^817w^效果範圍：XL",
+   "^814w^ 時間：11秒 ^816w^^815w^^817w^效果範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1759248000],
   "returndate" : []
   },
@@ -10149,16 +11365,18 @@ const tsumData = [
     "name_en": "Vampire Mickey",
     "name": "吸血鬼米奇",
     "image": "block_mickeyh2024_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_mickeyh2024.png",
-	"skill_desc": [
-	 "所需Tsum數：22 分數：1.2倍",
-	 "所需Tsum數：21 分數：1.7倍",
-	 "所需Tsum數：20 分數：2.2倍",
-	 "所需Tsum數：19 分數：2.7倍",
-	 "所需Tsum數：18 分數：2.7倍",
-	 "所需Tsum數：18 分數：3.2倍",
+  "skill_desc": [
+   "所需Tsum數：22 分數：1.2倍",
+   "所需Tsum數：21 分數：1.7倍",
+   "所需Tsum數：20 分數：2.2倍",
+   "所需Tsum數：19 分數：2.7倍",
+   "所需Tsum數：18 分數：2.7倍",
+   "所需Tsum數：18 分數：3.2倍",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1759248000],
   "returndate" : []
   },
@@ -10167,16 +11385,18 @@ const tsumData = [
     "name_en": "Screwed Head Pete",
     "name": "螺絲頭皮特",
     "image": "block_peteh2024_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_label": "win_tsumskill_peteh2024.png",
-	"skill_desc": [
-	 "效果範圍：XS 所需Tsum數：22",
-	 "效果範圍：S 所需Tsum數：21",
-	 "效果範圍：M 所需Tsum數：20",
-	 "效果範圍：L 所需Tsum數：19",
-	 "效果範圍：XL 所需Tsum數：18",
-	 "效果範圍：XXL 所需Tsum數：17",
+  "skill_desc": [
+   "效果範圍：XS 所需Tsum數：22",
+   "效果範圍：S 所需Tsum數：21",
+   "效果範圍：M 所需Tsum數：20",
+   "效果範圍：L 所需Tsum數：19",
+   "效果範圍：XL 所需Tsum數：18",
+   "效果範圍：XXL 所需Tsum數：17",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1759248000],
   "returndate" : []
   },
@@ -10185,16 +11405,18 @@ const tsumData = [
     "name_en": "Wild Fang Goofy",
     "name": "野性獠牙高飛",
     "image": "block_goofyh2024_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["綠色Tsum", "男孩Tsum", "狗狗Tsum"],
     "skill_label": "win_tsumskill_goofyh2024.png",
-	"skill_desc": [
-	 "所需Tsum數：22 時間：4.5秒",
-	 "所需Tsum數：21 時間：5秒",
-	 "所需Tsum數：20 時間：5.5秒",
-	 "所需Tsum數：19 時間：6秒",
-	 "所需Tsum數：18 時間：6.5秒",
-	 "所需Tsum數：17 時間：7秒",
+  "skill_desc": [
+   "所需Tsum數：22 時間：4.5秒",
+   "所需Tsum數：21 時間：5秒",
+   "所需Tsum數：20 時間：5.5秒",
+   "所需Tsum數：19 時間：6秒",
+   "所需Tsum數：18 時間：6.5秒",
+   "所需Tsum數：17 時間：7秒",
     ],
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1759248000],
   "returndate" : []
   },
@@ -10203,16 +11425,18 @@ const tsumData = [
     "name_en": "Devil Donald",
     "name": "惡魔唐老鴨",
     "image": "block_donaldh2024_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_donaldh2024.png",
-	"skill_desc": [
-	 "所需Tsum數：20 時間：3.5秒",
-	 "所需Tsum數：19 時間：3.9秒",
-	 "所需Tsum數：18 時間：4.3秒",
-	 "所需Tsum數：17 時間：4.7秒",
-	 "所需Tsum數：16 時間：5.1秒",
-	 "所需Tsum數：15 時間：5.5秒",
+  "skill_desc": [
+   "所需Tsum數：20 時間：3.5秒",
+   "所需Tsum數：19 時間：3.9秒",
+   "所需Tsum數：18 時間：4.3秒",
+   "所需Tsum數：17 時間：4.7秒",
+   "所需Tsum數：16 時間：5.1秒",
+   "所需Tsum數：15 時間：5.5秒",
     ],
-	"skill_cost" : [1,1,1,2,3,3],
+  "skill_cost" : [1,1,1,2,3,3],
   "startdate" : [1759248000],
   "returndate" : []
   },
@@ -10221,16 +11445,18 @@ const tsumData = [
     "name_en": "Incognito Jasmine",
     "name": "微服出巡茉莉公主",
     "image": "block_jasminet_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_jasminet.png",
-	"skill_desc": [
-	 "範圍：XS 所需Tsum數：23",
-	 "範圍：S 所需Tsum數：22",
-	 "範圍：M 所需Tsum數：21",
-	 "範圍：L 所需Tsum數：20",
-	 "範圍：XL 所需Tsum數：19",
-	 "範圍：XXL 所需Tsum數：18",
+  "skill_desc": [
+   "範圍：XS 所需Tsum數：23",
+   "範圍：S 所需Tsum數：22",
+   "範圍：M 所需Tsum數：21",
+   "範圍：L 所需Tsum數：20",
+   "範圍：XL 所需Tsum數：19",
+   "範圍：XXL 所需Tsum數：18",
     ],
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1761926400],
   "returndate" : []
   },
@@ -10239,16 +11465,18 @@ const tsumData = [
     "name_en": "Iago",
     "name": "艾格",
     "image": "block_iago_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黃色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_iago.png",
-	"skill_desc": [
-	 "範圍：XS 所需Tsum數：25",
-	 "範圍：S 所需Tsum數：24",
-	 "範圍：M 所需Tsum數：23",
-	 "範圍：L 所需Tsum數：22",
-	 "範圍：XL 所需Tsum數：21",
-	 "範圍：XXL 所需Tsum數：20",
+  "skill_desc": [
+   "範圍：XS 所需Tsum數：25",
+   "範圍：S 所需Tsum數：24",
+   "範圍：M 所需Tsum數：23",
+   "範圍：L 所需Tsum數：22",
+   "範圍：XL 所需Tsum數：21",
+   "範圍：XXL 所需Tsum數：20",
     ],
-	"skill_cost" : [1,1,2,4,7,14],
+  "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1761926400],
   "returndate" : "permanent"
   },
@@ -10257,16 +11485,18 @@ const tsumData = [
     "name_en": "Cave of Wonders",
     "name": "彩虹洞穴",
     "image": "block_cow_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["藍色Tsum", "貓科Tsum"],
     "skill_label": "win_tsumskill_cow.png",
-	"skill_desc": [
-	 "範圍：XS 所需Tsum數：17",
-	 "範圍：S 所需Tsum數：16",
-	 "範圍：M 所需Tsum數：14",
-	 "範圍：L 所需Tsum數：12",
-	 "範圍：XL 所需Tsum數：10",
-	 "範圍：XXL 所需Tsum數：8",
+  "skill_desc": [
+   "範圍：XS 所需Tsum數：17",
+   "範圍：S 所需Tsum數：16",
+   "範圍：M 所需Tsum數：14",
+   "範圍：L 所需Tsum數：12",
+   "範圍：XL 所需Tsum數：10",
+   "範圍：XXL 所需Tsum數：8",
     ],
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1761926400],
   "returndate" : "permanent"
   },
@@ -10275,16 +11505,18 @@ const tsumData = [
     "name_en": "Aladdin & Genie",
     "name": "阿拉丁＆精靈",
     "image": "block_aladdinpr_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "茶色Tsum", "水藍色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_aladdinpr.png",
-	"skill_desc": [
-	 "次數：2 ^851w^消除數：17 ^852w^時間：4秒",
-	 "次數：2 ^851w^消除數：18 ^852w^時間：4.4秒",
-	 "次數：2 ^851w^消除數：19 ^852w^時間：4.8秒",
-	 "次數：2 ^851w^消除數：20 ^852w^時間：5.2秒",
-	 "次數：2 ^851w^消除數：22 ^852w^時間：5.6秒",
-	 "次數：2 ^851w^消除數：24 ^852w^時間：6秒",
+  "skill_desc": [
+   "次數：2 ^851w^消除數：17 ^852w^時間：4秒",
+   "次數：2 ^851w^消除數：18 ^852w^時間：4.4秒",
+   "次數：2 ^851w^消除數：19 ^852w^時間：4.8秒",
+   "次數：2 ^851w^消除數：20 ^852w^時間：5.2秒",
+   "次數：2 ^851w^消除數：22 ^852w^時間：5.6秒",
+   "次數：2 ^851w^消除數：24 ^852w^時間：6秒",
     ],
-	"skill_cost" : [1,1,2,4,8,20],
+  "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1761926400],
   "returndate" : []
   },
@@ -10293,16 +11525,18 @@ const tsumData = [
     "name_en": "Evil Jafar",
     "name": "邪惡賈方",
     "image": "block_jafarw_l.png",
+    "series": "阿拉丁",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_jafarw.png",
-	"skill_desc": [
-	 "效果範圍：XS",
-	 "效果範圍：S",
-	 "效果範圍：M",
-	 "效果範圍：L",
-	 "效果範圍：XL",
-	 "效果範圍：XXL",
+  "skill_desc": [
+   "效果範圍：XS",
+   "效果範圍：S",
+   "效果範圍：M",
+   "效果範圍：L",
+   "效果範圍：XL",
+   "效果範圍：XXL",
     ],
-	"skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1761926400],
   "returndate" : []
   },
@@ -10311,6 +11545,8 @@ const tsumData = [
     "name_en": "Baymax 2.0 & Hiro",
     "name": "杯麵2.0＆阿廣",
     "image": "block_baymaxpr_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["紅色Tsum", "紫色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_baymaxpr.png",
   "skill_desc": [
    "所需Tsum數：35  效果範圍：XS",
@@ -10329,6 +11565,8 @@ const tsumData = [
     "name_en": "Baymax & Mochi",
     "name": "杯麵＆麻糬",
     "image": "block_mochipr_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_label": "win_tsumskill_mochipr.png",
   "skill_desc": [
    "^833w^所需Tsum數：34  ^834w^ 所需Tsum數：18 ",
@@ -10347,6 +11585,8 @@ const tsumData = [
     "name_en": "Go Go Tomago",
     "name": "神行蛋葆",
     "image": "block_gogo_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_gogo.png",
   "skill_desc": [
   "範圍：XS 所需Tsum數：22 ",
@@ -10365,6 +11605,8 @@ const tsumData = [
     "name_en": "Wasabi",
     "name": "芥末",
     "image": "block_wasabi_l.png",
+    "series": "大英雄天團",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "綠色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_wasabi.png",
   "skill_desc": [
   "範圍：XS 所需Tsum數：30 ",
@@ -10383,6 +11625,8 @@ const tsumData = [
     "name_en": "Final Battle Captain Hook",
     "name": "最終決戰虎克船長",
     "image": "block_hook2_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_hook2.png",
   "skill_desc": [
   "效果範圍：XS",
@@ -10401,6 +11645,8 @@ const tsumData = [
     "name_en": "Smee",
     "name": "海盜史密",
     "image": "block_smee_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["白色Tsum", "紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_smee.png",
   "skill_desc": [
   "消除次數：2",
@@ -10419,6 +11665,8 @@ const tsumData = [
     "name_en": "Captain Peter Pan",
     "name": "船長彼得潘",
     "image": "block_peterpan2_l.png",
+    "series": "小飛俠彼得潘",
+    "tsumtype": ["紅色Tsum", "橘色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_peterpan2.png",
   "skill_desc": [
   "所需Tsum數：23 時間：4秒",
@@ -10437,6 +11685,8 @@ const tsumData = [
     "name_en": "Donald+",
     "name": "唐老鴨+",
     "image": "block_donaldplus_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "plus_pin" : ["wappen_donaldplus_1_on.png","wappen_donaldplus_2_on.png"],
     "plus_pin_label" : ["wappen_donaldplus_1_txt.png","wappen_donaldplus_2_txt.png"],
     "skill_label": "win_tsumskill_donaldplus.png",
@@ -10457,6 +11707,8 @@ const tsumData = [
     "name_en": "Mickey+",
     "name": "米奇+",
     "image": "block_mickeyplus_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum"],
     "plus_pin" : ["wappen_mickeyplus_1_on.png"],
     "plus_pin_label" : ["wappen_mickeyplus_1_txt.png"],
     "skill_label": "win_tsumskill_mickeyplus.png",
@@ -10477,6 +11729,8 @@ const tsumData = [
     "name_en": "Alice+",
     "name": "愛麗絲+",
     "image": "block_aliceplus_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["黃色Tsum", "女孩Tsum"],
     "plus_pin" : ["wappen_aliceplus_1_on.png","wappen_aliceplus_2_on.png"],
     "plus_pin_label" : ["wappen_aliceplus_1_txt.png","wappen_aliceplus_2_txt.png"],
     "skill_label": "win_tsumskill_aliceplus.png",
@@ -10497,6 +11751,8 @@ const tsumData = [
     "name_en": "Cheshire Cat(Charm)",
     "name": "妙妙貓（飾品）",
     "image": "block_cheshirecatcm_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["紅色Tsum", "粉紅色Tsum", "男孩Tsum", "貓科Tsum"],
     "skill_label": "win_tsumskill_cheshirecatcm.png",
   "skill_desc": [
   "所需Tsum數：25 時間：5秒",
@@ -10515,6 +11771,8 @@ const tsumData = [
     "name_en": "Mad Hatter(Charm)",
     "name": "瘋帽子（飾品）",
     "image": "block_madhattercm_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "綠色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_madhattercm.png",
   "skill_desc": [
   "消除數：〜17",
@@ -10533,6 +11791,8 @@ const tsumData = [
     "name_en": "White Rabbit(Charm)",
     "name": "大白兔（飾品）",
     "image": "block_whiterabbitcm_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "男孩Tsum", "兔子Tsum"],
     "skill_label": "win_tsumskill_whiterabbitcm.png",
   "skill_desc": [
   "範圍：XS 所需Tsum數：27",
@@ -10551,6 +11811,8 @@ const tsumData = [
     "name_en": "Enraged Queen of Hearts",
     "name": "憤怒紅心皇后",
     "image": "block_queenofhearts3_l.png",
+    "series": "愛麗絲夢遊仙境",
+    "tsumtype": ["紅色Tsum", "粉紅色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_queenofhearts3.png",
   "skill_desc": [
   "所需Tsum數：23 時間：5秒",
@@ -10569,14 +11831,16 @@ const tsumData = [
     "name_en": "Kotu",
     "name": "可嘟",
     "image": "block_kotu_l.png",
+    "series": "海洋奇緣",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_kotu.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
     ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1772438400],
@@ -10587,14 +11851,16 @@ const tsumData = [
     "name_en": "Wayfinder Moana",
     "name": "領導者莫娜",
     "image": "block_moana3_l.png",
+    "series": "海洋奇緣",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_moana3.png",
   "skill_desc": [
-	"所需Tsum數：25 時間：4.5秒",
-	"所需Tsum數：24 時間：5.2秒",
-	"所需Tsum數：23 時間：6.4秒",
-	"所需Tsum數：22 時間：7.6秒",
-	"所需Tsum數：21 時間：8.8秒",
-	"所需Tsum數：20 時間：10秒",
+  "所需Tsum數：25 時間：4.5秒",
+  "所需Tsum數：24 時間：5.2秒",
+  "所需Tsum數：23 時間：6.4秒",
+  "所需Tsum數：22 時間：7.6秒",
+  "所需Tsum數：21 時間：8.8秒",
+  "所需Tsum數：20 時間：10秒",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1772438400],
@@ -10605,14 +11871,16 @@ const tsumData = [
     "name_en": "Envy",
     "name": "阿慕",
     "image": "block_envy_l.png",
+    "series": "腦筋急轉彎",
+    "tsumtype": ["藍色Tsum", "綠色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_envy.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,7,14],
   "startdate" : [1772438400],
@@ -10623,14 +11891,16 @@ const tsumData = [
     "name_en": "Anxiety",
     "name": "阿焦",
     "image": "block_anxiety_l.png",
+    "series": "腦筋急轉彎",
+    "tsumtype": ["橘色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_anxiety.png",
   "skill_desc": [
     "範圍：XS 時間：7.5秒",
-	"範圍：S 時間：8秒",
-	"範圍：M 時間：8.5秒",
-	"範圍：L 時間：9秒",
-	"範圍：XL 時間：9.5秒",
-	"範圍：XXL 時間：10秒",
+  "範圍：S 時間：8秒",
+  "範圍：M 時間：8.5秒",
+  "範圍：L 時間：9秒",
+  "範圍：XL 時間：9.5秒",
+  "範圍：XXL 時間：10秒",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1772438400],
@@ -10641,16 +11911,18 @@ const tsumData = [
     "name_en": "Lightning McQueen+",
     "name": "閃電麥坤+",
     "image": "block_mcqueenplus_l.png",
+    "series": "汽車總動員",
+    "tsumtype": ["紅色Tsum", "男孩Tsum"],
     "plus_pin" : ["wappen_mcqueenplus_1_on.png"],
     "plus_pin_label" : ["wappen_mcqueenplus_1_txt.png"],
     "skill_label": "win_tsumskill_mcqueenplus.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1772438400],
@@ -10661,14 +11933,16 @@ const tsumData = [
     "name_en": "Roxas",
     "name": "洛克薩斯",
     "image": "block_roxas_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_roxas.png",
   "skill_desc": [
     "所需Tsum數：28  效果範圍：XS",
-	"所需Tsum數：26  效果範圍：S",
-	"所需Tsum數：24  效果範圍：M",
-	"所需Tsum數：22  效果範圍：L",
-	"所需Tsum數：20  效果範圍：XL",
-	"所需Tsum數：18  效果範圍：XXL",
+  "所需Tsum數：26  效果範圍：S",
+  "所需Tsum數：24  效果範圍：M",
+  "所需Tsum數：22  效果範圍：L",
+  "所需Tsum數：20  效果範圍：XL",
+  "所需Tsum數：18  效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1775026800],
@@ -10679,14 +11953,16 @@ const tsumData = [
     "name_en": "Xion",
     "name": "席恩",
     "image": "block_xion_l.png",
+    "series": "王國之心",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_xion.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1775026800],
@@ -10697,14 +11973,16 @@ const tsumData = [
     "name_en": "Riku KH3 Ver.",
     "name": "王國之心3里克",
     "image": "block_riku3_l.png",
+    "series": "王國之心",
+    "tsumtype": ["白色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_riku3.png",
   "skill_desc": [
     "所需Tsum數：21 時間：3.5秒",
-	"所需Tsum數：20 時間：3.8秒",
-	"所需Tsum數：19 時間：4.1秒",
-	"所需Tsum數：18 時間：4.4秒",
-	"所需Tsum數：17 時間：4.7秒",
-	"所需Tsum數：16 時間：5秒",
+  "所需Tsum數：20 時間：3.8秒",
+  "所需Tsum數：19 時間：4.1秒",
+  "所需Tsum數：18 時間：4.4秒",
+  "所需Tsum數：17 時間：4.7秒",
+  "所需Tsum數：16 時間：5秒",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1775026800],
@@ -10715,14 +11993,16 @@ const tsumData = [
     "name_en": "Kairi KH3 Ver.",
     "name": "王國之心3凱莉",
     "image": "block_kairi2_l.png",
+    "series": "王國之心",
+    "tsumtype": ["紅色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_kairi2.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1775026800],
@@ -10733,16 +12013,18 @@ const tsumData = [
     "name_en": "Pluto+",
     "name": "布魯托+",
     "image": "block_plutoplus_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "男孩Tsum", "狗狗Tsum"],
     "plus_pin" : ["wappen_plutoplus_1_on.png"],
     "plus_pin_label" : ["wappen_plutoplus_1_txt.png"],
     "skill_label": "win_tsumskill_plutoplus.png",
   "skill_desc": [
-	"效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：XS",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1775026800],
@@ -10753,14 +12035,16 @@ const tsumData = [
     "name_en": "Rey & BB-8",
     "name": "芮＆BB-8",
     "image": "block_reypr_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "男孩Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_reypr.png",
   "skill_desc": [
     "範圍：XS ^872w^時間：4秒",
-	"範圍：S ^872w^時間：4.4秒",
-	"範圍：M ^872w^時間：4.8秒",
-	"範圍：L ^872w^時間：5.2秒",
-	"範圍：XL ^872w^時間：5.6秒",
-	"範圍：XXL ^872w^時間：6秒",
+  "範圍：S ^872w^時間：4.4秒",
+  "範圍：M ^872w^時間：4.8秒",
+  "範圍：L ^872w^時間：5.2秒",
+  "範圍：XL ^872w^時間：5.6秒",
+  "範圍：XXL ^872w^時間：6秒",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1777564800],
@@ -10771,14 +12055,16 @@ const tsumData = [
     "name_en": "Poe Dameron",
     "name": "波戴姆倫",
     "image": "block_poedameron_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_poedameron.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：25 ",
-	"範圍：S 所需Tsum數：24 ",
-	"範圍：M 所需Tsum數：23 ",
-	"範圍：L 所需Tsum數：22 ",
-	"範圍：XL 所需Tsum數：21 ",
-	"範圍：XXL 所需Tsum數：20 ",
+  "範圍：S 所需Tsum數：24 ",
+  "範圍：M 所需Tsum數：23 ",
+  "範圍：L 所需Tsum數：22 ",
+  "範圍：XL 所需Tsum數：21 ",
+  "範圍：XXL 所需Tsum數：20 ",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1777564800],
@@ -10789,14 +12075,16 @@ const tsumData = [
     "name_en": "Snoke",
     "name": "史諾克",
     "image": "block_snoke_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_snoke.png",
   "skill_desc": [
     "所需Tsum數：23 時間：5秒",
-	"所需Tsum數：22 時間：5.6秒",
-	"所需Tsum數：21 時間：6.2秒",
-	"所需Tsum數：29 時間：6.8秒",
-	"所需Tsum數：19 時間：7.4秒",
-	"所需Tsum數：18 時間：8秒",
+  "所需Tsum數：22 時間：5.6秒",
+  "所需Tsum數：21 時間：6.2秒",
+  "所需Tsum數：29 時間：6.8秒",
+  "所需Tsum數：19 時間：7.4秒",
+  "所需Tsum數：18 時間：8秒",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1777564800],
@@ -10807,14 +12095,16 @@ const tsumData = [
     "name_en": "Elite Praetorian Guard",
     "name": "菁英禁衛軍",
     "image": "block_epg_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["紅色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_epg.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,16],
   "startdate" : [1777564800],
@@ -10825,16 +12115,18 @@ const tsumData = [
     "name_en": "Stormtrooper+",
     "name": "風暴兵+",
     "image": "block_stormtrooperplus_l.png",
+    "series": "星際大戰",
+    "tsumtype": ["白色Tsum", "反派Tsum", "男孩Tsum"],
     "plus_pin" : ["wappen_stormtrooperplus_1_on.png"],
     "plus_pin_label" : ["wappen_stormtrooperplus_1_txt.png"],
     "skill_label": "win_tsumskill_stormtrooperplus.png",
   "skill_desc": [
     "效果範圍：XS",
-	"效果範圍：S",
-	"效果範圍：M",
-	"效果範圍：L",
-	"效果範圍：XL",
-	"效果範圍：XXL",
+  "效果範圍：S",
+  "效果範圍：M",
+  "效果範圍：L",
+  "效果範圍：XL",
+  "效果範圍：XXL",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1777564800],
@@ -10845,16 +12137,18 @@ const tsumData = [
     "name_en": "Ariel+",
     "name": "艾莉兒+",
     "image": "block_arielplus_l.png",
+    "series": "小美人魚",
+    "tsumtype": ["紅色Tsum", "公主Tsum", "女孩Tsum"],
     "plus_pin" : ["wappen_arielplus_1_on.png","wappen_arielplus_2_on.png"],
     "plus_pin_label" : ["wappen_arielplus_1_txt.png","wappen_arielplus_2_txt.png"],
     "skill_label": "win_tsumskill_arielplus.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：22",
-	"範圍：S 所需Tsum數：21",
-	"範圍：M 所需Tsum數：20",
-	"範圍：L 所需Tsum數：19",
-	"範圍：XL 所需Tsum數：18",
-	"範圍：XXL 所需Tsum數：17",
+  "範圍：S 所需Tsum數：21",
+  "範圍：M 所需Tsum數：20",
+  "範圍：L 所需Tsum數：19",
+  "範圍：XL 所需Tsum數：18",
+  "範圍：XXL 所需Tsum數：17",
   ],
   "skill_cost" : [1,1,2,4,8,20],
   "startdate" : [1780243200],
@@ -10865,6 +12159,8 @@ const tsumData = [
     "name_en": "Beach Donald & Mickey",
     "name": "海洋唐老鴨＆米奇",
     "image": "block_donaldtf2025pr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "藍色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_donaldtf2025pr.png",
   "skill_desc": [
     "^893w^所需Tsum數：16 ^893w^^894w^效果範圍：XS",
@@ -10883,6 +12179,8 @@ const tsumData = [
     "name_en": "Beach Donald(Charm)",
     "name": "海洋唐老鴨（飾品）",
     "image": "block_donaldtf2025cm_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "藍色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_donaldtf2025cm.png",
   "skill_desc": [
     "所需Tsum數：21 時間：4秒",
@@ -10901,6 +12199,8 @@ const tsumData = [
     "name_en": "Beach Stitch",
     "name": "海洋史迪奇",
     "image": "block_stitchtf2025_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_stitchtf2025.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -10919,6 +12219,8 @@ const tsumData = [
     "name_en": "Beach Daisy",
     "name": "海洋黛絲",
     "image": "block_daisytf2025_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "黃色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_daisytf2025.png",
   "skill_desc": [
     "消除數：15～",
@@ -10937,6 +12239,8 @@ const tsumData = [
     "name_en": "Tiara Minnie+",
     "name": "頭冠米妮+",
     "image": "block_minnie12thplus_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "女孩Tsum"],
     "plus_pin" : ["wappen_minnie12thplus_1_on.png"],
     "plus_pin_label" : ["wappen_minnie12thplus_1_txt.png"],
     "skill_label": "win_tsumskill_minnie12thplus.png",
@@ -10954,6 +12258,8 @@ const tsumData = [
     "name_en": "Dapper Hat Mickey",
     "name": "時髦帽子米奇",
     "image": "block_mickey12th_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_mickey12th.png",
   "skill_desc": [
     "所需Tsum數：25 消除數：15～",
@@ -10972,6 +12278,8 @@ const tsumData = [
     "name_en": "Coronation Day Elsa",
     "name": "加冕典禮艾莎",
     "image": "block_elsaco_l.png",
+    "series": "冰雪奇緣",
+    "tsumtype": ["公主Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_elsaco.png",
   "skill_desc": [
     "時間：5秒",
@@ -10990,6 +12298,8 @@ const tsumData = [
     "name_en": "Formal Suit Beast",
     "name": "禮服野獸",
     "image": "block_beastda_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["茶色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_beastda.png",
   "skill_desc": [
     "範圍：XS 時間：7秒",
@@ -11008,6 +12318,8 @@ const tsumData = [
     "name_en": "Rapunzel+",
     "name": "樂佩+",
     "image": "block_rapunzelplus_l.png",
+    "series": "魔髮奇緣",
+    "tsumtype": ["黃色Tsum", "公主Tsum", "女孩Tsum"],
     "plus_pin" : ["wappen_rapunzelplus_1_on.png","wappen_rapunzelplus_2_on.png"],
     "plus_pin_label" : ["wappen_rapunzelplus_1_txt.png","wappen_rapunzelplus_2_txt.png"],
     "skill_label": "win_tsumskill_rapunzelplus.png",
@@ -11028,6 +12340,8 @@ const tsumData = [
     "name_en": "Daisy+",
     "name": "黛絲+",
     "image": "block_daisyplus_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "女孩Tsum"],
     "plus_pin" : ["wappen_daisyplus_1_on.png"],
     "plus_pin_label" : ["wappen_daisyplus_1_txt.png"],
     "skill_label": "win_tsumskill_daisyplus.png",
@@ -11048,6 +12362,8 @@ const tsumData = [
     "name_en": "Masquerade Attire Malleus",
     "name": "化妝舞會禮服梅琉斯",
     "image": "block_malleusmd_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["黑色Tsum", "王子Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_malleusmd.png",
   "skill_desc": [
     "所需Tsum數：23 時間：4秒",
@@ -11066,6 +12382,8 @@ const tsumData = [
     "name_en": "Masquerade Attire Azul",
     "name": "化妝舞會禮服烏斯爾",
     "image": "block_azulmd_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_azulmd.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：27",
@@ -11084,6 +12402,8 @@ const tsumData = [
     "name_en": "Masquerade Attire Idia",
     "name": "化妝舞會禮服伊帝亞",
     "image": "block_idiamd_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_idiamd.png",
   "skill_desc": [
     "所需Tsum數：23 消除數：1～",
@@ -11102,6 +12422,8 @@ const tsumData = [
     "name_en": "Jack Howl",
     "name": "傑克・霍爾",
     "image": "block_jackhowl_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "茶色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_jackhowl.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11120,6 +12442,8 @@ const tsumData = [
     "name_en": "Ruggie Bucchi",
     "name": "勒吉・布奇",
     "image": "block_ruggie_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_ruggie.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11138,6 +12462,8 @@ const tsumData = [
     "name_en": "Simba+",
     "name": "辛巴+",
     "image": "block_simbaplus_l.png",
+    "series": "獅子王",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "王子Tsum", "男孩Tsum", "貓科Tsum"],
     "plus_pin" : ["wappen_simbaplus_1_on.png"],
     "plus_pin_label" : ["wappen_simbaplus_1_txt.png"],
     "skill_label": "win_tsumskill_simbaplus.png",
@@ -11158,6 +12484,8 @@ const tsumData = [
     "name_en": "Hoodie Chip",
     "name": "帽T奇奇",
     "image": "block_chipkp_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["茶色Tsum", "灰色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_chipkp.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11176,6 +12504,8 @@ const tsumData = [
     "name_en": "Sunglasses Dale",
     "name": "墨鏡蒂蒂",
     "image": "block_dalekp_l.png",
+    "series": "奇奇與蒂蒂",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "茶色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_dalekp.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11194,6 +12524,8 @@ const tsumData = [
     "name_en": "Goofy+",
     "name": "高飛+",
     "image": "block_goofyplus_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "男孩Tsum", "狗狗Tsum"],
     "plus_pin" : ["wappen_goofyplus_1_on.png"],
     "plus_pin_label" : ["wappen_goofyplus_1_txt.png"],
     "skill_label": "win_tsumskill_goofyplus.png",
@@ -11214,6 +12546,8 @@ const tsumData = [
     "name_en": "Lorcana Mickey",
     "name": "洛卡納米奇",
     "image": "block_mickeyink_l.png",
+    "series": "Lorcana",
+    "tsumtype": ["黑色Tsum", "茶色Tsum", "紅色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_mickeyink.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11232,6 +12566,8 @@ const tsumData = [
     "name_en": "Lorcana Aurora(Shift)",
     "name": "洛卡納愛洛公主（變身）",
     "image": "block_auroraink_l.png",
+    "series": "Lorcana",
+    "tsumtype": ["黑色Tsum", "藍色Tsum", "黃色Tsum", "茶色Tsum", "公主Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_auroraink.png",
   "skill_desc": [
     "所需Tsum數：23 變化Tsum數：2～4",
@@ -11250,6 +12586,8 @@ const tsumData = [
     "name_en": "Lorcana Tinker Bell(Shift)",
     "name": "洛卡納小叮噹（變身）",
     "image": "block_tinkerbellink_l.png",
+    "series": "Lorcana",
+    "tsumtype": ["黑色Tsum", "黃色Tsum", "灰色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_tinkerbellink.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：25",
@@ -11268,6 +12606,8 @@ const tsumData = [
     "name_en": "Disney Villains (Set)",
     "name": "迪士尼反派（組合）",
     "image": "block_villainsset_l.png",
+    "series": "迪士尼反派",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "藍色Tsum", "茶色Tsum", "綠色Tsum", "紫色Tsum", "反派Tsum", "男孩Tsum", "女孩Tsum", "貓科Tsum"],
     "skill_label": "win_tsumskill_villainsset.png",
   "skill_desc": [
     "所需Tsum數：45 效果範圍：XS",
@@ -11286,6 +12626,8 @@ const tsumData = [
     "name_en": "Scheming Gaston",
     "name": "詭計多端的加斯頓",
     "image": "block_gaston3_l.png",
+    "series": "美女與野獸",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_gaston3.png",
   "skill_desc": [
     "我的Tsum出現率：50%",
@@ -11304,6 +12646,8 @@ const tsumData = [
     "name_en": "Epel Felmier",
     "name": "艾培爾・菲米耶",
     "image": "block_epel_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["紫色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_epel.png",
   "skill_desc": [
     "效果時間：4秒",
@@ -11322,6 +12666,8 @@ const tsumData = [
     "name_en": "Ortho Shroud",
     "name": "奧索・索羅德",
     "image": "block_ortho_l.png",
+    "series": "扭曲仙境",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_ortho.png",
   "skill_desc": [
     "範圍：S 次數：1",
@@ -11342,6 +12688,8 @@ const tsumData = [
     "plus_pin" : ["wappen_cruellaplus_1_on.png","wappen_cruellaplus_2_on.png"],
     "plus_pin_label" : ["wappen_cruellaplus_1_txt.png","wappen_cruellaplus_2_txt.png"],
     "image": "block_cruellaplus_l.png",
+    "series": "101忠狗",
+    "tsumtype": ["白色Tsum", "黑色Tsum", "反派Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_cruellaplus.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11360,6 +12708,8 @@ const tsumData = [
     "name_en": "Lady Tremaine+",
     "name": "特曼尼夫人+",
     "image": "block_tremaineplus_l.png",
+    "series": "仙履奇緣",
+    "tsumtype": ["灰色Tsum", "反派Tsum", "女孩Tsum"],
     "plus_pin" : "wappen_tremaineplus_1_on.png",
     "plus_pin_label" : "wappen_tremaineplus_1_txt.png",
     "skill_label": "win_tsumskill_tremaineplus.png",
@@ -11380,6 +12730,8 @@ const tsumData = [
     "name_en": "Magic Wand Minnie(Change)",
     "name": "魔法棒米妮（變身）",
     "image": "block_minnietrans_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黑色Tsum", "紅色Tsum", "粉紅色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_minnietrans.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11398,6 +12750,8 @@ const tsumData = [
     "name_en": "Magic Wand Daisy(Change)",
     "name": "魔法棒黛絲（變身）",
     "image": "block_daisytrans_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["白色Tsum", "紫色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_daisytrans.png",
   "skill_desc": [
     "所需Tsum數：21 變化Tsum數：2～3",
@@ -11416,6 +12770,8 @@ const tsumData = [
     "name_en": "Magic Wand Clarice(Change)",
     "name": "魔法棒克莉絲（變身）",
     "image": "block_claricetrans_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["黃色Tsum", "茶色Tsum", "綠色Tsum", "女孩Tsum"],
     "skill_label": "win_tsumskill_claricetrans.png",
   "skill_desc": [
     "效果範圍：XS",
@@ -11434,6 +12790,8 @@ const tsumData = [
     "name_en": "Mysterious Knight Mickey",
     "name": "神祕騎士米奇",
     "image": "block_mickeyr_l.png",
+    "series": "米奇與好朋友",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_label": "win_tsumskill_mickeyr.png",
   "skill_desc": [
     "範圍：XS 所需Tsum數：23",
@@ -11452,6 +12810,8 @@ const tsumData = [
     "name_en": "Mabel+",
     "name": "梅寶+",
     "image": "block_mabelplus_l.png",
+    "series": "當我變成海狸",
+    "tsumtype": ["茶色Tsum", "女孩Tsum"],
     "plus_pin" : "wappen_mabelplus_1_on.png",
     "plus_pin_label" : "wappen_mabelplus_1_txt.png",
     "skill_label": "win_tsumskill_mabelplus.png",
