@@ -134,6 +134,24 @@
     #fclear { display: block; margin: 0 0 4px 70px; padding-left: 0; }
     #fclear[hidden] { display: none; }
 
+    #langRow { margin: 0 0 6px; text-align: right; }
+    #langRow[hidden] { display: none; }
+    #langBtn {
+      padding: 2px 10px;
+      font: inherit;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.5;
+      color: var(--text);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #langBtn:hover:not(:disabled) { border-color: var(--accent); }
+    #langBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+    #langBtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
     #regionBtn {
       margin-left: auto;
       min-width: 52px;
@@ -427,6 +445,7 @@
   </div>
 
   <div id="filterPanel">
+    <div id="langRow"><button type="button" id="langBtn"></button></div>
     <div class="fgroup" id="seriesGroup">
       <div class="fgroup-label">Series</div>
       <div class="chips" id="seriesChips"></div>
@@ -451,14 +470,28 @@
   <img id="scrollBottomBtn" class="scroll-button" src="https://i.postimg.cc/MGpDRDhs/win-arrow-down.png" alt="Bottom" />
 
   <script src="tsum.js"></script>
+  <script src="tsum_en.js"></script>
   <script src="tsum_jp.js"></script>
   <script src="images.js"></script>
   <script src="skilllabel.js"></script>
   <script src="skilllabeljp.js"></script>
+  <script src="skilllabelen.js"></script>
   <script src="littletsum.js"></script>
   <script src="pluspin.js"></script>
 
   <script>
+    // ---------- 介面文字（GL 切到 EN 時使用英文） ----------
+    const I18N = {
+      tw: { placeholder: "🔍 輸入Tsum名稱...", empty: "找不到符合的 Tsum", series: "系列",
+            more: "展開 ▾", less: "收合 ▴", clear: "✕ 清除分類", none: "暫無",
+            noSkill: "暫無技能資料", skillAlt: "技能" },
+      en: { placeholder: "🔍 Search Tsum name...", empty: "No matching Tsum found", series: "Series",
+            more: "Expand ▾", less: "Collapse ▴", clear: "✕ Clear filters", none: "N/A",
+            noSkill: "No skill data", skillAlt: "Skill" }
+    };
+    let uiLang = "tw";
+    const ui = () => I18N[uiLang];
+
     const imageMap = images;
     const pinMap = typeof wappen !== "undefined" ? wappen : {};
     const TICKET_IMG = "https://i.postimg.cc/nzcz0QBq/win-i-ticket-S.png";
@@ -623,9 +656,9 @@
 
       if (labelItem) {
         const ks = 15 / labelItem.nh;   // cqw per px
-        row.innerHTML = `<img class="label-img" src="${labelItem.url}" alt="技能" style="--w:${labelItem.w};--ks:${ks}">`;
+        row.innerHTML = `<img class="label-img" src="${labelItem.url}" alt="${ui().skillAlt}" style="--w:${labelItem.w};--ks:${ks}">`;
       } else {
-        row.innerHTML = `<span class="none">暫無</span>`;
+        row.innerHTML = `<span class="none">${ui().none}</span>`;
       }
 
       const plusBox = modalBox.querySelector(".modal-plus");
@@ -644,12 +677,20 @@
 
     // ---------- Skill Label 來源 ----------
     // JP 版只從 skilllabeljp.js (skillLabelMapJP) 讀取；GL 版只從 skilllabel.js (skillLabelMap) 讀取，兩邊不互相 fallback。
+    // GL 切到 EN 時改讀 skilllabelen.js (skillLabelMapEN)；EN 圖裡找不到的 key 才退回 TW 圖。
     // JP 資料的 skill_label 若是空的，就用 image 名稱推出 win_tsumskill_<名稱>.png 去找。
     function getSkillLabelSrc(tsum) {
       const isJP = region === "jp";
-      const map = isJP
+      const isEN = !isJP && glLang === "en";
+      const map = isEN
+        ? (typeof skillLabelMapEN !== "undefined" ? skillLabelMapEN : null)
+        : isJP
         ? (typeof skillLabelMapJP !== "undefined" ? skillLabelMapJP : null)
         : (typeof skillLabelMap !== "undefined" ? skillLabelMap : null);
+      if (!map && isEN) {
+        console.error("skillLabelMapEN 未定義：請確認 skilllabelen.js 第一行是 const skillLabelMapEN = {，暫時使用中文圖");
+        return typeof skillLabelMap !== "undefined" && tsum.skill_label ? skillLabelMap[tsum.skill_label] : undefined;
+      }
       if (!map) {
         console.error(isJP
           ? "skillLabelMapJP 未定義：請確認 skilllabeljp.js 第一行是 const skillLabelMapJP = {"
@@ -660,6 +701,10 @@
       if (!key && isJP) {
         const m = /^block_(.+?)_l\.png$/.exec(tsum.image || "");
         if (m) key = `win_tsumskill_${m[1]}.png`;
+      }
+      if (isEN && key && !map[key] && typeof skillLabelMap !== "undefined") {
+        console.warn("skilllabelen.js 找不到 " + key + "，暫時用中文圖");
+        return skillLabelMap[key];
       }
       return key ? map[key] : undefined;
     }
@@ -695,7 +740,11 @@
       const pinLabels = toArr(tsum.plus_pin_label);
       const plusPairs = [];
       for (let i = 0; i < Math.max(pins.length, pinLabels.length); i++) {
-        const pair = [pinMap[pins[i]], pinMap[pinLabels[i]]].filter(Boolean);
+        // EN 的 label 讀 wappen_XXX_1_txt_en.png；pluspin.js 還沒有該圖時，退回原本沒有 _en 的圖
+        const lbl = pinLabels[i];
+        const lblImg = pinMap[lbl] || (lbl ? pinMap[String(lbl).replace(/_en\.png$/, ".png")] : undefined);
+        if (lbl && !pinMap[lbl] && lblImg) console.warn("pluspin.js 找不到 " + lbl + "，暫時用中文圖");
+        const pair = [pinMap[pins[i]], lblImg].filter(Boolean);
         if (pair.length) plusPairs.push(pair);
       }
 
@@ -703,7 +752,7 @@
       const types = (Array.isArray(tsum.tsumtype) ? tsum.tsumtype : (tsum.tsumtype ? [tsum.tsumtype] : []))
         .filter(Boolean);
       const infoHtml =
-        (tsum.series ? `<div class="info-series"><span class="k">系列</span>${esc(tsum.series)}</div>` : "") +
+        (tsum.series ? `<div class="info-series"><span class="k">${ui().series}</span>${esc(tsum.series)}</div>` : "") +
         (types.length ? `<div class="info-types">${types.map(t => `<span class="info-type">${esc(t)}</span>`).join("")}</div>` : "");
 
       modalBox.innerHTML = `
@@ -721,7 +770,7 @@
           <div class="modal-plus"></div>
           ${rows
             ? `<ul class="skill-list">${rows}</ul>`
-            : `<div class="skill-empty">暫無技能資料</div>`}
+            : `<div class="skill-empty">${ui().noSkill}</div>`}
         </div>
       `;
 
@@ -745,12 +794,22 @@
     });
 
     // ---------- 搜尋 ----------
-    // GL = tsum.js 的 tsumData；JP = tsum_jp.js 的 tsumDataJP
+    // GL(TW) = tsum.js 的 tsumData；JP = tsum_jp.js 的 tsumDataJP
     const byId = (a, b) => a.id - b.id;
     const dataSets = {
       gl: typeof tsumData !== "undefined" ? tsumData.slice().sort(byId) : [],
-      jp: typeof tsumDataJP !== "undefined" ? tsumDataJP.slice().sort(byId) : []
+      jp: typeof tsumDataJP !== "undefined" ? tsumDataJP.slice().sort(byId) : [],
+      glen: typeof tsumDataEN !== "undefined" ? tsumDataEN.slice().sort(byId) : []   // GL 英文版 = tsum_en.js 的 tsumDataEN
     };
+    const langBtn = document.getElementById("langBtn");
+    const langRow = document.getElementById("langRow");
+    let glLang = "tw";
+    try {
+      if (localStorage.getItem("tsumGlLang") === "en") glLang = "en";
+    } catch (e) {}
+    if (!dataSets.glen.length) glLang = "tw";
+    // 目前實際使用的資料集：GL 且選了 EN 時用英文版
+    const curKey = () => (region === "gl" && glLang === "en") ? "glen" : region;
     const regionBtn = document.getElementById("regionBtn");
 
     let region = "gl";
@@ -764,6 +823,10 @@
     if (!dataSets.jp.length || !dataSets.gl.length) {
       regionBtn.disabled = true;
       regionBtn.title = "另一版本資料載入失敗";
+    }
+    if (!dataSets.glen.length) {
+      langBtn.disabled = true;
+      langBtn.title = "tsum_en.js 載入失敗";
     }
 
     // ---------- 分類：Series / Tsum Type（泡泡） ----------
@@ -787,7 +850,7 @@
       selSeries = "";
       selTypes.clear();
       const seriesCount = new Map(), typeCount = new Map();
-      dataSets[region].forEach(t => {
+      dataSets[curKey()].forEach(t => {
         if (t.series) seriesCount.set(t.series, (seriesCount.get(t.series) || 0) + 1);
         typesOf(t).forEach(k => typeCount.set(k, (typeCount.get(k) || 0) + 1));
       });
@@ -808,7 +871,7 @@
           const btn = g.querySelector(".fmore");
           const expanded = g.classList.contains("expanded");
           btn.hidden = !expanded && chips.scrollHeight <= chips.clientHeight + 1;
-          btn.textContent = expanded ? "收合 ▴" : "展開 ▾";
+          btn.textContent = expanded ? ui().less : ui().more;
         });
       });
     }
@@ -854,7 +917,7 @@
       });
       fclear.hidden = !selSeries && !selTypes.size;
 
-      render(dataSets[region].filter(tsum => {
+      render(dataSets[curKey()].filter(tsum => {
         if (selSeries && tsum.series !== selSeries) return false;
         if (selTypes.size) {
           const mine = typesOf(tsum);
@@ -867,13 +930,33 @@
       }));
     }
 
+    // 依目前語言更新介面文字與語言按鈕（只有 GL 才顯示語言按鈕）
+    function applyI18n() {
+      uiLang = (region === "gl" && glLang === "en") ? "en" : "tw";
+      document.documentElement.lang = uiLang === "en" ? "en" : "zh-Hant";
+      langRow.hidden = region !== "gl";
+      langBtn.textContent = "🌐 " + (glLang === "en" ? "EN" : "TW");
+      if (document.activeElement !== searchInput) searchInput.placeholder = ui().placeholder;
+      emptyMsg.textContent = ui().empty;
+      fclear.textContent = ui().clear;
+    }
+
     function setRegion(r) {
       region = r;
       regionBtn.textContent = r.toUpperCase();
       try { localStorage.setItem("tsumRegion", r); } catch (e) {}
+      applyI18n();
       buildFilters();
       applyFilter();
     }
+
+    langBtn.addEventListener("click", () => {
+      glLang = glLang === "en" ? "tw" : "en";
+      try { localStorage.setItem("tsumGlLang", glLang); } catch (e) {}
+      applyI18n();
+      buildFilters();   // 英文版的 Series / Type 名稱不同，要重建分類並清掉已選的
+      applyFilter();
+    });
 
     regionBtn.addEventListener("click", () => {
       setRegion(region === "gl" ? "jp" : "gl");
@@ -893,7 +976,7 @@
 
     searchInput.addEventListener("focus", () => { searchInput.placeholder = ""; });
     searchInput.addEventListener("blur", () => {
-      if (!searchInput.value) searchInput.placeholder = "🔍 輸入Tsum名稱...";
+      if (!searchInput.value) searchInput.placeholder = ui().placeholder;
     });
 
     // ---------- 深淺色切換 ----------
