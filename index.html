@@ -231,6 +231,37 @@
       color: var(--text);
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
     }
+    /* 系列 / Tsum 類型：顯示在 skill label 上方，沒有資料時不佔位置 */
+    .modal-info {
+      margin: 2.5cqw 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2cqw;
+      text-align: center;
+    }
+    .modal-info:empty { display: none; }
+    .info-series {
+      font-size: max(11px, 2.5cqw);
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .info-series .k { margin-right: 1cqw; font-weight: normal; color: var(--muted); }
+    .info-types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1cqw;
+    }
+    .info-type {
+      padding: 0.4cqw 1.8cqw;
+      font-size: max(10px, 2.1cqw);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 99px;
+      white-space: nowrap;
+    }
     /* skill label 置中；Plus 圖章在它的下方 */
     .modal-label {
       --label-h: 15cqw;      /* skill label 的高度（以原圖為準） */
@@ -591,6 +622,13 @@
         if (pair.length) plusPairs.push(pair);
       }
 
+      // 系列 / Tsum 類型（tsumtype 可為陣列或單一字串；沒有資料就不顯示）
+      const types = (Array.isArray(tsum.tsumtype) ? tsum.tsumtype : (tsum.tsumtype ? [tsum.tsumtype] : []))
+        .filter(Boolean);
+      const infoHtml =
+        (tsum.series ? `<div class="info-series"><span class="k">系列</span>${esc(tsum.series)}</div>` : "") +
+        (types.length ? `<div class="info-types">${types.map(t => `<span class="info-type">${esc(t)}</span>`).join("")}</div>` : "");
+
       modalBox.innerHTML = `
         <div class="modal-head">
           ${imgSrc ? `<img src="${imgSrc}" alt="">` : ""}
@@ -601,6 +639,7 @@
           </div>
         </div>
         <div class="modal-body">
+          <div class="modal-info">${infoHtml}</div>
           <div class="modal-label"></div>
           <div class="modal-plus"></div>
           ${rows

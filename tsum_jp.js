@@ -2209,11 +2209,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_zazu.png",
   "skill_cost" : [1,1,1]
