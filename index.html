@@ -71,6 +71,69 @@
       background: var(--input-bg);
       border: 1px solid var(--input-line);
     }
+    /* ---------- 分類泡泡（Series / Tsum Type） ---------- */
+    #filterPanel {
+      padding: 8px 20px 0;
+      display: none;
+    }
+    #filterPanel.show { display: block; }
+    .fgroup {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .fgroup-label {
+      flex: none;
+      width: 62px;
+      padding-top: 3px;
+      font-size: 11px;
+      font-weight: bold;
+      color: var(--muted);
+    }
+    .chips {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      max-height: 56px;          /* 收合時約 2 行 */
+      overflow: hidden;
+    }
+    .fgroup.expanded .chips { max-height: none; }
+    .chip {
+      padding: 2px 8px;
+      font: inherit;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--text);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .chip .n { margin-left: 3px; font-size: 10px; color: var(--muted); }
+    .chip:hover { border-color: var(--accent); }
+    .chip.on { background: var(--accent); border-color: var(--accent); color: #222; font-weight: bold; }
+    .chip.on .n { color: #444; }
+    .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+    .fmore, #fclear {
+      flex: none;
+      padding: 2px 6px;
+      font: inherit;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .fmore:hover, #fclear:hover { color: var(--accent); }
+    .fmore[hidden] { display: none; }
+    #fclear { display: block; margin: 0 0 4px 70px; padding-left: 0; }
+    #fclear[hidden] { display: none; }
+
     #regionBtn {
       margin-left: auto;
       min-width: 52px;
@@ -361,6 +424,20 @@
     <img id="clearSearchBtn" src="https://i.postimg.cc/6pVSz87S/win-batsu-s.png" alt="Clear" />
     <button type="button" id="regionBtn"></button>
     <button type="button" id="themeBtn"></button>
+  </div>
+
+  <div id="filterPanel">
+    <div class="fgroup" id="seriesGroup">
+      <div class="fgroup-label">Series</div>
+      <div class="chips" id="seriesChips"></div>
+      <button type="button" class="fmore" data-for="seriesGroup">展開 ▾</button>
+    </div>
+    <div class="fgroup" id="typeGroup">
+      <div class="fgroup-label">Tsum Type</div>
+      <div class="chips" id="typeChips"></div>
+      <button type="button" class="fmore" data-for="typeGroup">展開 ▾</button>
+    </div>
+    <button type="button" id="fclear" hidden>✕ 清除分類</button>
   </div>
 
   <div id="tsumGrid"></div>
@@ -689,20 +766,112 @@
       regionBtn.title = "另一版本資料載入失敗";
     }
 
+    // ---------- 分類：Series / Tsum Type（泡泡） ----------
+    // Series：單選（再點一次取消）。Tsum Type：可多選，需同時符合。
+    const filterPanel = document.getElementById("filterPanel");
+    const seriesChips = document.getElementById("seriesChips");
+    const typeChips = document.getElementById("typeChips");
+    const fclear = document.getElementById("fclear");
+    const typesOf = t => Array.isArray(t.tsumtype) ? t.tsumtype : (t.tsumtype ? [t.tsumtype] : []);
+    let selSeries = "";
+    const selTypes = new Set();
+
+    function chipsHtml(counts) {
+      return [...counts].map(([k, n]) =>
+        `<button type="button" class="chip" data-v="${esc(k)}" aria-pressed="false">${esc(k)}<span class="n">${n}</span></button>`
+      ).join("");
+    }
+
+    // 依目前版本的資料重建泡泡（依第一次出現的順序，並顯示數量）
+    function buildFilters() {
+      selSeries = "";
+      selTypes.clear();
+      const seriesCount = new Map(), typeCount = new Map();
+      dataSets[region].forEach(t => {
+        if (t.series) seriesCount.set(t.series, (seriesCount.get(t.series) || 0) + 1);
+        typesOf(t).forEach(k => typeCount.set(k, (typeCount.get(k) || 0) + 1));
+      });
+      seriesChips.innerHTML = chipsHtml(seriesCount);
+      typeChips.innerHTML = chipsHtml(typeCount);
+      filterPanel.classList.toggle("show", seriesCount.size > 0 || typeCount.size > 0);
+      document.getElementById("seriesGroup").style.display = seriesCount.size ? "" : "none";
+      document.getElementById("typeGroup").style.display = typeCount.size ? "" : "none";
+      document.querySelectorAll(".fgroup").forEach(g => g.classList.remove("expanded"));
+      updateMoreButtons();
+    }
+
+    // 只有內容超過兩行時才顯示「展開」
+    function updateMoreButtons() {
+      requestAnimationFrame(() => {
+        document.querySelectorAll(".fgroup").forEach(g => {
+          const chips = g.querySelector(".chips");
+          const btn = g.querySelector(".fmore");
+          const expanded = g.classList.contains("expanded");
+          btn.hidden = !expanded && chips.scrollHeight <= chips.clientHeight + 1;
+          btn.textContent = expanded ? "收合 ▴" : "展開 ▾";
+        });
+      });
+    }
+    window.addEventListener("resize", updateMoreButtons);
+
+    document.querySelectorAll(".fmore").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.getElementById(btn.dataset.for).classList.toggle("expanded");
+        updateMoreButtons();
+      });
+    });
+
+    seriesChips.addEventListener("click", e => {
+      const chip = e.target.closest(".chip");
+      if (!chip) return;
+      selSeries = selSeries === chip.dataset.v ? "" : chip.dataset.v;
+      applyFilter();
+    });
+    typeChips.addEventListener("click", e => {
+      const chip = e.target.closest(".chip");
+      if (!chip) return;
+      const v = chip.dataset.v;
+      if (selTypes.has(v)) selTypes.delete(v); else selTypes.add(v);
+      applyFilter();
+    });
+    fclear.addEventListener("click", () => {
+      selSeries = "";
+      selTypes.clear();
+      applyFilter();
+    });
+
     function applyFilter() {
       const q = searchInput.value.trim().toLowerCase();
-      const list = dataSets[region];
-      render(!q ? list : list.filter(tsum =>
-        tsum.name?.toLowerCase().includes(q) ||
-        tsum.name_en?.toLowerCase().includes(q) ||
-        String(tsum.id).includes(q)
-      ));
+      seriesChips.querySelectorAll(".chip").forEach(c => {
+        const on = c.dataset.v === selSeries;
+        c.classList.toggle("on", on);
+        c.setAttribute("aria-pressed", on);
+      });
+      typeChips.querySelectorAll(".chip").forEach(c => {
+        const on = selTypes.has(c.dataset.v);
+        c.classList.toggle("on", on);
+        c.setAttribute("aria-pressed", on);
+      });
+      fclear.hidden = !selSeries && !selTypes.size;
+
+      render(dataSets[region].filter(tsum => {
+        if (selSeries && tsum.series !== selSeries) return false;
+        if (selTypes.size) {
+          const mine = typesOf(tsum);
+          for (const t of selTypes) if (!mine.includes(t)) return false;
+        }
+        return !q ||
+          tsum.name?.toLowerCase().includes(q) ||
+          tsum.name_en?.toLowerCase().includes(q) ||
+          String(tsum.id).includes(q);
+      }));
     }
 
     function setRegion(r) {
       region = r;
       regionBtn.textContent = r.toUpperCase();
       try { localStorage.setItem("tsumRegion", r); } catch (e) {}
+      buildFilters();
       applyFilter();
     }
 
@@ -714,6 +883,8 @@
 
     clearBtn.addEventListener("click", () => {
       searchInput.value = "";
+      selSeries = "";
+      selTypes.clear();
       applyFilter();
       searchInput.focus();
     });
