@@ -11928,6 +11928,8 @@ const tsumDataJP = [
     "image": "block_donaldplus_l.png",
     "series": "ミッキー＆フレンズ",
     "tsumtype": ["白色のツム", "男の子のツム"],
+    "plus_pin" : ["wappen_donaldplus_1_on_jp.png","wappen_donaldplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_donaldplus_1_txt_jp.png","wappen_donaldplus_2_txt_jp.png"],
     "skill_desc": [
       "効果時間：2秒",
       "効果時間：2.3秒",
@@ -11946,6 +11948,8 @@ const tsumDataJP = [
     "image": "block_mickeyplus_l.png",
     "series": "ミッキー＆フレンズ",
     "tsumtype": ["黒色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_mickeyplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_mickeyplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -11964,6 +11968,8 @@ const tsumDataJP = [
     "image": "block_aliceplus_l.png",
     "series": "ふしぎの国のアリス",
     "tsumtype": ["黄色のツム", "女の子のツム"],
+    "plus_pin" : ["wappen_aliceplus_1_on_jp.png","wappen_aliceplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_aliceplus_1_txt_jp.png","wappen_aliceplus_2_txt_jp.png"],
     "skill_desc": [
       "範囲:SS 必要ツム数:24",
       "範囲:S 必要ツム数:23",
@@ -12126,6 +12132,8 @@ const tsumDataJP = [
     "image": "block_stormtrooperplus_l.png",
     "series": "スター・ウォーズ",
     "tsumtype": ["白色のツム", "ヴィランズのツム", "男の子のツム"],
+    "plus_pin" : "wappen_stormtrooperplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_stormtrooperplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -12216,6 +12224,8 @@ const tsumDataJP = [
     "image": "block_mcqueenplus_l.png",
     "series": "カーズ",
     "tsumtype": ["赤色のツム", "男の子のツム"],
+    "plus_pin" : ["wappen_mcqueenplus_1_on_jp.png","wappen_mcqueenplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_mcqueenplus_1_txt_jp.png","wappen_mcqueenplus_2_txt_jp.png"],
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -12306,6 +12316,8 @@ const tsumDataJP = [
     "image": "block_plutoplus_l.png",
     "series": "ミッキー＆フレンズ",
     "tsumtype": ["黄色のツム", "男の子のツム", "イヌのツム"],
+    "plus_pin" : "wappen_plutoplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_plutoplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -12324,6 +12336,8 @@ const tsumDataJP = [
     "image": "block_arielplus_l.png",
     "series": "リトル・マーメイド",
     "tsumtype": ["赤色のツム", "プリンセスのツム", "女の子のツム"],
+    "plus_pin" : ["wappen_arielplus_1_on_jp.png","wappen_arielplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_arielplus_1_txt_jp.png","wappen_arielplus_2_txt_jp.png"],
     "skill_desc": [
       "範囲:SS 必要ツム数:22",
       "範囲:S 必要ツム数:21",
@@ -12504,6 +12518,8 @@ const tsumDataJP = [
     "image": "block_simbaplus_l.png",
     "series": "ライオン・キング",
     "tsumtype": ["黄色のツム", "茶色のツム", "プリンスのツム", "男の子のツム", "ネコ科のツム"],
+    "plus_pin" : "wappen_simbaplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_simbaplus_1_txt_jp.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:23",
       "範囲:S 必要ツム数:22",
@@ -12594,6 +12610,8 @@ const tsumDataJP = [
     "image": "block_cruellaplus_l.png",
     "series": "101匹わんちゃん",
     "tsumtype": ["白色のツム", "黒色のツム", "ヴィランズのツム", "女の子のツム"],
+    "plus_pin" : ["wappen_cruellaplus_1_on_jp.png","wappen_cruellaplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_cruellaplus_1_txt_jp.png","wappen_cruellaplus_2_txt_jp.png"],
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -12612,6 +12630,8 @@ const tsumDataJP = [
     "image": "block_tremaineplus_l.png",
     "series": "シンデレラ",
     "tsumtype": ["灰色のツム", "ヴィランズのツム", "女の子のツム"],
+    "plus_pin" : "wappen_tremaineplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_tremaineplus_1_txt_jp.png",
     "skill_desc": [
       "効果時間：5秒",
       "効果時間：6秒",
@@ -12666,6 +12686,8 @@ const tsumDataJP = [
     "image": "block_goofyplus_l.png",
     "series": "ミッキー＆フレンズ",
     "tsumtype": ["黒色のツム", "男の子のツム", "イヌのツム"],
+    "plus_pin" : "wappen_goofyplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_goofyplus_1_txt_jp.png",
     "skill_desc": [
       "消去数：20",
       "消去数：21",
@@ -12774,6 +12796,8 @@ const tsumDataJP = [
     "image": "block_woodyplus_l.png",
     "series": "トイ・ストーリー",
     "tsumtype": ["茶色のツム", "男の子のツム"],
+    "plus_pin" : ["wappen_woodyplus_1_on_jp.png","wappen_woodyplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_woodyplus_1_txt_jp.png","wappen_woodyplus_2_txt_jp.png"],
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -12792,6 +12816,8 @@ const tsumDataJP = [
     "image": "block_buzzplus_l.png",
     "series": "トイ・ストーリー",
     "tsumtype": ["紫色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_buzzplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_buzzplus_1_txt_jp.png",
     "skill_desc": [
       "回数：2",
       "回数：3",
@@ -12828,6 +12854,8 @@ const tsumDataJP = [
     "image": "block_minnie12thplus_l.png",
     "series": "ミッキー＆フレンズ",
     "tsumtype": ["黒色のツム", "女の子のツム"],
+    "plus_pin" : "wappen_minnie12thplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_minnie12thplus_1_txt_jp.png",
     "skill_desc": [
       "プレゼント数：2～4",
       "プレゼント数：2～5",
@@ -12878,6 +12906,8 @@ const tsumDataJP = [
     "image": "block_rapunzelplus_l.png",
     "series": "塔の上のラプンツェル",
     "tsumtype": ["黄色のツム", "プリンセスのツム", "女の子のツム"],
+    "plus_pin" : ["wappen_rapunzelplus_1_on_jp.png","wappen_rapunzelplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_rapunzelplus_1_txt_jp.png","wappen_rapunzelplus_2_txt_jp.png"],
     "skill_desc": [
       "範囲:SS 消去数:9",
       "範囲:S 消去数:12",
@@ -12896,6 +12926,8 @@ const tsumDataJP = [
     "image": "block_daisyplus_l.png",
     "series": "ミッキー＆フレンズ",
     "tsumtype": ["白色のツム", "女の子のツム"],
+    "plus_pin" : "wappen_daisyplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_daisyplus_1_txt_jp.png",
     "skill_desc": [
       "必要ツム数:22 効果:SS",
       "必要ツム数:21 効果:S",
@@ -12914,6 +12946,8 @@ const tsumDataJP = [
     "image": "block_soraplus_l.png",
     "series": "キングダム ハーツ",
     "tsumtype": ["茶色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_soraplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_soraplus_1_txt_jp.png",
     "skill_desc": [
       "必要ツム数:20 スコア:1倍",
       "必要ツム数:19 スコア:1.6倍",
@@ -13004,6 +13038,8 @@ const tsumDataJP = [
     "image": "block_conanplus_l.png",
     "series": "名探偵コナン",
     "tsumtype": ["黒色のツム", "茶色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_conanplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_conanplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -13184,6 +13220,8 @@ const tsumDataJP = [
     "image": "block_mabelplus_l.png",
     "series": "私がビーバーになる時",
     "tsumtype": ["茶色のツム", "女の子のツム"],
+    "plus_pin" : "wappen_mabelplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_mabelplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -13256,6 +13294,8 @@ const tsumDataJP = [
     "image": "block_mandalorianplus_l.png",
     "series": "マンダロリアン",
     "tsumtype": ["白色のツム", "黒色のツム", "灰色のツム", "男の子のツム"],
+    "plus_pin" : ["wappen_mandalorianplus_1_on_jp.png","wappen_mandalorianplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_mandalorianplus_1_txt_jp.png","wappen_mandalorianplus_2_txt_jp.png"],
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -13274,6 +13314,8 @@ const tsumDataJP = [
     "image": "block_groguplus_l.png",
     "series": "マンダロリアン",
     "tsumtype": ["緑色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_groguplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_groguplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -13346,6 +13388,8 @@ const tsumDataJP = [
     "image": "block_rayaplus_l.png",
     "series": "ラーヤと龍の王国",
     "tsumtype": ["黒色のツム", "茶色のツム", "プリンセスのツム", "女の子のツム"],
+    "plus_pin" : "wappen_rayaplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_rayaplus_1_txt_jp.png",
     "skill_desc": [
       "範囲:SS 必要ツム数:26",
       "範囲:S 必要ツム数:25",
@@ -13472,6 +13516,8 @@ const tsumDataJP = [
     "image": "block_jessieplus_l.png",
     "series": "トイ・ストーリー",
     "tsumtype": ["赤色のツム", "女の子のツム"],
+    "plus_pin" : "wappen_jessieplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_jessieplus_1_txt_jp.png",
     "skill_desc": [
       "必要ツム数:24 変化数:3",
       "必要ツム数:22 変化数:3",
@@ -13490,6 +13536,8 @@ const tsumDataJP = [
     "image": "block_poohplus_l.png",
     "series": "くまのプーさん",
     "tsumtype": ["黄色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_poohplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_poohplus_1_txt_jp.png",
     "skill_desc": [
       "スコア：1.2倍",
       "スコア：1.5倍",
@@ -13508,6 +13556,8 @@ const tsumDataJP = [
     "image": "block_tinkerbellplus_l.png",
     "series": "ピーター・パン",
     "tsumtype": ["黄色のツム", "女の子のツム"],
+    "plus_pin" : ["wappen_tinkerbellplus_1_on_jp.png","wappen_tinkerbellplus_2_on_jp.png"],
+    "plus_pin_label" : ["wappen_tinkerbellplus_1_txt_jp.png","wappen_tinkerbellplus_2_txt_jp.png"],
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
@@ -13670,6 +13720,8 @@ const tsumDataJP = [
     "image": "block_marieplus_l.png",
     "series": "おしゃれキャット",
     "tsumtype": ["白色のツム", "女の子のツム", "ネコ科のツム"],
+    "plus_pin" : "wappen_marieplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_marieplus_1_txt_jp.png",
     "skill_desc": [
       "効果時間：3秒",
       "効果時間：3.6秒",
@@ -13698,7 +13750,7 @@ const tsumDataJP = [
       "必要ツム数:19 回数:6"
     ],
     "skill_label": "win_tsumskill_nbcset.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 765,
@@ -13716,7 +13768,7 @@ const tsumDataJP = [
       "変化数：9"
     ],
     "skill_label": "win_tsumskill_finkelstein.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 766,
@@ -13734,7 +13786,7 @@ const tsumDataJP = [
       "効果時間：16.5秒"
     ],
     "skill_label": "win_tsumskill_leota.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 767,
@@ -13752,7 +13804,7 @@ const tsumDataJP = [
       "必要ツム数:28 効果:4L"
     ],
     "skill_label": "win_tsumskill_constancecm.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 768,
@@ -13760,6 +13812,8 @@ const tsumDataJP = [
     "image": "block_dumboplus_l.png",
     "series": "ダンボ",
     "tsumtype": ["青色のツム", "水色のツム", "男の子のツム"],
+    "plus_pin" : "wappen_dumboplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_dumboplus_1_txt_jp.png",
     "skill_desc": [
       "効果範囲：SS",
       "効果範囲：S",
@@ -13770,7 +13824,7 @@ const tsumDataJP = [
       "効果範囲：4L"
     ],
     "skill_label": "win_tsumskill_dumboplus.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 769,
@@ -13788,7 +13842,7 @@ const tsumDataJP = [
       "変化数:11～22 効果:4L"
     ],
     "skill_label": "win_tsumskill_woodyink.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 770,
@@ -13806,7 +13860,7 @@ const tsumDataJP = [
       "必要ツム数:15 時間:16秒"
     ],
     "skill_label": "win_tsumskill_cruellaink.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 771,
@@ -13850,6 +13904,8 @@ const tsumDataJP = [
     "image": "block_mickeysplus_l.png",
     "series": "ファンタジア",
     "tsumtype": ["黒色のツム", "青色のツム", "赤色のツム", "男の子のツム"],
+    "plus_pin" : ["wappen_mickeysplus_1_on_jp.png","wappen_mickeysplus_2_on_jp.png","wappen_mickeysplus_3_on_jp.png"],
+    "plus_pin_label" : ["wappen_mickeysplus_1_txt_jp.png","wappen_mickeysplus_2_txt_jp.png","wappen_mickeysplus_3_txt_jp.png"],
     "skill_desc": [
       "必要ツム数:26 回数:2",
       "必要ツム数:24 回数:2",
