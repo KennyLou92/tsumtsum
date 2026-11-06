@@ -8945,7 +8945,7 @@ const tsumDataEN = [
     "id": 516,
     "name": "Grim",
     "image": "block_grim_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Blue Tsum", "Boy Tsum"],
     "skill_desc": [
       "Needed: 21 Tsums Time: 3.5 sec",
@@ -8962,7 +8962,7 @@ const tsumDataEN = [
     "id": 517,
     "name": "Riddle Rosehearts",
     "image": "block_riddle_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Red Tsum", "Boy Tsum"],
     "skill_desc": [
       "Time: 4 sec Score: x1",
@@ -8979,7 +8979,7 @@ const tsumDataEN = [
     "id": 518,
     "name": "Leona Kingscholar",
     "image": "block_leona_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Brown Tsum", "Prince Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -8996,7 +8996,7 @@ const tsumDataEN = [
     "id": 519,
     "name": "Azul Ashengrotto",
     "image": "block_azul_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Black Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -9013,7 +9013,7 @@ const tsumDataEN = [
     "id": 520,
     "name": "Kalim Al-Asim",
     "image": "block_kalim_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Brown Tsum", "Red Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -9138,7 +9138,7 @@ const tsumDataEN = [
     "id": 527,
     "name": "Vil Schoenheit",
     "image": "block_vil_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Yellow Tsum", "Boy Tsum"],
     "skill_desc": [
       "Clears: 18",
@@ -9155,7 +9155,7 @@ const tsumDataEN = [
     "id": 528,
     "name": "Idia Shroud",
     "image": "block_idia_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Blue Tsum", "Light Blue Tsum", "Boy Tsum"],
     "skill_desc": [
       "Range: XS Needed: 22 Tsums ",
@@ -9172,7 +9172,7 @@ const tsumDataEN = [
     "id": 529,
     "name": "Malleus Draconia",
     "image": "block_malleus_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Prince Tsum", "Boy Tsum"],
     "skill_desc": [
       "Needed: 28 Tsums Time: 4.5 sec",
@@ -9189,7 +9189,7 @@ const tsumDataEN = [
     "id": 530,
     "name": "Dire Crowley",
     "image": "block_crowley_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Boy Tsum"],
     "skill_desc": [
       "Range: XS Needed: 20 Tsums ",
@@ -9206,7 +9206,7 @@ const tsumDataEN = [
     "id": 531,
     "name": "The Dark Mirror",
     "image": "block_mirror_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Brown Tsum", "Green Tsum"],
     "skill_desc": [
       "Clears: 8～35",
@@ -9585,7 +9585,7 @@ const tsumDataEN = [
     "id": 553,
     "name": "Jade Leech",
     "image": "block_jade_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Blue Tsum", "Green Tsum", "Light Blue Tsum", "Boy Tsum"],
     "skill_desc": [
       "Changes: 3",
@@ -9602,7 +9602,7 @@ const tsumDataEN = [
     "id": 554,
     "name": "Floyd Leech",
     "image": "block_floyd_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Blue Tsum", "Green Tsum", "Light Blue Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -9619,7 +9619,7 @@ const tsumDataEN = [
     "id": 555,
     "name": "Ace Trappola",
     "image": "block_ace_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Brown Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -9636,7 +9636,7 @@ const tsumDataEN = [
     "id": 556,
     "name": "Deuce Spade",
     "image": "block_deuce_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Blue Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -9979,7 +9979,7 @@ const tsumDataEN = [
     "id": 575,
     "name": "Beans Camo Vil",
     "image": "block_vil2_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Yellow Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -9996,7 +9996,7 @@ const tsumDataEN = [
     "id": 576,
     "name": "Gala Couture Kalim(Charm)",
     "image": "block_kalimcm_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Brown Tsum", "Boy Tsum"],
     "skill_desc": [
       "Range: XS Needed: 32 Tsums ",
@@ -10013,7 +10013,7 @@ const tsumDataEN = [
     "id": 577,
     "name": "Ceremonial Robes Grim",
     "image": "block_grim2_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -10030,7 +10030,7 @@ const tsumDataEN = [
     "id": 578,
     "name": "Jamil Viper",
     "image": "block_jamil_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Brown Tsum", "Boy Tsum"],
     "skill_desc": [
       "Needed: 22 Tsums  Score: x1.4",
@@ -10047,7 +10047,7 @@ const tsumDataEN = [
     "id": 579,
     "name": "Rook Hunt",
     "image": "block_rook_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Blue Tsum", "Yellow Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -10352,7 +10352,7 @@ const tsumDataEN = [
       "block_malleus2_l.png",
       "block_malleus2sp_l.png"
     ],
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Prince Tsum", "Boy Tsum"],
     "skill_desc": [
       "Effect: XS Needed: 31 Tsums ",
@@ -10371,7 +10371,7 @@ const tsumDataEN = [
     "id": 596,
     "name": "Beans Camo Azul",
     "image": "block_azul2_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -10390,7 +10390,7 @@ const tsumDataEN = [
     "id": 597,
     "name": "Starsending Robes Idia(Charm)",
     "image": "block_idiacm_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Blue Tsum", "Light Blue Tsum", "Boy Tsum"],
     "skill_desc": [
       "Range: XS Needed: 33 Tsums ",
@@ -10409,7 +10409,7 @@ const tsumDataEN = [
     "id": 598,
     "name": "Gala Couture Leona",
     "image": "block_leona2_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Brown Tsum", "Prince Tsum", "Boy Tsum"],
     "skill_desc": [
       "Range: XS Needed: 23 Tsums ",
@@ -10428,7 +10428,7 @@ const tsumDataEN = [
     "id": 599,
     "name": "Suitor Suit Riddle(Charm)",
     "image": "block_riddlecm_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Red Tsum", "Boy Tsum"],
     "skill_desc": [
       "Skill Range: XS",
@@ -11699,7 +11699,7 @@ const tsumDataEN = [
     "id": 665,
     "name": "Masquerade Attire Malleus",
     "image": "block_malleusmd_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Black Tsum", "Prince Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_malleusmd.png",
   "skill_desc": [
@@ -11718,7 +11718,7 @@ const tsumDataEN = [
     "id": 666,
     "name": "Masquerade Attire Azul",
     "image": "block_azulmd_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Black Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_azulmd.png",
   "skill_desc": [
@@ -11737,7 +11737,7 @@ const tsumDataEN = [
     "id": 667,
     "name": "Masquerade Attire Idia",
     "image": "block_idiamd_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Black Tsum", "Blue Tsum", "Light Blue Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_idiamd.png",
   "skill_desc": [
@@ -11756,7 +11756,7 @@ const tsumDataEN = [
     "id": 668,
     "name": "Jack Howl",
     "image": "block_jackhowl_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Brown Tsum", "Gray Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_jackhowl.png",
   "skill_desc": [
@@ -11775,7 +11775,7 @@ const tsumDataEN = [
     "id": 669,
     "name": "Ruggie Bucchi",
     "image": "block_ruggie_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Brown Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_ruggie.png",
   "skill_desc": [
@@ -11969,7 +11969,7 @@ const tsumDataEN = [
     "id": 679,
     "name": "Epel Felmier",
     "image": "block_epel_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["Purple Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_epel.png",
   "skill_desc": [
@@ -11988,7 +11988,7 @@ const tsumDataEN = [
     "id": 680,
     "name": "Ortho Shroud",
     "image": "block_ortho_l.png",
-    "series": "Twisted-Wonderland",
+    "series": "Twisted Wonderland",
     "tsumtype": ["White Tsum", "Black Tsum", "Blue Tsum", "Light Blue Tsum", "Boy Tsum"],
     "skill_label": "win_tsumskill_ortho.png",
   "skill_desc": [
