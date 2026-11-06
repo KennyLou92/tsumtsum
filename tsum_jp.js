@@ -1001,8 +1001,6 @@ const tsumDataJP = [
       "効果時間：5.5秒",
       "効果時間：6秒",
       "効果時間：6.5秒",
-      "",
-      ""
     ],
     "skill_label": "win_tsumskill_donaldv.png",
   "skill_cost" : []
@@ -1014,11 +1012,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_daisyv.png",
   "skill_cost" : [1,2,3]
