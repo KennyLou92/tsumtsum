@@ -852,8 +852,6 @@ const tsumDataJP = [
       "変化数：12",
       "変化数：14",
       "変化数：15"
-      "",
-      ""
     ],
     "skill_label": "win_tsumskill_minniex.png",
   "skill_cost" : [1,2,3]
