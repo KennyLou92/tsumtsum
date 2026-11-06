@@ -893,8 +893,6 @@ const tsumDataJP = [
       "消去数：14",
       "消去数：16",
       "消去数：17"
-      "",
-      ""
     ],
     "skill_label": "win_tsumskill_goofyx.png",
   "skill_cost" : [1,2,3]
