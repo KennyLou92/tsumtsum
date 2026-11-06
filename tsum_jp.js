@@ -981,10 +981,7 @@ const tsumDataJP = [
       "変化数：12",
       "変化数：14",
       "変化数：15",
-      "変化数：16",
-      "変化数：17",
-      "",
-      ""
+      "変化数：16"
     ],
     "skill_label": "win_tsumskill_minniev.png",
   "skill_cost" : [1,1,2,3]
@@ -4282,11 +4279,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_shadow.png",
   "skill_cost" : [1,1,1]
