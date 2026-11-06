@@ -12770,7 +12770,7 @@ const tsumDataJP = [
       "必要ツム数:19 時間:10.6秒"
     ],
     "skill_label": "win_tsumskill_judypr.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 712,
@@ -12788,7 +12788,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_gary.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 713,
@@ -12808,7 +12808,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_woodyplus.png",
-  "skill_cost" : []
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 714,
@@ -12828,7 +12828,7 @@ const tsumDataJP = [
       "回数：8"
     ],
     "skill_label": "win_tsumskill_buzzplus.png",
-  "skill_cost" : []
+  "skill_cost" : [1,2,3,4,6,20]
   },
   {
     "id": 715,
@@ -12958,7 +12958,7 @@ const tsumDataJP = [
       "必要ツム数:14 スコア:4.8倍"
     ],
     "skill_label": "win_tsumskill_soraplus.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 722,
@@ -12976,7 +12976,7 @@ const tsumDataJP = [
       "範囲:4L 必要ツム数:9"
     ],
     "skill_label": "win_tsumskill_cloud.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 723,
@@ -12994,7 +12994,7 @@ const tsumDataJP = [
       "範囲:4L 必要ツム数:20"
     ],
     "skill_label": "win_tsumskill_mickeyking3.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 724,
@@ -13012,7 +13012,7 @@ const tsumDataJP = [
       "必要ツム数:13 効果:4L"
     ],
     "skill_label": "win_tsumskill_aerith.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 725,
@@ -13030,7 +13030,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_tifa.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 726,
