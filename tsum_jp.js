@@ -8397,7 +8397,7 @@ const tsumDataJP = [
   {
     "id": 470,
     "name": "ホリデースティッチ〈チャーム〉",
-    "image": "block_gaston2_l.png",
+    "image": "block_stitchxcm_l.png",
     "series": "リロ＆スティッチ",
     "tsumtype": ["青色のツム", "水色のツム", "男の子のツム"],
     "skill_desc": [

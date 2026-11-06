@@ -8229,8 +8229,8 @@ const tsumData = [
     "name_en": "Wild Gaston",
     "name": "狂野加斯頓",
     "image": "block_gaston2_l.png",
-    "series": "星際寶貝史迪奇",
-    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
+    "series": "美女與野獸",
+    "tsumtype": ["黑色Tsum", "反派Tsum", "男孩Tsum"],
     "skill_desc": [
       "時間：3秒 分數：1.6倍",
       "時間：3.6秒 分數：2.1倍",
@@ -8287,6 +8287,8 @@ const tsumData = [
     "name_en": "Holiday Stitch(Charm)",
     "name": "假期史迪奇（飾品）",
     "image": "block_stitchxcm_l.png",
+    "series": "星際寶貝史迪奇",
+    "tsumtype": ["藍色Tsum", "水藍色Tsum", "男孩Tsum"],
     "skill_desc": [
       "效果範圍：XS",
       "效果範圍：S",
