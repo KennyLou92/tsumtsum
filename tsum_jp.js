@@ -8,11 +8,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_mickeyx.png",
   "skill_cost" : [1,2,4]
@@ -26,11 +22,7 @@ const tsumDataJP = [
     "skill_desc": [
       "変化数：7～10",
       "変化数：10",
-      "変化数：10～13",
-      "変化数：13",
-      "変化数：13～15",
-      "変化数：15",
-      "変化数：15～16"
+      "変化数：10～13"
     ],
     "skill_label": "win_tsumskill_minnie.png",
   "skill_cost" : [1,2,4]
@@ -44,11 +36,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果時間：4秒",
       "効果時間：4.5秒",
-      "効果時間：5秒",
-      "効果時間：5.3秒",
-      "効果時間：5.6秒",
-      "効果時間：5.8秒",
-      "効果時間：6秒"
+      "効果時間：5秒"
     ],
     "skill_label": "win_tsumskill_donald.png",
   "skill_cost" : [1,2,4]
@@ -62,11 +50,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_daisy.png",
   "skill_cost" : [1,2,4]
@@ -80,11 +64,7 @@ const tsumDataJP = [
     "skill_desc": [
       "消去数：10",
       "消去数：10～12",
-      "消去数：12",
-      "消去数：12～14",
-      "消去数：14",
-      "消去数：14～16",
-      "消去数：16"
+      "消去数：12"
     ],
     "skill_label": "win_tsumskill_goofy.png",
   "skill_cost" : [1,2,4]
@@ -98,11 +78,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_pluto.png",
   "skill_cost" : [1,2,4]
@@ -116,11 +92,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_chip.png",
   "skill_cost" : [1,2,4]
@@ -134,11 +106,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_dale.png",
   "skill_cost" : [1,2,4]
@@ -152,11 +120,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果時間：4秒",
       "効果時間：4.2秒",
-      "効果時間：4.5秒",
-      "効果時間：5秒",
-      "効果時間：5.5秒",
-      "効果時間：6秒",
-      "効果時間：6.5秒"
+      "効果時間：4.5秒"
     ],
     "skill_label": "win_tsumskill_pooh.png",
   "skill_cost" : [1,2,4]
@@ -170,11 +134,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果時間：3秒",
       "効果時間：3.5秒",
-      "効果時間：4秒",
-      "効果時間：4.3秒",
-      "効果時間：4.6秒",
-      "効果時間：4.8秒",
-      "効果時間：5秒"
+      "効果時間：4秒"
     ],
     "skill_label": "win_tsumskill_piglet.png",
   "skill_cost" : [1,2,4]
@@ -188,11 +148,7 @@ const tsumDataJP = [
     "skill_desc": [
       "消去数：9～10",
       "消去数：10",
-      "消去数：10～12",
-      "消去数：12",
-      "消去数：12～14",
-      "消去数：14",
-      "消去数：14～17"
+      "消去数：10～12"
     ],
     "skill_label": "win_tsumskill_tigger.png",
   "skill_cost" : [1,2,4]
@@ -206,11 +162,7 @@ const tsumDataJP = [
     "skill_desc": [
       "変化数：8",
       "変化数：8～10",
-      "変化数：10",
-      "変化数：10～12",
-      "変化数：12",
-      "変化数：12～14",
-      "変化数：14"
+      "変化数：10"
     ],
     "skill_label": "win_tsumskill_eeyore.png",
   "skill_cost" : [1,2,4]
@@ -350,11 +302,7 @@ const tsumDataJP = [
     "skill_desc": [
       "種類：1",
       "種類：2",
-      "種類：3",
-      "種類：4",
-      "種類：5",
-      "種類：5",
-      "種類：5"
+      "種類：3"
     ],
     "skill_label": "win_tsumskill_littlegreenmen.png",
   "skill_cost" : [1,1,1]
@@ -638,11 +586,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果時間：5秒",
       "効果時間：5.5秒",
-      "効果時間：6秒",
-      "効果時間：6.5秒",
-      "効果時間：7秒",
-      "効果時間：7.5秒",
-      "効果時間：8秒"
+      "効果時間：6秒"
     ],
     "skill_label": "win_tsumskill_oswald.png",
   "skill_cost" : [1,1,1]
@@ -692,11 +636,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果時間：4秒",
       "効果時間：4.5秒",
-      "効果時間：5秒",
-      "効果時間：5.5秒",
-      "効果時間：6秒",
-      "効果時間：6.5秒",
-      "効果時間：7秒"
+      "効果時間：5秒"
     ],
     "skill_label": "win_tsumskill_hpooh.png",
   "skill_cost" : [1,2,4]
@@ -710,11 +650,7 @@ const tsumDataJP = [
     "skill_desc": [
       "出現数：1～2",
       "出現数：2",
-      "出現数：2～3",
-      "出現数：3",
-      "出現数：3～4",
-      "出現数：4",
-      "出現数：4～5"
+      "出現数：2～3"
     ],
     "skill_label": "win_tsumskill_robin.png",
   "skill_cost" : [1,2,4]
@@ -728,11 +664,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_roo.png",
   "skill_cost" : [1,2,4]
@@ -1874,7 +1806,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_mocha.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 107,
@@ -1892,7 +1824,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_pudding.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 108,
@@ -1910,7 +1842,7 @@ const tsumDataJP = [
       "出現数：5"
     ],
     "skill_label": "win_tsumskill_souffle.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 109,
@@ -2222,15 +2154,9 @@ const tsumDataJP = [
     "tsumtype": ["茶色のツム", "男の子のツム", "ウサギのツム"],
     "skill_desc": [
       "効果範囲：SSサイズ",
-      "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_brerrabbit.png",
-  "skill_cost" : []
+  "skill_cost" : [1]
   },
   {
     "id": 127,
@@ -2824,7 +2750,7 @@ const tsumDataJP = [
       "消去数：20"
     ],
     "skill_label": "win_tsumskill_whip.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 160,
@@ -2842,7 +2768,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_puffy.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 161,
@@ -3990,7 +3916,7 @@ const tsumDataJP = [
       "範囲:4L 必要ツム数:16"
     ],
     "skill_label": "win_tsumskill_donaldx.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 225,
@@ -4044,7 +3970,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_mickeye.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 228,
@@ -4296,7 +4222,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_spiderman.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 242,
@@ -4307,11 +4233,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_donaldc.png",
   "skill_cost" : [1,1,1]
@@ -4368,7 +4290,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_ironman7.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 246,
@@ -4386,7 +4308,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_captainamerica.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 247,
@@ -4404,7 +4326,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_thanos.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 248,
@@ -4933,11 +4855,7 @@ const tsumDataJP = [
     "skill_desc": [
       "効果範囲：SSサイズ",
       "効果範囲：Sサイズ",
-      "効果範囲：Mサイズ",
-      "効果範囲：Lサイズ",
-      "効果範囲：LLサイズ",
-      "効果範囲：3Lサイズ",
-      "効果範囲：4Lサイズ"
+      "効果範囲：Mサイズ"
     ],
     "skill_label": "win_tsumskill_minnie90th.png",
   "skill_cost" : [1,1,1]
@@ -5426,7 +5344,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_tony.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
   {
     "id": 305,
@@ -5444,7 +5362,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_thor.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 306,
@@ -5462,7 +5380,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_hulk.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 307,

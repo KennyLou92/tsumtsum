@@ -487,7 +487,10 @@
             noSkill: "暫無技能資料", skillAlt: "技能" },
       en: { placeholder: "🔍 Search Tsum name...", empty: "No matching Tsum found", series: "Series",
             more: "Expand ▾", less: "Collapse ▴", clear: "✕ Clear filters", none: "N/A",
-            noSkill: "No skill data", skillAlt: "Skill" }
+            noSkill: "No skill data", skillAlt: "Skill" },
+      jp: { placeholder: "🔍 ツムの名前を入力...", empty: "該当するツムが見つかりません", series: "シリーズ",
+            more: "展開 ▾", less: "折りたたむ ▴", clear: "✕ 絞り込みを解除", none: "なし",
+            noSkill: "スキルデータなし", skillAlt: "スキル" }
     };
     let uiLang = "tw";
     const ui = () => I18N[uiLang];
@@ -932,8 +935,8 @@
 
     // 依目前語言更新介面文字與語言按鈕（只有 GL 才顯示語言按鈕）
     function applyI18n() {
-      uiLang = (region === "gl" && glLang === "en") ? "en" : "tw";
-      document.documentElement.lang = uiLang === "en" ? "en" : "zh-Hant";
+      uiLang = region === "jp" ? "jp" : (glLang === "en" ? "en" : "tw");
+      document.documentElement.lang = { jp: "ja", en: "en", tw: "zh-Hant" }[uiLang];
       langRow.hidden = region !== "gl";
       langBtn.textContent = "🌐 " + (glLang === "en" ? "EN" : "TW");
       if (document.activeElement !== searchInput) searchInput.placeholder = ui().placeholder;
