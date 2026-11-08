@@ -13792,7 +13792,7 @@ const tsumDataJP = [
       "必要ツム数:18 効果:4L"
     ],
     "skill_label": "win_tsumskill_belleink.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,16]
   },
   {
     "id": 772,
@@ -13810,7 +13810,7 @@ const tsumDataJP = [
       "効果範囲：4Lサイズ"
     ],
     "skill_label": "win_tsumskill_donaldink.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,7,14]
   },
   {
     "id": 773,
