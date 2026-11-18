@@ -13830,6 +13830,6 @@ const tsumDataJP = [
       "必要ツム数:20 回数:5"
     ],
     "skill_label": "win_tsumskill_mickeysplus.png",
-  "skill_cost" : []
+  "skill_cost" : [1,1,2,4,8,20]
   },
 ];
