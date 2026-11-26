@@ -43,5 +43,7 @@ const littletsumData = [
 {"^872w^":"block_reypr_2_l.png"},
 {"^893w^":"block_donaldtf2025pr_1_l.png"},
 {"^894w^":"block_donaldtf2025pr_2_l.png"},
+{"^1065w^":"block_ladycmsp1_l.png"},
+{"^1066w^":"block_ladycmsp2_l.png"}
 ];
 window.littletsumData = littletsumData;

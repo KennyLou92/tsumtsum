@@ -13835,7 +13835,7 @@ const tsumDataJP = [
   {
     "id": 774,
     "name": "アリス＆チェシャ猫",
-    "image": "",
+    "image": "block_alicepr_l.png",
     "series": "ふしぎの国のアリス",
     "tsumtype": ["黄色のツム","赤色のツム","ピンク色のツム","男の子のツム","女の子のツム","ネコ科のツム"],
     "skill_desc": [
