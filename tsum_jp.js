@@ -13889,8 +13889,8 @@ const tsumDataJP = [
     "image": "block_aladdinplus_l.png",
     "series": "アラジン",
     "tsumtype": ["黒色のツム","茶色のツム","プリンスのツム","男の子のツム"],
-    "plus_pin" : "wappen_aladdinplus_1_on_jp.png",
-    "plus_pin_label" : "wappen_aladdinplus_1_txt_jp.png",
+    "plus_pin" : "wappen_aladdinplus_1_on.png",
+    "plus_pin_label" : "wappen_aladdinplus_1_txt.png",
     "skill_desc": [
       "効果：SS",
       "効果：S",
