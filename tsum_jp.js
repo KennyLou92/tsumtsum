@@ -13849,4 +13849,57 @@ const tsumDataJP = [
     "skill_label": "win_tsumskill_alicepr.png",
   "skill_cost" : []
   },
+  {
+    "id": 775,
+    "name": "レディ〈チャーム〉",
+    "image": "block_ladycm_l.png",
+    "series": "わんわん物語",
+    "tsumtype": ["黄色のツム","茶色のツム","女の子のツム","イヌのツム"],
+    "skill_desc": [
+      "必要ツム数:30 回数:3",
+      "必要ツム数:30 回数:4",
+      "必要ツム数:25 回数:4",
+      "必要ツム数:25 回数:5",
+      "必要ツム数:25 回数:6",
+      "必要ツム数:20 回数:6",
+    ],
+    "skill_label": "win_tsumskill_ladycm.png",
+  "skill_cost" : []
+  },
+  {
+    "id": 776,
+    "name": "ドクター・ドゥーム",
+    "image": "block_drdoom_l.png",
+    "series": "マーベル",
+    "tsumtype": ["白色のツム","黒色のツム","緑色のツム","灰色のツム","ヴィランズのツム","男の子のツム"],
+    "skill_desc": [
+      "時間:5秒 必要ツム数:23",
+      "時間:6秒 必要ツム数:22",
+      "時間:7秒 必要ツム数:21",
+      "時間:8秒 必要ツム数:20",
+      "時間:9秒 必要ツム数:19",
+      "時間:10秒 必要ツム数:18",
+    ],
+    "skill_label": "win_tsumskill_drdoom.png",
+  "skill_cost" : []
+  },
+  {
+    "id": 777,
+    "name": "アラジン＋",
+    "image": "block_aladdinplus_l.png",
+    "series": "アラジン",
+    "tsumtype": ["黒色のツム","茶色のツム","プリンスのツム","男の子のツム"],
+    "plus_pin" : "wappen_aladdinplus_1_on_jp.png",
+    "plus_pin_label" : "wappen_aladdinplus_1_txt_jp.png",
+    "skill_desc": [
+      "効果：SS",
+      "効果：S",
+      "効果：M",
+      "効果：L",
+      "効果：LL",
+      "効果：3L",
+    ],
+    "skill_label": "",
+  "skill_cost" : []
+  },
 ];
