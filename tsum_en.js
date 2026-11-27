@@ -12234,10 +12234,8 @@ const tsumDataEN = [
     "Time: 5 sec Effect: S",
     "Time: 6 sec Effect: M",
     "Time: 7 sec Effect: L",
-    "Time: 8 sec Effect: XL",
-    "Time: 9 sec Effect: XXL",
   ],
-  "skill_cost" : [1,1,2,4,8,16],
+  "skill_cost" : [1,1,2,4],
   "startdate" : [1796112000],
   "returndate" : []
     },
