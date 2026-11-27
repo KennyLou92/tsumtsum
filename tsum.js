@@ -12927,7 +12927,7 @@ const tsumData = [
     "時間：6秒 效果範圍：M",
     "時間：7秒 效果範圍：L",
   ],
-  "skill_cost" : [1,1,2,4],
+  "skill_cost" : [1,1,2,3],
   "startdate" : [1796112000],
   "returndate" : []
     },
